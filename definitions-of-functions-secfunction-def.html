@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5.1 Definitions of Functions {# sec:Function-Def} | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5.1 Definitions of Functions {# sec:Function-Def} | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5.1 Definitions of Functions {# sec:Function-Def} | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ch-function.html"/>
+<link rel="next" href="ch-group-1.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a><ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a><ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a><ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a><ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a><ul>
+<li class="chapter" data-level="5.1" data-path="definitions-of-functions-secfunction-def.html"><a href="definitions-of-functions-secfunction-def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions {# sec:Function-Def}</a></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="definitions-of-functions-secfunction-def" class="section level2">
+<h2><span class="header-section-number">5.1</span> Definitions of Functions {# sec:Function-Def}</h2>
+<p>Currently there are two dominant perspectives for defining a function. The first is the concept of function as a rule or procedure, as is denoted in the Common Core Standard (8.F.1).</p>
+<blockquote>
+<h4 id="related-content-standards-21" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(8.F.1) Understand that a function is a rule that assigns to each input exactly one output. The graph of a function is the set of ordered pairs consisting of an input and the corresponding output.</li>
+</ul>
+</blockquote>
+<div class="figure" style="text-align: center"><span id="fig:machine"></span>
+<img src="tikz/function-machine.png" alt="Machine analogy of a function" width="40%" />
+<p class="caption">
+Figure 5.1: Machine analogy of a function
+</p>
+</div>
+<p>This definition is often represented as a box or machine with certain inputs and outputs as shown in Figure <a href="definitions-of-functions-secfunction-def.html#fig:machine">5.1</a>. This definition of the function, while generally very useful in understanding the use of functions, is not as mathematically sound as the generally accepted definition of function that arose in the early 1900’s and appears in most theoretical mathematics textbooks. One of the main differences between the two definitions is the focus on the function being defined by three items: the domain, the codomain, and the relationship between elements of the two sets.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-125" class="definition"><strong>Definition 5.1  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be two sets, and let <span class="math inline">\(R\)</span> be a relation from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span>. Then <span class="math inline">\(R\)</span> is a function if for every <span class="math inline">\(a\in A\)</span>, there exists a unique <span class="math inline">\(b\in B\)</span> such that <span class="math inline">\((a,b)\in R\)</span>. The set <span class="math inline">\(A\)</span> is called the <strong>domain</strong> of the function and <span class="math inline">\(B\)</span> is called the <strong>codomain</strong> of the function.
+</div>
+
+<p>One should note from this definition of a function that the function is the set of ordered pairs that is often referenced as the graph of the function, rather than the algebraic or tabular representation that the input-output definition implies. Throughout the remainder of the text, we will bounce back and forth between the two views of a function, with the “input-output” or “rule” perspective often being reflected in an algebraic representation of the function and the “relation” or “ordered-pairs” perspective being reflected in a graphical representation of the function.</p>
+<blockquote>
+<h4 id="related-content-standards-22" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(HSF.IF.1) Understand that a function from one set (called the domain) to another set (called the range) assigns to each element of the domain exactly one element of the range. If <span class="math inline">\(f\)</span> is a function and <span class="math inline">\(x\)</span> is an element of its domain, then <span class="math inline">\(f(x)\)</span> denotes the output of <span class="math inline">\(f\)</span> corresponding to the input <span class="math inline">\(x\)</span>. The graph of <span class="math inline">\(f\)</span> is the graph of the equation <span class="math inline">\(y = f(x)\)</span>.</li>
+</ul>
+</blockquote>
+<p>In both of these definitions we talk about the function as a relation between two sets, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, and we often denote the function as <span class="math inline">\(f:A \rightarrow B\)</span>. The subset of the co-domain <span class="math display">\[\mbox{Ran}(f)=\left\{b\in B \middle \vert  b=f(a) \mbox{ for some } a \in A\right\}\]</span> is called the <strong>range</strong> of the function. This is different than the usual definitions in the K-12 mathematics textbooks and in the Common Core State Standards where authors do not define the co-domain because it is almost always assumed to be the real numbers.</p>
+<!---
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{tikz/function_sets_concept}
+    \caption{Concept sketch of $f:A\rightarrow B$}
+\end{figure}
+
+One of the key distinctions between relations that represent functions and those that do not has to do with the uniqueness of the element in the co-domain that is related to each element in the domain. For instance, with the relation from $x$ to $y$ given by $y=5x$, each value of $x$ has only one value of $y$ related to it. However, with the relation on $[-1,1]\times [-1,1]$ given by $x^2+y^2=1$, each value of $x$ has two distinct values of $y$ related to it and so $y$ is not a function of $x$.
+
+If one has the graphical representation of a relation available, one can determine if the relation represents a function by seeing if there is any value in the domain that has multiple values in the co-domain by looking for a vertical line that intersects the graph of the function at multiple points. Thus the relation on $\mathbb{R}\times \mathbb{R}$ given by $y^2=x$ does not represent $y$ as a function of $x$, but it does represent $x$ as a function of $y$.
+
+    \begin{center}
+        \includegraphics{tikz/graph_ysquared_equals_x}
+    \end{center}
+
+
+\subsection{Function Representations}
+
+In order to understand the different representations for a function we will use  the squaring function, $f:\mathbb{R}\rightarrow \mathbb{R}$, that is often represented by $f(x)=x^2$, or equivalently $x\mapsto x^2$. 
+
+If we use the sets and relation definition of the function, this function is defined to be 
+    $$\left\{ (x,y)\in \mathbb{R}^2 \middle \vert  y=x^2\right\}.$$ This is often represented graphically as 
+    
+    \begin{center}
+        \includegraphics{tikz/graph_y_equals_xsquared}
+    \end{center}
+    
+If we restrict the domain and co-domain to be natural numbers, so that $f:\mathbb{N}\rightarrow \mathbb{N}$, we can represent the function in a tabular format
+\begin{center}
+
+\begin{tabular}{c|c}
+$x$ & $y$ \\ \hline
+$0$ & $0$ \\
+$1$ & $1$ \\
+$2$ & $4$ \\
+$3$ & $9$ \\
+$\vdots $ & $\vdots$ 
+\end{tabular}
+\end{center}
+
+or by mapping elements from the domain to the co-domain
+
+\begin{center}
+    \includegraphics{tikz/table_nsquared}
+\end{center}
+
+There are some times where it is easier to start describing the function by sketching how elements from the domain map to the co-domain. For example, if the function, $f:\mathbb{N}\rightarrow \mathbb{Z}$, is defined by the relationship
+    
+    \begin{center}
+        \includegraphics{tikz/table_natural_integers}
+    \end{center}
+
+where each successive even natural number maps to the next larger positive integer and each successive odd natural number maps to the next negative integer. This function can also be represented by the graph
+
+    \begin{center}
+        \includegraphics{tikz/graph_natural_integers}
+    \end{center}
+ and it can be represented algebraically as $$f(n) = \begin{cases}
+-\frac{n+1}{2}  & \mbox{if } n \mbox{ is odd}\\
+\frac{n}{2}  & \mbox{if } n \mbox{ is even}
+ \end{cases} \quad \mbox{or} \quad f(n)=(-1)^n\frac{2n+1-(-1)^n}{4}.$$
+
+
+
+\begin{Exercise}
+    \Question Let $A=\{a,b,c\}$ and let $B=\{1,2\}$. List all of the possible functions from $A$ to $B$.
+    
+    \Question Define $\mathrm{sum}:\mathbb{N}\times \mathbb{N} \rightarrow \mathbb{N}$ by $ (m,n) \mapsto m+n$. Show that $\mathrm{sum}$ is a function.
+    
+    \Question Describe how the content of this section relates to the statement, ``You can't take the square root of a negative number.''
+    
+    \Question Which of the following are functions? For those that are not functions, explain why not. For those that are functions, find the range of the function.
+        \subQuestion $f:\mathbb{R} \rightarrow \mathbb{R}$, with $f(x)=\frac{1}{x}$.
+        \subQuestion $\{(x,y)\in \mathbb{R}^2\vert  x^2+y^2=1\}$
+        \subQuestion $g:\mathbb{R}^+ \rightarrow \mathbb{R}$, with $g(x)=\sqrt{x}$.
+        \subQuestion $f:\mathbb{N} \rightarrow \mathbb{N}$, with $h(x)=x^2$.
+    
+    \Question Let $f:A\rightarrow B$ be a function. Define a relation on $A$ by $$a_1 \sim_f a_2 \Leftrightarrow f(a_1)=f(a_2)$$ for all $a_1,a_2\in A$.
+        \subQuestion Show that $\sim_f$ is an equivalence relation.
+        \subQuestion If $f:\mathbb{R} \rightarrow \mathbb{R}$ is defined by $f(x)=\sin(2\pi x)$, find the equivalence class of $0$ under this equivalence relation.
+
+\end{Exercise}
+
+
+
+
+\newpage
+\section{Injections, Surjections, and Bijections}
+\label{Section_Bijection}
+
+In this section we will define and explore several different properties that some functions have that provide useful information about the function. 
+
+\begin{definition}
+        A function $f:A\rightarrow B$ is called an injection, or one-to-one, if no two elements of the domain map to the same element of the co-domain. Or equivalently, for elements $a_1,a_2 \in A$, $$\left(f(a_1)=f(a_2)\right) \Rightarrow \left(a_1=a_2\right).$$  \index{Function!Injection (one-to-one)}
+\end{definition}
+
+The primary benefit of a function being an injection is that for each element, $b$, in the range of the function there is a unique element, $a$, in the domain of the function such that $f(a)=b$. This provides the foundation for `undoing' functions that we will explore further in the next section. 
+
+The simplest example of a function that is not one-to-one is given by a function from $A=\{a,b\}$ to $B=\{c\}$ represented by 
+    \begin{center}
+        \includegraphics{tikz/example_noninjection}
+    \end{center}
+since $f(a)=f(b)$, but $a\neq b$.    
+
+We can also see that the function $f(x)=|x|$ is not one-to-one because $f(-x)=f(x)=|x|$ for all $x\in \mathbb{R}$.
+
+The function 
+$$f(x)=\begin{cases} x & \mbox{if } x\neq 0 \\
+1 & \mbox{if } x=0
+\end{cases}$$
+is not one-to-one since $f(1)=f(0)$. If we sketch the graph of this function, we can see that this 
+
+    \begin{center}
+        \includegraphics{tikz/example2_noninjection}
+    \end{center}
+is true because if one draws a horizontal line at $y=1$, it intersects the function at two places. This intersection at multiple places by a horizontal line is called the \textbf{horizontal line test}.
+
+Sometimes a function cannot be graphed easily and we would like to prove that it is one-to-one. There is a fairly standard process for doing so using the one-to-one definition. In this process, we assume that $a$ and $b$ are in the domain of a function $f:A\rightarrow B$ such that $f(a)=f(b)$. Then using some logical arguments we prove that this implies that $a=b$. To prove that a function is not one-to-one we only need to find one case of two distinct elements in the domain mapping to the same element in the co-domain.
+
+
+\begin{definition}
+A function $f:A\rightarrow B$ is called a \textbf{surjection}, or onto, if every element of the co-domain is in the range of $f$. Or equivalently, if for all $b\in B$ there exists a $a\in A$ such that $f(a)=b$.
+\index{Function!Surjection (onto)}        
+\end{definition}
+
+A primary consideration in a function being a surjection is to know that every element in the co-domain is `hit' by an element in the domain. It is often more important to fully describe the range of the function, rather than if a function is a surjection, since any function is a surjection when the co-domain of the function is replaced by the range of the function in the definition of the function. For instance, $f:\mathbb{R}\rightarrow \mathbb{R}$ defined by $f(x)=x^2$ is not a surjection, but $f:\mathbb{R}\rightarrow \mathbb{R}^+$ defined by $f(x)=x^2$ is a surjection.
+
+The basic example of a function that is not a surjection is given by a function $f:A=\{a\} \rightarrow B=\{b,c\}$ represented by 
+    \begin{center}
+        \includegraphics{tikz/example_nonsurjection}
+    \end{center}
+
+%Give several examples of functions that are surjections and several that are not. 
+%Walk through the standard process of proving that a function is a surjection.
+
+
+
+
+
+
+\begin{definition}
+    A function $f:A\rightarrow B$ is called a bijection, or one-to-one and onto, if it is both an injection and a surjection. \index{Function!Bijection}
+\end{definition}
+
+
+One of the results of a function being a bijection is that there is a perfect correspondence between elements of the domain and elements of the co-domain that we will explore further in the next two sections.
+
+
+
+\begin{Exercise}
+    \Question For each of the following functions, determine if it is an injection, a surjection, and/or a bijection. 
+        \subQuestion $f:\mathbb{R}\rightarrow \mathbb{R}$ defined by $f(x)=x$.
+        \subQuestion $f:\mathbb{R} \rightarrow \mathbb{R}^+$ defined by $f(x)=|x|$.
+        \subQuestion $f:\mathbb{R}^+ \rightarrow \mathbb{R}$ defined by $f(x)=x^2$.
+        \subQuestion $f:\mathbb{R}\setminus \{0\} \rightarrow \mathbb{R}\setminus \{0\}$ defined by $f(x)=\frac{1}{x}$.
+        \subQuestion $f:\mathbb{N} \rightarrow \mathbb{R}$ defined by $$f(x)=\frac{x}{1+x^2}.$$
+\end{Exercise}
+
+
+
+
+\newpage
+\section{Composition of Functions} \index{Function!Composition} \label{sec:Compositions}
+
+We often want to look at how two functions work together.
+
+\begin{example}
+    Suppose that oil is spilled from a ruptured tanker and spreads is a circular pattern. If the oil is leaving the tanker at a rate of 70 gallons an hour, then what is the radius of the $1$ cm thick oil slick after $t$ hours?
+    
+    In order to find a solution to this word problem (note that this is not really a modelling problem) we will create some functions that we will compose together. We will start by letting $g$ be the rate in gallons per hour that oil is leaking out of the boat.
+    
+    Let $T(g)=\frac{1}{264.172} g$ be the cubic meters equivalent to $g$ gallons.
+    
+    Let $r(V)= \sqrt{\frac{100V}{\pi}}$ be the radius (in meters) of an oil slick with volume $V$ (in cubic meters) that is $1$ cm thick.
+    
+    Then $r(V(T(g)\cdot t))$ gives us the radius of the oil slick after $t$ hours.
+\end{example}
+
+Using this motivation, we will give a mathematical definition for the composition of functions.
+
+\begin{definition}\index{Function!Composition}
+    Let $f:A\rightarrow B$ and $g: B \rightarrow C$ be functions. Then we define the function $(g\circ f):A\rightarrow C$ by $$(g\circ f) (a)= g(f(a)), \quad \mbox{ for all } a \in A.$$
+\end{definition}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\textwidth]{tikz/function_composition_sets}
+    \caption{Sketch of $f:A\rightarrow B$, $g:B\rightarrow C$, and $g\circ f: A \rightarrow C$}
+    \label{fig:function_composition}
+\end{figure}
+
+The sketch in Figure \ref{fig:function_composition} describes how the domains, ranges, and codomains of the three functions interact when describing function composition.
+
+
+\subsection{Inverse Functions}
+
+In addition to composing functions together, it is often useful to define a function that undoes another function. In the previous example, it is easiest to find the radius of the oil slick based on volume by first finding the volume as a function of the radius. In the case of a cylindrical cylinder, $V(r)= \pi r^2 h$ and so $r(V)=\sqrt{\frac{V}{\pi h}}$ is a function that undoes the volume. A more precise definition of these inverse functions is given below.
+
+\begin{definition}
+    Let $f:A \rightarrow B$ and $g:B \rightarrow A$ be functions. If 
+    $$ (g\circ f) (a)=a \mbox{ for all } a\in A \mbox{, and}$$
+    $$(f\circ g) (b)=b \mbox{ for all }b\in B,$$ then we say that $f$ is invertible 
+    \index{Function!Inverse}
+\end{definition}
+
+Note that in our example we define $f:\mathbb{R}^+\rightarrow \mathbb{R}^+$ by $f(r)= \pi r^2 h$ to be the volume function and $g:\mathbb{R}^+\rightarrow \mathbb{R}^+$ by $g(V)=\sqrt{\frac{V}{\pi h}}$ to be the radius function. Then for all $r\in \mathbb{R}^+$, 
+$$ (g\circ f) (r) = g (f(r)) = g\left(\pi r^2 h\right) = \sqrt{ \frac{\left(\pi r^2 h\right)}{\pi h}} = \sqrt{r^2}=r$$ and
+$$ (f \circ g) (V) = f(g(V)) = f\left(\sqrt{\frac{V}{\pi h}}\right) = \pi \left(\sqrt{\frac{V}{\pi h}}\right)^2 h = V.$$
+
+If instead, we define $f:\mathbb{R}\rightarrow \mathbb{R}^+$ by $f(x)=x^2$ and $g:\mathbb{R^+} \rightarrow \mathbb{R}$ by $g(y)=\sqrt{y}$, then $$(f\circ g) (y) =\left(\sqrt{y}\right)^2 =y, \: \forall y\in \mathbb{R}^+$$ but $$(g\circ f)(x) = \sqrt{x^2} = |x|$$ and so $f$ and $g$ are not invertible.
+
+The next theorem is useful to verify that if a function is invertible, then the inverse function is unique.
+
+\begin{theorem}
+        If $f:A \rightarrow B$ is invertible, the function $g:B\rightarrow A$ satisfying the properties
+        $$ (g\circ f) (a)=a \mbox{ for all } a\in A \mbox{, and}$$
+    $$(f\circ g) (b)=b \mbox{ for all }b\in B$$
+        is unique and so we say that that $g$ is the inverse function of $f$. We then denote this inverse function as $f^{-1}$.
+        
+        Furthermore, we have that $f^{-1}$ is invertible. \label{theorem_invertible}
+\end{theorem}
+
+\begin{proof}
+    In order to prove the uniqueness of $g$ we will give a proof by contradiction. So we assume that $f:A\rightarrow B$ is an invertible function and that there are function $g:B\rightarrow A$ and $\tilde{g}:B\rightarrow A$ such that 
+    $$ (g\circ f) (a)=a \mbox{ and } (\tilde{g}\circ f)(a) = a \mbox{ for all } a \in A \mbox{, and}$$
+    $$(f\circ g)(b)=b \mbox{ and } (f\circ \tilde{g})(b)=b \mbox{ for all } b\in B.$$
+    
+    Then for each $b\in B$ we have that 
+
+    \begin{align*}
+        \tilde{g}(b) &= \tilde{g}\left( (f\circ g)(b)\right) \: (\mbox{since } (f\circ g)(b)=b \mbox{, for all } b \in B) \\
+        &= \tilde{g}\left(f(g(b))\right) = (\tilde{g} \circ f)(g(b)) \mbox{ (by the definition of function composition)} \\
+        &= g(b) \: (\mbox{since } (\tilde{g}\circ f)(a)=a \mbox{, for all } a\in A).
+    \end{align*}
+
+    Since $g$ and $\tilde{g}$ have the same output for each input, they are the same function. Therefore, the inverse function of $f$ is unique.
+\end{proof}
+
+Now that we have the uniqueness of inverse functions when a function is invertible, it would be helpful to further understand the properties of a function that make it invertible without having to find the inverse. This will save time looking for an inverse that doesn't exist and help us to adjust a function to make it invertible by restricting the domain and/or co-domain of the function.
+
+
+\begin{theorem}
+        The function $f:A \rightarrow B$ is invertible if and only if it is a bijection. \label{theorem_bijection}
+\end{theorem}
+
+\begin{proof}
+    Since this statement is an `if and only if' statement we must prove both implications.
+    
+    \textbf{Invertible implies bijection.} Assume that the function $f:A \rightarrow B$ is invertible. Then there exists a unique $f^{-1}:B\rightarrow A$ such that $(f\circ f^{-1})(b)=b$ for all $b\in B$ and $(f^{-1}\circ f)(a)=a$ for all $a\in A$. 
+    
+    To prove that $f$ is an injection (one-to-one), we assume that there are elements $a_1, a_2\in A$ such that $f(a_1)=f(a_2)$ as an element of $B$. Since $f^{-1}$ is a function from $B$ to $A$, we know that $f^{-1}(f(a_1))=f^{-1}(f(a_2))$. From the definitions of function composition and inverse function, this implies that $$a_1 = (f^{-1}\circ f)(a_1)= f^{-1}(f(a_1))=f^{-1}(f(a_2))= (f^{-1}\circ f)(a_2)=a_2$$ and so $a_1=a_2$ proving that $f$ is an injection.
+    
+    To prove that $f$ is a surjection (onto) we choose a generic element of the co-domain of $f$ and prove that it is in the range of $f$. Let $b\in B$ be that generic element of the co-domain of $f$. Since $$b = (f\circ f^{-1})(b) = f(f^{-1}(b))$$ we see that $b$ is the image of $f$ acting on $f^{-1}(b) \in A$ and so is in the range of $f$. Therefore, $f$ is a bijection.
+    
+    \textbf{Bijection implies invertible.} On the other hand, if we assume that $f:A\rightarrow B$ is a bijection, we can define a function $g: B \rightarrow A$ in the following way. 
+    
+    Since $f$ is a surjection, for each $b\in B$ there is at least one element $a\in A$ such that $b=f(a)$. Since $f$ is an injection, this element is unique and we will call the element $a_b$. Thus we can define $g:B\rightarrow A$ by $g(b)=a_b$ and this relation satisfies the definition of a function. 
+    
+    We can also see from this definition of $g$ that $(f\circ g)(b)=f(g(b))=f(a_b)=b$ for all $b\in B$. 
+    
+    Furthermore, for all $a\in A$, $(g \circ f)(a) = g(f(a))=a$, thereby making $f$ invertible. 
+\end{proof}
+
+
+This means that this concept of bijections is one that is very important in terms of the composition of functions. In particular it is important to understand what properties the composition of two bijections would have. This leads to the following theorem.
+
+\begin{theorem}
+        Let $f:A \rightarrow B$ and $g:B \rightarrow C$ be two bijections. Then the function $g\circ f : A \rightarrow C$ is also a bijection. \label{theorem_bijection2}
+\end{theorem}
+
+
+\begin{proof}
+    Let $f:A \rightarrow B$ and $g:B\rightarrow C$ be bijections. 
+    
+    We will first prove that $(g\circ f):A\rightarrow C$ is an injection.
+    
+    Let $a_1$ and $a_2$ be elements of $A$ such that $$(g\circ f)(a_1)=(g\circ f)(a_2).$$
+    From the definition of the composition of functions this implies that $$g\left( f(a_1)\right) = g\left(f(a_2)\right).$$
+    Since $g$ is an injection on $B$, we know that $f(a_1)=f(a_2)$. Since $f$ is an injection, this implies that $a_1=a_2$ and thus proving that $g\circ f$ is an injection.
+    
+    We will now prove that $(g\circ f):A\rightarrow C$ is a surjection.
+    
+    Let $c$ be a generic element of $C$. Since $g:B\rightarrow C$ is onto, there exists an element $b_c\in B$ such that $g(b_c)=c$. Since $f:A \rightarrow B$ is onto, there exists an element $a_{b_c}\in A$ such that $f\left(a_{b_c}\right) = b_c$. We then have that $$c=g(b_c)=g\left( f\left(a_{b_c}\right) \right) = (g \circ f) \left( a_{b_c}\right)$$ and so $g\circ f$ is a surjection.
+    
+    Therefore, $(g\circ f):A \rightarrow C$ is a bijection.
+    \end{proof}
+    
+    Note that in the proof that $(g\circ f):A \rightarrow C$ is an injection that the only assumptions used are that $f$ and $g$ are both injections and the only sets referenced are the domains of the functions. This signifies that the property of a function being one-to-one is a property that focuses on the domain of the function and is independent of the co-domain defined for the function. Hence, one could enlarge the co-domain of an injective function to a new function that is also an injection.
+    
+    Similarly, the surjective property of the composition of the functions depends only on the surjective properties of the individual functions. However, unlike the injective property, the surjective property involves a heavy reliance upon both the domain and co-domain of the function. While one could expand the domain to a larger set while maintaining the surjective nature of the function, one may not be able to reduce the size of the domain. 
+    
+    Since the composition of bijections is also a bijection, we know from Theorem \ref{theorem_bijection} that the composition of a bijection is also invertible. Combining the results of these theorems we have the following theorem.
+    
+    \begin{theorem}
+        Let $f:A\rightarrow B$ and $g:B\rightarrow C$ be bijections. Then we have the following:
+        \begin{itemize}
+            \item $f$ is invertible with inverse $f^{-1}:B\rightarrow A$
+            \item $g$ is invertible with inverse $g^{-1}:C\rightarrow B$
+            \item $g\circ f$ is invertible with inverse $(g\circ f)^{-1}:C\rightarrow A$
+            \item $(g\circ f)^{-1} = f^{-1} \circ g^{-1}$
+        \end{itemize}
+    \end{theorem}
+    
+    We can illustrate this theorem with Figure \ref{fig:composition_bijections}.
+    
+    \begin{figure}[ht]
+        \centering
+        \includegraphics{tikz/function_composition_inverses}
+        \caption{Composition of bijections}
+        \label{fig:composition_bijections}
+    \end{figure}
+    
+    
+
+\begin{Exercise}
+%    \Question Include proofs of the different combinations of injection and surjections with compositions of functions.
+
+% Include some compositions of algebraically described functions. Some whose composition is commutative and some not. Focus on student misconceptions.
+
+    \Question Let $f:A \rightarrow B$ and $g:B \rightarrow C$ be functions. Prove that if $g\circ f : A \rightarrow C$ is a bijection that $f$ must be an injection and $g$ must be a surjection.
+    
+    \Question What adjustments can be made to the domain and/or the co-domain of $f:\mathbb{R}\rightarrow \mathbb{R}$ defined by $f(x)=x^2$ in order to make it an invertible function.
+    
+    \Question Let $f:A\rightarrow B$ and $g:B\rightarrow C$ be functions.
+        \begin{enumerate}[a)]
+            \item What properties hold for $g\circ f$ if both $f$ and $g$ are injections?
+            \item What properties hold for $g\circ f$ if both $f$ and $g$ are surjectionns?
+            \item What properties hold for $g\circ f$ if $f$ is an injection and $g$ is a surjection?
+            \item What properties hold for $g\circ f$ if $f$ is a surjection and $g$ in an injection?
+        \end{enumerate}
+
+\end{Exercise}
+
+
+
+
+
+## Counting and Cardinality {#sec:cardinality}
+
+
+
+The concept of cardinality is introduced in kindergarten where students are taught to have the abstract concept of a number associated to a certain number of objects such as in Figure \ref{fig:five} where we have five different representations of the same cardinality. We can give a more precise mathematical definition of cardinality using functions.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=.3\textwidth]{images/5}
+    \caption{Multiple representations of the number five}
+    \label{fig:five}
+\end{figure}
+
+\begin{standards}
+    \item[(K.CC.3)] Write numbers from $0$ to $20$. Represent a number of objects with a written numeral $0-20$ with ($0$ representing a count of no objects).
+        \item[(K.CC.4)] Understand the relationship between numbers and quantities; connect counting to cardinality.
+            \begin{enumerate}[(a)]
+                \item When counting objects, say the number names in the standard order, pairing each object with one and only one number name and each number name with one and only one object.
+                \item Understand that the last number name said tells the number of objects counted. The number of objects is the same regardless of their arrangement or the order in which they were counted.
+                \item Understand that each successive number name refers to a quantity that is one larger.
+            \end{enumerate}        
+\end{standards} 
+
+\begin{definition}
+    A set $A$ is said to have the same cardinality as the set $B$ if there exists a bijection, $f:A\rightarrow B$.
+\end{definition}
+
+This definition defines a relation on sets where $A$ is related to $B$ if $A$ has the same cardinality as $B$.
+
+Since the identity function, $\iota :A \rightarrow A$ defined by $\iota(a)=a$ for all $a\in A$, is a bijection we see that $A$ has the same cardinality as itself and so the relation is reflexive. 
+
+In the previous section we proved that a bijection has a functional inverse, so if $A$ has the same cardinality as $B$, there is a bijection $f:A\rightarrow B$ and a second bijection, $f^{-1}:B\rightarrow A$ showing that $B$ has the same cardinality as $A$. So the cardinality relation is symmetric.
+
+If we assume that $A$ has the same cardinality as $B$ and $B$ has the same cardinality as $C$, there are bijections $f:A\rightarrow B$ and $g:B\rightarrow C$. In the previous section we proved that the compositions of bijections are bijections, so we know that $(g\circ f):A\rightarrow C$ is a bijection and so $A$ has the same cardinality as $C$, making the cardinality relation transitive.
+
+These three properties of reflexive, symmetric, and transitive make the cardinality relation an equivalence relation and we define the abstract concept of a number with the equivalence class associated to that number, as defined by our set theory definition of the natural numbers.
+
+While this might seem like a very abstract way to define counting of finite sets, it is an explanation of what is happening in the mind of a child when he is learning to count. Teachers understanding this level of abstraction can feel more empathy for the struggles of students as they learn concepts as simple as counting.
+
+Since cardinality is an equivalence relation, for sets with a finite number of elements we can define a function $$\#: \mbox{\{sets with a finite number of elements\}}\rightarrow \mathbb{N}$$ by $\#(A)$ is the cardinality of $A$. For sets with an infinite number of elements, we will label $\#(A)$ as the equivalence class of $A$ using the cardinality relation.
+
+The pigeonhole principle states that if you are putting items into containers and there are more items than containers that at least one of the containers has more than one item. Some of the earliest references to this principle is in the 1620's where multiple editions of the same book from the Jesuit university at Pont-\'{a}-Mousson referenced that there must be two men on Earth with the same number of hairs on their heads \citep{Leurechon}.  The naming of the principle after pigeonholes was based on the reference to items being placed into boxes.
+
+\begin{figure}[ht]
+    \centering
+        \includegraphics[width=.9\textwidth]{images/Pigeon-hole_messagebox_4}
+        \caption{Illustration of pigeonholes}
+    \label{fig:pigeon2}
+\end{figure}
+
+In the language of functions, if we have two sets, $A$ and $B$, with $\#(A)>\#(B)$, then there cannot exist an injection $f:A\rightarrow B$. In the same vein, we can say that if $\#(A) < \#(B)$, then there cannot exist a surjection $f:A\rightarrow B$. With this principle we have the following theorem.
+
+\begin{theorem}
+    Let $f:A\rightarrow B$ be a function.
+    \begin{itemize}
+        \item If $f$ is an injection (one-to-one), then $\#(A)\leq \#(B)$.
+        \item If $f$ is a surjection (onto), then $\#(A)\geq \#(B)$.
+        \item If $f$ is a bijection, then $\#(A) = \#(B)$.
+    \end{itemize}
+\end{theorem}
+
+This means that if we want to prove that two sets, $A$ and $B$, have the same cardinality, we can find a bijection between them. We could also find two different functions, $f:A\rightarrow B$ and $g:A\rightarrow B$, such that one is an injection and the other is a surjection. To prove that two sets do not have the same cardinality is usually done using a proof by contradiction to show that no bijection could exist.
+
+We explore this further using subsets of the natural numbers and an idea introduced by David Hilbert in a series of lectures for the general public in 1924 \citep{Hilbert}. In this example we imagine a hotel with an infinite number of rooms with numbers on the doors, $1, 2, 3, 4, \ldots$, and that every room is full. When someone comes up to the registration desk, the person at the desk says that all the rooms are currently full, but we can make room for one more. The person checking in asks, ``How can there be room for one more if all of the rooms are full?'' The clerk says, ``It's easy. We will ask each person to just gather all of their belongings and they can move to the room with the next higher number.'' (See Figure \ref{fig:hilbert1})
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics{tikz/Hilbert_Hotel}
+    \caption{Hilbert's Hotel with one extra room.}
+    \label{fig:hilbert1}
+\end{figure}
+
+This idea is described with function notation by the function $f:\mathbb{N}^+\rightarrow \mathbb{N}^+$ such that $f(n)=n+1$ as being an injective function that is not surjective. However, the function $g: \{1,2,3,4, \ldots\} \rightarrow \{2, 3,4,5, \ldots\} $ defined by $g(n)=n+1$ is a bijection and so the two sets have the same cardinality.
+
+One can go a little farther in this direction by having everyone move to the room with a number that is twice their current room number. In function notation this describes a function $f: \{1, 2, 3, 4, 5, \ldots\} \rightarrow \{2, 4, 6, 8, 10, 12, \ldots\}$ such that $f(n)=2n$, which is a bijection. So even though ``half'' of the numbers in the first set are removed, the two sets have the same cardinality.
+
+This leads to the conjecture that all sets that are not of finite cardinality are the same cardinality. We will see that is not the case. We will start by dividing cardinality of infinite sets into two categories. If the set has the same cardinality as the natural numbers we will call the set \textbf{countable},\index{Cardinality!Countable} since the process of counting is a function that maps the natural numbers onto the set. If an infinite set is not countable, we will call it uncountable.\index{Cardinality!Uncountable}
+
+If a set $A$ is countable, then we will say that $\#(A)=\aleph_0$ (called aleph-naught).
+
+The function $f:\mathbb{N}\rightarrow 2\mathbb{N}$ such that $f(n)=2n$ is a bijection and so both of these sets are countable.
+
+Using the function described by 
+    \begin{center}
+        \includegraphics{tikz/table_natural_integers2}
+    \end{center}
+we can see that the integers are also countable.
+
+
+
+We define $\mathbb{Q}^+$ to be the non-negative rational numbers and $f:\mathbb{N}\rightarrow \mathbb{Q}^+$ to be the function $f(n)=\frac{n}{1}$. We can see that $f$ is an injection and so $\#(\mathbb{N}) \leq \#(\mathbb{Q}^+)$. However, if we write all of the non-negative rational expressions into a grid pattern as in Figure \ref{fig:rational_countable} we can see that we would write every possible non-negative rational expression of integers.
+
+\vspace{.2in}
+\begin{figure}[ht]
+    \centering
+    \begin{tabular}{ccccccccc}
+    $\frac{0}{1} (0) $  & $\frac{0}{2} (1)$ & $\frac{0}{3} (3)$ & $\frac{0}{4} (6)$ & $\frac{0}{5} (10)$ & $\frac{0}{6} (15) $ & $\frac{0}{7} (21) $ & $\frac{0}{8} (28)$ & $\cdots$ \\ [1ex] 
+    $\frac{1}{1} (2)$ & $\frac{1}{2} (4)$ & $\frac{1}{3} (7)$ & $\frac{1}{4} (11)$ & $\frac{1}{5} (16)$ & $\frac{1}{6} (22)$ & $\frac{1}{7} (29)$ & $\frac{1}{8} (37)$ & $\cdots$\\ [1ex] 
+    $\frac{2}{1} (5)$ & $\frac{2}{2} (8)$ & $\frac{2}{3} (12)$ & $\frac{2}{4} (17)$ & $\frac{2}{5} (23)$ & $\frac{2}{6} (30)$ & $\frac{2}{7} (38)$ & $\frac{2}{8} (47)$ & $\cdots$\\ [1ex] 
+    $\frac{3}{1} (9)$ & $\frac{3}{2} (13)$ & $\frac{3}{3} (18)$ & $\frac{3}{4} (24)$ & $\frac{3}{5} (31)$ & $\frac{3}{6} (39)$ & $\frac{3}{7} (48)$ & $\frac{3}{8} (58)$ & $\cdots$\\ [1ex] 
+    $\frac{4}{1} (14)$ & $\frac{4}{2} (19)$ & $\frac{4}{3} (25)$ & $\frac{4}{4} (32)$ & $\frac{4}{5} (40)$ & $\frac{4}{6} (49)$ & $\frac{4}{7} (59)$ & $\frac{4}{8} (70)$ & $\cdots$\\ [1ex] 
+    $\frac{5}{1} (20)$ & $\frac{5}{2} (26)$ & $\frac{5}{3} (33)$ & $\frac{5}{4} (41)$ & $\frac{5}{5} (50)$ & $\frac{5}{6} (60)$ & $\frac{5}{7} (71)$ & $\frac{5}{8} (83)$ & $\cdots$\\ [1ex] 
+    $\frac{6}{1} (27)$ & $\frac{6}{2} (34)$ & $\frac{6}{3} (42)$ & $\frac{6}{4} (51)$ & $\frac{6}{5} (61)$ & $\frac{6}{6} (72)$ & $\frac{6}{7} (84)$ & $\frac{6}{8} (97)$ & $\cdots$\\ [1ex] 
+    $\vdots$      &  $\vdots$     &   $\vdots$    &   $\vdots$    &   $\vdots$    &   $\vdots$    &   $\vdots$    &   $\vdots$    & $\ddots$ \\
+    \end{tabular}
+\caption{Countability argument of non-negative rational numbers}
+\label{fig:rational_countable}
+\end{figure}
+
+
+
+We can now define a function $g$ from the natural numbers onto this set of rational expressions by mapping $0$ to the expression in the first row and first column, $1$ to the expression in the first row and second column, $2$ to the expression in the second row and first column, $3$ to the expression in the first row and third column, $4$ to the expression in the second row and second column, $5$ to the expression in the third row and first column, and so on as written in the parentheses. 
+
+We can see then that $g$ is a surjection and so $\#(\mathbb{N}) \geq \#(\mathbb{Q}^+)$. So $\mathbb{Q}^+$ must be countable. 
+
+We can then create a very similar map from the negative integers onto the negative rational expressions and combine these two functions to create a surjection from $\mathbb{Z}$ onto $\mathbb{Q}$ and so the entire set of rational numbers is countable.
+
+One might think that since the rational numbers are countable that all infinite sets are the same size. \cite{Cantor} prove this not to be true.
+
+\begin{theorem}
+    The open interval $(0,1)$ in the real numbers is not countable.
+\end{theorem}
+
+\begin{proof}
+    We will follow the general flow of a proof by Georg Cantor (\citeyear{Cantor}). If we assume that the interval $(0,1)$ is countable, then there is a bijection $f:\mathbb{N}\rightarrow (0,1)$. For each natural number, $n$, we will write $f(n)$ in a decimal representation as
+    $$f(n) = 0.a_{1,n} a_{2,n} a_{3,n} \ldots = \sum_{i=1}^\infty a_{i,n} \cdot 10^{-i},$$ where each of the $a_{i,n}\in \{0,1,2,3,4,5,6,7,8,9\}$, and in order to avoid two different decimal expansions representing the same real number we will assume that the $a_{i,n}$ are not eventually all $9$.
+    
+    For each $j\in \{1,2,3,4,\ldots\}$, let $b_j$ be chosen from $\{1,2,3,4,5,6,7,8\}$ such that $b_j\neq a_{j,j}$. Then $b=\sum_{i=1}^\infty a_{i,n} \cdot 10^{-i}$ is a real number in $(0,1)$ such that $b\neq f(n)$ for any natural number $n$. This means that $f$ was not a surjection and so no such bijection exits.
+\end{proof}
+
+Now that we know that there are sets that are not countable, let's explore some other uncountable sets.
+
+\begin{wrapfigure}{o}{.3\textwidth}
+    \vspace{-.3in}
+    \begin{center}
+        \includegraphics{tikz/example_uncountable_bijection}
+    \end{center}
+    \vspace{-1in}
+\end{wrapfigure}
+
+Let $f:(0,1)\rightarrow \mathbb{R}$ be defined by 
+$$f(x)=\begin{cases}
+    \frac{2x-1}{1-x}, & \mbox{if } \frac{1}{2} \leq x <1 \\
+    \frac{2x-1}{x}, & \mbox{if } 0<x \leq \frac{1}{2}
+    \end{cases}.$$ 
+
+If we choose a generic real number and call it $b$, then if $b>0$, we have that 
+$$f\left( \frac{1+b}{2+b} \right) = \frac{2\left(\frac{1+b}{2+b}\right) -1}{1-\left(\frac{1+b}{2+b}\right)} = \frac{(2+2b)-(2+b)}{(2+b)-(1+b)} = b,$$ and if $b<0$, 
+$$f\left( \frac{1}{2-b}\right) = \frac{2\left(\frac{1}{2-b}\right) -1}{\left(\frac{1}{2-b}\right)} = \frac{2-(2-b)}{1} = b.$$ Since $f\left(\frac{1}{2}\right)=0$, we have that $f$ is onto and so $\# ((0,1)) \geq \# (\mathbb{R})$. Since $(0,1)\subseteq \mathbb{R}$, we have the $\#((0,1)) \leq \mathbb{R}$. With both inequalities being true, we have that the two sets have the same cardinality.
+
+In fact, any subset of the real numbers is either finite, countable, or the same cardinality as $\mathbb{R}$. Cantor called the cardinality of $\mathbb{R}$ the cardinality of the continuum and also proved that it is the same cardinality as the power set of the natural numbers ($\#(\mathbb{R}) = \#(\cal{P}(\mathbb{N}))$.
+
+
+\begin{Exercise}
+
+    
+    \Question Prove that the following pairs of sets have the same cardinality.
+        \subQuestion $3\mathbb{Z} = \{n\in \mathbb{Z}\vert  n=3k \mbox{ for some } k\in \mathbb{Z}\}$ and $5\mathbb{Z} = \{n\in \mathbb{Z}\vert  n=5k \mbox{ for some } k\in \mathbb{Z}\}$
+        
+        \subQuestion $[a,b]$ and $[c,d]$, where $a$, $b$, $c$, and $d$ are real numbers such that $a<b$ and $c<d$.
+        
+        \subQuestion $A$ and $A\cup B$, where $A$ and $B$ are countable sets.
+    
+    \Question Prove that if $A$ is a set of finite cardinality, the cardinality of the power set of $A$ is $2^{\#(A)}$.
+    
+    \Question Look up a proof that the algebraic numbers are countable, and compare that to the proof that the rational numbers are countable.
+    
+    \Question Define two sets (not necessarily with finite cardinality) to be equivalent if they have the same cardinality.
+        For a set $A$, let $\cal{P}(A)$ be the set of all subsets of $A$.  Prove that $A$ is not equivalent to $P(A)$.  [Hint:  Suppose $f:A\rightarrow P(A)$ and define $$C=\{ x\vert  x\in A \; \mbox{and} \; x\not \in f(x) \}.$$ Show $C\not \in \mbox{im}(f)$.]
+
+    
+\end{Exercise}
+
+
+--->
+
+</div>
+<!-- </div> -->
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ch-function.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ch-group-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
