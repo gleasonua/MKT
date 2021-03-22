@@ -166,7 +166,7 @@ complex-conjugation-and-modulus
 eulers-equation
 exercises-15
 ch:function
-sec:cardinality
+definitions-of-functions-secfunction-def
 ch:group-1
 ch:rings
 ch:real-valued-functions
