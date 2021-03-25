@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Set Theory | Mathematical Knowledge for Secondary Teachers</title>
+  <title>5.3 Composition of Functions | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Set Theory | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="5.3 Composition of Functions | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Set Theory | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="5.3 Composition of Functions | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mathematics-content-standards-in-the-u-s-.html"/>
-<link rel="next" href="sets-and-subsets.html"/>
+<link rel="prev" href="sec-Bijection.html"/>
+<link rel="next" href="sec-cardinality.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -218,25 +218,140 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch:sets" class="section level1">
-<h1><span class="header-section-number">2</span> Set Theory</h1>
-<p>In the mid-1800s the field of mathematics went through a major shift that ended up changing the very definition of mathematics. In 1847, George Boole wrote in the introduction to <em>The Mathematical Analysis of Logic</em> that up to that point, “the abstractions of the modern Analysis, not less than the ostensive diagrams of the ancient Geometry, have encouraged the notion, that Mathematics are essentially, as well as actually, the Science of Magnitude” <span class="citation">(Boole, <a href="#ref-Boole" role="doc-biblioref">1847</a>)</span>. Instead, Boole proposed a new definition, suggesting</p>
-<blockquote>
-<p>We might justly assign it as the definitive character of a true Calculus, that it is a method resting upon the employment of Symbols, whose laws of combination are known and general, and whose results admit of a consistent interpretation… It is upon the foundation of this general principle, that I purpose to establish the Calculus of Logic, and that I claim for it a place among the acknowledged forms of Mathematical Analysis, regardless that in its object and in its instruments it must at present stand alone.</p>
-</blockquote>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
-<img src="images/Portrait_of_George_Boole.jpg" alt="George Boole" width="35%" />
+<div id="sec:Compositions" class="section level2">
+<h2><span class="header-section-number">5.3</span> Composition of Functions</h2>
+<p>We often want to look at how two functions work together.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-138" class="example"><strong>Example 5.1  </strong></span>Suppose that oil is spilled from a ruptured tanker and spreads is a circular pattern. If the oil is leaving the tanker at a rate of 70 gallons an hour, then what is the radius of the <span class="math inline">\(1\)</span> cm thick oil slick after <span class="math inline">\(t\)</span> hours?</p>
+<p>In order to find a solution to this word problem (note that this is not really a modelling problem) we will create some functions that we will compose together. We will start by letting <span class="math inline">\(g\)</span> be the rate in gallons per hour that oil is leaking out of the boat.</p>
+<p>Let <span class="math inline">\(T(g)=\frac{1}{264.172} g\)</span> be the cubic meters equivalent to <span class="math inline">\(g\)</span> gallons.</p>
+<p>Let <span class="math inline">\(r(V)= \sqrt{\frac{100V}{\pi}}\)</span> be the radius (in meters) of an oil slick with volume <span class="math inline">\(V\)</span> (in cubic meters) that is <span class="math inline">\(1\)</span> cm thick.</p>
+Then <span class="math inline">\(r(V(T(g)\cdot t))\)</span> gives us the radius of the oil slick after <span class="math inline">\(t\)</span> hours.
+</div>
+
+<p>Using this motivation, we will give a mathematical definition for the composition of functions.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-139" class="definition"><strong>Definition 5.5  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g: B \rightarrow C\)</span> be functions. Then we define the function <span class="math inline">\((g\circ f):A\rightarrow C\)</span> by <span class="math display">\[(g\circ f) (a)= g(f(a)), \quad \mbox{ for all } a \in A.\]</span>
+</div>
+
+<div class="figure" style="text-align: center"><span id="fig:function-composition"></span>
+<img src="tikz/function-composition-sets.png" alt="Sketch of $f:A \rightarrow B$, $g:B \rightarrow C$, and $g \circ f: A \rightarrow C$" width="100%" />
 <p class="caption">
-Figure 2.1: George Boole
+Figure 5.3: Sketch of <span class="math inline">\(f:A \rightarrow B\)</span>, <span class="math inline">\(g:B \rightarrow C\)</span>, and <span class="math inline">\(g \circ f: A \rightarrow C\)</span>
 </p>
 </div>
-<p>At the time that Boole wrote the above passage, mathematics as a field shifted from the study of quantities to the study of abstract structures based on logic and set theory. This change in the definition of mathematics freed up those who studied it to move beyond structures tied to physical interpretations and applications and move to a more abstract field. The abstractification of mathematics was a powerful moment, resulting in the development of fields such as quantum mechanics, relativity, cryptography, statistics.</p>
-<p>In this chapter we will go through some of the basics of set theory needed to understand some of the later material and to develop a common vocabulary and set of notations. We do not offer a deep treatment of set theory as there are many textbooks, specifically in the area of Discrete Math, with a more detailed coverage of it.</p>
+<p>The sketch in Figure <a href="sec-Compositions.html#fig:function-composition">5.3</a> describes how the domains, ranges, and codomains of the three functions interact when describing function composition.</p>
+<div id="inverse-functions" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Inverse Functions</h3>
+<p>In addition to composing functions together, it is often useful to define a function that undoes another function. In the previous example, it is easiest to find the radius of the oil slick based on volume by first finding the volume as a function of the radius. In the case of a cylindrical cylinder, <span class="math inline">\(V(r)= \pi r^2 h\)</span> and so <span class="math inline">\(r(V)=\sqrt{\frac{V}{\pi h}}\)</span> is a function that undoes the volume. A more precise definition of these inverse functions is given below.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-140" class="definition"><strong>Definition 5.6  </strong></span>Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B \rightarrow A\)</span> be functions. If
+<span class="math display">\[(g\circ f) (a)=a \mbox{ for all } a\in A \mbox{, and}\]</span>
+<span class="math display">\[(f\circ g) (b)=b \mbox{ for all }b\in B,\]</span> then we say that <span class="math inline">\(f\)</span> is <strong>invertible</strong>.
 </div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-Boole">
-<p>Boole, G. (1847). <em>The mathematical analysis of logic</em>. Macmillan, Barclay, &amp; Macmillan.</p>
+
+<p>Note that in our example we define <span class="math inline">\(f:\mathbb{R}^+\rightarrow \mathbb{R}^+\)</span> by <span class="math inline">\(f(r)= \pi r^2 h\)</span> to be the volume function and <span class="math inline">\(g:\mathbb{R}^+\rightarrow \mathbb{R}^+\)</span> by <span class="math inline">\(g(V)=\sqrt{\frac{V}{\pi h}}\)</span> to be the radius function. Then for all <span class="math inline">\(r\in \mathbb{R}^+\)</span>,
+<span class="math display">\[(g\circ f) (r) = g (f(r)) = g\left(\pi r^2 h\right) = \sqrt{ \frac{\left(\pi r^2 h\right)}{\pi h}} = \sqrt{r^2}=r\]</span> and
+<span class="math display">\[(f \circ g) (V) = f(g(V)) = f\left(\sqrt{\frac{V}{\pi h}}\right) = \pi \left(\sqrt{\frac{V}{\pi h}}\right)^2 h = V.\]</span></p>
+<p>If instead, we define <span class="math inline">\(f:\mathbb{R}\rightarrow \mathbb{R}^+\)</span> by <span class="math inline">\(f(x)=x^2\)</span> and <span class="math inline">\(g:\mathbb{R^+} \rightarrow \mathbb{R}\)</span> by <span class="math inline">\(g(y)=\sqrt{y}\)</span>, then <span class="math display">\[(f\circ g) (y) =\left(\sqrt{y}\right)^2 =y, \: \forall y\in \mathbb{R}^+\]</span> but <span class="math display">\[(g\circ f)(x) = \sqrt{x^2} = |x|\]</span> and so <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are not invertible.</p>
+<p>The next theorem is useful to verify that if a function is invertible, then the inverse function is unique.</p>
+
+<div class="theorem">
+<p><span id="thm:invertible" class="theorem"><strong>Theorem 5.1  </strong></span>If <span class="math inline">\(f:A \rightarrow B\)</span> is invertible, the function <span class="math inline">\(g:B\rightarrow A\)</span> satisfying the properties
+<span class="math display">\[(g\circ f) (a)=a \mbox{ for all } a\in A \mbox{, and}\]</span>
+<span class="math display">\[(f\circ g) (b)=b \mbox{ for all }b\in B\]</span>
+is unique and so we say that that <span class="math inline">\(g\)</span> is the inverse function of <span class="math inline">\(f\)</span>. We then denote this inverse function as <span class="math inline">\(f^{-1}\)</span>.</p>
+Furthermore, we have that <span class="math inline">\(f^{-1}\)</span> is invertible.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> In order to prove the uniqueness of <span class="math inline">\(g\)</span> we will give a proof by contradiction. So we assume that <span class="math inline">\(f:A\rightarrow B\)</span> is an invertible function and that there are function <span class="math inline">\(g:B\rightarrow A\)</span> and <span class="math inline">\(\tilde{g}:B\rightarrow A\)</span> such that
+<span class="math display">\[(g\circ f) (a)=a \mbox{ and } (\tilde{g}\circ f)(a) = a \mbox{ for all } a \in A \mbox{, and}\]</span>
+<span class="math display">\[(f\circ g)(b)=b \mbox{ and } (f\circ \tilde{g})(b)=b \mbox{ for all } b\in B.\]</span></p>
+<p>Then for each <span class="math inline">\(b\in B\)</span> we have that
+<span class="math display">\[\begin{align*}
+\tilde{g}(b) &amp;= \tilde{g}\left( (f\circ g)(b)\right) \: (\mbox{since } (f\circ g)(b)=b \mbox{, for all } b \in B) \\
+&amp;= \tilde{g}\left(f(g(b))\right) = (\tilde{g} \circ f)(g(b)) \mbox{ (by the definition of function composition)} \\
+&amp;= g(b) \: (\mbox{since } (\tilde{g}\circ f)(a)=a \mbox{, for all } a\in A).
+\end{align*}\]</span></p>
+Since <span class="math inline">\(g\)</span> and <span class="math inline">\(\tilde{g}\)</span> have the same output for each input, they are the same function. Therefore, the inverse function of <span class="math inline">\(f\)</span> is unique.
+</div>
+
+<p>Now that we have the uniqueness of inverse functions when a function is invertible, it would be helpful to further understand the properties of a function that make it invertible without having to find the inverse. This will save time looking for an inverse that doesn’t exist and help us to adjust a function to make it invertible by restricting the domain and/or co-domain of the function.</p>
+
+<div class="theorem">
+<span id="thm:bijection" class="theorem"><strong>Theorem 5.2  </strong></span>The function <span class="math inline">\(f:A \rightarrow B\)</span> is invertible if and only if it is a bijection.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Since this statement is an `if and only if’ statement we must prove both implications.</p>
+<p><strong>Invertible implies bijection.</strong> Assume that the function <span class="math inline">\(f:A \rightarrow B\)</span> is invertible. Then there exists a unique <span class="math inline">\(f^{-1}:B\rightarrow A\)</span> such that <span class="math inline">\((f\circ f^{-1})(b)=b\)</span> for all <span class="math inline">\(b\in B\)</span> and <span class="math inline">\((f^{-1}\circ f)(a)=a\)</span> for all <span class="math inline">\(a\in A\)</span>.</p>
+<p>To prove that <span class="math inline">\(f\)</span> is an injection (one-to-one), we assume that there are elements <span class="math inline">\(a_1, a_2\in A\)</span> such that <span class="math inline">\(f(a_1)=f(a_2)\)</span> as an element of <span class="math inline">\(B\)</span>. Since <span class="math inline">\(f^{-1}\)</span> is a function from <span class="math inline">\(B\)</span> to <span class="math inline">\(A\)</span>, we know that <span class="math inline">\(f^{-1}(f(a_1))=f^{-1}(f(a_2))\)</span>. From the definitions of function composition and inverse function, this implies that <span class="math display">\[a_1 = (f^{-1}\circ f)(a_1)= f^{-1}(f(a_1))=f^{-1}(f(a_2))= (f^{-1}\circ f)(a_2)=a_2\]</span> and so <span class="math inline">\(a_1=a_2\)</span> proving that <span class="math inline">\(f\)</span> is an injection.</p>
+<p>To prove that <span class="math inline">\(f\)</span> is a surjection (onto) we choose a generic element of the co-domain of <span class="math inline">\(f\)</span> and prove that it is in the range of <span class="math inline">\(f\)</span>. Let <span class="math inline">\(b\in B\)</span> be that generic element of the co-domain of <span class="math inline">\(f\)</span>. Since <span class="math display">\[b = (f\circ f^{-1})(b) = f(f^{-1}(b))\]</span> we see that <span class="math inline">\(b\)</span> is the image of <span class="math inline">\(f\)</span> acting on <span class="math inline">\(f^{-1}(b) \in A\)</span> and so is in the range of <span class="math inline">\(f\)</span>. Therefore, <span class="math inline">\(f\)</span> is a bijection.</p>
+<p><strong>Bijection implies invertible.</strong> On the other hand, if we assume that <span class="math inline">\(f:A\rightarrow B\)</span> is a bijection, we can define a function <span class="math inline">\(g: B \rightarrow A\)</span> in the following way.</p>
+<p>Since <span class="math inline">\(f\)</span> is a surjection, for each <span class="math inline">\(b\in B\)</span> there is at least one element <span class="math inline">\(a\in A\)</span> such that <span class="math inline">\(b=f(a)\)</span>. Since <span class="math inline">\(f\)</span> is an injection, this element is unique and we will call the element <span class="math inline">\(a_b\)</span>. Thus we can define <span class="math inline">\(g:B\rightarrow A\)</span> by <span class="math inline">\(g(b)=a_b\)</span> and this relation satisfies the definition of a function.</p>
+<p>We can also see from this definition of <span class="math inline">\(g\)</span> that <span class="math inline">\((f\circ g)(b)=f(g(b))=f(a_b)=b\)</span> for all <span class="math inline">\(b\in B\)</span>.</p>
+Furthermore, for all <span class="math inline">\(a\in A\)</span>, <span class="math inline">\((g \circ f)(a) = g(f(a))=a\)</span>, thereby making <span class="math inline">\(f\)</span> invertible.
+</div>
+
+<p>This means that this concept of bijections is one that is very important in terms of the composition of functions. In particular it is important to understand what properties the composition of two bijections would have. This leads to the following theorem.</p>
+
+<div class="theorem">
+<span id="thm:bijection2" class="theorem"><strong>Theorem 5.3  </strong></span>Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B \rightarrow C\)</span> be two bijections. Then the function <span class="math inline">\(g\circ f : A \rightarrow C\)</span> is also a bijection.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B\rightarrow C\)</span> be bijections.</p>
+<p>We will first prove that <span class="math inline">\((g\circ f):A\rightarrow C\)</span> is an injection.</p>
+<p>Let <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> be elements of <span class="math inline">\(A\)</span> such that <span class="math display">\[(g\circ f)(a_1)=(g\circ f)(a_2).\]</span>
+From the definition of the composition of functions this implies that <span class="math display">\[g\left( f(a_1)\right) = g\left(f(a_2)\right).\]</span>
+Since <span class="math inline">\(g\)</span> is an injection on <span class="math inline">\(B\)</span>, we know that <span class="math inline">\(f(a_1)=f(a_2)\)</span>. Since <span class="math inline">\(f\)</span> is an injection, this implies that <span class="math inline">\(a_1=a_2\)</span> and thus proving that <span class="math inline">\(g\circ f\)</span> is an injection.</p>
+<p>We will now prove that <span class="math inline">\((g\circ f):A\rightarrow C\)</span> is a surjection.</p>
+<p>Let <span class="math inline">\(c\)</span> be a generic element of <span class="math inline">\(C\)</span>. Since <span class="math inline">\(g:B\rightarrow C\)</span> is onto, there exists an element <span class="math inline">\(b_c\in B\)</span> such that <span class="math inline">\(g(b_c)=c\)</span>. Since <span class="math inline">\(f:A \rightarrow B\)</span> is onto, there exists an element <span class="math inline">\(a_{b_c}\in A\)</span> such that <span class="math inline">\(f\left(a_{b_c}\right) = b_c\)</span>. We then have that <span class="math display">\[c=g(b_c)=g\left( f\left(a_{b_c}\right) \right) = (g \circ f) \left( a_{b_c}\right)\]</span> and so <span class="math inline">\(g\circ f\)</span> is a surjection.</p>
+Therefore, <span class="math inline">\((g\circ f):A \rightarrow C\)</span> is a bijection.
+</div>
+
+<p>Note that in the proof that <span class="math inline">\((g\circ f):A \rightarrow C\)</span> is an injection that the only assumptions used are that <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are both injections and the only sets referenced are the domains of the functions. This signifies that the property of a function being one-to-one is a property that focuses on the domain of the function and is independent of the co-domain defined for the function. Hence, one could enlarge the co-domain of an injective function to a new function that is also an injection.</p>
+<p>Similarly, the surjective property of the composition of the functions depends only on the surjective properties of the individual functions. However, unlike the injective property, the surjective property involves a heavy reliance upon both the domain and co-domain of the function. While one could expand the domain to a larger set while maintaining the surjective nature of the function, one may not be able to reduce the size of the domain.</p>
+<p>Since the composition of bijections is also a bijection, we know from Theorem  that the composition of a bijection is also invertible. Combining the results of these theorems we have the following theorem.</p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-144" class="theorem"><strong>Theorem 5.4  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g:B\rightarrow C\)</span> be bijections. Then we have the following:</p>
+<ul>
+<li><p><span class="math inline">\(f\)</span> is invertible with inverse <span class="math inline">\(f^{-1}:B\rightarrow A\)</span></p></li>
+<li><p><span class="math inline">\(g\)</span> is invertible with inverse <span class="math inline">\(g^{-1}:C\rightarrow B\)</span></p></li>
+<li><p><span class="math inline">\(g\circ f\)</span> is invertible with inverse <span class="math inline">\((g\circ f)^{-1}:C\rightarrow A\)</span></p></li>
+<li><p><span class="math inline">\((g\circ f)^{-1} = f^{-1} \circ g^{-1}\)</span></p></li>
+</ul>
+</div>
+
+<p>We can illustrate this theorem with Figure <a href="sec-Compositions.html#fig:composition-bijections">5.4</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:composition-bijections"></span>
+<img src="tikz/function-composition-inverses.png" alt="Composition of Bijections" width="100%" />
+<p class="caption">
+Figure 5.4: Composition of Bijections
+</p>
+</div>
+</div>
+<div id="exercises-18" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B \rightarrow C\)</span> be functions. Prove that if <span class="math inline">\(g\circ f : A \rightarrow C\)</span> is a bijection that <span class="math inline">\(f\)</span> must be an injection and <span class="math inline">\(g\)</span> must be a surjection.</p></li>
+<li><p>What adjustments can be made to the domain and/or the co-domain of <span class="math inline">\(f:\mathbb{R}\rightarrow \mathbb{R}\)</span> defined by <span class="math inline">\(f(x)=x^2\)</span> in order to make it an invertible function.</p></li>
+<li><p>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g:B\rightarrow C\)</span> be functions.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>What properties hold for <span class="math inline">\(g\circ f\)</span> if both <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are injections?</p></li>
+<li><p>What properties hold for <span class="math inline">\(g\circ f\)</span> if both <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are surjectionns?</p></li>
+<li><p>What properties hold for <span class="math inline">\(g\circ f\)</span> if <span class="math inline">\(f\)</span> is an injection and <span class="math inline">\(g\)</span> is a surjection?</p></li>
+<li><p>What properties hold for <span class="math inline">\(g\circ f\)</span> if <span class="math inline">\(f\)</span> is a surjection and <span class="math inline">\(g\)</span> in an injection?</p></li>
+</ol></li>
+</ol>
 </div>
 </div>
             </section>
@@ -244,8 +359,8 @@ Figure 2.1: George Boole
           </div>
         </div>
       </div>
-<a href="mathematics-content-standards-in-the-u-s-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sets-and-subsets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sec-Bijection.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-cardinality.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

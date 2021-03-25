@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Set Theory | Mathematical Knowledge for Secondary Teachers</title>
+  <title>15 Samples, Simulations, and Probability | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2 Set Theory | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="15 Samples, Simulations, and Probability | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Set Theory | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="15 Samples, Simulations, and Probability | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="mathematics-content-standards-in-the-u-s-.html"/>
-<link rel="next" href="sets-and-subsets.html"/>
+<link rel="prev" href="ch-data-explore.html"/>
+<link rel="next" href="ch-parameters.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -175,16 +175,7 @@
 <li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
 <li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
-<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a><ul>
-<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
-</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a></li>
 </ul></li>
 <li class="part"><span><b>II ALGEBRA</b></span></li>
 <li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a></li>
@@ -218,34 +209,17 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch:sets" class="section level1">
-<h1><span class="header-section-number">2</span> Set Theory</h1>
-<p>In the mid-1800s the field of mathematics went through a major shift that ended up changing the very definition of mathematics. In 1847, George Boole wrote in the introduction to <em>The Mathematical Analysis of Logic</em> that up to that point, “the abstractions of the modern Analysis, not less than the ostensive diagrams of the ancient Geometry, have encouraged the notion, that Mathematics are essentially, as well as actually, the Science of Magnitude” <span class="citation">(Boole, <a href="#ref-Boole" role="doc-biblioref">1847</a>)</span>. Instead, Boole proposed a new definition, suggesting</p>
-<blockquote>
-<p>We might justly assign it as the definitive character of a true Calculus, that it is a method resting upon the employment of Symbols, whose laws of combination are known and general, and whose results admit of a consistent interpretation… It is upon the foundation of this general principle, that I purpose to establish the Calculus of Logic, and that I claim for it a place among the acknowledged forms of Mathematical Analysis, regardless that in its object and in its instruments it must at present stand alone.</p>
-</blockquote>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
-<img src="images/Portrait_of_George_Boole.jpg" alt="George Boole" width="35%" />
-<p class="caption">
-Figure 2.1: George Boole
-</p>
-</div>
-<p>At the time that Boole wrote the above passage, mathematics as a field shifted from the study of quantities to the study of abstract structures based on logic and set theory. This change in the definition of mathematics freed up those who studied it to move beyond structures tied to physical interpretations and applications and move to a more abstract field. The abstractification of mathematics was a powerful moment, resulting in the development of fields such as quantum mechanics, relativity, cryptography, statistics.</p>
-<p>In this chapter we will go through some of the basics of set theory needed to understand some of the later material and to develop a common vocabulary and set of notations. We do not offer a deep treatment of set theory as there are many textbooks, specifically in the area of Discrete Math, with a more detailed coverage of it.</p>
-</div>
-<h3>References</h3>
-<div id="refs" class="references">
-<div id="ref-Boole">
-<p>Boole, G. (1847). <em>The mathematical analysis of logic</em>. Macmillan, Barclay, &amp; Macmillan.</p>
-</div>
+<div id="ch:simulations" class="section level1">
+<h1><span class="header-section-number">15</span> Samples, Simulations, and Probability</h1>
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="mathematics-content-standards-in-the-u-s-.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sets-and-subsets.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-data-explore.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ch-parameters.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
