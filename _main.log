@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.3)  17 MAR 2021 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.3.3)  25 MAR 2021 18:10
 entering extended mode
 **./_main.tex
 (_main.tex
@@ -553,22 +553,1955 @@ LaTeX Info: Redefining \ref on input line 100.
 LaTeX Info: Redefining \pageref on input line 100.
 LaTeX Info: Redefining \nameref on input line 100.
 
-! I can't write on file `_main.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \edef 
-l.100 \begin{document}
-                      
-*** (job aborted, file error in nonstop mode)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-30.06749pt
+* \headheight=12.0pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- 
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+02.
+(C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+02.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+102.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+102.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 102.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 102.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 102.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 102
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Program Files\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 102
+.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Program Files\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
+
+
+{C:/Users/jglea/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
+
+] (_main.toc)
+\tf@toc=\write3
+\openout3 = `_main.toc'.
+
+ [3] [4
+
+]
+<images/Cover.jpg, id=27, 614.295pt x 794.97pt>
+File: images/Cover.jpg Graphic file (type jpg)
+<use images/Cover.jpg>
+Package pdftex.def Info: images/Cover.jpg  used on input line 111.
+(pdftex.def)             Requested size: 234.87802pt x 303.9598pt.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+13.
+
+(C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [5 <./images/Cover.jpg>]
+[6
+
+]
+
+Package natbib Warning: Citation `Usiskin2003' on page 7 undefined on input lin
+e 121.
+
+[7] [8
+
+] [9] [10
+
+] [11] [12]
+Chapter 1.
+<images/Parthenon_Nashville_bw.jpg, id=83, 715.52924pt x 477.06636pt>
+File: images/Parthenon_Nashville_bw.jpg Graphic file (type jpg)
+<use images/Parthenon_Nashville_bw.jpg>
+Package pdftex.def Info: images/Parthenon_Nashville_bw.jpg  used on input line 
+161.
+(pdftex.def)             Requested size: 328.83083pt x 219.24208pt.
+[13
+
+ <./images/Parthenon_Nashville_bw.jpg>]
+
+Package natbib Warning: Citation `shulman1986' on page 14 undefined on input li
+ne 172.
+
+<tikz/ballegg1.png, id=91, 341.8371pt x 130.3269pt>
+File: tikz/ballegg1.png Graphic file (type png)
+<use tikz/ballegg1.png>
+Package pdftex.def Info: tikz/ballegg1.png  used on input line 176.
+(pdftex.def)             Requested size: 341.87274pt x 130.34048pt.
+
+Package natbib Warning: Citation `Ball2008' on page 14 undefined on input line 
+186.
+
+
+Package natbib Warning: Citation `Ball2008' on page 14 undefined on input line 
+193.
+
+[14 <./tikz/ballegg1.png (PNG copy)>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 196.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 196.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 196.
+ [15]
+
+Package natbib Warning: Citation `UNESCO' on page 16 undefined on input line 24
+9.
+
+
+Package natbib Warning: Citation `PSSM' on page 16 undefined on input line 251.
+
+
+
+Package natbib Warning: Citation `CCSS' on page 16 undefined on input line 251.
+
+
+
+Package natbib Warning: Citation `Polya1945' on page 16 undefined on input line
+ 289.
+
+[16]
+<tikz/polya.png, id=138, 171.12933pt x 85.7604pt>
+File: tikz/polya.png Graphic file (type png)
+<use tikz/polya.png>
+Package pdftex.def Info: tikz/polya.png  used on input line 293.
+(pdftex.def)             Requested size: 171.13152pt x 85.76147pt.
+
+
+Package natbib Warning: Citation `GAIMME' on page 17 undefined on input line 31
+3.
+
+
+Underfull \vbox (badness 1577) has occurred while \output is active []
+
+ [17 <./tikz/polya.png (PNG copy)>]
+<tikz/GAIMME.png, id=147, 282.0939pt x 168.29877pt>
+File: tikz/GAIMME.png Graphic file (type png)
+<use tikz/GAIMME.png>
+Package pdftex.def Info: tikz/GAIMME.png  used on input line 319.
+(pdftex.def)             Requested size: 282.0932pt x 168.29834pt.
+ [18 <./tikz/GAIMME.png (PNG copy)>]
+
+Package natbib Warning: Citation `Communication' on page 19 undefined on input 
+line 341.
+
+<tikz/communication.png, id=155, 272.00621pt x 95.24583pt>
+File: tikz/communication.png Graphic file (type png)
+<use tikz/communication.png>
+Package pdftex.def Info: tikz/communication.png  used on input line 345.
+(pdftex.def)             Requested size: 272.01384pt x 95.24849pt.
+[19 <./tikz/communication.png (PNG copy)>]
+
+Package natbib Warning: Citation `definition' on page 20 undefined on input lin
+e 365.
+
+
+Package natbib Warning: Citation `CCSS' on page 20 undefined on input line 365.
+
+
+[20]
+
+Package natbib Warning: Citation `Klein2003' on page 21 undefined on input line
+ 425.
+
+
+Package natbib Warning: Citation `NCTM1980' on page 21 undefined on input line 
+425.
+
+
+Package natbib Warning: Citation `NCEE1983' on page 21 undefined on input line 
+425.
+
+[21]
+
+Package natbib Warning: Citation `NCTM1980' on page 22 undefined on input line 
+427.
+
+
+Package natbib Warning: Citation `NCEE1983' on page 22 undefined on input line 
+449.
+
+
+Package natbib Warning: Citation `NCTM1989' on page 22 undefined on input line 
+462.
+
+
+Package natbib Warning: Citation `NCTM1991' on page 22 undefined on input line 
+462.
+
+
+Package natbib Warning: Citation `NCTM1995' on page 22 undefined on input line 
+462.
+
+
+Package natbib Warning: Citation `PSSM' on page 22 undefined on input line 462.
+
+
+
+Package natbib Warning: Citation `Raimi1998' on page 22 undefined on input line
+ 462.
+
+
+Package natbib Warning: Citation `Reys2007' on page 22 undefined on input line 
+462.
+
+[22]
+
+Package natbib Warning: Citation `Reys2007' on page 23 undefined on input line 
+467.
+
+
+Package natbib Warning: Citation `CCSS' on page 23 undefined on input line 469.
+
+
+
+Package natbib Warning: Citation `CAEP' on page 23 undefined on input line 492.
+
+
+
+Package natbib Warning: Citation `MET1' on page 23 undefined on input line 494.
+
+
+
+Package natbib Warning: Citation `MET2' on page 23 undefined on input line 494.
+
+
+[23]
+
+LaTeX Warning: Reference `ch:group-1' on page 24 undefined on input line 506.
+
+
+LaTeX Warning: Reference `ch:rings' on page 24 undefined on input line 506.
+
+
+LaTeX Warning: Reference `ch:group-1' on page 24 undefined on input line 506.
+
+
+LaTeX Warning: Reference `ch:rings' on page 24 undefined on input line 506.
+
+
+LaTeX Warning: Reference `ch:function' on page 24 undefined on input line 512.
+
+
+LaTeX Warning: Reference `ch:group-1' on page 24 undefined on input line 512.
+
+
+LaTeX Warning: Reference `ch:rings' on page 24 undefined on input line 512.
+
+
+LaTeX Warning: Reference `ch:real-valued-functions' on page 24 undefined on inp
+ut line 512.
+
+
+LaTeX Warning: Reference `ch:real-valued-functions' on page 24 undefined on inp
+ut line 512.
+
+[24]
+
+Package natbib Warning: Citation `NCEE1983' on page 25 undefined on input line 
+540.
+
+[25] [26
+
+]
+Chapter 2.
+
+Package natbib Warning: Citation `Boole' on page 27 undefined on input line 561
+.
+
+<images/Portrait_of_George_Boole.jpg, id=244, 2257.6847pt x 3029.3175pt>
+File: images/Portrait_of_George_Boole.jpg Graphic file (type jpg)
+<use images/Portrait_of_George_Boole.jpg>
+Package pdftex.def Info: images/Portrait_of_George_Boole.jpg  used on input lin
+e 569.
+(pdftex.def)             Requested size: 164.39278pt x 220.57904pt.
+[27 <./images/Portrait_of_George_Boole.jpg>]
+
+Package natbib Warning: Citation `CCSS' on page 28 undefined on input line 586.
+
+
+
+Package natbib Warning: Citation `Cantor' on page 28 undefined on input line 60
+3.
+
+[28] [29]
+<tikz/VennEx2-1-6.png, id=271, 171.12933pt x 114.2167pt>
+File: tikz/VennEx2-1-6.png Graphic file (type png)
+<use tikz/VennEx2-1-6.png>
+Package pdftex.def Info: tikz/VennEx2-1-6.png  used on input line 701.
+(pdftex.def)             Requested size: 164.42067pt x 109.73914pt.
+ [30 <./tikz/VennEx2-1-6.png (PNG copy)>]
+<tikz/evenodd.png, id=285, 136.98177pt x 100.00362pt>
+File: tikz/evenodd.png Graphic file (type png)
+<use tikz/evenodd.png>
+Package pdftex.def Info: tikz/evenodd.png  used on input line 711.
+(pdftex.def)             Requested size: 136.98558pt x 100.00642pt.
+<tikz/evenfours.png, id=286, 142.67302pt x 100.00362pt>
+File: tikz/evenfours.png Graphic file (type png)
+<use tikz/evenfours.png>
+Package pdftex.def Info: tikz/evenfours.png  used on input line 711.
+(pdftex.def)             Requested size: 140.9267pt x 98.77957pt.
+<tikz/rectsqrhombus.png, id=287, 142.67302pt x 100.00362pt>
+File: tikz/rectsqrhombus.png Graphic file (type png)
+<use tikz/rectsqrhombus.png>
+Package pdftex.def Info: tikz/rectsqrhombus.png  used on input line 711.
+(pdftex.def)             Requested size: 140.9267pt x 98.77957pt.
+
+
+LaTeX Warning: Reference `sec:reals' on page 31 undefined on input line 729.
+
+
+LaTeX Warning: Reference `sec:complex' on page 31 undefined on input line 731.
+
+<tikz/vennNumberSystems.png, id=292, 256.49828pt x 171.12933pt>
+File: tikz/vennNumberSystems.png Graphic file (type png)
+<use tikz/vennNumberSystems.png>
+Package pdftex.def Info: tikz/vennNumberSystems.png  used on input line 739.
+(pdftex.def)             Requested size: 256.50154pt x 171.13152pt.
+[31 <./tikz/evenodd.png (PNG copy)> <./tikz/evenfours.png (PNG copy)> <./tikz/r
+ectsqrhombus.png (PNG copy)>] [32 <./tikz/vennNumberSystems.png (PNG copy)>]
+<tikz/Set_unions_intersections.png, id=342, 289.08pt x 122.88911pt>
+File: tikz/Set_unions_intersections.png Graphic file (type png)
+<use tikz/Set_unions_intersections.png>
+Package pdftex.def Info: tikz/Set_unions_intersections.png  used on input line 
+843.
+(pdftex.def)             Requested size: 289.09251pt x 122.89442pt.
+<tikz/number-line-unions.png, id=343, 433.62pt x 72.27pt>
+File: tikz/number-line-unions.png Graphic file (type png)
+<use tikz/number-line-unions.png>
+Package pdftex.def Info: tikz/number-line-unions.png  used on input line 870.
+(pdftex.def)             Requested size: 433.63878pt x 72.2731pt.
+
+[33 <./tikz/Set_unions_intersections.png (PNG copy)> <./tikz/number-line-unions
+.png (PNG copy)>]
+<tikz/set-distribution.png, id=364, 361.35pt x 216.81pt>
+File: tikz/set-distribution.png Graphic file (type png)
+<use tikz/set-distribution.png>
+Package pdftex.def Info: tikz/set-distribution.png  used on input line 941.
+(pdftex.def)             Requested size: 361.36566pt x 216.81938pt.
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+
+ []
+
+<tikz/set-difference.png, id=386, 325.215pt x 144.54pt>
+File: tikz/set-difference.png Graphic file (type png)
+<use tikz/set-difference.png>
+Package pdftex.def Info: tikz/set-difference.png  used on input line 974.
+(pdftex.def)             Requested size: 325.22908pt x 144.54623pt.
+[35 <./tikz/set-distribution.png (PNG copy)>]
+
+Package natbib Warning: Citation `Boole' on page 36 undefined on input line 100
+7.
+
+
+Package natbib Warning: Citation `DeMorgan' on page 36 undefined on input line 
+1007.
+
+
+Package natbib Warning: Citation `DeMorgan' on page 36 undefined on input line 
+1007.
+
+[36 <./tikz/set-difference.png (PNG copy)>]
+<tikz/demorgan.png, id=413, 303.534pt x 126.4725pt>
+File: tikz/demorgan.png Graphic file (type png)
+<use tikz/demorgan.png>
+Package pdftex.def Info: tikz/demorgan.png  used on input line 1044.
+(pdftex.def)             Requested size: 303.53787pt x 126.4741pt.
+ [37 <./tikz/demorgan.png (PNG copy)>] [38] [39]
+<tikz/Nested_s1.png, id=488, 243.24878pt x 24.27068pt>
+File: tikz/Nested_s1.png Graphic file (type png)
+<use tikz/Nested_s1.png>
+Package pdftex.def Info: tikz/Nested_s1.png  used on input line 1271.
+(pdftex.def)             Requested size: 164.42339pt x 16.40569pt.
+<tikz/Nested_s2.png, id=489, 243.24878pt x 26.55922pt>
+File: tikz/Nested_s2.png Graphic file (type png)
+<use tikz/Nested_s2.png>
+Package pdftex.def Info: tikz/Nested_s2.png  used on input line 1281.
+(pdftex.def)             Requested size: 164.42339pt x 17.9526pt.
+<tikz/Nested_s3.png, id=490, 243.24878pt x 26.55922pt>
+File: tikz/Nested_s3.png Graphic file (type png)
+<use tikz/Nested_s3.png>
+Package pdftex.def Info: tikz/Nested_s3.png  used on input line 1291.
+(pdftex.def)             Requested size: 164.42339pt x 17.9526pt.
+ [40 <./tikz/Nested_s1.png (PNG copy)>] [41 <./tikz/Nested_s2.png (PNG copy)> <
+./tikz/Nested_s3.png (PNG copy)>] [42
+
+]
+Chapter 3.
+<images/m-and-m-1308543_1920.jpg, id=529, 1927.2pt x 1280.785pt>
+File: images/m-and-m-1308543_1920.jpg Graphic file (type jpg)
+<use images/m-and-m-1308543_1920.jpg>
+Package pdftex.def Info: images/m-and-m-1308543_1920.jpg  used on input line 13
+59.
+(pdftex.def)             Requested size: 234.87105pt x 156.09137pt.
+
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+ [43 <./images/m-and-m-1308543_1920.jpg>]
+<tikz/Set_partition.png, id=540, 228.04196pt x 120.78123pt>
+File: tikz/Set_partition.png Graphic file (type png)
+<use tikz/Set_partition.png>
+Package pdftex.def Info: tikz/Set_partition.png  used on input line 1377.
+(pdftex.def)             Requested size: 228.05531pt x 120.7883pt.
+ [44 <./tikz/Set_partition.png (PNG copy)>]
+[45] [46] [47] [48]
+<tikz/sample_addition_problem.png, id=618, 125.59924pt x 45.95168pt>
+File: tikz/sample_addition_problem.png Graphic file (type png)
+<use tikz/sample_addition_problem.png>
+Package pdftex.def Info: tikz/sample_addition_problem.png  used on input line 1
+640.
+(pdftex.def)             Requested size: 125.60466pt x 45.95363pt.
+
+
+Package natbib Warning: Citation `Cognition' on page 49 undefined on input line
+ 1649.
+
+<images/balance-scales.png, id=619, 289.08pt x 216.81pt>
+File: images/balance-scales.png Graphic file (type png)
+<use images/balance-scales.png>
+Package pdftex.def Info: images/balance-scales.png  used on input line 1667.
+(pdftex.def)             Requested size: 187.89977pt x 140.92482pt.
+
+Package natbib Warning: Citation `Cognition' on page 49 undefined on input line
+ 1674.
+
+[49 <./tikz/sample_addition_problem.png (PNG copy)> <./images/balance-scales.pn
+g>] [50] [51] [52] [53] [54
+
+]
+Chapter 4.
+
+Package natbib Warning: Citation `Principia1' on page 55 undefined on input lin
+e 1838.
+
+
+Package natbib Warning: Citation `Principia2' on page 55 undefined on input lin
+e 1838.
+
+
+Package natbib Warning: Citation `Principia3' on page 55 undefined on input lin
+e 1838.
+
+
+LaTeX Warning: Reference `ch:function' on page 55 undefined on input line 1843.
+
+
+
+Package natbib Warning: Citation `vonNeumann23' on page 55 undefined on input l
+ine 1843.
+
+[55] [56] [57]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1967 \$a+b\$ is an integer & \$a \times
+                                          b\$ is an integer & Closure\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1967 ...integer & \$a \times b\$ is an integer &
+                                                   Closure\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1967 ...integer & \$a \times b\$ is an integer &
+                                                   Closure\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1967 ...integer & \$a \times b\$ is an integer &
+                                                   Closure\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1969 \$a+(b+c)  = (a+b)+c\$ & \$a \times
+                                           (b \times c) = (a \times b) \time...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1969 ...(b \times c) = (a \times b) \times c\$ &
+                                                   Associative Property\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1969 ...(b \times c) = (a \times b) \times c\$ &
+                                                   Associative Property\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1969 ...(b \times c) = (a \times b) \times c\$ &
+                                                   Associative Property\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1971 \$a+b=b+a\$ & \$a\times
+                               b = b\times a\$ & Commutative Property\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1971 \$a+b=b+a\$ & \$a\times b = b\times a\$ &
+                                                 Commutative Property\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1971 \$a+b=b+a\$ & \$a\times b = b\times a\$ &
+                                                 Commutative Property\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1971 \$a+b=b+a\$ & \$a\times b = b\times a\$ &
+                                                 Commutative Property\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1973 \$a+0=a\$ & \$a \times
+                              1 = a\$ & Additive and Multiplicative Identiti...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1973 \$a+0=a\$ & \$a \times 1 = a\$ &
+                                        Additive and Multiplicative Identiti...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1973 \$a+0=a\$ & \$a \times 1 = a\$ &
+                                        Additive and Multiplicative Identiti...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1973 \$a+0=a\$ & \$a \times 1 = a\$ &
+                                        Additive and Multiplicative Identiti...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1975 \$a \times
+                  (b+c) = (a\times b) + (a \times c)\$ & \$(a+b) \times c = ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1975 ...s (b+c) = (a\times b) + (a \times c)\$ &
+                                                   \$(a+b) \times c = (a\tim...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1975 ...s (b+c) = (a\times b) + (a \times c)\$ &
+                                                   \$(a+b) \times c = (a\tim...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1975 ...s (b+c) = (a\times b) + (a \times c)\$ &
+                                                   \$(a+b) \times c = (a\tim...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1975 ...mes b) + (a \times c)\$ & \$(a+b) \times
+                                                   c = (a\times c) + (b\time...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<template> \unskip \hfil }
+                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
+l.1975 ...\times c = (a\times c) + (b\times c)\$ &
+                                                   Distributive Property\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1975 ...\times c = (a\times c) + (b\times c)\$ &
+                                                   Distributive Property\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1975 ...\times c = (a\times c) + (b\times c)\$ &
+                                                   Distributive Property\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (143.47289pt too wide) in paragraph at lines 1963--1984
+ [][] 
+ []
+
+[58] [59] [60]
+
+LaTeX Warning: Reference `(' on page 61 undefined on input line 2105.
+
+[61]
+<tikz/hieroglyphs.png, id=769, 281.03996pt x 40.50131pt>
+File: tikz/hieroglyphs.png Graphic file (type png)
+<use tikz/hieroglyphs.png>
+Package pdftex.def Info: tikz/hieroglyphs.png  used on input line 2147.
+(pdftex.def)             Requested size: 281.04356pt x 40.50182pt.
+ [62 <./tikz/hieroglyphs.png>]
+
+LaTeX Warning: Reference `sec:cardinality' on page 63 undefined on input line 2
+198.
+
+<tikz/Set-representations.png, id=784, 57.3342pt x 57.3342pt>
+File: tikz/Set-representations.png Graphic file (type png)
+<use tikz/Set-representations.png>
+Package pdftex.def Info: tikz/Set-representations.png  used on input line 2202.
+
+(pdftex.def)             Requested size: 57.33578pt x 57.33578pt.
+<tikz/number-line-representation.png, id=785, 220.99564pt x 19.5129pt>
+File: tikz/number-line-representation.png Graphic file (type png)
+<use tikz/number-line-representation.png>
+Package pdftex.def Info: tikz/number-line-representation.png  used on input lin
+e 2218.
+(pdftex.def)             Requested size: 221.00519pt x 19.51372pt.
+<tikz/base10blocks.jpg, id=786, 216.81pt x 72.27pt>
+File: tikz/base10blocks.jpg Graphic file (type jpg)
+<use tikz/base10blocks.jpg>
+Package pdftex.def Info: tikz/base10blocks.jpg  used on input line 2232.
+(pdftex.def)             Requested size: 216.81938pt x 72.2731pt.
+<tikz/base10block-addition.png, id=787, 49.35439pt x 28.87788pt>
+File: tikz/base10block-addition.png Graphic file (type png)
+<use tikz/base10block-addition.png>
+Package pdftex.def Info: tikz/base10block-addition.png  used on input line 2242
+.
+(pdftex.def)             Requested size: 49.355pt x 28.87822pt.
+[63 <./tikz/Set-representations.png (PNG copy)> <./tikz/number-line-representat
+ion.png (PNG copy)>]
+<images/Cuisenaire-Rods-2.png, id=801, 486.01575pt x 419.76825pt>
+File: images/Cuisenaire-Rods-2.png Graphic file (type png)
+<use images/Cuisenaire-Rods-2.png>
+Package pdftex.def Info: images/Cuisenaire-Rods-2.png  used on input line 2256.
+
+(pdftex.def)             Requested size: 140.92612pt x 121.71686pt.
+<tikz/addition-model-set.png, id=802, 100.00362pt x 124.18394pt>
+File: tikz/addition-model-set.png Graphic file (type png)
+<use tikz/addition-model-set.png>
+Package pdftex.def Info: tikz/addition-model-set.png  used on input line 2270.
+(pdftex.def)             Requested size: 100.00642pt x 124.18741pt.
+<tikz/addition-model-numberline.png, id=803, 276.3424pt x 51.43214pt>
+File: tikz/addition-model-numberline.png Graphic file (type png)
+<use tikz/addition-model-numberline.png>
+Package pdftex.def Info: tikz/addition-model-numberline.png  used on input line
+ 2280.
+(pdftex.def)             Requested size: 276.35016pt x 51.43356pt.
+<tikz/addition-model-algorithm.png, id=804, 70.7945pt x 48.4209pt>
+File: tikz/addition-model-algorithm.png Graphic file (type png)
+<use tikz/addition-model-algorithm.png>
+Package pdftex.def Info: tikz/addition-model-algorithm.png  used on input line 
+2292.
+(pdftex.def)             Requested size: 70.79755pt x 48.42297pt.
+ [64 <./tikz/base10blocks.jpg> <./tikz/base10block-addition.png (PNG copy)> <./
+images/Cuisenaire-Rods-2.png>]
+<tikz/lattice-addition1.png, id=813, 92.80673pt x 72.5109pt>
+File: tikz/lattice-addition1.png Graphic file (type png)
+<use tikz/lattice-addition1.png>
+Package pdftex.def Info: tikz/lattice-addition1.png  used on input line 2329.
+(pdftex.def)             Requested size: 92.80931pt x 72.51291pt.
+<tikz/lattice-addition2.png, id=814, 92.80673pt x 72.5109pt>
+File: tikz/lattice-addition2.png Graphic file (type png)
+<use tikz/lattice-addition2.png>
+Package pdftex.def Info: tikz/lattice-addition2.png  used on input line 2343.
+(pdftex.def)             Requested size: 92.80931pt x 72.51291pt.
+<tikz/lattice-addition3.png, id=815, 92.80673pt x 72.87225pt>
+File: tikz/lattice-addition3.png Graphic file (type png)
+<use tikz/lattice-addition3.png>
+Package pdftex.def Info: tikz/lattice-addition3.png  used on input line 2357.
+(pdftex.def)             Requested size: 92.81215pt x 72.87651pt.
+<tikz/addition-model-algorithm-expanded.png, id=816, 38.12242pt x 72.81203pt>
+File: tikz/addition-model-algorithm-expanded.png Graphic file (type png)
+<use tikz/addition-model-algorithm-expanded.png>
+Package pdftex.def Info: tikz/addition-model-algorithm-expanded.png  used on in
+put line 2371.
+(pdftex.def)             Requested size: 38.1258pt x 72.8185pt.
+ [65 <./tikz/addition-model-set.png (PNG copy)> <./tikz/addition-model-numberli
+ne.png (PNG copy)> <./tikz/addition-model-algorithm.png>]
+Underfull \vbox (badness 3343) has occurred while \output is active []
+
+ [66 <./tikz/lattice-addition1.png (PNG copy)> <./tikz/lattice-addition2.png (P
+NG copy)> <./tikz/lattice-addition3.png (PNG copy)>]
+<tikz/subtraction-model-sets.png, id=834, 142.67302pt x 70.5837pt>
+File: tikz/subtraction-model-sets.png Graphic file (type png)
+<use tikz/subtraction-model-sets.png>
+Package pdftex.def Info: tikz/subtraction-model-sets.png  used on input line 23
+96.
+(pdftex.def)             Requested size: 140.9267pt x 69.71973pt.
+<tikz/subtraction-model-numberline.png, id=835, 276.3424pt x 57.45465pt>
+File: tikz/subtraction-model-numberline.png Graphic file (type png)
+<use tikz/subtraction-model-numberline.png>
+Package pdftex.def Info: tikz/subtraction-model-numberline.png  used on input l
+ine 2406.
+(pdftex.def)             Requested size: 276.34595pt x 57.45537pt.
+<tikz/subtraction-model-numberline2.png, id=836, 370.29341pt x 58.26768pt>
+File: tikz/subtraction-model-numberline2.png Graphic file (type png)
+<use tikz/subtraction-model-numberline2.png>
+Package pdftex.def Info: tikz/subtraction-model-numberline2.png  used on input 
+line 2416.
+(pdftex.def)             Requested size: 370.3038pt x 58.2693pt.
+<tikz/subtraction-model-missingaddend-set.png, id=837, 119.30573pt x 59.77332pt
+>
+File: tikz/subtraction-model-missingaddend-set.png Graphic file (type png)
+<use tikz/subtraction-model-missingaddend-set.png>
+Package pdftex.def Info: tikz/subtraction-model-missingaddend-set.png  used on 
+input line 2451.
+(pdftex.def)             Requested size: 119.31087pt x 59.77588pt.
+ [67 <./tikz/addition-model-algorithm-expanded.png> <./tikz/subtraction-model-s
+ets.png (PNG copy)> <./tikz/subtraction-model-numberline.png (PNG copy)>]
+<tikz/subtraction-model-missingaddend-numberline.png, id=849, 276.3424pt x 57.0
+3308pt>
+File: tikz/subtraction-model-missingaddend-numberline.png Graphic file (type pn
+g)
+<use tikz/subtraction-model-missingaddend-numberline.png>
+Package pdftex.def Info: tikz/subtraction-model-missingaddend-numberline.png  u
+sed on input line 2461.
+(pdftex.def)             Requested size: 276.34595pt x 57.0338pt.
+<tikz/subtraction-model-algorithm.png, id=850, 82.8696pt x 48.4209pt>
+File: tikz/subtraction-model-algorithm.png Graphic file (type png)
+<use tikz/subtraction-model-algorithm.png>
+Package pdftex.def Info: tikz/subtraction-model-algorithm.png  used on input li
+ne 2473.
+(pdftex.def)             Requested size: 82.87315pt x 48.42297pt.
+<tikz/subtraction-model-partial-differences.png, id=851, 331.11705pt x 72.81203
+pt>
+File: tikz/subtraction-model-partial-differences.png Graphic file (type png)
+<use tikz/subtraction-model-partial-differences.png>
+Package pdftex.def Info: tikz/subtraction-model-partial-differences.png  used o
+n input line 2503.
+(pdftex.def)             Requested size: 331.14655pt x 72.8185pt.
+ [68 <./tikz/subtraction-model-numberline2.png (PNG copy)> <./tikz/subtraction-
+model-missingaddend-set.png (PNG copy)> <./tikz/subtraction-model-missingaddend
+-numberline.png (PNG copy)>]
+<tikz/arrays.png, id=860, 123.28058pt x 51.64294pt>
+File: tikz/arrays.png Graphic file (type png)
+<use tikz/arrays.png>
+Package pdftex.def Info: tikz/arrays.png  used on input line 2531.
+(pdftex.def)             Requested size: 123.28403pt x 51.64438pt.
+ [69 <./tikz/subtraction-model-algorithm.png> <./tikz/subtraction-model-partial
+-differences.png> <./tikz/arrays.png (PNG copy)>]
+<tikz/area-model-3by5.png, id=873, 102.83418pt x 57.3342pt>
+File: tikz/area-model-3by5.png Graphic file (type png)
+<use tikz/area-model-3by5.png>
+Package pdftex.def Info: tikz/area-model-3by5.png  used on input line 2547.
+(pdftex.def)             Requested size: 102.83705pt x 57.33578pt.
+<tikz/area-model-13-16.png, id=874, 106.41757pt x 143.39572pt>
+File: tikz/area-model-13-16.png Graphic file (type png)
+<use tikz/area-model-13-16.png>
+Package pdftex.def Info: tikz/area-model-13-16.png  used on input line 2557.
+(pdftex.def)             Requested size: 106.42053pt x 143.39973pt.
+<tikz/lattice-multiplication-13-16-1.png, id=875, 77.17834pt x 77.90103pt>
+File: tikz/lattice-multiplication-13-16-1.png Graphic file (type png)
+<use tikz/lattice-multiplication-13-16-1.png>
+Package pdftex.def Info: tikz/lattice-multiplication-13-16-1.png  used on input
+ line 2571.
+(pdftex.def)             Requested size: 77.1805pt x 77.9032pt.
+<tikz/lattice-multiplication-13-16-2.png, id=876, 77.17834pt x 77.90103pt>
+File: tikz/lattice-multiplication-13-16-2.png Graphic file (type png)
+<use tikz/lattice-multiplication-13-16-2.png>
+Package pdftex.def Info: tikz/lattice-multiplication-13-16-2.png  used on input
+ line 2578.
+(pdftex.def)             Requested size: 77.1805pt x 77.9032pt.
+<tikz/lattice-multiplication-13-16-3.png, id=877, 79.9788pt x 81.4242pt>
+File: tikz/lattice-multiplication-13-16-3.png Graphic file (type png)
+<use tikz/lattice-multiplication-13-16-3.png>
+Package pdftex.def Info: tikz/lattice-multiplication-13-16-3.png  used on input
+ line 2585.
+(pdftex.def)             Requested size: 79.97981pt x 81.42523pt.
+<tikz/lattice-multiplication-large.png, id=878, 139.722pt x 81.4242pt>
+File: tikz/lattice-multiplication-large.png Graphic file (type png)
+<use tikz/lattice-multiplication-large.png>
+Package pdftex.def Info: tikz/lattice-multiplication-large.png  used on input l
+ine 2595.
+(pdftex.def)             Requested size: 139.72377pt x 81.42523pt.
+<tikz/partial-products.png, id=879, 107.56184pt x 132.82623pt>
+File: tikz/partial-products.png Graphic file (type png)
+<use tikz/partial-products.png>
+Package pdftex.def Info: tikz/partial-products.png  used on input line 2609.
+(pdftex.def)             Requested size: 107.57141pt x 132.83804pt.
+<tikz/multiplication-algorithm-standard.png, id=880, 99.79283pt x 60.82726pt>
+File: tikz/multiplication-algorithm-standard.png Graphic file (type png)
+<use tikz/multiplication-algorithm-standard.png>
+Package pdftex.def Info: tikz/multiplication-algorithm-standard.png  used on in
+put line 2623.
+(pdftex.def)             Requested size: 99.79713pt x 60.82988pt.
+ [70 <./tikz/area-model-3by5.png (PNG copy)> <./tikz/area-model-13-16.png (PNG 
+copy)> <./tikz/lattice-multiplication-13-16-1.png (PNG copy)>] [71 <./tikz/latt
+ice-multiplication-13-16-2.png (PNG copy)> <./tikz/lattice-multiplication-13-16
+-3.png (PNG copy)> <./tikz/lattice-multiplication-large.png (PNG copy)> <./tikz
+/partial-products.png> <./tikz/multiplication-algorithm-standard.png>]
+
+LaTeX Warning: Reference `sec:Integer-Ring' on page 72 undefined on input line 
+2634.
+
+<images/Long_division.jpg, id=895, 785.18344pt x 714.41907pt>
+File: images/Long_division.jpg Graphic file (type jpg)
+<use images/Long_division.jpg>
+Package pdftex.def Info: images/Long_division.jpg  used on input line 2662.
+(pdftex.def)             Requested size: 281.8631pt x 256.4603pt.
+<tikz/division-algorithm-standard.png, id=896, 117.5592pt x 132.0132pt>
+File: tikz/division-algorithm-standard.png Graphic file (type png)
+<use tikz/division-algorithm-standard.png>
+Package pdftex.def Info: tikz/division-algorithm-standard.png  used on input li
+ne 2672.
+(pdftex.def)             Requested size: 117.56966pt x 132.02495pt.
+[72] [73 <./images/Long_division.jpg> <./tikz/division-algorithm-standard.png>]
+[74] [75] [76] [77]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2925 \$\frac\{a
+                 \}\{b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ & \$\frac\{a\}\{...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
+                                                 
+l.2925 \$\frac\{a
+                 \}\{b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ & \$\frac\{a\}\{...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+<inserted text> }
+                 
+l.2925 ...b\}+\frac\{m\}\{n\} \in \mathbb\{Q\}\$ &
+                                                   \$\frac\{a\}\{b\}\cdot \f...
+(That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 13012 strings out of 479334
- 187808 string characters out of 2866961
- 531476 words of memory out of 3000000
- 30286 multiletter control sequences out of 15000+200000
- 406586 words of font info for 30 fonts, out of 3000000 for 9000
+ 14881 strings out of 479334
+ 221165 string characters out of 2866961
+ 559159 words of memory out of 3000000
+ 31097 multiletter control sequences out of 15000+200000
+ 488420 words of font info for 228 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,1n,88p,512b,272s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 85i,10n,88p,1387b,555s stack positions out of 5000i,500n,10000p,200000b,50000s
+
 !  ==> Fatal error occurred, no output PDF file produced!
