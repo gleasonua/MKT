@@ -1,0 +1,756 @@
+# (PART) ALGEBRA {-}
+
+# Groups, Rings, and Fields {#ch:group-1}
+
+
+Abstract (or modern) algebra studies basic mathematical structures that appear in many settings . In terms of groups, we study mathematical sets and a single operation (such as addition or multiplication). The study of how two operations interact is contained in studying rings and fields. In this chapter we intersperse the axioms and definitions of abstract algebra with the concrete examples that appear in the K-12 curriculum. The goal of the study of these basic groups, rings, and fields is to better understand the connections between different content in the K-12 curriculum with the goal of improving mathematics teaching by helping students learn new material by making connections with material they have previously learned.
+
+
+## Group Theory {#sec:groups}
+
+```{definition, name="Group"}
+A non-empty set $G$, together with a binary operation, $*$, is called a group if it satisfies the following conditions:
+
++ $a*b \in G, \: \forall a,b \in G$ (Closure)
+
++ $(a*b)*c = a * (b*c), \forall a,b,c \in G$ (Associative)
+
++ There exists an element $e \in G$ such that for all $a\in G$, $e*a=a*e=a$ (Identity)
+
++ For each $a\in G$, there exists an element $b\in G$ such that $a*b=b*a=e$ (Inverse)
+
+```
+
+
+This concept of a group is a generalization of most of the properties that we noticed in Chapter \@ref(ch:number) as we constructed the various number systems. 
+
+
+```{example, group-list}
+Some basic examples of groups that appear in the K-12 curriculum include:
+
+1. $(\mathbb{Z},+)$, the set of integers under addition
+
+1. $(2\mathbb{Z},+)$, the set of even integers under addition
+
+1. $(\mathbb{Q},+)$, the set of rational numbers under addition
+
+1. $(\mathbb{R},+)$, the set of real numbers under addition
+
+1. $(\mathbb{Q}\setminus\{0\} , \cdot)$, the set of non-zero rational numbers under multiplication
+
+1. $( \mathbb{R}^+, \cdot)$, the set of positive real numbers under multiplication
+
+1. $\left( \mathbb{R}[x], +\right)$, the set of polynomials with real coefficients under addition
+
+1. The set of one-to-one and onto functions, $f:A\rightarrow A$ for some set $A$, under function composition.
+
+1. $\left( M_{(m,n)}(\mathbb{R}), + \right)$, the set of $m \times n$  matrices under addition.
+
+1. $GL_n(\mathbb{R})$, the set of $n \times n$ invertible matrices under multiplication.	
+
+1. $SL(n,\mathbb{R})$, the set of $n \times n$ invertible matrices, with determinant of $1$, under multiplication.	
+
+```
+
+If we extend our examples to the calculus curriculum we can include the differentiable (or integrable) functions with the binary operation of addition. For the group of differentiable functions under addition, the identity is the function $f_0:\mathbb{R}\rightarrow \mathbb{R}$ defined by $f_0(x)=0$ for all $x$. If $g:\mathbb{R}\rightarrow \mathbb{R}$ is differentiable, then its inverse in this group would be defined by $h(x)=-g(x)$.
+
+The cardinality of each of the sets for the groups in Example \@ref(exm:group-list) is at least countable. We can also have groups with a finite number of elements as shown in the following example.
+
+```{example, z2}
+Let $\mathbb{Z}_2=\{0,1\}$ with addition defined by the following table (often referred to as a Cayley table)
+$$\begin{array}{c|cc}
++ & 0 & 1 \\ \hline
+0 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{array}$$
+
+Then the identity is $0$ and each element is its own inverse.
+```
+
+
+Note that the complete definition of a group involves both the set $G$ and the binary operation $*$ and so the group is officially labeled as $(G,*)$. However, the binary operation is often inferred from the set itself. So we often just refer to the group as $G$ with the operation implied. 
+
+When showing that a set and operation form a group, the most challenging property to show directly is often the associative property. Since almost all of the groups that we will encounter are derived from the elements and operations in the number systems constructed in Chapter \@ref(ch:number), we will gain the associative property from those number systems.
+
+### Abelian Groups
+
+In most of the above mentioned groups, the order of the operation does not matter. However, for groups such at $GL_n(\mathbb{R})$, the order of the elements with the operation does matter.
+
+```{definition, name="Abelian Groups"}
+If a group $(G,*)$ also satisfies the property $a*b=b*a, \: \forall a,b\in G$
+then $(G,*)$ is called **abelian**.
+```
+
+```{example, dihedral6}
+The non-abelian group whose set has the smallest cardinality is the dihedral group of order 6 defined by the Cayley table:
+$$\begin{array}{c|cccccc}
+* & e & a & b & c & d & f \\ \hline
+e & e & a & b & c & d & f \\
+a & a & e & d & f & b & c \\
+b & b & f & e & d & c & a \\
+c & c & d & f & e & a & b \\
+d & d & c & a & b & f & e \\
+f & f & b & c & a & e & d \\
+\end{array}$$
+
+We can verify that this group is not abelian since $a*b = d$ and $b*a=f$.
+```
+
+It will be important to notice whether or not a group is abelian, as abelian groups have a simpler structure than those for which the operation does not commute.
+
+### Uniqueness of Identities and Inverses
+
+The existence of identity and inverse elements does not guarantee uniqueness, a priori. However, the following two theorems to verify the uniqueness of the identity and inverse elements within a group.
+
+```{theorem, name="Uniqueness of the Identity"}
+For a group, $(G,*)$, the identity is unique.
+```
+
+```{proof}
+Assume that there are two distinct identity elements that we will call $e$ and $\tilde{e}$. Then the following is true:$$\tilde{e}= e*\tilde{e} = e$$ since both $e$ and $\tilde{e}$ are identities. Thus the identities are not distinct and so the identity is unique.
+```
+
+```{theorem, unique-inverse, name="Uniqueness of the Inverse"}
+For a group, $(G,*)$, for each $a\in G$, the inverse of $a$ is unique and so we call the inverse $a^{-1}$.
+```
+
+```{proof}
+Let $a\in G$ and assume that there are distinct elements $b,c \in G$ that are inverses of $a$. Then $$b= b * (e)= b* (a*c)= (b*a)*c = (e)*c = c.$$ Therefore, the inverse of $a$ is unique.
+```
+
+
+
+### Homomorphisms {#sec:homomorphisms}
+
+
+Now that we have a better understanding of the definitions and structures of groups we turn our attention to looking at when two groups are really the `same' group but viewed from different perspectives. To do that we must create a way to determine equivalence classes of groups that are based on a relationship between the two sets and how they interact with their binary operations.
+
+```{definition}
+A function, $\phi$, from a group $(G,*)$ to a group $(G',\cdot)$ is called a **homomorphism** if $$\phi(a*b)=\phi(a) \cdot \phi(b)$$ for every $a,b\in G$.
+```
+
+
+In other words, a homomorphism is a function between groups that maintains the structure of the binary operation. Notice that this restricts the types of functions quite a bit since a simple function like $f:\mathbb{R} \rightarrow \mathbb{R}$ defined by $f(x)=x+1$ is not a homomorphism.
+
+It will be helpful to understand this idea of maintaining the structure of the binary operation with a few examples of functions, some of which are homomorphisms and some are not.
+
+
+```{example}
+Let $\phi: (\mathbb{Z},+) \rightarrow (\mathbb{Z},+)$ be defined by $\phi(n)=2n$. In order to verify that $\phi$ is a homomorphism, we see that for any integers $m,n$ that $$\phi(m+n)= 2(m+n) = 2m + 2n = \phi(m)+\phi(n).$$ So $\phi$ is a homomorphism.
+```
+
+
+```{example}
+Let $f: (\mathbb{R}, +) \rightarrow (\mathbb{R}^+, \cdot)$ be defined by $f(x)=2^x$. Then for real numbers $x$ and $y$ we have that $$f(x+y)=2^{(x+y)} = 2^x \cdot 2^y = f(x) \cdot f(y)$$ making $f$ a homomorphism.
+```
+
+```{example}
+Let $g: (\mathbb{R}, +) \rightarrow (\mathbb{R},+)$ be defined by $g(x)=2x+3$. Then for real numbers $x$ and $y$, $$g(x+y) = 2\cdot (x+y)+3=2x+2y+3.$$ However, $$g(x)+g(y)=(2x+3)+(2y+3)= 2x+2y+6$$ and so $g$ is not a homomorphism.
+```
+
+For each of the examples above that generated a group homomorphism, notice that each of these homomorphisms mapped the identity element to the identity element and the mapped inverses to inverses. We see in the following two theorems that this is true for all homomorphisms.
+
+```{theorem, homomorphism-identity}
+Let $f:(G,*)\rightarrow (G',\cdot)$ be a group homomorphism. If $e$ and $e'$ are the identity elements of $(G,*)$ and $(G',\cdot)$, respectively, then $f(e)=e'$.
+```
+
+```{proof}
+Let $a$ be any element of $G$ and let $e$ be the identity in $G$. Then 
+$$f(a) = f(a*e) = f(a) \cdot f(e)$$ and so $$e' = f(a)^{-1}\cdot f(a) = f(a)^{-1}\cdot ( f(a) \cdot f(e) ) = (f(a)^{-1} \cdot f(a))\cdot f(e) = e' \cdot f(e) = f(e).$$ 
+```
+
+
+```{theorem, homomorphism-inverse}
+Let $f:(G,*)\rightarrow (G',\cdot)$ be a group homomorphism. Then for each $a\in G$, $f(a)^{-1} = f\left(a^{-1}\right)$.
+```
+
+```{proof}
+Since $f(a) \cdot f\left(a^{-1}\right) = f\left(a*a^{-1}\right) = f(e) = e'$ and since the inverse of an element is unique, we have that $f(a)^{-1} = f\left(a^{-1}\right)$.
+```
+
+
+Just like with the functions in Chapter \@ref(ch:function), we often find it useful to compose two homomorphisms. We see in the following theorem that such a composition is also a homomorphism.
+
+```{theorem, homomorphism-composition}
+Let $f: (A,*) \rightarrow (B,\times)$ and $g:(B,\times) \rightarrow (C,\cdot)$ be two group homomorphisms. Then $$(g\circ f): (A,*) \rightarrow (C,\cdot)$$ is a group homomorphism. 
+```
+
+
+```{proof}
+The proof of the theorem follows directly from the definition of $f$ and $g$ being group homomorphisms, with the difficulty lying in remembering the appropriate operation at each step in the process.
+    
+Let $a_1$ and $a_2$ be generic elements of $A$. Then 
+\begin{align*}
+(g\circ f)(a_1 * a_2) &= g \left( f(a_1*a_2)\right) = g\left( f(a_1)\times f(a_2)\right) \\
+&= g(f(a_1)) \cdot g(f(a_2)) = (g\circ f)(a_1) \cdot (g\circ f)(a_2)
+\end{align*}
+and so $g\circ f$ is a homomorphism.
+```
+
+
+### Isomorphisms
+
+When we combine the concept of a homomorphism with the idea of a bijection, we obtain a new type of function on groups.
+
+```{definition}
+A homomorphism between groups is called an **isomorphism** if it is one-to-one and onto.
+```
+
+Since isomorphisms are bijections, they satisfy all of the same properties of bijections, including having an inverse. We also can deduce that an isomorphism can only exist between groups whose sets have the same cardinality. So there cannot exist an isomorphism from $(\mathbb{Z}_2,+)$ in Example \@ref(exm:z2) to the dihedral group of order 6 in Example \@ref(exm:dihedral6). 
+
+Just as a bijections create an equivalence relation in terms of cardinality, we will see that isomorphisms create an equivalence relation in terms of the group structure. In order to develop this equivalency it is helpful to understand the properties of the inverse function related to the group structures. As such, in the next theorem we prove that the inverse of an isomorphism is also an isomorphism.
+
+```{theorem}
+Let $f:(G,*)\rightarrow (G',\cdot)$ be an isomorphism. Then $f^{-1}:(G',\cdot)\rightarrow (G,*)$ is also an isomorphism.
+```
+
+```{proof}
+Since $f$ is a bijection, we know from Chapter \@ref(ch:function) that $f^{-1}$ is also a bijection. So in order to prove that $f^{-1}$ is an isomorphism it suffices to prove that $f^{-1}$ is a homomorphism.
+    
+If we let $b_1$ and $b_2$ be two generic elements of $G'$. Then since $f$ is a bijection, there exist unique $a_1$ and $a_2$ in $G$ such that $b_1=f(a_1)$ and $b_2=f(a_2)$. Then 
+\begin{align*}
+  f^{-1}(b_1 \cdot b_2) &= f^{-1}\left( f(a_1)\cdot f(a_2)\right) \\
+  &= f^{-1} \left(f(a_1*a_2)\right) \: \mbox{ (since } f \mbox{ is a homomorphism)} \\
+  &= (f^{-1}\circ f) (a_1*a_2) = a_1*a_2 \\
+  &= f^{-1}(b_1)* f^{-1}(b_2) 
+\end{align*}
+and so $f^{-1}$ is a homomorphism, and since it is a bijection it is an isomorphism. 
+```
+
+```{theorem, group-isomorphism-equivalence}
+We say that a group $(G,*)$ is isomorphic to a group $(G',\cdot)$ if there is an isomorphism from $(G,*)$ to  $(G',\cdot)$. This relation of $(G,*)$ isomorphic to $(G',\cdot)$ is an equivalence relation.
+```
+
+```{proof}
+Recall that in order to prove that a relation is an equivalence relation we have to prove that the relation is reflexive, symmetric, and transitive.
+	
+**Reflexive.** Let $(A,*)$ be a group and define $\phi:(A,*)\rightarrow (A,*)$ by $\phi(a)=a$ for all $a\in A$. Since $\phi$ is the identity function on $(A,*)$ we see that $\phi$ is an isomorphism and so $(A,*)$ is isomorphic to itself.
+	
+**Symmetric.** Let $(A,*)$ and $(B,+)$ be groups such that $(A,*)$ is isomorphic to $(B,+)$. Let $f:(A,*)\rightarrow (B,+)$ be such an isomorphism. From the previous theorem we know that $f^{-1}: (B,+) \rightarrow (A,*)$ is also an isomorphism. Therefore, $(B,+)$ is isomorphic to $(A,*)$.
+	
+**Transitive.** The proof that isomorphisms are transitive follows from Theorem \@ref(thm:bijection2) that the composition of two bijections is a bijection and Theorem \@ref(thm:homomorphism-composition) that the composition of two homomorphisms is a homomorphism. Therefore, the composition of two isomorphisms is again an isomorphism. Therefore, group isomorphism creates a transitive relation.
+```
+
+
+The concept of isomorphism in algebra is similar to the concept of congruence in geometry where two triangles being congruent means that they share all of the related properties of triangles. Two groups are considered the "same" group if there is an isomorphism between them and are distinct only in the perspective in which one is viewing the groups. Such groups will be referred to as isomorphic groups. If $G$ and $G'$ are isomorphic groups, then we will denote this by $G \cong G'$.
+
+### Finite Groups
+To better understand this relationship between isomorphic groups, let's look at groups with two elements. If $(G,*)$ is a group with two elements, the identity $e$, and an element $a\neq e$. We know that in order for $(G,*)$ to be a group, we know that each element must have a unique inverse. Since $a*e=a$, we know that $e$ is not the inverse of $a$. So the inverse of $a$ must be $a$ and we have the Cayley table
+
+$$\begin{array}{c|cc}
+* & e & a \\ \hline
+e & e & a \\
+a & a & e
+\end{array}$$
+
+We can then see that the function $\phi:(\mathbb{Z}_2,+)\rightarrow (G,*)$ defined by $\phi(0)=e$ and $\phi(1)=a$, that $\phi$ is an isomorphism and so every group with two elements is isomorphic to $(\mathbb{Z}_2,+)$.
+
+
+
+In order to study groups with three elements, similarly to how we defined $(\mathbb{Z}_2,+)$ in Example \@ref(exm:z2), we can define 
+$(\mathbb{Z}_3,+)$ as the set $\{0,1,2\}$ with the operation defined by the Cayley table,
+$$\begin{array}{c|ccc}
+    + & 0 & 1 & 2 \\ \hline
+    0 & 0 & 1 & 2 \\
+    1 & 1 & 2 & 0 \\
+    2 & 2 & 0 & 1 
+\end{array}$$
+
+If we let $(G,*)$ be another group with three distinct elements, $\{e,a,b\}$, with identity, $e$, we know that $e*a=a$, $a*e=a$, $e*b=b$, and $b*e=b$ giving the first row and first column of the Cayley table,
+
+$$\begin{array}{c|ccc}
+    * & e & a & b \\ \hline
+    e & e & a & b \\
+    a & a &  &  \\
+    b & b &  &  
+\end{array}$$
+
+Since the group is closed under the operation, $a*b\in G$. If $a*b=a$, since $a$ has an inverse, we have $b=a^{-1}*(a*b) = a^{-1}*a = e$. Similarly, if $a*b=b$, we would conclude that $a=e$. Since the identity is unique, neither of these could be true. So $a*b=e$ and $b*a=e$, and we have filled in another two positions in the Cayley table.
+$$\begin{array}{c|ccc}
+    * & e & a & b \\ \hline
+    e & e & a & b \\
+    a & a &  & e  \\
+    b & b & e  & 
+\end{array}$$
+
+We now need to determine $a*a$ and $b*b$. Since inverses are unique, we know that $a*a\neq e$ and $b*b\neq e$. If $a*a=a$, we have that $a = a*e=a*a*b=a*b=e$, which is not possible. So $a*a=b$, and similarly, $b*b=a$. So we see that $(G,*)$ has the Cayley table 
+$$\begin{array}{c|ccc}
+    * & e & a & b \\ \hline
+    e & e & a & b \\
+    a & a & b & e  \\
+    b & b & e  & a
+\end{array}$$
+
+We can now define a function $\phi:(\mathbb{Z}_3,+) \rightarrow (G,*)$ by the correspondence $0\mapsto e$, $1\mapsto a$, and $2\mapsto b$,
+and one can verify that such a function is an isomorphism. So we can now conclude that all groups with three elements are isomorphic to $(\mathbb{Z}_3,+)$.  One cannot prove the same type of result for groups with four elements, since $(\mathbb{Z}_4,+)$ is not isomorphic to $(\mathbb{Z}_2 \times \mathbb{Z}_2, +)$. 
+
+
+
+$$\begin{array}{ccc}
+(\mathbb{Z}_4,+) & &  (\mathbb{Z}_2 \times \mathbb{Z}_2, +) \\
+\begin{array}{c|cccc}
+    + & 0 & 1 & 2 & 3 \\ \hline
+    0 &  0 & 1 & 2 & 3 \\ 
+    1 & 1 & 2 & 3 & 0 \\
+    2 & 2 & 3 & 0 & 1 \\
+    3 & 3 & 0 & 1 & 2 
+\end{array}
+& &
+\begin{array}{c|cccc}
+ + & (0,0) & (0,1) & (1,0) & (1,1) \\ \hline
+  (0,0) & (0,0) & (0,1) & (1,0) & (1,1) \\ 
+  (0,1) & (0,1) & (0,0) & (1,1) & (1,0) \\ 
+  (1,0) & (1,0) & (1,1) & (0,0) & (0,1) \\
+  (1,1) & (1,1) & (1,0) & (0,1) & (0,0)
+\end{array}
+\end{array}$$
+
+
+
+The classification of the groups with a finite number of elements was a significant endeavor in throughout the twentieth century, with a complete classification verified in the early twenty-first century using computers to check the validity of the proof.
+
+
+### Exercises
+
+1. For each of the groups listed in Example \@ref(exm:group-list): 
+      a. What is the identity element?
+	    
+      a. For a generic element $a$, what would $a^{-1}$ look like?
+	    
+      a. Is the group abelian?
+	    
+      a. In what ways are the groups related to one another? (Think about subsets or homomorphisms)
+
+1. Find a homomorphism from $\left(\mathbb{Z}, +\right)$ to $\left(5\mathbb{Z}, +\right)$.
+	
+1. Are $(\mathbb{Z},+)$ and $(\mathbb{R},+)$ isomorphic groups? Why, or why not?
+	
+1. Let $(G,*)$ and $(H,*)$ be two groups such that $H\subseteq G$ and the operation is the same for both groups.
+      a. What are some possible homomorphisms $\phi:(H,*)\rightarrow (G,*)$?
+	    
+      a. What are some possible homomorphisms $\psi:(G,*) \rightarrow (H,*)$?
+
+
+
+## Relationship Between Linear and Exponential {#sec:linear-exponential}
+
+In this section we will explore exponential and linear functions through the perspective of isomorphisms. Let $a$ be a positive real number. Then we define the exponential function with base $a$ as the function $$\exp_a: (\mathbb{R},+) \rightarrow (\mathbb{R}^+,\cdot)$$ with $\exp_a{(x)}= a^x$, where $a^x$ is defined in Section \@ref(sec:reals).
+
+Using the properties of exponents in Theorem \@ref(thm:exponents-reals) we have that $\exp_a$ is an increasing function (i.e. $x<y \Rightarrow \exp_a{(x)}<\exp_a{(y)}$). This implies that $\exp_a$ is an injection. Using properties of limits from analysis one can prove that $\exp_a$ is a surjection. From Section \@ref(sec:reals) we have that $$\exp_a{(x+y)} = a^{x+y} = a^x \cdot a^y = \exp_a{(x)}\cdot \exp_a{(y)}$$ and so $\exp_a$ is an isomorphism.
+
+We will now explore the isomorphism between $(\mathbb{R},+)$ and $(\mathbb{R}^+,\cdot)$.
+
+
+$$\begin{array}{c|c}
+\mbox{Property in } (\mathbb{R},+) & \mbox{Property in } (\mathbb{R}^+,\cdot) \\ \hline
+ m+m=2\cdot m & a\cdot a = a^2 \\ 
+mk=m+m+m+\cdots +m, \: k \mbox{ times} & a^k=a \cdot a \cdot a\cdots a, \: k \mbox{ times} \\ 
+a\cdot (b+c) = (a\cdot b) + (a\cdot c) & (b\cdot c)^a = (b^a) \cdot (c^a) \\ 
+0+m=m+0=m  \mbox{ (additive identity)} & 1\cdot a=a\cdot 1= a  \mbox{ (multiplicative identity)} \\ 
+m+(-m)=0 \mbox{ (additive inverse)} & a\cdot \frac{1}{a}=1 \mbox{ (multiplicative inverse)} \\ 
+\end{array}$$
+
+One can see that repeated addition in $(\mathbb{R},+)$ corresponds to repeated multiplication in $(\mathbb{R}^+,\cdot)$. One can also see that $$\exp_a\left( m\cdot x + b\right) = \exp_a(b) \cdot \left(\exp_a(m)\right)^x$$ and so we can see that linear expressions in $(\mathbb{R},+)$ correspond to exponential expressions in $(\mathbb{R}^+,\cdot)$. An implication of this is that the teaching of linear and exponential functions should be intertwined. At a minimum, teachers should use their horizon content knowledge when initially teaching students about exponential functions to directly related the properties of the functions to those of linear functions.
+
+>#### Related Content Standards {-}
+>+ (HSF.LE.1) Distinguish between situations that can be modeled with linear functions and with exponential functions.
+>     a. Prove that linear functions grow by equal differences over equal intervals, and that exponential functions grow by equal factors over equal intervals.
+>     a. Recognize situations in which one quantity changes at a constant rate per unit interval relative to another.
+>     a. Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.
+
+
+
+In order to compare linear and exponential functions, we will study their properties side-by-side. Let
+$$f(x)=mx+b \quad \mbox{ and } \quad g(x)=b\cdot m^x$$ be linear and exponential functions, respectively. The graphs of the functions are then given by the set of points $(x,y)$ such that 
+$$y=mx+b \quad \mbox{ and } \quad y=b\cdot m^x.$$ Setting $x=0$ in each equation implies that $(0,b)$ is the $y$-intercept for both functions. Exploring the relationship of $f(x)$ to $f(x+1)$ and $g(x)$ to $g(x+1)$ we see that $$f(x+1)-f(x) = m \quad \mbox{ and } \quad \frac{g(x+1)}{g(x)} = m$$ implying that in both cases the parameter $m$ represents a constant rate of change. For the linear function $m$ represents an additive rate of change, while in the exponential function $m$ represents a multiplicative rate of change. 
+
+>#### Related Content Standards {-}
+>+ (HSF.LE.5) Interpret the parameters in a linear or exponential function in terms of a context.
+
+For the linear function, the function is increasing if, and only if, $m$ is greater than the additive identity. With the exponential function, the values of $m$ must be positive and the function is increasing if, and only if, $m$ is greater than the multiplicative identity.
+
+If we know that two points, $(x_1,y_1)$ and $(x_2,y_2)$, are on the graph of the functions, then we know that 
+$$\begin{array}{ccc}
+y_2=m\cdot x_2 + b &  & y_2 = b\cdot m^{x_2} \\
+ & \mbox{or} & \\
+y_1=m\cdot x_1 + b &  & y_1 = b\cdot m^{x_1}.\\
+\end{array}$$
+
+Using subtraction for the linear function and division for the exponential function we find that 
+$$ (y_2-y_1) = m(x_2-x_1) \quad \mbox{ or } \quad \frac{y_2}{y_1} = m^{(x_2-x_1)}$$ and so 
+$$ m= \frac{y_2-y_1}{x_2-x_1} \quad \mbox{ or } \quad m= \left( \frac{y_2}{y_1} \right)^{\frac{1}{x_2-x_1}}.$$
+After determining the rate of change for the function one can now include that information in a point-`rate of change' form of the function as
+$$ y= m(x-x_1)+y_1 \quad \mbox{ or } \quad y = y_1 \cdot m^{(x-x_1)}.$$
+
+
+
+### Exercises
+1. Find the linear and exponential functions that pass through the points $(-3,-2)$ and $(2,1)$.
+
+
+
+## Rings and Fields {#sec:Exploration}
+
+
+In this section we are going to first explore several different examples of sets that have a standard pair of two different binary operations, addition and multiplication. We will create categorizations of these sets based upon their properties. Some properties to consider are associative, commutative, distributive, identities, and inverses.
+
+```{example, rings}
+Consider the following sets and operations.
+
++ $\mathbb{N}$ with the usual addition and multiplication.
+
++ $\mathbb{Z}$ with the usual addition and multiplication.
+
++ $\mathbb{Q}$ with the usual addition and multiplication.	
+
++ $\mathbb{R}$ with the usual addition and multiplication.
+
++ $\mathbb{C}$ with the usual addition and multiplication.	
+
++ $2\mathbb{Z}$ (the even integers) with the usual addition and multiplication.
+
+For each of these sets with operations, determine which of the following properties hold.
+
+1. Additive identity
+
+1. Additive inverse
+
+1. Additive commutativity
+
+1. Multiplicative identity
+
+1. Multiplicative inverse
+
+1. Multiplicative commutativity
+
+1. Distribution properties of multiplication over addition.
+
+```
+
+### Finite Sets with Two Operations
+
+While each of the sets listed previously have infinite cardinality, a large portion of abstract algebra studies finite sets, combined with appropriate operations. $\mathbb{Z}_n = \left\{0, 1, 2, \ldots, n-1\right\}$ with addition and multiplication defined by the remainder of the sum and product when divided by $n$. We provide some examples of these types of sets and operations below. For these finite sets, it is often easiest to just provide a table of the operations, rather than an algebraic definition. These tables are called Cayley tables, first presented in a work by the British mathematician, Arthur Cayley [-@Cayley].
+
+
+
+```{example, z2ring}
+Let $\mathbb{Z}_2=\left\{ 0,1 \right\}$ with the operations given in the following Cayley tables.
+$$\begin{array}{cc}
+\begin{array}{c|cc}
++ & 0 & 1 \\ \hline
+0 & 0 & 1 \\
+1 & 1 & 0 \\
+\end{array}
+&
+\begin{array}{c|cc}
+\cdot & 0 & 1 \\ \hline
+0 & 0 & 0 \\
+1 & 0 & 1 \\
+\end{array}
+\end{array}$$
+```
+		
+```{example, z3ring}
+Let $\mathbb{Z}_3=\left\{ 0,1, 2 \right\}$ with the operations given in the following Cayley tables.
+$$\begin{array}{cc}
+\begin{array}{c|ccc}
++ & 0 & 1 & 2 \\ \hline
+0 & 0 & 1 & 2\\
+1 & 1 & 2 & 0 \\
+2 & 2 & 0 & 1 \\
+\end{array} &
+\begin{array}{c|ccc}
+\cdot & 0 & 1 & 2\\ \hline
+0 & 0 & 0  & 0 \\
+1 & 0 & 1 & 2 \\
+2 & 0 & 2 & 1
+\end{array} \\
+\end{array}$$
+```
+
+```{example, z4ring} 
+Let $\mathbb{Z}_4=\left\{ 0,1, 2, 3 \right\}$ with the operations given in the following Cayley tables.
+$$\begin{array}{cc}
+\begin{array}{c|cccc}
++ & 0 & 1 & 2 & 3  \\ \hline
+0 & 0 & 1 & 2 & 3 \\
+1 & 1 & 2 & 3 & 0 \\
+2 & 2 & 3 & 0 & 1 \\
+3 & 3 & 0 & 1 & 2 \\
+\end{array}
+&
+\begin{array}{c|cccc}
+\cdot & 0 & 1 & 2 & 3 \\ \hline
+0 & 0 & 0  & 0 & 0 \\
+1 & 0 & 1 & 2 & 3 \\
+2 & 0 & 2 & 0 & 2 \\
+3 & 0 & 3 & 2 & 1 \\
+\end{array}\\
+\end{array}$$
+```
+
+```{example, z6ring}
+Let $\mathbb{Z}_6=\left\{ 0,1, 2, 3, 4, 5 \right\}$ with the operations given in the following Cayley tables.
+$$\begin{array}{cc}
+\begin{array}{c|cccccc}
++ & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+0 & 0 & 1 & 2 & 3 & 4 & 5 \\
+1 & 1 & 2 & 3 & 4 & 5 & 0\\
+2 & 2 & 3 & 4 & 5 & 0 & 1 \\
+3 & 3 & 4 & 5 & 0 & 1 & 2 \\
+4 & 4 & 5 & 0 & 1 & 2 & 3 \\
+5 & 5 & 0 & 1 & 2 & 3 & 4 \\
+\end{array}
+&
+\begin{array}{c|cccccc}
+\cdot & 0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+0 & 0 & 0  & 0 & 0 & 0 & 0 \\
+1 & 0 & 1 & 2 & 3 & 4 & 5\\
+2 & 0 & 2 & 4 & 0 & 2 & 4 \\
+3 & 0 & 3 & 0 & 3 & 0 & 3 \\
+4 & 0 & 4 & 2 & 0 & 4 & 2 \\
+5 & 0 & 5 & 4 & 3 & 2 & 1 \\
+\end{array}
+\end{array}$$
+
+```
+
+These different sets (and operations) satisfy various properties depending upon the number of elements in the set. It is a valuable exercise to explore how the these are connected.
+
+### Matrices
+
+We let $GL(n,\mathbb{R})$ be the set of $n\times n$ matrices with coefficients from the real numbers with the usual matrix addition and multiplication. We can see that this set has an additive identity, $0$, and multiplicative identity, $I$.
+$$0 = \begin{pmatrix}
+ 0 & 0 & 0 & \cdots & 0 \\
+ 0 & 0 & 0 & \cdots & 0 \\
+ 0 & 0 & 0 & \cdots & 0 \\
+ \vdots & \vdots & \vdots & \ddots & 
+ \vdots \\
+ 0 & 0 & 0 & \cdots & 0 
+\end{pmatrix} \quad \mbox{ and } \quad  I= \begin{pmatrix}
+ 1 & 0 & 0 & \cdots & 0 \\
+ 0 & 1 & 0 & \cdots & 0 \\
+ 0 & 0 & 1 & \cdots & 0 \\
+ \vdots & \vdots & \vdots & \ddots & 
+ \vdots \\
+ 0 & 0 & 0 & \cdots & 1 
+\end{pmatrix}$$
+
+It is also satisfies most of the properties of our number systems that we have explored, including the addition is commutative. However, we can discover that multiplication is not commutative, not every element has a multiplicative inverse, and we can have the product of two non-zero elements be zero. For example, if we look at $GL(2,\mathbb{R})$ and the matrices
+$$A = \begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix} \quad \mbox{ and } \quad 
+B= \begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix}.$$
+
+Then $A^2=0$, $B^2=0$,
+$$AB=\begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix} \quad \mbox{ and } \quad 
+BA= \begin{pmatrix}
+0 & 0 \\
+0 & 1
+\end{pmatrix}.$$
+
+Sometimes we combine ideas of the finite sets with the additional structure of matrices. For example, we let $GL(2,\mathbb{Z}_2)$ be the two by two matrices with coefficients from $\mathbb{Z}_2$, with the usual operations of matrix addition and multiplication. 
+
+>#### Related Content Standards {-}
+>+ (HSN.VM.8) Add, subtract, and multiply matrices of appropriate dimensions.
+>+ (HSN.VM.9) Understand that, unlike multiplication of numbers, matrix multiplication for square matrices is not a commutative operation, but still satisfies the associative and distributive properties.
+>+ (HSN.VM.10) Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.
+
+
+### Rings
+
+Now that we have several examples of sets with two binary operations defined on them, we see that there are certain properties of these binary operations that are very useful for understanding the structure of the set.
+
+
+```{definition, name="Rings"}
+A **ring** $\langle R,+,\cdot \rangle$ is a set $R$ together with two binary operations $+$ and $\cdot$, which we call addition and multiplication, defined on $R$ such that the following are satisfied:
+
+1. $\left( R,+\right)$ is an abelian group.
+      + The binary operation $+$ is associative.
+      + There is an element $0$ in $R$ such that $0+a=a+0=a$ for all $a\in R$. (This element is called the additive identity of $R$.)
+      + For each $a$ in $R$ there is an element $-a$ in $R$ such that $(-a)+a=a+(-a)=0$. (This element is called the additive inverse of $a$ in $R$.)
+      + For each $a$ and $b$ in $R$, $a+b=b+a$. (This means that the operation is commutative and so the group is abelian.)
+
+1. The binary operation $\cdot$ is associative.
+1. For all $a,b,c\in R$, the left distribution law, $a(b+c)=(ab)+(ac)$, and the right distribution law, $(a+b)c=(ac)+(bc)$, hold.
+
+```
+
+We can see from this definition that the integers, $\langle\mathbb{Z},+,\cdot\rangle$, form a ring but the natural numbers, $\langle\mathbb{N},+,\cdot\rangle$, do not because they do not have additive inverses. Similarly, during the constructions of the rational numbers, $\langle\mathbb{Q},+,\cdot\rangle$; the real numbers, $\langle\mathbb{R},+,\cdot\rangle$; and the complex numbers, $\langle\mathbb{C},+,\cdot\rangle$, we proved that these number systems satisfied all of the ring properties. 
+
+We can also see that the examples above of $\langle\mathbb{Z}_n,+,\cdot\rangle$ and $\langle GL(n,\mathbb{R}),+,\cdot\rangle$ are also rings. So in many ways, all of these sets and operations have some very similar properties. However, there are some properties that some of these rings have, that others do not. If a ring has certain additional properties, we will add some labels to these sets.
+
+```{definition, name="Further definitions"}
+We classify rings based on various properties of the ring.
+
+1. A ring in which the multiplication is commutative is called a **commutative ring**.
+1. A ring with a multiplicative identity is called a **ring with unity**.
+1. If every non-zero element of a ring has a multiplicative inverse, then the ring is called a **division ring**.
+1. A **field** is a commutative division ring.
+
+```
+
+>#### Related Content Standards {-}
+>+ (7.NS2) Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers.
+>     a. Understand that multiplication is extended from fractions to rational numbers by requiring that operations continue to satisfy the properties of operations, particularly the distributive property, leading to products such as $(-1)(-1) = 1$ and the rules for multiplying signed numbers. Interpret products of rational numbers by describing real-world contexts.
+
+
+
+### Identities and Inverses
+
+Now that we have created several categories and labels for the sets and operations, let's explore some of the consequences of the properties on the operations. As we do so, keep in mind which properties are used to prove different results. That way you can determine which properties are required of various sets and operations in order to get those results later on.	
+	
+```{theorem}
+	The additive identity for a ring is unique.
+```
+
+This theorem is a direct consequence of the set with addition forming a group, whose identity is unique. Similarly, we have that the multiplicative identity is unique (if it exists). Since the proof is so similar to that of the uniqueness of the additive identity, the proof is left to the reader as an exercise.
+
+```{theorem, multiplicative-identity}
+If a ring has a multiplicative identity, then that multiplicative identity is unique.
+```
+
+Now that we know that the additive and multiplicative identities of a ring are unique, we will usually label these identities as $0$ and $1$, respectively.
+
+Our next theorem shows us that the property from the integers that multiplying any number by zero results is zero is not unique to our number systems, but is inherent in the properties of the additive identity in a ring.	
+	
+```{theorem, zero-multiplication}
+If $\langle R,+,\cdot\rangle$ is a ring, and if $0$ is the additive identity in $R$, $0\cdot a=a\cdot 0=0$ for all $a\in R$.
+```	
+
+```{proof}
+Let $\langle R,+,\cdot\rangle$ be a ring with additive identity $0$ and let $a\in R$. Then $a \cdot 0 = a \cdot (0+0)$, since $0$ is the additive identity.	From the distribution property we have that $a \cdot 0 = a \cdot 0 + a \cdot 0$ and if we add the additive inverse of $a \cdot 0$ to both sides of the equation, we have that $0=a\cdot 0$. We can similarly show that $0\cdot a=0$.
+```
+
+
+Recall from Theorem \@ref(thm:unique-inverse) that we have uniqueness of the additive inverse since $\langle R,+\rangle$ is an abelian group. We can also prove the uniqueness of a multiplicative inverse, if such an inverse exists because in this situation, $\langle R,\cdot \rangle$ forms a group.
+
+One question that students often ask when they are introduced to multiplication with negative numbers why a negative times a negative is a positive. We see from the theorem below that this property, and other related properties are inherited from the ring structure of the number system. However, when explaining this property to students, it is often better to focus on the symmetry about the additive identity. In particular, with integers and real numbers it is good to focus on the symmetry of the additive identities on the number line. For the complex numbers it is helpful to focus the students' attention on the symmetry about the additive identity when looking at the complex plane.
+
+```{theorem}
+If $\langle R,+,\cdot\rangle$ is a ring and $a,b \in R$, then
+
++ $a\cdot (-b)=(-a)\cdot b=-(a\cdot b)$
+
++ $(-a)\cdot (-b)=a\cdot b$
+
+```
+
+```{proof}
+In order to prove the first part of the theorem we need to only show that 
+$$\left( a \cdot (-b) \right) + \left(a \cdot b\right) =0 \quad \mbox{and} \quad \left((-a)\cdot b\right)+\left(a \cdot b\right) =0$$ because the additive inverse of $a\cdot b$ is unique. 
+	
+We see that
+\begin{align*}
+(a \cdot (-b)) + (a \cdot b ) &= a \cdot ((-b)+b) \mbox{ (from the distributive property)} \\
+&= a \cdot 0 \mbox{ (since } -b \mbox{ is the additive inverse of }b)\\
+&= 0
+\end{align*}
+as a result of Theorem \@ref(thm:zero-multiplication).
+Similarly,
+\begin{align*}
+( (-a) \cdot b) + (a \cdot b) &= ((-a)+a)\cdot b \mbox{ (from the distributive property)} \\
+&= 0 \cdot b \mbox{ (since } -a \mbox{ is the additive inverse of } a)\\
+&= 0
+\end{align*}
+as a result of Theorem \@ref(thm:zero-multiplication).
+For the second result we use the first result to see that 
+$$(-a)\cdot (-b) = -\left(a \cdot (-b)\right) = - \left( - \left(a\cdot b\right) \right) = a \cdot b$$ since the additive inverse of the additive inverse of an element is the original element.
+```
+
+
+
+### Integral Domains
+
+We often want to solve an equation such as $ax=b $ or $xa=b $ for $x$ with $a\neq 0$. In order to do so we need to use the cancellation laws, $ab=ac$ with $a \neq 0$ implies $b=c$ and $ba=ca$ with $a\neq 0$ implies $b=c$. 
+
+We will see that the cancellation laws correspond with a property about zero divisors.
+
+```{definition}
+If $a$ and $b$ are two non-zero elements of a ring $R$ such that $ab=0$, then $a$ and $b$ are **divisors of $0$** (or **zero divisors**). In particular, $a$ is a **left divisor** of $0$ and $b$ is a **right divisor** of $0$.
+```
+
+```{theorem}
+The cancellation laws hold in a ring $R$ if and only if $R$ has no left or right divisors of $0$.
+```
+
+```{proof}
+Assume that for all elements $a$, $b$, and $c$ of a ring $R$ such that $a\neq 0$ we have that 
+$$(ab=ac) \Rightarrow (b=c).$$ We can then add the additive inverse of $ac$ to both sides of the first equation and the additive inverse of $c$ to both sides of the right equation to see that this implication is equivalent to $$\left((ab-ac)=0 \right) \Rightarrow (b-c=0).$$ Using the left distribution property of the ring, we have that the implication is equivalent to $$\left( a \cdot (b-c) =0\right) \Rightarrow \left( (b-c)=0\right).$$ This implication is true if and only if $a$ is not a left divisor of $0$.
+	
+Similarly, one can show that the right cancellation law of $$\left(ba=ca, \: \mbox{ with } a \neq 0 \right) \Rightarrow (b=c)$$ is equivalent to $a$ not being a right divisor of $0$.
+	
+Therefore, we see that the cancellation laws holding for a ring is equivalent to the ring having no zero divisors.	
+```
+
+Since this property of not having zero divisors is so important in the process of solving simple equations, we give rings with this property a label.
+
+```{definition}
+An **integral domain** is a commutative ring with unity containing no divisors of $0$.
+```
+
+A very useful example of an integral domain is the set of integers with the usual addition and multiplication. We will see in the next chapter that the polynomials also form an integral domain, which allows us to factor polynomials in a similar way to factoring integers.
+
+In order to better understand how all of these different types of rings fit together, Figure \@ref(fig:venn-rings) is a graphical way to understand their relationships.
+
+```{r venn-rings, echo=FALSE, fig.align='center', out.width='100%', fig.cap='Venn diagram of ring relationships'}
+knitr::include_graphics(
+  'tikz/ring-relationships.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+### Ring Homomorphisms
+
+Just like group homorphisms in Section \@ref(sec:homomorphisms), we can study the functions between rings that maintain the ring structures.
+
+```{definition}
+Let $\langle R,+,\cdot\rangle$ and $\langle R',\ast,\times\rangle$ be rings. A map $\phi:R\rightarrow R'$ is a **ring homomorphism** if
+
++ $\phi(a+b)=\phi(a) \ast \phi(b)$ for all $a$ and $b$ in $R$
++ $\phi(a\cdot b)=\phi(a)\times \phi(b)$ for all $a$ and $b$ in $R$.
+
+$\phi$ is called a **ring isomorphism** if it is also a bijection. If such an isomorphism exists from a ring $\langle R,+,\cdot\rangle$ to a ring $\langle R',\ast,\times\rangle$, then we say that $\langle R,+,\cdot\rangle$ is **isomorphic** to $\langle R',\ast,\times\rangle$.
+```
+
+When we talk about rings, we often refer to a ring $\langle R,+,\cdot\rangle$ as just $R$ when the binary operations are easily inferred from the set. For instance, we often talk about $\mathbb{R}$ as the ring of real numbers with the binary operations of addition and multiplication being inferred.
+
+Similar to groups, it is useful to know when two rings are really the "same" ring with different labels. We see that just like with groups (Theorem \@ref(thm:group-isomorphism-equivalence)) we see that ring isomorphisms create an equivalence relation and so two rings are the "same" if there is an isomorphism from one to the other. Therefore, in order to prove that two rings are isomorphic, it is usually done by finding the isomorphism. However, to prove that two rings are not isomorphic we usually use a proof by contradiction using certain properties of ring isomorphisms.
+
+
+### Exercises
+
+1. Create Cayley tables for addition and multiplication for $\mathbb{Z}_{12}$. What patterns do you recognize inside of the table and how would you explain the reasons for those patterns?
+    
+1. What are the zero divisors of $GL(2,\mathbb{Z}_2)$?
+    		
+1.  For each of the following rings, determine the appropriate location for the ring in the Venn diagram of the ring relationships (Figure \@ref(fig:venn-rings)).
+
+      a. $\langle\mathbb{Z},+,\cdot\rangle$, the integers with the usual addition and multiplication.
+      a. $\langle\mathbb{Q},+,\cdot\rangle$, the rational numbers with the usual addition and multiplication.
+      a. $\langle\mathbb{R},+,\cdot\rangle$, the real numbers with the usual addition and multiplication.
+      a. $\langle\mathbb{C},+,\cdot\rangle$, the complex numbers with the usual addition and multiplication.
+      a. $\langle2\mathbb{Z},+,\cdot\rangle$, the even integers with the usual addition and multiplication.
+      a. $\langle\mathbb{Z}_2,+,\cdot\rangle$, as defined in Example \@ref(exm:z2ring).
+      a. $\langle\mathbb{Z}_4,+,\cdot\rangle$, as defined in Example \@ref(exm:z4ring).
+      a. $\langle GL(2,\mathbb{R}),+,\cdot\rangle$, the two by two matrices with real coefficients with the usual matrix addition and multiplication.
+      a. $\langle GL(2,2\mathbb{Z}),+,\cdot\rangle$, the two by two matrices with even integer coefficients with the usual matrix addition and multiplication.
+		
+1. Prove Theorem \@ref(thm:multiplicative-identity).
+
+1. Show that $a^2-b^2=(a+b)(a-b)$ for all $a$ and $b$ in $R$ if and only if R is a commutative ring.
+
+1. Prove that $2\mathbb{Z}$ and $3\mathbb{Z}$ are not isomorphic as rings.
+
+1. Let $R$ be a ring and let $R^R$ be the set of all functions mapping $R$ into $R$. For $f,g\in R^R$, define the sum $f+g$ by $$(f+g)(a)=f(a)+g(a)$$ and the product $f\cdot g$ by $$(f\cdot g)(a)=f(a)\cdot g(a)$$ for each $a \in R$. Show that $\langle R^R, +, \cdot\rangle$ is a ring.
+
+

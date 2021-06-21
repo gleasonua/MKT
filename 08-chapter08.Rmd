@@ -1,0 +1,1824 @@
+# Real Valued Functions {#ch:real-valued-functions}
+
+This chapter builds upon the definitions of functions studied in Chapter \@ref(ch:function), using the algebra material from Chapters \@ref(ch:group-1) and \@ref(ch:rings), to study the interplay between the verbal, algebraic, tabular, and graphical representations of functions. 
+
+
+>#### Related Content Standards {-}
+>+ (8.F.2) Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions). \emph{For example, given a linear function represented by a table of values and a linear function represented by an algebraic expression, determine which function has the greater rate of change.}
+>+ (HSF.IF.9) Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions).
+
+```{r representation-emphasis, echo=FALSE, fig.align='center', out.width='45%', fig.cap='Emphases of translations between function representations'}
+knitr::include_graphics(
+  'tikz/representation-emphasis.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+This process of translating between the different representations of a function is a key aspect of problem solving because different problems are more easily solved using different representations. For instance, if a set of data is given in a tabular format one would often use regression techniques to generate a graphical and algebraic representations of a function that models that data in order to interpolate or extrapolate information about the data within the context of the verbal situation given. Each of these different representations work together to help generate and interpret possible solutions to the problems determined. As such, it is important for students to be able to move from one representation to another.
+
+In the secondary curriculum, students frequently move from algebraic expressions to graphical representations, either by hand or using technology, as stated in the Common Core Standard HSF.IF.7. However, students rarely translate from a graphical representation to an algebraic representation. We represent the different emphases between the translations by different sized arrows in Figure \@ref(fig:representation-emphasis).
+
+
+>#### Related Content Standards {-}
+>+ (HSF.IF.7) Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.				 
+>     a. Graph linear and quadratic functions and show intercepts, maxima, and minima.
+>     a. Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions.
+>     a. Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior.
+>     a. Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior.
+>     a. Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude.
+
+
+## Function Properties
+
+Throughout this chapter we will work to better understand the common functions in the secondary curriculum by studying certain properties of the functions.
+
+
+>#### Related Content Standards {-}	
+>+ (8.F.5) Describe qualitatively the functional relationship between two quantities by analyzing a graph (e.g., where the function is increasing or decreasing, linear or nonlinear). Sketch a graph that exhibits the qualitative features of a function that has been described verbally.
+>+ (HSF.IF.4) For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include: intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity.
+
+
+
+
+### Domain and Range
+In this chapter we will deal with functions whose domain is a subset of the real numbers, $\mathbb{R}$. That domain may be inherited from the situation the function is modeling. For instance, a function that gives the cost of a purchase that is based on the number of items purchased would have a domain of the natural numbers. Where a function that models the number of feet above the ground that an object is located $t$ seconds after being dropped would have a domain of the non-negative real numbers.
+
+Frequently, a function is only defined by an algebraic representation. In this case, the implied domain for the function is the largest subset of $\mathbb{R}$ for which the function is defined. For example, the function $f(x)=\sqrt{x}$ is only defined for non-negative real numbers and so that would be the implied domain for the function.
+	
+
+>#### Related Content Standards {-}
+>+ (HSF.IF.5) Relate the domain of a function to its graph and, where applicable, to the quantitative relationship it describes. For example, if the function $h(n)$ gives the number of person-hours it takes to assemble $n$ engines in a factory, then the positive integers would be an appropriate domain for the function.  
+	
+
+Once the domain for a function is determined, it is important to understand all of the possible elements in the co-domain that correspond to elements in the domain with the function, the range. The process for determining the range often involves many different techniques. If the original function is an injection, then one may be able to use the algebraic representation of the inverse function to determine the domain of the inverse function, which is the range of the original function. One may also use other properties of the function, such as its extreme points and its intervals of the domain on which the function is increasing or decreasing.
+
+When graphing a function, we usually have the horizontal axis represent the domain of the function and the vertical axis represent the co-domain.
+
+
+### Maxima (minima) or relative maxima (relative minima)
+
+It is often valuable to find the largest or smallest values that can be obtained by the function. These appear most obviously in optimization problems in calculus, where one finds the greatest (or least) values of $f$, or finds the greatest (or least) values on a given interval. These extreme values often depend upon the subset of the domain considered. When looking for a maximum or minimum value we find that for differentiable functions that these extreme values occur when the derivative is zero or undefined or at the endpoints of intervals in the domain considered. Other methods for finding these extreme values include using graphing calculators to graph the functions and have the technology determine these extreme values.
+
+### Increasing or decreasing
+
+It is also valuable to determine those intervals on which a function, $f$, is increasing and those intervals on which $f$ is decreasing. A function $f$ is **increasing** on an interval $(a,b)$ if for every $a<x\leq y<b$, $f(x)\leq f(y)$. The function $f$ is **decreasing** on $(a,b)$ if $a<x\leq y<b$ implies that $f(x)\geq f(y)$. We call the function strictly increasing or decreasing if the $\geq$ and $\leq$ symbols are replaced by strict inequality. If a function is either increasing or decreasing on its entire domain, then we call the function **monotonic**. One can also see that a strictly monotonic function is an injection and so we can find an inverse function when restricting the co-domain to the range.
+
+### Intercepts
+
+When a function is providing a relationship between two variables, it is often useful to find the points at which either of the variables is zero. This process helps with understanding the graph of a function and often provides insight into the interpretation of the situation that a function may be modeling. While we often say that we are looking for the $x$-intercept and $y$-intercept of a function, it is important to have the flexibility that the variables have different names, especially in modeling situations. So we will try to use the convention of horizontal and vertical intercepts.
+
+
+### End behavior, singularities, and asymptotes
+
+It is often helpful to understand what happens to the value of functions near the endpoints of a domain when the domain includes open intervals. For functions whose domain includes intervals of the form $(-\infty,c)$, $(c,\infty)$, and $(-\infty, \infty)$, this is understanding what happens to $f(x)$ as $x\rightarrow \infty$ and/or as $x \rightarrow -\infty$. The study of this often focuses on horizontal asymptotes, but we will expand that perspective to a comparison of the behavior of functions 'near' $\pm \infty$ to the behavior of know functions. For instance, does the function grow at a similar rate to a certain polynomial function, a certain exponential function, or possibly a certain logarithmic function?
+
+
+```{r sin-recipricol, echo=FALSE, fig.align='center', out.width='70%', fig.cap='Graph of $y=\\sin(1/x)$'}
+curve(sin(1/x), 0.001, 10)
+```
+
+
+If the domain of the function includes a bounded open interval, it is important that we understand what happens to the output of the function as the input approaches the endpoints of the open interval. For instance for $f(x)=\frac{1}{x}$, as $x\rightarrow 0^+$ ($x$ approaches zero from the right) $f(x)\rightarrow +\infty$.  While as $x\rightarrow 0^-$, $f(x)\rightarrow -\infty$.
+
+
+The function $y=f(x)=\sin\left(\frac{1}{x}\right)$ defined on the interval $(0,\infty)$ has a very unusual behavior near $x=0$. The function oscillates between $-1$ and $1$ an infinite number of times as $x$ approaches $0$.
+
+
+### Special Properties
+
+In addition to the properties listed above, it is important to look for other properties of the function.
+
+#### Is $f$ a composition of known functions? {-}
+
+Consider $f(x)=\sqrt{-(x-1)(x+2)}$. This function is a composition of two functions that we already know and we can use knowledge about those functions to better understand this function. We will explore this process in Section \@ref(sec:Function-combinations).
+        
+#### Does the graph of $f$ have a particular known shape? {-}
+
+When modeling a set of bivariate data, it is helpful to know if the graph of the data resembles the graph of a know function, i.e. linear, exponential, or quadratic. We can then use that information to determine the best options for choosing a function to model the situation.
+
+#### Does the graph have symmetry? {-}
+If the graph is symmetric about a vertical line, then it is a transformation of an even function, and if it is symmetric about a point, it is a transformation of an odd function.
+            
+```{definition}
+A function $f:A\subseteq \mathbb{R}\rightarrow \mathbb{R}$ is **even** if $f(x)=f(-x)$ for all $x\in A$. The function is **odd** if $f(x)=-f(-x)$ for all $x\in A$.
+```
+        
+#### Is $f$ periodic? {-}
+        
+It is also helpful to know if the function repeats itself over the domain. For instance, if someone wants to model the length of daylight for the day then it would be helpful to know that this is a periodic relationship that repeats itself every year.
+            
+#### Does $f$ have and inverse function? {-}
+            
+We often find it useful to 'undo' functions by using their inverse functions. When considering real-valued functions, this inverse function represents the same relationship between two variables, but viewed from a different perspective. Understanding this perspective also helps us to better understand the original function and to expand our ability to use such a function.
+            
+As we saw in Section \@ref(sec:Compositions), if a function is an injection it can be considered a bijection from its domain onto its range. For certain functions we may need to restrict the domain of the function in order to find an inverse.
+
+
+
+>#### Related Content Standards {-}
+>+ (HSF.BF.4) Find inverse functions.
+>     a. Solve an equation of the form $f(x) = c$ for a simple function $f$ that has an inverse and write an expression for the inverse.
+>     a. Verify by composition that one function is the inverse of another.
+>     a. Read values of an inverse function from a graph or a table, given that the function has an inverse.
+>     a. Produce an invertible function from a non-invertible function by restricting the domain.
+
+
+
+
+### Exercises
+
+1. For each of the following functions defined by their algebraic, verbal, tabular and/or graphical representation, describe the function according the the various properties described in this section. Furthermore, describe how these properties relate to the situation being modeled.
+    
+      a. A factory is built to produce chairs and for each day of operation it has a fixed cost of \$2,000 per day for rent, salaries, and other expenses, and a cost of \$80 per chair built for materials. We let $C(n)$ be the function that represents the cost of building $n$ chairs in a day.
+    
+      a. A person is walking down a street at a constant rate. Let $D(t)$ be the distance from a certain lamppost $t$ seconds from when the person starts walking down the street.
+    
+      a. Let $f$ be the days-in-the-month function in a non-leap year defined by the table 
+        $$\begin{array}{l|cccccccccccc}
+        \mbox{Month number, } m & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline
+        \mbox{Days in month, } D & 31 & 28 & 31 & 30 & 31 & 30 & 31 & 31 & 30 & 31 & 30 & 31 \\
+        \end{array}$$
+
+      a. Let $G(L)$ be the grade points for a letter grade $L$ given by
+        $$\begin{array}{l|ccccccccccccc}
+        \mbox{Letter grade, } L & \mbox{A+} & \mbox{A} & \mbox{A-} & \mbox{B+} & \mbox{B} & \mbox{B-} & \mbox{C+} & \mbox{C} & \mbox{C-} & \mbox{D+} & \mbox{D} & \mbox{D-} & \mbox{F} \\ \hline
+        \mbox{Grade Points, } G & 4.33 & 4 & 3.67 & 3.33 & 3 & 2.67 & 2.33 & 2 & 1.67 & 1.33 & 1 & .67 & 0 
+        \end{array}$$
+
+      a. The closing values of the S & P 500 Index each weekday for January 2000-December 2019.
+
+      ```{r sp500, echo=FALSE, fig.align='center', out.width='70%', fig.cap=''}
+      library(readxl)
+      SP500 <- read_excel("data-examples/SP500.xlsx")
+      library(ggplot2)
+      ggplot(SP500, aes(Date, High)) + geom_point() + theme_bw() +labs(x="Date", y="High Value")
+      ```
+
+    
+      a. Let $f:\mathbb{R} \rightarrow \mathbb{R}$ be defined by $f(x)=\sqrt[3]{x}$, whose graph is given by
+
+      ```{r cube-root, echo=FALSE, fig.align='center', out.width='70%', fig.cap=''}
+      curve(x^(1/3), 0, 6)
+      ```
+
+
+
+## Transformations of Functions
+
+When modeling using a function it is usually helpful to transform the function by a combination translations, dilations, and reflections in order to have the function fit the situation being modeled. 
+
+As an example we will look at a model of the number of hours of daylight in London, England for each day during 2020. We notice that the hours of daylight are periodic and that they resemble a trigonometric function. This function has a period of $365.25$ days and we calculate the average length of daylight to be $12$ hours and $14$ minutes, which first occurs on the $81$st day of the year. So we can model the situation with the function $$f(x)= \left( \frac{\mbox{max hours of daylight} - \mbox{min hours of daylight}}{2}\right) \cdot \sin \left(\frac{2\pi}{365.25} \left(x-81\right)\right) + 12:14$$
+As we can see in below, this function models the situation fairly well.
+
+
+```{r daylight, echo=FALSE, fig.align='center', out.width='100%', fig.cap='Hours of Daylight for London, 2020'}
+library(readxl)
+Daylight <- read_excel("data-examples/DaylightData.xlsx")
+library(ggplot2)
+ggplot(Daylight, aes(x= Day,y=value, color = variable)) + geom_point(aes(y=Actual, col = "Actual")) +geom_point(aes(y=Estimate, col = "Estimate")) + theme_bw() +labs(x="Date", y="Daylength")
+```
+
+We will study the family of functions generated from a parent function using these transformations throughout the rest of the chapter, using the function $f$ given by the graph in Figure \@ref(fig:base-function) as an example.
+
+```{r base-function, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Base Function'}
+knitr::include_graphics(
+  'tikz/base-function.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+### Horizontal Translations
+
+Given a function $f$ and a constant $h$, a new function $g(x)=f(x-h)$ is a **horizontal translation** of the function $f$. If $h$ is positive, then $y=g(x)$ is a translation of $y=f(x)$ by $h$ units to the right. If $h$ is negative, it is a translation to the left. 
+
+```{r horizontal-translation, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Horizontal Translation'}
+knitr::include_graphics(
+  'tikz/horizontal-translation.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+>#### Related Content Standards {-}
+>+ (HSF.BF.3) Identify the effect on the graph of replacing $f(x)$ by $f(x) + k$, $k f(x)$, $f(kx)$, and $f(x + k)$ for specific values of $k$ (both positive and negative); find the value of $k$ given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology. Include recognizing even and odd functions from their graphs and algebraic expressions for them. 
+	
+
+### Vertical Translations
+Given a function $f$ and a constant $k$, a new function $g(x)=f(x)+k$ is a **vertical translation** of the function $f$. If $k$ is positive, then $y=g(x)$ is a translation of $y=f(x)$ by $k$ units up. If $k$ is negative, it is a translation down.
+
+```{r vertical-translation, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Vertical Translation'}
+knitr::include_graphics(
+  'tikz/vertical-translation.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Horizontal Dilations
+
+In addition to the translations, we can dilate the function away from and closer to the vertical axis. Given a function $f$ and a constant $b>0$, a new function $g(x)=f(bx)$ is a **horizontal dilation** by a factor of $b$. If $b>1$, the new function is a compression towards the vertical axis by a factor of $b$. If $0<b<1$, the new function is a dilation away from the vertical axis by a factor of $\frac{1}{b}$.
+
+```{r horizontal-dilation, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Horizontal Dilation'}
+knitr::include_graphics(
+  'tikz/horizontal-dilation.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Vertical Dilations
+
+
+Similarly to the horizontal dilations, multiplying the output of a function by a positive constant dilates the function vertically. Given a function $f$ and a constant $a>0$, the function $g(x)=a f(x)$ is a dilation towards the horizontal axis if $0<a<1$ and away from the horizontal axis if $a>1$. 
+
+```{r vertical-dilation, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Vertical Dilation'}
+knitr::include_graphics(
+  'tikz/vertical-dilation.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Reflections
+
+We are also able to reflect the graph of a function over the horizontal axis by changing the sign of the output of the function. So $g(x)=-f(x)$ is a **vertical reflection** of $f$ about the horizontal axis.
+
+```{r vertical-reflection, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Vertical Reflection'}
+knitr::include_graphics(
+  'tikz/vertical-reflection.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+By changing the sign of the variable in the domain, we can also reflect a function about the vertical axis so that the graph of $g(x)=f(-x)$ is a **horizontal reflection** of the graph of $f$ about the vertical axis.
+
+```{r horizontal-reflection, echo=FALSE, fig.align='center', out.width='80%', fig.cap='Tranformations: Horizontal Reflection'}
+knitr::include_graphics(
+  'tikz/horizontal-reflection.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Families of Functions
+    
+One can combine all of these transformations together in order to generate a family of functions related to the original function $f$, 
+$$g(x)= a\cdot f(b(x-h))+k.$$ In each of the next few sections we will study the family of functions related to the parent functions of $f(x)=x$, $f(x)=e^x$, $f(x)=\frac{1}{x}$, $f(x)=x^2$, and the basic trigonometric functions, along with each of their inverse functions when those functions exist.
+
+
+
+### Exercises
+
+1. Let $f:[-3,3] \rightarrow \mathbb{R}$ be given by the graph
+
+      ```{r, echo=FALSE, fig.align='center', out.width='80%', fig.cap=''}
+      knitr::include_graphics(
+        'tikz/function-families1.png',
+        auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+        dpi = NULL,
+        error = getOption("knitr.graphics.error", TRUE)
+        )
+      ```
+
+
+      a. Sketch the graph of $y=f(2x)$.
+      a. Sketch the graph of $y=2f(x)$.
+      a. Sketch the graph of $y=f(x+2)$.
+      a. Sketch the graph of $y=f(x)+2$.
+      a. Skecth the graph of $y=-f(-x)$.
+    
+
+
+## Linear and Exponential Functions
+
+### Linear Functions
+
+The first parent function that we will study is the identity function $f(x)=x$. With this function, we see that horizontal and vertical dilations are connected in that $f(ax)=a f(x) = ax$, and that these function describe proportional relationships between two variables. These proportional relationships are part of the core of the middle school mathematics curriculum, along with much of the physical science curriculum.
+
+>#### Related Content Standards {-}
+>+ (6.RP.1) Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.
+>+ (6.RP.3) Use ratio and rate reasoning to solve real-world and mathematical problems.
+>+ (7.RP.2) Recognize and represent proportional relationships between quantities.
+>+ (8.EE.5) Graph proportional relationships, interpreting the unit rate as the slope of the graph.
+
+
+While a direct proportional relationship fits some situations very well, such as Hooke's law that the force needed to compress a spring by a distance is directly proportional to that distance, many others can be modeled by a proportional relationship near certain values. In fact, one of the foundations of calculus is that most functions that we use in modeling can locally be approximated by a proportional relationship. However, to model these proportional relationships we often need to translate the function to a point on the function. Such a translation gives us that for any 'differentiable' function, $f$, near a point $x=a$ we can approximate $f$ by $$f(x) \approx f'(a)(x-a) + f(a).$$ As such, we will study the family of linear functions of the form 
+$$f(x)=m(x-h)+k,$$ often described as the point-slope form of a line with slope $m$ through the point $(h,k)$. These functions can also be written in a slope intercept form, $f(x)=mx+b$ where $b=k-mh$.
+
+If $f(x)=mx+b$, then we can see that the domain and range of the function is all of the real numbers. If $m>0$ the function is strictly increasing, while if $m<0$ it is strictly decreasing. As such, the function has no extrema. 
+
+We also know that since linear functions are monotonic, they are invertible. If $y=f(x)=mx+b$, the inverse of $f$ is $x=f^{-1}(y)= \frac{1}{m} y-\frac{b}{m}$.
+
+### Exponential Functions
+In Section \@ref(sec:linear-exponential) we found a strong relationship between linear functions and exponential functions with the additive relationship of linear functions corresponding with the multiplicative relationship of exponential functions. In the case of exponential functions we will have our parent function be the function $f(x)=e^x$, making the family of exponential functions to be written in the form $$a f(b(x-h))+k = a e^{b(x-h)}+k = (ae^{-bh}) \cdot e^{bx} +k$$ which means that we can generate all possibilities with functions of the form 
+$g(x)=a e^{bx} + k$
+
+When introducing exponential functions in middle school, the base is usually either $2$ or $10$ since students have not yet been introduced to $e$, but we can see that each different base is actually a horizontal dilation of the function with base $e$.
+
+We saw in Section \@ref(sec:reals) that if $b>0$ and $x<y$, then $e^b>1$ and $e^{bx}<e^{by}$, making $e^{bx}$ a strictly increasing function. Similarly if $b<0$, $e^{bx}$ is a strictly decreasing function. So we have the following possible shapes for functions of the form $g(x)=ae^{bx}$.
+
+
+
+
+```{r, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Graphs of Exponential Functions'}
+knitr::include_graphics(
+  'tikz/exp5.png', 
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+We can see that with each of these cases that the function is monotonic and the range is either $(0,\infty)$ or $(-\infty,0)$, depending on the sign of $a$. If we perform a vertical translation to acheive the entire family of exponential functions then we see that we have the following properties for $f(x) = a e^{bx} +k$:
+
++ The domain is $\mathbb{R}$ and the range is $(k,\infty)$ if $a>0$ and $(-\infty,k)$ if $a<0$.
++ The function is strictly monotonic.
++ If $b>0$, then $e^b>1$, $f(x)\rightarrow k$ as $x\rightarrow -\infty$, and $f(x) \rightarrow \pm \infty$ as $x\rightarrow \infty$ (depending on the sign of $a$). These functions model exponential growth.
++ If $b<0$, then $0<e^b<1$, $f(x)\rightarrow k$ as $x \rightarrow \infty$, and $f(x) \rightarrow \pm \infty$ as $x\rightarrow -\infty$ (depending on the sign of $a$). These functions model exponential decay.
+
+
+
+
+>#### Related Content Standards {-}
+>+ (HSF.IF.8) Write a function defined by an expression in different but equivalent forms to reveal and explain different properties of the function.
+>     b. Use the properties of exponents to interpret expressions for exponential functions. For example, identify percent rate of change in functions such as $y=(1.02)^t$, $y = (0.97)^t$, $y = (1.01)12^t$, $y = \frac{(1.2)^t}{10}$, and classify them as representing exponential growth or decay.
+   
+
+
+### Logarithmic Functions
+
+Since the exponential functions are monotonic, they are bijections onto their range. If we let $f(x)=e^x$, then we know that $f:\mathbb{R} \rightarrow (0,\infty)$ is a bijection. From Chapter \@ref(ch:function) we know that there is a unique function $g:(0,\infty) \rightarrow \mathbb{R}$ that is also a bijection with $g(f(x))=x$ for all $x\in \mathbb{R}$ and $f(g(x))=x$ for all $x\in (0,\infty)$. We will call this function the natural logarithm and denote it by $\ln$.
+
+We can then use properties of the exponential function to determine properties of the natural logarithm.
+
+If $\alpha,\beta >0$, then there exist $a$ and $b$ so that $\alpha = e^a$ and $\beta = e^b$, and $$\ln (\alpha \beta) = \ln \left( e^a \cdot e^b\right) = \ln \left(e^{a+b}\right) = a+b = \ln (\alpha) + \ln (\beta). $$ We also have that 
+$$\ln \left(\frac{\alpha}{\beta}\right) = \ln \left( \frac{e^a}{e^b} \right) = \ln \left( e^{a-b} \right) = a-b = \ln(\alpha) - \ln(\beta).$$
+
+If $\alpha>0$ and $x\in \mathbb{R}$, then there exists an $a\in \mathbb{R}$ such that $\alpha=e^a$. Then
+$$\ln \left(\alpha^x\right) = \ln \left( \left(e^a\right)^x\right) = \ln \left( e^{ax} \right) = ax = x \ln(\alpha).$$
+
+>#### Related Content Standards {-} 
+>+ (HSF.BF.5) Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems involving logarithms and exponents.        
+
+Since $a^x$ ($a>0$) has the same properties as $e^x$ it also has an inverse function that we will call logarithm base $a$ and denote it by $$ \log_a: (0,\infty) \rightarrow \mathbb{R}.$$ We can find the relationships between the various bases. If $y= \log_a(x)$, then $x=a^y$. We can evaluate both sides of the equation in the natural log function so that 
+$$\ln(x) = \ln\left(a^y\right) = y \ln (a)$$ and so 
+$$\log_a(x) = \frac{\ln(x)}{\ln(a)}.$$
+
+Using these properties together we are able to use logarithm functions to find equivalent equations to equations such as $a b^{ct}=d$. By inputing both sides of the equation into the $\ln$ function, we have that
+$$\ln(a) + (ct)\ln(b) = \ln (d).$$ We can then find the equivalent equation of 
+$$t= \frac{\ln(d)-\ln(a)}{c\ln(b)}.$$
+
+
+
+>#### Related Content Standards {-}
+>+ (HSF.LE.4) For exponential models, express as a logarithm the solution to $a b^{ct}=d$ where $a$, $c$, and $d$ are numbers and the base $b$ is $2$, $10$, or $e$; evaluate the logarithm using technology.        
+
+
+### Relationships between Linear and Exponential
+
+Since linear functions have a constant additive rate of change and exponential functions have a constant multiplicative rate of change, it is important to recognize the types of situations that are more likely to be modeled with a linear function and which are more likely modeled with an exponential function.
+
+>#### Related Content Standards {-}
+>+ (HSF.LE.1) Distinguish between situations that can be modeled with linear functions and with exponential functions.
+>     a. Prove that linear functions grow by equal differences over equal intervals, and that exponential functions grow by equal factors over equal intervals.
+>     a. Recognize situations in which one quantity changes at a constant rate per unit interval relative to another.
+>     a. Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another.
+
+
+
+
+Some of the factors that point towards a linear model are adding a fixed amount over fixed intervals in the domain, such as adding \$200 to a savings account every month. Factors that direct the model to be exponential is that the amount of growth would depend upon the current value, such as interest rates or cell division in biology.
+
+
+
+
+When given a set of data, the function used to model the data sometimes depend upon the question being asked about the data. Consider the following population data for the State of Alabama^[https://en.wikipedia.org/wiki/Demographics\_of\_Alabama, retrieved 6/25/2020].
+
+$$\begin{array}{c|ccccc}
+ \mbox{Year} & 1800 & 1850 & 1900 & 1950 & 2000 \\ \hline
+ \mbox{Population} & 1,250  & 771,623  & 1,828,697 & 3,061,743 & 4,447,100 \\
+\end{array}$$
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap='Population of Alabama'}
+pop.data <- data.frame(
+Year = c(1800, 1850, 1900, 1950, 2000),
+Pop = c(1.250, 771.623, 1838.697, 3061.743, 4447.100))
+library(ggplot2)
+ggplot(pop.data, aes(x= Year,y=Pop)) + geom_point()  + theme_bw() +labs(x="Year", y="Population (in thousands)")
+```
+
+
+This data can be modeled using either a linear regression or an exponential regression. However, if you include the population in 1800 in the exponential regression, it estimates the population in 2050 to be nearly 100 million people (a highly unlikely number). If one only uses the data points from 1900, 1950, and 2000, the exponential model predicts a population of around 7 million in 2050. A linear model with all of the data points estimates the population in 2050 to be around 5.3 million people (a much more likely scenario).
+
+If, however, you are wanting to estimate the population in years prior to 1800, the linear model becomes useless as it predicts a negative population. So for this type of question, an exponential function would be more useful.
+
+
+
+### Exercises
+
+
+1. The salary scales in three school districts are as follows, for a teacher with a master's degree:
+
+      + District $P$: \$30,000 plus \$1500 for each year of experience
+      + District $Q$: \$30,000 plus \$1750 for each year of experience
+      + District $R$: \$28,000 plus \$1750 for each year of experience
+
+
+      a. Give a formula for the salary in each district for a teacher with $n$ years of experience at the start of the school year.
+      a. Use your formulas to indicate the number of years experience teachers in Districts $P$ and $R$ when they earn the same salary.
+      a. Use your formulas to indicate the number of years experience teachers in Districts $P$ and $Q$ when they earn the same salary.
+      a. Use your formulas to indicate the number of years experience teachers in Districts $Q$ and $R$ when they earn the same salary.
+      a. If in District $T$, teachers earn a salary $S_T$ dollars plus $E_T$ dollars for each year of experience, and in District $U$, teachers earn a salary of $S_U$ dollars plus $E_U$ dollars for each year of experience, $S_T>S_U$, and $E_U>E_T$, how many years will it take District $U$ teachers to catch up to District $T$?
+      a. For each of the previous scenarios, at what value of $n$ will teachers in the two district have earned the same amount of total money during the previous $n$ years?
+
+1.  The following are winning times for the Men's 100m dash at the Olympics.
+
+      ```{r dashtimes, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+      dash.times <- data.frame(
+      year = c(1948, 1952, 1956, 1960, 1964, 1968, 1972, 1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016),
+      time.race = c(10.3, 10.4, 10.5, 10.2, 10, 9.95, 10.14, 10.06, 10.25, 9.99, 9.92, 9.96, 9.84, 9.87, 9.85, 9.69, 9.63, 9.81),
+      runner = c('Harrison Dillard', 'Lindy Remingino', 'Bobby Morrow', 'Armin Hary', 'Bob Hayes', 'Jim Hines', 'Valery Borzov',   'Hasely Crawford', 'Allan Wells', 'Carl Lewis', 'Carl Lewis', 'Linford Christie', 'Donovan Bailey', 'Maurice Greene', 'Justin Gatlin', 'Usain Bolt', 'Usain Bolt', 'Usain Bolt'),
+      nation = c('USA', 'USA', 'USA', 'Germany', 'USA', 'USA', 'USSR', 'Trinidad', 'Great Britain', 'USA', 'USA', 'Great Britain', 'Canada', 'USA', 'USA', 'Jamaica', 'Jamaica', 'Jamaica')
+      )
+      names(dash.times) <- c('Year', 'Time (s)', 'Runner', 'Country')
+      knitr::kable(dash.times, caption="Race Times for Olympic Men's 100m Dash")
+      ```
+
+      Find a mathematical function that model this behavior and use this function to predict the winning time in 2060.  Give reasoning for your work, including the assumptions made for your models.
+        
+1. The number of bacteria in a certain population increases according to a continuous exponential growth model, with a growth rate parameter of  $3.25\%$ per hour. How many hours does it take for the size of the sample to double?
+        
+1. LaVonda is choosing between 2 jobs. For Job A, she would earn $\$27,000$ the first year and each year after that she would get a raise of $\$3,000$. For Job B, she would earn $\$30,000$ the first year and each year after that she would get a raise of $4\%$ of the previous year's salary.
+      a. What is the first year during which LaVonda's salary for Job A would exceed that of Job B? Show your work, and explain the approach you used to find your answer.
+      a. Which year would the total amount earned since starting Job A first exceed the total amount earned since starting Job B? Show your work, and explain the approach you used to find your answer.
+      a. Using sequence and series formulas, what would LaVonda's yearly salary and total amount of money earned be after 20 years at Job A? What would her yearly salary and total amount of money earned be after 20 years at Job B?
+
+1. A business owner spent \$500 on start-up fees to produce and sell candles. Each candle costs an additional \$3.00 to produce. What is the minimum number of candles that the owner must produce for the average cost per candle to be less than \$3.75?
+        
+        
+  
+
+
+## Linear Fractional Transformations
+
+
+
+
+The function $f(x)=\frac{1}{x}$ is another function that appears in physical applications such as Boyle's law that the pressure of a given mass of an ideal gas is inversely proportional to its volume at a fixed temperature. In this section we will explore the family of functions that derive from this function. If $f(x)=\frac{1}{x}$, then we see that for $\alpha \neq 0$ and $\beta \neq 0$ $$g(x)=\alpha \cdot f(\beta(x-h))+k = \frac{\alpha}{\beta} \cdot \frac{1}{ x- h} + k$$ which can be rewritten as
+$$g(x)= \frac{\alpha + k(\beta x-\beta h)}{\beta x-\beta h}= \frac{(k\beta)x + (\alpha-\beta hk)}{\beta x-(\beta h)}= \frac{kx + \left(\frac{\alpha}{\beta} -hk\right)}{x-h}.$$
+
+On the other hand, any function of the form $$h(x)=\frac{ax+b}{cx+d}$$ can be rewritten in the form
+$$h(x)= \frac{a}{c} - \left( \frac{ad-bc}{c^2}\right) \frac{1}{x+\frac{d}{c}}$$ and so we see that it is a transformation of the inverse proportional function if, and only if, $ad-bc \neq 0$ and $c\neq 0$.
+
+If we allow $c=0$, then the functions are transformations of both the linear and inversely proportional parent functions.
+
+Therefore, the family of functions whose parent function is either $f(x)=\frac{1}{x}$ or $f(x)=x$ we call linear fractional transformations (also called a M\"{o}bius transformations) as a real-valued function of the form $$f(x)=\frac{ax+b}{cx+d}$$ where $a$, $b$, $c$, and $d$ are real-valued constants with $(ad-bc)\neq 0$.
+
+
+
+### Domain
+
+If $c\neq 0$, then these functions are not defined at the point $\frac{-d}{c}$ and so the natural domain for the function would be $\mathbb{R}\setminus \{\frac{-d}{c}\}$.
+
+If $c=0$, then $d\neq 0$ and so we see that the function becomes a linear function of the form 
+$$f(x)= \frac{a}{d} x + \frac{b}{d},$$ and so the domain of the function in $\mathbb{R}$.
+
+### Range
+
+If $c\neq 0$, the parent function for these functions is inversely proportional function so that 
+$$f(x)=\frac{ax+b}{cx+d} = \frac{a}{c} -\left(\frac{ad-bc}{c^2}\right)\frac{1}{x+\frac{d}{c}}$$
+
+So for this case that $c\neq 0$, we see that this function is a transformation of the parent function that takes transforms the plane so that the horizontal axis maps to the horizontal line of $y=\frac{a}{c}$, and so the range of the function is $\mathbb{R}\setminus \{\frac{a}{c}\}$.
+
+If $c=0$ the linear fractional transformation reduces to a linear function whose range is $\mathbb{R}$.
+
+
+### Increasing or decreasing
+
+Using the graph of $y=\frac{1}{x}$ we can sketch a graph of the transformation of this function.
+
+```{r LFT-desmos,echo=FALSE, fig.align='center', out.width='100%', fig.cap='Transformations of $f(x)=1/x$'}
+if(knitr::is_html_output(excludes="markdown")) knitr::include_url("https://www.desmos.com/calculator/12qt2c7kwy") else knitr::include_graphics("tikz/x-1transform.png",  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE))
+```
+
+
+By using the expression of the linear fractional transformation of $$f(x)=\frac{ax+b}{cx+d}= \frac{a}{c} - \left(\frac{ad-bc}{c^2}\right) \frac{1}{x+\frac{d}{c}}$$ we see that if 
+$ad-bc>0$ that $f$ is increasing on $(-\infty, \frac{-d}{c})$ and on $(\frac{-d}{c}, \infty)$. We also see that if $ad-bc<0$ that the function is decreasing on these intervals.
+
+### Intercepts
+
+From the primary algebraic expression of the function one can see that if $a\neq 0$ the horizontal intercept of the function is at $\frac{-b}{a}$, and if $a=0$ that there is no horizontal intercept.
+
+One can also see that if $d \neq 0$ that the vertical intercept is at $\frac{b}{d}$ with no vertical intercept if $d=0$.
+
+
+### End behavior and asymptotes
+
+One can see from the graph of $f(x) = \frac{ax+b}{cx+d} = \frac{a}{c} - \left(\frac{ad-bc}{c^2}\right) \frac{1}{x+\frac{d}{c}}$ that $$\lim_{x\rightarrow \pm \infty} f(x) = \frac{a}{c}$$ and that the behavior near the vertical asymptote of $x=-\frac{d}{c}$ depends upon the sign of $ad-bc$. 
+
+```{r, echo=FALSE, fig.align='center', out.width='70%', fig.cap='General Linear Fractional Transformation'}
+knitr::include_graphics(
+  'tikz/lft-general.png', 
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Extensions
+
+By adding a single element to the set of real numbers that we will call $\infty$, we can redefine these functions to have both a domain and range of $\mathbb{R}\cup \{\infty\}$. If $c\neq 0$ we define $f$ on this extended domain to be 
+$$f(x)= \begin{cases}
+      \frac{ax+b}{cx+d}, & x\in \mathbb{R} \setminus \{-\frac{d}{c}\} \\
+      \frac{a}{c}, & x = \infty \\
+      \infty ,  & x = -\frac{d}{c}
+      \end{cases}$$
+and if $c=0$, 
+$$f(x)= \begin{cases}
+    \frac{a}{d} x + \frac{b}{d}, & x \in \mathbb{R} \\
+    \infty , & x= \infty
+    \end{cases}.$$
+
+For the ease of notation, we will denote these extended functions by the algebraic representation of the original function and imply the extension to the extended real numbers. 
+
+From the results above about range and monotonicity of the function we can see that the linear fractional transformations on these extended domains and co-domains are bijections. That leads us to want to understand the forms of the inverse function and the composition of two of these linear fractional transformations.
+
+In order to understand more about the composition of two linear fractional transformations we will define 
+$$f(x)=\frac{ax+b}{cx+d} \mbox{ and } g(x)=\frac{\alpha x + \beta}{\gamma x + \delta}.$$ 
+Then we have that 
+\begin{align*}
+    (g\circ f) (x) & = \frac{\alpha \left(\frac{ax+b}{cx+d}\right) + \beta}{\gamma \left( \frac{ax+b}{cx+d}\right) + \delta } \\
+    & = \frac{ \alpha a x + \alpha b + \beta cx+ \beta d}{\gamma a x + \gamma b + \delta cx + \delta d} \\
+    & = \frac{ \left(\alpha a + \beta c\right) x + \left(\alpha b + \beta d\right)}{\left(\gamma a + \delta c\right)x+\left(\gamma b + \delta d\right)} 
+\end{align*}
+
+Since the composition of two bijections is again a bijection, this composition of two linear fractional transformations is again a linear fractional transformation.
+
+In order to determine the form of the inverse function of a linear fractional transformation, $f(x)=\frac{ax+b}{cx+d}$ we will use the form of the composition of two linear fractional transformations given above and let $$(\alpha b+\beta d)=0, \: (\gamma a + \delta c)=0\mbox{, and }$$ $$(\alpha a + \beta c) = (\gamma b+\delta d)$$ so that the composition becomes the identity function. 
+
+If $c=0$, then $$f(x)= \frac{a}{d} x + \frac{b}{d}$$ and the second equation gives us that $\gamma =0$, and then using the third equation we have that $\alpha a = \delta d$. This then implies that $$f^{-1}(x)= \frac{d}{a} x +  \frac{\beta}{\delta}$$ and since $\beta = \frac{-\alpha b}{d}$ we see that $\frac{\beta}{\delta} = -\frac{b}{a}$ and so $$f^{-1}(x)= \frac{d}{a} x - \frac{b}{a}.$$
+
+If $c\neq 0$, then $\delta = -\frac{\gamma a}{c}$ and $\beta = \frac{-\alpha ac + \gamma bc + \gamma a d}{c^2}$.
+
+Another method to determine the form of the inverse function is based on the graph of the original function. Since, if $c\neq 0$, 
+$$f(x)=\frac{ax+b}{cx+d} = \frac{a}{c} -\left(\frac{ad-bc}{c^2}\right)\frac{1}{x+\frac{d}{c}}$$ we see that $f$ is undefined for $x=\frac{-d}{c}$ giving that $f^{-1}$ will not have $\frac{-d}{c}$ in its range. Similarly, since $\frac{a}{c}$ is not in the range of $f$, it is not in the domain of $f^{-1}$. So if $f^{-1}$ is a linear fractional transformation it is of the form
+$$f^{-1}(x)= \frac{-d}{c}+ \omega \frac{1}{x-\frac{a}{c}}= \frac{-dx +\frac{ad}{c}+c\omega}{cx-a} = \frac{-dx+\beta}{cx-a}$$ for some $\omega \in \mathbb{R}$ and where $\beta\in\mathbb{R}$ is dependent upon this $\omega$. We can then use the algebraic representation of the composition of functions to see that $-db+\beta d=0$ showing that $\beta =b$ and so $$f^{-1}(x)=\frac{-dx+b}{cx-a}.$$
+
+A third method of determining the inverse function of $$f(x)=\frac{ax+b}{cx+d}$$ when $c\neq 0$ is to rewrite the equation $$y=\frac{ax+b}{cx+d}$$ so that we have $$x=\frac{dy-b}{-cy+a}$$ giving $$f^{-1}(x)=\frac{dx-b}{-cx+a}.$$
+
+With each of these methods, we see that the inverse function of a linear fractional transformation is another linear fractional transformation.
+
+
+
+
+### Exercises
+
+1. Prove that the set of linear fractional transformations, together with the operation of function composition forms a group.
+
+1. Is the group of linear fractional transformations with function composition abelian?
+
+1. Compare and contrast the group of linear functional transformations under function composition and the group of invertible $2 \times 2$ matrices under matrix multiplication.
+
+
+
+
+
+## Quadratic Polynomials
+
+
+>#### Related Content Standards {-}
+>+ (HSF.IF.8) Write a function defined by an expression in different but equivalent forms to reveal and explain different properties of the function.
+>     a. Use the process of factoring and completing the square in a quadratic function to show zeros, extreme values, and symmetry of the graph, and interpret these in terms of a context.
+       
+
+Quadratic functions are polynomials whose highest non-zero coefficient is of degree $2$ and are often written in the form $$f(x)=a_0 + a_1 x + a_2 x^2.$$ In order to avoid the use of indices for students when they are working with these quadratic functions, we write them in the form 
+$$f(x)=ax^2 + bx +c.$$
+
+### Completing the Square
+
+To better understand the graph of these quadratics we will modify this form of the quadratic function using a process called completing the square.\index{Completing the Square} In this process we rewrite the polynomial in order to find a monic polynomial without a constant coefficient,
+$$f(x) = a \left( x^2 +\frac{b}{a}x \right) + c.$$
+
+We now look at the area model for the polynomial $x^2+\frac{b}{a}x$ by splitting the $\frac{b}{a}x$ into two pieces.
+
+```{r, echo=FALSE, fig.align='center', out.width='20%', fig.cap='Completing the Square: Area Model'}
+knitr::include_graphics(
+  'tikz/completing-square.png', 
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+Then we see that the area needed to complete the square is
+$\frac{b^2}{4a^2}$ and so we adjust the polynomial accordingly to 
+$$f(x) = a \left( x^2 +\frac{b}{a}x + \frac{b^2}{4a^2} - \frac{b^2}{4a^2} \right) + c.$$ We are now able to distribute the $a$ through the parenthesis to get 
+$$f(x) = a \left( x^2 +\frac{b}{a}x + \frac{b^2}{4a^2}  \right)- \frac{b^2}{4a} + c$$ and we see that the expression inside of the parenthesis is the area of the square. Hence,
+$$f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2}{4a} + c.$$
+
+Therefore, we can write all quadratic polynomials in the form
+$$f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}.$$
+
+
+We can also look at quadratic polynomials from the perspective of transformations of the graph. Beginning with $f(x)=x^2$, we can see that the family of functions generated from this function are of the form $$h(x)= a (x-h)^2 + k$$ which we will call the vertex form of the quadratic function. Equating this with the prior expression we see that all quadratic polynomials can be written in this way and that the vertex of a polynomial of the form $$f(x)=ax^2+bx+c$$ is at the point $$\left(-\frac{b}{2a}, - \frac{b^2-4ac}{4a}\right).$$
+
+We also see from properties of the transformations of the graph that if $a>0$ the parabola opens up and if $a<0$ the parabola opens down. Thus the range of the function $f(x)=ax^2+bx+c$ is 
+
+$$\left[-\frac{b^2-4ac}{4a}, \infty \right) \mbox{ if } a>0 \quad \mbox{and} \quad \left(-\infty, -\frac{b^2-4ac}{4a}\right] \mbox{ if } a<0.$$
+
+
+>#### Related Content Standards {-}
+>+ (HSA.SSE.3) Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.
+>     b. Complete the square in a quadratic expression to reveal the maximum or minimum value of the function it defines.
+   
+ 
+
+### Factoring
+
+In addition to the standard form of $f(x)=ax^2+bx+c$ and the vertex form of $f(x)=a(x-h)^2+k$, it is useful to write quadratic functions in their factored form of $f(x)=(x-d_1)(x-d_2)$ as this form helps to determine the horizontal intercepts of the graph of the function.
+
+To move from the standard form to the factored form, one uses the vertex form of $$f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}$$ and then find the values of $x$ for which the function is equal to zero. These points are the values $d$ such that 
+$$a\left(d+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}=0.$$ Using some algebraic properties we can rewrite this equation as $$\left(d+\frac{b}{2a}  \right)^2= \frac{b^2-4ac}{4a^2}.$$
+We then see that there are two values for $d$ that make this equation true.
+$$d_1 = \frac{-b+\sqrt{b^2-4ac}}{2a} \quad \mbox{and} \quad d_2 = \frac{-b-\sqrt{b^2-4ac}}{2a}.$$
+
+Therefore, the factored form of the quadratic can be written as 
+$$f(x) = \left( x- \frac{-b+\sqrt{b^2-4ac}}{2a}\right) \left(x- \frac{-b-\sqrt{b^2-4ac}}{2a}\right).$$
+
+
+
+
+>#### Related Content Standards {-}
+>+ (HSA.SSE.3) Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.
+>     a. Factor a quadratic expression to reveal the zeros of the function it defines.
+>+ (HSN.CN.7) Solve quadratic equations with real coefficients that have complex solutions.
+ 
+
+#### Polynomial Identities
+
+While the quadratic formula works every time for factoring a quadratic polynomial, there are a couple polynomial identities that are very useful when factoring specific types of quadratics. The first is when we see a difference of squares.
+$$x^2-b^2= (x-b)(x+b)$$
+This difference of squares can also be used to factor $x^4-16$ as $(x^2-4)(x^2+4)$. We can then rewrite this to find more differences of squares so that 
+\begin{align*}
+x^4-16 &= (x^2-4)(x^2+4) = (x^2-4)(x^2- (-4)) \\
+&= (x-2)(x+2)(x-2i)(x+2i).
+\end{align*}
+Another quadratic form that creates a simpler factorization is a perfect square.
+$$x^2+2ax+a^2 = (x+a)^2$$
+ This can be recognized when the absolute value of the middle term of a quadratic is twice the product of the square roots of the other two terms. Some examples of uses include $4x^2+12x +9$ or $12y^2-8\sqrt{3} y  +4$.
+
+>#### Related Content Standards {-}
+>+ (HSN.CN.8) Extend polynomial identities to the complex numbers. \textit{For example, rewrite $x^2 + 4$ as $(x + 2i)(x - 2i)$.}   
+
+### Inverse Function
+
+We notice that a quadratic polynomial does not have an inverse. However, if we restrict the domain of the quadratic polynomial to an interval on which it is monotonic, we can find an inverse. So if we look at the function 
+$$f:[0,\infty) \rightarrow [0,\infty) \: \mbox{ with } \: f(x)=x^2$$ we see that $f$ is a bijection. We define the inverse function as $$g:[0,\infty) \rightarrow [0,\infty) \: \mbox{ with } \: g(x)=\sqrt{x}.$$ We will look at this process of restricting the domain in order to find the inverse function in more detail in the section on trigonometric functions.
+
+
+
+
+### Exercises
+
+1. Let $m$ and $n$ be the zeros of the function $f(x)=ax^2+bx+c$.
+
+      a. Find a formula for $m+n$ in terms of $a$, $b$, and $c$.
+      a. Find a formula for $m^2+n^2$ in terms of $a$, $b$, and $c$.
+      a. Find a formula for $m^3+n^3$ in terms of $a$, $b$, and $c$.
+	
+1. Given $f(x)=-ax^2+2ahx-ah^2+k$, find the domain and range of $f(x)$ where $a>0$, $h>0$, and $k>0$.
+    
+1. Given $(k-1)x^2 + kx+1=0$, where $-1$ is one solution, what is the other solution?
+    
+    
+1. Let $y=f(x)$ be a parabola with vertex $(4,1)$ that passes through the point $(3,-7)$.
+
+      a. What are the domain and range of $f(x)$? Explain how you found your answers based on just the vertex and the point given.
+
+      a. What is the equation of this parabola in vertex form? Show your work algebraically. Explain how you used the points indicated on the graph to determine the equation.
+
+1. Let $d(n)$ stand for the number of diagonals of a polygon of $n$ sides.  Here is a table of values of $d(n)$.
+
+      ```{r, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+      sides <- c(3, 4, 5, 6, 7, 8, 9, 10, 11)
+      diagonals <- c(0, 2, 5, 9, 14, 20, 27, 35, 44)
+      table.diagonals <- data.frame(sides, diagonals)
+      names(table.diagonals) <- c('$n$', '$d(n)$')
+      knitr::kable(table.diagonals, caption = '')
+      ```
+
+      a. Use the table of values to find a polynomial formula for $d(n)$ in terms of $n$.
+      a. Give a geometric argument to show that your formula is true for all $n$.		
+
+		
+1. The top and bottom margins of a poster are each 6 cm and the side margins are each 4 cm.  If the area of the printed material on the poster is fixed at 384 cm^2^, find the dimensions of the poster with the smallest area.
+	
+
+
+## General Polynomial Functions
+
+Now that we understand the graphs of quadratic polynomials we turn our attention to polynomials of higher degree. For all polynomials, the domain is the set of all real numbers. The range, however, are much harder to define and are much easier to determine using numerical methods in computer software.
+
+### Short-Term Behavior
+
+>#### Related Content Standards {-}
+>+ (HSA.APR.3) Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial.        
+
+We know that the graph of a polynomial $p$ intercepts the horizontal axis at every point $x=c$ such that $p(c)=0$. We also know from the factor theorem that this corresponds to $x-c$ being a factor of $p(x)$. We say that $p$ has a zero of order $m$ at a point $x=c$ if the prime factorization of $p(x)$ includes $(x-c)^m$ as a factor, or equivalently
+$$p(x)=(x-c)^m \cdot q(x)$$ where $q(x)$ is a polynomial for which $x-c$ is not a factor.
+
+
+```{theorem, poly-Taylor-zero}
+Let $p$ be a polynomial with a zero of order $m$ at $x=c$. Then $$p(x)=(x-c)^m \cdot q(x)$$ where $q(x)$ is a polynomial with $q(c)\neq 0$. Furthermore, the **Taylor polynomial** of degree $m$ for $p$ centered at $x=c$ is $$T_m(x)= q(c)\cdot (x-c)^m.$$
+```
+
+
+Before we prove this theorem, we will prove the following lemma.
+
+```{lemma, Leibniz-rule, name="General Leibniz Rule"}
+Let $f$ and $g$ be $n$-times differentiable functions. Then $fg$ is also $n$-times differentiable and 
+$$(fg)^{(n)} (x) = \sum_{k=0}^n \binom{n}{k} f^{(n-k)}(x) g^{(k)}(x) $$ where $$\binom{n}{k} = \frac{n!}{k!(n-k)!}.$$
+```
+
+```{proof}
+Using a proof by induction argument we have the base case that $$(fg)'(x)=f'(x)g(x)+f(x)g'(x),$$ which is the standard product rule for derivatives.
+ 
+ Now assume that the statement is true for some natural number $j$. Then 
+ 
+\begin{align*}
+(fg)^{(j+1)}(x) &= \frac{d}{dx} \left( (fg)^{(j)}(x) \right) \\
+&= \frac{d}{dx} \left( \sum_{k=0}^j \binom{j}{k} f^{(j-k)}(x) g^{(k)}(x) \right) \\
+&= \left( \sum_{k=0}^j \binom{j}{k} \left( \frac{d}{dx} f^{(j-k)}(x) g^{(k)}(x) \right) \right) \\
+&= \left( \sum_{k=0}^j \binom{j}{k} \left( f^{(j-k+1)}(x) g^{(k)}(x) + f^{(j-k)}(x) g^{(k+1)}(x) \right) \right) \\
+&= \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k+1)}(x) g^{(k)}(x) \right) + \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k)}(x) g^{(k+1)}(x) \right) .\\
+\end{align*}
+We can then re-index the second summation in order to have the order of the derivatives of $f$ and $g$ to align* between the two summations and we have that 
+\begin{align*}
+(fg)^{(j+1)}(x)	 	&= \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k+1)}(x) g^{(k)}(x) \right) + \left( \sum_{k=1}^{j+1} \binom{j}{k-1}  f^{(j+1-k)}(x) g^{(k)}(x) \right) \\
+&= \binom{j}{0} f^{(j+1)}(x)g^{(0)}(x) + \left( \sum_{k=0}^j \left( \binom{j}{k} + \binom{j}{k-1} \right) f^{(j+1-k)}(x) g^{(k)}(x) \right) \\
+& \quad \quad  + \binom{j}{j} f^{(0)}(x)g^{(j+1)}(x) \\
+\end{align*}
+Since $$ \binom{j}{0}= \binom{j+1}{0} = 1 \quad \mbox{and} \quad \binom{j}{j}= \binom{j+1}{j+1}=1$$ and since 
+	
+\begin{align*}
+\binom{j}{k} + \binom{j}{k-1} &= \frac{j!}{k! (j-k)!} + \frac{j!}{(k-1)!(j-(k-1))!} \\
+&= \frac{j!\cdot (j-k+1)}{k! (j-k+1)!} + \frac{j! (k)}{k!(j-k+1)!}\\
+&= \frac{j! (j+1)}{k! ((j+1)-k)!} = \frac{(j+1)!}{k! ((j+1)-k)!}\\
+&= \binom{j+1}{k}
+\end{align*}
+we have that 
+$$(fg)^{(j+1)}(x)= \sum_{k=0}^{j+1} \binom{j+1}{k} f^{((j+1)-k)}(x) g^{(k)}(x) $$ and so the statement is true for $j+1$.
+	
+Therefore, by induction we have that  
+$$(fg)^{(n)} (x) = \sum_{k=0}^n \binom{n}{k} f^{(n-k)}(x) g^{(k)}(x)$$ is true for all $n$.
+```
+
+```{proof}
+**Proof of Theorem \@ref(thm:poly-Taylor-zero)**
+  
+The factorization of $p$ into $p(x)=(x-c)^m \cdot q(x)$ is a direct consequence of Theorem \@ref(thm:polynomial-factorization). 
+
+Let $f(x)=(x-c)^m$. Then multiple applications of the chain rule gives us that 
+$$f^{(j)}(x) = \begin{cases}
+ \frac{m!}{(m-j)!} (x-c)^{m-j} & \mbox{ if } 0 \leq j \leq m \\
+0 & \mbox{ if } j>m 
+\end{cases}$$
+	
+Therefore, using the General Leibniz Rule we have that for $0\leq n \leq m$, 
+$$p^{(n)}(x) = \sum_{k=0}^n \binom{n}{k} \frac{m!}{(m-n+k)!} (x-c)^{m-n+k} q^{(k)}(x)$$ and so 
+$$p^{(n)}(c) = 
+\begin{cases}
+0 & \mbox{if } 0 \leq n < m\\
+q(c) & \mbox{if } n=m	
+\end{cases}$$
+	giving us the result.
+```
+
+
+The key component of this theorem is that we can further understand how the graphs of polynomials behave near their zeros. If we let $$p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24,$$ we can write this in factored form and see that $$p(x)=(x-1)^2(x+2)^3(x-3)$$ has a zero of order $1$ at $x=3$, a zero of order $2$ at $x=1$, and a zero of order $3$ at $x=-2$. From the theorem we have that near $x=3$, $$p(x) \approx (3-1)^2(3+2)^3(x-3) = 500 (x-3).$$ Similarly, near $x=1$, $$p(x) \approx -54 (x-1)^2$$ and near $x=-2$, $$p(x)\approx -45 (x+2)^3.$$
+
+By graphing these polynomials using computer software we can see that these approximations for the polynomial behavior near the zeros is much more accurate than the standard linear, quadratic, or cubic descriptions.
+
+#### Complex Zeros
+
+If $p(x)$ is a polynomial in $\mathbb{R}[x]$, the factors of this polynomial that correspond to complex zeros come in conjugate pairs. This means that if $(x-(a+bi))^j$ is a factor, then so is  $\overline{(x-(a+bi))^j}= (x-(a-bi))^j$. While there is no direct correspondence between complex zeros and properties of the graph of a polynomial, If there are local minimum and maximum values for a polynomial for which the graph of the polynomial does not cross the horizontal axis, it implies that there are complex zeros of the polynomial.
+
+
+
+### Long-Term Behavior
+
+When we study the long-term behavior of polynomials we focus on the standard form of the polynomial
+$$p(x)=a_0 + a_1 x + \cdots + a_n x^n \quad \mbox{ with } a_n\neq 0.$$ When we look at the ratio of $p(x)$ and its leading term $a_n x^n$ we have $$\frac{p(x)}{a_n x^n} = \frac{a_0}{a_n} \frac{1}{x^n} + \frac{a_1}{a_n} \frac{1}{x^{n-1}} + \cdots \frac{a_{n-1}}{a_n} \frac{1}{x} + 1.$$ So we see that $$\lim_{x \rightarrow \pm \infty} \frac{p(x)}{a_n x^n} =1$$ meaning that these two functions act very similarly as $|x|$ gets large. 
+
+This means that the graph of our polynomial $$p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24$$ will look very similar to the graph of $y=x^6$ when zoomed out to study its long-term behavior.
+
+
+
+
+### Polynomial Identities
+
+Just like the difference of squares and perfect square for quadratic polynomials, there are some identities of polynomials that are very useful. 
+
+If $p(x)=1+x+x^2+\cdots + x^{n-1}$ is multiplied by $(x-1)$ then one sees that 
+$$\frac{x^n-1}{x-1} = 1+x+x^2+\cdots + x^{n-1}.$$ This is the basis for the series
+$$\sum_{k=0}^\infty x^k = \frac{1}{1-x},$$ along with understanding the roots of unity for complex numbers.
+
+The identity
+$$(x^2+y^2)^2= x^4+2x^2y^2+y^4 = x^4-2x^2y^2+y^4+4x^2y^2 = (x^2-y^2)^2 + (2xy)^2$$ can be used to generate Pythagorean triples. For instance, if $x=2$ and $y=1$ the identity becomes $5^2=3^2+4^2$. If $x=5$ and $y=4$ we have the triple $41^2=9^2+40^2$.
+
+Finally, we have the identity
+
+$$(x+y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k}, \quad \mbox{ with } \binom{n}{k} = \frac{n!}{k!(n-k)!},$$ which can be found using Pascal's triangle.
+
+
+>#### Related Content Standards {-}
+>+ (HSA.APR.4) Prove polynomial identities and use them to describe numerical relationships. \textit{For example, the polynomial identity $(x^2 + y^2)^2 = (x^2 - y^2)^2 + (2xy)^2$ can be used to generate Pythagorean triples.}
+>+ (HSA.APR.5) Know and apply the Binomial Theorem for the expansion of $(x + y)^n$ in powers of $x$ and $y$ for a positive integer $n$, where $x$ and $y$ are any numbers, with coefficients determined for example by Pascal's Triangle.        
+
+
+### Exercises
+
+1. For each of the following polynomials,
+
+      + What are the zeros of $f$?
+      + For what values of $x$ is $f(x)>0$?
+      + For what values of $x$ is $f(x)<0$?
+      + What is ${\displaystyle \lim_{x\rightarrow \infty} f(x)}$?
+      + What is ${\displaystyle \lim_{x\rightarrow -\infty} f(x)}$?
+
+      a. ${\displaystyle f(x)=(3x+5)(x-1)(7x+3)(x-5)}$
+      a. ${\displaystyle f(x)=(2x-1)(3x+5)(x+1)}$
+      a. ${\displaystyle f(x)=(x-1)(4x+3)(3x-8)}$
+      a. ${\displaystyle f(x)=(2x+1)(3x-6)(x-6)}$
+
+1. For which values of $k$ does the equation $$x^4-4x^2+x+k=0$$ have four distinct real roots?
+
+1. If $f(x)=3x^2$, what are all real values of $a$ and $b$ for which the graph of $g(x)=ax^2+b$ is below the graph of $f(x)$ for all values of $x$?
+
+1. Consider the function $f(x)=x^4-25x^2-36x$, which has one $x$-intercept at $(-4,0)$. Find all the other zeros of the function algebraically.
+        
+1. Determine the long-term behavior of the following polynomials.
+$$\left(\mbox{Find } \lim_{x\rightarrow \infty} f(x) \quad \mbox{and} \quad \lim_{x\rightarrow -\infty} f(x). \right)$$
+
+      a. ${\displaystyle f(x)=2x^3-3x^2+4x-1}$
+      a. ${\displaystyle f(x)=-3x^4+2x^2-3x+2}$
+      a. ${\displaystyle f(x)=-5x^5+3x^4+2x^3-10x+15}$
+      a. ${\displaystyle f(x)=10x^6+7x^3-1}$
+
+1. For each of the zeros of the following polynomials, find the polynomial approximation of the same degree as the zero near the zero. (If $f(x)$ has a zero of order $m$ at $x=c$, find the Taylor polynomial of degree $m$ centered at $x=c$, $a_c (x-c)^m$.)
+		
+      a. ${\displaystyle f(x)=(x-1)(x+2)^2(2x-3)}$
+      a. ${\displaystyle f(x)=(2x+1)(x+3)^3(x-2)^2}$
+
+
+1. For each of the following graphs, give a possible algebraic representation for $p(x)$.
+
+      a. Graph 1
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/polygraph1.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+      a. Graph 2
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/polygraph2.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```      
+      a. Graph 3
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/polygraph3.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+1. Assume the polynomial $f$ has exactly two local maxima and one local minimum, and that these are the only critical points of $f$.
+
+      a. Sketch a possible graph of $f$.
+      a. What is the largest number of zeros $f$ could have?  (Explain your answer.)
+      a. What is the least number of zeros $f$ could have?  (Explain your answer.)
+      a. What is the least number of inflection points $f$ could have?
+      a. What is the smallest degree $f$ could have?
+      a. Find two possible formulas for $f(x)$ with two different degrees.
+
+1. Given the function $f(x)=-x^4-3x^3+101x^2+543x+940$, use a graphing calculator to do the following:
+
+      a. Find the zeros of the function. Round any zeros you find to the nearest tenth. Explain how you found your answer step-by-step, as if you were explaining to a student who does not know how to use a graphing calculator.
+      a. Identify any local minima or maxima of the graph of the function as ordered pairs. Indicate which are local minima and which are local maxima. Round any minima or maxima to the nearest tenth. Explain how you found your answer step-by-step.
+      a. Find the range of the function. Round the numbers in your answer to the nearest tenth. Explain how you found your answer step-by-step.
+      a. Sketch the graph of the function. List a viewing window that shows all the information you found in the other parts of the problem. Explain why you chose your viewing window.
+
+<!---
+
+1. Ms. Phillips explained to her class that polynomial functions of degree 5 with real coefficients always have 5 roots. She showed her students the following 3 graphs of polynomial functions of degree 5.
+```{r, echo=FALSE, fig.align='center', out.width='90%', fig.cap=''}
+knitr::include_graphics(
+  'images/final-graphs-combined.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+      a. State how many distinct real roots there are for each graphed polynomial. Use evidence from the graphs to explain your answer.
+      a. Each of the graphed polynomials has a different number of real roots. State how many real and non-real roots each graphed polynomial has. Use evidence from the graphs to explain your answer.
+      a. Find an algebraic representation of a polynomial function of degree 5 with real coefficients is given below. Find an algebraic representation of the function. (Your function should include similar long-term behaviour and relationship of real and complex zeros, but does not need to match perfectly.)
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/FinalGraph4.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+--->
+
+
+
+
+## Rational Functions {#sec:rational-functions}
+
+A rational function is of the form 
+$$f(x)=\frac{p(x)}{q(x)}$$ for some polynomials $p$ and $q$ with real-valued coefficients. If the degree of $q$ is zero, then the rational function is just a polynomial. So we will assume throughout this section that the degree of $q$ is at least one. In the same way that the different representations of a polynomial help us to understand different aspects of the polynomial, different representations of the rational function will help us to better understand properties of the rational function.
+
+
+
+
+
+### Short-Term Behavior
+
+In order to understand the short-term behavior of a rational function, it is helpful to write the function in its factored form
+$$f(x)=\frac{p(x)}{q(x)} = A\frac{ (x-a_1)^{j_1} (x-a_2)^{j_2} \cdot (x-a_n)^{j_n}}{(x-b_1)^{k_1} (x-b_2)^{k_2} \cdots (x-b_m)^{k_m}}$$ where the $a_i\in \mathbb{C}$ are the zeros of degree $j_i$ of the numerator (and thus the zeros of the function), the $b_i\in \mathbb{C}$ are zeros of the denominator, and $A$ is a real number that allows the numerator and denominator to both be monic polynomials. Since the polynomials have real-valued coefficients, any factors corresponding to non-real zeros come in conjugate pairs. The $b_i$ that are real-valued correspond with values that have been removed from the domain of the function. Similarly, the $a_i$ that are real-valued correspond to the horizontal intercepts for the rational function. 
+
+#### Common Factors
+When the numerator and denominator share a factor, $(x-a_0)$,we need to understand how this affects the rational function. 
+
+If the degree of the shared factor is larger in the numerator than in the denominator, the rational function is undefined at the zero of the factor, but has a limit of zero near this value. We can also see that the rational function is equivalent to the rational function where $(x-a_0)$ is only a factor in the numerator whose degree is the difference between the degrees of the factor in the numerator and denominator of the original rational function, with the zero of the factor removed from the domain of the new function. For example, 
+$$f(x)=\frac{(x-1)^3}{(x-1)^1} \mbox{ is equivalent to } g(x)=(x-1)^2, \: \mbox{ for } x\in \mathbb{R}\setminus\{1\}.$$
+
+If the degree of the shared factor is larger in the denominator than in the numerator, the rational function is equivalent to the rational function where $(x-a_0)$ is only a factor in the denominator whose degree is the difference between the degrees of the factor in the denominator and numerator of the original rational function. 
+For example, 
+$$f(x)=\frac{(x-1)^1}{(x-1)^3} \mbox{ is equivalent to } g(x)=\frac{1}{(x-1)^2}.$$
+
+If the shared factor has the same degree in the numerator and denominator, then this is a removable singularity and the factor can be removed from both the numerator and denominator with the removal of the zero of the factor from the new rational function.
+
+For the remainder of the section we will assume that the numerator and denominator do not have a common factor.
+
+#### Behavior near Zeros
+
+The factors of the numerator of the rational function determine the zeros of the polynomial. If $(x-a_0)$ is a factor of the numerator of degree $j_0$, and if $a_0\in \mathbb{R}$, then $a_0$ is a zero of the rational function (thus $a_0$ is a horizontal intercept of the graph of the rational function) and we can rewrite the rational function as 
+$$f(x) = (x-a_0)^{j_0} g(x)$$ where $g$ is a rational function without $(x-a_0)$ as a factor of either the numerator or denominator (See Theorem \@ref(thm:poly-Taylor-zero)). Using properties from analysis (similarly to Theorem \@ref(lem:Leibniz-rule)) we can determine that near $x=a_0$ that 
+$$f(x) \approx g(a_0) (x-a_0)^{j_0}.$$
+
+
+
+```{example}
+To better understand this concept let us consider $$f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}.$$
+We see that the function has horizontal intercepts at $-1$ and $1$. We can also see that near $x=-1$, the function is very similar to $$g(x)= (x+1) \cdot \frac{ ((-1)-1)^2}{((-1)-2)^2}= \frac{4}{9} (x+1).$$ Similarly, near $x=1$ the function behaves very similarly to $h(x)= 2(x-1)^2$.
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/rational1.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+#### Behavior near Singularities
+
+In order to determine the domain of the rational functions we consider the factors of the denominator of the function. If $(x-b_0)$ is a factor in the denominator of the rational function, and $b_0\in \mathbb{R}$, then $b_0$ is not in the domain of the function. If the degree of the factor is $k_0$, then we see that the function can be rewritten as $$f(x)= \frac{1}{(x-b_0)^{k_0}} g(x)$$ for a rational function $g$ with $b_0$ in the domain of $g$ and $g(b_0)\neq 0$. So near $x=b_0$, $$f(x) \approx g(b_0) \frac{1}{(x-b_0)^{k_0}}.$$
+
+```{example}
+Returning to our example of $f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}$, we can see that near $x=2$ that 
+$$f(x) \approx \frac{3}{(x-2)^2},$$ as evidenced in the following graph.
+
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/rational2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+This understanding of short-term behavior can help us to simplify certain models near given points, choose appropriate window sizes to have technology graph a function, and be able to more easily determine if the graph of a function generated by a program is accurate.
+
+
+
+
+
+### Long-Term Behavior
+
+In order to understand the long-term behavior of rational functions we start by looking at rational functions where the degree of the numerator is less than the degree of the denominator. Such functions can be generalized as 
+$$f(x) = \frac{ a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n}{b_0 + b_1 x + \cdots + b_n x^n +\cdots +b_{n+r}x^{n+r}}.$$
+Then by multiplying the numerator and denominator by $x^{-(n+r)}$ we have 
+$$f(x) = \frac{ a_0\frac{1}{x^{n+r}} + a_1 \frac{1}{x^{n+r-1}} + \cdots + a_n \frac{1}{x^{r}}}{b_0 \frac{1}{x^{n+r}} + b_1 \frac{1}{x^{n+r-1}} + \cdots + b_n \frac{1}{x} +\cdots +b_{n+r}}$$ and we can see that as $|x|$ gets large that most of the terms converge to $0$. Thus,
+$$\lim_{x\rightarrow \pm \infty} f(x) = \frac{0}{b_{n+r}} = 0.$$
+
+So we see that if the degree of the numerator is less than the degree of the denominator that the graph of the function approaches the horizontal axis as $|x|$ gets large. This is often called a horizontal asymptote of the function since the function asymptotically approaches the horizontal axis. A challenge that many students have with this terminology is that they have been told that a function cannot cross an asymptote. While that is true for vertical asymptotes, it is not true for horizontal asymptotes as seen in the graph of the function below.
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/rational3.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+In fact, a function can cross its "horizontal asymptote" an infinite number of times. For example, 
+$$f(x)=\frac{\cos(x)}{x}.$$
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/rational4.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+We can then build on this understanding to study the long-term behavior of rational functions with the degree of the numerator greater than or equal to the degree of the denominator.
+So if $f(x)$ is a rational function with numerator $a(x)$ and denominator $b(x)$ we have from the Division Algorithm for Polynomials \@ref(thm:Division-Algorithm-Poly) that there exist unique polynomials $q(x)$ and $r(x)$  such that 
+$$a(x)=b(x) q(x) + r(x)$$ with the degree of $r(x)$ less than the degree of $b(x)$. Dividing both sides of this equation by $b(x)$ we have 
+$$f(x)=\frac{a(x)}{b(x)} = q(x) + \frac{r(x)}{b(x)}.$$
+
+From the conversation above we can see that $$\lim_{x\rightarrow \pm \infty} \frac{r(x)}{b(x)} =0$$ and that $f(x)$ asymptotically approaches $q(x)$ as $|x| \rightarrow \infty$. So if the degree of the numerator is one plus the degree of the denominator then the quotient would be a linear function. Such asymptotes are often called ``skew asymptotes.'' 
+
+```{example}
+Returning to our example of $f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}$, we can rewrite the function using the division algorithm as 
+$$f(x)= x+3 + \frac{7x-11}{(x-2)^2}.$$
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/rational5.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+### Partial Fraction Decomposition
+
+Another way to represent rational functions whose numerator has a lower degree than the denominator is a **partial fraction decomposition**. This decomposition allows the rational function to be written as the sum of rational functions whose denominators are irreducible and whose numerators are of lower degree than the denominator. For instance, 
+$$\frac{3x-1}{x^2-2x-3} = \frac{1}{x+1} + \frac{2}{x-3}\quad \mbox{or} \quad \frac{3x^2-x+1}{x^3+x} = \frac{2x-1}{x^2+1} + \frac{1}{x}.$$
+
+There are limited uses of the partial fraction decomposition in the K-12 curriculum. Hence, it was not included in the Common Core standards. However, this representation of a rational function is essential in the area of integration of rational functions. It is also useful to find Taylor (and Laurent) series expansions, and to solve problems in differential equations involving the Laplace transform. Because of this, we recommend this content first being taught during the section of integration of rational functions in Calculus. In the high school curriculum, this is during the BC portion of an Advanced Placement Calculus AB/BC course. 
+
+
+
+
+### Exercises
+
+1. Consider the polynomials $a(x)=2x^3+3x^2-5x-7$ and $b(x)=x^2+1$.
+
+      a. Perform polynomial division of $a(x)$ by $b(x)$.  Call the quotient polynomial $q(x)$ and the remainder polynomial $r(x)$.
+      a. Use the quotient and remainder to describe the behavior of $f(x)$ when $|x|$ is large.
+
+1. Let $\displaystyle{f(x)=\frac{x^3-1}{x^3+1}}$.
+
+      a. What is the domain of $f$?
+      a. Determine the singular points of $f$ (that is, the points at which $f$ is undefined) and whether $f$ has any vertical asymptotes at these points.
+      a. What is the range of $f$?
+      a. At what points does the graph of $f$ intersect the horizontal-axis?
+      a. Find any global or local maxima or minima.
+      a. Determine the intervals on which $f$ is increasing and those intervals on which $f$ is decreasing.
+      a. Describe what happens to $f(x)$ as $x\rightarrow \infty$ and as $x \rightarrow -\infty$.
+      a. What is a power series of $f$?
+
+        
+1. List and describe the behavior near each of the zeros and singularities for the following rational functions.
+
+      a. ${\displaystyle f(x)=\frac{x+3}{x^2+2x-3}   }$
+      a. ${\displaystyle f(x)=\frac{x^2-2x-24}{x^2+10x+24}   }$
+      a. ${\displaystyle f(x)=\frac{25x^2-80x+64}{192-75x^2}   }$
+      a. ${\displaystyle f(x)=\frac{12x^7-3x^3}{4x^4-16x}   }$
+      a. ${\displaystyle f(x)=\frac{6x-12x^9}{3x^3+7}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+15x+56}{x+5}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+2x-15}{x^2+10x+25}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+8x+16}{x^2+6x+8}   }$
+      a. ${\displaystyle f(x)=\frac{x^5+3x^3+2x^2+4x+1}{x^4+5} }$
+
+
+1. Describe the long-term behavior for the following rational functions.
+
+      a. ${\displaystyle f(x)=\frac{x+3}{x^2+2x-3}   }$
+      a. ${\displaystyle f(x)=\frac{x^2-2x-24}{x^2+10x+24}   }$
+      a. ${\displaystyle f(x)=\frac{25x^2-80x+64}{192-75x^2}   }$
+      a. ${\displaystyle f(x)=\frac{12x^7-3x^3}{4x^4-16x}   }$
+      a. ${\displaystyle f(x)=\frac{6x-12x^9}{3x^3+7}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+15x+56}{x+5}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+2x-15}{x^2+10x+25}   }$
+      a. ${\displaystyle f(x)=\frac{x^2+8x+16}{x^2+6x+8}   }$
+      a. ${\displaystyle f(x)=\frac{x^5+3x^3+2x^2+4x+1}{x^4+5} }$
+
+1. Find an algebraic representation for a function, $f$, whose graph has all of the following attributes.
+
+      + $f(2)=0$
+      + $f(\frac{1}{2})=0$
+      + $f(-3)=0$
+      + $\displaystyle{\lim_{x \rightarrow \frac{2}{3}^+} f(x) = \infty}$
+      + $\displaystyle{\lim_{x \rightarrow 1^-} f(x) = \infty}$
+      + As $x\rightarrow \pm \infty$, $\displaystyle{f(x) \approx \frac{10}{3}x^2+\frac{77}{9}x-\frac{242}{27}}$
+
+
+1. Write the rational functions below in their partial fraction decomposition over the real numbers.
+      a. $\displaystyle{f(x)=\frac{x^3+x^2+1}{x^2-x}}$
+      a. $\displaystyle{f(x)=\frac{x^4}{x^4-1}}$
+      a. $\displaystyle{f(x)=\frac{4x^2-3x+2}{4x^2-4x+3}}$
+      a. $\displaystyle{f(x)=\frac{x^4-2x^2+4x+1}{x^3-x^2-x+1}}$
+      a. $\displaystyle{f(x)=\frac{2x^2-x+4}{x^3+4x}}$
+
+
+
+
+## Trigonometric Functions
+
+
+
+```{block, include=!knitr::is_latex_output()}
+The area of trigonometry comes from the combination of τρίγωνον (triangle) and μέτρον (measure) and is the study of the measurements of triangles. The study of the measurements of sides of triangles was known to the ancient Egyptians and Babylonians for the purpose of constructions and land surveys [@Boyer, p. 158]. The Greeks expanded on this work with many of our standard trigonometric properties included in Euclid's Elements. With the growth of astronomy and navigation in the 1500's trigonometry was expanded to include more identities. The current uses of trigonometric functions include optics, acoustics, electrical engineering, image compression, and computer-generated imagery (CGI).
+```
+
+
+
+
+
+
+```{block, include=knitr::is_latex_output()}
+The area of trigonometry comes from the combination of  \texttau \textrho \textiota \textgamma \textomega\textnu \textvarsigma{} (triangle) and \textmugreek \textepsilon \texttau \textrho o\textnu{} (measure) and is the study of the measurements of triangles. The study of the measurements of sides of triangles was known to the ancient Egyptians and Babylonians for the purpose of constructions and land surveys [@Boyer, p. 158]. The Greeks expanded on this work with many of our standard trigonometric properties included in Euclid's Elements. With the growth of astronomy and navigation in the 1500's trigonometry was expanded to include more identities. The current uses of trigonometric functions include optics, acoustics, electrical engineering, image compression, and computer-generated imagery (CGI).
+```
+
+
+
+### Definitions
+
+Beginning in fourth grade, students are introduced to right triangles, with a cyclical study of these triangles continuing through middle school, and into high school.
+
+>#### Related Content Standards {-}
+>- (4.G.2) Classify two-dimensional figures based on the presence or absence of parallel or perpendicular lines, or the presence or absence of angles of a specified size. Recognize right triangles as a category, and identify right triangles.
+>- (6.G.1) Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in the context of solving real-world and mathematical problems.
+>- (8.G.5) Use informal arguments to establish facts about the angle sum and exterior angle of triangles, about the angles created when parallel lines are cut by a transversal, and the angle-angle criterion for similarity of triangles.
+>- (HSG.SRT.6) Understand that by similarity, side ratios in right triangles are properties of the angles in the triangle, leading to definitions of trigonometric ratios for acute angles.
+
+```{r right-triangle-trig, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/right-triangle-trig.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+Our first definitions for the trigonometric functions are based on the properties of right triangles. As such, the initial domain of the trigonometric functions are defined in degrees on $(0^\circ,90^\circ)$. For an angle $A$, we define the sine of angle $A$ to be the ratio of the measure of the opposite side, $a$, and the hypotenuse, $c$,
+$$\sin(A) = \frac{a}{c}.$$
+The cosine of angle $A$ is the ratio of the measures of the adjacent side, $b$, and the hypotenuse, $c$, and the tangent of the angle $A$ is the ratio of the measures of the opposite side, $a$, and the adjacent side, $b$,
+$$\cos(A) = \frac{b}{c} \quad  \mbox{ and } \quad \tan(A) = \frac{a}{b}.$$
+Similarly for angle $B$, 
+$$\sin(B) = \frac{b}{c}, \quad \cos(B) = \frac{a}{c}, \quad \mbox{ and } \quad \tan(B) = \frac{b}{a}.$$
+
+We also define the additional trigonometric functions as follows:
+\begin{align*}
+\mbox{secant of }A &= \sec(A) = \frac{1}{\cos(A)} = \frac{c}{b} \\
+\mbox{cosecent of }A &= \csc(A) = \frac{1}{\sin(A)} = \frac{c}{a} \\
+\mbox{cotangent of } A &= \cot(A) = \frac{1}{\tan(A)} = \frac{b}{a} \\
+\end{align*}
+
+While these definitions are sufficient, it is less ambiguous to define the angle, not by the vertex, but by the amount between two line segments.
+
+```{r right-triangle-trig2, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/right-triangle-trig2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+\begin{align*}
+\alpha + \beta = 90^\circ & & \alpha = 90^\circ - \beta & & \beta=90^\circ - \alpha  \\
+\cos(\alpha) = \sin(\beta) =  \frac{b}{c} & & \tan(\alpha) = \cot(\beta) = \frac{a}{b} & & \sec(\alpha) = \csc(\beta) = \frac{c}{b}\\
+\sin(\alpha) = \cos(\beta) = \frac{a}{c} & & \cot(\alpha) = \tan(\beta) = \frac{b}{a} & & \csc(\alpha) = \sec(\beta) = \frac{c}{a} \\
+\end{align*}
+
+
+
+#### Radians and Degrees
+
+The use of $360^\circ$ to measure angles is likely related to the number of days (365) it takes for the Earth to rotate around the sun. With the advent of calculus it became apparent that a different technique of measuring an angle based on the arc length subtended by the angle was needed. Shortly after his death in 1716 at the age of 33, Roger Cotes published the first definition of the radian angle measurement [-@Cotes]. (It was in this same work that he wrote $ix=ln(\cos(x) + i\sin(x))$, the precursor to Euler's formula.) 
+
+```{r radian, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/radian.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+A radian is defined to be the angle subtended from by a circular arc whose length is the same as the radius. This means that there are $2\pi$ radians in a circle, a right angle is $\frac{\pi}{2}$ radians, and a straight line is $\pi$ radians.
+
+In order to convert an angle from degrees to radians, one would multiply by $\frac{\pi}{180^\circ}$. And to convert from radians to degrees would be necessitate multiplying by the reciprocal.
+
+One of the primary benefits of using radians instead of degrees is that for angles near $0$, $\sin(\alpha) \approx \alpha$. This simplifies the derivatives of the trigonometric functions and makes for a cleaner series expansion for the trigonometric functions.
+
+In addition, to find the arclength of an angle in radians, one only needs to multiply by the radius, ($l=\alpha r$). To find the arclength in for an angle given in degrees we have $l=\alpha \frac{\pi r}{180^\circ}$.
+
+
+>#### Related Content Standards {-}
+>- (HSF.TF.1) Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle.
+
+#### Unit Circle
+Combining the definitions of the trigonometric functions for right triangles with the angles defined by radians we can extend the domain of trigonometric functions to all possible angles using the unit circle. For angles $\alpha \in \left(0,\frac{\pi}{2} \right)$, we plot a point on the unit circle that is swept out by that angle from the positive horizontal axis. We then form a right triangle from that point by drawing a line segment from the point that is perpendicular to the horizontal axis and draw a line segment from the point to the origin. We can then see that the coordinates of the point are $(\cos(\alpha),\sin(\alpha))$. This also means that the distance along the unit circle from $(1,0)$ to this point is $\alpha$.
+
+Then, for any angle $\alpha$ we define $\sin(\alpha)$ and $\cos(\alpha)$ to be given by the coordinates on the unit circle whose distance from the point $(1,0)$ along the circle in a counter-clockwise direction is $\alpha$.
+
+>#### Related Content Standards {-}
+>- (HSF.TF.2) Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers, interpreted as radian measures of angles traversed counterclockwise around the unit circle.
+
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/unit-circle-trigonometry.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+
+With this extended definition of sine and cosine, we can define all of our trigonometric functions on a much larger domain. We can see from these definitions that $$\sin:\mathbb{R}\rightarrow [-1,1], \: \cos:\mathbb{R} \rightarrow [-1,1], \mbox{ and }$$ $$ \tan: \left( \mathbb{R}\setminus \left\{\frac{\pi}{2} + k\pi: k \in \mathbb{Z}\right\}\right) \rightarrow \mathbb{R}.$$
+
+Since $(\cos(\alpha),\sin(\alpha))$ is defined as a point on the unit circle, we know from the Pythagorean theorem that $\left(\cos(\alpha)\right)^2 + \left(\sin(\alpha)\right)^2 = 1$. In order to reduce the notation we often write $\cos^2(\alpha)$ and $\sin^2(\alpha)$ to represent the square of the function. With this notation we have $$\cos^2(\alpha) +\sin^2(\alpha) = 1.$$
+This equation can then be rearranged to create the equivalent equations of 
+$$\sec^2(\alpha) -\tan^2(\alpha) = 1 \quad \mbox{ and } \quad \csc^2(\alpha)-\cot^2(\alpha) = 1.$$
+
+
+>#### Related Content Standards {-}
+>- (HSF.TF.8) Prove the Pythagorean identity $\sin^2(\theta) + \cos^2(\theta) = 1$ and use it to find $\sin(\theta)$, $\cos(\theta)$, or $\tan(\theta)$ given $\sin(\theta)$, $\cos(\theta)$, or $\tan(\theta)$ and the quadrant of the angle.
+
+
+Using the properties of the unit circle we find that the values of the cosine and sine functions repeat with every cycle around the unit circle and so we find that these are periodic functions with a period of $2\pi$,
+$$\cos(\alpha) = \cos (\alpha+2\pi) \quad \mbox{ and } \quad \sin(\alpha) = \sin(\alpha+2\pi).$$
+
+Since the negative angles are the rotation in the clockwise direction instead of the counter-clockwise direction we have some additional symmetry,
+$$\sin(-\alpha)=-\sin(\alpha) \quad \mbox{ and } \quad \cos(-\alpha) = \cos(\alpha),$$
+and so we see that the sine function is an odd function and the cosine function is an even function.
+
+
+
+>#### Related Content Standards {-}
+>- (HSF.TF.4) Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions.
+
+
+### Additional Properties
+
+#### Angle Addition Formulas
+
+In order to prove the angle addition formula for the sine function we begin by choosing two acute (less than right) angles, $\alpha$ and $\beta$, and draw a pair of right triangles so that the hypotenuse of the triangle $ABC$ is a leg of the triangle $ACD$, as in the figure below.
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/angle-addition-sine1.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+We can then draw a line segment through $D$ perpendicular to $AB$, and a another line segment perpendicular to this new line and through the point $C$.
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/angle-addition-sine2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+We now have that $$\sin\left(\alpha+\beta\right) = \frac{DE}{AD}$$ and that $DE=DF+EF$, and since $EF=BC$ we have that $$\sin\left(\alpha+\beta\right) = \frac{DF+BC}{AD}= \frac{DF}{AD} + \frac{BC}{AD}$$
+
+We can also view $AC$ as a transversal to the parallel lines $AB$ and $CF$ so that the angle $\angle ACF=\alpha$ and also $\angle FDC = \alpha$. This means that $\cos(\alpha) = \frac{DF}{CD}$. We can then rewrite the angle addition equation as 
+
+$$\sin\left(\alpha+\beta\right)  = \frac{DF}{CD}\frac{CD}{AD} + \frac{BC}{AC}\frac{AC}{AD} =\cos(\alpha) \sin(\beta) + \sin(\alpha) \cos(\beta).$$
+
+
+In order to prove the angle addition formula for the cosine function we can see that
+
+\begin{align*}
+\cos(\alpha+\beta) &= \sin\left(\frac{\pi}{2} - \alpha - \beta\right) \\
+&= \sin \left( \left(\frac{\pi}{2}-\alpha\right) + (-\beta) \right) \\
+&= \cos\left(\frac{\pi}{2}-\alpha\right) \sin(-\beta)+\sin\left(\frac{\pi}{2}-\alpha\right)\cos(-\beta) \\
+&= \sin(\alpha)\left(-\sin(\beta)\right) +\cos(\alpha)\cos(\beta) \\
+&= \cos(\alpha) \cos(\beta) - \sin(\alpha) \sin(\beta)
+\end{align*}
+
+
+Another proof of both of these identities involves can be constructed from the following diagram.
+
+```{r, echo=FALSE, fig.align='center', out.width='60%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/angle-addition-sine3.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+If the angles are obtuse, then one can use the symmetry of the sine and cosine functions to change the angle addition into a sum of angles that are acute.
+
+>#### Related Content Standards {-}
+>- (HSF.TF.9) Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems.
+
+
+If we use Euler's equation, $e^{iy} = \cos(y) + i \sin(y)$, we can prove the angle addition formulas using properties of exponents and the addition and multiplication operations. We can write $e^{i(\alpha+\beta)}$ in two ways:
+\begin{align*}
+e^{i(\alpha+\beta)} &= e^{i\alpha} \cdot e^{i\beta} = (\cos(\alpha) + i \sin(\alpha) ) (\cos(\beta) + i \sin(\beta))\\
+&= \left( \cos(\alpha)\cos(\beta)-\sin(\alpha)\sin(\beta)\right) + i \left( \sin(\alpha)\cos(\beta) + \cos(\alpha)\sin(\beta)\right) \\
+e^{i(\alpha+\beta)} &= \cos(\alpha+\beta) + i \sin(\alpha+\beta)
+\end{align*}
+Then by equating the real part and imaginary parts of these two representations we have the angle addition formulas.
+
+
+>#### Related Content Standards {-}
+>- (HSG.SRT.10) Prove the Laws of Sines and Cosines and use them to solve problems.
+>- (HSG.SRT.11) Understand and apply the Law of Sines and the Law of Cosines to find unknown measurements in right and non-right triangles (e.g., surveying problems, resultant forces).
+
+
+```{theorem, name="Law of Sines"}
+If a triangle has sides of lengths $a$, $b$, and $c$ opposite angles $A$, $B$, and $C$, respectively, then 
+$$\frac{\sin(A)}{a}=\frac{\sin(B)}{b} = \frac{\sin(C)}{c}$$
+```
+
+
+
+:::{.proof}
+If the triangle has a right angle, then the law of sines follows directly from the definition of the sine function. So we may assume that we have a triangle, $\triangle\,ABC$, without any right angles.
+    
+Then $\angle ABC$ can be acute or obtuse. 
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/law-of-sines1.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/law-of-sines2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+In each case, draw the altitude from the vertex at $C$ to the side $AB$. In the acute triangle the altitude lies inside the triangle, while in the obtuse triangle the altitude lies outside the triangle.
+
+Let $h$ be the height of the altitude. For each triangle we see that
+$$\frac{h}{b} = \sin(A) \quad \mbox{ and } \quad \frac{h}{a} = \sin(B),$$
+since $\frac{h}{a} = \sin(\pi - B) = \sin(B)$ because of the symmetry of the sine function. Thus, solving for $h$ and substituting that into the previous equation gives
+$${a\sin(B)} = b\sin(A) \quad \mbox{ or equivalently } \quad \frac{\sin(A)}{a} = \frac{\sin(B)}{b}.$$
+
+By a similar argument, drawing the altitude from $A$ to $BC$ gives
+$$\frac{\sin(C)}{c} = \frac{\sin(B)}{b}.$$
+We then combine these to complete our proof.
+:::
+
+
+
+```{theorem, name="Law of Cosines"}
+If a triangle has sides of lengths $a$, $b$, and $c$, opposite angles $A$, $B$, and $C$, respectively, then
+$$c^2=a^2+b^2 -2ab\cos(C)$$
+```
+
+
+There are many different proofs of the Law of Cosines. We include one from the perspective of analytic geometry.
+
+:::{.proof}
+We are able to create a system of coordinates on the plane in order to align the point $C$ with the origin and point $B$ on the positive real axis at the point $(a,0$.
+
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/law-of-cosines.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+  
+We can then use the distance formula to find the distance from $A$ to $C$ as 
+$$c^2=\left(b\cos(\theta)-a\right)^2 + (b\sin(\theta))^2= b^2 \cos^2(\theta)-2ab\cos(\theta) + a^2 + b^2 \sin^2(\theta)$$
+We can then rearrange the terms and use the property that $b^2\cos^2(\theta) + b^2\sin^2(\theta) = b^2$ to see that 
+$$c^2=a^2+b^2 -2ab\cos(C)$$
+:::
+
+
+### Graphs of Trigonometric Functions
+
+Using the definitions of the sine and cosine functions from the unit circle we can sketch their graphs as a function of the angle in radians.
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/sine-graph.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/cosine-graph.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+We can then look at the family of functions generated from these two functions. One thing to notice is that the sine function is a horizontal shift of the cosine function, $\sin(x)=\cos\left(x-\frac{\pi}{2}\right)$. Because of this, we will only look at the family of functions generated from the cosine function. This family of functions is all of the functions of the form 
+$$f(x)=a \cos\left(b(x-h)\right) +k$$
+for real numbers $a$, $b$, $h$, and $k$. 
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/cosine-graph2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+>#### Related Content Standards {-}
+>- (HSF.TF.5) Choose trigonometric functions to model periodic phenomena with specified amplitude, frequency, and midline.
+
+
+We can also sketch the base graphs of the other trigonometric functions noticing that the domain of these functions will not include certain values as we cannot divide by zero and have a real number. We will give the graphs of the tangent and secant functions, with the graphs of the cotangent and cosecant functions being similar.
+
+```{r, echo=FALSE, fig.align='center', out.width='80%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/tangent-graph.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+```{r, echo=FALSE, fig.align='center', out.width='80%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/secant-graph.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+### Inverse Trigonometric Functions
+
+From Section \@ref(sec:Compositions), we see that a function is invertible if, and only if, it is a bijection. We can look at the graphs of the sine and cosine functions and see that they are definitely not bijections when thought of as functions from $\mathbb{R}$ to $\mathbb{R}$.
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/cosine-graph.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+However, if we restrict the domain and co-domain of the functions, these new functions are invertible.
+
+For the cosine function, we restrict the domain to $[0,\pi]$ in order to find the maximum region on which the function is an injection and is onto the range of the original function, $[-1,1]$. While there are many options for this choice, we choose the option that includes the first quadrant to correspond with the definitions of the functions for right triangles.
+
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/cosine-graph-restricted.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+This function is now invertible and so we call its inverse function arcosine and denote it 
+$$\arccos:[-1,1]\rightarrow [0,\pi] \quad \mbox{ or } \quad  \cos^{-1}:[-1,1]\rightarrow [0,\pi].$$
+
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/arccos.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+Similarly we will restrict the sine function to the largest domain that includes the first quadrant for which the function is an injection. 
+
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/sine-graph-restricted.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+We then call the inverse function of this restricted domain function the arcsine and denote it
+$$\arcsin:[-1,1] \rightarrow \left[\frac{-\pi}{2}, \frac{\pi}{2}\right] \quad \mbox{ or } \quad \sin^{-1}:[-1,1] \rightarrow \left[\frac{-\pi}{2}, \frac{\pi}{2}\right].$$
+```{r, echo=FALSE, fig.align='center', out.width='40%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/arcsine.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+We can then say that the arcsine of a number, $x$, between $-1$ and $1$ is the angle, $\theta$, between $-\frac{\pi}{2}$ and $\frac{\pi}{2}$ so that $\sin(\theta) = x$. With a similar interpretation for the arccosine.
+
+We can similarly restrict the domain and co-domain of the tangent, cotangent, secant, and cosecant functions to be invertible. Our choice of domains for these functions depend upon including the origin, if possible, and to have the function be increasing on the intervals of its domain.
+
+
+\begin{align*}
+  & \tan:\left( -\frac{\pi}{2},\frac{\pi}{2} \right) \rightarrow (-\infty,\infty) & & \tan^{-1}: (-\infty,\infty) \rightarrow \left( -\frac{\pi}{2},\frac{\pi}{2} \right)  \\
+  & \cot:\left( 0,\pi\right) \rightarrow (-\infty,\infty)  & & \cot^{-1}: (-\infty,\infty)  \rightarrow \left( 0,\pi\right)  \\
+  &  \sec: \left[0,\frac{pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right] \rightarrow (-\infty,1]\cup [1,\infty) & & \sec^{-1}: (-\infty,1]\cup [1,\infty)  \rightarrow \left[0,\frac{pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]  \\
+  &  \csc: \left[-\frac{\pi}{2},0\right) \cup \left( 0,\frac{\pi}{2}\right] \rightarrow (-\infty,1]\cup [1,\infty)  & & \csc^{-1}: (-\infty,1]\cup [1,\infty)\rightarrow  \left[-\frac{\pi}{2},0\right) \cup \left( 0,\frac{\pi}{2}\right]   \\
+\end{align*}
+
+
+>#### Related Content Standards {-}
+>- (HSF.TF.6) Understand that restricting a trigonometric function to a domain on which it is always increasing or always decreasing allows its inverse to be constructed.
+>- (HSF.TF.7) Use inverse functions to solve trigonometric equations that arise in modeling contexts; evaluate the solutions using technology, and interpret them in terms of the context.
+
+
+
+### Exercises
+1. A billboard with a height of $6$ feet is mounted on the side of a building with its bottom edge at a $4$ feet above the street.  At what distance $g$ along the ground should an observer stand from the building to get the best view? 
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/billboard.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+    
+2. Find the shortest length of a ladder that can be placed against the wall of the house above the 4 foot fence that is placed 3 feet from the house.
+
+```{r, echo=FALSE, fig.align='center', out.width='30%', fig.cap=''}
+knitr::include_graphics(
+  'images/ladder.jpg',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+    
+    
+
+## Combinations of Functions {#sec:Function-combinations}
+
+Now that we have an understanding of the main functions in the K-12 curriculum we will look at some of the ways that these functions are combined to create new functions or to model various phenomena.
+
+### Addition, Subtraction, Multiplication, and Division of Functions
+
+We will explore how functions can be combined through addition and subtraction by looking at an example from music. The note of middle C has a frequency of $261.63$ Hz (cycles per second) and can be modeled by the function $C(t)=\sin\left(261.63 \cdot (2\pi t)\right)$. If one doubles the number of cycles per second we obtain the next octave higher of the note of C, $\tilde{C}(t) = \sin\left( 523.25 \cdot (2\pi t)\right)$. If we play these notes together, we have 
+$$C(t)+ \tilde{C}(t) = \sin\left(261.63 \cdot (2\pi t)\right)+ \sin\left( 523.25 \cdot (2\pi t)\right)$$
+When the octave is divided into 8 parts, one finds that playing the 1st, 3rd, and 5th notes of the scale creates a very pleasing sound. We can see from the graph of the sum of the three sine functions corresponding the these three notes that the chord has a very complex structure.
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/C-chord1.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+The use of noise canceling headphones is another example of the adding and subtracting of functions. In this application, there is a microphone obtaining the noise that is in the surrounding environment and then subtracting that signal from the sound the person is hearing.
+
+\begin{align*}
+\mbox{Sound produced by the headphones} &= \mbox{Sound of the music or speaking desired} \\
+& -\mbox{Sound of surrounding environment}
+\end{align*}
+
+There are many additional applications that involve the addition and subtraction of functions including
+$$\mbox{Net Profit} = \mbox{Revenue} -\mbox{Expenses}.$$
+
+Some applications that involve the multiplication and/or division of functions include
+\begin{align*}
+    \mbox{Work(time)} &= \mbox{Force(time)} \cdot \mbox{Distance(time)} \\
+    \mbox{Pressure} &= \frac{\mbox{Force}}{\mbox{Area}} \\
+    \mbox{Surface Area of a Cylinder} &= 2\pi \mbox{(radius)}\cdot \mbox{(height)} + 2 \pi (\mbox{radius})^2 
+\end{align*}
+
+When functions are combined using the basic operations of addition, subtraction, multiplication, and division, the individual functions must have the same type of domain and the domain of the combined function would be the intersection of the domains of the individual functions, excluding any values for which a denominator may be undefined.
+
+### Composition of Functions
+
+Another common way to combine functions is through function composition. An example of such a model is finding the area covered by a circular oil slick when the radius of the oil slick is changing with time. 
+$$\mbox{Area(time)} = \pi \cdot \left( \mbox{radius(time)} \right)^2$$
+
+Recall from Chapter \@ref(ch:function) that with the composition of functions, for most cases, the domain of the second function corresponds with the domain of the first function.
+
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/function-composition-sets.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+However, we sometimes have compositions of functions for which the domain of the second function is a subset of the co-domain of the first function. For example, 
+$$g(x) = \sqrt{x}, \quad f(x)=x-1, \quad \mbox{ and } \quad (g\circ f)(x) = \sqrt{x-1}.$$
+In this case, the domain of $g$ is $[0,\infty) \subseteq \mathbb{R}$ and so the domain of the composition of the two functions, $g\circ f$, is $[1,\infty)$.
+
+In order to determine the domain and range of a composition of functions where the domain of the second function does not correspond to the co-domain of the first function, we need to define the pre-image of a function.
+```{r, echo=FALSE, fig.align='center', out.width='100%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/function-composition-sets2.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+  )
+```
+
+
+If $\phi:U\rightarrow V$ and $W \subseteq V$, we define the pre-image of $W$ under the function $\phi$ as,
+$$\phi^{-1}(W) = \left\{ a\in U \middle \vert \phi(a)\in W\right\}.$$ Then if $$f:A\rightarrow B \quad \mbox{ and } \quad g:D\subseteq B \rightarrow C$$ are functions, the domain of $g\circ f$ is $$f^{-1} \left( (\mbox{Domain of } g) \cap (\mbox{Range of } f)\right).$$ 
+
+Let's look at how this applies to an example of compositions of linear fractional transformations.
+
+
+```{example}
+Let $f:\mathbb{R}\setminus \{3\}  \rightarrow \mathbb{R}$ and $g:\mathbb{R}\setminus \{-1\} \rightarrow \mathbb{R}$ be defined by $$f(x) = \frac{2x-1}{x-3} \quad \mbox{ and } \quad g(x)=\frac{5x+2}{x+1}.$$
+Then the range of $f$ is $\mathbb{R} \setminus \{2\}$ and the domain of $g$ is $\mathbb{R}\setminus \{-1\}$. So the intersection is $\mathbb{R}\setminus \{-1,2\}$ and 
+$$f^{-1} \left(\mathbb{R} \setminus \{-1,2\} \right) = \mathbb{R} \setminus \left\{\frac{4}{3}, 3\right\},$$ since $f\left(\frac{4}{3}\right) = -1$. 
+    
+So the domain of $g\circ f$ is $\mathbb{R} \setminus \left\{\frac{4}{3}, 3\right\}$ and we can determine the range of $g\circ f$ by removing $g(2)$ from the range of $g$. So 
+$$g\circ f : \mathbb{R} \setminus \left\{\frac{4}{3}, 3\right\} \rightarrow \mathbb{R} \setminus \left\{ 4,5 \right\}, \quad (g\circ f) (x) = \frac{12x-11}{3x-4}$$ is a surjection.
+```
+
+Once we have determined the domain and range of the composition of functions, we can use properties of each of the individual functions to determine properties of the composition of the functions.
+
+```{example}
+The function
+$$f(x) = \frac{e^{\frac{-x^2}{2}}}{\sqrt{2\pi}}$$ gives the standard normal distribution. If we let $h(x)=-\frac{x^2}{2}$ and $g(x)=\frac{e^x}{\sqrt{2\pi}}$, we see that $f=g\circ h$. Since $h$ is an even function, $f$ must be an even function and so we will have symmetry about the vertical axis. We also know that $h$ is decreasing on $[0\infty)$ and $g$ is always increasing. So $f=g\circ h$ must be decreasing on $[0,\infty)$, and since $\lim_{x\rightarrow \infty} h(x) = -\infty$ and $\lim_{x\rightarrow -\infty} g(x) = 0$ we know that $\lim_{x\rightarrow \infty} f(x) = 0$. Knowing that $f(0)=\frac{1}{\sqrt{2\pi}}$ we have enough knowledge about the function to sketch a graph of the function.
+```{r, echo=FALSE, fig.align='center', out.width='50%', fig.cap=''}
+knitr::include_graphics(
+  'tikz/normal-distribution.png',
+  auto_pdf = getOption("knitr.graphics.auto_pdf", FALSE),
+  dpi = NULL,
+  error = getOption("knitr.graphics.error", TRUE)
+)
+
+```
+
+
+
+### Systems of Equations
+
+The final method of combining multiple functions that we will study are determining the values for which a set of functions have the same input and output. The most common type of problems for which this occurs are systems of linear equations.
+
+Sometimes it is valuable to know the values of $x$ and $y$ for which two equations, 
+\begin{align*}
+    ax+by &= \alpha \\
+    c x + d y &= \beta, \\
+\end{align*}
+are true. In terms of functions, this can be viewed in multiple ways. One option is to think of the two equations as two different linear functions, $f(x)=-\frac{a}{b} x + \frac{\alpha}{b}$ and $g(x) = -\frac{c}{d} x + \frac{\beta}{d}$. We are then determining the values of $x$ for which $f(x)=g(x)$. With this perspective, one can think of this graphically as the points $(x,y)$ for which the two graphs, $y=f(x)$ and $y=g(x)$, intersect. Another method is to view the situation algebraically and determine the values of $x$ for which $-\frac{a}{b} x + \frac{\alpha}{b}=-\frac{c}{d} x + \frac{\beta}{d}$.
+
+Another way to view this situation is through a linear algebra lens where we can write the system of equations in terms of a single function, 
+$$L\left( \begin{pmatrix} x \\ y \end{pmatrix} \right) = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} + \begin{pmatrix} -\alpha \\ - \beta \end{pmatrix}.$$ We are then trying to find the values for which $L(x,y) = (0,0)$. These are the values 
+$$\begin{pmatrix} x \\ y \end{pmatrix}= \begin{pmatrix} a & b \\ c & d \end{pmatrix}^{-1} \begin{pmatrix} \alpha \\ \beta \end{pmatrix}.$$
+
+Each of these perspectives has strengths and weaknesses when generalized to different situations. If we generalize to a larger system of equations for which the variables are all linear, $a_1 x_1 + a_2 x_2 + \cdot a_n x_n = b_n$, then the methods of linear algebra are often most efficient. If we generalize the system of two linear equations to different types of equations with two variables, 
+$$\begin{matrix} 3x+2y=3 \\ x^+y^2=4  \end{matrix} \quad \mbox{ or } \quad \begin{matrix} x+y=8 \\ 3\cdot 2^x = 0 \end{matrix}$$ then graphical methods are often the more efficient. If we combine these ideas to systems of non-linear equations with more than two variables, numerical analysis techniques are often employed to find numerical approximations to the system of equations.
+
+
+
+
+
+>#### Related Content Standards {-}
+>+ (8.EE.8) Analyze and solve pairs of simultaneous linear equations.
+>     a. Understand that solutions to a system of two linear equations in two variables correspond to points of intersection of their graphs, because points of intersection satisfy both equations simultaneously.
+>     a. Solve systems of two linear equations in two variables algebraically, and estimate solutions by graphing the equations. Solve simple cases by inspection. 
+>     a.Solve real-world and mathematical problems leading to two linear equations in two variables.
+>+ (HSA.REI.11) Explain why the x-coordinates of the points where the graphs of the equations $y = f(x)$ and $y = g(x)$ intersect are the solutions of the equation $f(x) = g(x)$; find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations. Include cases where $f(x)$ and/or $g(x)$ are linear, polynomial, rational, absolute value, exponential, and logarithmic functions.
+
+
+
+
+### Exercises
+
+1. Domain and Range.^[From *The World of Functions*, part of the Interactive Mathematics Program]
+      a. Find the domain and range of the following functions.
+      a. $\displaystyle{ f(x) =\frac{x^2}{(x^2+1)(x+3)}}$
+      a. $\displaystyle{f(x)=\sqrt{x^2-16}}$
+      a. $\displaystyle{f(x)=\frac{1}{\sqrt{2x-5}}}$
+      a. $\displaystyle{f(x)= \frac{x^2-9}{x\sqrt{x^2-3x+2}}}$
+      a. Find functions with the following domains.
+            1. The set of all real numbers less than or equal to 6
+            1. The set of all real numbers between $-2$ and $2$ (including both $-2$ and $2$)
+            1. The set of all real numbers between 1 and 4 (including both 1 and 4).
+            
+1. Give an algebraic representation for a function with the indicated domain and range.
+      a. domain of $\mathbb{R}$ and range of $\{y\in \mathbb{R}\vert a\leq y \leq b\}$.
+      a. domain of $\{x\in \mathbb{R}\vert  x>2\}$ and range of $\{y\in \mathbb{R}\vert  y>1\}$.
+
+1. Find all solutions of the equation 
+    $$x^2-3 - \frac{1}{x^2-3} = 0.$$
+    
+1. Determine the zeros, vertical asymptotes, and end behavior of the function define by the given algebraic expression.
+      a. $f(x)=2\cdot 3^{x+2}$
+      a. $g(y)=\frac{y^2+1}{y^2-1}$
+
+1. For each of the following pairs of functions, $f$ and $g$, give the domain, range, and a simplified formula for $f\circ g$ and for $g \circ f$.
+      a. $f(x)=\cos (x)$ and $g(x)=\sin^{-1}(x)$
+      a. $f(x)=\frac{1}{x}$ and $g(x)=\sqrt{x^2-3x+2}$
+      a. $f(x)=\ln(x-3)$ and $g(x)=x^2+4$
+      a. $f(x)=\frac{1}{x-2}$ and $g(x)=\frac{1}{x-3}$
+        
+
+    
+1. Find an algebraic representation of a single function, $f(x)$ that has all of the following characteristics.
+      + The domain of $f$ is $(-\infty, -1) \cup (-1,4) \cup (4,\infty)$
+      + The range of $f$ is $(-\infty,\infty)$
+      + $\displaystyle{\lim_{x \rightarrow -1^-} f(x) = \infty}$
+      + $\displaystyle{\lim_{x \rightarrow -1^+} f(x) = -\infty}$
+      + $\displaystyle{\lim_{x \rightarrow 4^-} f(x) = -\infty}$
+      + $\displaystyle{\lim_{x \rightarrow 4^+} f(x) = \infty}$
+      + $f(1)=0$ and near $x=1$, $\displaystyle{f(x)\approx \frac{3}{10}(x-1)}$
+      + $f(-2)=0$ and near $x=-2$, $\displaystyle{f(x) \approx \frac{1}{4}(x+2)^2}$
+      + $f(3)=0$ and near $x=3$, $\displaystyle{f(x) \approx \frac{-5}{4}(x-3)}$
+      + As $x\rightarrow \pm \infty$, $\displaystyle{f(x) \approx \frac{x^2+3x+4}{10}}$
+
+	
+1. Consider the functions $$f(x)=1+\sqrt{7-2x} \quad \mbox{and} \quad g(x)=\frac{1}{3-\sqrt{x+5}}.$$
+    Let $h(x)=f(x) \cdot g(x)$. What is the domain and range of $h$? (Round any answers to the nearest tenth.)
+
+1. If $f(x)=|x-1|-2$, what is the vertex of $y=f(x+2)-1$?
+    
+1. Let $f(x)=3\sqrt[4]{x} - \sqrt{x} -2$. Describe all of the features of the graph of $y=f(x)$ without using technology and then verify with graphing technology. 
+
+
+

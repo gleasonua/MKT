@@ -1,0 +1,7 @@
+# Estimating Parameters and Testing Hypotheses {#ch:parameters}
+
+
+
+
+`r if (knitr::is_html_output()) '# References {-}'`
+
