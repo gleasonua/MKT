@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7.3 Properties of Polynomial Rings | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7.3 Properties of Polynomial Rings | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7.3 Properties of Polynomial Rings | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="polynomial-rings.html"/>
+<link rel="next" href="rational-expressions.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a><ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a><ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a><ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a><ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
+<li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
+<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a><ul>
+<li class="chapter" data-level="6.1" data-path="sec-groups.html"><a href="sec-groups.html"><i class="fa fa-check"></i><b>6.1</b> Group Theory</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="sec-groups.html"><a href="sec-groups.html#abelian-groups"><i class="fa fa-check"></i><b>6.1.1</b> Abelian Groups</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sec-groups.html"><a href="sec-groups.html#uniqueness-of-identities-and-inverses"><i class="fa fa-check"></i><b>6.1.2</b> Uniqueness of Identities and Inverses</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sec-groups.html"><a href="sec-groups.html#sec:homomorphisms"><i class="fa fa-check"></i><b>6.1.3</b> Homomorphisms</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sec-groups.html"><a href="sec-groups.html#isomorphisms"><i class="fa fa-check"></i><b>6.1.4</b> Isomorphisms</a></li>
+<li class="chapter" data-level="6.1.5" data-path="sec-groups.html"><a href="sec-groups.html#finite-groups"><i class="fa fa-check"></i><b>6.1.5</b> Finite Groups</a></li>
+<li class="chapter" data-level="6.1.6" data-path="sec-groups.html"><a href="sec-groups.html#exercises-20"><i class="fa fa-check"></i><b>6.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html"><i class="fa fa-check"></i><b>6.2</b> Relationship Between Linear and Exponential</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html#exercises-21"><i class="fa fa-check"></i><b>6.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html"><i class="fa fa-check"></i><b>6.3</b> Rings and Fields</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="sec-Exploration.html"><a href="sec-Exploration.html#finite-sets-with-two-operations"><i class="fa fa-check"></i><b>6.3.1</b> Finite Sets with Two Operations</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sec-Exploration.html"><a href="sec-Exploration.html#matrices"><i class="fa fa-check"></i><b>6.3.2</b> Matrices</a></li>
+<li class="chapter" data-level="6.3.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html#rings"><i class="fa fa-check"></i><b>6.3.3</b> Rings</a></li>
+<li class="chapter" data-level="6.3.4" data-path="sec-Exploration.html"><a href="sec-Exploration.html#identities-and-inverses"><i class="fa fa-check"></i><b>6.3.4</b> Identities and Inverses</a></li>
+<li class="chapter" data-level="6.3.5" data-path="sec-Exploration.html"><a href="sec-Exploration.html#integral-domains"><i class="fa fa-check"></i><b>6.3.5</b> Integral Domains</a></li>
+<li class="chapter" data-level="6.3.6" data-path="sec-Exploration.html"><a href="sec-Exploration.html#ring-homomorphisms"><i class="fa fa-check"></i><b>6.3.6</b> Ring Homomorphisms</a></li>
+<li class="chapter" data-level="6.3.7" data-path="sec-Exploration.html"><a href="sec-Exploration.html#exercises-22"><i class="fa fa-check"></i><b>6.3.7</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html"><i class="fa fa-check"></i><b>7.1</b> Properties of the Ring of the Integers</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#composing-and-decomposing-integers"><i class="fa fa-check"></i><b>7.1.1</b> Composing and Decomposing Integers</a></li>
+<li class="chapter" data-level="7.1.2" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#greatest-common-divisor-and-least-common-multiple"><i class="fa fa-check"></i><b>7.1.2</b> Greatest Common Divisor and Least Common Multiple</a></li>
+<li class="chapter" data-level="7.1.3" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#fundamental-theorem-of-arithmetic"><i class="fa fa-check"></i><b>7.1.3</b> Fundamental Theorem of Arithmetic</a></li>
+<li class="chapter" data-level="7.1.4" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#exercises-23"><i class="fa fa-check"></i><b>7.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="polynomial-rings.html"><a href="polynomial-rings.html"><i class="fa fa-check"></i><b>7.2</b> Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="polynomial-rings.html"><a href="polynomial-rings.html#exercises-24"><i class="fa fa-check"></i><b>7.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html"><i class="fa fa-check"></i><b>7.3</b> Properties of Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#polynomial-division"><i class="fa fa-check"></i><b>7.3.1</b> Polynomial Division</a></li>
+<li class="chapter" data-level="7.3.2" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#gcf-and-lcm-for-polynomials"><i class="fa fa-check"></i><b>7.3.2</b> GCF and LCM for Polynomials</a></li>
+<li class="chapter" data-level="7.3.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#irreducible-polynomials"><i class="fa fa-check"></i><b>7.3.3</b> Irreducible Polynomials</a></li>
+<li class="chapter" data-level="7.3.4" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#exercises-25"><i class="fa fa-check"></i><b>7.3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="rational-expressions.html"><a href="rational-expressions.html"><i class="fa fa-check"></i><b>7.4</b> Rational Expressions</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="rational-expressions.html"><a href="rational-expressions.html#exercises-26"><i class="fa fa-check"></i><b>7.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a><ul>
+<li class="chapter" data-level="8.1" data-path="function-properties.html"><a href="function-properties.html"><i class="fa fa-check"></i><b>8.1</b> Function Properties</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="function-properties.html"><a href="function-properties.html#domain-and-range"><i class="fa fa-check"></i><b>8.1.1</b> Domain and Range</a></li>
+<li class="chapter" data-level="8.1.2" data-path="function-properties.html"><a href="function-properties.html#maxima-minima-or-relative-maxima-relative-minima"><i class="fa fa-check"></i><b>8.1.2</b> Maxima (minima) or relative maxima (relative minima)</a></li>
+<li class="chapter" data-level="8.1.3" data-path="function-properties.html"><a href="function-properties.html#increasing-or-decreasing"><i class="fa fa-check"></i><b>8.1.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.1.4" data-path="function-properties.html"><a href="function-properties.html#intercepts"><i class="fa fa-check"></i><b>8.1.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.1.5" data-path="function-properties.html"><a href="function-properties.html#end-behavior-singularities-and-asymptotes"><i class="fa fa-check"></i><b>8.1.5</b> End behavior, singularities, and asymptotes</a></li>
+<li class="chapter" data-level="8.1.6" data-path="function-properties.html"><a href="function-properties.html#special-properties"><i class="fa fa-check"></i><b>8.1.6</b> Special Properties</a></li>
+<li class="chapter" data-level="8.1.7" data-path="function-properties.html"><a href="function-properties.html#exercises-27"><i class="fa fa-check"></i><b>8.1.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html"><i class="fa fa-check"></i><b>8.2</b> Transformations of Functions</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-translations"><i class="fa fa-check"></i><b>8.2.1</b> Horizontal Translations</a></li>
+<li class="chapter" data-level="8.2.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-translations"><i class="fa fa-check"></i><b>8.2.2</b> Vertical Translations</a></li>
+<li class="chapter" data-level="8.2.3" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-dilations"><i class="fa fa-check"></i><b>8.2.3</b> Horizontal Dilations</a></li>
+<li class="chapter" data-level="8.2.4" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-dilations"><i class="fa fa-check"></i><b>8.2.4</b> Vertical Dilations</a></li>
+<li class="chapter" data-level="8.2.5" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#reflections"><i class="fa fa-check"></i><b>8.2.5</b> Reflections</a></li>
+<li class="chapter" data-level="8.2.6" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#families-of-functions"><i class="fa fa-check"></i><b>8.2.6</b> Families of Functions</a></li>
+<li class="chapter" data-level="8.2.7" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#exercises-28"><i class="fa fa-check"></i><b>8.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html"><i class="fa fa-check"></i><b>8.3</b> Linear and Exponential Functions</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#linear-functions"><i class="fa fa-check"></i><b>8.3.1</b> Linear Functions</a></li>
+<li class="chapter" data-level="8.3.2" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exponential-functions"><i class="fa fa-check"></i><b>8.3.2</b> Exponential Functions</a></li>
+<li class="chapter" data-level="8.3.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#logarithmic-functions"><i class="fa fa-check"></i><b>8.3.3</b> Logarithmic Functions</a></li>
+<li class="chapter" data-level="8.3.4" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#relationships-between-linear-and-exponential"><i class="fa fa-check"></i><b>8.3.4</b> Relationships between Linear and Exponential</a></li>
+<li class="chapter" data-level="8.3.5" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exercises-29"><i class="fa fa-check"></i><b>8.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html"><i class="fa fa-check"></i><b>8.4</b> Linear Fractional Transformations</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#domain"><i class="fa fa-check"></i><b>8.4.1</b> Domain</a></li>
+<li class="chapter" data-level="8.4.2" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#range"><i class="fa fa-check"></i><b>8.4.2</b> Range</a></li>
+<li class="chapter" data-level="8.4.3" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#increasing-or-decreasing-1"><i class="fa fa-check"></i><b>8.4.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.4.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#intercepts-1"><i class="fa fa-check"></i><b>8.4.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.4.5" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#end-behavior-and-asymptotes"><i class="fa fa-check"></i><b>8.4.5</b> End behavior and asymptotes</a></li>
+<li class="chapter" data-level="8.4.6" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#extensions"><i class="fa fa-check"></i><b>8.4.6</b> Extensions</a></li>
+<li class="chapter" data-level="8.4.7" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#exercises-30"><i class="fa fa-check"></i><b>8.4.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html"><i class="fa fa-check"></i><b>8.5</b> Quadratic Polynomials</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#completing-the-square"><i class="fa fa-check"></i><b>8.5.1</b> Completing the Square</a></li>
+<li class="chapter" data-level="8.5.2" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#factoring"><i class="fa fa-check"></i><b>8.5.2</b> Factoring</a></li>
+<li class="chapter" data-level="8.5.3" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#inverse-function"><i class="fa fa-check"></i><b>8.5.3</b> Inverse Function</a></li>
+<li class="chapter" data-level="8.5.4" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#exercises-31"><i class="fa fa-check"></i><b>8.5.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html"><i class="fa fa-check"></i><b>8.6</b> General Polynomial Functions</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>8.6.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>8.6.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>8.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="8.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-32"><i class="fa fa-check"></i><b>8.6.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html"><i class="fa fa-check"></i><b>8.7</b> Rational Functions</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#short-term-behavior-1"><i class="fa fa-check"></i><b>8.7.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.2" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#long-term-behavior-1"><i class="fa fa-check"></i><b>8.7.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.3" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#partial-fraction-decomposition"><i class="fa fa-check"></i><b>8.7.3</b> Partial Fraction Decomposition</a></li>
+<li class="chapter" data-level="8.7.4" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#exercises-33"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html"><i class="fa fa-check"></i><b>8.8</b> Trigonometric Functions</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#definitions"><i class="fa fa-check"></i><b>8.8.1</b> Definitions</a></li>
+<li class="chapter" data-level="8.8.2" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#additional-properties"><i class="fa fa-check"></i><b>8.8.2</b> Additional Properties</a></li>
+<li class="chapter" data-level="8.8.3" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#graphs-of-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.3</b> Graphs of Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.4" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#inverse-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.4</b> Inverse Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.5" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#exercises-34"><i class="fa fa-check"></i><b>8.8.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html"><i class="fa fa-check"></i><b>8.9</b> Combinations of Functions</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#addition-subtraction-multiplication-and-division-of-functions"><i class="fa fa-check"></i><b>8.9.1</b> Addition, Subtraction, Multiplication, and Division of Functions</a></li>
+<li class="chapter" data-level="8.9.2" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#composition-of-functions"><i class="fa fa-check"></i><b>8.9.2</b> Composition of Functions</a></li>
+<li class="chapter" data-level="8.9.3" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#systems-of-equations"><i class="fa fa-check"></i><b>8.9.3</b> Systems of Equations</a></li>
+<li class="chapter" data-level="8.9.4" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#exercises-35"><i class="fa fa-check"></i><b>8.9.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="properties-of-polynomial-rings" class="section level2">
+<h2><span class="header-section-number">7.3</span> Properties of Polynomial Rings</h2>
+<p>The properties of irreducible (prime) elements and factorizations is very important in the study of the integers and is dependent upon the integral domain properties. We have also seen that certain polynomial rings are also integral domains. In this section we will see how the factorization of integers into prime factors can be extended to the ring of polynomials. Throughout this section we will let <span class="math inline">\(S\)</span> be a general integral domain (you can think of it as <span class="math inline">\(\mathbb{Z}\)</span>, <span class="math inline">\(\mathbb{Q}\)</span>, <span class="math inline">\(\mathbb{R}\)</span>, or <span class="math inline">\(\mathbb{C}\)</span>) and let <span class="math inline">\(S[x]\)</span> be the ring of polynomials with coefficients from <span class="math inline">\(S\)</span>.</p>
+<div id="polynomial-division" class="section level3">
+<h3><span class="header-section-number">7.3.1</span> Polynomial Division</h3>
+<p>We begin this generalization by finding a generalization of the division algorithm. We see from the Division Algorithm for Integers that we need to have some type of ordering for the elements of our integral domain. We will call such an ordering a Euclidean function.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-194" class="definition"><strong>Definition 7.4  </strong></span>Let <span class="math inline">\(R\)</span> be an integral domain. A <strong>Euclidean function</strong> on <span class="math inline">\(R\)</span> is a function <span class="math inline">\(f\)</span> from <span class="math inline">\(R\setminus \{0\}\)</span> to the non-negative integers satisfying the fundamental division-with-remainder property.</p>
+<ul>
+<li>If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are in <span class="math inline">\(R\)</span> and <span class="math inline">\(b\)</span> is non-zero, then there exist <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\(a=bq+r\)</span> and either <span class="math inline">\(r=0\)</span> or <span class="math inline">\(f(r)&lt;f(b)\)</span>.</li>
+</ul>
+An integral domain for which a Euclidean function exists is called a Euclidean domain.
+</div>
+
+<p>Since <span class="math inline">\(S\)</span> is an integral domain, we see that <span class="math inline">\(S[x]\)</span> is also an integral domain (Theorem <a href="polynomial-rings.html#thm:Polynomial-Integral-Domain">7.9</a>). We can now use the degree function of the polynomial as a Euclidean function and state a Division Algorithm for Polynomials that makes <span class="math inline">\(S[x]\)</span> a Euclidean domain, when <span class="math inline">\(S\)</span> is a field.</p>
+
+<div class="theorem">
+<span id="thm:Division-Algorithm-Poly" class="theorem"><strong>Theorem 7.10  (Division Algorithm for Polynomials)  </strong></span>Let <span class="math inline">\(S\)</span> be a field. Suppose that <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> are polynomials in <span class="math inline">\(S[x]\)</span> and that <span class="math inline">\(b(x)\)</span> is not the zero polynomial. Then there are unique <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span> in <span class="math inline">\(S[x]\)</span> such that
+<span class="math display">\[a(x)=b(x)\cdot q(x) + r(x)\]</span> and <span class="math inline">\(r(x)\)</span> is the zero polynomial or the degree of <span class="math inline">\(r(x)\)</span> is less than the degree of <span class="math inline">\(b(x)\)</span>.
+</div>
+
+<p>The reason that we need <span class="math inline">\(S\)</span> to be a field is to allow for division of the coefficients in the division algorithm. For example in <span class="math inline">\(\mathbb{Z}[x]\)</span>, if <span class="math inline">\(a(x)=x^2\)</span> and <span class="math inline">\(b(x)=3x\)</span>, the <span class="math inline">\(r(x)\)</span> in the division algorithm would need to be <span class="math inline">\(3x\)</span>.</p>
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Let <span class="math inline">\(S\)</span> be a field and let <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> be polynomials, with <span class="math inline">\(b(x)\)</span> not the zero polynomial.</p>
+<p>Let
+<span class="math display">\[T= \left\{ a(x)-b(x)\cdot s(x) | s(x) \in S[x]\right\}\]</span> and from the well-ordering property we can choose an <span class="math inline">\(r(x)\)</span> in <span class="math inline">\(T\)</span> with minimal degree. So <span class="math display">\[a(x)=b(x) q(x) + r(x)\]</span> for some <span class="math inline">\(q(x)\in S[x]\)</span>.</p>
+<p>Let <span class="math inline">\(m=\mathrm{degree}(b(x))\)</span> and <span class="math inline">\(n=\mathrm{degree}(r(x))\)</span>, and let <span class="math inline">\(b_m\)</span> be the leading coefficient of <span class="math inline">\(b(x)\)</span> and <span class="math inline">\(r_n\)</span> be the leading coefficient of <span class="math inline">\(r(x)\)</span>. If <span class="math inline">\(m\geq n\)</span>,
+<span class="math display">\[a(x)-b(x)\left(q(x)- \frac{r_n}{b_m} x^{m-n}\right)= r(x)-\frac{r_n}{b_m} x^{m-n} b(x) \]</span> which is an element of <span class="math inline">\(T\)</span> with lower degree than <span class="math inline">\(r(x)\)</span>, contradicting the choice of <span class="math inline">\(r(x)\)</span> to be an element of <span class="math inline">\(T\)</span> with minimal degree. Therefore, <span class="math inline">\(\mathrm{degree}(r(x))&lt;\mathrm{degree}(b(x))\)</span>.</p>
+For the uniqueness of <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span>, we assume that there are two pairs of such functions such that
+<span class="math display">\[a(x)=b(x) q_1(x)+r_1(x) \quad \mbox{and} \quad a(x)=b(x) q_2(x)+r_2(x)\]</span> with the degrees of <span class="math inline">\(r_1(x)\)</span> and <span class="math inline">\(r_2(x)\)</span> being less than the degree of <span class="math inline">\(b(x)\)</span>. Subtracting the two equations and rearranging terms gives us <span class="math display">\[b(x) \left( q_1(x)-q_2(x) \right) = r_2(x)-r_1(x).\]</span> Since the degree of the polynomial on the right side of the equation is less than the degree of <span class="math inline">\(b(x)\)</span>, <span class="math inline">\((q_1(x)-q_2(x))\)</span> must be the zero polynomial. So <span class="math inline">\(q_1(x)= q_2(x)\)</span> and thus implying that <span class="math inline">\(r_1(x)=r_2(x)\)</span>. And we have proven the uniqueness of the <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span>.
+</div>
+
+<blockquote>
+<h4 id="related-content-standards-32" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(HSA.APR.6) Rewrite simple rational expressions in different forms; write <span class="math inline">\(\frac{a(x)}{b(x)}\)</span> in the form <span class="math inline">\(q(x)+\frac{r(x)}{b(x)}\)</span>, where <span class="math inline">\(a(x)\)</span>, <span class="math inline">\(b(x)\)</span>, <span class="math inline">\(q(x)\)</span>, and <span class="math inline">\(r(x)\)</span> are polynomials with the degree of <span class="math inline">\(r(x)\)</span> less than the degree of <span class="math inline">\(b(x)\)</span>, using inspection, long division, or, for the more complicated examples, a computer algebra system.</li>
+</ul>
+</blockquote>
+<p>Take some time and work through some examples of long division of polynomials and compare these with the procedures in the long division of integers. It is through these connections between the two processes that students are able to understand and retain the knowledge of the long division algorithm for polynomials.</p>
+<p>We can now extend the properties of factors and prime (or irreducible) elements of the integers to the polynomial ring.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-196" class="definition"><strong>Definition 7.5  </strong></span>Let <span class="math inline">\(S\)</span> be an ring and <span class="math inline">\(S[x]\)</span> be the corresponding ring of polynomials. Let <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> be polynomials in <span class="math inline">\(S[x]\)</span> with <span class="math inline">\(b(x)\)</span> not the zero polynomial. We say that <span class="math inline">\(b(x)\)</span> divides <span class="math inline">\(a(x)\)</span> if there exists a <span class="math inline">\(q(x)\)</span> in <span class="math inline">\(S[x]\)</span> such that <span class="math inline">\(a(x)=b(x)\cdot q(x)\)</span>. In this situation we also say that</p>
+<ul>
+<li><span class="math inline">\(a(x)\)</span> is a multiple of <span class="math inline">\(b(x)\)</span>,</li>
+<li><span class="math inline">\(b(x)\)</span> is a divisor of <span class="math inline">\(a(x)\)</span>, and</li>
+<li><span class="math inline">\(b(x)\)</span> is a factor of <span class="math inline">\(a(x)\)</span>.</li>
+</ul>
+</div>
+
+<p>We can now state the prove the Remainder Theorem and Factor Theorem for polynomials.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-197" class="theorem"><strong>Theorem 7.11  (Remainder Theorem)  </strong></span>Let <span class="math inline">\(S\)</span> be a field (<span class="math inline">\(\mathbb{Q}, \mathbb{R}, \mathbb{C}\)</span>) and suppose that <span class="math inline">\(a(x)\)</span> is a polynomial of degree greater than or equal to <span class="math inline">\(1\)</span> in <span class="math inline">\(S[x]\)</span>, and let <span class="math inline">\(c\in S\)</span>. Then <span class="math inline">\(a(c):=\phi_c(a(x))\)</span> is the remainder obtained by dividing <span class="math inline">\(a(x)\)</span> by <span class="math inline">\(x-c\)</span>, where <span class="math inline">\(\phi_c\)</span> is the evaluation function.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Applying the Division Algorithm to <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(x-c\)</span> we see that there is a unique <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span> such that <span class="math inline">\(a(x)=q(x)\cdot (x-c)+r(x)\)</span> with the degree of <span class="math inline">\(r(x)\)</span> less than the degree of <span class="math inline">\(x-c\)</span>. Therefore, <span class="math inline">\(r(x)\)</span> is a constant polynomial that we will call <span class="math inline">\(r\)</span>. Since the evaluation function is a ring homomorphism we have that <span class="math display">\[a(c):= \phi_c(a(x))=\phi_c(q(x))\cdot \phi_c(x-c) + \phi_c(r).\]</span></p>
+Since <span class="math inline">\(\phi_c(x-c)=c-c=0\)</span> and since <span class="math inline">\(0\cdot \phi_c(q(x))=0\)</span>, we have that <span class="math inline">\(a(c)\)</span> is the remainder.
+</div>
+
+<p>This leads us directly to the Factor Theorem since <span class="math inline">\(a(x)=q(x)\cdot (x-c) + a(c)\)</span>.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-199" class="theorem"><strong>Theorem 7.12  (Factor Theorem)  </strong></span>Let <span class="math inline">\(S\)</span> be a field and suppose that <span class="math inline">\(a(x)\)</span> is a polynomial of degree at least <span class="math inline">\(1\)</span>. Then <span class="math inline">\(x-c\)</span> is a factor of <span class="math inline">\(a(x)\)</span> if and only if <span class="math inline">\(a(c)=0\)</span>.
+</div>
+
+<blockquote>
+<h4 id="related-content-standards-33" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(HSA.APR.2) Know and apply the Remainder Theorem: For a polynomial <span class="math inline">\(p(x)\)</span> and a number <span class="math inline">\(a\)</span>, the remainder on division by <span class="math inline">\(x-a\)</span> is <span class="math inline">\(p(a)\)</span>, so <span class="math inline">\(p(a)=0\)</span> if and only if <span class="math inline">\((x-a)\)</span> is a factor of <span class="math inline">\(p(x)\)</span>.</li>
+</ul>
+</blockquote>
+</div>
+<div id="gcf-and-lcm-for-polynomials" class="section level3">
+<h3><span class="header-section-number">7.3.2</span> GCF and LCM for Polynomials</h3>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-200" class="definition"><strong>Definition 7.6  </strong></span>Let <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> be in <span class="math inline">\(S[x]\)</span>, not both the zero polynomial. We say that a <strong>greatest common divisor</strong> (also called the <strong>greatest common factor</strong>) of <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> is a polynomial <span class="math inline">\(d(x)\)</span> such that</p>
+<ul>
+<li><span class="math inline">\(d(x)\)</span> divides both <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span>, and</li>
+<li>if <span class="math inline">\(u(x)\)</span> divides both <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> for some polynomial <span class="math inline">\(u(x)\)</span>, then <span class="math inline">\(u(x)\)</span> divides <span class="math inline">\(d(x)\)</span>.</li>
+</ul>
+</div>
+
+<p>Note that there is not a single greatest common divisor of two polynomials since constant multiples of a greatest common divisor may also be greatest common divisors. In the situation that <span class="math inline">\(S\)</span> is a field, we can multiply a greatest common divisor by the multiplicative inverse of its leading coefficient and we now have a monic polynomial (a polynomial with leading coefficient of the multiplicative identity) that is a greatest common divisor. This monic polynomial is unique and so we define <span class="math inline">\(\mathrm{gcd}(a(x),b(x))\)</span> to be the <strong>unique monic greatest common divisor of <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span></strong>.</p>
+<p>Following the line of proofs of the integers, we can prove a theorem analogous to Theorem <a href="sec-Integer-Ring.html#thm:integers-division-gcd">7.2</a> for polynomials.</p>
+
+<div class="theorem">
+<span id="thm:polynomial-division-gcd" class="theorem"><strong>Theorem 7.13  </strong></span>If <span class="math inline">\(a(x)\)</span>, <span class="math inline">\(b(x)\)</span>, <span class="math inline">\(q(x)\)</span>, and <span class="math inline">\(r(x)\)</span> are polynomials in <span class="math inline">\(S[x]\)</span> for a field <span class="math inline">\(S\)</span>, with <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> not both the zero polynomial, and if <span class="math display">\[a(x)=b(x)q(x)+r(x),\]</span> then <span class="math inline">\(\mathrm{gcd}(a(x),b(x))=\mathrm{gcd}(b(x),r(x))\)</span>.
+</div>
+
+<p>This theorem is the basis for a generalization of the Euclidean Algorithm to the polynomials.</p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-201" class="theorem"><strong>Theorem 7.14  (Euclidean Algorithm for Polynomials)  </strong></span>Let <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> be two polynomials in <span class="math inline">\(S[x]\)</span> for a field <span class="math inline">\(S\)</span>, with <span class="math inline">\(\mathrm{degree}(a(x))&gt;\mathrm{degree}(b(x))\)</span>. Then the greatest common divisor of <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> can be found using the following algorithm.</p>
+<ul>
+<li>[Step 1] Apply the division algorithm to find polynomials <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span> such that <span class="math inline">\(a(x)=b(x)q(x)+r(x)\)</span> with <span class="math inline">\(0\leq \mathrm{degree}(r(x))&lt;\mathrm{degree}(b(x))\)</span>.</li>
+<li>[Step 2] If <span class="math inline">\(r(x)\)</span> is the zero polynomial, then is <span class="math inline">\(\mathrm{gcd}(a,b)\)</span> is <span class="math inline">\(b(x)\)</span> times the multiplicative inverse in <span class="math inline">\(S\)</span> of its leading coefficient.</li>
+<li>[Step 3] While <span class="math inline">\(r(x)\)</span> is not the zero polynomial, replace <span class="math inline">\(a(x):=b(x)\)</span> and <span class="math inline">\(b(x):=r(x)\)</span> and apply the division algorithm to the new <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> to generate a new pair of polynomials <span class="math inline">\(q(x)\)</span> and <span class="math inline">\(r(x)\)</span>. Once <span class="math inline">\(r(x)\)</span> is the zero polynomial, the value of <span class="math inline">\(b(x)\)</span> is a greatest common divisor of the original polynomials <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> and <span class="math inline">\(\mathrm{gcd}(a,b)\)</span> is this polynomial times the multiplicative inverse in <span class="math inline">\(S\)</span> of its leading coefficient.</li>
+</ul>
+</div>
+
+<p>In order to better understand the Euclidean Algorithm for Polynomials we will use the algorithm to find the unique monic greatest common divisor of <span class="math inline">\(a(x)=2x^5-x^4-41x^3+59x^2-43x+60\)</span> and <span class="math inline">\(b(x)=x^3+2x^2+x+2\)</span>.</p>
+<p>The first step is to use the division algorithm to find the quotient and remainder of <span class="math inline">\(a(x)\)</span> divided by <span class="math inline">\(b(x)\)</span>. One of the most efficient methods of finding this quotient and remainder (other than using a computer algebra system) is through long division of polynomials.</p>
+<p><img src="tikz/polynomial-division.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Therefore,
+<span class="math display">\[a(x)=b(x) \cdot (2x^2-5x-33) + (126x^2 + 126)\]</span> and so we know that <span class="math inline">\(\mathrm{gcd}(a(x),b(x))= \mathrm{gcd}(x^3+2x^2+x+2, 126x^2+126)\)</span>. Using long division of polynomials we can find the new quotient and remainder for these two polynomials.</p>
+<p><img src="tikz/polynomial-division2.png" width="50%" style="display: block; margin: auto;" /></p>
+<p>So, <span class="math display">\[x^3+2x^2+x+2 = (126x^2+126)\left(\frac{1}{126}x+\frac{1}{63}\right)+ 0\]</span> and we see that <span class="math inline">\(126x^2+126\)</span> is a greatest common divisor of <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span>. Therefore, the unique monic greatest common divisor of <span class="math inline">\(a(x)\)</span> and <span class="math inline">\(b(x)\)</span> is <span class="math inline">\(x^2+1\)</span>.</p>
+</div>
+<div id="irreducible-polynomials" class="section level3">
+<h3><span class="header-section-number">7.3.3</span> Irreducible Polynomials</h3>
+<p>We now turn our attention to studying the analogy to prime numbers in the polynomial ring.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-204" class="definition"><strong>Definition 7.7  </strong></span>An element in an integral domain, <span class="math inline">\(D\)</span>, is called a <strong>unit</strong> of <span class="math inline">\(D\)</span> if it has a multiplicative inverse. A non-zero element, <span class="math inline">\(p\)</span>, of <span class="math inline">\(D\)</span> is called an  of <span class="math inline">\(D\)</span> if any factorization <span class="math inline">\(p=ab\)</span> in <span class="math inline">\(D\)</span> either <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span> is a unit.
+</div>
+
+<p>When <span class="math inline">\(S\)</span> is a field, we see that the units of <span class="math inline">\(S[x]\)</span> are the constant polynomials since the degree of the product of two polynomials in <span class="math inline">\(S[x]\)</span> is equal to the sum of the degrees of the factors.</p>
+<p>Notice that since <span class="math inline">\(\sqrt{2}\)</span> is irrational that <span class="math inline">\(x^2-2\)</span> is irreducible in <span class="math inline">\(\mathbb{Q}[x]\)</span> but has the factorization of <span class="math inline">\(x^2-2=(x-\sqrt{2})(x+\sqrt{2})\)</span> in <span class="math inline">\(\mathbb{R}[x]\)</span> and <span class="math inline">\(\mathbb{C}[x]\)</span>. This means that the set of irreducible polynomials depends upon the field from which the coefficients reside.</p>
+<p>The following is an essential theorem in understanding factorization of polynomials and is one of the main consequences of the concept of irreducible elements. However, the proof of the theorem requires building up significant machinery in abstract algebra and so we will not include it here.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-205" class="theorem"><strong>Theorem 7.15  </strong></span>Let <span class="math inline">\(p(x)\)</span> ba an irreducible polynomial in <span class="math inline">\(S[x]\)</span>. If <span class="math inline">\(p(x)\)</span> divides <span class="math inline">\(a(x)b(x)\)</span> for <span class="math inline">\(a(x),b(x)\in S[x]\)</span>, then either <span class="math inline">\(p(x)\)</span> divides <span class="math inline">\(a(x)\)</span> or <span class="math inline">\(p(x)\)</span> divides <span class="math inline">\(b(x)\)</span>.
+</div>
+
+<p>With this property involving the factorization of polynomials that we use on a regular basis we can also prove a property similar to that of the Fundamental Theorem of Arithmetic for integers.</p>
+
+<div class="theorem">
+<span id="thm:polynomial-factorization" class="theorem"><strong>Theorem 7.16  </strong></span>Let <span class="math inline">\(S\)</span> be a field. Then every polynomial of positive degree in <span class="math inline">\(S[x]\)</span> can be represented as a product
+<span class="math display">\[ c p_1(x) p_2(x) \cdots p_k(x)\]</span> where <span class="math inline">\(c\in S\)</span> and the <span class="math inline">\(p_i(x)\)</span> are monic irreducible polynomials in <span class="math inline">\(S[x]\)</span>. This representation is unique up to reordering the irreducible polynomials.
+</div>
+
+<p>The proof of this theorem is very similar to the method used to prove the Fundamental Theorem of Arithmetic, and so we will not include the details here. However, this theorem demonstrates the importance for understanding the irreducible polynomials in <span class="math inline">\(\mathbb{R}[x]\)</span> and <span class="math inline">\(\mathbb{C}[x]\)</span> in the process of understanding the properties of polynomials with real and complex coefficients.</p>
+<p>The main result in this area is the Fundamental Theorem of Algebra.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-206" class="theorem"><strong>Theorem 7.17  (The Fundamental Theorem of Algebra)  </strong></span>The irreducible monic polynomials in <span class="math inline">\(\mathbb{C}[x]\)</span> are of the form <span class="math inline">\(x-c\)</span>.
+</div>
+
+<p>There are many different methods to prove this result, but the primary method uses the machinery of complex calculus.</p>
+<blockquote>
+<h4 id="related-content-standards-34" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(HSN.CN.9) Know the Fundamental Theorem of Algebra; show that it is true for quadratic polynomials.</li>
+</ul>
+</blockquote>
+</div>
+<div id="exercises-25" class="section level3">
+<h3><span class="header-section-number">7.3.4</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Find a prime factorization of the following polynomials in <span class="math inline">\(\mathbb{Z}[x]\)</span>, <span class="math inline">\(\mathbb{Q}[x]\)</span>, <span class="math inline">\(\mathbb{R}[x]\)</span>, and <span class="math inline">\(\mathbb{C}[x]\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(4x^3-2x^2+2x-1\)</span></li>
+<li><span class="math inline">\(x^3-1\)</span></li>
+<li><span class="math inline">\(6x^2-13x-5\)</span></li>
+<li><span class="math inline">\(x^5-2x^4-2x^3+4x^2-3x+6\)</span></li>
+</ol></li>
+<li><p>Explain how the domain of the variable <span class="math inline">\(x\)</span> affects the number of solutions to the equation <span class="math display">\[(x^4-1)(4x^4-9x^2+2)=0.\]</span></p></li>
+<li><p>Find the unique <strong>monic</strong> prime factorization of the polynomials in <span class="math inline">\(\mathbb{Q}[x]\)</span>, <span class="math inline">\(\mathbb{R}[x]\)</span>, and <span class="math inline">\(\mathbb{C}[x]\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(x^4+4x^2+4\)</span></li>
+<li><span class="math inline">\(7x^4-28\)</span></li>
+<li><span class="math inline">\(2x^4-5x^2-3\)</span></li>
+<li><span class="math inline">\(9x^4+440 x^2-49\)</span></li>
+<li><span class="math inline">\(x^{106} -x^{100}\)</span></li>
+<li><span class="math inline">\(4x^4+12x^3-86x^2-92x-48\)</span></li>
+<li><span class="math inline">\(x^4-x^2-2\)</span></li>
+<li><span class="math inline">\(x^2-\pi\)</span></li>
+<li><span class="math inline">\(2x^4-x^3-19x^2+2x+30\)</span></li>
+<li>$a x^2 + bx + c $ based on the various possible values of <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> with <span class="math inline">\(a,b,c \in \mathbb{Z}\)</span>.</li>
+</ol></li>
+<li><p>Prove Theorem <a href="properties-of-polynomial-rings.html#thm:polynomial-division-gcd">7.13</a> using the proof of Theorem <a href="sec-Integer-Ring.html#thm:integers-division-gcd">7.2</a> as an outline.</p></li>
+<li><p>Prove that if <span class="math inline">\(f\)</span> is a Euclidean function on an integral domain <span class="math inline">\(R\)</span>, then <span class="math inline">\(f(a)\leq f(b)\)</span> for all non-zero <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span>.</p></li>
+<li><p>Find the value <span class="math inline">\(c\)</span> so that <span class="math inline">\((x-3)\)</span> is a factor of the polynomial <span class="math inline">\(p(x)\)</span>. <span class="math display">\[p(x)=cx^3-15x-68\]</span></p></li>
+<li><p>Find the monic greatest common divisor of the polynomials <span class="math inline">\(a(x)=4x^5+12x^4+20x^3+16x^2+16x+4\)</span> and <span class="math inline">\(b(x)=6x^5+12x^4+18x^3+12x^2+12x\)</span>.</p></li>
+</ol>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="polynomial-rings.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rational-expressions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

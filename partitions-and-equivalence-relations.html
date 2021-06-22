@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3.1 Partitions and Equivalence Relations | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3.1 Partitions and Equivalence Relations | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3.1 Partitions and Equivalence Relations | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ch-equivalence.html"/>
+<link rel="next" href="ordered-sets-and-relations.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a><ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a><ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a><ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a><ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
+<li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
+<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a><ul>
+<li class="chapter" data-level="6.1" data-path="sec-groups.html"><a href="sec-groups.html"><i class="fa fa-check"></i><b>6.1</b> Group Theory</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="sec-groups.html"><a href="sec-groups.html#abelian-groups"><i class="fa fa-check"></i><b>6.1.1</b> Abelian Groups</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sec-groups.html"><a href="sec-groups.html#uniqueness-of-identities-and-inverses"><i class="fa fa-check"></i><b>6.1.2</b> Uniqueness of Identities and Inverses</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sec-groups.html"><a href="sec-groups.html#sec:homomorphisms"><i class="fa fa-check"></i><b>6.1.3</b> Homomorphisms</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sec-groups.html"><a href="sec-groups.html#isomorphisms"><i class="fa fa-check"></i><b>6.1.4</b> Isomorphisms</a></li>
+<li class="chapter" data-level="6.1.5" data-path="sec-groups.html"><a href="sec-groups.html#finite-groups"><i class="fa fa-check"></i><b>6.1.5</b> Finite Groups</a></li>
+<li class="chapter" data-level="6.1.6" data-path="sec-groups.html"><a href="sec-groups.html#exercises-20"><i class="fa fa-check"></i><b>6.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html"><i class="fa fa-check"></i><b>6.2</b> Relationship Between Linear and Exponential</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html#exercises-21"><i class="fa fa-check"></i><b>6.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html"><i class="fa fa-check"></i><b>6.3</b> Rings and Fields</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="sec-Exploration.html"><a href="sec-Exploration.html#finite-sets-with-two-operations"><i class="fa fa-check"></i><b>6.3.1</b> Finite Sets with Two Operations</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sec-Exploration.html"><a href="sec-Exploration.html#matrices"><i class="fa fa-check"></i><b>6.3.2</b> Matrices</a></li>
+<li class="chapter" data-level="6.3.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html#rings"><i class="fa fa-check"></i><b>6.3.3</b> Rings</a></li>
+<li class="chapter" data-level="6.3.4" data-path="sec-Exploration.html"><a href="sec-Exploration.html#identities-and-inverses"><i class="fa fa-check"></i><b>6.3.4</b> Identities and Inverses</a></li>
+<li class="chapter" data-level="6.3.5" data-path="sec-Exploration.html"><a href="sec-Exploration.html#integral-domains"><i class="fa fa-check"></i><b>6.3.5</b> Integral Domains</a></li>
+<li class="chapter" data-level="6.3.6" data-path="sec-Exploration.html"><a href="sec-Exploration.html#ring-homomorphisms"><i class="fa fa-check"></i><b>6.3.6</b> Ring Homomorphisms</a></li>
+<li class="chapter" data-level="6.3.7" data-path="sec-Exploration.html"><a href="sec-Exploration.html#exercises-22"><i class="fa fa-check"></i><b>6.3.7</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html"><i class="fa fa-check"></i><b>7.1</b> Properties of the Ring of the Integers</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#composing-and-decomposing-integers"><i class="fa fa-check"></i><b>7.1.1</b> Composing and Decomposing Integers</a></li>
+<li class="chapter" data-level="7.1.2" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#greatest-common-divisor-and-least-common-multiple"><i class="fa fa-check"></i><b>7.1.2</b> Greatest Common Divisor and Least Common Multiple</a></li>
+<li class="chapter" data-level="7.1.3" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#fundamental-theorem-of-arithmetic"><i class="fa fa-check"></i><b>7.1.3</b> Fundamental Theorem of Arithmetic</a></li>
+<li class="chapter" data-level="7.1.4" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#exercises-23"><i class="fa fa-check"></i><b>7.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="polynomial-rings.html"><a href="polynomial-rings.html"><i class="fa fa-check"></i><b>7.2</b> Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="polynomial-rings.html"><a href="polynomial-rings.html#exercises-24"><i class="fa fa-check"></i><b>7.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html"><i class="fa fa-check"></i><b>7.3</b> Properties of Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#polynomial-division"><i class="fa fa-check"></i><b>7.3.1</b> Polynomial Division</a></li>
+<li class="chapter" data-level="7.3.2" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#gcf-and-lcm-for-polynomials"><i class="fa fa-check"></i><b>7.3.2</b> GCF and LCM for Polynomials</a></li>
+<li class="chapter" data-level="7.3.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#irreducible-polynomials"><i class="fa fa-check"></i><b>7.3.3</b> Irreducible Polynomials</a></li>
+<li class="chapter" data-level="7.3.4" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#exercises-25"><i class="fa fa-check"></i><b>7.3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="rational-expressions.html"><a href="rational-expressions.html"><i class="fa fa-check"></i><b>7.4</b> Rational Expressions</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="rational-expressions.html"><a href="rational-expressions.html#exercises-26"><i class="fa fa-check"></i><b>7.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a><ul>
+<li class="chapter" data-level="8.1" data-path="function-properties.html"><a href="function-properties.html"><i class="fa fa-check"></i><b>8.1</b> Function Properties</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="function-properties.html"><a href="function-properties.html#domain-and-range"><i class="fa fa-check"></i><b>8.1.1</b> Domain and Range</a></li>
+<li class="chapter" data-level="8.1.2" data-path="function-properties.html"><a href="function-properties.html#maxima-minima-or-relative-maxima-relative-minima"><i class="fa fa-check"></i><b>8.1.2</b> Maxima (minima) or relative maxima (relative minima)</a></li>
+<li class="chapter" data-level="8.1.3" data-path="function-properties.html"><a href="function-properties.html#increasing-or-decreasing"><i class="fa fa-check"></i><b>8.1.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.1.4" data-path="function-properties.html"><a href="function-properties.html#intercepts"><i class="fa fa-check"></i><b>8.1.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.1.5" data-path="function-properties.html"><a href="function-properties.html#end-behavior-singularities-and-asymptotes"><i class="fa fa-check"></i><b>8.1.5</b> End behavior, singularities, and asymptotes</a></li>
+<li class="chapter" data-level="8.1.6" data-path="function-properties.html"><a href="function-properties.html#special-properties"><i class="fa fa-check"></i><b>8.1.6</b> Special Properties</a></li>
+<li class="chapter" data-level="8.1.7" data-path="function-properties.html"><a href="function-properties.html#exercises-27"><i class="fa fa-check"></i><b>8.1.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html"><i class="fa fa-check"></i><b>8.2</b> Transformations of Functions</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-translations"><i class="fa fa-check"></i><b>8.2.1</b> Horizontal Translations</a></li>
+<li class="chapter" data-level="8.2.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-translations"><i class="fa fa-check"></i><b>8.2.2</b> Vertical Translations</a></li>
+<li class="chapter" data-level="8.2.3" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-dilations"><i class="fa fa-check"></i><b>8.2.3</b> Horizontal Dilations</a></li>
+<li class="chapter" data-level="8.2.4" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-dilations"><i class="fa fa-check"></i><b>8.2.4</b> Vertical Dilations</a></li>
+<li class="chapter" data-level="8.2.5" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#reflections"><i class="fa fa-check"></i><b>8.2.5</b> Reflections</a></li>
+<li class="chapter" data-level="8.2.6" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#families-of-functions"><i class="fa fa-check"></i><b>8.2.6</b> Families of Functions</a></li>
+<li class="chapter" data-level="8.2.7" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#exercises-28"><i class="fa fa-check"></i><b>8.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html"><i class="fa fa-check"></i><b>8.3</b> Linear and Exponential Functions</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#linear-functions"><i class="fa fa-check"></i><b>8.3.1</b> Linear Functions</a></li>
+<li class="chapter" data-level="8.3.2" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exponential-functions"><i class="fa fa-check"></i><b>8.3.2</b> Exponential Functions</a></li>
+<li class="chapter" data-level="8.3.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#logarithmic-functions"><i class="fa fa-check"></i><b>8.3.3</b> Logarithmic Functions</a></li>
+<li class="chapter" data-level="8.3.4" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#relationships-between-linear-and-exponential"><i class="fa fa-check"></i><b>8.3.4</b> Relationships between Linear and Exponential</a></li>
+<li class="chapter" data-level="8.3.5" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exercises-29"><i class="fa fa-check"></i><b>8.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html"><i class="fa fa-check"></i><b>8.4</b> Linear Fractional Transformations</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#domain"><i class="fa fa-check"></i><b>8.4.1</b> Domain</a></li>
+<li class="chapter" data-level="8.4.2" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#range"><i class="fa fa-check"></i><b>8.4.2</b> Range</a></li>
+<li class="chapter" data-level="8.4.3" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#increasing-or-decreasing-1"><i class="fa fa-check"></i><b>8.4.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.4.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#intercepts-1"><i class="fa fa-check"></i><b>8.4.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.4.5" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#end-behavior-and-asymptotes"><i class="fa fa-check"></i><b>8.4.5</b> End behavior and asymptotes</a></li>
+<li class="chapter" data-level="8.4.6" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#extensions"><i class="fa fa-check"></i><b>8.4.6</b> Extensions</a></li>
+<li class="chapter" data-level="8.4.7" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#exercises-30"><i class="fa fa-check"></i><b>8.4.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html"><i class="fa fa-check"></i><b>8.5</b> Quadratic Polynomials</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#completing-the-square"><i class="fa fa-check"></i><b>8.5.1</b> Completing the Square</a></li>
+<li class="chapter" data-level="8.5.2" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#factoring"><i class="fa fa-check"></i><b>8.5.2</b> Factoring</a></li>
+<li class="chapter" data-level="8.5.3" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#inverse-function"><i class="fa fa-check"></i><b>8.5.3</b> Inverse Function</a></li>
+<li class="chapter" data-level="8.5.4" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#exercises-31"><i class="fa fa-check"></i><b>8.5.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html"><i class="fa fa-check"></i><b>8.6</b> General Polynomial Functions</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>8.6.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>8.6.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>8.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="8.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-32"><i class="fa fa-check"></i><b>8.6.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html"><i class="fa fa-check"></i><b>8.7</b> Rational Functions</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#short-term-behavior-1"><i class="fa fa-check"></i><b>8.7.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.2" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#long-term-behavior-1"><i class="fa fa-check"></i><b>8.7.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.3" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#partial-fraction-decomposition"><i class="fa fa-check"></i><b>8.7.3</b> Partial Fraction Decomposition</a></li>
+<li class="chapter" data-level="8.7.4" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#exercises-33"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html"><i class="fa fa-check"></i><b>8.8</b> Trigonometric Functions</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#definitions"><i class="fa fa-check"></i><b>8.8.1</b> Definitions</a></li>
+<li class="chapter" data-level="8.8.2" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#additional-properties"><i class="fa fa-check"></i><b>8.8.2</b> Additional Properties</a></li>
+<li class="chapter" data-level="8.8.3" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#graphs-of-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.3</b> Graphs of Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.4" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#inverse-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.4</b> Inverse Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.5" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#exercises-34"><i class="fa fa-check"></i><b>8.8.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html"><i class="fa fa-check"></i><b>8.9</b> Combinations of Functions</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#addition-subtraction-multiplication-and-division-of-functions"><i class="fa fa-check"></i><b>8.9.1</b> Addition, Subtraction, Multiplication, and Division of Functions</a></li>
+<li class="chapter" data-level="8.9.2" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#composition-of-functions"><i class="fa fa-check"></i><b>8.9.2</b> Composition of Functions</a></li>
+<li class="chapter" data-level="8.9.3" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#systems-of-equations"><i class="fa fa-check"></i><b>8.9.3</b> Systems of Equations</a></li>
+<li class="chapter" data-level="8.9.4" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#exercises-35"><i class="fa fa-check"></i><b>8.9.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="partitions-and-equivalence-relations" class="section level2">
+<h2><span class="header-section-number">3.1</span> Partitions and Equivalence Relations</h2>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-37"></span>
+<img src="images/m-and-m-1308543_1920.jpg" alt="Sorting Candy" width="50%" />
+<p class="caption">
+Figure 3.1: Sorting Candy
+</p>
+</div>
+<p>As a way to better understand the world, humans tend to sort information into categories or orderings. For instance, when some people see a pile of various types of M&amp;M’s<sup>TM</sup> they have the urge to sort them in various ways. Some people sort the candies according to their color. Others may sort them according to their type (plain, peanut, etc.). This process of sorting is a type of “partitioning” the items into distinct categories. With this categorization we want to make sure that each candy is sorted into one, and only one, type. This type of sorting can be formalized with the following definition.</p>
+<div id="partitions" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Partitions</h3>
+
+<div class="definition">
+<span id="def:unnamed-chunk-38" class="definition"><strong>Definition 3.1  </strong></span> A <strong>partition</strong> of a set <span class="math inline">\(A\)</span> is a finite or infinite collection of non-empty, mutually-disjoint subsets whose union is <span class="math inline">\(A\)</span>. 
+</div>
+
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-39"></span>
+<img src="tikz/Set_partition.png" alt="Partition of Sets" width="50%" />
+<p class="caption">
+Figure 3.2: Partition of Sets
+</p>
+</div>
+<p>Thus, a partition of a set is a collection of subsets of the original set with several key properties. First, the subsets are non-empty, meaning that each subset in the partition contains at least one element. This allows us to restrict the partition to a collection of non-trivial subsets and means partitions have a type of uniqueness. The subsets in the partition are also mutually-disjoint which means that no element of the original set is in more than one of the subsets in the partition. Lastly, since the union of the subsets that form the partition is <span class="math inline">\(A\)</span>, we have that every element in <span class="math inline">\(A\)</span> is in one of these subsets. Thus, each component of the definition of a partition is essential to defining a way to split a set into a set of categories that we find useful.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-40" class="example"><strong>Example 3.1  </strong></span>If we have a set
+<span class="math display">\[A=\left\{ a, 2, \alpha , \mbox{apple} , \mbox{box}, \beta, 1, 3, \gamma , \mbox{cow}, c, b \right\}\]</span> there are some natural ways to partition the set. Here are three possible partitions.</p>
+<p><span class="math display">\[
+            A_1 = \{a,b,c\}, \:
+            A_2 = \{1,2,3\},\: 
+            A_3 = \{\alpha, \beta, \gamma\}, \: 
+            A_4 = \{\mbox{apple} , \mbox{box}, \mbox{cow}\} 
+\]</span>
+<span class="math display">\[
+            A_1 = \{\mbox{apple} , \mbox{box}, \mbox{cow}\}, \:
+            A_2 = \{a,b,c,1,2,3,\alpha,\beta,\gamma\}
+\]</span>
+<span class="math display">\[
+            A_1 = \{a,1,\alpha,\mbox{apple}\}, \: 
+            A_2 = \{b,2,\beta,\mbox{box}\}, \: 
+            A_3 = \{c,3,\gamma, \mbox{cow} \}
+\]</span></p>
+There are many other ways to partition the set, but we do not have the space to write out all of the possible partitions of this set.
+</div>
+
+
+<div class="example">
+<span id="exm:unnamed-chunk-41" class="example"><strong>Example 3.2  </strong></span> Early in the K-12 mathematics curriculum we ask students to determine which integers are even and which are odd. In this situation, the set <span class="math inline">\(A\)</span> is the set of integers (<span class="math inline">\(\mathbb{Z}\)</span>), while the subsets that form the partition are the subset of even numbers, (<span class="math inline">\(2\mathbb{Z}\)</span>), and odd numbers, (<span class="math inline">\(2\mathbb{Z}+1\)</span>).
+</div>
+
+
+<div class="example">
+<span id="exm:unnamed-chunk-42" class="example"><strong>Example 3.3  </strong></span>If we let the set <span class="math inline">\(B\)</span> be defined by the following list of elements,
+<span class="math display">\[B = \begin{Bmatrix} 
+\mbox{ jar},  &amp; \mbox{ jellybean} ,  &amp; \mbox{ applesauce}, &amp; \mbox{ ape}, &amp; \mbox{ bear}, \\
+\mbox{ ball}, &amp; \mbox{ beanbag}, &amp; \mbox{ bag}, &amp; \mbox{ arm} , &amp; \mbox{ skate} , \\
+\mbox{ bike}, &amp; \mbox{ rock}, &amp; \mbox{ rowboat},   &amp;  \mbox{ jigsaw}, &amp; \mbox{ saw}
+ \end{Bmatrix}\]</span>
+take some time to create various partitions of the set <span class="math inline">\(B\)</span>, verifying the various properties in the definition of a partition.
+</div>
+
+<p>In this text, we denote the partition <span class="math inline">\(\mathcal{P}\)</span> of a set <span class="math inline">\(A\)</span> as the union of subsets of <span class="math inline">\(A\)</span> over some indexing set, <span class="math inline">\(I\)</span>. For example, if the partition is formed using two subsets of <span class="math inline">\(A\)</span>, then the indexing set could be <span class="math inline">\(I=\{1,2\}\)</span>. The indexing set can also be infinite. For instance,
+<span class="math display">\[\mathcal{P} = \left\{ A_n  \right\}_{n\in \mathbb{Z}}, \: \mbox{ where } A_n=\left\{x\in \mathbb{R}\middle \vert n\leq x &lt; n+1  \right\}\]</span> is a partition of the real numbers with an infinite number of sets.</p>
+<p>It is important to note that there are usually many ways to partition a set, but the definition of partition does not impose any constraints on the uniformity or order of the subsets, only that the way we choose our subsets meets the three conditions described previously.</p>
+<p>With our previous discussion and examples in mind, we can translate our verbal definition of a partition into a symbolic one. In particular: if <span class="math inline">\(\mathcal{P}= \left\{ U_i\right\}_{i\in I}\)</span> is a partition of a set <span class="math inline">\(A\)</span>, where <span class="math inline">\(I\)</span> is some indexing set that is either finite or infinite, we have the following properties
+<span class="math display">\[U_i \bigcap U_j = \emptyset \quad \mbox{if } i\neq j, \quad \bigcup_{i\in I} U_i = A \mbox{, and} \quad U_i \neq \emptyset \mbox{ for all } i \in I.\]</span></p>
+</div>
+<div id="relations" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Relations</h3>
+<p>Up until this point we have focused on building a framework for understanding the notion of partition. In order to understand the main topics of this chapter, we also need to develop the idea of a relation. While we give the general definition of a relation and a few examples, we will focus on those relations that arise from partitions in this section. We will explore other types of relations in later sections.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-43" class="definition"><strong>Definition 3.2  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. We define a relation <span class="math inline">\(R\)</span> from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> as a subset of <span class="math inline">\(A\times B\)</span>. We say that for elements <span class="math inline">\(a\in A\)</span> and <span class="math inline">\(b\in B\)</span> that <span class="math inline">\(a\)</span> is related to <span class="math inline">\(b\)</span>, (<span class="math inline">\(aRb\)</span>), if and only if <span class="math inline">\((a,b)\in R\)</span>. If the two sets are the same set, <span class="math inline">\(A\)</span>, then we say that <span class="math inline">\(R\)</span> is a relation on <span class="math inline">\(A\)</span>.
+</div>
+
+<p>Here are some examples of relations in the K-12 curriculum.</p>
+<ul>
+<li><p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be the set of integers. We could say that <span class="math display">\[R=\{(a,b)\in A\times B \vert a&lt;b\},\]</span> which defines the ‘less than’ relation of <span class="math inline">\(aRb \leftrightarrow a&lt;b\)</span>.</p></li>
+<li><p>Let <span class="math inline">\(A\)</span> be the real numbers and <span class="math inline">\(B\)</span> be the non-negative real numbers. We can let <span class="math display">\[R=\{(x,y)\in A\times B \vert y=x^2\}.\]</span> This is the graph of the function <span class="math inline">\(f(x)=x^2\)</span>.</p></li>
+<li><p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be the set of integers. We can define <span class="math display">\[R= \{(m,n) \vert m-n=2k, \: \mbox{ for some integer } k\}.\]</span> This relation is one where are the even numbers are related to each other and all of the odd numbers are related to each other.</p></li>
+</ul>
+</div>
+<div id="equivalence-relations-induced-by-partitions" class="section level3">
+<h3><span class="header-section-number">3.1.3</span> Equivalence Relations Induced by Partitions</h3>
+<p>For the remainder of this section we will study a specific type of relation that is created by a partition, <span class="math inline">\(\mathcal{P}\)</span>, of a set, <span class="math inline">\(A\)</span>. If <span class="math inline">\(\mathcal{P}=\left\{U_i\right\}_{i\in I}\)</span> is a partition of <span class="math inline">\(A\)</span>, we can write <span class="math inline">\(A\)</span> as the union of a collection of non-empty, mutually disjoint subsets: <span class="math display">\[U_i \cap U_j = \emptyset \mbox{ if } i\neq j, \: \mbox{ for each } i \in I, \: U_i\neq \emptyset, \: \mbox{ and } A=\bigcup_{i\in I} U_i.\]</span></p>
+<p>Consider one of the individual subsets in the partition, say <span class="math inline">\(U_i\)</span>. Then the elements of <span class="math inline">\(U_i\)</span>, by virtue of the fact they are in the same subset, have a relationship to each other. This idea extends to the whole partition. That is, the partition induces a relation on <span class="math inline">\(A\)</span> in the following way. For each <span class="math inline">\(a,b\in A\)</span> we say that <span class="math inline">\(aRb\)</span> if, and only if, there is a set <span class="math inline">\(U_i\)</span> in the partition <span class="math inline">\(P\)</span> such that both <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are in <span class="math inline">\(U_i\)</span>.</p>
+<p>The relations we create through a partition behave in ways that are of general interest in the study of mathematics.</p>
+<p>If we choose a generic element <span class="math inline">\(a\)</span> in <span class="math inline">\(A\)</span>, the property that <span class="math inline">\(\bigcup_{i\in I} U_i = A\)</span> tells us that there exists <span class="math inline">\(i\in I\)</span> such that <span class="math inline">\(a \in U_i\)</span>. So for every element <span class="math inline">\(a\in A\)</span>, we have that <span class="math inline">\(aRa\)</span>. We will call this property of the relation the <strong>reflexive property</strong>.</p>
+<p>For the second property, if we have <span class="math inline">\(a,b\in A\)</span> such that <span class="math inline">\(aRb\)</span>, then there must be a <span class="math inline">\(U_i\in P\)</span> with <span class="math inline">\(a,b\in U_i\)</span>. This also means that <span class="math inline">\(bRa\)</span>. When you have the property that <span class="math inline">\(aRb\)</span> implies that <span class="math inline">\(bRa\)</span>, we say that the relation has the <strong>symmetric property</strong>.</p>
+<p>The third property of relations that we define derives from the property of partitions that
+<span class="math display">\[U_i \bigcap U_j = \emptyset \Leftrightarrow i\neq j.\]</span> If <span class="math inline">\(a,b,c\in A\)</span> such that <span class="math inline">\(aRb\)</span> and <span class="math inline">\(bRc\)</span>, then we have that there are sets <span class="math inline">\(U_i\)</span> and <span class="math inline">\(U_j\)</span> in the partition such that <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both in <span class="math inline">\(U_i\)</span> and <span class="math inline">\(b\)</span> and <span class="math inline">\(c\)</span> are both in <span class="math inline">\(U_j\)</span>. Since <span class="math inline">\(b\)</span> is in both <span class="math inline">\(U_i\)</span> and <span class="math inline">\(U_j\)</span>, <span class="math inline">\(U_i \cap U_j \neq \emptyset\)</span> and so <span class="math inline">\(i=j\)</span>. This would then imply that <span class="math inline">\(aRc\)</span>. This property that the combination of <span class="math inline">\(aRb\)</span> and <span class="math inline">\(bRc\)</span> implies that <span class="math inline">\(aRc\)</span> is called the <strong>transitive property</strong> of relations.</p>
+<p>Not all relations have these three properties of reflexive, symmetric, and transitive. Those relations that have all three properties are called <strong>equivalence relations</strong>.</p>
+<p>We have therefore proven that a partition of a set induces an equivalence relation on that set.</p>
+</div>
+<div id="partitions-induced-by-equivalence-relations" class="section level3">
+<h3><span class="header-section-number">3.1.4</span> Partitions Induced by Equivalence Relations</h3>
+<p>The concept of equivalence relation is one that transcends much of mathematics and we often consider things as being the “same” with respect to some property if there is an equivalence relation under which they are related. One location that this appears in the elementary school curriculum is in regards to rational numbers. We think of <span class="math inline">\(\frac{1}{2}\)</span> and <span class="math inline">\(\frac{2}{4}\)</span> as being the same rational number, but written in a different way. Along these lines we say that two rational expressions <span class="math inline">\(\frac{a}{b}\)</span> and <span class="math inline">\(\frac{c}{d}\)</span> are equivalent if and only if <span class="math inline">\(ad=bc\)</span>. This creates and equivalence relation between these rational expressions that are used to create the rational numbers.</p>
+<p>Similarly, if a relation, <span class="math inline">\(R\)</span>, on a set, <span class="math inline">\(A\)</span>, is an equivalence relation, then one can generate an induced partition, <span class="math inline">\(\mathcal{P}\)</span>, as follows. For each <span class="math inline">\(a\in A\)</span> we define the set <span class="math display">\[[a]_R := \left\{ b\in A \middle \vert aRb\right\}.\]</span> We call this set, <span class="math inline">\([a]_R\)</span>, the equivalency class of <span class="math inline">\(a\)</span> under the relation <span class="math inline">\(R\)</span>.</p>
+<p>Since <span class="math inline">\(R\)</span> is an equivalence relation, it is reflexive and so <span class="math inline">\(a \in [a]_R\)</span> causing <span class="math inline">\([a]_R \neq \emptyset\)</span>. Since <span class="math inline">\(a\in [a]_R\)</span>, we have that <span class="math display">\[\bigcup_{a\in A} [a]_R = A.\]</span> Thus to show that <span class="math inline">\(\mathcal{P} = \left\{ [a]_R \middle \vert a \in A\right\}\)</span> is a partition of <span class="math inline">\(A\)</span>, we need to show that for <span class="math inline">\(a,b\in A\)</span> that <span class="math inline">\([a]_R=[b]_R\)</span> or <span class="math inline">\([a]_R\bigcap [b]_R = \emptyset\)</span>.</p>
+<p>If <span class="math inline">\([a]_R \bigcap [b]_R \neq \emptyset\)</span>, then we need to prove that two sets to be equal.</p>
+<p>Let us assume that there exists a <span class="math inline">\(c\in [a]_R \bigcap [b]_R\)</span>.</p>
+<p>Let <span class="math inline">\(d\in [a]_R\)</span>. So <span class="math inline">\(a R d\)</span>. <span class="math inline">\(c\)</span> is also in <span class="math inline">\([a]_R\)</span> and so <span class="math inline">\(aRc\)</span>. Since <span class="math inline">\(R\)</span> is symmetric and <span class="math inline">\(aRd\)</span>, <span class="math inline">\(dRa\)</span>. We now have that <span class="math inline">\(dR c\)</span> using transitive property. <span class="math inline">\(c\)</span> is also in <span class="math inline">\([b]_R\)</span> and so <span class="math inline">\(bRc\)</span>. Using the symmetric property, we have <span class="math inline">\(cR b\)</span>. Combining this with <span class="math inline">\(dRc\)</span> and using the transitive property we have <span class="math inline">\(dR b\)</span>. Using the symmetric property we have <span class="math inline">\(bR d\)</span>. So <span class="math inline">\(d\in [b]_R\)</span>. Therefore, <span class="math inline">\([a]_R \subseteq [b]_R\)</span>.</p>
+<p>Using very similar arguments we can prove that <span class="math inline">\([b]_R \subseteq [a]_R\)</span>.</p>
+<p>So if the intersection is nonempty, the two sets are the same set.</p>
+<p>We have thus proven the following theorem showing the connection between equivalence classes and partitions.</p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-44" class="theorem"><strong>Theorem 3.1  </strong></span>If <span class="math inline">\(R\)</span> is an equivalence relation on a set <span class="math inline">\(A\)</span>, then <span class="math display">\[P = \left\{ [a]_R \middle \vert a \in A\right\}\]</span> is a partition of <span class="math inline">\(A\)</span>.</p>
+Similarly, if <span class="math inline">\(P= \left\{ U_i \middle \vert i \in I\right\}\)</span> is a partition on a set <span class="math inline">\(A\)</span>, then the relation <span class="math inline">\(R\)</span> defined by
+<span class="math display">\[aRb \Leftrightarrow \mbox{ there exists } i \in I \mbox{ such that } a,b \in U_i\]</span> is an equivalence relation.
+</div>
+
+</div>
+<div id="exercises-6" class="section level3">
+<h3><span class="header-section-number">3.1.5</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{R}\times (\mathbb{R}-\{0\})\)</span> by
+<span class="math display">\[(x,y) \sim (z,w) \Leftrightarrow xw=yz.\]</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>Show that this relation is an equivalence relation.</li>
+<li>Give a description of the partition of <span class="math inline">\(\mathbb{R}\times (\mathbb{R}-\{0\})\)</span> induced by this equivalence relation.</li>
+<li>Why do we not allow <span class="math inline">\(0\)</span> in the second part of the ordered pairs?</li>
+</ol></li>
+<li><p>Determine which of the following collections of sets form a partition of <span class="math inline">\(\mathbb{R}\times \mathbb{R}\)</span>. For those that do form a partition, define the equivalence relation.</p>
+<ol style="list-style-type: lower-alpha">
+<li>For <span class="math inline">\(c\in \mathbb{R}\)</span>, let <span class="math inline">\(h_c= \{ (x,y)\in \mathbb{R}^2 \vert y=c\}\)</span>, and let <span class="math inline">\(\mathcal{C} = \{h_c\}_{c\in \mathbb{R}}\)</span>.</li>
+<li>For <span class="math inline">\(m\in \mathbb{R}\)</span>, let <span class="math inline">\(s_m=\{ (x,y)\in \mathbb{R}^2 \vert y=mx\}\)</span>, and let <span class="math inline">\(\mathcal{D}= \{s_m\}_{m\in \mathbb{R}}\)</span>.</li>
+<li>For <span class="math inline">\(r\in [0,\infty)\)</span>, let <span class="math inline">\(C_r=\{ (x,y) \in \mathbb{R}^2 \vert x^2+y^2=r^2\}\)</span>, and let <span class="math inline">\(\mathcal{E}=\{C_r\}_{r\in [0,\infty)}\)</span>.</li>
+</ol></li>
+<li><p>(For students who have knowledge of linear algebra) Let <span class="math inline">\(M_{2,2}\)</span> be the set of <span class="math inline">\(2 \times 2\)</span> matrices with real coefficients. For each of the following, prove that it is an equivalence relation, or show that one of the properties of equivalence relations does not hold.</p>
+<ol style="list-style-type: lower-alpha">
+<li>For matrices <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> in <span class="math inline">\(M_{2,2}\)</span>, let <span class="math inline">\(A \sim B\)</span> if and only if <span class="math inline">\(\mathrm{det}(A)=\mathrm{det}(B)\)</span>.</li>
+<li>For matrices <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> in <span class="math inline">\(M_{2,2}\)</span>, let <span class="math inline">\(A \sim B\)</span> if and only if <span class="math inline">\(\mathrm{tr}(A)=\mathrm{tr}(B)\)</span>.</li>
+<li>For matrices <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> in <span class="math inline">\(M_{2,2}\)</span>, let <span class="math inline">\(A \sim B\)</span> if and only if the eigenvalues of <span class="math inline">\(A\)</span> are the same as the eigenvalues of <span class="math inline">\(B\)</span>.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ch-equivalence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ordered-sets-and-relations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

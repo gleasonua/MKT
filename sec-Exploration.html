@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6.3 Rings and Fields | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="6.3 Rings and Fields | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="6.3 Rings and Fields | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec-linear-exponential.html"/>
+<link rel="next" href="ch-rings.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a><ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a><ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a><ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a><ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a><ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a><ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a><ul>
+<li class="chapter" data-level="5.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
+<li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
+<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a><ul>
+<li class="chapter" data-level="6.1" data-path="sec-groups.html"><a href="sec-groups.html"><i class="fa fa-check"></i><b>6.1</b> Group Theory</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="sec-groups.html"><a href="sec-groups.html#abelian-groups"><i class="fa fa-check"></i><b>6.1.1</b> Abelian Groups</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sec-groups.html"><a href="sec-groups.html#uniqueness-of-identities-and-inverses"><i class="fa fa-check"></i><b>6.1.2</b> Uniqueness of Identities and Inverses</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sec-groups.html"><a href="sec-groups.html#sec:homomorphisms"><i class="fa fa-check"></i><b>6.1.3</b> Homomorphisms</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sec-groups.html"><a href="sec-groups.html#isomorphisms"><i class="fa fa-check"></i><b>6.1.4</b> Isomorphisms</a></li>
+<li class="chapter" data-level="6.1.5" data-path="sec-groups.html"><a href="sec-groups.html#finite-groups"><i class="fa fa-check"></i><b>6.1.5</b> Finite Groups</a></li>
+<li class="chapter" data-level="6.1.6" data-path="sec-groups.html"><a href="sec-groups.html#exercises-20"><i class="fa fa-check"></i><b>6.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html"><i class="fa fa-check"></i><b>6.2</b> Relationship Between Linear and Exponential</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html#exercises-21"><i class="fa fa-check"></i><b>6.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html"><i class="fa fa-check"></i><b>6.3</b> Rings and Fields</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="sec-Exploration.html"><a href="sec-Exploration.html#finite-sets-with-two-operations"><i class="fa fa-check"></i><b>6.3.1</b> Finite Sets with Two Operations</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sec-Exploration.html"><a href="sec-Exploration.html#matrices"><i class="fa fa-check"></i><b>6.3.2</b> Matrices</a></li>
+<li class="chapter" data-level="6.3.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html#rings"><i class="fa fa-check"></i><b>6.3.3</b> Rings</a></li>
+<li class="chapter" data-level="6.3.4" data-path="sec-Exploration.html"><a href="sec-Exploration.html#identities-and-inverses"><i class="fa fa-check"></i><b>6.3.4</b> Identities and Inverses</a></li>
+<li class="chapter" data-level="6.3.5" data-path="sec-Exploration.html"><a href="sec-Exploration.html#integral-domains"><i class="fa fa-check"></i><b>6.3.5</b> Integral Domains</a></li>
+<li class="chapter" data-level="6.3.6" data-path="sec-Exploration.html"><a href="sec-Exploration.html#ring-homomorphisms"><i class="fa fa-check"></i><b>6.3.6</b> Ring Homomorphisms</a></li>
+<li class="chapter" data-level="6.3.7" data-path="sec-Exploration.html"><a href="sec-Exploration.html#exercises-22"><i class="fa fa-check"></i><b>6.3.7</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a><ul>
+<li class="chapter" data-level="7.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html"><i class="fa fa-check"></i><b>7.1</b> Properties of the Ring of the Integers</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#composing-and-decomposing-integers"><i class="fa fa-check"></i><b>7.1.1</b> Composing and Decomposing Integers</a></li>
+<li class="chapter" data-level="7.1.2" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#greatest-common-divisor-and-least-common-multiple"><i class="fa fa-check"></i><b>7.1.2</b> Greatest Common Divisor and Least Common Multiple</a></li>
+<li class="chapter" data-level="7.1.3" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#fundamental-theorem-of-arithmetic"><i class="fa fa-check"></i><b>7.1.3</b> Fundamental Theorem of Arithmetic</a></li>
+<li class="chapter" data-level="7.1.4" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#exercises-23"><i class="fa fa-check"></i><b>7.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="polynomial-rings.html"><a href="polynomial-rings.html"><i class="fa fa-check"></i><b>7.2</b> Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="polynomial-rings.html"><a href="polynomial-rings.html#exercises-24"><i class="fa fa-check"></i><b>7.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html"><i class="fa fa-check"></i><b>7.3</b> Properties of Polynomial Rings</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#polynomial-division"><i class="fa fa-check"></i><b>7.3.1</b> Polynomial Division</a></li>
+<li class="chapter" data-level="7.3.2" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#gcf-and-lcm-for-polynomials"><i class="fa fa-check"></i><b>7.3.2</b> GCF and LCM for Polynomials</a></li>
+<li class="chapter" data-level="7.3.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#irreducible-polynomials"><i class="fa fa-check"></i><b>7.3.3</b> Irreducible Polynomials</a></li>
+<li class="chapter" data-level="7.3.4" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#exercises-25"><i class="fa fa-check"></i><b>7.3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="rational-expressions.html"><a href="rational-expressions.html"><i class="fa fa-check"></i><b>7.4</b> Rational Expressions</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="rational-expressions.html"><a href="rational-expressions.html#exercises-26"><i class="fa fa-check"></i><b>7.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a><ul>
+<li class="chapter" data-level="8.1" data-path="function-properties.html"><a href="function-properties.html"><i class="fa fa-check"></i><b>8.1</b> Function Properties</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="function-properties.html"><a href="function-properties.html#domain-and-range"><i class="fa fa-check"></i><b>8.1.1</b> Domain and Range</a></li>
+<li class="chapter" data-level="8.1.2" data-path="function-properties.html"><a href="function-properties.html#maxima-minima-or-relative-maxima-relative-minima"><i class="fa fa-check"></i><b>8.1.2</b> Maxima (minima) or relative maxima (relative minima)</a></li>
+<li class="chapter" data-level="8.1.3" data-path="function-properties.html"><a href="function-properties.html#increasing-or-decreasing"><i class="fa fa-check"></i><b>8.1.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.1.4" data-path="function-properties.html"><a href="function-properties.html#intercepts"><i class="fa fa-check"></i><b>8.1.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.1.5" data-path="function-properties.html"><a href="function-properties.html#end-behavior-singularities-and-asymptotes"><i class="fa fa-check"></i><b>8.1.5</b> End behavior, singularities, and asymptotes</a></li>
+<li class="chapter" data-level="8.1.6" data-path="function-properties.html"><a href="function-properties.html#special-properties"><i class="fa fa-check"></i><b>8.1.6</b> Special Properties</a></li>
+<li class="chapter" data-level="8.1.7" data-path="function-properties.html"><a href="function-properties.html#exercises-27"><i class="fa fa-check"></i><b>8.1.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html"><i class="fa fa-check"></i><b>8.2</b> Transformations of Functions</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-translations"><i class="fa fa-check"></i><b>8.2.1</b> Horizontal Translations</a></li>
+<li class="chapter" data-level="8.2.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-translations"><i class="fa fa-check"></i><b>8.2.2</b> Vertical Translations</a></li>
+<li class="chapter" data-level="8.2.3" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-dilations"><i class="fa fa-check"></i><b>8.2.3</b> Horizontal Dilations</a></li>
+<li class="chapter" data-level="8.2.4" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-dilations"><i class="fa fa-check"></i><b>8.2.4</b> Vertical Dilations</a></li>
+<li class="chapter" data-level="8.2.5" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#reflections"><i class="fa fa-check"></i><b>8.2.5</b> Reflections</a></li>
+<li class="chapter" data-level="8.2.6" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#families-of-functions"><i class="fa fa-check"></i><b>8.2.6</b> Families of Functions</a></li>
+<li class="chapter" data-level="8.2.7" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#exercises-28"><i class="fa fa-check"></i><b>8.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html"><i class="fa fa-check"></i><b>8.3</b> Linear and Exponential Functions</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#linear-functions"><i class="fa fa-check"></i><b>8.3.1</b> Linear Functions</a></li>
+<li class="chapter" data-level="8.3.2" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exponential-functions"><i class="fa fa-check"></i><b>8.3.2</b> Exponential Functions</a></li>
+<li class="chapter" data-level="8.3.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#logarithmic-functions"><i class="fa fa-check"></i><b>8.3.3</b> Logarithmic Functions</a></li>
+<li class="chapter" data-level="8.3.4" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#relationships-between-linear-and-exponential"><i class="fa fa-check"></i><b>8.3.4</b> Relationships between Linear and Exponential</a></li>
+<li class="chapter" data-level="8.3.5" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exercises-29"><i class="fa fa-check"></i><b>8.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html"><i class="fa fa-check"></i><b>8.4</b> Linear Fractional Transformations</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#domain"><i class="fa fa-check"></i><b>8.4.1</b> Domain</a></li>
+<li class="chapter" data-level="8.4.2" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#range"><i class="fa fa-check"></i><b>8.4.2</b> Range</a></li>
+<li class="chapter" data-level="8.4.3" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#increasing-or-decreasing-1"><i class="fa fa-check"></i><b>8.4.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.4.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#intercepts-1"><i class="fa fa-check"></i><b>8.4.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.4.5" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#end-behavior-and-asymptotes"><i class="fa fa-check"></i><b>8.4.5</b> End behavior and asymptotes</a></li>
+<li class="chapter" data-level="8.4.6" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#extensions"><i class="fa fa-check"></i><b>8.4.6</b> Extensions</a></li>
+<li class="chapter" data-level="8.4.7" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#exercises-30"><i class="fa fa-check"></i><b>8.4.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html"><i class="fa fa-check"></i><b>8.5</b> Quadratic Polynomials</a><ul>
+<li class="chapter" data-level="8.5.1" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#completing-the-square"><i class="fa fa-check"></i><b>8.5.1</b> Completing the Square</a></li>
+<li class="chapter" data-level="8.5.2" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#factoring"><i class="fa fa-check"></i><b>8.5.2</b> Factoring</a></li>
+<li class="chapter" data-level="8.5.3" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#inverse-function"><i class="fa fa-check"></i><b>8.5.3</b> Inverse Function</a></li>
+<li class="chapter" data-level="8.5.4" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#exercises-31"><i class="fa fa-check"></i><b>8.5.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html"><i class="fa fa-check"></i><b>8.6</b> General Polynomial Functions</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>8.6.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>8.6.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>8.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="8.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-32"><i class="fa fa-check"></i><b>8.6.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html"><i class="fa fa-check"></i><b>8.7</b> Rational Functions</a><ul>
+<li class="chapter" data-level="8.7.1" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#short-term-behavior-1"><i class="fa fa-check"></i><b>8.7.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.2" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#long-term-behavior-1"><i class="fa fa-check"></i><b>8.7.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.3" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#partial-fraction-decomposition"><i class="fa fa-check"></i><b>8.7.3</b> Partial Fraction Decomposition</a></li>
+<li class="chapter" data-level="8.7.4" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#exercises-33"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html"><i class="fa fa-check"></i><b>8.8</b> Trigonometric Functions</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#definitions"><i class="fa fa-check"></i><b>8.8.1</b> Definitions</a></li>
+<li class="chapter" data-level="8.8.2" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#additional-properties"><i class="fa fa-check"></i><b>8.8.2</b> Additional Properties</a></li>
+<li class="chapter" data-level="8.8.3" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#graphs-of-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.3</b> Graphs of Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.4" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#inverse-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.4</b> Inverse Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.5" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#exercises-34"><i class="fa fa-check"></i><b>8.8.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html"><i class="fa fa-check"></i><b>8.9</b> Combinations of Functions</a><ul>
+<li class="chapter" data-level="8.9.1" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#addition-subtraction-multiplication-and-division-of-functions"><i class="fa fa-check"></i><b>8.9.1</b> Addition, Subtraction, Multiplication, and Division of Functions</a></li>
+<li class="chapter" data-level="8.9.2" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#composition-of-functions"><i class="fa fa-check"></i><b>8.9.2</b> Composition of Functions</a></li>
+<li class="chapter" data-level="8.9.3" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#systems-of-equations"><i class="fa fa-check"></i><b>8.9.3</b> Systems of Equations</a></li>
+<li class="chapter" data-level="8.9.4" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#exercises-35"><i class="fa fa-check"></i><b>8.9.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec:Exploration" class="section level2">
+<h2><span class="header-section-number">6.3</span> Rings and Fields</h2>
+<p>In this section we are going to first explore several different examples of sets that have a standard pair of two different binary operations, addition and multiplication. We will create categorizations of these sets based upon their properties. Some properties to consider are associative, commutative, distributive, identities, and inverses.</p>
+
+<div class="example">
+<p><span id="exm:rings" class="example"><strong>Example 6.7  </strong></span>Consider the following sets and operations.</p>
+<ul>
+<li><p><span class="math inline">\(\mathbb{N}\)</span> with the usual addition and multiplication.</p></li>
+<li><p><span class="math inline">\(\mathbb{Z}\)</span> with the usual addition and multiplication.</p></li>
+<li><p><span class="math inline">\(\mathbb{Q}\)</span> with the usual addition and multiplication.</p></li>
+<li><p><span class="math inline">\(\mathbb{R}\)</span> with the usual addition and multiplication.</p></li>
+<li><p><span class="math inline">\(\mathbb{C}\)</span> with the usual addition and multiplication.</p></li>
+<li><p><span class="math inline">\(2\mathbb{Z}\)</span> (the even integers) with the usual addition and multiplication.</p></li>
+</ul>
+<p>For each of these sets with operations, determine which of the following properties hold.</p>
+<ol style="list-style-type: decimal">
+<li><p>Additive identity</p></li>
+<li><p>Additive inverse</p></li>
+<li><p>Additive commutativity</p></li>
+<li><p>Multiplicative identity</p></li>
+<li><p>Multiplicative inverse</p></li>
+<li><p>Multiplicative commutativity</p></li>
+<li><p>Distribution properties of multiplication over addition.</p></li>
+</ol>
+</div>
+
+<div id="finite-sets-with-two-operations" class="section level3">
+<h3><span class="header-section-number">6.3.1</span> Finite Sets with Two Operations</h3>
+<p>While each of the sets listed previously have infinite cardinality, a large portion of abstract algebra studies finite sets, combined with appropriate operations. <span class="math inline">\(\mathbb{Z}_n = \left\{0, 1, 2, \ldots, n-1\right\}\)</span> with addition and multiplication defined by the remainder of the sum and product when divided by <span class="math inline">\(n\)</span>. We provide some examples of these types of sets and operations below. For these finite sets, it is often easiest to just provide a table of the operations, rather than an algebraic definition. These tables are called Cayley tables, first presented in a work by the British mathematician, Arthur Cayley <span class="citation">(<a href="#ref-Cayley" role="doc-biblioref">1854</a>)</span>.</p>
+
+<div class="example">
+<span id="exm:z2ring" class="example"><strong>Example 6.8  </strong></span>Let <span class="math inline">\(\mathbb{Z}_2=\left\{ 0,1 \right\}\)</span> with the operations given in the following Cayley tables.
+<span class="math display">\[\begin{array}{cc}
+\begin{array}{c|cc}
++ &amp; 0 &amp; 1 \\ \hline
+0 &amp; 0 &amp; 1 \\
+1 &amp; 1 &amp; 0 \\
+\end{array}
+&amp;
+\begin{array}{c|cc}
+\cdot &amp; 0 &amp; 1 \\ \hline
+0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 \\
+\end{array}
+\end{array}\]</span>
+</div>
+
+
+<div class="example">
+<span id="exm:z3ring" class="example"><strong>Example 6.9  </strong></span>Let <span class="math inline">\(\mathbb{Z}_3=\left\{ 0,1, 2 \right\}\)</span> with the operations given in the following Cayley tables.
+<span class="math display">\[\begin{array}{cc}
+\begin{array}{c|ccc}
++ &amp; 0 &amp; 1 &amp; 2 \\ \hline
+0 &amp; 0 &amp; 1 &amp; 2\\
+1 &amp; 1 &amp; 2 &amp; 0 \\
+2 &amp; 2 &amp; 0 &amp; 1 \\
+\end{array} &amp;
+\begin{array}{c|ccc}
+\cdot &amp; 0 &amp; 1 &amp; 2\\ \hline
+0 &amp; 0 &amp; 0  &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 2 \\
+2 &amp; 0 &amp; 2 &amp; 1
+\end{array} \\
+\end{array}\]</span>
+</div>
+
+
+<div class="example">
+<span id="exm:z4ring" class="example"><strong>Example 6.10  </strong></span>Let <span class="math inline">\(\mathbb{Z}_4=\left\{ 0,1, 2, 3 \right\}\)</span> with the operations given in the following Cayley tables.
+<span class="math display">\[\begin{array}{cc}
+\begin{array}{c|cccc}
++ &amp; 0 &amp; 1 &amp; 2 &amp; 3  \\ \hline
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+1 &amp; 1 &amp; 2 &amp; 3 &amp; 0 \\
+2 &amp; 2 &amp; 3 &amp; 0 &amp; 1 \\
+3 &amp; 3 &amp; 0 &amp; 1 &amp; 2 \\
+\end{array}
+&amp;
+\begin{array}{c|cccc}
+\cdot &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\ \hline
+0 &amp; 0 &amp; 0  &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+2 &amp; 0 &amp; 2 &amp; 0 &amp; 2 \\
+3 &amp; 0 &amp; 3 &amp; 2 &amp; 1 \\
+\end{array}\\
+\end{array}\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:z6ring" class="example"><strong>Example 6.11  </strong></span>Let <span class="math inline">\(\mathbb{Z}_6=\left\{ 0,1, 2, 3, 4, 5 \right\}\)</span> with the operations given in the following Cayley tables.
+<span class="math display">\[\begin{array}{cc}
+\begin{array}{c|cccccc}
++ &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+1 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0\\
+2 &amp; 2 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 1 \\
+3 &amp; 3 &amp; 4 &amp; 5 &amp; 0 &amp; 1 &amp; 2 \\
+4 &amp; 4 &amp; 5 &amp; 0 &amp; 1 &amp; 2 &amp; 3 \\
+5 &amp; 5 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
+\end{array}
+&amp;
+\begin{array}{c|cccccc}
+\cdot &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\ \hline
+0 &amp; 0 &amp; 0  &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5\\
+2 &amp; 0 &amp; 2 &amp; 4 &amp; 0 &amp; 2 &amp; 4 \\
+3 &amp; 0 &amp; 3 &amp; 0 &amp; 3 &amp; 0 &amp; 3 \\
+4 &amp; 0 &amp; 4 &amp; 2 &amp; 0 &amp; 4 &amp; 2 \\
+5 &amp; 0 &amp; 5 &amp; 4 &amp; 3 &amp; 2 &amp; 1 \\
+\end{array}
+\end{array}\]</span></p>
+</div>
+
+<p>These different sets (and operations) satisfy various properties depending upon the number of elements in the set. It is a valuable exercise to explore how the these are connected.</p>
+</div>
+<div id="matrices" class="section level3">
+<h3><span class="header-section-number">6.3.2</span> Matrices</h3>
+<p>We let <span class="math inline">\(GL(n,\mathbb{R})\)</span> be the set of <span class="math inline">\(n\times n\)</span> matrices with coefficients from the real numbers with the usual matrix addition and multiplication. We can see that this set has an additive identity, <span class="math inline">\(0\)</span>, and multiplicative identity, <span class="math inline">\(I\)</span>.
+<span class="math display">\[0 = \begin{pmatrix}
+ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
+ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
+ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; 
+ \vdots \\
+ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 
+\end{pmatrix} \quad \mbox{ and } \quad  I= \begin{pmatrix}
+ 1 &amp; 0 &amp; 0 &amp; \cdots &amp; 0 \\
+ 0 &amp; 1 &amp; 0 &amp; \cdots &amp; 0 \\
+ 0 &amp; 0 &amp; 1 &amp; \cdots &amp; 0 \\
+ \vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; 
+ \vdots \\
+ 0 &amp; 0 &amp; 0 &amp; \cdots &amp; 1 
+\end{pmatrix}\]</span></p>
+<p>It is also satisfies most of the properties of our number systems that we have explored, including the addition is commutative. However, we can discover that multiplication is not commutative, not every element has a multiplicative inverse, and we can have the product of two non-zero elements be zero. For example, if we look at <span class="math inline">\(GL(2,\mathbb{R})\)</span> and the matrices
+<span class="math display">\[A = \begin{pmatrix}
+0 &amp; 1 \\
+0 &amp; 0
+\end{pmatrix} \quad \mbox{ and } \quad 
+B= \begin{pmatrix}
+0 &amp; 0 \\
+1 &amp; 0
+\end{pmatrix}.\]</span></p>
+<p>Then <span class="math inline">\(A^2=0\)</span>, <span class="math inline">\(B^2=0\)</span>,
+<span class="math display">\[AB=\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 0
+\end{pmatrix} \quad \mbox{ and } \quad 
+BA= \begin{pmatrix}
+0 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix}.\]</span></p>
+<p>Sometimes we combine ideas of the finite sets with the additional structure of matrices. For example, we let <span class="math inline">\(GL(2,\mathbb{Z}_2)\)</span> be the two by two matrices with coefficients from <span class="math inline">\(\mathbb{Z}_2\)</span>, with the usual operations of matrix addition and multiplication.</p>
+<blockquote>
+<h4 id="related-content-standards-26" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(HSN.VM.8) Add, subtract, and multiply matrices of appropriate dimensions.</li>
+<li>(HSN.VM.9) Understand that, unlike multiplication of numbers, matrix multiplication for square matrices is not a commutative operation, but still satisfies the associative and distributive properties.</li>
+<li>(HSN.VM.10) Understand that the zero and identity matrices play a role in matrix addition and multiplication similar to the role of 0 and 1 in the real numbers. The determinant of a square matrix is nonzero if and only if the matrix has a multiplicative inverse.</li>
+</ul>
+</blockquote>
+</div>
+<div id="rings" class="section level3">
+<h3><span class="header-section-number">6.3.3</span> Rings</h3>
+<p>Now that we have several examples of sets with two binary operations defined on them, we see that there are certain properties of these binary operations that are very useful for understanding the structure of the set.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-167" class="definition"><strong>Definition 6.5  (Rings)  </strong></span>A <strong>ring</strong> <span class="math inline">\(\langle R,+,\cdot \rangle\)</span> is a set <span class="math inline">\(R\)</span> together with two binary operations <span class="math inline">\(+\)</span> and <span class="math inline">\(\cdot\)</span>, which we call addition and multiplication, defined on <span class="math inline">\(R\)</span> such that the following are satisfied:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\left( R,+\right)\)</span> is an abelian group.
+<ul>
+<li>The binary operation <span class="math inline">\(+\)</span> is associative.</li>
+<li>There is an element <span class="math inline">\(0\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\(0+a=a+0=a\)</span> for all <span class="math inline">\(a\in R\)</span>. (This element is called the additive identity of <span class="math inline">\(R\)</span>.)</li>
+<li>For each <span class="math inline">\(a\)</span> in <span class="math inline">\(R\)</span> there is an element <span class="math inline">\(-a\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\((-a)+a=a+(-a)=0\)</span>. (This element is called the additive inverse of <span class="math inline">\(a\)</span> in <span class="math inline">\(R\)</span>.)</li>
+<li>For each <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span>, <span class="math inline">\(a+b=b+a\)</span>. (This means that the operation is commutative and so the group is abelian.)</li>
+</ul></li>
+<li>The binary operation <span class="math inline">\(\cdot\)</span> is associative.</li>
+<li>For all <span class="math inline">\(a,b,c\in R\)</span>, the left distribution law, <span class="math inline">\(a(b+c)=(ab)+(ac)\)</span>, and the right distribution law, <span class="math inline">\((a+b)c=(ac)+(bc)\)</span>, hold.</li>
+</ol>
+</div>
+
+<p>We can see from this definition that the integers, <span class="math inline">\(\langle\mathbb{Z},+,\cdot\rangle\)</span>, form a ring but the natural numbers, <span class="math inline">\(\langle\mathbb{N},+,\cdot\rangle\)</span>, do not because they do not have additive inverses. Similarly, during the constructions of the rational numbers, <span class="math inline">\(\langle\mathbb{Q},+,\cdot\rangle\)</span>; the real numbers, <span class="math inline">\(\langle\mathbb{R},+,\cdot\rangle\)</span>; and the complex numbers, <span class="math inline">\(\langle\mathbb{C},+,\cdot\rangle\)</span>, we proved that these number systems satisfied all of the ring properties.</p>
+<p>We can also see that the examples above of <span class="math inline">\(\langle\mathbb{Z}_n,+,\cdot\rangle\)</span> and <span class="math inline">\(\langle GL(n,\mathbb{R}),+,\cdot\rangle\)</span> are also rings. So in many ways, all of these sets and operations have some very similar properties. However, there are some properties that some of these rings have, that others do not. If a ring has certain additional properties, we will add some labels to these sets.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-168" class="definition"><strong>Definition 6.6  (Further definitions)  </strong></span>We classify rings based on various properties of the ring.</p>
+<ol style="list-style-type: decimal">
+<li>A ring in which the multiplication is commutative is called a <strong>commutative ring</strong>.</li>
+<li>A ring with a multiplicative identity is called a <strong>ring with unity</strong>.</li>
+<li>If every non-zero element of a ring has a multiplicative inverse, then the ring is called a <strong>division ring</strong>.</li>
+<li>A <strong>field</strong> is a commutative division ring.</li>
+</ol>
+</div>
+
+<blockquote>
+<h4 id="related-content-standards-27" class="unnumbered">Related Content Standards</h4>
+<ul>
+<li>(7.NS2) Apply and extend previous understandings of multiplication and division and of fractions to multiply and divide rational numbers.
+<ol style="list-style-type: lower-alpha">
+<li>Understand that multiplication is extended from fractions to rational numbers by requiring that operations continue to satisfy the properties of operations, particularly the distributive property, leading to products such as <span class="math inline">\((-1)(-1) = 1\)</span> and the rules for multiplying signed numbers. Interpret products of rational numbers by describing real-world contexts.</li>
+</ol></li>
+</ul>
+</blockquote>
+</div>
+<div id="identities-and-inverses" class="section level3">
+<h3><span class="header-section-number">6.3.4</span> Identities and Inverses</h3>
+<p>Now that we have created several categories and labels for the sets and operations, let’s explore some of the consequences of the properties on the operations. As we do so, keep in mind which properties are used to prove different results. That way you can determine which properties are required of various sets and operations in order to get those results later on.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-169" class="theorem"><strong>Theorem 6.8  </strong></span> The additive identity for a ring is unique.
+</div>
+
+<p>This theorem is a direct consequence of the set with addition forming a group, whose identity is unique. Similarly, we have that the multiplicative identity is unique (if it exists). Since the proof is so similar to that of the uniqueness of the additive identity, the proof is left to the reader as an exercise.</p>
+
+<div class="theorem">
+<span id="thm:multiplicative-identity" class="theorem"><strong>Theorem 6.9  </strong></span>If a ring has a multiplicative identity, then that multiplicative identity is unique.
+</div>
+
+<p>Now that we know that the additive and multiplicative identities of a ring are unique, we will usually label these identities as <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>, respectively.</p>
+<p>Our next theorem shows us that the property from the integers that multiplying any number by zero results is zero is not unique to our number systems, but is inherent in the properties of the additive identity in a ring.</p>
+
+<div class="theorem">
+<span id="thm:zero-multiplication" class="theorem"><strong>Theorem 6.10  </strong></span>If <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> is a ring, and if <span class="math inline">\(0\)</span> is the additive identity in <span class="math inline">\(R\)</span>, <span class="math inline">\(0\cdot a=a\cdot 0=0\)</span> for all <span class="math inline">\(a\in R\)</span>.
+</div>
+
+
+<div class="proof">
+ <span class="proof"><em>Proof. </em></span> Let <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> be a ring with additive identity <span class="math inline">\(0\)</span> and let <span class="math inline">\(a\in R\)</span>. Then <span class="math inline">\(a \cdot 0 = a \cdot (0+0)\)</span>, since <span class="math inline">\(0\)</span> is the additive identity. From the distribution property we have that <span class="math inline">\(a \cdot 0 = a \cdot 0 + a \cdot 0\)</span> and if we add the additive inverse of <span class="math inline">\(a \cdot 0\)</span> to both sides of the equation, we have that <span class="math inline">\(0=a\cdot 0\)</span>. We can similarly show that <span class="math inline">\(0\cdot a=0\)</span>.
+</div>
+
+<p>Recall from Theorem <a href="sec-groups.html#thm:unique-inverse">6.2</a> that we have uniqueness of the additive inverse since <span class="math inline">\(\langle R,+\rangle\)</span> is an abelian group. We can also prove the uniqueness of a multiplicative inverse, if such an inverse exists because in this situation, <span class="math inline">\(\langle R,\cdot \rangle\)</span> forms a group.</p>
+<p>One question that students often ask when they are introduced to multiplication with negative numbers why a negative times a negative is a positive. We see from the theorem below that this property, and other related properties are inherited from the ring structure of the number system. However, when explaining this property to students, it is often better to focus on the symmetry about the additive identity. In particular, with integers and real numbers it is good to focus on the symmetry of the additive identities on the number line. For the complex numbers it is helpful to focus the students’ attention on the symmetry about the additive identity when looking at the complex plane.</p>
+
+<div class="theorem">
+<p><span id="thm:unnamed-chunk-171" class="theorem"><strong>Theorem 6.11  </strong></span>If <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> is a ring and <span class="math inline">\(a,b \in R\)</span>, then</p>
+<ul>
+<li><p><span class="math inline">\(a\cdot (-b)=(-a)\cdot b=-(a\cdot b)\)</span></p></li>
+<li><p><span class="math inline">\((-a)\cdot (-b)=a\cdot b\)</span></p></li>
+</ul>
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> In order to prove the first part of the theorem we need to only show that
+<span class="math display">\[\left( a \cdot (-b) \right) + \left(a \cdot b\right) =0 \quad \mbox{and} \quad \left((-a)\cdot b\right)+\left(a \cdot b\right) =0\]</span> because the additive inverse of <span class="math inline">\(a\cdot b\)</span> is unique.</p>
+We see that
+<span class="math display">\[\begin{align*}
+(a \cdot (-b)) + (a \cdot b ) &amp;= a \cdot ((-b)+b) \mbox{ (from the distributive property)} \\
+&amp;= a \cdot 0 \mbox{ (since } -b \mbox{ is the additive inverse of }b)\\
+&amp;= 0
+\end{align*}\]</span>
+as a result of Theorem <a href="sec-Exploration.html#thm:zero-multiplication">6.10</a>.
+Similarly,
+<span class="math display">\[\begin{align*}
+( (-a) \cdot b) + (a \cdot b) &amp;= ((-a)+a)\cdot b \mbox{ (from the distributive property)} \\
+&amp;= 0 \cdot b \mbox{ (since } -a \mbox{ is the additive inverse of } a)\\
+&amp;= 0
+\end{align*}\]</span>
+as a result of Theorem <a href="sec-Exploration.html#thm:zero-multiplication">6.10</a>.
+For the second result we use the first result to see that
+<span class="math display">\[(-a)\cdot (-b) = -\left(a \cdot (-b)\right) = - \left( - \left(a\cdot b\right) \right) = a \cdot b\]</span> since the additive inverse of the additive inverse of an element is the original element.
+</div>
+
+</div>
+<div id="integral-domains" class="section level3">
+<h3><span class="header-section-number">6.3.5</span> Integral Domains</h3>
+<p>We often want to solve an equation such as $ax=b $ or $xa=b $ for <span class="math inline">\(x\)</span> with <span class="math inline">\(a\neq 0\)</span>. In order to do so we need to use the cancellation laws, <span class="math inline">\(ab=ac\)</span> with <span class="math inline">\(a \neq 0\)</span> implies <span class="math inline">\(b=c\)</span> and <span class="math inline">\(ba=ca\)</span> with <span class="math inline">\(a\neq 0\)</span> implies <span class="math inline">\(b=c\)</span>.</p>
+<p>We will see that the cancellation laws correspond with a property about zero divisors.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-173" class="definition"><strong>Definition 6.7  </strong></span>If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are two non-zero elements of a ring <span class="math inline">\(R\)</span> such that <span class="math inline">\(ab=0\)</span>, then <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are <strong>divisors of <span class="math inline">\(0\)</span></strong> (or <strong>zero divisors</strong>). In particular, <span class="math inline">\(a\)</span> is a <strong>left divisor</strong> of <span class="math inline">\(0\)</span> and <span class="math inline">\(b\)</span> is a <strong>right divisor</strong> of <span class="math inline">\(0\)</span>.
+</div>
+
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-174" class="theorem"><strong>Theorem 6.12  </strong></span>The cancellation laws hold in a ring <span class="math inline">\(R\)</span> if and only if <span class="math inline">\(R\)</span> has no left or right divisors of <span class="math inline">\(0\)</span>.
+</div>
+
+
+<div class="proof">
+<p> <span class="proof"><em>Proof. </em></span> Assume that for all elements <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> of a ring <span class="math inline">\(R\)</span> such that <span class="math inline">\(a\neq 0\)</span> we have that
+<span class="math display">\[(ab=ac) \Rightarrow (b=c).\]</span> We can then add the additive inverse of <span class="math inline">\(ac\)</span> to both sides of the first equation and the additive inverse of <span class="math inline">\(c\)</span> to both sides of the right equation to see that this implication is equivalent to <span class="math display">\[\left((ab-ac)=0 \right) \Rightarrow (b-c=0).\]</span> Using the left distribution property of the ring, we have that the implication is equivalent to <span class="math display">\[\left( a \cdot (b-c) =0\right) \Rightarrow \left( (b-c)=0\right).\]</span> This implication is true if and only if <span class="math inline">\(a\)</span> is not a left divisor of <span class="math inline">\(0\)</span>.</p>
+<p>Similarly, one can show that the right cancellation law of <span class="math display">\[\left(ba=ca, \: \mbox{ with } a \neq 0 \right) \Rightarrow (b=c)\]</span> is equivalent to <span class="math inline">\(a\)</span> not being a right divisor of <span class="math inline">\(0\)</span>.</p>
+Therefore, we see that the cancellation laws holding for a ring is equivalent to the ring having no zero divisors.
+</div>
+
+<p>Since this property of not having zero divisors is so important in the process of solving simple equations, we give rings with this property a label.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-176" class="definition"><strong>Definition 6.8  </strong></span>An <strong>integral domain</strong> is a commutative ring with unity containing no divisors of <span class="math inline">\(0\)</span>.
+</div>
+
+<p>A very useful example of an integral domain is the set of integers with the usual addition and multiplication. We will see in the next chapter that the polynomials also form an integral domain, which allows us to factor polynomials in a similar way to factoring integers.</p>
+<p>In order to better understand how all of these different types of rings fit together, Figure <a href="sec-Exploration.html#fig:venn-rings">6.1</a> is a graphical way to understand their relationships.</p>
+<div class="figure" style="text-align: center"><span id="fig:venn-rings"></span>
+<img src="tikz/ring-relationships.png" alt="Venn diagram of ring relationships" width="100%" />
+<p class="caption">
+Figure 6.1: Venn diagram of ring relationships
+</p>
+</div>
+</div>
+<div id="ring-homomorphisms" class="section level3">
+<h3><span class="header-section-number">6.3.6</span> Ring Homomorphisms</h3>
+<p>Just like group homorphisms in Section <a href="sec-groups.html#sec:homomorphisms">6.1.3</a>, we can study the functions between rings that maintain the ring structures.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-177" class="definition"><strong>Definition 6.9  </strong></span>Let <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> and <span class="math inline">\(\langle R&#39;,\ast,\times\rangle\)</span> be rings. A map <span class="math inline">\(\phi:R\rightarrow R&#39;\)</span> is a <strong>ring homomorphism</strong> if</p>
+<ul>
+<li><span class="math inline">\(\phi(a+b)=\phi(a) \ast \phi(b)\)</span> for all <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span></li>
+<li><span class="math inline">\(\phi(a\cdot b)=\phi(a)\times \phi(b)\)</span> for all <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span>.</li>
+</ul>
+<span class="math inline">\(\phi\)</span> is called a <strong>ring isomorphism</strong> if it is also a bijection. If such an isomorphism exists from a ring <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> to a ring <span class="math inline">\(\langle R&#39;,\ast,\times\rangle\)</span>, then we say that <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> is <strong>isomorphic</strong> to <span class="math inline">\(\langle R&#39;,\ast,\times\rangle\)</span>.
+</div>
+
+<p>When we talk about rings, we often refer to a ring <span class="math inline">\(\langle R,+,\cdot\rangle\)</span> as just <span class="math inline">\(R\)</span> when the binary operations are easily inferred from the set. For instance, we often talk about <span class="math inline">\(\mathbb{R}\)</span> as the ring of real numbers with the binary operations of addition and multiplication being inferred.</p>
+<p>Similar to groups, it is useful to know when two rings are really the “same” ring with different labels. We see that just like with groups (Theorem <a href="sec-groups.html#thm:group-isomorphism-equivalence">6.7</a>) we see that ring isomorphisms create an equivalence relation and so two rings are the “same” if there is an isomorphism from one to the other. Therefore, in order to prove that two rings are isomorphic, it is usually done by finding the isomorphism. However, to prove that two rings are not isomorphic we usually use a proof by contradiction using certain properties of ring isomorphisms.</p>
+</div>
+<div id="exercises-22" class="section level3">
+<h3><span class="header-section-number">6.3.7</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create Cayley tables for addition and multiplication for <span class="math inline">\(\mathbb{Z}_{12}\)</span>. What patterns do you recognize inside of the table and how would you explain the reasons for those patterns?</p></li>
+<li><p>What are the zero divisors of <span class="math inline">\(GL(2,\mathbb{Z}_2)\)</span>?</p></li>
+<li><p>For each of the following rings, determine the appropriate location for the ring in the Venn diagram of the ring relationships (Figure <a href="sec-Exploration.html#fig:venn-rings">6.1</a>).</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\langle\mathbb{Z},+,\cdot\rangle\)</span>, the integers with the usual addition and multiplication.</li>
+<li><span class="math inline">\(\langle\mathbb{Q},+,\cdot\rangle\)</span>, the rational numbers with the usual addition and multiplication.</li>
+<li><span class="math inline">\(\langle\mathbb{R},+,\cdot\rangle\)</span>, the real numbers with the usual addition and multiplication.</li>
+<li><span class="math inline">\(\langle\mathbb{C},+,\cdot\rangle\)</span>, the complex numbers with the usual addition and multiplication.</li>
+<li><span class="math inline">\(\langle2\mathbb{Z},+,\cdot\rangle\)</span>, the even integers with the usual addition and multiplication.</li>
+<li><span class="math inline">\(\langle\mathbb{Z}_2,+,\cdot\rangle\)</span>, as defined in Example <a href="sec-Exploration.html#exm:z2ring">6.8</a>.</li>
+<li><span class="math inline">\(\langle\mathbb{Z}_4,+,\cdot\rangle\)</span>, as defined in Example <a href="sec-Exploration.html#exm:z4ring">6.10</a>.</li>
+<li><span class="math inline">\(\langle GL(2,\mathbb{R}),+,\cdot\rangle\)</span>, the two by two matrices with real coefficients with the usual matrix addition and multiplication.</li>
+<li><span class="math inline">\(\langle GL(2,2\mathbb{Z}),+,\cdot\rangle\)</span>, the two by two matrices with even integer coefficients with the usual matrix addition and multiplication.</li>
+</ol></li>
+<li><p>Prove Theorem <a href="sec-Exploration.html#thm:multiplicative-identity">6.9</a>.</p></li>
+<li><p>Show that <span class="math inline">\(a^2-b^2=(a+b)(a-b)\)</span> for all <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span> if and only if R is a commutative ring.</p></li>
+<li><p>Prove that <span class="math inline">\(2\mathbb{Z}\)</span> and <span class="math inline">\(3\mathbb{Z}\)</span> are not isomorphic as rings.</p></li>
+<li><p>Let <span class="math inline">\(R\)</span> be a ring and let <span class="math inline">\(R^R\)</span> be the set of all functions mapping <span class="math inline">\(R\)</span> into <span class="math inline">\(R\)</span>. For <span class="math inline">\(f,g\in R^R\)</span>, define the sum <span class="math inline">\(f+g\)</span> by <span class="math display">\[(f+g)(a)=f(a)+g(a)\]</span> and the product <span class="math inline">\(f\cdot g\)</span> by <span class="math display">\[(f\cdot g)(a)=f(a)\cdot g(a)\]</span> for each <span class="math inline">\(a \in R\)</span>. Show that <span class="math inline">\(\langle R^R, +, \cdot\rangle\)</span> is a ring.</p></li>
+</ol>
+
+</div>
+</div>
+<!-- </div> -->
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-Cayley">
+<p>Cayley, A. (1854). On the theory of groups, as depending on the symbolic equation <span class="math inline">\(\theta^n=1\)</span>. <em>The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science</em>, <em>7</em>(42), 40–47.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec-linear-exponential.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ch-rings.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
