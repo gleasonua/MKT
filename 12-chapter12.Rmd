@@ -1,1 +1,0 @@
-# Euclidean Transformational Geometry {#ch:transformations}

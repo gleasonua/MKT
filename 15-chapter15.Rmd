@@ -1,1 +1,0 @@
-# Samples, Simulations, and Probability {#ch:simulations}
