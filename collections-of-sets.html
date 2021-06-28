@@ -369,7 +369,33 @@ div.csl-indent {
 </ul></li>
 </ul></li>
 <li class="part"><span><b>III GEOMETRY</b></span></li>
-<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="definitions-1.html"><a href="definitions-1.html"><i class="fa fa-check"></i><b>9.1</b> Definitions</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="definitions-1.html"><a href="definitions-1.html#criteria-for-definitions"><i class="fa fa-check"></i><b>9.1.1</b> Criteria for Definitions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="definitions-1.html"><a href="definitions-1.html#concept-image"><i class="fa fa-check"></i><b>9.1.2</b> Concept Image</a></li>
+<li class="chapter" data-level="9.1.3" data-path="definitions-1.html"><a href="definitions-1.html#classification-of-two-dimensional-figures"><i class="fa fa-check"></i><b>9.1.3</b> Classification of Two-Dimensional Figures</a></li>
+<li class="chapter" data-level="9.1.4" data-path="definitions-1.html"><a href="definitions-1.html#definitions-from-euclids-elements"><i class="fa fa-check"></i><b>9.1.4</b> Definitions from Euclid’s Elements</a></li>
+<li class="chapter" data-level="9.1.5" data-path="definitions-1.html"><a href="definitions-1.html#exercises-36"><i class="fa fa-check"></i><b>9.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html"><i class="fa fa-check"></i><b>9.2</b> Axiomatic Systems</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#euclids-common-notions-and-postulates"><i class="fa fa-check"></i><b>9.2.1</b> Euclid’s Common Notions and Postulates</a></li>
+<li class="chapter" data-level="9.2.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#hilberts-axioms"><i class="fa fa-check"></i><b>9.2.2</b> Hilbert’s Axioms</a></li>
+<li class="chapter" data-level="9.2.3" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#school-mathematics-study-group-axioms"><i class="fa fa-check"></i><b>9.2.3</b> School Mathematics Study Group Axioms</a></li>
+<li class="chapter" data-level="9.2.4" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#discussion"><i class="fa fa-check"></i><b>9.2.4</b> Discussion</a></li>
+<li class="chapter" data-level="9.2.5" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#exercises-37"><i class="fa fa-check"></i><b>9.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html"><i class="fa fa-check"></i><b>9.3</b> Euclid’s Basic Constructions</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
 <li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
 <li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
@@ -400,30 +426,25 @@ div.csl-indent {
 <h2><span class="header-section-number">2.3</span> Collections of Sets</h2>
 <p>Now that we know how to combine pairs of sets, we can inductively define unions and intersections for a finite or infinite number of sets.</p>
 <p>When we are dealing with more than one or two related but distinct sets we often use another set as an <strong>index set</strong> in order to more easily describe and distinguish the sets in the collection.</p>
-
 <div class="example">
-<span id="exm:unnamed-chunk-29" class="example"><strong>Example 2.11  </strong></span>Let the natural numbers, <span class="math inline">\(\mathbb{N}=\{1, 2, 3, \ldots \}\)</span>, be an indexing set. For each natural number, <span class="math inline">\(n\)</span>, we define <span class="math display">\[A_n = [n,n+1),\]</span> which is an interval in the real numbers. In this situation, we have
+<p><span id="exm:unlabeled-div-19" class="example"><strong>Example 2.11  </strong></span>Let the natural numbers, <span class="math inline">\(\mathbb{N}=\{1, 2, 3, \ldots \}\)</span>, be an indexing set. For each natural number, <span class="math inline">\(n\)</span>, we define <span class="math display">\[A_n = [n,n+1),\]</span> which is an interval in the real numbers. In this situation, we have
 <span class="math display">\[A_1 = [1,2), \:  A_2 = [2,3), \: A_3 = [3,4),\:  \ldots \]</span>
-In this case, the use of <span class="math inline">\(\mathbb{N}\)</span> tells us that we have an infinite set of sets. We use the indexing set to express the form of a general interval. When we assign an index value (such as <span class="math inline">\(n=3\)</span>), we are effectively identifying a particular interval in the sequence of intervals.
+In this case, the use of <span class="math inline">\(\mathbb{N}\)</span> tells us that we have an infinite set of sets. We use the indexing set to express the form of a general interval. When we assign an index value (such as <span class="math inline">\(n=3\)</span>), we are effectively identifying a particular interval in the sequence of intervals.</p>
 </div>
 <p>Using indexing sets, we can then define the union and intersection of a collection of sets.</p>
-
 <div class="definition">
-<span id="def:unnamed-chunk-30" class="definition"><strong>Definition 2.8  </strong></span> Let <span class="math inline">\(S\)</span> be an indexing set and let <span class="math inline">\(\left\{ A_i\right\}_{i\in S}\)</span> be an indexed non-empty family of sets. Then we define the union and intersection of the family of sets as
-<span class="math display">\[\bigcup_{i\in S} A_i = \left\{ x \middle \vert x\in A_i \mbox{ for some } i\in S\right\} \quad \mbox{ and } \quad \bigcap_{i\in S} A_i = \left\{ x\middle \vert x\in A_i \mbox{ for all } i \in S\right\}.\]</span>
+<p><span id="def:set-indexing" class="definition"><strong>Definition 2.8  </strong></span>Let <span class="math inline">\(S\)</span> be an indexing set and let <span class="math inline">\(\left\{ A_i\right\}_{i\in S}\)</span> be an indexed non-empty family of sets. Then we define the union and intersection of the family of sets as
+<span class="math display">\[\bigcup_{i\in S} A_i = \left\{ x \middle \vert x\in A_i \mbox{ for some } i\in S\right\} \quad \mbox{ and } \quad \bigcap_{i\in S} A_i = \left\{ x\middle \vert x\in A_i \mbox{ for all } i \in S\right\}.\]</span></p>
 </div>
-
 <div class="example">
-<span id="exm:disjoint" class="example"><strong>Example 2.12  </strong></span>Continuing with our previous example where <span class="math inline">\(A_n= [n,n+1)\)</span> for each <span class="math inline">\(n\in \mathbb{N}\)</span>, we can write
-<span class="math display">\[ \bigcup_{i\in \{1,2,3\}} A_i = [1,4) \quad \mbox{and} \quad \bigcap_{i\in \{1,2,3\}} A_i = \emptyset\]</span>
-since the sets <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, <span class="math inline">\(A_3\)</span>, and <span class="math inline">\(A_4\)</span> do not overlap. If we extend this to the entire indexing set, then <span class="math display">\[\bigcup_{i\in \mathbb{N}} A_i = [1,\infty) \quad \mbox{and} \quad \bigcap_{i\in \mathbb{N}} A_i = \emptyset.\]</span>
+<p><span id="exm:disjoint" class="example"><strong>Example 2.12  </strong></span>Continuing with our previous example where <span class="math inline">\(A_n= [n,n+1)\)</span> for each <span class="math inline">\(n\in \mathbb{N}\)</span>, we can write
+<span class="math display">\[\bigcup_{i\in \{1,2,3\}} A_i = [1,4) \quad \mbox{and} \quad \bigcap_{i\in \{1,2,3\}} A_i = \emptyset\]</span>
+since the sets <span class="math inline">\(A_1\)</span>, <span class="math inline">\(A_2\)</span>, <span class="math inline">\(A_3\)</span>, and <span class="math inline">\(A_4\)</span> do not overlap. If we extend this to the entire indexing set, then <span class="math display">\[\bigcup_{i\in \mathbb{N}} A_i = [1,\infty) \quad \mbox{and} \quad \bigcap_{i\in \mathbb{N}} A_i = \emptyset.\]</span></p>
 </div>
 <p>An indexed collection of sets <span class="math inline">\(\{A_i\}_{i\in S}\)</span> is called <strong>mutually disjoint</strong> if, for any <span class="math inline">\(i,j\in S\)</span> with <span class="math inline">\(i\neq j\)</span>, <span class="math inline">\(A_i \cap A_j = \emptyset\)</span>. The sets in the previous example are mutually disjoint since <span class="math inline">\([n,n+1) \cap [m,m+1) = \emptyset\)</span> if <span class="math inline">\(m\neq n\)</span>.</p>
-
 <div class="example">
-<p><span id="exm:unnamed-chunk-31" class="example"><strong>Example 2.13  </strong></span>For each positive integer <span class="math inline">\(n\)</span>, (<span class="math inline">\(n\in \mathbb{N}\)</span>), let <span class="math display">\[S_n= \left\{x\in \mathbb{R}\middle \vert \frac{-1}{n} &lt; x &lt; \frac{1}{n} \right\}.\]</span></p>
-<span class="math display">\[S_1=(-1,1)\]</span>
-</div>
+<p><span id="exm:unlabeled-div-20" class="example"><strong>Example 2.13  </strong></span>For each positive integer <span class="math inline">\(n\)</span>, (<span class="math inline">\(n\in \mathbb{N}\)</span>), let <span class="math display">\[S_n= \left\{x\in \mathbb{R}\middle \vert \frac{-1}{n} &lt; x &lt; \frac{1}{n} \right\}.\]</span></p>
+<p><span class="math display">\[S_1=(-1,1)\]</span></p>
 <p><img src="tikz/Nested_s1.png" width="35%" style="display: block; margin: auto;" />
 <span class="math display">\[S_2=(\frac{-1}{2}, \frac{1}{2})\]</span></p>
 <p><img src="tikz/Nested_s2.png" width="35%" style="display: block; margin: auto;" />
@@ -431,19 +452,18 @@ since the sets <span class="math inline">\(A_1\)</span>, <span class="math inlin
 <p><img src="tikz/Nested_s3.png" width="35%" style="display: block; margin: auto;" /></p>
 <p>Then we can see that for any <span class="math inline">\(i&lt;j\)</span>, we have that <span class="math inline">\(S_i\cap S_j = S_j\)</span> and <span class="math inline">\(S_i \cup S_j = S_i\)</span>.</p>
 <p>We can also take the union and intersections over the entire collection of sets.
-<span class="math display">\[ \bigcup_{n\in \mathbb{N}} S_n = (-1,1) \quad \mbox{ and } \quad \bigcap_{n\in \mathbb{N}} S_n = \{0\}.\]</span></p>
+<span class="math display">\[\bigcup_{n\in \mathbb{N}} S_n = (-1,1) \quad \mbox{ and } \quad \bigcap_{n\in \mathbb{N}} S_n = \{0\}.\]</span></p>
+</div>
 <p>The above example is also an example of what is called a <strong>nested</strong> collection of sets.</p>
-
 <div class="definition">
-<span id="def:unnamed-chunk-35" class="definition"><strong>Definition 2.9  </strong></span> An indexed collection of sets, <span class="math inline">\(\left\{ A_i\right\}_{i\in I}\)</span>, with an order on <span class="math inline">\(I\)</span> is called <strong>nested</strong> if either
-<span class="math display">\[ A_i \subseteq A_j \mbox{ whenever } i&lt;j \quad \mbox{or} \quad A_i \supseteq A_j \mbox{ whenever } i&lt;j.\]</span>
-When the indexing set is the natural numbers this is often denoted by <span class="math display">\[A_0 \subseteq A_1 \subseteq A_2 \subseteq \cdots \quad \mbox{ or } \quad A_0 \supseteq A_1 \supseteq A_2 \supseteq \cdots.\]</span>
+<p><span id="def:nested" class="definition"><strong>Definition 2.9  </strong></span>An indexed collection of sets, <span class="math inline">\(\left\{ A_i\right\}_{i\in I}\)</span>, with an order on <span class="math inline">\(I\)</span> is called <strong>nested</strong> if either
+<span class="math display">\[A_i \subseteq A_j \mbox{ whenever } i&lt;j \quad \mbox{or} \quad A_i \supseteq A_j \mbox{ whenever } i&lt;j.\]</span>
+When the indexing set is the natural numbers this is often denoted by <span class="math display">\[A_0 \subseteq A_1 \subseteq A_2 \subseteq \cdots \quad \mbox{ or } \quad A_0 \supseteq A_1 \supseteq A_2 \supseteq \cdots.\]</span></p>
 </div>
 <p>Using the ideas of indexing sets and families of sets, we can generalize De Morgan’s Laws to a general collection of sets, the proofs of which are very similar to the proof in the case of two sets.</p>
-
 <div class="theorem">
-<span id="thm:unnamed-chunk-36" class="theorem"><strong>Theorem 2.7  (Generalized De Morgan’s Laws)  </strong></span>Let <span class="math inline">\(I\)</span> be an indexing set and let <span class="math inline">\(\{A_i\}_{i\in I}\)</span> be a collection of sets that are all subsets of the same universal set. Then
-<span class="math display">\[\left( \bigcup_{i\in I} A_i \right)^c = \bigcap_{i \in I} A_i^c \quad \mbox{and} \quad \left( \bigcap_{i\in I} A_i \right)^c = \bigcup_{i \in I} A_i^c\]</span>
+<p><span id="thm:Generalized-De-Morgans-Laws" class="theorem"><strong>Theorem 2.7  </strong></span>Let <span class="math inline">\(I\)</span> be an indexing set and let <span class="math inline">\(\{A_i\}_{i\in I}\)</span> be a collection of sets that are all subsets of the same universal set. Then
+<span class="math display">\[\left( \bigcup_{i\in I} A_i \right)^c = \bigcap_{i \in I} A_i^c \quad \mbox{and} \quad \left( \bigcap_{i\in I} A_i \right)^c = \bigcup_{i \in I} A_i^c\]</span></p>
 </div>
 <div id="exercises-5" class="section level3" number="2.3.1">
 <h3><span class="header-section-number">2.3.1</span> Exercises</h3>

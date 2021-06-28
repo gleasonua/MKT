@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9.3 Euclid’s Basic Constructions | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9.3 Euclid’s Basic Constructions | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9.3 Euclid’s Basic Constructions | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="axiomatic-systems.html"/>
+<link rel="next" href="angles-parallel-lines-and-parallelograms.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style2.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a>
+<ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
+<li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
+<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="sec-groups.html"><a href="sec-groups.html"><i class="fa fa-check"></i><b>6.1</b> Group Theory</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="sec-groups.html"><a href="sec-groups.html#abelian-groups"><i class="fa fa-check"></i><b>6.1.1</b> Abelian Groups</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sec-groups.html"><a href="sec-groups.html#uniqueness-of-identities-and-inverses"><i class="fa fa-check"></i><b>6.1.2</b> Uniqueness of Identities and Inverses</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sec-groups.html"><a href="sec-groups.html#sec:homomorphisms"><i class="fa fa-check"></i><b>6.1.3</b> Homomorphisms</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sec-groups.html"><a href="sec-groups.html#isomorphisms"><i class="fa fa-check"></i><b>6.1.4</b> Isomorphisms</a></li>
+<li class="chapter" data-level="6.1.5" data-path="sec-groups.html"><a href="sec-groups.html#finite-groups"><i class="fa fa-check"></i><b>6.1.5</b> Finite Groups</a></li>
+<li class="chapter" data-level="6.1.6" data-path="sec-groups.html"><a href="sec-groups.html#exercises-20"><i class="fa fa-check"></i><b>6.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html"><i class="fa fa-check"></i><b>6.2</b> Relationship Between Linear and Exponential</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html#exercises-21"><i class="fa fa-check"></i><b>6.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html"><i class="fa fa-check"></i><b>6.3</b> Rings and Fields</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="sec-Exploration.html"><a href="sec-Exploration.html#finite-sets-with-two-operations"><i class="fa fa-check"></i><b>6.3.1</b> Finite Sets with Two Operations</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sec-Exploration.html"><a href="sec-Exploration.html#matrices"><i class="fa fa-check"></i><b>6.3.2</b> Matrices</a></li>
+<li class="chapter" data-level="6.3.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html#rings"><i class="fa fa-check"></i><b>6.3.3</b> Rings</a></li>
+<li class="chapter" data-level="6.3.4" data-path="sec-Exploration.html"><a href="sec-Exploration.html#identities-and-inverses"><i class="fa fa-check"></i><b>6.3.4</b> Identities and Inverses</a></li>
+<li class="chapter" data-level="6.3.5" data-path="sec-Exploration.html"><a href="sec-Exploration.html#integral-domains"><i class="fa fa-check"></i><b>6.3.5</b> Integral Domains</a></li>
+<li class="chapter" data-level="6.3.6" data-path="sec-Exploration.html"><a href="sec-Exploration.html#ring-homomorphisms"><i class="fa fa-check"></i><b>6.3.6</b> Ring Homomorphisms</a></li>
+<li class="chapter" data-level="6.3.7" data-path="sec-Exploration.html"><a href="sec-Exploration.html#exercises-22"><i class="fa fa-check"></i><b>6.3.7</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html"><i class="fa fa-check"></i><b>7.1</b> Properties of the Ring of the Integers</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#composing-and-decomposing-integers"><i class="fa fa-check"></i><b>7.1.1</b> Composing and Decomposing Integers</a></li>
+<li class="chapter" data-level="7.1.2" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#greatest-common-divisor-and-least-common-multiple"><i class="fa fa-check"></i><b>7.1.2</b> Greatest Common Divisor and Least Common Multiple</a></li>
+<li class="chapter" data-level="7.1.3" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#fundamental-theorem-of-arithmetic"><i class="fa fa-check"></i><b>7.1.3</b> Fundamental Theorem of Arithmetic</a></li>
+<li class="chapter" data-level="7.1.4" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#exercises-23"><i class="fa fa-check"></i><b>7.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="polynomial-rings.html"><a href="polynomial-rings.html"><i class="fa fa-check"></i><b>7.2</b> Polynomial Rings</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="polynomial-rings.html"><a href="polynomial-rings.html#exercises-24"><i class="fa fa-check"></i><b>7.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html"><i class="fa fa-check"></i><b>7.3</b> Properties of Polynomial Rings</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#polynomial-division"><i class="fa fa-check"></i><b>7.3.1</b> Polynomial Division</a></li>
+<li class="chapter" data-level="7.3.2" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#gcf-and-lcm-for-polynomials"><i class="fa fa-check"></i><b>7.3.2</b> GCF and LCM for Polynomials</a></li>
+<li class="chapter" data-level="7.3.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#irreducible-polynomials"><i class="fa fa-check"></i><b>7.3.3</b> Irreducible Polynomials</a></li>
+<li class="chapter" data-level="7.3.4" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#exercises-25"><i class="fa fa-check"></i><b>7.3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="rational-expressions.html"><a href="rational-expressions.html"><i class="fa fa-check"></i><b>7.4</b> Rational Expressions</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="rational-expressions.html"><a href="rational-expressions.html#exercises-26"><i class="fa fa-check"></i><b>7.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="function-properties.html"><a href="function-properties.html"><i class="fa fa-check"></i><b>8.1</b> Function Properties</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="function-properties.html"><a href="function-properties.html#domain-and-range"><i class="fa fa-check"></i><b>8.1.1</b> Domain and Range</a></li>
+<li class="chapter" data-level="8.1.2" data-path="function-properties.html"><a href="function-properties.html#maxima-minima-or-relative-maxima-relative-minima"><i class="fa fa-check"></i><b>8.1.2</b> Maxima (minima) or relative maxima (relative minima)</a></li>
+<li class="chapter" data-level="8.1.3" data-path="function-properties.html"><a href="function-properties.html#increasing-or-decreasing"><i class="fa fa-check"></i><b>8.1.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.1.4" data-path="function-properties.html"><a href="function-properties.html#intercepts"><i class="fa fa-check"></i><b>8.1.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.1.5" data-path="function-properties.html"><a href="function-properties.html#end-behavior-singularities-and-asymptotes"><i class="fa fa-check"></i><b>8.1.5</b> End behavior, singularities, and asymptotes</a></li>
+<li class="chapter" data-level="8.1.6" data-path="function-properties.html"><a href="function-properties.html#special-properties"><i class="fa fa-check"></i><b>8.1.6</b> Special Properties</a></li>
+<li class="chapter" data-level="8.1.7" data-path="function-properties.html"><a href="function-properties.html#exercises-27"><i class="fa fa-check"></i><b>8.1.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html"><i class="fa fa-check"></i><b>8.2</b> Transformations of Functions</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-translations"><i class="fa fa-check"></i><b>8.2.1</b> Horizontal Translations</a></li>
+<li class="chapter" data-level="8.2.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-translations"><i class="fa fa-check"></i><b>8.2.2</b> Vertical Translations</a></li>
+<li class="chapter" data-level="8.2.3" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-dilations"><i class="fa fa-check"></i><b>8.2.3</b> Horizontal Dilations</a></li>
+<li class="chapter" data-level="8.2.4" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-dilations"><i class="fa fa-check"></i><b>8.2.4</b> Vertical Dilations</a></li>
+<li class="chapter" data-level="8.2.5" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#reflections"><i class="fa fa-check"></i><b>8.2.5</b> Reflections</a></li>
+<li class="chapter" data-level="8.2.6" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#families-of-functions"><i class="fa fa-check"></i><b>8.2.6</b> Families of Functions</a></li>
+<li class="chapter" data-level="8.2.7" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#exercises-28"><i class="fa fa-check"></i><b>8.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html"><i class="fa fa-check"></i><b>8.3</b> Linear and Exponential Functions</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#linear-functions"><i class="fa fa-check"></i><b>8.3.1</b> Linear Functions</a></li>
+<li class="chapter" data-level="8.3.2" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exponential-functions"><i class="fa fa-check"></i><b>8.3.2</b> Exponential Functions</a></li>
+<li class="chapter" data-level="8.3.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#logarithmic-functions"><i class="fa fa-check"></i><b>8.3.3</b> Logarithmic Functions</a></li>
+<li class="chapter" data-level="8.3.4" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#relationships-between-linear-and-exponential"><i class="fa fa-check"></i><b>8.3.4</b> Relationships between Linear and Exponential</a></li>
+<li class="chapter" data-level="8.3.5" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exercises-29"><i class="fa fa-check"></i><b>8.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html"><i class="fa fa-check"></i><b>8.4</b> Linear Fractional Transformations</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#domain"><i class="fa fa-check"></i><b>8.4.1</b> Domain</a></li>
+<li class="chapter" data-level="8.4.2" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#range"><i class="fa fa-check"></i><b>8.4.2</b> Range</a></li>
+<li class="chapter" data-level="8.4.3" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#increasing-or-decreasing-1"><i class="fa fa-check"></i><b>8.4.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.4.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#intercepts-1"><i class="fa fa-check"></i><b>8.4.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.4.5" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#end-behavior-and-asymptotes"><i class="fa fa-check"></i><b>8.4.5</b> End behavior and asymptotes</a></li>
+<li class="chapter" data-level="8.4.6" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#extensions"><i class="fa fa-check"></i><b>8.4.6</b> Extensions</a></li>
+<li class="chapter" data-level="8.4.7" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#exercises-30"><i class="fa fa-check"></i><b>8.4.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html"><i class="fa fa-check"></i><b>8.5</b> Quadratic Polynomials</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#completing-the-square"><i class="fa fa-check"></i><b>8.5.1</b> Completing the Square</a></li>
+<li class="chapter" data-level="8.5.2" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#factoring"><i class="fa fa-check"></i><b>8.5.2</b> Factoring</a></li>
+<li class="chapter" data-level="8.5.3" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#inverse-function"><i class="fa fa-check"></i><b>8.5.3</b> Inverse Function</a></li>
+<li class="chapter" data-level="8.5.4" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#exercises-31"><i class="fa fa-check"></i><b>8.5.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html"><i class="fa fa-check"></i><b>8.6</b> General Polynomial Functions</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>8.6.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>8.6.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>8.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="8.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-32"><i class="fa fa-check"></i><b>8.6.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html"><i class="fa fa-check"></i><b>8.7</b> Rational Functions</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#short-term-behavior-1"><i class="fa fa-check"></i><b>8.7.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.2" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#long-term-behavior-1"><i class="fa fa-check"></i><b>8.7.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.3" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#partial-fraction-decomposition"><i class="fa fa-check"></i><b>8.7.3</b> Partial Fraction Decomposition</a></li>
+<li class="chapter" data-level="8.7.4" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#exercises-33"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html"><i class="fa fa-check"></i><b>8.8</b> Trigonometric Functions</a>
+<ul>
+<li class="chapter" data-level="8.8.1" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#definitions"><i class="fa fa-check"></i><b>8.8.1</b> Definitions</a></li>
+<li class="chapter" data-level="8.8.2" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#additional-properties"><i class="fa fa-check"></i><b>8.8.2</b> Additional Properties</a></li>
+<li class="chapter" data-level="8.8.3" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#graphs-of-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.3</b> Graphs of Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.4" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#inverse-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.4</b> Inverse Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.5" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#exercises-34"><i class="fa fa-check"></i><b>8.8.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html"><i class="fa fa-check"></i><b>8.9</b> Combinations of Functions</a>
+<ul>
+<li class="chapter" data-level="8.9.1" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#addition-subtraction-multiplication-and-division-of-functions"><i class="fa fa-check"></i><b>8.9.1</b> Addition, Subtraction, Multiplication, and Division of Functions</a></li>
+<li class="chapter" data-level="8.9.2" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#composition-of-functions"><i class="fa fa-check"></i><b>8.9.2</b> Composition of Functions</a></li>
+<li class="chapter" data-level="8.9.3" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#systems-of-equations"><i class="fa fa-check"></i><b>8.9.3</b> Systems of Equations</a></li>
+<li class="chapter" data-level="8.9.4" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#exercises-35"><i class="fa fa-check"></i><b>8.9.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="definitions-1.html"><a href="definitions-1.html"><i class="fa fa-check"></i><b>9.1</b> Definitions</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="definitions-1.html"><a href="definitions-1.html#criteria-for-definitions"><i class="fa fa-check"></i><b>9.1.1</b> Criteria for Definitions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="definitions-1.html"><a href="definitions-1.html#concept-image"><i class="fa fa-check"></i><b>9.1.2</b> Concept Image</a></li>
+<li class="chapter" data-level="9.1.3" data-path="definitions-1.html"><a href="definitions-1.html#classification-of-two-dimensional-figures"><i class="fa fa-check"></i><b>9.1.3</b> Classification of Two-Dimensional Figures</a></li>
+<li class="chapter" data-level="9.1.4" data-path="definitions-1.html"><a href="definitions-1.html#definitions-from-euclids-elements"><i class="fa fa-check"></i><b>9.1.4</b> Definitions from Euclid’s Elements</a></li>
+<li class="chapter" data-level="9.1.5" data-path="definitions-1.html"><a href="definitions-1.html#exercises-36"><i class="fa fa-check"></i><b>9.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html"><i class="fa fa-check"></i><b>9.2</b> Axiomatic Systems</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#euclids-common-notions-and-postulates"><i class="fa fa-check"></i><b>9.2.1</b> Euclid’s Common Notions and Postulates</a></li>
+<li class="chapter" data-level="9.2.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#hilberts-axioms"><i class="fa fa-check"></i><b>9.2.2</b> Hilbert’s Axioms</a></li>
+<li class="chapter" data-level="9.2.3" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#school-mathematics-study-group-axioms"><i class="fa fa-check"></i><b>9.2.3</b> School Mathematics Study Group Axioms</a></li>
+<li class="chapter" data-level="9.2.4" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#discussion"><i class="fa fa-check"></i><b>9.2.4</b> Discussion</a></li>
+<li class="chapter" data-level="9.2.5" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#exercises-37"><i class="fa fa-check"></i><b>9.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html"><i class="fa fa-check"></i><b>9.3</b> Euclid’s Basic Constructions</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="euclids-basic-constructions" class="section level2" number="9.3">
+<h2><span class="header-section-number">9.3</span> Euclid’s Basic Constructions</h2>
+<p>Now that we have established the role of definitions and axioms we will look at how those definitions and axioms are used to prove geometric theorems using Euclid’s system. Euclid’s geometry is abstract in that one cannot see the objects of a point or a line (as they have no breadth). However, we represent points and lines with symbols that we can draw on a piece of paper. So in the proofs we must remember that the drawings are not the proof and are not the actual points, lines, and circles. They are instead representations of points, lines, and circles and assist in the communication of the mathematical proof.</p>
+<div class="figure" style="text-align: center"><span id="fig:Straightedge-Compass"></span>
+<img src="images/Ruler.jpg" alt="Straightedge and Compass" width="48%" /><img src="images/Compass.jpg" alt="Straightedge and Compass" width="48%" />
+<p class="caption">
+Figure 9.3: Straightedge and Compass
+</p>
+</div>
+<p>To assist in the representations we often use a straight edge (usually a ruler ignoring the markings) to represent straight lines and we use a compass (either collapsible or fixed) to describe a circle with a fixed center and radius.</p>
+<p>We can also use dynamic geometry software like Desmos or GeoGebra to create representations of lines and circles.</p>
+<div class="figure" style="text-align: center"><span id="fig:Straightedge-Compass2"></span>
+<img src="images/circle-line.jpg" alt="Line and Circle Constructed using GeoGebra" width="60%" />
+<p class="caption">
+Figure 9.4: Line and Circle Constructed using GeoGebra
+</p>
+</div>
+<p>As we work through some of the Propositions from Euclid’s Elements we will use some of these representations within the proofs in order to communicate the ideas of the proof.</p>
+<p>We will include the proofs of some of Euclid’s initial propositions below in order to understand the idea of the axiomatic method and to demonstrate some of Euclid’s basic constructions. Proofs of the remainder of the propositions can easily be found online.</p>
+<div class="proposition">
+<p><span id="prp:prop1" class="proposition"><strong>Proposition 9.1  (Euclid's Proposition 1: Construction of Equilateral Triangle) </strong></span>On a given finite straight line to construct an equilateral triangle.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-185" class="proof"><em>Proof</em>. </span>We start with a given finite straight line <span class="math inline">\(AB\)</span>, labeled by its endpoints. Such a finite straight line exists by Postulate 1.</p>
+<p>Postulate 3 implies that we can describe a circle centered at <span class="math inline">\(A\)</span> through the point <span class="math inline">\(B\)</span> and a second circle centered at <span class="math inline">\(B\)</span> through the point <span class="math inline">\(A\)</span>.</p>
+<p><img src="images/Prop1b.jpg" width="90%" style="display: block; margin: auto;" /></p>
+<p>The point <span class="math inline">\(C\)</span> is an intersection of the two circles. The existence of such a point, and that it lies in the same plane as <span class="math inline">\(AB\)</span> are some of the first issues raised with the Euclidean system of axioms that are resolved in the Hilbert and SMSG systems.</p>
+<p><img src="images/Prop1c.jpg" width="25%" style="display: block; margin: auto;" /></p>
+<p>Since <span class="math inline">\(C\)</span> lies on the circle centered at <span class="math inline">\(A\)</span> through the point <span class="math inline">\(B\)</span>, <span class="math inline">\(AC\)</span> must be the same length as <span class="math inline">\(AB\)</span>. Since <span class="math inline">\(C\)</span> also lies on the circle centered at <span class="math inline">\(B\)</span> through <span class="math inline">\(A\)</span>, <span class="math inline">\(BC\)</span> must be the same length as <span class="math inline">\(BA\)</span>. Then using Common Notions 1 and 4 we can conclude that the three sides of <span class="math inline">\(\triangle ABC\)</span> have the same length and so form an equilateral triangle.</p>
+</div>
+<p>Euclid’s second and third propositions allow us to construct a segment of the same length as a given segment at another point and along a line through that point.</p>
+<div class="proposition">
+<p><span id="prp:prop2" class="proposition"><strong>Proposition 9.2  (Euclid's Proposition 2) </strong></span>To place at a given point (as an extremity) a straight line equal to a given straight line.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop3" class="proposition"><strong>Proposition 9.3  (Euclid's Proposition 3) </strong></span>Given two unequal straight lines, to cut off from the greater a straight line equal to the less.</p>
+</div>
+<p>Euclid’s proof of Proposition 4 uses a technique called superposition. In our current language, Euclid considers a translation to maintain distances and angles without proving such. We can note that this proposition is the 15th postulate in the SMSG axioms as it is something that is difficult to prove geometrically without analytic techniques using a coordinate plane.</p>
+<div class="proposition">
+<p><span id="prp:prop4" class="proposition"><strong>Proposition 9.4  (Euclid's Proposition 4: SAS Triangle Congruence) </strong></span>If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base, the triangle will be equal to the triangle, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend.</p>
+</div>
+<p>We can begin using SAS triangle congruence to prove results regarding isosceles triangle. While isosceles triangles are defined by Euclid as triangles with exactly two equal sides, the next two propositions show that these could be defined equivalently by having exactly two equal angles. We first show that two equal sides implies two equal angles.</p>
+<div class="proposition">
+<p><span id="prp:prop5" class="proposition"><strong>Proposition 9.5  (Euclid's Proposition 5) </strong></span>In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.</p>
+</div>
+<p>As you read through the proof from Heath’s translation of Euclid’s Elements <span class="citation">(<a href="#ref-Heath1908_1" role="doc-biblioref">1908, p. 251</a>)</span>, verify the truthfulness of each statement based upon the prior Propositions.</p>
+<div class="proof">
+<p><span id="unlabeled-div-186" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(\triangle ABC\)</span> be an isosceles triangle having the side <span class="math inline">\(AB\)</span> equal to the side <span class="math inline">\(AC\)</span>, and let the straight lines <span class="math inline">\(BD\)</span> and <span class="math inline">\(CE\)</span> be produced further in a straight line with <span class="math inline">\(AB\)</span> and <span class="math inline">\(AC\)</span>.</p>
+<p>I say that the angle <span class="math inline">\(\angle ABC\)</span> equals the angle <span class="math inline">\(\angle ACB\)</span>, and the angle <span class="math inline">\(\angle CBD\)</span> equals the angle <span class="math inline">\(\angle BCE\)</span>.</p>
+<p>Take an arbitrary point <span class="math inline">\(F\)</span> on <span class="math inline">\(BD\)</span>. Cut off <span class="math inline">\(AG\)</span> from <span class="math inline">\(AE\)</span> the greater equal to <span class="math inline">\(AF\)</span> the less, and join the straight lines <span class="math inline">\(FC\)</span> and <span class="math inline">\(GB\)</span>.</p>
+<p>Since <span class="math inline">\(AF\)</span> equals <span class="math inline">\(AG\)</span>, and <span class="math inline">\(AB\)</span> equals <span class="math inline">\(AC\)</span>, therefore the two sides <span class="math inline">\(FA\)</span> and <span class="math inline">\(AC\)</span> equal the two sides <span class="math inline">\(GA\)</span> and <span class="math inline">\(AB\)</span>, respectively, and they contain a common angle, the angle <span class="math inline">\(\angle FAG\)</span>.</p>
+<p><img src="images/Prop5.jpg" width="70%" style="display: block; margin: auto;" /></p>
+<p>Therefore the base <span class="math inline">\(FC\)</span> equals the base <span class="math inline">\(GB\)</span>, the triangle <span class="math inline">\(\triangle AFC\)</span> equals the triangle <span class="math inline">\(\triangle AGB\)</span>, and the remaining angles equal the remaining angles respectively, namely those opposite the equal sides, that is, the angle <span class="math inline">\(\angle ACF\)</span> equals the angle <span class="math inline">\(\angle ABG\)</span>, and the angle <span class="math inline">\(\angle AFC\)</span> equals the angle <span class="math inline">\(\angle AGB\)</span>.</p>
+<p>Since the whole <span class="math inline">\(AF\)</span> equals the whole <span class="math inline">\(AG\)</span>, and in these <span class="math inline">\(AB\)</span> equals <span class="math inline">\(AC\)</span>, therefore the remainder <span class="math inline">\(BF\)</span> equals the remainder <span class="math inline">\(CG\)</span>.</p>
+<p>But <span class="math inline">\(FC\)</span> was also proved equal to <span class="math inline">\(GB\)</span>, therefore the two sides <span class="math inline">\(BF\)</span> and <span class="math inline">\(FC\)</span> equal the two sides <span class="math inline">\(CG\)</span> and <span class="math inline">\(GB\)</span> respectively, and the angle <span class="math inline">\(\angle BFC\)</span> equals the angle <span class="math inline">\(\angle CGB\)</span>, while the base <span class="math inline">\(BC\)</span> is common to them. Therefore the triangle <span class="math inline">\(\triangle BFC\)</span> also equals the triangle <span class="math inline">\(\triangle CGB\)</span>, and the remaining angles equal the remaining angles respectively, namely those opposite the equal sides. Therefore the angle <span class="math inline">\(\angle FBC\)</span> equals the angle <span class="math inline">\(\angle GCB\)</span>, and the angle <span class="math inline">\(\angle BCF\)</span> equals the angle <span class="math inline">\(\angle CBG\)</span>.</p>
+<p>Accordingly, since the whole angle <span class="math inline">\(\angle ABG\)</span> was proved equal to the angle <span class="math inline">\(\angle ACF\)</span>, and in these the angle <span class="math inline">\(\angle CBG\)</span> equals the angle <span class="math inline">\(\angle BCF\)</span>, the remaining angle <span class="math inline">\(\angle ABC\)</span> equals the remaining angle <span class="math inline">\(\angle ACB\)</span>, and they are at the base of the triangle <span class="math inline">\(\triangle ABC\)</span>. But the angle <span class="math inline">\(\angle FBC\)</span> was also proved equal to the angle <span class="math inline">\(\angle GCB\)</span>, and they are under the base.</p>
+<p>Therefore in isosceles triangles the angles at the base equal one another, and, if the equal straight lines are produced further, then the angles under the base equal one another.</p>
+</div>
+<p>We now need to prove the converse that a triangle with two equal angles also has two equal sides.</p>
+<div class="proposition">
+<p><span id="prp:prop6" class="proposition"><strong>Proposition 9.6  (Euclid's Proposition 6) </strong></span>If in a triangle two angles be equal to one another, the sides which subtend the equal angles will also be equal to one another.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-187" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(\triangle ABC\)</span> be a triangle having the angle <span class="math inline">\(\angle ABC\)</span> equal to the angle <span class="math inline">\(\angle ACB\)</span>.</p>
+<p><img src="images/Prop6.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<p>If <span class="math inline">\(AB\)</span> does not equal <span class="math inline">\(AC\)</span>, then one of them is greater. Let <span class="math inline">\(AB\)</span> be greater. Cut off <span class="math inline">\(DB\)</span> from <span class="math inline">\(AB\)</span> the greater equal to <span class="math inline">\(AC\)</span> the less, and join <span class="math inline">\(DC\)</span>.</p>
+<p>Since <span class="math inline">\(DB\)</span> equals <span class="math inline">\(AC\)</span>, and <span class="math inline">\(BC\)</span> is common, therefore the two sides <span class="math inline">\(DB\)</span> and <span class="math inline">\(BC\)</span> equal the two sides <span class="math inline">\(AC\)</span> and <span class="math inline">\(CB\)</span> respectively, and the angle <span class="math inline">\(\angle DBC\)</span> equals the angle <span class="math inline">\(\angle ACB\)</span>. Therefore the base <span class="math inline">\(DC\)</span> equals the base <span class="math inline">\(AB\)</span>, and the triangle <span class="math inline">\(\triangle DBC\)</span> equals the triangle <span class="math inline">\(\triangle ACB\)</span>, the less equals the greater, which is absurd. Therefore <span class="math inline">\(AB\)</span> is not unequal to <span class="math inline">\(AC\)</span>, it therefore equals it.</p>
+<p>Therefore if in a triangle two angles equal one another, then the sides opposite the equal angles also equal one another.</p>
+</div>
+<p>We will skip the proofs of the next two propositions, but include them as they will be very useful later.</p>
+<div class="proposition">
+<p><span id="prp:prop7" class="proposition"><strong>Proposition 9.7  (Euclid's Proposition 7) </strong></span>Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop8" class="proposition"><strong>Proposition 9.8  (Euclid's Proposition 8: SSS Triangle Congruence) </strong></span>If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.</p>
+</div>
+<p>With these propositions we will look at some of the important constructions regarding angles, points, and sides.</p>
+<div class="standards">
+<div id="related-content-standards-66" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSG.CO.12) Make formal geometric constructions with a variety of tools and methods (compass and straightedge, string, reflective devices, paper folding, dynamic geometric software, etc.). <em>Copying a segment; copying an angle; bisecting a segment; bisecting an angle; constructing perpendicular lines, including the perpendicular bisector of a line segment; and constructing a line parallel to a given line through a point not on the line.</em></li>
+</ul>
+</div>
+<p>Our first construction bisects angles.</p>
+<div class="proposition">
+<p><span id="prp:prop9" class="proposition"><strong>Proposition 9.9  (Euclid's Proposition 9: Construction of Angle Bisector) </strong></span>To bisect a given rectilinear angle.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-188" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(\angle BAC\)</span> be a given rectilinear angle.</p>
+<p><img src="images/Prop9a.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>Then we can construct a circle centered at <span class="math inline">\(A\)</span> whose radius is less than either <span class="math inline">\(AB\)</span> or <span class="math inline">\(AC\)</span>. We can then label the point at which the circle intersects <span class="math inline">\(AB\)</span> as <span class="math inline">\(D\)</span> and the point at which the circle intersects <span class="math inline">\(AC\)</span> as <span class="math inline">\(E\)</span>.</p>
+<p><img src="images/Prop9b.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>We can then construct a circle centered at <span class="math inline">\(D\)</span> through the point <span class="math inline">\(E\)</span> and a circle centered at <span class="math inline">\(E\)</span> through the point <span class="math inline">\(D\)</span>. These two circles intersect at a point that we will label <span class="math inline">\(F\)</span>.</p>
+<p><img src="images/Prop9c.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>We now focus on the triangles <span class="math inline">\(\triangle ACD\)</span> and <span class="math inline">\(\triangle AEF\)</span>.</p>
+<p><img src="images/Prop9d.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>We know that <span class="math inline">\(AE\)</span> and <span class="math inline">\(AD\)</span> are equal because <span class="math inline">\(D\)</span> and <span class="math inline">\(E\)</span> are both on a circle centered at <span class="math inline">\(A\)</span>. Since <span class="math inline">\(F\)</span> is an intersection of the circles centered at <span class="math inline">\(D\)</span> and <span class="math inline">\(E\)</span>, <span class="math inline">\(EF\)</span> is equal to <span class="math inline">\(DF\)</span>. Since <span class="math inline">\(AF\)</span> is equal to <span class="math inline">\(AF\)</span> we have the sides of the two triangles all being equal. By Proposition 8, we have that <span class="math inline">\(\triangle ACD\)</span> and <span class="math inline">\(\triangle AEF\)</span> are congruent and so <span class="math inline">\(\angle EAF\)</span> equals <span class="math inline">\(\angle DAF\)</span>. So <span class="math inline">\(AF\)</span> bisects the angle <span class="math inline">\(\angle BAC\)</span></p>
+</div>
+<p>Another option for the construction process is that the circles centered at <span class="math inline">\(D\)</span> and <span class="math inline">\(E\)</span> pass through the point <span class="math inline">\(A\)</span>. The other point of intersection for these circles can be labeled <span class="math inline">\(F\)</span>.</p>
+<p>The segment <span class="math inline">\(AF\)</span> bisects the angle <span class="math inline">\(\angle BAC\)</span>. We will show later that <span class="math inline">\(AEFD\)</span> forms a rhombus, generating parallel lines among other things.</p>
+<p><img src="images/Prop9e.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>The next few propositions involve the construction of perpendicular lines. If we start with a finite straight line <span class="math inline">\(AB\)</span>, we can use the following construction to create the perpendicular bisector. We will leave the details of the proof to the reader to work through.</p>
+<p><img src="images/Prop10.jpg" width="60%" style="display: block; margin: auto;" /></p>
+<div class="proposition">
+<p><span id="prp:prop10" class="proposition"><strong>Proposition 9.10  (Euclid's Proposition 10: Construction of Perpendicular Bisector) </strong></span>To bisect a given finite straight line.</p>
+</div>
+<div class="proposition">
+<p><span id="prp:prop11" class="proposition"><strong>Proposition 9.11  (Euclid's Proposition 11: Construction of a Perpendicular Line) </strong></span>To draw a straight line at right angles to a given straight line from a given point on it.</p>
+</div>
+<p>We will not give the details of the proof, but will include the appropriate visual construction that gives the main ideas.</p>
+<p><img src="images/Prop11.jpg" width="45%" style="display: block; margin: auto;" /></p>
+<div class="proposition">
+<p><span id="prp:prop12" class="proposition"><strong>Proposition 9.12  (Euclid's Proposition 12) </strong></span>To a given infinite straight line, from a given point which is not on it, to draw a perpendicular straight line.</p>
+</div>
+<p>The proof of this proposition uses the information from the following diagram.</p>
+<p><img src="images/Prop12.jpg" width="45%" style="display: block; margin: auto;" /></p>
+<div id="exercises-38" class="section level3" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Discuss Euclid’s use of the word ‘equal’ in the context of the discussion in Chapter <a href="ch-equivalence.html#ch:equivalence">3</a>.</p></li>
+<li><p>Write out the details of the proof of Proposition <a href="euclids-basic-constructions.html#prp:prop10">9.10</a>.</p></li>
+<li><p>Write out the details of the proof of Proposition <a href="euclids-basic-constructions.html#prp:prop11">9.11</a>.</p></li>
+<li><p>Write out the details of the proof of Proposition <a href="euclids-basic-constructions.html#prp:prop12">9.12</a>.</p></li>
+<li><p>Complete the following constructions with a physical compass and straightedge, and with a geometry software (using just the straightedge and circles and the more complex construction tools).</p>
+<ol style="list-style-type: lower-alpha">
+<li>Given a segment of length <span class="math inline">\(a\)</span>, construct a segment of length <span class="math inline">\(2a\)</span>.</li>
+<li>Given a segment of length <span class="math inline">\(a\)</span> and a segment of length <span class="math inline">\(b\)</span>, construct a segment of length <span class="math inline">\(a+b\)</span></li>
+<li>Construct a triangle with side lengths <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, and <span class="math inline">\(c\)</span> (with these given).</li>
+<li>Construct a square with side length <span class="math inline">\(a\)</span>.</li>
+<li>Construct a rhombus that is not a square with side length <span class="math inline">\(a\)</span>.</li>
+</ol></li>
+</ol>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Heath1908_1" class="csl-entry">
+Heath, T. L. (1908). <em>The thirteen books of <span>E</span>uclid’s elements: Translated from the text of <span>H</span>eiberg with introduction and commentary: Vols. 1, Introduction and Books I and II</em>. University Press.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="axiomatic-systems.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="angles-parallel-lines-and-parallelograms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

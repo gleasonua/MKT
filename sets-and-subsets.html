@@ -369,7 +369,33 @@ div.csl-indent {
 </ul></li>
 </ul></li>
 <li class="part"><span><b>III GEOMETRY</b></span></li>
-<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="definitions-1.html"><a href="definitions-1.html"><i class="fa fa-check"></i><b>9.1</b> Definitions</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="definitions-1.html"><a href="definitions-1.html#criteria-for-definitions"><i class="fa fa-check"></i><b>9.1.1</b> Criteria for Definitions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="definitions-1.html"><a href="definitions-1.html#concept-image"><i class="fa fa-check"></i><b>9.1.2</b> Concept Image</a></li>
+<li class="chapter" data-level="9.1.3" data-path="definitions-1.html"><a href="definitions-1.html#classification-of-two-dimensional-figures"><i class="fa fa-check"></i><b>9.1.3</b> Classification of Two-Dimensional Figures</a></li>
+<li class="chapter" data-level="9.1.4" data-path="definitions-1.html"><a href="definitions-1.html#definitions-from-euclids-elements"><i class="fa fa-check"></i><b>9.1.4</b> Definitions from Euclid’s Elements</a></li>
+<li class="chapter" data-level="9.1.5" data-path="definitions-1.html"><a href="definitions-1.html#exercises-36"><i class="fa fa-check"></i><b>9.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html"><i class="fa fa-check"></i><b>9.2</b> Axiomatic Systems</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#euclids-common-notions-and-postulates"><i class="fa fa-check"></i><b>9.2.1</b> Euclid’s Common Notions and Postulates</a></li>
+<li class="chapter" data-level="9.2.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#hilberts-axioms"><i class="fa fa-check"></i><b>9.2.2</b> Hilbert’s Axioms</a></li>
+<li class="chapter" data-level="9.2.3" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#school-mathematics-study-group-axioms"><i class="fa fa-check"></i><b>9.2.3</b> School Mathematics Study Group Axioms</a></li>
+<li class="chapter" data-level="9.2.4" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#discussion"><i class="fa fa-check"></i><b>9.2.4</b> Discussion</a></li>
+<li class="chapter" data-level="9.2.5" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#exercises-37"><i class="fa fa-check"></i><b>9.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html"><i class="fa fa-check"></i><b>9.3</b> Euclid’s Basic Constructions</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
 <li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
 <li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a></li>
@@ -417,14 +443,12 @@ div.csl-indent {
 <p>By a ‘Set’ we mean each collection <span class="math inline">\(M\)</span> of certain well-differentiated objects <span class="math inline">\(m\)</span> of our perception or our thinking (which are called the `elements’ of <span class="math inline">\(M\)</span>) as a whole. (English translation)</p>
 </blockquote>
 <p>This definition proved to not be precise enough to avoid certain paradoxes.</p>
-
 <div class="example">
-<span id="exm:unnamed-chunk-5" class="example"><strong>Example 2.1  (Russell’s Paradox)  </strong></span> Let <span class="math inline">\(R= \left\{ x \middle \vert x\notin x\right\}\)</span>, the set that contains all sets that are not members of themselves. Is <span class="math inline">\(R\)</span> an element of <span class="math inline">\(R\)</span>? If it is, then it is a set that is an element of itself and so could not be an element of <span class="math inline">\(R\)</span>, by its definition, thus leading to a contradiction. On the other hand, if one assumes that <span class="math inline">\(R\)</span> is not an element of itself, then it satisfies the conditions of being an element of <span class="math inline">\(R\)</span>, also leading to a contradiction. Thus defining the paradox.
+<p><span id="exm:unlabeled-div-1" class="example"><strong>Example 2.1  (Russell's Paradox) </strong></span>Let <span class="math inline">\(R= \left\{ x \middle \vert x\notin x\right\}\)</span>, the set that contains all sets that are not members of themselves. Is <span class="math inline">\(R\)</span> an element of <span class="math inline">\(R\)</span>? If it is, then it is a set that is an element of itself and so could not be an element of <span class="math inline">\(R\)</span>, by its definition, thus leading to a contradiction. On the other hand, if one assumes that <span class="math inline">\(R\)</span> is not an element of itself, then it satisfies the conditions of being an element of <span class="math inline">\(R\)</span>, also leading to a contradiction. Thus defining the paradox.</p>
 </div>
 <p>Even though Cantor’s definition of a set leads to such paradoxes, we will use it as our working definition, with the detailed definition of set being a primitive notion in Zermelo-Fraenkel set theory. The Zermelo-Fraenkel axioms, combined with the axiom of choice, create the ZFC axioms upon which mathematics is built. Due to the level of abstraction involved in the axioms, we will not include a systematic coverage of the axioms in this text, but will reference them as needed.</p>
-
 <div class="definition">
-<p><span id="def:unnamed-chunk-6" class="definition"><strong>Definition 2.1  </strong></span></p>
+<p><span id="def:unlabeled-div-2" class="definition"><strong>Definition 2.1  </strong></span>Set Definitions:</p>
 <ul>
 <li><p>We will define a set by the collection of elements which belong to the set.</p></li>
 <li><p>If <span class="math inline">\(A\)</span> is a set and <span class="math inline">\(a\)</span> is an object that belongs to <span class="math inline">\(A\)</span>, we say that <span class="math inline">\(a\)</span> is an <strong>element</strong> of <span class="math inline">\(A\)</span> and denote it as <span class="math inline">\(a\in A\)</span>.</p></li>
@@ -440,37 +464,32 @@ div.csl-indent {
 <span class="math display">\[C=[3,\infty)\]</span> where the closed bracket, <span class="math inline">\([\)</span>, denotes that the endpoint is contained in the set, while an open bracket, <span class="math inline">\((\)</span>, denotes that the endpoint is not contained in the set. For real numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, with <span class="math inline">\(a&lt;b\)</span>, we have the following options as intervals from <span class="math inline">\(a\)</span> to <span class="math inline">\(b\)</span>:
 <span class="math display">\[ (a,b) \quad (a,b] \quad [a,b) \quad [a,b] .\]</span></p>
 <p>Once we have created notation for sets with a few elements and a large number of elements, we can describe how to denote a set without any elements.</p>
-
 <div class="definition">
-<span id="def:unnamed-chunk-7" class="definition"><strong>Definition 2.2  </strong></span> The set that does not contain any elements is called the <strong>empty set</strong> and is denoted by <span class="math inline">\(\emptyset\)</span>. Any set that contains at least one element is then called <strong>non-empty</strong>.
+<p><span id="def:unlabeled-div-3" class="definition"><strong>Definition 2.2  </strong></span>The set that does not contain any elements is called the <strong>empty set</strong> and is denoted by <span class="math inline">\(\emptyset\)</span>. Any set that contains at least one element is then called <strong>non-empty</strong>.</p>
 </div>
 <p>In addition to determining how to describe sets, we must have a way to determine if two sets are the same or distinct.</p>
 <p>A direct consequence of this definition is that the number of times an element is listed and the order of the elements is irrelevant for equality of sets. So <span class="math inline">\(\{a, b, c, d\}=\{b, a, c, c, d, b\}\)</span> and <span class="math inline">\(\{1, 2\} \neq \{1, 2, 3\}\)</span>.</p>
-
 <div class="definition">
-<span id="def:subset" class="definition"><strong>Definition 2.3  </strong></span> Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. We say that <span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span>, denoted <span class="math inline">\(A \subseteq B\)</span>, if every element of <span class="math inline">\(A\)</span> is also an element of <span class="math inline">\(B\)</span>. If <span class="math inline">\(A\)</span> is not a subset of <span class="math inline">\(B\)</span>, we sometimes denote this by <span class="math inline">\(A\nsubseteq B\)</span>. If there are elements of <span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span> and there are elements of <span class="math inline">\(B\)</span> that are not contained in <span class="math inline">\(A\)</span>, then we say that <span class="math inline">\(A\)</span> is a <strong>proper subset</strong> of <span class="math inline">\(B\)</span> and denote it by <span class="math inline">\(A\subset B\)</span>.
+<p><span id="def:subset" class="definition"><strong>Definition 2.3  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. We say that <span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span>, denoted <span class="math inline">\(A \subseteq B\)</span>, if every element of <span class="math inline">\(A\)</span> is also an element of <span class="math inline">\(B\)</span>. If <span class="math inline">\(A\)</span> is not a subset of <span class="math inline">\(B\)</span>, we sometimes denote this by <span class="math inline">\(A\nsubseteq B\)</span>. If there are elements of <span class="math inline">\(A\)</span> is a subset of <span class="math inline">\(B\)</span> and there are elements of <span class="math inline">\(B\)</span> that are not contained in <span class="math inline">\(A\)</span>, then we say that <span class="math inline">\(A\)</span> is a <strong>proper subset</strong> of <span class="math inline">\(B\)</span> and denote it by <span class="math inline">\(A\subset B\)</span>.</p>
 </div>
 <p>For example:
 <span class="math display">\[\{6, 7 \} \subseteq \{5, 6, 7, 8\},\]</span>
 <span class="math display">\[\{x\in \mathbb{R} \vert x&gt;5\} \subseteq \{x\in \mathbb{R} \vert x \geq 2\}, \mbox{ and }\]</span>
-<span class="math display">\[ \{a,b,c\} \subseteq \{a,b,c\}. \]</span>
+<span class="math display">\[\{a,b,c\} \subseteq \{a,b,c\}.\]</span>
 Notice that the first two examples are proper subsets.</p>
 <p>It is important to distinguish between the phrases ‘element of’ and ‘contained in’ when discussing sets. If <span class="math inline">\(A= \{a,b,c\}\)</span>, then we say that <span class="math inline">\(a\)</span> is an element of <span class="math inline">\(A\)</span>, while <span class="math inline">\(\{a\}\)</span> is contained in <span class="math inline">\(A\)</span></p>
 <p>Since the empty set has no elements, it is by default a subset of every set. Similarly, every set is a subset of itself.</p>
-
 <div class="example">
-<span id="exm:unnamed-chunk-8" class="example"><strong>Example 2.2  </strong></span> If <span class="math inline">\(A=\{a,b,c\}\)</span> we can describe all of the subsets of <span class="math inline">\(A\)</span>,
-<span class="math display">\[ \emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a, b, c\}.\]</span>
-This set of subsets of <span class="math inline">\(A\)</span> is called the <strong>power set</strong> of <span class="math inline">\(A\)</span> and denoted by <span class="math inline">\(\mathcal{P}(A)\)</span>.
+<p><span id="exm:unlabeled-div-4" class="example"><strong>Example 2.2  </strong></span>If <span class="math inline">\(A=\{a,b,c\}\)</span> we can describe all of the subsets of <span class="math inline">\(A\)</span>,
+<span class="math display">\[\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a, b, c\}.\]</span>
+This set of subsets of <span class="math inline">\(A\)</span> is called the <strong>power set</strong> of <span class="math inline">\(A\)</span> and denoted by <span class="math inline">\(\mathcal{P}(A)\)</span>.</p>
 </div>
 <p>We often need to prove that two sets are equal to one another, and we do not have the elements of the set listed out. In these situations the following theorem often proves useful.</p>
-
 <div class="theorem">
-<span id="thm:set-equality" class="theorem"><strong>Theorem 2.1  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. <span class="math inline">\(A=B\)</span> if and only if <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span>.
+<p><span id="thm:set-equality" class="theorem"><strong>Theorem 2.1  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be sets. <span class="math inline">\(A=B\)</span> if and only if <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span>.</p>
 </div>
-
 <div class="proof">
-<p> <span class="proof"><em>Proof. </em></span> Since the statement of the theorem is an ‘if and only if’ statement, there are actually two components that need to be proven. We need to first prove that if <span class="math inline">\(A=B\)</span> then <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span>. The second statement that needs proving is the converse: having <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span> implies that <span class="math inline">\(A=B\)</span>. We will complete both arguments using the corresponding definitions.</p>
+<p><span id="unlabeled-div-5" class="proof"><em>Proof</em>. </span>Since the statement of the theorem is an ‘if and only if’ statement, there are actually two components that need to be proven. We need to first prove that if <span class="math inline">\(A=B\)</span> then <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span>. The second statement that needs proving is the converse: having <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span> implies that <span class="math inline">\(A=B\)</span>. We will complete both arguments using the corresponding definitions.</p>
 <p>Assume that <span class="math inline">\(A=B\)</span>. Then the definition of set equality states that every element of <span class="math inline">\(A\)</span> is an element of <span class="math inline">\(B\)</span>. This means that <span class="math inline">\(A\)</span> meets the definition of a subset of <span class="math inline">\(B\)</span>. That is: <span class="math inline">\(A\subseteq B\)</span>. In addition, the assumption that <span class="math inline">\(A=B\)</span> gives us that every element of <span class="math inline">\(B\)</span> is an element of <span class="math inline">\(A\)</span>. As a result, <span class="math inline">\(B\subseteq A\)</span>. Thus <span class="math display">\[A=B \Rightarrow A\subseteq B \mbox{ and } B\subseteq A.\]</span></p>
 <p>To prove the converse statement, we assume that <span class="math inline">\(A \subseteq B\)</span> and <span class="math inline">\(B \subseteq A\)</span>. Thus, we have that every element of <span class="math inline">\(A\)</span> is also an element of <span class="math inline">\(B\)</span> and every element of <span class="math inline">\(B\)</span> is also an element of <span class="math inline">\(A\)</span>. This is the definition of set equality and so we have that <span class="math inline">\(A=B\)</span>.</p>
 <p>We have therefore proven both implications, and thus the theorem is proven.</p>
@@ -478,11 +497,10 @@ This set of subsets of <span class="math inline">\(A\)</span> is called the <str
 <div id="venn-diagrams" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Venn Diagrams</h3>
 <p>In order to better understand relationships between subsets of a larger set, it is sometimes helpful to represent the relationships with a <strong>Venn diagram</strong>. In these diagrams, we use circle-like figures to represent sets, with everything inside the circle being inside of the set and everything outside of the circle being outside of the set.</p>
-
 <div class="example">
-<p><span id="exm:unnamed-chunk-10" class="example"><strong>Example 2.3  </strong></span> Let <span class="math inline">\(A=\{2, 4, 6, 8, 10\}\)</span> and <span class="math inline">\(B=\{3, 6, 9\}\)</span>. Then these sets could be represented by a Venn diagram such as the one below.</p>
-</div>
+<p><span id="exm:unlabeled-div-6" class="example"><strong>Example 2.3  </strong></span>Let <span class="math inline">\(A=\{2, 4, 6, 8, 10\}\)</span> and <span class="math inline">\(B=\{3, 6, 9\}\)</span>. Then these sets could be represented by a Venn diagram such as the one below.</p>
 <p><img src="tikz/VennEx2-1-6.png" width="35%" style="display: block; margin: auto;" /></p>
+</div>
 <p>As previously discussed, sets do not have to just be composed of numbers. Moreover, sets can have many different relationships between them, as seen in Figure . If a set is a subset of a second set, then they are visualized as one region inside of the other region. If there are elements shared between two sets, but are not known to have a subset relationship, then they are visualized as overlapping regions. If no elements of the two sets are the same, then they are represented as two non-overlapping regions. In the next section we define vocabulary to describe these different types of relationships and how they are combined in different ways.</p>
 <div class="figure" style="text-align: center"><span id="fig:venn-samples"></span>
 <img src="tikz/evenodd.png" alt="Sample Venn diagrams" width="30%" /><img src="tikz/evenfours.png" alt="Sample Venn diagrams" width="30%" /><img src="tikz/rectsqrhombus.png" alt="Sample Venn diagrams" width="30%" />
