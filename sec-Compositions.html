@@ -391,10 +391,26 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
-<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
-<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
-<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#angles-and-parallel-lines"><i class="fa fa-check"></i><b>9.4.1</b> Angles and Parallel Lines</a></li>
+<li class="chapter" data-level="9.4.2" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#parallelograms"><i class="fa fa-check"></i><b>9.4.2</b> Parallelograms</a></li>
+<li class="chapter" data-level="9.4.3" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#exercises-39"><i class="fa fa-check"></i><b>9.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html#exercises-40"><i class="fa fa-check"></i><b>9.5.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#centroid"><i class="fa fa-check"></i><b>9.6.1</b> Centroid</a></li>
+<li class="chapter" data-level="9.6.2" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#circumcenter"><i class="fa fa-check"></i><b>9.6.2</b> Circumcenter</a></li>
+<li class="chapter" data-level="9.6.3" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#exercises-41"><i class="fa fa-check"></i><b>9.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="circle-theorems.html"><a href="circle-theorems.html#exercises-42"><i class="fa fa-check"></i><b>9.7.1</b> Exercises</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
 <li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
@@ -427,7 +443,7 @@ div.csl-indent {
 <p>We often want to look at how two functions work together.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-111" class="example"><strong>Example 5.1  </strong></span>Suppose that oil is spilled from a ruptured tanker and spreads is a circular pattern. If the oil is leaving the tanker at a rate of 70 gallons an hour, then what is the radius of the <span class="math inline">\(1\)</span> cm thick oil slick after <span class="math inline">\(t\)</span> hours?</p>
+<p><span id="exm:unnamed-chunk-110" class="example"><strong>Example 5.1  </strong></span>Suppose that oil is spilled from a ruptured tanker and spreads is a circular pattern. If the oil is leaving the tanker at a rate of 70 gallons an hour, then what is the radius of the <span class="math inline">\(1\)</span> cm thick oil slick after <span class="math inline">\(t\)</span> hours?</p>
 <p>In order to find a solution to this word problem (note that this is not really a modelling problem) we will create some functions that we will compose together. We will start by letting <span class="math inline">\(g\)</span> be the rate in gallons per hour that oil is leaking out of the boat.</p>
 <p>Let <span class="math inline">\(T(g)=\frac{1}{264.172} g\)</span> be the cubic meters equivalent to <span class="math inline">\(g\)</span> gallons.</p>
 <p>Let <span class="math inline">\(r(V)= \sqrt{\frac{100V}{\pi}}\)</span> be the radius (in meters) of an oil slick with volume <span class="math inline">\(V\)</span> (in cubic meters) that is <span class="math inline">\(1\)</span> cm thick.</p>
@@ -436,7 +452,7 @@ Then <span class="math inline">\(r(V(T(g)\cdot t))\)</span> gives us the radius 
 <p>Using this motivation, we will give a mathematical definition for the composition of functions.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-112" class="definition"><strong>Definition 5.5  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g: B \rightarrow C\)</span> be functions. Then we define the function <span class="math inline">\((g\circ f):A\rightarrow C\)</span> by <span class="math display">\[(g\circ f) (a)= g(f(a)), \quad \mbox{ for all } a \in A.\]</span>
+<span id="def:unnamed-chunk-111" class="definition"><strong>Definition 5.5  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g: B \rightarrow C\)</span> be functions. Then we define the function <span class="math inline">\((g\circ f):A\rightarrow C\)</span> by <span class="math display">\[(g\circ f) (a)= g(f(a)), \quad \mbox{ for all } a \in A.\]</span>
 </div>
 <div class="figure" style="text-align: center"><span id="fig:function-composition"></span>
 <img src="tikz/function-composition-sets.png" alt="Sketch of $f:A \rightarrow B$, $g:B \rightarrow C$, and $g \circ f: A \rightarrow C$" width="100%" />
@@ -450,7 +466,7 @@ Figure 5.3: Sketch of <span class="math inline">\(f:A \rightarrow B\)</span>, <s
 <p>In addition to composing functions together, it is often useful to define a function that undoes another function. In the previous example, it is easiest to find the radius of the oil slick based on volume by first finding the volume as a function of the radius. In the case of a cylindrical cylinder, <span class="math inline">\(V(r)= \pi r^2 h\)</span> and so <span class="math inline">\(r(V)=\sqrt{\frac{V}{\pi h}}\)</span> is a function that undoes the volume. A more precise definition of these inverse functions is given below.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-113" class="definition"><strong>Definition 5.6  </strong></span>Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B \rightarrow A\)</span> be functions. If
+<span id="def:unnamed-chunk-112" class="definition"><strong>Definition 5.6  </strong></span>Let <span class="math inline">\(f:A \rightarrow B\)</span> and <span class="math inline">\(g:B \rightarrow A\)</span> be functions. If
 <span class="math display">\[(g\circ f) (a)=a \mbox{ for all } a\in A \mbox{, and}\]</span>
 <span class="math display">\[(f\circ g) (b)=b \mbox{ for all }b\in B,\]</span> then we say that <span class="math inline">\(f\)</span> is <strong>invertible</strong>.
 </div>
@@ -517,7 +533,7 @@ Therefore, <span class="math inline">\((g\circ f):A \rightarrow C\)</span> is a 
 <p>Since the composition of bijections is also a bijection, we know from Theorem <a href="sec-Compositions.html#thm:bijection">5.2</a> that the composition of a bijection is also invertible. Combining the results of these theorems we have the following theorem.</p>
 
 <div class="theorem">
-<p><span id="thm:unnamed-chunk-117" class="theorem"><strong>Theorem 5.4  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g:B\rightarrow C\)</span> be bijections. Then we have the following:</p>
+<p><span id="thm:unnamed-chunk-116" class="theorem"><strong>Theorem 5.4  </strong></span>Let <span class="math inline">\(f:A\rightarrow B\)</span> and <span class="math inline">\(g:B\rightarrow C\)</span> be bijections. Then we have the following:</p>
 <ul>
 <li><p><span class="math inline">\(f\)</span> is invertible with inverse <span class="math inline">\(f^{-1}:B\rightarrow A\)</span></p></li>
 <li><p><span class="math inline">\(g\)</span> is invertible with inverse <span class="math inline">\(g^{-1}:C\rightarrow B\)</span></p></li>

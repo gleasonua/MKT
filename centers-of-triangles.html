@@ -391,10 +391,26 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
-<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
-<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
-<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#angles-and-parallel-lines"><i class="fa fa-check"></i><b>9.4.1</b> Angles and Parallel Lines</a></li>
+<li class="chapter" data-level="9.4.2" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#parallelograms"><i class="fa fa-check"></i><b>9.4.2</b> Parallelograms</a></li>
+<li class="chapter" data-level="9.4.3" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#exercises-39"><i class="fa fa-check"></i><b>9.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html#exercises-40"><i class="fa fa-check"></i><b>9.5.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#centroid"><i class="fa fa-check"></i><b>9.6.1</b> Centroid</a></li>
+<li class="chapter" data-level="9.6.2" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#circumcenter"><i class="fa fa-check"></i><b>9.6.2</b> Circumcenter</a></li>
+<li class="chapter" data-level="9.6.3" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#exercises-41"><i class="fa fa-check"></i><b>9.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="circle-theorems.html"><a href="circle-theorems.html#exercises-42"><i class="fa fa-check"></i><b>9.7.1</b> Exercises</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
 <li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
@@ -425,114 +441,72 @@ div.csl-indent {
 <div id="centers-of-triangles" class="section level2" number="9.6">
 <h2><span class="header-section-number">9.6</span> Centers of Triangles</h2>
 <p>When we think about a “center” of a triangle, there are many different properties that we may want. We will now explore how some of these properties generate various “centers” of a triangle.</p>
+<div id="centroid" class="section level3" number="9.6.1">
+<h3><span class="header-section-number">9.6.1</span> Centroid</h3>
+<p>The first “center” that we will consider is the point that is the arithmetic mean of all of the points contained inside of the triangle. From a physics perspective, this point is the center of mass, or the balance point, for the triangle. To generate this point, we need to first create some definitions.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-220" class="definition"><strong>Definition 9.7  </strong></span>The <strong>median</strong> of a side of a triangle is the segment connecting the midpoint of the side to the opposite vertex.</p>
+</div>
+<p>So for <span class="math inline">\(\triangle ABC\)</span>, if <span class="math inline">\(D\)</span> is the midpoint of <span class="math inline">\(AB\)</span>, then <span class="math inline">\(CD\)</span> is the median of <span class="math inline">\(AB\)</span>.</p>
+<p><img src="images/median.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-221" class="theorem"><strong>Theorem 9.17  </strong></span>Medians of a triangle are concurrent at a point.</p>
+</div>
+<p>We will give an outline of the proof in a series of lemmas with some key details left to be filled in. We recommend that as you read through the proof you should use a dynamic geometry application to construct the diagrams and to study properties of the constructions.</p>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-222" class="lemma"><strong>Lemma 9.1  </strong></span>Let <span class="math inline">\(\triangle ABC\)</span> be given. Let <span class="math inline">\(A&#39;\)</span> be the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> be the midpoint of <span class="math inline">\(AC\)</span>, and <span class="math inline">\(C&#39;\)</span> be the midpoint of <span class="math inline">\(AB\)</span>.</p>
+<p>Then <span class="math inline">\(\triangle A&#39;B&#39;C\sim \triangle BAC\)</span> with <span class="math display">\[\frac{A&#39;B&#39;}{BA}= \frac{A&#39;C}{BC} = \frac{B&#39;C}{AC}=2\]</span> and triangles <span class="math inline">\(\triangle AB&#39;C&#39;\)</span>, <span class="math inline">\(\triangle B&#39;A&#39;C\)</span>, <span class="math inline">\(\triangle C&#39;BA&#39;\)</span>, and <span class="math inline">\(\triangle A&#39;B&#39;C&#39;\)</span> are all congruent and so are also all similar to <span class="math inline">\(\triangle ABC\)</span> with ratio of <span class="math inline">\(2:1\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-223" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(\triangle ABC\)</span> be given. Let <span class="math inline">\(A&#39;\)</span> be the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> be the midpoint of <span class="math inline">\(AC\)</span>, and <span class="math inline">\(C&#39;\)</span> be the midpoint of <span class="math inline">\(AB\)</span>.</p>
+<p><img src="images/Midpoint-triangle-similarity.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<p>Since <span class="math inline">\(A&#39;\)</span> is the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> is the midpoint of <span class="math inline">\(AC\)</span>, and angles <span class="math inline">\(\angle BCA\)</span> and <span class="math inline">\(\angle A&#39;CB&#39;\)</span> are equal, by Theorem <a href="similarity-of-triangles.html#thm:SAS-similarity">9.16</a> we know that <span class="math inline">\(\triangle A&#39;B&#39;C\sim \triangle BAC\)</span> with <span class="math display">\[\frac{A&#39;B&#39;}{BA}= \frac{A&#39;C}{BC} = \frac{B&#39;C}{AC}=2.\]</span></p>
+<p>Using similar arguments, we have that <span class="math inline">\(\triangle AB&#39;C&#39; \sim \triangle ACB\)</span> and <span class="math inline">\(\triangle BC&#39;A&#39; \sim \triangle BAC\)</span> with a ratio of <span class="math inline">\(2:1\)</span>.</p>
+<p>We now know that <span class="math display">\[\frac{A&#39;B&#39;}{AB}=\frac{A&#39;C&#39;}{AC} = \frac{B&#39;C&#39;}{BC} = 2\]</span> and so by Theorem <a href="similarity-of-triangles.html#thm:SSS-similarity">9.15</a> <span class="math inline">\(\triangle A&#39;B&#39;C&#39; \sim \triangle ABC\)</span> with a ratio of <span class="math inline">\(2:1\)</span>.</p>
+</div>
+<p>So the segments connecting the midpoints of the sides of a triangle create four congruent triangles that are similar to the original triangle and whose side lengths are half the length of the original.</p>
+</div>
+<div class="standards">
+<div id="related-content-standards-69" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSG.CO.10) Prove theorems about triangles. <em>Theorems include: measures of interior angles of a triangle sum to <span class="math inline">\(180^\circ\)</span>; base angles of isosceles triangles are congruent; the segment joining midpoints of two sides of a triangle is parallel to the third side and half the length; the medians of a triangle meet at a point.</em></li>
+</ul>
+</div>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-224" class="lemma"><strong>Lemma 9.2  </strong></span>The segments joining the midpoints of two sides of a triangle is parallel to the third side and half the length.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-225" class="proof"><em>Proof</em>. </span>The proof the previous lemma included that the segments joining the midpoints of two sides of a triangle is half the length of the third side. So we only need to prove that it is parallel to the third side.</p>
+<p><img src="images/Midpoint-triangle-similarity.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<p>Since the four triangles inside of the original triangle are congruent to one another we know that the angles <span class="math inline">\(\angle BC&#39;A&#39;\)</span> and <span class="math inline">\(\angle B&#39;A&#39;C&#39;\)</span> are equal. Since these are alternate interior angles of the transversal <span class="math inline">\(A&#39;C&#39;\)</span> crossing <span class="math inline">\(AB\)</span> and <span class="math inline">\(A&#39;B&#39;\)</span> we see that <span class="math inline">\(A&#39;B&#39;\)</span> is parallel to <span class="math inline">\(AB\)</span>. We use the same argument to show that the other two segments are parallel to the corresponding sides of the triangle.</p>
+</div>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-226" class="lemma"><strong>Lemma 9.3  </strong></span>Let <span class="math inline">\(\triangle ABC\)</span> be given. Let <span class="math inline">\(A&#39;\)</span> be the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> be the midpoint of <span class="math inline">\(AC\)</span>, and <span class="math inline">\(C&#39;\)</span> be the midpoint of <span class="math inline">\(AB\)</span> and let <span class="math inline">\(G\)</span> be the point of intersection of <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(BB&#39;\)</span>.</p>
+<p>Then <span class="math inline">\(\triangle AGB \sim \triangle A&#39;GB&#39;\)</span> and <span class="math display">\[\frac{AG}{A&#39;G} = \frac{BG}{B&#39;G} = \frac{AB}{A&#39;B&#39;} = 2.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-227" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(\triangle ABC\)</span> be given. Let <span class="math inline">\(A&#39;\)</span> be the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> be the midpoint of <span class="math inline">\(AC\)</span>, and <span class="math inline">\(C&#39;\)</span> be the midpoint of <span class="math inline">\(AB\)</span> and let <span class="math inline">\(G\)</span> be the point of intersection of <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(BB&#39;\)</span>.</p>
+<p><img src="images/centroid2.jpg" width="40%" style="display: block; margin: auto;" /></p>
+<p>Since <span class="math inline">\(AB\)</span> is parallel to <span class="math inline">\(A&#39;B&#39;\)</span> we know that <span class="math inline">\(\angle GA&#39;B&#39; = \angle GAB\)</span> and <span class="math inline">\(\angle GB&#39;A&#39; = \angle GBA\)</span> since they are alternate interior angles. Also, <span class="math inline">\(\angle A&#39;GB&#39; = \angle AGB\)</span> because they are vertical angles. So <span class="math inline">\(\triangle AGB \sim \triangle A&#39;GB&#39;\)</span> by the definition of similarity. Since <span class="math display">\[\frac{AB}{A&#39;B&#39;} = 2\]</span> we have the remainder of the ratios by Theorem <a href="similarity-of-triangles.html#thm:SSS-similarity">9.15</a>.</p>
+</div>
+<p>We can use the same arguments to prove the following lemma about the intersection point of <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(CC&#39;\)</span>.</p>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-228" class="lemma"><strong>Lemma 9.4  </strong></span>Let <span class="math inline">\(\triangle ABC\)</span> be given. Let <span class="math inline">\(A&#39;\)</span> be the midpoint of <span class="math inline">\(BC\)</span>, <span class="math inline">\(B&#39;\)</span> be the midpoint of <span class="math inline">\(AC\)</span>, and <span class="math inline">\(C&#39;\)</span> be the midpoint of <span class="math inline">\(AB\)</span> and let <span class="math inline">\(G&#39;\)</span> be the point of intersection of <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(CC&#39;\)</span>.</p>
+<p>Then <span class="math inline">\(\triangle AG&#39;C \sim \triangle A&#39;G&#39;C&#39;\)</span> and <span class="math display">\[\frac{AG&#39;}{A&#39;G&#39;} = \frac{CG&#39;}{C&#39;G&#39;} = \frac{AC}{A&#39;C&#39;} = 2.\]</span></p>
+</div>
+<p>Question: Why do we give the point of intersection of <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(CC&#39;\)</span> separate name rather than just calling it <span class="math inline">\(G\)</span>?</p>
+<p>Since <span class="math inline">\(G\)</span> and <span class="math inline">\(G&#39;\)</span> are both on <span class="math inline">\(AA&#39;\)</span> and <span class="math inline">\(\frac{AG}{A&#39;G} = \frac{AG&#39;}{A&#39;G&#39;} = 2\)</span> we see that <span class="math inline">\(G=G&#39;\)</span>.</p>
+<p>Question: Why is proving that <span class="math inline">\(G\)</span> and <span class="math inline">\(G&#39;\)</span> are at the same point along a median segment sufficient for proving that <span class="math inline">\(G=G&#39;\)</span>? Be as specific as possible.</p>
+<p>So the medians <span class="math inline">\(AA&#39;\)</span>, <span class="math inline">\(BB&#39;\)</span>, and <span class="math inline">\(CC&#39;\)</span> are concurrent.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-229" class="definition"><strong>Definition 9.8  </strong></span>The <strong>centroid</strong> of a triangle is the point of concurrence of the medians of the sides of the triangle.</p>
+</div>
+<div id="circumcenter" class="section level3" number="9.6.2">
+<h3><span class="header-section-number">9.6.2</span> Circumcenter</h3>
+<p>The next “center” we consider is the point whose distance is the same from the three vertices of the triangle and so is the center of the circle that circumscribes the triangle. A unique property of this point is that it is not always inside of the triangle. One can prove that the circumcenter is inside of the triangle if and only if the triangle is acute.</p>
 <!---
-
-\subsection{Centroid}
-
-The first "center" that we will consider is the point that is the arithmetic mean of all of the points contained inside of the triangle. From a physics perspective, this point is the center of mass, or the balance point, for the triangle. To generate this point, we need to first create some definitions.
-
-\begin{definition}
-    The \textbf{median}\index{Triangle!Median} of a side of a triangle is the segment connecting the midpoint of the side to the opposite vertex.
-\end{definition}
-
-So for $\triangle ABC$, if $D$ is the midpoint of $AB$, then $CD$ is the median of $AB$.
-
-    \begin{center}
-        \includegraphics[width=.3\textwidth]{images/median}
-    \end{center}
-
-
-\begin{theorem}
-Medians of a triangle are concurrent at a point.
-\end{theorem}
-
-We will give an outline of the proof in a series of lemmas with some key details left to be filled in. We recommend that as you read through the proof you should use a dynamic geometry application to construct the diagrams and to study properties of the constructions.
-
-\begin{lemma}
-    Let $\triangle ABC$ be given. Let $A'$ be the midpoint of $BC$, $B'$ be the midpoint of $AC$, and $C'$ be the midpoint of $AB$.
-    
-    Then $\triangle A'B'C\sim \triangle BAC$ with $$\frac{A'B'}{BA}= \frac{A'C}{BC} = \frac{B'C}{AC}=2$$ and
-    triangles $\triangle AB'C'$, $\triangle B'A'C$, $\triangle C'BA'$, and $\triangle A'B'C'$ are all congruent and so are also all similar to $\triangle ABC$ with ratio of $2:1$.
-\end{lemma}
-
-\begin{proof}
-    Let $\triangle ABC$ be given. Let $A'$ be the midpoint of $BC$, $B'$ be the midpoint of $AC$, and $C'$ be the midpoint of $AB$.
-    
-    \begin{center}
-        \includegraphics[width=.3\textwidth]{images/midpoint_triangle_similarity}
-    \end{center}
-
-    Since $A'$ is the midpoint of $BC$, $B'$ is the midpoint of $AC$, and angles $\angle BCA$ and $\angle A'CB'$ are equal, by Theorem \ref{thm:SAS_similarity} we know that $\triangle A'B'C\sim \triangle BAC$ with $$\frac{A'B'}{BA}= \frac{A'C}{BC} = \frac{B'C}{AC}=2.$$
-    
-    Using similar arguments, we have that $\triangle AB'C' \sim \triangle ACB$ and $\triangle BC'A' \sim \triangle BAC$ with a ratio of $2:1$.
-    
-    We now know that $$\frac{A'B'}{AB}=\frac{A'C'}{AC} = \frac{B'C'}{BC} = 2$$ and so by Theorem \ref{thm:SSS_similarity} $\triangle A'B'C' \sim \triangle ABC$ with a ratio of $2:1$. 
-\end{proof}
-
-So the segments connecting the midpoints of the sides of a triangle create four congruent triangles that are similar to the original triangle and whose side lengths are half the length of the original.
-
-\begin{standards}
-    \item{HSG.CO.10} Prove theorems about triangles. \emph{Theorems include: measures of interior angles of a triangle sum to $180^\circ$; base angles of isosceles triangles are congruent; the segment joining midpoints of two sides of a triangle is parallel to the third side and half the length; the medians of a triangle meet at a point.}
-\end{standards}
-
-\begin{lemma}
-The segments joining the midpoints of two sides of a triangle is parallel to the third side and half the length.
-\end{lemma}
-
-\begin{proof}
-    The proof the previous lemma included that the segments joining the midpoints of two sides of a triangle is half the length of the third side. So we only need to prove that it is parallel to the third side. 
-    
-    \begin{center}
-        \includegraphics[width=.3\textwidth]{images/midpoint_triangle_similarity}
-    \end{center}
-
-    Since the four triangles inside of the original triangle are congruent to one another we know that the angles $\angle BC'A'$ and $\angle B'A'C'$ are equal. Since these are alternate interior angles of the transversal $A'C'$ crossing $AB$ and $A'B'$ we see that $A'B'$ is parallel to $AB$. We use the same argument to show that the other two segments are parallel to the corresponding sides of the triangle.
-\end{proof}
-
-
-
-
-\begin{lemma}
-        Let $\triangle ABC$ be given. Let $A'$ be the midpoint of $BC$, $B'$ be the midpoint of $AC$, and $C'$ be the midpoint of $AB$ and let $G$ be the point of intersection of $AA'$ and $BB'$.
-        
-        Then $\triangle AGB \sim \triangle A'GB'$ and $$\frac{AG}{A'G} = \frac{BG}{B'G} = \frac{AB}{A'B'} = 2.$$
-\end{lemma}
-
-
-\begin{proof}
-    Let $\triangle ABC$ be given. Let $A'$ be the midpoint of $BC$, $B'$ be the midpoint of $AC$, and $C'$ be the midpoint of $AB$ and let $G$ be the point of intersection of $AA'$ and $BB'$.
-    
-    \begin{center}
-        \includegraphics[width=.4\textwidth]{images/centroid2}
-    \end{center}
-
-    Since $AB$ is parallel to $A'B'$ we know that $\angle GA'B' = \angle GAB$ and $\angle GB'A' = \angle GBA$ since they are alternate interior angles. Also, $\angle A'GB' = \angle AGB$ because they are vertical angles. So $\triangle AGB \sim \triangle A'GB'$ by the definition of similarity. Since $$\frac{AB}{A'B'} = 2$$ we have the remainder of the ratios by Theorem \ref{thm:SSS_similarity}.
-\end{proof}
-
-We can use the same arguments to prove the following lemma about the intersection point of $AA'$ and $CC'$.
-
-\begin{lemma}
-    Let $\triangle ABC$ be given. Let $A'$ be the midpoint of $BC$, $B'$ be the midpoint of $AC$, and $C'$ be the midpoint of $AB$ and let $G'$ be the point of intersection of $AA'$ and $CC'$.
-    
-    Then $\triangle AG'C \sim \triangle A'G'C'$ and $$\frac{AG'}{A'G'} = \frac{CG'}{C'G'} = \frac{AC}{A'C'} = 2.$$
-\end{lemma}
-
-Question: Why do we give the point of intersection of $AA'$ and $CC'$ separate name rather than just calling it $G$?
-
-Since $G$ and $G'$ are both on $AA'$ and $\frac{AG}{A'G} = \frac{AG'}{A'G'} = 2$ we see that $G=G'$.
-
-Question: Why is proving that $G$ and $G'$ are at the same point along a median segment sufficient for proving that $G=G'$? Be as specific as possible.
-
-So the medians $AA'$, $BB'$, and $CC'$ are concurrent.
-
-\begin{definition}
-    The \textbf{centroid} of a triangle is the point of concurrence of the medians of the sides of the triangle.
-\end{definition}
-
-
-\subsection{Circumcenter}
-
-The next "center" we consider is the point whose distance is the same from the three vertices of the triangle and so is the center of the circle that circumscribes the triangle. A unique property of this point is that it is not always inside of the triangle. One can prove that the circumcenter is inside of the triangle if and only if the triangle is acute.
 
     \begin{center}
     \includegraphics[width=.25\textwidth]{images/circumcenter2}
@@ -636,13 +610,9 @@ In order to prove that the altitudes are concurrent we will first prove a useful
     The point of concurrency of the extensions of the altitudes of the vertices of a triangle is called the \textbf{orthocenter}\index{Triangle!Orthocenter}.
 \end{definition}
 
-
-%\subsection{Incenter}
-
-
-\subsection{Euler Line}
-
-Leonard Euler showed in 1765 that the centroid, circumcenter, and orthocenter of a triangle are colinear and the line through these three points is called the Euler line of the triangle.
+--->
+<p>Leonard Euler showed in 1765 that the centroid, circumcenter, and orthocenter of a triangle are colinear and the line through these three points is called the Euler line of the triangle.</p>
+<!---
 
 \begin{theorem}[Euler Line]
     Given a triangle $\triangle ABC$ with centroid $G$, circumcenter $O$, and orthocenter $H$, the points $G$, $H$, and $O$ are colinear with $G$ between $O$ and $H$ and is twice as far from the orthocenter as from the circumcenter, $GH=2GO$.
@@ -652,25 +622,22 @@ Leonard Euler showed in 1765 that the centroid, circumcenter, and orthocenter of
     \includegraphics[width=.4\textwidth]{images/EulerLine}
 \end{center}
 
-
-
-\begin{Exercise}
-
-    \Question Reflection questions about the centroid.
-        \begin{enumerate}[a)]
-            \item At what points in the proof, if any, were axioms or common definitions used to illuminate something?
-            \item At what points in the proof, if any, were definitions used to illuminate something?
-            \item When, if at all, were propositions or theorems used to illuminate something?
-            \item How were theorems used in the proof? (i.e., focus on what work went into using the theorem).
-            \item In geometry, students often struggle with the fact that picture of the thing they are proving "shows" the result, so it seems pointless to write everything out. Why do you think we insist on doing it this way anyway?
-        \end{enumerate}
-    
-    \Question Prove that the angle bisectors of a triangle are concurrent. This point of concurrency is called the \textbf{incenter}\index{Triangle!Incenter} of the triangle.
-
-
-\end{Exercise}  
-    
 --->
+</div>
+<div id="exercises-41" class="section level3" number="9.6.3">
+<h3><span class="header-section-number">9.6.3</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Reflection questions about the centroid.</p>
+<ol style="list-style-type: lower-alpha">
+<li>At what points in the proof, if any, were axioms or common definitions used to illuminate something?</li>
+<li>At what points in the proof, if any, were definitions used to illuminate something?</li>
+<li>When, if at all, were propositions or theorems used to illuminate something?</li>
+<li>How were theorems used in the proof? (i.e., focus on what work went into using the theorem).</li>
+<li>In geometry, students often struggle with the fact that picture of the thing they are proving “shows” the result, so it seems pointless to write everything out. Why do you think we insist on doing it this way anyway?</li>
+</ol></li>
+<li><p>Prove that the angle bisectors of a triangle are concurrent. This point of concurrency is called the <strong>incenter</strong> of the triangle.</p></li>
+</ol>
+</div>
 </div>
             </section>
 

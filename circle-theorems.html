@@ -391,10 +391,26 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a></li>
-<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a></li>
-<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a></li>
-<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#angles-and-parallel-lines"><i class="fa fa-check"></i><b>9.4.1</b> Angles and Parallel Lines</a></li>
+<li class="chapter" data-level="9.4.2" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#parallelograms"><i class="fa fa-check"></i><b>9.4.2</b> Parallelograms</a></li>
+<li class="chapter" data-level="9.4.3" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#exercises-39"><i class="fa fa-check"></i><b>9.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html#exercises-40"><i class="fa fa-check"></i><b>9.5.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#centroid"><i class="fa fa-check"></i><b>9.6.1</b> Centroid</a></li>
+<li class="chapter" data-level="9.6.2" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#circumcenter"><i class="fa fa-check"></i><b>9.6.2</b> Circumcenter</a></li>
+<li class="chapter" data-level="9.6.3" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#exercises-41"><i class="fa fa-check"></i><b>9.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="circle-theorems.html"><a href="circle-theorems.html#exercises-42"><i class="fa fa-check"></i><b>9.7.1</b> Exercises</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a></li>
 <li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a></li>
@@ -424,12 +440,8 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="circle-theorems" class="section level2" number="9.7">
 <h2><span class="header-section-number">9.7</span> Circle Theorems</h2>
+<p>In Book IV of Euclid’s Elements <span class="citation">(<a href="#ref-Heath1908_2" role="doc-biblioref">Heath, 1908b</a>)</span> Euclid returns to constructions involving regular polygons and circles. Before we look at these constructions we need to first define some terms and prove some basic properties of circles.</p>
 <!----
-
-%\subsection{Book IV}
-
-In Book IV of Euclid's Elements \citep{Heath1908_2} Euclid returns to constructions involving regular polygons and circles. Before we look at these constructions we need to first define some terms and prove some basic properties of circles.
-
 \begin{definition}
     An \textbf{inscribed angle}\index{Circle!Inscribed angle} is an angle formed by two chords in a circle which have a common endpoint. This common endpoint forms the vertex of the inscribed angle. The other two endpoints define what we call an intercepted arc on the circle.
 \end{definition}
@@ -475,40 +487,29 @@ We are now ready to return to the constructions of Euclid, which we will leave a
     \item{HSG.CO.13} Construct an equilateral triangle, a square, and a regular hexagon inscribed in a circle.
 \end{standards}
 
-% Hexagon Book IV: Prop 15
-% Square Book IV: Prop 6
-% Triangle Book IV: Prop 2
 
-\begin{Exercise}
-    
-    \Question Construct the inscribed circle of a triangle, and prove that it is such.
-
-
-
-%Proof:
-%Construct any two angle bisectors. Let the point of intersection be K. 
-%I construct the angle bisector for vertex A and C.
-%Next, construct segments K_A, K_B, and K_C, where (KK_A ) ̅⊥(BC) ̅, (KK_B ) ̅⊥(AC) ̅, and (KK_C ) ̅⊥(AB) ̅.
-%Then:
-%∆AK_C O≅∆AK_B O and ∆CK_A O≅∆CK_B O
-%by the ASA triangle postulate.
-%It follows, since CPCTC, that K_A K=K_B K=K_C K and the result follows.
-
-    \Question Construct the circumscribed circle of a triangle, and prove that it is such.
-
-    \Question Construct a tangent line from a point outside a given circle to the circle, and prove that it is such.
-
-    \Question Construct an equilateral triangle inscribed in a circle, and prove that it is such.
-
-    \Question Construct a square inscribed in a circle, and prove that it is such.
-
-    \Question Construct a regular hexagon inscribed in a circle, and prove that it is such.
-\end{Exercise}  
 
 --->
+<div id="exercises-42" class="section level3" number="9.7.1">
+<h3><span class="header-section-number">9.7.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Construct the inscribed circle of a triangle, and prove that it is such.</p></li>
+<li><p>Construct the circumscribed circle of a triangle, and prove that it is such.</p></li>
+<li><p>Construct a tangent line from a point outside a given circle to the circle, and prove that it is such.</p></li>
+<li><p>Construct an equilateral triangle inscribed in a circle, and prove that it is such.</p></li>
+<li><p>Construct a square inscribed in a circle, and prove that it is such.</p></li>
+<li><p>Construct a regular hexagon inscribed in a circle, and prove that it is such.</p></li>
+</ol>
 
 </div>
+</div>
 <!-- </div> -->
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Heath1908_2" class="csl-entry">
+Heath, T. L. (1908b). <em>The thirteen books of <span>E</span>uclid’s elements: Translated from the text of <span>H</span>eiberg with introduction and commentary: Vols. 2, Books III-IX</em>. University Press.
+</div>
+</div>
             </section>
 
           </div>
