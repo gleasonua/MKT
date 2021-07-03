@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers</title>
+  <title>13.2 Teaching and Learning of Data Analysis and Statistics | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="13.2 Teaching and Learning of Data Analysis and Statistics | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="13.2 Teaching and Learning of Data Analysis and Statistics | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="normal-subgroups-and-factor-groups.html"/>
-<link rel="next" href="ch-transformations.html"/>
+<link rel="prev" href="statistics-data-analysis-and-mathematics.html"/>
+<link rel="next" href="ch-data-explore.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -562,77 +562,149 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="group-homomorphisms-revisited" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Group Homomorphisms Revisited</h2>
-<p>Recall the following definition of group homomorphism and isomorphism.</p>
-<div class="definition">
-<p><span id="def:unlabeled-div-225" class="definition"><strong>Definition 11.5  </strong></span>A map, <span class="math inline">\(\phi\)</span>, from a group <span class="math inline">\((G,*)\)</span> to a group <span class="math inline">\((G&#39;,\cdot)\)</span> is called a <strong>homomorphism</strong> if <span class="math display">\[ \phi(a*b)=\phi(a) \cdot \phi(b)\]</span> for every <span class="math inline">\(a,b\in G\)</span>. If <span class="math inline">\(\phi\)</span> is also a bijection, then we say that <span class="math inline">\(\phi\)</span> is an <strong>isomorphism</strong>.</p>
+<div id="teaching-and-learning-of-data-analysis-and-statistics" class="section level2" number="13.2">
+<h2><span class="header-section-number">13.2</span> Teaching and Learning of Data Analysis and Statistics</h2>
+<p>Even though the disciplines of statistics and data analysis are very distinct from mathematics in many ways, the teaching and learning of the methods of statistics and the processes of data analysis are often incorporated into the curriculum of mathematics. This incorporation of data analysis and statistics into the field of mathematics education derives from two major factors.</p>
+<p>The first is that most disciplines see data analysis as a tool in their discipline, but not one of the central tenants of the discipline. For instance, science uses statistics to account for the reliability of their measurements with probabilistic reasoning taking a more prominent role with concepts such as the make-up of an atom. Similarly, history uses data analysis to understand population changes and make arguments about when and how certain activities like changes in societal structures most likely occurred. However, neither of these disciplines considers data analysis and statistics as a core part of their work.</p>
+<p>Organizations such as the National Council of Teachers of Mathematics (NCTM) in documents such as <em>Curriculum and Evaluation Standards for School Mathematics</em> <span class="citation">(<a href="#ref-NCTM1989" role="doc-biblioref">NCTM, 1989</a>)</span> list ‘Data Analysis and Probability’ as one of the five content strands, thereby actively adopting these disciplines as part of the mathematical sciences.</p>
+<div class="figure" style="text-align: center"><span id="fig:gaise-process"></span>
+<img src="tikz/GAISE3.png" alt="Data Analysis Investigative Process [@GAISE2]" width="90%" />
+<p class="caption">
+Figure 13.1: Data Analysis Investigative Process <span class="citation">(<a href="#ref-GAISE2" role="doc-biblioref">Bargagliotti et al., 2020</a>)</span>
+</p>
 </div>
-<p>Now that we know when two groups are isomorphic to one another, we turn to looking at how “different” two groups are that are not isomorphic, but have a homomorphism between them by looking at the set of points of the domain that are mapped to the identity. This provides information about how far away the group homomorphism is from a one-to-one function .</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-226" class="theorem"><strong>Theorem 11.6  </strong></span>Let <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> be a group homomorphism. The set <span class="math inline">\(\left\{ a\in G : \phi(a)=e&#39; \right\}\)</span>, where <span class="math inline">\(e&#39;\)</span> is the identity in <span class="math inline">\(G&#39;\)</span>, is a subgroup of <span class="math inline">\(G\)</span> and is called the kernel of <span class="math inline">\(\phi\)</span>, denoted by <span class="math inline">\(\mbox{Ker}(\phi)\)</span>.</p>
+<p>In an effort to help teachers of mathematics better understand the discipline of statistics in order that they could teach the subject better, the American Statistical Association published the <em>Guidelines for Assessment and Instruction in Statistics Education (GAISE) Report</em> <span class="citation">(<a href="#ref-GAISE" role="doc-biblioref">Franklin et al., 2007</a>)</span> and a follow-up report, <em>Pre-K–12 Guidelines for Assessment and Instruction in Statistics Education II (GAISE II)</em> <span class="citation">(<a href="#ref-GAISE2" role="doc-biblioref">Bargagliotti et al., 2020</a>)</span>. These documents outline a conceptual framework for statistics education and describes the data analysis process having four major components (formulate questions, collect data, analyze data, and interpret results) that we will discuss in detail below.</p>
+<p>While many people think of these four components of the data analysis process as linear, most of the time the process is iterative, jumping between the four components as the work progresses (see Figure <a href="teaching-and-learning-of-data-analysis-and-statistics.html#fig:gaise-process">13.1</a>).
+For instance, a person might produce a graph or chart that causes a question to arise in his or her mind. This question could cause him or her to analyze the data in a different way, modify the interpretation of the results of the current analysis, or seek to collect additional data. Alternatively, a person might notice a pattern when collecting data for some purpose that causes them to make an interpretation, formulate new questions based on the data collected, or change their planned data analysis.</p>
+<p>Another important aspect of the data analysis process is the centrality of variability. It is important to remember that “statistical problem solving and decision making depend on understanding, explaining, and quantifying the variability in the data” <span class="citation">(<a href="#ref-GAISE" role="doc-biblioref">Franklin et al., 2007, p. 6</a>)</span>. So the concept of variability needs to be at the forefront of the teacher and students’ minds as they work through and learn within the data analysis process.</p>
+<p>In order to acknowledge that students have different levels of understanding and skills in the data analysis process, within each of these processes and the underlying focus on variability the GAISE framework considers three different levels (Level A, Level B, and Level C). A teacher needs to be able to recognize where students may be within this framework and support students’ progression to higher levels of understanding. Critically, the GAISE framework at no point discusses different types of statistical techniques. This allows this same framework to be used in the teaching and learning of data analysis for sixth graders learning how to use box-and-whisker plots or high school seniors learning how to use a <span class="math inline">\(\chi^2\)</span> test for categorical data.</p>
+<p>In order to understand this data analysis investigative process and the centrality of variability within the process we will give a more detailed explanation of each of the components, along with examples highlighting the different levels within that process component. For a more detailed description, see the full GAISE Reports <span class="citation">(<a href="#ref-GAISE2" role="doc-biblioref">Bargagliotti et al., 2020</a>; <a href="#ref-GAISE" role="doc-biblioref">Franklin et al., 2007</a>)</span>.</p>
+<div class="standards">
+<div id="related-content-standards-88" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
 </div>
-<div class="proof">
-<p><span id="unlabeled-div-227" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(\phi\)</span> is a group homomorphism, if <span class="math inline">\(e\)</span> is the identity in <span class="math inline">\(G\)</span>, <span class="math inline">\(\phi(a)=\phi(a*e)=\phi(a)*\phi(e)\)</span> for all <span class="math inline">\(a\in G\)</span>. So <span class="math inline">\(\phi(e)\)</span> is the identity in <span class="math inline">\(G&#39;\)</span>. Therefore, <span class="math inline">\(e \in \mbox{Ker}(\phi)\)</span>.</p>
-<p>If <span class="math inline">\(a,b \in \mbox{Ker}(\phi)\)</span>, then <span class="math display">\[ \phi(a*b)=\phi(a) \cdot \phi(b) = e&#39; \cdot e&#39; = e&#39; \]</span> and so <span class="math inline">\(a*b \in \mbox{Ker}(\phi)\)</span>.</p>
-<p>If <span class="math inline">\(a\in \mbox{Ker}(\phi)\)</span>, then <span class="math display">\[\phi(a^{-1}) = \phi(a^{-1})\cdot e&#39; = \phi(a^{-1})\cdot \phi(a) = \phi(a^{-1}*a) = \phi(e)=e&#39;\]</span> and so <span class="math inline">\(a^{-1}\in \mbox{Ker}(\phi)\)</span>.</p>
-<p>Therefore, <span class="math inline">\(\mbox{Ker}(\phi)\)</span> is a subgroup of <span class="math inline">\(G\)</span>.</p>
+<ul>
+<li>(6.SPA.1) Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers.</li>
+</ul>
 </div>
-<p>Now that we know that the kernel of a group homomorphism is a subgroup, we prove that it is in fact a normal subgroup.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-228" class="theorem"><strong>Theorem 11.7  </strong></span>If <span class="math inline">\(\phi:G \rightarrow G&#39;\)</span> is a group homomorphism, then <span class="math inline">\(\mbox{Ker}(\phi) \vartriangleleft G\)</span>.</p>
+<div id="formulate-questions." class="section level5 unnumbered">
+<h5>Formulate Questions.</h5>
+<p>A key component of formulating questions in the data analysis process is having questions that anticipate variability.</p>
+<ul>
+<li><strong>Level A.</strong> A student or class is at the first level of the framework if the teacher is the one posing the questions of interest or is having to reword students’ questions from those with a deterministic or definite answer, such as “How many desks are in this classroom?” to become questions that allow for, and expect, variability, such as “How many students are in most classrooms in our school district?”</li>
+<li><strong>Level B.</strong> The second level corresponds with the ability to formulate questions that account for sampling variability within a group or between groups. The questions also begin to recognize the distinction between a population and a sample. Some sample questions would be, “Are students in our class generally taller than students in the other classes in the school?” or “Are 14 year old boys usually shorter than 14 year old girls?”</li>
+<li><strong>Level C.</strong> Students at Level C pose questions that also account for chance variability and think of the world in a more probabilistic sense. These questions often include questions about the strength of relationships and/or the reliability of the measurements creating the data.</li>
+</ul>
 </div>
-<div class="proof">
-<p><span id="unlabeled-div-229" class="proof"><em>Proof</em>. </span>By the previous theorem, we have proven that <span class="math inline">\(\mbox{Ker}(\phi)\)</span> is a subgroup of <span class="math inline">\(G\)</span>. Thus it is sufficient to prove that <span class="math display">\[g \mbox{Ker}(\phi)= \mbox{Ker}(\phi) g \quad \forall g\in G.\]</span></p>
-<p>Let <span class="math inline">\(g\in G\)</span> and let <span class="math inline">\(a \in \left\{ x \in G : \phi(x)= \phi(g) \right\}\)</span>. Then since <span class="math inline">\(\phi(a)=\phi(g)\)</span>, we can multiply both sides of the equation by <span class="math inline">\(\phi(g)^{-1}\)</span> on the left (respectively right) and we have that
-<span class="math display">\[\phi(g)^{-1} \phi(a) = e&#39; \quad \left(\mbox{respectively }  \phi(a) \phi(g)^{-1} =e&#39; \right).\]</span>
-Since <span class="math inline">\(\phi\)</span> is a homomorphism, this is equivalent to
-<span class="math display">\[\phi(g^{-1} a) =e&#39; \quad \left( \mbox{repectively }  \phi( a g^{-1}) =e&#39; \right) .\]</span>
-So <span class="math inline">\(g^{-1}a\)</span> and <span class="math inline">\(a g^{-1}\)</span> are elements of <span class="math inline">\(\mbox{Ker}(\phi)\)</span>. Therefore, since <span class="math inline">\(a= g (g^{-1}a)\)</span> and <span class="math inline">\(a= (a g^{-1})g\)</span>, we have that <span class="math inline">\(a \in g \mbox{Ker}(\phi)\)</span> and <span class="math inline">\(a \in \mbox{Ker}(\phi) g\)</span> and so
-<span class="math display">\[\left\{ x \in G : \phi(x)= \phi(g)  \right\} \subseteq g \mbox{Ker}(\phi) \quad \mbox{and} \quad \left\{ x \in G : \phi(x)= \phi(g)  \right\} \subseteq \mbox{Ker}(\phi) g\]</span></p>
-<p>Let <span class="math inline">\(a \in g \mbox{Ker}(\phi)\)</span>. Then there exists a <span class="math inline">\(b\in \mbox{Ker}(\phi)\)</span> such that <span class="math inline">\(a=gb\)</span>. Thus <span class="math inline">\(b=g^{-1}a\)</span> and so <span class="math inline">\(e&#39;=\phi(b) = \phi(g^{-1} a) = \phi(g)^{-1} \phi(a)\)</span> and so <span class="math inline">\(\phi(a)=\phi(g)\)</span>. Similarly if <span class="math inline">\(a \in \mbox{Ker}(\phi)\)</span>, then <span class="math inline">\(\phi(a)=\phi(g)\)</span>.</p>
-<p>Therefore, <span class="math display">\[g \mbox{Ker}(\phi) =   \left\{ x \in G : \phi(x)= \phi(g)  \right\} = \mbox{Ker}(\phi) g\]</span> and so <span class="math inline">\(\mbox{Ker}(\phi) \vartriangleleft G\)</span>.</p>
+<div id="collect-data." class="section level5 unnumbered">
+<h5>Collect Data.</h5>
+<p>The design of the data collection component of the investigative process should acknowledge that variability exists, take steps to reduce the amount of variability due to factors that are not the main purpose of the investigation (such as measurement errors), and use techniques such as random sampling in order to reduce the differences between the sample and the population. A key component of this data collection design process involves the affect of the sample size upon the reliability of the results.</p>
+<ul>
+<li><strong>Level A.</strong> These individuals do not account for sample size (it might be mentioned, but no connections are made with the other components of the process), ignores possible measurement errors, and does not use random selection.</li>
+<li><strong>Level B.</strong> This level involves accounting for some of the aspects of controlling variability in the data collection process mentioned above, but does not account for all of them.</li>
+<li><strong>Level C.</strong> Individuals at this level explicitly account for sample size, measurement error, and uses random sampling techniques when using samples to predict properties of a larger population.</li>
+</ul>
 </div>
-<p>So we have shown that for every homomorphism, the kernel of the homomorphism is a normal subgroup. Alternatively, if we start with a normal subgroup, we can create a homomorphism for which the normal subgroup is equal to the kernel.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-230" class="theorem"><strong>Theorem 11.8  </strong></span>Let <span class="math inline">\(G\)</span> be a group and let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(G\)</span>. Then the function <span class="math inline">\(\gamma: G \rightarrow \frac{G}{N}\)</span> defined by <span class="math inline">\(\gamma(g)=gN\)</span> is a group homomorphism and <span class="math inline">\(\mbox{Ker}(\gamma) = N\)</span>.</p>
+<div id="analyze-data." class="section level5 unnumbered">
+<h5>Analyze Data.</h5>
+<p>The purpose of the analysis component in the investigative process is to give an accounting for the variability in the situation.</p>
+<ul>
+<li><strong>Level A.</strong> These students are able to create graphical displays, compute parameters, or perform statistical tests on data, but are unable to explain why a certain analysis technique is used. Such a student may find the mean and standard deviation of a set of data, but does not explain why those parameters address the situation better than a median and interquartile range.</li>
+<li><strong>Level B.</strong> A Level B understanding corresponds with the quantification of the variability, but uses a single technique or does not consider the underlying distribution in the justification of the techniques used.</li>
+<li><strong>Level C.</strong> A Level C student focuses on using multiple techniques to build an argument based in the context of the data. The analyses also recognize the underlying probability distributions involved in the situation as part of the justification of the statistical techniques used.</li>
+</ul>
 </div>
-<div class="proof">
-<p><span id="unlabeled-div-231" class="proof"><em>Proof</em>. </span>Because <span class="math display">\[\gamma(g_1 g_2) = (g_1 g_2) N = \left(g_1 N\right) \left(g_2 N\right) = \gamma(g_1) \gamma(g_2)\]</span> we know that <span class="math inline">\(\gamma\)</span> is a group homomorphism.</p>
-<p>Since the only elements <span class="math inline">\(g \in G\)</span> such that <span class="math inline">\(gN=N\)</span> are the elements of <span class="math inline">\(N\)</span>, we have that <span class="math inline">\(\mbox{Ker}(\gamma)=N\)</span>.</p>
+<div id="interpret-results." class="section level5 unnumbered">
+<h5>Interpret Results.</h5>
+<p>Interpretation must be intertwined with an understanding of the context of the data and attempt to explain the sources of the variability in the situation. Quality interpretations must take into account the sample size; effects of random selection; measures of strength of association and models; distinguish between causation and correlation; and the difference between different types of studies.</p>
+<ul>
+<li><strong>Level A.</strong> A Level A interpretation gives some results and states a conclusion without discussing the other aspects of the situation. These students focus on the data and struggle to generalize to the larger context.</li>
+<li><strong>Level B.</strong> These interpretations move beyond basic summaries, but do not account for all of the variability and nuance of the context.</li>
+<li><strong>Level C.</strong> A Level C interpretation discusses how the different techniques are used and the results from the analysis work together to justify the conclusions. They also keep in central the context of the situation and the variability involved.
+}</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:sasi"></span>
+<img src="images/SASIFramework.jpg" alt="Students' Approaches to Statistical Investigations (SASI) Framework @SASI" width="90%" />
+<p class="caption">
+Figure 13.2: Students’ Approaches to Statistical Investigations (SASI) Framework <span class="citation"><a href="#ref-SASI" role="doc-biblioref">Lee &amp; Tran</a> (<a href="#ref-SASI" role="doc-biblioref">2015</a>)</span>
+</p>
 </div>
-<p>This means that there is a strong relationship between normal subgroups and kernels of group homomorphisms. This leads us to one of the most important theorems in basic group theory.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-232" class="theorem"><strong>Theorem 11.9  (Fundamental Homomorphism Theorem) </strong></span>Let <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> be a group homomorphism with kernel <span class="math inline">\(\mbox{Ker}(\phi)\)</span>. Then <span class="math inline">\(\phi(G)\)</span> is a group and the map
-<span class="math display">\[\hat{\phi} : \frac{G}{\mbox{Ker}(\phi)} \rightarrow \phi(G)\]</span> defined by <span class="math inline">\(\hat{\phi} \left( a \mbox{Ker}(\phi)\right) = \phi(a)\)</span> is an isomorphism.</p>
 </div>
-<div class="proof">
-<p><span id="unlabeled-div-233" class="proof"><em>Proof</em>. </span>We first need to prove that <span class="math inline">\(\phi(G)\)</span> is a subgroup of <span class="math inline">\(G&#39;\)</span>. Since <span class="math inline">\(\phi\)</span> is a homomorphism, <span class="math inline">\(\phi(G)\)</span> is closed under the binary operation. From Theorems <a href="sec-groups.html#thm:homomorphism-identity">6.3</a> and <a href="sec-groups.html#thm:homomorphism-inverse">6.4</a> we have that the identity of <span class="math inline">\(G&#39;\)</span> is in <span class="math inline">\(\phi(G)\)</span> and if <span class="math inline">\(\phi(a)\in \phi(G)\)</span> then <span class="math inline">\(\phi(a)^{-1}\in \phi(G)\)</span>. So <span class="math inline">\(\phi(G)\)</span> is a subgroup of <span class="math inline">\(G&#39;\)</span>.</p>
-<p>If <span class="math inline">\(a\)</span> and <span class="math inline">\(a&#39;\)</span> are two elements of <span class="math inline">\(G\)</span> such that <span class="math inline">\(a \mbox{Ker}(\phi) = a&#39; \mbox{Ker}(\phi)\)</span>, we know that there are elements <span class="math inline">\(b\)</span> and <span class="math inline">\(b&#39;\)</span> in <span class="math inline">\(\mbox{Ker}(\phi)\)</span> such that <span class="math inline">\(a b = a&#39; b&#39;\)</span>. So <span class="math inline">\(a&#39;= ab (b&#39;)^{-1}\)</span> and <span class="math display">\[\phi(a&#39;) = \phi(ab (b&#39;)^{-1}) = \phi(a) \phi(b) \phi(b&#39;)^{-1} = \phi(a)\]</span> so <span class="math inline">\(\hat{\phi}\)</span> is well-defined.</p>
-<p>If <span class="math inline">\(a \mbox{Ker}(\phi)\)</span> and <span class="math inline">\(b \mbox{Ker}(\phi)\)</span> then <span class="math display">\[\hat{\phi} \left( \left(a \mbox{Ker}(\phi) \right) \left((b \mbox{Ker}(\phi)\right) \right) = \hat{\phi} \left( (ab) \mbox{Ker}(\phi) \right) = \phi(ab) = \phi(a) \phi(b) = \hat{\phi}\left( a \mbox{Ker}(\phi)\right) \hat{\phi} \left(b \mbox{Ker}(\phi)\right)\]</span> and so <span class="math inline">\(\hat{\phi}\)</span> is a homomorphism.</p>
-<p>If <span class="math inline">\(a \mbox{Ker}(\phi)\)</span> is in the kernel of <span class="math inline">\(\hat{\phi}\)</span>, we know that <span class="math inline">\(\phi(a)\)</span> is the identity of <span class="math inline">\(G&#39;\)</span> and so <span class="math inline">\(a\in \mbox{Ker}(\phi)\)</span>. This implies that <span class="math inline">\(a \mbox{Ker}(\phi)= \mbox{Ker}(\phi)\)</span> and so <span class="math inline">\(\mbox{Ker}(\hat{\phi}) = \mbox{Ker}(\phi)\)</span> and so <span class="math inline">\(\hat{\phi}\)</span> is one-to-one. By the definition of <span class="math inline">\(\phi(G)\)</span> we know that <span class="math inline">\(\hat{\phi}\)</span> is onto and so is a bijection.</p>
-<p>Therefore, <span class="math inline">\(\hat{\phi}\)</span> is an isomorphism.</p>
-</div>
-<p>The prior two theorems can be summarized in the following commutative diagram.</p>
-<p><img src="tikz/homomorphism_commutative_diagram.png" width="20%" style="display: block; margin: auto;" /></p>
-<div id="exercises-49" class="section level3" number="11.3.1">
-<h3><span class="header-section-number">11.3.1</span> Exercises</h3>
+<div id="statistical-habits-of-mind" class="section level3" number="13.2.1">
+<h3><span class="header-section-number">13.2.1</span> Statistical Habits of Mind</h3>
+<p>As students engage in the data analysis investigative process, one of the primary goals for students is to develop a new way of thinking about the world and the use of data in our world. <span class="citation"><a href="#ref-Chance2002" role="doc-biblioref">Chance</a> (<a href="#ref-Chance2002" role="doc-biblioref">2002</a>)</span> listed six mental habits for students to develop as they learn to think statistically. "These mental habits include:</p>
 <ol style="list-style-type: decimal">
-<li><p>Use the Fundamental Homomorphism Theorem to prove that
-<span class="math display">\[\frac{\mathbb{R}}{ \left\{2\pi n | n \in \mathbb{Z}\right\} } \cong \left\{ z \in \mathbb{C} \: | \: |z|=1 \right\}\]</span></p></li>
-<li><p>Use the Fundamental Homomorphism Theorem to prove that <span class="math display">\[(\mathbb{R},+) \cong (\mathbb{R}^+,\cdot)\]</span></p></li>
+<li>consideration of how to best obtain meaningful and relevant data to answer the question at hand</li>
+<li>constant reflection on the variables involved and curiosity for other ways of examining and thinking about the data and problem at hand</li>
+<li>seeing the complete process with constant revision of each component</li>
+<li>omnipresent skepticism about the data obtained</li>
+<li>constant relation of the data to the context of the problem and interpretation of the conclusions in non-statistical terms</li>
+<li>thinking beyond the textbook"</li>
+</ol>
+<p>The chapters on data analysis in this text are designed to help develop these habits of mind through examples and engagement in various projects involving the investigative process. Remember that in the teaching and learning of probability, data analysis, and statistics the main goal is not to learn how to perform statistical calculations, but to develop these habits of mind and improve one’s ability to produce and understand arguments based upon the analysis of data.</p>
+</div>
+<div id="exercises-59" class="section level3" number="13.2.2">
+<h3><span class="header-section-number">13.2.2</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Write a short essay on why data analysis should be taught in K-12 schools.</p></li>
+<li><p>Determine where each of the following questions fall in the framework. Then modify the question to be at a Level C.</p>
+<ol style="list-style-type: lower-alpha">
+<li>How many people are in this classroom?</li>
+<li>What type of food do students in our school prefer?</li>
+<li>What types of memes spread fastest?</li>
+</ol></li>
+<li><p>Determine where each of the following scenarios for the collection of data would fall in the framework. Then modify the scenario to be at a Level C.</p>
+<ol style="list-style-type: lower-alpha">
+<li>In an effort to determine if plants grow better in red light or blue light a student has one plant that grows under a red light bulb for 4 weeks and one plant that grows under a blue light bulb for 4 weeks. The student then measures the difference in the heights of the plants.</li>
+<li>The students in a class measure their height and arm span in order to determine if there is a relationship between the two measurements for people.</li>
+<li>Using the nutrition information for McDonald’s, students look for how many calories are in a gram of fat.</li>
+</ol></li>
+<li><p>Determine where each of the following scenarios for the analysis of data would fall in the framework. Then modify the scenario to be at a Level C.</p>
+<ol style="list-style-type: lower-alpha">
+<li>In order to determine how much it will cost to go to college, students find the mean tuition rates of all of the colleges in their state.</li>
+<li>In order to predict who will win a presidential election, a poll asks a random sample of likely voters across the country who they will vote for. This data is analyzed, giving a percentage of votes for each person with a margin of error.</li>
+</ol></li>
+<li><p>Determine where each of the following scenarios for the interpretation component of the investigative process would fall in the framework. Then modify the scenario to be at a Level C.</p>
+<ol style="list-style-type: lower-alpha">
+<li>From 2017-2019 the information about fatal police shootings<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> indicated that 1,226 white people, 667 black people, and 485 Hispanic people were fatally shot by police. A person concludes that a white person is more likely to be fatally shot by police than a black person.</li>
+</ol></li>
+<li><p>Find a news article or research article of interest to you that involves a data analysis process and analyze the article within the context of the GAISE Framework to describe the probable level within each of the four processes represented by the article.</p></li>
 </ol>
 
 </div>
 </div>
 <!-- </div> -->
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-GAISE2" class="csl-entry">
+Bargagliotti, A., Franklin, C., Arnold, P., Gould, R., Johnson, S., Perez, L., &amp; Spangler, D. A. (2020). <em>Pre-k–12 guidelines for assessment and instruction in statistics education II (GAISE II)</em>. American Statistical Association.
+</div>
+<div id="ref-Chance2002" class="csl-entry">
+Chance, B. L. (2002). Components of statistical thinking and implications for instruction and assessment. <em>Journal of Statistics Education</em>, <em>10</em>(3). <a href="http://jse.amstat.org/v10n3/chance.html">http://jse.amstat.org/v10n3/chance.html</a>
+</div>
+<div id="ref-GAISE" class="csl-entry">
+Franklin, C., Kader, G. D., Mewborn, D. A., Moreno, J., Peck, R., Perry, M., &amp; Schaeffer, R. L. (2007). <em>Guidelines for assessment and instruction in statistics education (<span>GAISE</span>) report: A pre-k-12 curriculum framework</em>. American Statistical Association.
+</div>
+<div id="ref-SASI" class="csl-entry">
+Lee, H., &amp; Tran, D. (2015). <em>Framework for supporting students’ approaches to statistical investigations</em>. Friday Institute for Educational Innovation, NC State University. <a href="https://hirise.fi.ncsu.edu/resources-2/tsdi_resources/supporting-students-statistical-investigations/">https://hirise.fi.ncsu.edu/resources-2/tsdi_resources/supporting-students-statistical-investigations/</a>
+</div>
+<div id="ref-NCTM1989" class="csl-entry">
+NCTM. (1989). <em>Curriculum and evaluation standards for school mathematics</em>. National Council of Teachers of Mathematics.
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="4">
+<li id="fn4"><p><a href="https://www.statista.com/statistics/585152/people-shot-to-death-by-us-police-by-race/" class="uri">https://www.statista.com/statistics/585152/people-shot-to-death-by-us-police-by-race/</a> retrieved August 1, 2020<a href="teaching-and-learning-of-data-analysis-and-statistics.html#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="normal-subgroups-and-factor-groups.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-transformations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="statistics-data-analysis-and-mathematics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ch-data-explore.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

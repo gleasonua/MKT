@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers</title>
+  <title>13.1 Statistics, Data Analysis, and Mathematics | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="13.1 Statistics, Data Analysis, and Mathematics | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11.3 Group Homomorphisms Revisited | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="13.1 Statistics, Data Analysis, and Mathematics | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="normal-subgroups-and-factor-groups.html"/>
-<link rel="next" href="ch-transformations.html"/>
+<link rel="prev" href="ch-data1.html"/>
+<link rel="next" href="teaching-and-learning-of-data-analysis-and-statistics.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -562,77 +562,60 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="group-homomorphisms-revisited" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Group Homomorphisms Revisited</h2>
-<p>Recall the following definition of group homomorphism and isomorphism.</p>
-<div class="definition">
-<p><span id="def:unlabeled-div-225" class="definition"><strong>Definition 11.5  </strong></span>A map, <span class="math inline">\(\phi\)</span>, from a group <span class="math inline">\((G,*)\)</span> to a group <span class="math inline">\((G&#39;,\cdot)\)</span> is called a <strong>homomorphism</strong> if <span class="math display">\[ \phi(a*b)=\phi(a) \cdot \phi(b)\]</span> for every <span class="math inline">\(a,b\in G\)</span>. If <span class="math inline">\(\phi\)</span> is also a bijection, then we say that <span class="math inline">\(\phi\)</span> is an <strong>isomorphism</strong>.</p>
+<div id="statistics-data-analysis-and-mathematics" class="section level2" number="13.1">
+<h2><span class="header-section-number">13.1</span> Statistics, Data Analysis, and Mathematics</h2>
+<p>Most people think of statistics and data analysis as part of the field of mathematics. While statistics and data analysis use a great many mathematical ideas, they are different in many ways. The development of statistics and data analysis out of mathematics in the nineteenth and twentieth centuries parallels the development of physics in the seventeenth and eighteenth centuries and computer science in the nineteenth and twentieth centuries. Each of these disciplines include vast applications of mathematics (physics uses fields such as calculus, differential geometry, and Hilbert spaces; computer science often uses set theory, abstract algebra, and numerical analysis; and statistics and data analysis makes use of topics such as probability, real analysis, and linear algebra). However, the language, goals, methods, and culture of these disciplines are distinct from one another.</p>
+<p>Since the middle of the nineteenth century, the field of mathematics moved from the study of quantities to the study of abstract structures, built upon the foundation of logic and set theory. On the other hand, statistics as a discipline is grounded in the study of quantities within their original context. George Cobb and David Moore <span class="citation">(<a href="#ref-Cobb1997" role="doc-biblioref">1997</a>)</span> describe the differences very well.</p>
+<blockquote>
+<p>Although mathematicians often rely on applied context both for motivation and as a source of problems for research, the ultimate focus in mathematical thinking is on abstract patterns: the context is part of the irrelevant detail that must be boiled off over the flame of abstraction in order to reveal the previously hidden crystal of pure structure. In mathematics, context obscures structure. Like mathematicians, data analysts also look for patterns, but ultimately, in data analysis, whether the patterns have meaning, and whether they have any value, depends on how the threads of those patterns interweave with the complementary threads of the story line. In data analysis, context provides meaning. (p. 803)</p>
+</blockquote>
+<p>In many ways one can think of <strong>data analysis</strong> as a process that involves the study of quantitative patterns within a situated context. Just as cooking takes many different raw ingredients and puts them together in unique ways using many different tools in order to create something to eat, data analysis takes raw data from a certain context and cleans it, transforms it, analyzes it, and reconfigures the generated information for consumption of better understanding of the context and making decisions about it. Hence, data analysis is an inherently inter-disciplinary process focused activity.</p>
+<p>A <strong>statistic</strong> is a quantity computed from values in a collection of values. Some examples are a mean, median, or standard deviation computed from a set of numbers. It could also be a percentage of people that have a driver’s license, or the number of people in a building at a certain time of day. It could also be the probability that someone will be diagnosed with cancer based upon other measurable health, physical, or sociological variables. The science of <strong>statistics</strong> uses these various quantities and ideas from the theory of probability distributions to process data and represent it in different ways. So we can think of statistics as a methodological discipline comprised of a vast set of tools used to analyze and interpret data.</p>
+<p>A <strong>descriptive statistic</strong> is a summary statistic to quantitatively describe a collection of information. <strong>Descriptive statistics</strong> is the process of using those statistics to understand data and the context from which the data is derived. This could include describing properties of the data using graphs or tables. It could also describe how two variables are related using scatter plots and correlation coefficients. A key aspect of descriptive statistics is that these describe the data. These do not, by themselves, tell us anything about a population.</p>
+<p><strong>Inferential statistics</strong> uses samples to infer properties about a larger population, while descriptive statistics focuses on properties of the observed data. As such, inferential statistics uses descriptive statistics of a population of inference, <strong>sample statistic</strong>, along with assumptions about the underlying probability distribution of the population of interest to estimate a <strong>population parameter</strong>.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-289" class="example"><strong>Example 13.1  </strong></span>Assume we are interested in exploring how height varies between boys and girls in the United States as they age. We ask our fellow teachers to collect data on age (in months) and height (in inches) for us, so we end up with data from 429 students between the ages of 11 and 17 from a single school district in the United States.</p>
+<ul>
+<li><p>(Population versus sample:) The population is the universe of things that fit the criteria of the thing you want to study. It is also described as the <strong>population of interest or inference</strong>. The sample is the set of objects on which you actually have measurements. In our example, the population of interest is the set of students in the United States. Our sample is the students between the ages of 11 and 17 in a single school district in the United States from which we received data.</p></li>
+<li><p>(Descriptive statistics versus inferential statistics:) The descriptive statistics of the average height, and related standard deviation, of 12-year-old boys in the sample is a sample statistic that is used to estimate the population parameters of the mean and standard deviation of all 12-year-old boys in the United States.</p></li>
+</ul>
 </div>
-<p>Now that we know when two groups are isomorphic to one another, we turn to looking at how “different” two groups are that are not isomorphic, but have a homomorphism between them by looking at the set of points of the domain that are mapped to the identity. This provides information about how far away the group homomorphism is from a one-to-one function .</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-226" class="theorem"><strong>Theorem 11.6  </strong></span>Let <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> be a group homomorphism. The set <span class="math inline">\(\left\{ a\in G : \phi(a)=e&#39; \right\}\)</span>, where <span class="math inline">\(e&#39;\)</span> is the identity in <span class="math inline">\(G&#39;\)</span>, is a subgroup of <span class="math inline">\(G\)</span> and is called the kernel of <span class="math inline">\(\phi\)</span>, denoted by <span class="math inline">\(\mbox{Ker}(\phi)\)</span>.</p>
+<p>Since data analysis is a process discipline and statistics is a methodological discipline, both embedded in context, working within these disciplines is not a practice of solving problems, proving theorems, or getting results. It is instead a process of making arguments for certain conclusions based upon the process of observing and analyzing data within a context from which the data is derived. This means that there are no ‘right’ answers, only strong or weak arguments.</p>
+<p>The next few chapters focus on using statistical techniques in the data analysis process. So the distinctions between these two terms will blur as we walk in the overlap between them.</p>
+<div id="the-centrality-of-variability" class="section level3" number="13.1.1">
+<h3><span class="header-section-number">13.1.1</span> The Centrality of Variability</h3>
+<p>Variability underlies everything around us, particularly in quantitative situations. As such, variability is the foundation of statistics.</p>
+<blockquote>
+<p>Individuals vary. Repeated measurements on the same individual vary. In some circumstances, we want to find unusual individuals in an overwhelming mass of data. In others, the focus is on the variation of measurements. In yet others, we want to detect systematic effects against the background noise of individual variation. Statistics provides means for dealing with data that take into account the omnipresence of variability <span class="citation">(<a href="#ref-Cobb1997" role="doc-biblioref">Cobb &amp; Moore, 1997, p. 801</a>)</span></p>
+</blockquote>
+<p>Certain situations lend themselves to a deterministic model using mathematical functions. These could include computing the volume of a swimming pool based on certain assumptions about its dimensions. However, estimating the cost of building a swimming pool requires probabilistic models involving statistics. For example, one cannot know exactly how much concrete will be needed for the swimming pool since there is variability in the mixing of the concrete, the effects of temperature and humidity on the application of the concrete, the inability to have perfectly shaped forms used to pour the concrete, and many other factors. So when ordering the concrete for the swimming pool, the contractor needs to take into account the variability of these factors and order an amount of concrete for which he is sufficiently confident he can complete the job. However, he would also not want to order an excess amount of concrete in order to keep down the cost of the project.</p>
+<p>The more we learn about the world the more we understand how probabilistic models do a better job of describing our world than deterministic models. For that reason, we predict hurricane paths with a cone of certainty. We can understand how the better sports team lost a game, even though they had an 80% chance of winning.</p>
+<p>The goal of statistics is to better understand and quantify the variability in a certain context. We can then interpret and apply this information as we study situations and improve our abilities to make decisions.</p>
 </div>
-<div class="proof">
-<p><span id="unlabeled-div-227" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(\phi\)</span> is a group homomorphism, if <span class="math inline">\(e\)</span> is the identity in <span class="math inline">\(G\)</span>, <span class="math inline">\(\phi(a)=\phi(a*e)=\phi(a)*\phi(e)\)</span> for all <span class="math inline">\(a\in G\)</span>. So <span class="math inline">\(\phi(e)\)</span> is the identity in <span class="math inline">\(G&#39;\)</span>. Therefore, <span class="math inline">\(e \in \mbox{Ker}(\phi)\)</span>.</p>
-<p>If <span class="math inline">\(a,b \in \mbox{Ker}(\phi)\)</span>, then <span class="math display">\[ \phi(a*b)=\phi(a) \cdot \phi(b) = e&#39; \cdot e&#39; = e&#39; \]</span> and so <span class="math inline">\(a*b \in \mbox{Ker}(\phi)\)</span>.</p>
-<p>If <span class="math inline">\(a\in \mbox{Ker}(\phi)\)</span>, then <span class="math display">\[\phi(a^{-1}) = \phi(a^{-1})\cdot e&#39; = \phi(a^{-1})\cdot \phi(a) = \phi(a^{-1}*a) = \phi(e)=e&#39;\]</span> and so <span class="math inline">\(a^{-1}\in \mbox{Ker}(\phi)\)</span>.</p>
-<p>Therefore, <span class="math inline">\(\mbox{Ker}(\phi)\)</span> is a subgroup of <span class="math inline">\(G\)</span>.</p>
-</div>
-<p>Now that we know that the kernel of a group homomorphism is a subgroup, we prove that it is in fact a normal subgroup.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-228" class="theorem"><strong>Theorem 11.7  </strong></span>If <span class="math inline">\(\phi:G \rightarrow G&#39;\)</span> is a group homomorphism, then <span class="math inline">\(\mbox{Ker}(\phi) \vartriangleleft G\)</span>.</p>
-</div>
-<div class="proof">
-<p><span id="unlabeled-div-229" class="proof"><em>Proof</em>. </span>By the previous theorem, we have proven that <span class="math inline">\(\mbox{Ker}(\phi)\)</span> is a subgroup of <span class="math inline">\(G\)</span>. Thus it is sufficient to prove that <span class="math display">\[g \mbox{Ker}(\phi)= \mbox{Ker}(\phi) g \quad \forall g\in G.\]</span></p>
-<p>Let <span class="math inline">\(g\in G\)</span> and let <span class="math inline">\(a \in \left\{ x \in G : \phi(x)= \phi(g) \right\}\)</span>. Then since <span class="math inline">\(\phi(a)=\phi(g)\)</span>, we can multiply both sides of the equation by <span class="math inline">\(\phi(g)^{-1}\)</span> on the left (respectively right) and we have that
-<span class="math display">\[\phi(g)^{-1} \phi(a) = e&#39; \quad \left(\mbox{respectively }  \phi(a) \phi(g)^{-1} =e&#39; \right).\]</span>
-Since <span class="math inline">\(\phi\)</span> is a homomorphism, this is equivalent to
-<span class="math display">\[\phi(g^{-1} a) =e&#39; \quad \left( \mbox{repectively }  \phi( a g^{-1}) =e&#39; \right) .\]</span>
-So <span class="math inline">\(g^{-1}a\)</span> and <span class="math inline">\(a g^{-1}\)</span> are elements of <span class="math inline">\(\mbox{Ker}(\phi)\)</span>. Therefore, since <span class="math inline">\(a= g (g^{-1}a)\)</span> and <span class="math inline">\(a= (a g^{-1})g\)</span>, we have that <span class="math inline">\(a \in g \mbox{Ker}(\phi)\)</span> and <span class="math inline">\(a \in \mbox{Ker}(\phi) g\)</span> and so
-<span class="math display">\[\left\{ x \in G : \phi(x)= \phi(g)  \right\} \subseteq g \mbox{Ker}(\phi) \quad \mbox{and} \quad \left\{ x \in G : \phi(x)= \phi(g)  \right\} \subseteq \mbox{Ker}(\phi) g\]</span></p>
-<p>Let <span class="math inline">\(a \in g \mbox{Ker}(\phi)\)</span>. Then there exists a <span class="math inline">\(b\in \mbox{Ker}(\phi)\)</span> such that <span class="math inline">\(a=gb\)</span>. Thus <span class="math inline">\(b=g^{-1}a\)</span> and so <span class="math inline">\(e&#39;=\phi(b) = \phi(g^{-1} a) = \phi(g)^{-1} \phi(a)\)</span> and so <span class="math inline">\(\phi(a)=\phi(g)\)</span>. Similarly if <span class="math inline">\(a \in \mbox{Ker}(\phi)\)</span>, then <span class="math inline">\(\phi(a)=\phi(g)\)</span>.</p>
-<p>Therefore, <span class="math display">\[g \mbox{Ker}(\phi) =   \left\{ x \in G : \phi(x)= \phi(g)  \right\} = \mbox{Ker}(\phi) g\]</span> and so <span class="math inline">\(\mbox{Ker}(\phi) \vartriangleleft G\)</span>.</p>
-</div>
-<p>So we have shown that for every homomorphism, the kernel of the homomorphism is a normal subgroup. Alternatively, if we start with a normal subgroup, we can create a homomorphism for which the normal subgroup is equal to the kernel.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-230" class="theorem"><strong>Theorem 11.8  </strong></span>Let <span class="math inline">\(G\)</span> be a group and let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(G\)</span>. Then the function <span class="math inline">\(\gamma: G \rightarrow \frac{G}{N}\)</span> defined by <span class="math inline">\(\gamma(g)=gN\)</span> is a group homomorphism and <span class="math inline">\(\mbox{Ker}(\gamma) = N\)</span>.</p>
-</div>
-<div class="proof">
-<p><span id="unlabeled-div-231" class="proof"><em>Proof</em>. </span>Because <span class="math display">\[\gamma(g_1 g_2) = (g_1 g_2) N = \left(g_1 N\right) \left(g_2 N\right) = \gamma(g_1) \gamma(g_2)\]</span> we know that <span class="math inline">\(\gamma\)</span> is a group homomorphism.</p>
-<p>Since the only elements <span class="math inline">\(g \in G\)</span> such that <span class="math inline">\(gN=N\)</span> are the elements of <span class="math inline">\(N\)</span>, we have that <span class="math inline">\(\mbox{Ker}(\gamma)=N\)</span>.</p>
-</div>
-<p>This means that there is a strong relationship between normal subgroups and kernels of group homomorphisms. This leads us to one of the most important theorems in basic group theory.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-232" class="theorem"><strong>Theorem 11.9  (Fundamental Homomorphism Theorem) </strong></span>Let <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> be a group homomorphism with kernel <span class="math inline">\(\mbox{Ker}(\phi)\)</span>. Then <span class="math inline">\(\phi(G)\)</span> is a group and the map
-<span class="math display">\[\hat{\phi} : \frac{G}{\mbox{Ker}(\phi)} \rightarrow \phi(G)\]</span> defined by <span class="math inline">\(\hat{\phi} \left( a \mbox{Ker}(\phi)\right) = \phi(a)\)</span> is an isomorphism.</p>
-</div>
-<div class="proof">
-<p><span id="unlabeled-div-233" class="proof"><em>Proof</em>. </span>We first need to prove that <span class="math inline">\(\phi(G)\)</span> is a subgroup of <span class="math inline">\(G&#39;\)</span>. Since <span class="math inline">\(\phi\)</span> is a homomorphism, <span class="math inline">\(\phi(G)\)</span> is closed under the binary operation. From Theorems <a href="sec-groups.html#thm:homomorphism-identity">6.3</a> and <a href="sec-groups.html#thm:homomorphism-inverse">6.4</a> we have that the identity of <span class="math inline">\(G&#39;\)</span> is in <span class="math inline">\(\phi(G)\)</span> and if <span class="math inline">\(\phi(a)\in \phi(G)\)</span> then <span class="math inline">\(\phi(a)^{-1}\in \phi(G)\)</span>. So <span class="math inline">\(\phi(G)\)</span> is a subgroup of <span class="math inline">\(G&#39;\)</span>.</p>
-<p>If <span class="math inline">\(a\)</span> and <span class="math inline">\(a&#39;\)</span> are two elements of <span class="math inline">\(G\)</span> such that <span class="math inline">\(a \mbox{Ker}(\phi) = a&#39; \mbox{Ker}(\phi)\)</span>, we know that there are elements <span class="math inline">\(b\)</span> and <span class="math inline">\(b&#39;\)</span> in <span class="math inline">\(\mbox{Ker}(\phi)\)</span> such that <span class="math inline">\(a b = a&#39; b&#39;\)</span>. So <span class="math inline">\(a&#39;= ab (b&#39;)^{-1}\)</span> and <span class="math display">\[\phi(a&#39;) = \phi(ab (b&#39;)^{-1}) = \phi(a) \phi(b) \phi(b&#39;)^{-1} = \phi(a)\]</span> so <span class="math inline">\(\hat{\phi}\)</span> is well-defined.</p>
-<p>If <span class="math inline">\(a \mbox{Ker}(\phi)\)</span> and <span class="math inline">\(b \mbox{Ker}(\phi)\)</span> then <span class="math display">\[\hat{\phi} \left( \left(a \mbox{Ker}(\phi) \right) \left((b \mbox{Ker}(\phi)\right) \right) = \hat{\phi} \left( (ab) \mbox{Ker}(\phi) \right) = \phi(ab) = \phi(a) \phi(b) = \hat{\phi}\left( a \mbox{Ker}(\phi)\right) \hat{\phi} \left(b \mbox{Ker}(\phi)\right)\]</span> and so <span class="math inline">\(\hat{\phi}\)</span> is a homomorphism.</p>
-<p>If <span class="math inline">\(a \mbox{Ker}(\phi)\)</span> is in the kernel of <span class="math inline">\(\hat{\phi}\)</span>, we know that <span class="math inline">\(\phi(a)\)</span> is the identity of <span class="math inline">\(G&#39;\)</span> and so <span class="math inline">\(a\in \mbox{Ker}(\phi)\)</span>. This implies that <span class="math inline">\(a \mbox{Ker}(\phi)= \mbox{Ker}(\phi)\)</span> and so <span class="math inline">\(\mbox{Ker}(\hat{\phi}) = \mbox{Ker}(\phi)\)</span> and so <span class="math inline">\(\hat{\phi}\)</span> is one-to-one. By the definition of <span class="math inline">\(\phi(G)\)</span> we know that <span class="math inline">\(\hat{\phi}\)</span> is onto and so is a bijection.</p>
-<p>Therefore, <span class="math inline">\(\hat{\phi}\)</span> is an isomorphism.</p>
-</div>
-<p>The prior two theorems can be summarized in the following commutative diagram.</p>
-<p><img src="tikz/homomorphism_commutative_diagram.png" width="20%" style="display: block; margin: auto;" /></p>
-<div id="exercises-49" class="section level3" number="11.3.1">
-<h3><span class="header-section-number">11.3.1</span> Exercises</h3>
+<div id="exercises-58" class="section level3" number="13.1.2">
+<h3><span class="header-section-number">13.1.2</span> Exercises</h3>
 <ol style="list-style-type: decimal">
-<li><p>Use the Fundamental Homomorphism Theorem to prove that
-<span class="math display">\[\frac{\mathbb{R}}{ \left\{2\pi n | n \in \mathbb{Z}\right\} } \cong \left\{ z \in \mathbb{C} \: | \: |z|=1 \right\}\]</span></p></li>
-<li><p>Use the Fundamental Homomorphism Theorem to prove that <span class="math display">\[(\mathbb{R},+) \cong (\mathbb{R}^+,\cdot)\]</span></p></li>
+<li><p>Investigate the origins of the fields of data analysis and statistics and compare them to the history of the field of mathematics.</p></li>
+<li><p>Find 3 unrelated careers that use data analysis as a key aspect of their daily work and describe them.</p></li>
+<li><p>What are some possible contributors to variability in scores on a class exam?</p></li>
+<li><p>With most news reports about the stock market, the rise or fall of the stock index is usually attributed to one or two key news events of the day. This represents a deterministic way of thinking. What would a similar report about the stock market look like that had a more probabilistic way of thinking?</p></li>
+<li><p>Write a short paragraph describing a scenario in which you would use a sample statistic to infer something about a population parameter. Clearly identify the sample, population, statistic, and parameter in your example. Be as specific as possible, and do not use any example discussed in the book or in class.</p></li>
 </ol>
-
 </div>
 </div>
-<!-- </div> -->
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Cobb1997" class="csl-entry">
+Cobb, G. W., &amp; Moore, D. S. (1997). Mathematics, statistics, and teaching. <em>The American Mathematical Monthly</em>, <em>104</em>(9), 801–823. <a href="https://doi.org/10.1080/00029890.1997.11990723">https://doi.org/10.1080/00029890.1997.11990723</a>
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="normal-subgroups-and-factor-groups.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-transformations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-data1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="teaching-and-learning-of-data-analysis-and-statistics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

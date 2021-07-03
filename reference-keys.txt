@@ -332,6 +332,9 @@ thm:unlabeled-div-281
 thm:unlabeled-div-283
 thm:unlabeled-div-285
 thm:unlabeled-div-287
+exm:unlabeled-div-289
+fig:gaise-process
+fig:sasi
 ch:MathEdFoundations
 section:MKT
 common-content-knowledge
@@ -626,6 +629,12 @@ complex-plane-5
 compositions-2
 exercises-57
 ch:data1
+statistics-data-analysis-and-mathematics
+the-centrality-of-variability
+exercises-58
+teaching-and-learning-of-data-analysis-and-statistics
+statistical-habits-of-mind
+exercises-59
 ch:data-explore
 ch:simulations
 ch:parameters
