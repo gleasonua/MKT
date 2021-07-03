@@ -507,9 +507,25 @@ div.csl-indent {
 <li class="chapter" data-level="12.5.4" data-path="reflections-1.html"><a href="reflections-1.html#compositions-1"><i class="fa fa-check"></i><b>12.5.4</b> Compositions</a></li>
 <li class="chapter" data-level="12.5.5" data-path="reflections-1.html"><a href="reflections-1.html#exercises-54"><i class="fa fa-check"></i><b>12.5.5</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="12.6" data-path="glide-reflections.html"><a href="glide-reflections.html"><i class="fa fa-check"></i><b>12.6</b> Glide-Reflections</a></li>
-<li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a></li>
-<li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a></li>
+<li class="chapter" data-level="12.6" data-path="glide-reflections.html"><a href="glide-reflections.html"><i class="fa fa-check"></i><b>12.6</b> Glide-Reflections</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="glide-reflections.html"><a href="glide-reflections.html#synthetic-plane-4"><i class="fa fa-check"></i><b>12.6.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.6.2" data-path="glide-reflections.html"><a href="glide-reflections.html#complex-plane-4"><i class="fa fa-check"></i><b>12.6.2</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.6.3" data-path="glide-reflections.html"><a href="glide-reflections.html#exercises-55"><i class="fa fa-check"></i><b>12.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="group-of-isometries.html"><a href="group-of-isometries.html#exercises-56"><i class="fa fa-check"></i><b>12.7.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a>
+<ul>
+<li class="chapter" data-level="12.8.1" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#synthetic-plane-5"><i class="fa fa-check"></i><b>12.8.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.8.2" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#cartesian-plane-1"><i class="fa fa-check"></i><b>12.8.2</b> Cartesian Plane</a></li>
+<li class="chapter" data-level="12.8.3" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#vector-space-1"><i class="fa fa-check"></i><b>12.8.3</b> Vector Space</a></li>
+<li class="chapter" data-level="12.8.4" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#complex-plane-5"><i class="fa fa-check"></i><b>12.8.4</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.8.5" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#compositions-2"><i class="fa fa-check"></i><b>12.8.5</b> Compositions</a></li>
+<li class="chapter" data-level="12.8.6" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#exercises-57"><i class="fa fa-check"></i><b>12.8.6</b> Exercises</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
 <li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
@@ -537,152 +553,102 @@ div.csl-indent {
 <div id="group-of-isometries" class="section level2" number="12.7">
 <h2><span class="header-section-number">12.7</span> Group of Isometries</h2>
 <p>Now that we know that every isometry is a translation, rotation, reflection, or glide-reflection, we will look at this set of isometries more deeply and see how they all fit together.</p>
-<!---
-
-:::: {.standards data-latex=""}
-:::{.center data-latex=""}
-### **Related Content Standards** {-}
-:::
-+ (HSG.CO.5) Given a geometric figure and a rotation, reflection, or translation, draw the transformed figure using, e.g., graph paper, tracing paper, or geometry software. Specify a sequence of transformations that will carry a given figure onto another.
-+ (HSG.CO.6) Use geometric descriptions of rigid motions to transform figures and to predict the effect of a given rigid motion on a given figure; given two figures, use the definition of congruence in terms of rigid motions to decide if they are congruent.
-::::
-
-
-% Orientation
-We will call the translations and rotations \textbf{orientation preserving}\index{Orientation} because they preserve the order of the vertices of a triangle when viewed in a clockwise direction. The reflections and glide-reflections, on the other hand, change the order of the vertices and so we call these isometries \textbf{orientation reversing}.
-
-
-% 3 reflection theorem
-\begin{theorem}[Three-Reflection Theorem]
-    Every isometry can be written as a composition of at most three reflections.
-\end{theorem}
-
-\begin{proof}
-    Let $f$ be an isometry. Then $f$ is a translation, rotation, reflection, or glide-reflection.
-    
-    If $f$ is a translation that takes a point $A$ to a point $B$, then we can find the midpoint of $\overline{AB}$ and call that point $C$. We can then construct lines $m$ and $n$ through $A$ and $C$, respectively, so that $m$ and $n$ are perpendicular to $\overleftrightarrow{AB}$. Then $f=r_n \circ r_m$ and so can be written as a composition of two reflections.
-    
-    If $f$ is a rotation through the point $C=(h,k)$ with an angle of $\theta$, we can use the Cartesian perspective and let $m$ be the line $y=k$ and let $n$ be the line $y= \tan\left( \frac{\theta}{2}\right) (x-h) +k$. Then $f= r_n \circ r_m$ and so can be written as a composition of two reflections.
-    
-    Any reflection is already written as a composition of a reflection.
-    
-    Since glide-reflections are a composition of a reflection and a translation, and since translations can be written as a composition of two reflections, glide-reflections can be written as a composition of three reflections.    
-\end{proof}
-
-From the proof above, we see that transformations that can be written as an odd number of reflections are orientation reversing, while those that can be written as an even number of reflections are orientation preserving. So, in a way, the orientation of the isometry is similar to a number being positive or negative. 
-
-When looking at the complex plane representation of the isometries, we see that the orientation preserving isometries are of the form $f(z)=az+b$ and the orientation reversing isometries are of the form $f(z)=a\overline{z}+b$. We will use this information to see how the behavior of an isometry on three distinct points determines the isometry.
-
-% 3 point theorem
-\begin{theorem}[Three Point Theorem]
-    Let $A$, $B$, and $C$ be three points in the plane that are not co-linear. Then any isometry, $f$,  is determined by the locations of $f(A)$, $f(B)$, and $f(C)$.
-\end{theorem}
-
-
-\begin{proof}
-    We will let $f$ be an isometry. We will use the perspective of the complex plane and let $z_1$, $z_2$, and $z_3$ be three points that are not co-linear. Then we set $w_1=f(z_1)$, $w_2=f(z_2)$, and $w_3=f(z_3)$.
-    
-    In order to determine the orientation of the isometry we will use properties of the angles between the segments connecting the corresponding complex numbers. We can set $z_1$ and $w_1$ as our points of reference and then look at the relationship of the other points to these. We can measure the angle from $z_2-z_1$ to $z_3-z_1$ as 
-    $$\mbox{arg}(z_3-z_1)-\mbox{arg}(z_2-z_1) = \mbox{arg}\left(\frac{z_3-z_1}{z_2-z_1}\right).$$
-    Similarly, the angle from $w_2-w_1$ to $w_3-w_1$ is
-    $$\mbox{arg} \left( \frac{w_3-w_1}{w_2-w_1}\right).$$ If these arguments are the same, then the isometry is orientation preserving and if they are additive inverses of each other the isometry is orientation reversing. This can most easily be checked by comparing the ratios
-    $$\frac{w_3-w_1}{w_2-w_1} \quad \mbox{and} \quad \frac{z_3-z_1}{z_2-z_1}.$$ If the ratios are equal, then the isometry is orientation preserving. If the ratios are complex conjugates of each other the isometry is orientation reversing.
-    
-    Once we have determined if the isometry is orientation preserving or orientation reversing we can see how the equation of the isometry is determined.
-    
-    If $f$ is orientation preserving, $f(z)=az+b$ for some $a,b\in \mathbb{C}$ with $|a|=1$. Using the three points we have the following system of equations
-    $$\begin{matrix} w_1=a z_1 + b \\
-                w_2=a z_2+b \\
-                w_3=a z_3+b 
-        \end{matrix}$$
-    Using the first two equations we can determine that 
-    $$a=\frac{w_2-w_1}{z_2-z_1}.$$
-    Then from the third point we see that $$f(z) = \frac{w_2-w_1}{z_2-z_1} (z-z_3) + w_3.$$
-    
-    If $f$ is orientation reversing, $f(z)=a\overline{z}+b$ for some $a,b\in \mathbb{C}$ with $|a|=1$. Then following a similar process to the one above we see that 
-    $$f(z)= \frac{w_2-w_1}{\overline{(z_2-z_1)}} \overline{(z-z_3)} + w_3.$$
-\end{proof}
-
-
-% Fixed points
-
-
-\begin{Exercise}
-
-    \Question Classify the transformation $f$ as one of the four types of isometries from its formula in the complex plane.
-    
-        \begin{enumerate}[a)]
-            \item $\displaystyle{f(z)=\left( \frac{1}{\sqrt{2}} - \frac{i}{\sqrt{2}} \right) z +i}$
-            \item $\displaystyle{f(z)=\left( \frac{1}{\sqrt{2}} - \frac{i}{\sqrt{2}} \right) \overline{z} +i}$
-            \item $\displaystyle{f(z)=i\overline{z}-2}$
-            \item $\displaystyle{f(z)=z-2+i}$
-        \end{enumerate}
-
-
-    
-    
-    \Question Identify the following compositions where $ABCD$ is the square below. (You may need to draw additional points.)
-    \begin{center}
-       \includegraphics[angle=0,width=6 in,clip=true,trim= 0 0 0 0]{images/transformationgraph}
-    \end{center}
-    \begin{enumerate} [a)]
-        \item ${\displaystyle R_{A,\frac{\pi}{2}} \circ R_{B,\frac{\pi}{2}}}$
-        \item ${\displaystyle R_{A,\frac{\pi}{2}} \circ T_{\stackrel{\longrightarrow}{CA}}}$
-        \item ${\displaystyle T_{\stackrel{\longrightarrow}{BC}} \circ T_{\stackrel{\longrightarrow}{AD}}}$
-        \item ${\displaystyle T_{\stackrel{\longrightarrow}{AB}} \circ R_{A,\frac{\pi}{3}}}$
-        \item ${\displaystyle T_{\stackrel{\longrightarrow}{AB}} \circ g_{\stackrel{\longrightarrow}{DC}}}$
-        \item ${\displaystyle r_{AD} \circ R_{C,\frac{\pi}{2}}}$
-        \item ${\displaystyle g_{\stackrel{\longrightarrow}{AC}} \circ g_{\stackrel{\longrightarrow}{BD}}}$
-        \item ${\displaystyle r_{AD} \circ T_{\stackrel{\longrightarrow}{AB}}}$
-    \end{enumerate}
-    
-
-
-    \Question Perform the following two transformations on the graph below with each square representing 1 square unit. After each transformation, draw the resulting image of segment $\overline{PQ}$.
-            \begin{center}
-        \includegraphics[width=3.25in]{images/transformgraph}
-        \end{center}
-        \begin{enumerate}[a)]
-            \item Rotate the segment $90^\circ$ counterclockwise about point $P$ . Label the resulting segment $I$. Find an algebraic representation of this rotation using a function of the complex plane and label this function $f$.
-            \item Reflect the segment $I$ you drew in the first part across the $x$ -axis. Label the resulting segment $II$.  Find an algebraic representation of this reflection using a function of the complex plane and label this function $g$.
-            \item  Find an algebraic representation of the composition of the two transformations using a function of the complex plane and label this function $h$.
-        \end{enumerate}
-
-    \Question What are the coordinates of the image of $\triangle ABC$ after a reflection across the $y$-axis followed by a rotation of $90^\circ$ clockwise about the origin?  Show your work, including a graph of the image of the triangle after each transformation, and explain how you found your answer. 
-
-        \begin{center}
-            \includegraphics[width=2.75in]{images/Transformation_Triangle2}
-        \end{center}
-    
-    \newpage
-    \Question Find an algebraic representation of the rigid motion that takes $\triangle ABC$ onto $\triangle A'B'C'$. Explain your method for finding the transformation and why that method would work.
-        \begin{center}
-            \includegraphics[width=4in]{images/Transformation_Triangles}
-        \end{center}
-    
-
-    \Question Let $I$ be the set of isometries of the plane, i.e. $$ I= \left\{ f:\mathbb{C} \rightarrow \mathbb{C} | f(z)=az+b \: \mbox{or} \: f(z)=a\overline{z}+b \quad \mbox{with }  |a|=1 \right\}.$$
-    
-    Let $g\in I$, and $\phi_g : I \rightarrow I$ be the function defined by $$\phi_g (f) = g^{-1} f g.$$
-    
-    Prove that $\phi_g$
-        \begin{enumerate}[a)]
-            \item maps the identity function to itself
-            \item is one-to-one
-            \item is onto
-            \item maps translations to translations
-            \item maps rotations to rotations
-            \item maps reflections to reflections
-        \end{enumerate}
-    
-
-        
-            
-
-\end{Exercise}
-
-
---->
+<div class="standards">
+<div id="related-content-standards-86" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSG.CO.5) Given a geometric figure and a rotation, reflection, or translation, draw the transformed figure using, e.g., graph paper, tracing paper, or geometry software. Specify a sequence of transformations that will carry a given figure onto another.</li>
+<li>(HSG.CO.6) Use geometric descriptions of rigid motions to transform figures and to predict the effect of a given rigid motion on a given figure; given two figures, use the definition of congruence in terms of rigid motions to decide if they are congruent.</li>
+</ul>
+</div>
+<!--- % Orientation --->
+<p>We will call the translations and rotations <strong>orientation preserving</strong> because they preserve the order of the vertices of a triangle when viewed in a clockwise direction. The reflections and glide-reflections, on the other hand, change the order of the vertices and so we call these isometries <strong>orientation reversing</strong>.</p>
+<!--- % 3 reflection theorem --->
+<div class="theorem">
+<p><span id="thm:unlabeled-div-285" class="theorem"><strong>Theorem 12.21  (Three-Reflection Theorem) </strong></span>Every isometry can be written as a composition of at most three reflections.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-286" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(f\)</span> be an isometry. Then <span class="math inline">\(f\)</span> is a translation, rotation, reflection, or glide-reflection.</p>
+<p>If <span class="math inline">\(f\)</span> is a translation that takes a point <span class="math inline">\(A\)</span> to a point <span class="math inline">\(B\)</span>, then we can find the midpoint of <span class="math inline">\(\overline{AB}\)</span> and call that point <span class="math inline">\(C\)</span>. We can then construct lines <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> through <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, respectively, so that <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are perpendicular to <span class="math inline">\(\overleftrightarrow{AB}\)</span>. Then <span class="math inline">\(f=r_n \circ r_m\)</span> and so can be written as a composition of two reflections.</p>
+<p>If <span class="math inline">\(f\)</span> is a rotation through the point <span class="math inline">\(C=(h,k)\)</span> with an angle of <span class="math inline">\(\theta\)</span>, we can use the Cartesian perspective and let <span class="math inline">\(m\)</span> be the line <span class="math inline">\(y=k\)</span> and let <span class="math inline">\(n\)</span> be the line <span class="math inline">\(y= \tan\left( \frac{\theta}{2}\right) (x-h) +k\)</span>. Then <span class="math inline">\(f= r_n \circ r_m\)</span> and so can be written as a composition of two reflections.</p>
+<p>Any reflection is already written as a composition of a reflection.</p>
+<p>Since glide-reflections are a composition of a reflection and a translation, and since translations can be written as a composition of two reflections, glide-reflections can be written as a composition of three reflections.</p>
+</div>
+<p>From the proof above, we see that transformations that can be written as an odd number of reflections are orientation reversing, while those that can be written as an even number of reflections are orientation preserving. So, in a way, the orientation of the isometry is similar to a number being positive or negative.</p>
+<p>When looking at the complex plane representation of the isometries, we see that the orientation preserving isometries are of the form <span class="math inline">\(f(z)=az+b\)</span> and the orientation reversing isometries are of the form <span class="math inline">\(f(z)=a\overline{z}+b\)</span>. We will use this information to see how the behavior of an isometry on three distinct points determines the isometry.</p>
+<!--- % 3 point theorem --->
+<div class="theorem">
+<p><span id="thm:unlabeled-div-287" class="theorem"><strong>Theorem 12.22  (Three Point Theorem) </strong></span>Let <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span>, and <span class="math inline">\(C\)</span> be three points in the plane that are not co-linear. Then any isometry, <span class="math inline">\(f\)</span>, is determined by the locations of <span class="math inline">\(f(A)\)</span>, <span class="math inline">\(f(B)\)</span>, and <span class="math inline">\(f(C)\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-288" class="proof"><em>Proof</em>. </span>We will let <span class="math inline">\(f\)</span> be an isometry. We will use the perspective of the complex plane and let <span class="math inline">\(z_1\)</span>, <span class="math inline">\(z_2\)</span>, and <span class="math inline">\(z_3\)</span> be three points that are not co-linear. Then we set <span class="math inline">\(w_1=f(z_1)\)</span>, <span class="math inline">\(w_2=f(z_2)\)</span>, and <span class="math inline">\(w_3=f(z_3)\)</span>.</p>
+<p>In order to determine the orientation of the isometry we will use properties of the angles between the segments connecting the corresponding complex numbers. We can set <span class="math inline">\(z_1\)</span> and <span class="math inline">\(w_1\)</span> as our points of reference and then look at the relationship of the other points to these. We can measure the angle from <span class="math inline">\(z_2-z_1\)</span> to <span class="math inline">\(z_3-z_1\)</span> as
+<span class="math display">\[\mbox{arg}(z_3-z_1)-\mbox{arg}(z_2-z_1) = \mbox{arg}\left(\frac{z_3-z_1}{z_2-z_1}\right).\]</span>
+Similarly, the angle from <span class="math inline">\(w_2-w_1\)</span> to <span class="math inline">\(w_3-w_1\)</span> is
+<span class="math display">\[\mbox{arg} \left( \frac{w_3-w_1}{w_2-w_1}\right).\]</span> If these arguments are the same, then the isometry is orientation preserving and if they are additive inverses of each other the isometry is orientation reversing. This can most easily be checked by comparing the ratios
+<span class="math display">\[\frac{w_3-w_1}{w_2-w_1} \quad \mbox{and} \quad \frac{z_3-z_1}{z_2-z_1}.\]</span> If the ratios are equal, then the isometry is orientation preserving. If the ratios are complex conjugates of each other the isometry is orientation reversing.</p>
+<p>Once we have determined if the isometry is orientation preserving or orientation reversing we can see how the equation of the isometry is determined.</p>
+<p>If <span class="math inline">\(f\)</span> is orientation preserving, <span class="math inline">\(f(z)=az+b\)</span> for some <span class="math inline">\(a,b\in \mathbb{C}\)</span> with <span class="math inline">\(|a|=1\)</span>. Using the three points we have the following system of equations
+<span class="math display">\[\begin{matrix} w_1=a z_1 + b \\
+w_2=a z_2+b \\
+w_3=a z_3+b 
+\end{matrix}\]</span>
+Using the first two equations we can determine that
+<span class="math display">\[a=\frac{w_2-w_1}{z_2-z_1}.\]</span>
+Then from the third point we see that <span class="math display">\[f(z) = \frac{w_2-w_1}{z_2-z_1} (z-z_3) + w_3.\]</span></p>
+<p>If <span class="math inline">\(f\)</span> is orientation reversing, <span class="math inline">\(f(z)=a\overline{z}+b\)</span> for some <span class="math inline">\(a,b\in \mathbb{C}\)</span> with <span class="math inline">\(|a|=1\)</span>. Then following a similar process to the one above we see that
+<span class="math display">\[f(z)= \frac{w_2-w_1}{\overline{(z_2-z_1)}} \overline{(z-z_3)} + w_3.\]</span></p>
+</div>
+<!--- % Fixed points --->
+<div id="exercises-56" class="section level3" number="12.7.1">
+<h3><span class="header-section-number">12.7.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Classify the transformation <span class="math inline">\(f\)</span> as one of the four types of isometries from its formula in the complex plane.</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\displaystyle{f(z)=\left( \frac{1}{\sqrt{2}} - \frac{i}{\sqrt{2}} \right) z +i}\)</span></li>
+<li><span class="math inline">\(\displaystyle{f(z)=\left( \frac{1}{\sqrt{2}} - \frac{i}{\sqrt{2}} \right) \overline{z} +i}\)</span></li>
+<li><span class="math inline">\(\displaystyle{f(z)=i\overline{z}-2}\)</span></li>
+<li><span class="math inline">\(\displaystyle{f(z)=z-2+i}\)</span></li>
+</ol></li>
+<li><p>Identify the following compositions where <span class="math inline">\(ABCD\)</span> is the square below. (You may need to draw additional points.)
+<img src="images/transformationgraph.jpg" width="35%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\({\displaystyle R_{A,\frac{\pi}{2}} \circ R_{B,\frac{\pi}{2}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle R_{A,\frac{\pi}{2}} \circ T_{\stackrel{\longrightarrow}{CA}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle T_{\stackrel{\longrightarrow}{BC}} \circ T_{\stackrel{\longrightarrow}{AD}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle T_{\stackrel{\longrightarrow}{AB}} \circ R_{A,\frac{\pi}{3}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle T_{\stackrel{\longrightarrow}{AB}} \circ g_{\stackrel{\longrightarrow}{DC}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle r_{AD} \circ R_{C,\frac{\pi}{2}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle g_{\stackrel{\longrightarrow}{AC}} \circ g_{\stackrel{\longrightarrow}{BD}}}\)</span></li>
+<li><span class="math inline">\({\displaystyle r_{AD} \circ T_{\stackrel{\longrightarrow}{AB}}}\)</span></li>
+</ol></li>
+<li><p>Perform the following two transformations on the graph below with each square representing 1 square unit. After each transformation, draw the resulting image of segment <span class="math inline">\(\overline{PQ}\)</span>.
+<img src="images/transformgraph.jpg" width="35%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: lower-alpha">
+<li>Rotate the segment <span class="math inline">\(90^\circ\)</span> counterclockwise about point <span class="math inline">\(P\)</span> . Label the resulting segment <span class="math inline">\(I\)</span>. Find an algebraic representation of this rotation using a function of the complex plane and label this function <span class="math inline">\(f\)</span>.</li>
+<li>Reflect the segment <span class="math inline">\(I\)</span> you drew in the first part across the <span class="math inline">\(x\)</span> -axis. Label the resulting segment <span class="math inline">\(II\)</span>. Find an algebraic representation of this reflection using a function of the complex plane and label this function <span class="math inline">\(g\)</span>.</li>
+<li>Find an algebraic representation of the composition of the two transformations using a function of the complex plane and label this function <span class="math inline">\(h\)</span>.</li>
+</ol></li>
+<li><p>What are the coordinates of the image of <span class="math inline">\(\triangle ABC\)</span> after a reflection across the <span class="math inline">\(y\)</span>-axis followed by a rotation of <span class="math inline">\(90^\circ\)</span> clockwise about the origin? Show your work, including a graph of the image of the triangle after each transformation, and explain how you found your answer.</p></li>
+</ol>
+<p><img src="images/Transformation_Triangle2.jpg" width="35%" style="display: block; margin: auto;" /></p>
+<ol style="list-style-type: decimal">
+<li><p>Find an algebraic representation of the rigid motion that takes <span class="math inline">\(\triangle ABC\)</span> onto <span class="math inline">\(\triangle A&#39;B&#39;C&#39;\)</span>. Explain your method for finding the transformation and why that method would work.
+<img src="images/Transformation_Triangles.jpg" width="35%" style="display: block; margin: auto;" /></p></li>
+<li><p>Let <span class="math inline">\(I\)</span> be the set of isometries of the plane, i.e. <span class="math display">\[I= \left\{ f:\mathbb{C} \rightarrow \mathbb{C} | f(z)=az+b \: \mbox{or} \: f(z)=a\overline{z}+b \quad \mbox{with }  |a|=1 \right\}.\]</span></p>
+<p>Let <span class="math inline">\(g\in I\)</span>, and <span class="math inline">\(\phi_g : I \rightarrow I\)</span> be the function defined by <span class="math display">\[\phi_g (f) = g^{-1} f g.\]</span></p>
+<p>Prove that <span class="math inline">\(\phi_g\)</span></p>
+<ol style="list-style-type: lower-alpha">
+<li>maps the identity function to itself</li>
+<li>is one-to-one</li>
+<li>is onto</li>
+<li>maps translations to translations</li>
+<li>maps rotations to rotations</li>
+<li>maps reflections to reflections</li>
+</ol></li>
+</ol>
+</div>
 </div>
             </section>
 

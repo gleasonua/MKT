@@ -507,9 +507,25 @@ div.csl-indent {
 <li class="chapter" data-level="12.5.4" data-path="reflections-1.html"><a href="reflections-1.html#compositions-1"><i class="fa fa-check"></i><b>12.5.4</b> Compositions</a></li>
 <li class="chapter" data-level="12.5.5" data-path="reflections-1.html"><a href="reflections-1.html#exercises-54"><i class="fa fa-check"></i><b>12.5.5</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="12.6" data-path="glide-reflections.html"><a href="glide-reflections.html"><i class="fa fa-check"></i><b>12.6</b> Glide-Reflections</a></li>
-<li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a></li>
-<li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a></li>
+<li class="chapter" data-level="12.6" data-path="glide-reflections.html"><a href="glide-reflections.html"><i class="fa fa-check"></i><b>12.6</b> Glide-Reflections</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="glide-reflections.html"><a href="glide-reflections.html#synthetic-plane-4"><i class="fa fa-check"></i><b>12.6.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.6.2" data-path="glide-reflections.html"><a href="glide-reflections.html#complex-plane-4"><i class="fa fa-check"></i><b>12.6.2</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.6.3" data-path="glide-reflections.html"><a href="glide-reflections.html#exercises-55"><i class="fa fa-check"></i><b>12.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="group-of-isometries.html"><a href="group-of-isometries.html#exercises-56"><i class="fa fa-check"></i><b>12.7.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a>
+<ul>
+<li class="chapter" data-level="12.8.1" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#synthetic-plane-5"><i class="fa fa-check"></i><b>12.8.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.8.2" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#cartesian-plane-1"><i class="fa fa-check"></i><b>12.8.2</b> Cartesian Plane</a></li>
+<li class="chapter" data-level="12.8.3" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#vector-space-1"><i class="fa fa-check"></i><b>12.8.3</b> Vector Space</a></li>
+<li class="chapter" data-level="12.8.4" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#complex-plane-5"><i class="fa fa-check"></i><b>12.8.4</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.8.5" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#compositions-2"><i class="fa fa-check"></i><b>12.8.5</b> Compositions</a></li>
+<li class="chapter" data-level="12.8.6" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#exercises-57"><i class="fa fa-check"></i><b>12.8.6</b> Exercises</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
 <li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a></li>
@@ -537,79 +553,57 @@ div.csl-indent {
 <div id="glide-reflections" class="section level2" number="12.6">
 <h2><span class="header-section-number">12.6</span> Glide-Reflections</h2>
 <p>Since reflections and translations are both isometries, the composition of a reflections and a translation is also an isometry.</p>
-<!---
-
-\subsection{Synthetic Plane}
-
-\begin{definition}
-    Let $A$ and $B$ be distinct points in the plane. The function $$g_{\overrightarrow{AB}} = r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{AB}}$$ is called the \textbf{glide-reflection} of $\overrightarrow{AB}$.
-\end{definition}
-
-Since the translations is parallel to the line of reflection, the order of the reflection and translation are interchangeable (the proof is left as an exercise). This means that 
-\begin{align*}
-    g_{\overrightarrow{AB}} \circ g_{\overrightarrow{BA}} & = \left( r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{AB}}\right) \circ \left( r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{BA}}\right) \\
-    & = r_{\overleftrightarrow{AB}} \circ \left( T_{\overrightarrow{AB}} \circ T_{\overrightarrow{BA}}\right) \circ  r_{\overleftrightarrow{AB}} \\
-    & =  r_{\overleftrightarrow{AB}} \circ r_{\overleftrightarrow{AB}} = \mbox{identity}
-\end{align*}
-and so $g_{\overrightarrow{AB}}^{-1} = g_{\overrightarrow{BA}}$.
-
-
-\begin{theorem}
-    Every glide-reflection is a composition of three reflections.
-\end{theorem}
-
-\begin{proof}
-    Let $A$ and $B$ be distinct points in the plane and let $C$ be the midpoint of $\overline{AB}$. Let $m$ and $n$ be lines through $A$ and $C$, respectively, such that $m$ and $n$ are both perpendicular to $\overleftrightarrow{AB}$. The two-reflection theorem implies that $T_{\overrightarrow{AB}}= r_n \circ r_m$ and so
-    $$g_{\overrightarrow{AB}}= r_{\overleftrightarrow{AB}} \circ r_n \circ r_m$$ and so every glide-reflection is a composition of three reflections.
-\end{proof}
-
-\subsection{Complex Plane}
-
-
-We know from Theorem \ref{thm:complex_isometry} that every isometry $f:\mathbb{C}\rightarrow \mathbb{C}$ is of the form 
-$$f(z)=az+b \quad \mbox{or} \quad f(z)=a\overline{z}+b$$ for some $a,b\in \mathbb{C}$ with $|a|=1$. We have shown that isometries of the form $f(z)=az+b$ are either translations or rotations and isometries of the form $f(z)=a\overline{z}+b$ are reflections if $a\overline{b}+b=0$. The following theorem shows that the glide-reflections complete our types of isometries.
-
-\begin{theorem}
-    Let $f(z)=a\overline{z} + b$ be a function such that $|a|=1$. Then $f$ is a glide-reflection with a non-zero glide if and only if $a\overline{b}+b\neq 0$.
-\end{theorem}
-
-\begin{proof}
-    In the proof of Theorem \ref{thm:complex_reflection} we showed that for complex numbers $a$ and $b$, with $|a|=1$, that 
-    $$ f(z)=a\overline{z}+b =  a \overline{ \left( z-\frac{b}{2}\right)} + \frac{b}{2} + \frac{a\overline{b}+b}{2}.$$
-    Since $|a|=1$, $a = e^{i2 \theta}$ for some angle $\theta$.
-    
-    We can then let $m$ be the line through $\frac{b}{2}$ making an angle of $\theta$ with the horizontal.
-    
-    Furthermore,
-    $$\frac{a\overline{b}+b}{2} = \frac{e^{i2\theta}\overline{b} + b}{2} = e^{i\theta} \frac{ e^{i \theta} \overline{b} + e^{-i\theta} b}{2} = e^{i \theta} \cdot \mbox{Re}\left( e^i \theta \overline{b}\right).$$
-    Therefore, this complex number is in the same direction as $m$ and we see that
-    $$ f(z)=a \overline{z} + b = r_m \circ T_{\frac{a\overline{b}+b}{2}} $$ is a glide-reflection with a non-zero glide.
-\end{proof}
-
-
-
-
-
-\begin{Exercise}
-
-
-
-    
- 
-    \Question Prove that for $g_{\overrightarrow{AB}}$, 
-    $$ r_{\overleftrightarrow{AB}}\circ T_{\overrightarrow{AB}} =  T_{\overrightarrow{AB}} \circ r_{\overleftrightarrow{AB}}.$$
-   
-    \Question Let $g$ be the glide-reflection about the vector $\langle 1,1\rangle$. 
-        \begin{enumerate}[a)]
-            \item Write an algebraic representation for the glide-reflection from the Cartesian, Vector, and Complex perspectives.
-            \item Find the image of the circle $C=\left\{ (x,y)\in \mathbb{R}^2 \: \vert \: (x-2)^2+(y+3)^2 =9\right\} $ under this glide-reflection.
-            \item Let $A=(1,2)$, $B=(-2,3)$ and $C=(0,0)$. Find the image of the triangle $\triangle ABC$ under this glide-reflection.
-        \end{enumerate}
-   
-   \Question Let $A$ and $B$ be any two distinct points.  Prove that the composition $$R_{B,\pi} \circ r_{\overleftrightarrow{AB}}\circ R_{A,\pi}$$ is a glide-reflection and find its axis and the vector of translation. 
-\end{Exercise}
-
---->
+<div id="synthetic-plane-4" class="section level3" number="12.6.1">
+<h3><span class="header-section-number">12.6.1</span> Synthetic Plane</h3>
+<div class="definition">
+<p><span id="def:unlabeled-div-280" class="definition"><strong>Definition 12.19  </strong></span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be distinct points in the plane. The function <span class="math display">\[g_{\overrightarrow{AB}} = r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{AB}}\]</span> is called the <strong>glide-reflection</strong> of <span class="math inline">\(\overrightarrow{AB}\)</span>.</p>
+</div>
+<p>Since the translations is parallel to the line of reflection, the order of the reflection and translation are interchangeable (the proof is left as an exercise). This means that
+<span class="math display">\[\begin{align*}
+g_{\overrightarrow{AB}} \circ g_{\overrightarrow{BA}} &amp; = \left( r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{AB}}\right) \circ \left( r_{\overleftrightarrow{AB}} \circ T_{\overrightarrow{BA}}\right) \\
+&amp; = r_{\overleftrightarrow{AB}} \circ \left( T_{\overrightarrow{AB}} \circ T_{\overrightarrow{BA}}\right) \circ  r_{\overleftrightarrow{AB}} \\
+&amp; =  r_{\overleftrightarrow{AB}} \circ r_{\overleftrightarrow{AB}} = \mbox{identity}
+\end{align*}\]</span>
+and so <span class="math inline">\(g_{\overrightarrow{AB}}^{-1} = g_{\overrightarrow{BA}}\)</span>.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-281" class="theorem"><strong>Theorem 12.19  </strong></span>Every glide-reflection is a composition of three reflections.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-282" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be distinct points in the plane and let <span class="math inline">\(C\)</span> be the midpoint of <span class="math inline">\(\overline{AB}\)</span>. Let <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> be lines through <span class="math inline">\(A\)</span> and <span class="math inline">\(C\)</span>, respectively, such that <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span> are both perpendicular to <span class="math inline">\(\overleftrightarrow{AB}\)</span>. The two-reflection theorem implies that <span class="math inline">\(T_{\overrightarrow{AB}}= r_n \circ r_m\)</span> and so
+<span class="math display">\[g_{\overrightarrow{AB}}= r_{\overleftrightarrow{AB}} \circ r_n \circ r_m\]</span> and so every glide-reflection is a composition of three reflections.</p>
+</div>
+</div>
+<div id="complex-plane-4" class="section level3" number="12.6.2">
+<h3><span class="header-section-number">12.6.2</span> Complex Plane</h3>
+<p>We know from Theorem <a href="representations-of-the-euclidean-plane.html#thm:complex-isometry">12.7</a> that every isometry <span class="math inline">\(f:\mathbb{C}\rightarrow \mathbb{C}\)</span> is of the form
+<span class="math display">\[f(z)=az+b \quad \mbox{or} \quad f(z)=a\overline{z}+b\]</span> for some <span class="math inline">\(a,b\in \mathbb{C}\)</span> with <span class="math inline">\(|a|=1\)</span>. We have shown that isometries of the form <span class="math inline">\(f(z)=az+b\)</span> are either translations or rotations and isometries of the form <span class="math inline">\(f(z)=a\overline{z}+b\)</span> are reflections if <span class="math inline">\(a\overline{b}+b=0\)</span>. The following theorem shows that the glide-reflections complete our types of isometries.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-283" class="theorem"><strong>Theorem 12.20  </strong></span>Let <span class="math inline">\(f(z)=a\overline{z} + b\)</span> be a function such that <span class="math inline">\(|a|=1\)</span>. Then <span class="math inline">\(f\)</span> is a glide-reflection with a non-zero glide if and only if <span class="math inline">\(a\overline{b}+b\neq 0\)</span>.</p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-284" class="proof"><em>Proof</em>. </span>In the proof of Theorem <a href="reflections-1.html#thm:complex-reflection">12.16</a> we showed that for complex numbers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, with <span class="math inline">\(|a|=1\)</span>, that
+<span class="math display">\[f(z)=a\overline{z}+b =  a \overline{ \left( z-\frac{b}{2}\right)} + \frac{b}{2} + \frac{a\overline{b}+b}{2}.\]</span>
+Since <span class="math inline">\(|a|=1\)</span>, <span class="math inline">\(a = e^{i2 \theta}\)</span> for some angle <span class="math inline">\(\theta\)</span>.</p>
+<p>We can then let <span class="math inline">\(m\)</span> be the line through <span class="math inline">\(\frac{b}{2}\)</span> making an angle of <span class="math inline">\(\theta\)</span> with the horizontal.</p>
+<p>Furthermore,
+<span class="math display">\[\frac{a\overline{b}+b}{2} = \frac{e^{i2\theta}\overline{b} + b}{2} = e^{i\theta} \frac{ e^{i \theta} \overline{b} + e^{-i\theta} b}{2} = e^{i \theta} \cdot \mbox{Re}\left( e^i \theta \overline{b}\right).\]</span>
+Therefore, this complex number is in the same direction as <span class="math inline">\(m\)</span> and we see that
+<span class="math display">\[f(z)=a \overline{z} + b = r_m \circ T_{\frac{a\overline{b}+b}{2}}\]</span> is a glide-reflection with a non-zero glide.</p>
+</div>
+</div>
+<div id="exercises-55" class="section level3" number="12.6.3">
+<h3><span class="header-section-number">12.6.3</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Prove that for <span class="math inline">\(g_{\overrightarrow{AB}}\)</span>, <span class="math display">\[r_{\overleftrightarrow{AB}}\circ T_{\overrightarrow{AB}} =  T_{\overrightarrow{AB}} \circ r_{\overleftrightarrow{AB}}.\]</span></p></li>
+<li><p>Let <span class="math inline">\(g\)</span> be the glide-reflection about the vector <span class="math inline">\(\langle 1,1\rangle\)</span>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Write an algebraic representation for the glide-reflection from the Cartesian, Vector, and Complex perspectives.</li>
+<li>Find the image of the circle <span class="math inline">\(C=\left\{ (x,y)\in \mathbb{R}^2 \: \vert \: (x-2)^2+(y+3)^2 =9\right\}\)</span> under this glide-reflection.</li>
+<li>Let <span class="math inline">\(A=(1,2)\)</span>, <span class="math inline">\(B=(-2,3)\)</span> and <span class="math inline">\(C=(0,0)\)</span>. Find the image of the triangle <span class="math inline">\(\triangle ABC\)</span> under this glide-reflection.</li>
+</ol></li>
+<li><p>Let <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> be any two distinct points. Prove that the composition <span class="math display">\[R_{B,\pi} \circ r_{\overleftrightarrow{AB}}\circ R_{A,\pi}\]</span> is a glide-reflection and find its axis and the vector of translation.</p></li>
+</ol>
+</div>
 </div>
             </section>
 
