@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>15.3 Conditional Probability | Mathematical Knowledge for Secondary Teachers</title>
+  <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="15.3 Conditional Probability | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="15.3 Conditional Probability | Mathematical Knowledge for Secondary Teachers" />
+  
+  <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
+  
+
+<meta name="author" content="Jim Gleason and Martha Makowski" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="probability-spaces.html"/>
+<link rel="next" href="random-variables-and-expected-value.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #ffffff;
+    color: #a0a0a0;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
+div.sourceCode
+  { color: #1f1c1b; background-color: #ffffff; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #1f1c1b; } /* Normal */
+code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
+code span.an { color: #ca60ca; } /* Annotation */
+code span.at { color: #0057ae; } /* Attribute */
+code span.bn { color: #b08000; } /* BaseN */
+code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
+code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #924c9d; } /* Char */
+code span.cn { color: #aa5500; } /* Constant */
+code span.co { color: #898887; } /* Comment */
+code span.cv { color: #0095ff; } /* CommentVar */
+code span.do { color: #607880; } /* Documentation */
+code span.dt { color: #0057ae; } /* DataType */
+code span.dv { color: #b08000; } /* DecVal */
+code span.er { color: #bf0303; text-decoration: underline; } /* Error */
+code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
+code span.fl { color: #b08000; } /* Float */
+code span.fu { color: #644a9b; } /* Function */
+code span.im { color: #ff5500; } /* Import */
+code span.in { color: #b08000; } /* Information */
+code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
+code span.op { color: #1f1c1b; } /* Operator */
+code span.ot { color: #006e28; } /* Other */
+code span.pp { color: #006e28; } /* Preprocessor */
+code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
+code span.sc { color: #3daee9; } /* SpecialChar */
+code span.ss { color: #ff5500; } /* SpecialString */
+code span.st { color: #bf0303; } /* String */
+code span.va { color: #0057ae; } /* Variable */
+code span.vs { color: #bf0303; } /* VerbatimString */
+code span.wa { color: #bf0303; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style2.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="for-the-student.html"><a href="for-the-student.html"><i class="fa fa-check"></i>For the Student</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html"><i class="fa fa-check"></i>For the Instructor</a>
+<ul>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#one-semester-course"><i class="fa fa-check"></i>One Semester Course</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#two-semester-courses"><i class="fa fa-check"></i>Two Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#three-semester-courses"><i class="fa fa-check"></i>Three Semester Courses</a></li>
+<li class="chapter" data-level="" data-path="for-the-instructor.html"><a href="for-the-instructor.html#focus-on-middle-school-content"><i class="fa fa-check"></i>Focus on Middle School Content</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="part"><span><b>I FOUNDATIONS</b></span></li>
+<li class="chapter" data-level="1" data-path="ch-MathEdFoundations.html"><a href="ch-MathEdFoundations.html"><i class="fa fa-check"></i><b>1</b> Mathematics Education Foundations</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="section-MKT.html"><a href="section-MKT.html"><i class="fa fa-check"></i><b>1.1</b> Mathematical Knowledge for Teaching</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="section-MKT.html"><a href="section-MKT.html#common-content-knowledge"><i class="fa fa-check"></i><b>1.1.1</b> Common Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.2" data-path="section-MKT.html"><a href="section-MKT.html#specialized-content-knowledge"><i class="fa fa-check"></i><b>1.1.2</b> Specialized Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.3" data-path="section-MKT.html"><a href="section-MKT.html#horizon-content-knowledge"><i class="fa fa-check"></i><b>1.1.3</b> Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="1.1.4" data-path="section-MKT.html"><a href="section-MKT.html#exercises"><i class="fa fa-check"></i><b>1.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html"><i class="fa fa-check"></i><b>1.2</b> Mathematical Practice Standards</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#mathematical-problem-solving"><i class="fa fa-check"></i><b>1.2.1</b> Mathematical Problem Solving</a></li>
+<li class="chapter" data-level="1.2.2" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#modeling-with-mathematics"><i class="fa fa-check"></i><b>1.2.2</b> Modeling with Mathematics</a></li>
+<li class="chapter" data-level="1.2.3" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#communicating-mathematically"><i class="fa fa-check"></i><b>1.2.3</b> Communicating Mathematically</a></li>
+<li class="chapter" data-level="1.2.4" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#understanding-mathematical-structures"><i class="fa fa-check"></i><b>1.2.4</b> Understanding Mathematical Structures</a></li>
+<li class="chapter" data-level="1.2.5" data-path="mathematical-practice-standards.html"><a href="mathematical-practice-standards.html#exercises-1"><i class="fa fa-check"></i><b>1.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html"><i class="fa fa-check"></i><b>1.3</b> Mathematics Content Standards in the U.S.</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#common-core-state-standards-math"><i class="fa fa-check"></i><b>1.3.1</b> Common Core State Standards-Math</a></li>
+<li class="chapter" data-level="1.3.2" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#nctm-caep-standards"><i class="fa fa-check"></i><b>1.3.2</b> NCTM-CAEP Standards</a></li>
+<li class="chapter" data-level="1.3.3" data-path="mathematics-content-standards-in-the-u-s-.html"><a href="mathematics-content-standards-in-the-u-s-.html#exercises-2"><i class="fa fa-check"></i><b>1.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch-sets.html"><a href="ch-sets.html"><i class="fa fa-check"></i><b>2</b> Set Theory</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html"><i class="fa fa-check"></i><b>2.1</b> Sets and Subsets</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#venn-diagrams"><i class="fa fa-check"></i><b>2.1.1</b> Venn Diagrams</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#list-of-sets-of-numbers"><i class="fa fa-check"></i><b>2.1.2</b> List of Sets of Numbers</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sets-and-subsets.html"><a href="sets-and-subsets.html#exercises-3"><i class="fa fa-check"></i><b>2.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html"><i class="fa fa-check"></i><b>2.2</b> Algebra of Sets</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#set-complements"><i class="fa fa-check"></i><b>2.2.1</b> Set Complements</a></li>
+<li class="chapter" data-level="2.2.2" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#de-morgans-laws"><i class="fa fa-check"></i><b>2.2.2</b> De Morgan’s Laws</a></li>
+<li class="chapter" data-level="2.2.3" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#subsec:cartesian"><i class="fa fa-check"></i><b>2.2.3</b> Cartesian Products</a></li>
+<li class="chapter" data-level="2.2.4" data-path="algebra-of-sets.html"><a href="algebra-of-sets.html#exercises-4"><i class="fa fa-check"></i><b>2.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="collections-of-sets.html"><a href="collections-of-sets.html"><i class="fa fa-check"></i><b>2.3</b> Collections of Sets</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="collections-of-sets.html"><a href="collections-of-sets.html#exercises-5"><i class="fa fa-check"></i><b>2.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch-equivalence.html"><a href="ch-equivalence.html"><i class="fa fa-check"></i><b>3</b> Equality, Order, and Equivalence</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html"><i class="fa fa-check"></i><b>3.1</b> Partitions and Equivalence Relations</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions"><i class="fa fa-check"></i><b>3.1.1</b> Partitions</a></li>
+<li class="chapter" data-level="3.1.2" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#relations"><i class="fa fa-check"></i><b>3.1.2</b> Relations</a></li>
+<li class="chapter" data-level="3.1.3" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#equivalence-relations-induced-by-partitions"><i class="fa fa-check"></i><b>3.1.3</b> Equivalence Relations Induced by Partitions</a></li>
+<li class="chapter" data-level="3.1.4" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#partitions-induced-by-equivalence-relations"><i class="fa fa-check"></i><b>3.1.4</b> Partitions Induced by Equivalence Relations</a></li>
+<li class="chapter" data-level="3.1.5" data-path="partitions-and-equivalence-relations.html"><a href="partitions-and-equivalence-relations.html#exercises-6"><i class="fa fa-check"></i><b>3.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html"><i class="fa fa-check"></i><b>3.2</b> Ordered Sets and Relations</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="ordered-sets-and-relations.html"><a href="ordered-sets-and-relations.html#exercises-7"><i class="fa fa-check"></i><b>3.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html"><i class="fa fa-check"></i><b>3.3</b> Equality and Equivalence in the K-12 Curriculum</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="equality-and-equivalence-in-the-k-12-curriculum.html"><a href="equality-and-equivalence-in-the-k-12-curriculum.html#exercises-8"><i class="fa fa-check"></i><b>3.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html"><i class="fa fa-check"></i><b>3.4</b> Expressions, Equations, and Inequalities</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="expressions-equations-and-inequalities.html"><a href="expressions-equations-and-inequalities.html#exercises-9"><i class="fa fa-check"></i><b>3.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch-number.html"><a href="ch-number.html"><i class="fa fa-check"></i><b>4</b> Number Systems</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="sec-Integers.html"><a href="sec-Integers.html"><i class="fa fa-check"></i><b>4.1</b> Natural Numbers and Integers</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="sec-Integers.html"><a href="sec-Integers.html#natural-numbers"><i class="fa fa-check"></i><b>4.1.1</b> Natural Numbers</a></li>
+<li class="chapter" data-level="4.1.2" data-path="sec-Integers.html"><a href="sec-Integers.html#integers"><i class="fa fa-check"></i><b>4.1.2</b> Integers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="sec-Integers.html"><a href="sec-Integers.html#properties-of-exponents"><i class="fa fa-check"></i><b>4.1.3</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.1.4" data-path="sec-Integers.html"><a href="sec-Integers.html#exercises-10"><i class="fa fa-check"></i><b>4.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html"><i class="fa fa-check"></i><b>4.2</b> Representations of Integers</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#numeration-systems"><i class="fa fa-check"></i><b>4.2.1</b> Numeration Systems</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#representations-of-number"><i class="fa fa-check"></i><b>4.2.2</b> Representations of Number</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#addition-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.3</b> Addition Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#subtraction-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.4</b> Subtraction Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.5" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#multiplication-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.5</b> Multiplication Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.6" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#division-models-and-algorithms"><i class="fa fa-check"></i><b>4.2.6</b> Division Models and Algorithms</a></li>
+<li class="chapter" data-level="4.2.7" data-path="sec-integer-representation.html"><a href="sec-integer-representation.html#exercises-11"><i class="fa fa-check"></i><b>4.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="sec-rationals.html"><a href="sec-rationals.html"><i class="fa fa-check"></i><b>4.3</b> Rational Numbers</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="sec-rationals.html"><a href="sec-rationals.html#operations"><i class="fa fa-check"></i><b>4.3.1</b> Operations</a></li>
+<li class="chapter" data-level="4.3.2" data-path="sec-rationals.html"><a href="sec-rationals.html#order"><i class="fa fa-check"></i><b>4.3.2</b> Order</a></li>
+<li class="chapter" data-level="4.3.3" data-path="sec-rationals.html"><a href="sec-rationals.html#algebraic-properties"><i class="fa fa-check"></i><b>4.3.3</b> Algebraic Properties</a></li>
+<li class="chapter" data-level="4.3.4" data-path="sec-rationals.html"><a href="sec-rationals.html#properties-of-exponents-1"><i class="fa fa-check"></i><b>4.3.4</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.3.5" data-path="sec-rationals.html"><a href="sec-rationals.html#exercises-12"><i class="fa fa-check"></i><b>4.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html"><i class="fa fa-check"></i><b>4.4</b> Representations of Rational Numbers</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#decimal-representations"><i class="fa fa-check"></i><b>4.4.1</b> Decimal Representations</a></li>
+<li class="chapter" data-level="4.4.2" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#physical-and-graphical-representations"><i class="fa fa-check"></i><b>4.4.2</b> Physical and Graphical Representations</a></li>
+<li class="chapter" data-level="4.4.3" data-path="representations-of-rational-numbers.html"><a href="representations-of-rational-numbers.html#exercises-13"><i class="fa fa-check"></i><b>4.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="sec-reals.html"><a href="sec-reals.html"><i class="fa fa-check"></i><b>4.5</b> Real Numbers</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="sec-reals.html"><a href="sec-reals.html#subsec:real-exponents"><i class="fa fa-check"></i><b>4.5.1</b> Properties of Exponents</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sec-reals.html"><a href="sec-reals.html#exercises-14"><i class="fa fa-check"></i><b>4.5.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="sec-complex.html"><a href="sec-complex.html"><i class="fa fa-check"></i><b>4.6</b> Complex Numbers</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="sec-complex.html"><a href="sec-complex.html#rectangular-representation"><i class="fa fa-check"></i><b>4.6.1</b> Rectangular Representation</a></li>
+<li class="chapter" data-level="4.6.2" data-path="sec-complex.html"><a href="sec-complex.html#complex-conjugation-and-modulus"><i class="fa fa-check"></i><b>4.6.2</b> Complex Conjugation and Modulus</a></li>
+<li class="chapter" data-level="4.6.3" data-path="sec-complex.html"><a href="sec-complex.html#eulers-equation"><i class="fa fa-check"></i><b>4.6.3</b> Euler’s Equation</a></li>
+<li class="chapter" data-level="4.6.4" data-path="sec-complex.html"><a href="sec-complex.html#exercises-15"><i class="fa fa-check"></i><b>4.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="ch-function.html"><a href="ch-function.html"><i class="fa fa-check"></i><b>5</b> Functions</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html"><i class="fa fa-check"></i><b>5.1</b> Definitions of Functions</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#function-representations"><i class="fa fa-check"></i><b>5.1.1</b> Function Representations</a></li>
+<li class="chapter" data-level="5.1.2" data-path="sec-Function-Def.html"><a href="sec-Function-Def.html#exercises-16"><i class="fa fa-check"></i><b>5.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="sec-Bijection.html"><a href="sec-Bijection.html"><i class="fa fa-check"></i><b>5.2</b> Injections, Surjections, and Bijections</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="sec-Bijection.html"><a href="sec-Bijection.html#exercises-17"><i class="fa fa-check"></i><b>5.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="sec-Compositions.html"><a href="sec-Compositions.html"><i class="fa fa-check"></i><b>5.3</b> Composition of Functions</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="sec-Compositions.html"><a href="sec-Compositions.html#inverse-functions"><i class="fa fa-check"></i><b>5.3.1</b> Inverse Functions</a></li>
+<li class="chapter" data-level="5.3.2" data-path="sec-Compositions.html"><a href="sec-Compositions.html#exercises-18"><i class="fa fa-check"></i><b>5.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="sec-cardinality.html"><a href="sec-cardinality.html"><i class="fa fa-check"></i><b>5.4</b> Counting and Cardinality</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="sec-cardinality.html"><a href="sec-cardinality.html#exercises-19"><i class="fa fa-check"></i><b>5.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>II ALGEBRA</b></span></li>
+<li class="chapter" data-level="6" data-path="ch-group-1.html"><a href="ch-group-1.html"><i class="fa fa-check"></i><b>6</b> Groups, Rings, and Fields</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="sec-groups.html"><a href="sec-groups.html"><i class="fa fa-check"></i><b>6.1</b> Group Theory</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="sec-groups.html"><a href="sec-groups.html#abelian-groups"><i class="fa fa-check"></i><b>6.1.1</b> Abelian Groups</a></li>
+<li class="chapter" data-level="6.1.2" data-path="sec-groups.html"><a href="sec-groups.html#uniqueness-of-identities-and-inverses"><i class="fa fa-check"></i><b>6.1.2</b> Uniqueness of Identities and Inverses</a></li>
+<li class="chapter" data-level="6.1.3" data-path="sec-groups.html"><a href="sec-groups.html#sec:homomorphisms"><i class="fa fa-check"></i><b>6.1.3</b> Homomorphisms</a></li>
+<li class="chapter" data-level="6.1.4" data-path="sec-groups.html"><a href="sec-groups.html#isomorphisms"><i class="fa fa-check"></i><b>6.1.4</b> Isomorphisms</a></li>
+<li class="chapter" data-level="6.1.5" data-path="sec-groups.html"><a href="sec-groups.html#finite-groups"><i class="fa fa-check"></i><b>6.1.5</b> Finite Groups</a></li>
+<li class="chapter" data-level="6.1.6" data-path="sec-groups.html"><a href="sec-groups.html#exercises-20"><i class="fa fa-check"></i><b>6.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html"><i class="fa fa-check"></i><b>6.2</b> Relationship Between Linear and Exponential</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="sec-linear-exponential.html"><a href="sec-linear-exponential.html#exercises-21"><i class="fa fa-check"></i><b>6.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html"><i class="fa fa-check"></i><b>6.3</b> Rings and Fields</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="sec-Exploration.html"><a href="sec-Exploration.html#finite-sets-with-two-operations"><i class="fa fa-check"></i><b>6.3.1</b> Finite Sets with Two Operations</a></li>
+<li class="chapter" data-level="6.3.2" data-path="sec-Exploration.html"><a href="sec-Exploration.html#matrices"><i class="fa fa-check"></i><b>6.3.2</b> Matrices</a></li>
+<li class="chapter" data-level="6.3.3" data-path="sec-Exploration.html"><a href="sec-Exploration.html#rings"><i class="fa fa-check"></i><b>6.3.3</b> Rings</a></li>
+<li class="chapter" data-level="6.3.4" data-path="sec-Exploration.html"><a href="sec-Exploration.html#identities-and-inverses"><i class="fa fa-check"></i><b>6.3.4</b> Identities and Inverses</a></li>
+<li class="chapter" data-level="6.3.5" data-path="sec-Exploration.html"><a href="sec-Exploration.html#integral-domains"><i class="fa fa-check"></i><b>6.3.5</b> Integral Domains</a></li>
+<li class="chapter" data-level="6.3.6" data-path="sec-Exploration.html"><a href="sec-Exploration.html#ring-homomorphisms"><i class="fa fa-check"></i><b>6.3.6</b> Ring Homomorphisms</a></li>
+<li class="chapter" data-level="6.3.7" data-path="sec-Exploration.html"><a href="sec-Exploration.html#exercises-22"><i class="fa fa-check"></i><b>6.3.7</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ch-rings.html"><a href="ch-rings.html"><i class="fa fa-check"></i><b>7</b> Integral Domains and Polynomials</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html"><i class="fa fa-check"></i><b>7.1</b> Properties of the Ring of the Integers</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#composing-and-decomposing-integers"><i class="fa fa-check"></i><b>7.1.1</b> Composing and Decomposing Integers</a></li>
+<li class="chapter" data-level="7.1.2" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#greatest-common-divisor-and-least-common-multiple"><i class="fa fa-check"></i><b>7.1.2</b> Greatest Common Divisor and Least Common Multiple</a></li>
+<li class="chapter" data-level="7.1.3" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#fundamental-theorem-of-arithmetic"><i class="fa fa-check"></i><b>7.1.3</b> Fundamental Theorem of Arithmetic</a></li>
+<li class="chapter" data-level="7.1.4" data-path="sec-Integer-Ring.html"><a href="sec-Integer-Ring.html#exercises-23"><i class="fa fa-check"></i><b>7.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="polynomial-rings.html"><a href="polynomial-rings.html"><i class="fa fa-check"></i><b>7.2</b> Polynomial Rings</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="polynomial-rings.html"><a href="polynomial-rings.html#exercises-24"><i class="fa fa-check"></i><b>7.2.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html"><i class="fa fa-check"></i><b>7.3</b> Properties of Polynomial Rings</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#polynomial-division"><i class="fa fa-check"></i><b>7.3.1</b> Polynomial Division</a></li>
+<li class="chapter" data-level="7.3.2" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#gcf-and-lcm-for-polynomials"><i class="fa fa-check"></i><b>7.3.2</b> GCF and LCM for Polynomials</a></li>
+<li class="chapter" data-level="7.3.3" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#irreducible-polynomials"><i class="fa fa-check"></i><b>7.3.3</b> Irreducible Polynomials</a></li>
+<li class="chapter" data-level="7.3.4" data-path="properties-of-polynomial-rings.html"><a href="properties-of-polynomial-rings.html#exercises-25"><i class="fa fa-check"></i><b>7.3.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="rational-expressions.html"><a href="rational-expressions.html"><i class="fa fa-check"></i><b>7.4</b> Rational Expressions</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="rational-expressions.html"><a href="rational-expressions.html#exercises-26"><i class="fa fa-check"></i><b>7.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="ch-real-valued-functions.html"><a href="ch-real-valued-functions.html"><i class="fa fa-check"></i><b>8</b> Real Valued Functions</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="function-properties.html"><a href="function-properties.html"><i class="fa fa-check"></i><b>8.1</b> Function Properties</a>
+<ul>
+<li class="chapter" data-level="8.1.1" data-path="function-properties.html"><a href="function-properties.html#domain-and-range"><i class="fa fa-check"></i><b>8.1.1</b> Domain and Range</a></li>
+<li class="chapter" data-level="8.1.2" data-path="function-properties.html"><a href="function-properties.html#maxima-minima-or-relative-maxima-relative-minima"><i class="fa fa-check"></i><b>8.1.2</b> Maxima (minima) or relative maxima (relative minima)</a></li>
+<li class="chapter" data-level="8.1.3" data-path="function-properties.html"><a href="function-properties.html#increasing-or-decreasing"><i class="fa fa-check"></i><b>8.1.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.1.4" data-path="function-properties.html"><a href="function-properties.html#intercepts"><i class="fa fa-check"></i><b>8.1.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.1.5" data-path="function-properties.html"><a href="function-properties.html#end-behavior-singularities-and-asymptotes"><i class="fa fa-check"></i><b>8.1.5</b> End behavior, singularities, and asymptotes</a></li>
+<li class="chapter" data-level="8.1.6" data-path="function-properties.html"><a href="function-properties.html#special-properties"><i class="fa fa-check"></i><b>8.1.6</b> Special Properties</a></li>
+<li class="chapter" data-level="8.1.7" data-path="function-properties.html"><a href="function-properties.html#exercises-27"><i class="fa fa-check"></i><b>8.1.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html"><i class="fa fa-check"></i><b>8.2</b> Transformations of Functions</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-translations"><i class="fa fa-check"></i><b>8.2.1</b> Horizontal Translations</a></li>
+<li class="chapter" data-level="8.2.2" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-translations"><i class="fa fa-check"></i><b>8.2.2</b> Vertical Translations</a></li>
+<li class="chapter" data-level="8.2.3" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#horizontal-dilations"><i class="fa fa-check"></i><b>8.2.3</b> Horizontal Dilations</a></li>
+<li class="chapter" data-level="8.2.4" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#vertical-dilations"><i class="fa fa-check"></i><b>8.2.4</b> Vertical Dilations</a></li>
+<li class="chapter" data-level="8.2.5" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#reflections"><i class="fa fa-check"></i><b>8.2.5</b> Reflections</a></li>
+<li class="chapter" data-level="8.2.6" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#families-of-functions"><i class="fa fa-check"></i><b>8.2.6</b> Families of Functions</a></li>
+<li class="chapter" data-level="8.2.7" data-path="transformations-of-functions.html"><a href="transformations-of-functions.html#exercises-28"><i class="fa fa-check"></i><b>8.2.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html"><i class="fa fa-check"></i><b>8.3</b> Linear and Exponential Functions</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#linear-functions"><i class="fa fa-check"></i><b>8.3.1</b> Linear Functions</a></li>
+<li class="chapter" data-level="8.3.2" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exponential-functions"><i class="fa fa-check"></i><b>8.3.2</b> Exponential Functions</a></li>
+<li class="chapter" data-level="8.3.3" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#logarithmic-functions"><i class="fa fa-check"></i><b>8.3.3</b> Logarithmic Functions</a></li>
+<li class="chapter" data-level="8.3.4" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#relationships-between-linear-and-exponential"><i class="fa fa-check"></i><b>8.3.4</b> Relationships between Linear and Exponential</a></li>
+<li class="chapter" data-level="8.3.5" data-path="linear-and-exponential-functions.html"><a href="linear-and-exponential-functions.html#exercises-29"><i class="fa fa-check"></i><b>8.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html"><i class="fa fa-check"></i><b>8.4</b> Linear Fractional Transformations</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#domain"><i class="fa fa-check"></i><b>8.4.1</b> Domain</a></li>
+<li class="chapter" data-level="8.4.2" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#range"><i class="fa fa-check"></i><b>8.4.2</b> Range</a></li>
+<li class="chapter" data-level="8.4.3" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#increasing-or-decreasing-1"><i class="fa fa-check"></i><b>8.4.3</b> Increasing or decreasing</a></li>
+<li class="chapter" data-level="8.4.4" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#intercepts-1"><i class="fa fa-check"></i><b>8.4.4</b> Intercepts</a></li>
+<li class="chapter" data-level="8.4.5" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#end-behavior-and-asymptotes"><i class="fa fa-check"></i><b>8.4.5</b> End behavior and asymptotes</a></li>
+<li class="chapter" data-level="8.4.6" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#extensions"><i class="fa fa-check"></i><b>8.4.6</b> Extensions</a></li>
+<li class="chapter" data-level="8.4.7" data-path="linear-fractional-transformations.html"><a href="linear-fractional-transformations.html#exercises-30"><i class="fa fa-check"></i><b>8.4.7</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html"><i class="fa fa-check"></i><b>8.5</b> Quadratic Polynomials</a>
+<ul>
+<li class="chapter" data-level="8.5.1" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#completing-the-square"><i class="fa fa-check"></i><b>8.5.1</b> Completing the Square</a></li>
+<li class="chapter" data-level="8.5.2" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#factoring"><i class="fa fa-check"></i><b>8.5.2</b> Factoring</a></li>
+<li class="chapter" data-level="8.5.3" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#inverse-function"><i class="fa fa-check"></i><b>8.5.3</b> Inverse Function</a></li>
+<li class="chapter" data-level="8.5.4" data-path="quadratic-polynomials.html"><a href="quadratic-polynomials.html#exercises-31"><i class="fa fa-check"></i><b>8.5.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.6" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html"><i class="fa fa-check"></i><b>8.6</b> General Polynomial Functions</a>
+<ul>
+<li class="chapter" data-level="8.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>8.6.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>8.6.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>8.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="8.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-32"><i class="fa fa-check"></i><b>8.6.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html"><i class="fa fa-check"></i><b>8.7</b> Rational Functions</a>
+<ul>
+<li class="chapter" data-level="8.7.1" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#short-term-behavior-1"><i class="fa fa-check"></i><b>8.7.1</b> Short-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.2" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#long-term-behavior-1"><i class="fa fa-check"></i><b>8.7.2</b> Long-Term Behavior</a></li>
+<li class="chapter" data-level="8.7.3" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#partial-fraction-decomposition"><i class="fa fa-check"></i><b>8.7.3</b> Partial Fraction Decomposition</a></li>
+<li class="chapter" data-level="8.7.4" data-path="sec-rational-functions.html"><a href="sec-rational-functions.html#exercises-33"><i class="fa fa-check"></i><b>8.7.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.8" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html"><i class="fa fa-check"></i><b>8.8</b> Trigonometric Functions</a>
+<ul>
+<li class="chapter" data-level="8.8.1" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#definitions"><i class="fa fa-check"></i><b>8.8.1</b> Definitions</a></li>
+<li class="chapter" data-level="8.8.2" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#additional-properties"><i class="fa fa-check"></i><b>8.8.2</b> Additional Properties</a></li>
+<li class="chapter" data-level="8.8.3" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#graphs-of-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.3</b> Graphs of Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.4" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#inverse-trigonometric-functions"><i class="fa fa-check"></i><b>8.8.4</b> Inverse Trigonometric Functions</a></li>
+<li class="chapter" data-level="8.8.5" data-path="trigonometric-functions.html"><a href="trigonometric-functions.html#exercises-34"><i class="fa fa-check"></i><b>8.8.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html"><i class="fa fa-check"></i><b>8.9</b> Combinations of Functions</a>
+<ul>
+<li class="chapter" data-level="8.9.1" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#addition-subtraction-multiplication-and-division-of-functions"><i class="fa fa-check"></i><b>8.9.1</b> Addition, Subtraction, Multiplication, and Division of Functions</a></li>
+<li class="chapter" data-level="8.9.2" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#composition-of-functions"><i class="fa fa-check"></i><b>8.9.2</b> Composition of Functions</a></li>
+<li class="chapter" data-level="8.9.3" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#systems-of-equations"><i class="fa fa-check"></i><b>8.9.3</b> Systems of Equations</a></li>
+<li class="chapter" data-level="8.9.4" data-path="sec-Function-combinations.html"><a href="sec-Function-combinations.html#exercises-35"><i class="fa fa-check"></i><b>8.9.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III GEOMETRY</b></span></li>
+<li class="chapter" data-level="9" data-path="ch-constructions.html"><a href="ch-constructions.html"><i class="fa fa-check"></i><b>9</b> Axiomatic Geometry</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="definitions-1.html"><a href="definitions-1.html"><i class="fa fa-check"></i><b>9.1</b> Definitions</a>
+<ul>
+<li class="chapter" data-level="9.1.1" data-path="definitions-1.html"><a href="definitions-1.html#criteria-for-definitions"><i class="fa fa-check"></i><b>9.1.1</b> Criteria for Definitions</a></li>
+<li class="chapter" data-level="9.1.2" data-path="definitions-1.html"><a href="definitions-1.html#concept-image"><i class="fa fa-check"></i><b>9.1.2</b> Concept Image</a></li>
+<li class="chapter" data-level="9.1.3" data-path="definitions-1.html"><a href="definitions-1.html#classification-of-two-dimensional-figures"><i class="fa fa-check"></i><b>9.1.3</b> Classification of Two-Dimensional Figures</a></li>
+<li class="chapter" data-level="9.1.4" data-path="definitions-1.html"><a href="definitions-1.html#definitions-from-euclids-elements"><i class="fa fa-check"></i><b>9.1.4</b> Definitions from Euclid’s Elements</a></li>
+<li class="chapter" data-level="9.1.5" data-path="definitions-1.html"><a href="definitions-1.html#exercises-36"><i class="fa fa-check"></i><b>9.1.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html"><i class="fa fa-check"></i><b>9.2</b> Axiomatic Systems</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#euclids-common-notions-and-postulates"><i class="fa fa-check"></i><b>9.2.1</b> Euclid’s Common Notions and Postulates</a></li>
+<li class="chapter" data-level="9.2.2" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#hilberts-axioms"><i class="fa fa-check"></i><b>9.2.2</b> Hilbert’s Axioms</a></li>
+<li class="chapter" data-level="9.2.3" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#school-mathematics-study-group-axioms"><i class="fa fa-check"></i><b>9.2.3</b> School Mathematics Study Group Axioms</a></li>
+<li class="chapter" data-level="9.2.4" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#discussion"><i class="fa fa-check"></i><b>9.2.4</b> Discussion</a></li>
+<li class="chapter" data-level="9.2.5" data-path="axiomatic-systems.html"><a href="axiomatic-systems.html#exercises-37"><i class="fa fa-check"></i><b>9.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html"><i class="fa fa-check"></i><b>9.3</b> Euclid’s Basic Constructions</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#angles-and-parallel-lines"><i class="fa fa-check"></i><b>9.4.1</b> Angles and Parallel Lines</a></li>
+<li class="chapter" data-level="9.4.2" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#parallelograms"><i class="fa fa-check"></i><b>9.4.2</b> Parallelograms</a></li>
+<li class="chapter" data-level="9.4.3" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html#exercises-39"><i class="fa fa-check"></i><b>9.4.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.5" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html"><i class="fa fa-check"></i><b>9.5</b> Similarity of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.5.1" data-path="similarity-of-triangles.html"><a href="similarity-of-triangles.html#exercises-40"><i class="fa fa-check"></i><b>9.5.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.6" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html"><i class="fa fa-check"></i><b>9.6</b> Centers of Triangles</a>
+<ul>
+<li class="chapter" data-level="9.6.1" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#centroid"><i class="fa fa-check"></i><b>9.6.1</b> Centroid</a></li>
+<li class="chapter" data-level="9.6.2" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#circumcenter"><i class="fa fa-check"></i><b>9.6.2</b> Circumcenter</a></li>
+<li class="chapter" data-level="9.6.3" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#orthocenter"><i class="fa fa-check"></i><b>9.6.3</b> Orthocenter</a></li>
+<li class="chapter" data-level="9.6.4" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#euler-line"><i class="fa fa-check"></i><b>9.6.4</b> Euler Line</a></li>
+<li class="chapter" data-level="9.6.5" data-path="centers-of-triangles.html"><a href="centers-of-triangles.html#exercises-41"><i class="fa fa-check"></i><b>9.6.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="9.7" data-path="circle-theorems.html"><a href="circle-theorems.html"><i class="fa fa-check"></i><b>9.7</b> Circle Theorems</a>
+<ul>
+<li class="chapter" data-level="9.7.1" data-path="circle-theorems.html"><a href="circle-theorems.html#exercises-42"><i class="fa fa-check"></i><b>9.7.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ch-measurement.html"><a href="ch-measurement.html"><i class="fa fa-check"></i><b>10</b> Measurement</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="sec-units.html"><a href="sec-units.html"><i class="fa fa-check"></i><b>10.1</b> Units</a>
+<ul>
+<li class="chapter" data-level="10.1.1" data-path="sec-units.html"><a href="sec-units.html#units-of-length"><i class="fa fa-check"></i><b>10.1.1</b> Units of Length</a></li>
+<li class="chapter" data-level="10.1.2" data-path="sec-units.html"><a href="sec-units.html#units-of-area"><i class="fa fa-check"></i><b>10.1.2</b> Units of Area</a></li>
+<li class="chapter" data-level="10.1.3" data-path="sec-units.html"><a href="sec-units.html#units-of-volume"><i class="fa fa-check"></i><b>10.1.3</b> Units of Volume</a></li>
+<li class="chapter" data-level="10.1.4" data-path="sec-units.html"><a href="sec-units.html#units-of-angle-measurements"><i class="fa fa-check"></i><b>10.1.4</b> Units of Angle Measurements</a></li>
+<li class="chapter" data-level="10.1.5" data-path="sec-units.html"><a href="sec-units.html#unit-conversions-and-dimensional-analysis"><i class="fa fa-check"></i><b>10.1.5</b> Unit Conversions and Dimensional Analysis</a></li>
+<li class="chapter" data-level="10.1.6" data-path="sec-units.html"><a href="sec-units.html#exercises-43"><i class="fa fa-check"></i><b>10.1.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="decomposing-and-composing.html"><a href="decomposing-and-composing.html"><i class="fa fa-check"></i><b>10.2</b> Decomposing and Composing</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="decomposing-and-composing.html"><a href="decomposing-and-composing.html#area"><i class="fa fa-check"></i><b>10.2.1</b> Area</a></li>
+<li class="chapter" data-level="10.2.2" data-path="decomposing-and-composing.html"><a href="decomposing-and-composing.html#volume"><i class="fa fa-check"></i><b>10.2.2</b> Volume</a></li>
+<li class="chapter" data-level="10.2.3" data-path="decomposing-and-composing.html"><a href="decomposing-and-composing.html#related-horizon-content-knowledge"><i class="fa fa-check"></i><b>10.2.3</b> Related Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="10.2.4" data-path="decomposing-and-composing.html"><a href="decomposing-and-composing.html#exercises-44"><i class="fa fa-check"></i><b>10.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="measurements-of-triangles.html"><a href="measurements-of-triangles.html"><i class="fa fa-check"></i><b>10.3</b> Measurements of Triangles</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="measurements-of-triangles.html"><a href="measurements-of-triangles.html#exercises-45"><i class="fa fa-check"></i><b>10.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="10.4" data-path="distance.html"><a href="distance.html"><i class="fa fa-check"></i><b>10.4</b> Distance</a>
+<ul>
+<li class="chapter" data-level="10.4.1" data-path="distance.html"><a href="distance.html#circles-and-lines"><i class="fa fa-check"></i><b>10.4.1</b> Circles and Lines</a></li>
+<li class="chapter" data-level="10.4.2" data-path="distance.html"><a href="distance.html#related-horizon-content-knowledge-1"><i class="fa fa-check"></i><b>10.4.2</b> Related Horizon Content Knowledge</a></li>
+<li class="chapter" data-level="10.4.3" data-path="distance.html"><a href="distance.html#exercises-46"><i class="fa fa-check"></i><b>10.4.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html"><i class="fa fa-check"></i><b>11</b> Groups and Geometry</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-algebraic-geometry.html"><a href="ch-algebraic-geometry.html#erlangen-program"><i class="fa fa-check"></i>Erlangen Program</a></li>
+<li class="chapter" data-level="11.1" data-path="groups-and-transformations.html"><a href="groups-and-transformations.html"><i class="fa fa-check"></i><b>11.1</b> Groups and Transformations</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="groups-and-transformations.html"><a href="groups-and-transformations.html#group-review"><i class="fa fa-check"></i><b>11.1.1</b> Group Review</a></li>
+<li class="chapter" data-level="11.1.2" data-path="groups-and-transformations.html"><a href="groups-and-transformations.html#dihedral-groups"><i class="fa fa-check"></i><b>11.1.2</b> Dihedral Groups</a></li>
+<li class="chapter" data-level="11.1.3" data-path="groups-and-transformations.html"><a href="groups-and-transformations.html#subgroups"><i class="fa fa-check"></i><b>11.1.3</b> Subgroups</a></li>
+<li class="chapter" data-level="11.1.4" data-path="groups-and-transformations.html"><a href="groups-and-transformations.html#exercises-47"><i class="fa fa-check"></i><b>11.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="normal-subgroups-and-factor-groups.html"><a href="normal-subgroups-and-factor-groups.html"><i class="fa fa-check"></i><b>11.2</b> Normal Subgroups and Factor Groups</a>
+<ul>
+<li class="chapter" data-level="11.2.1" data-path="normal-subgroups-and-factor-groups.html"><a href="normal-subgroups-and-factor-groups.html#cosets"><i class="fa fa-check"></i><b>11.2.1</b> Cosets</a></li>
+<li class="chapter" data-level="11.2.2" data-path="normal-subgroups-and-factor-groups.html"><a href="normal-subgroups-and-factor-groups.html#normal-subgroups"><i class="fa fa-check"></i><b>11.2.2</b> Normal Subgroups</a></li>
+<li class="chapter" data-level="11.2.3" data-path="normal-subgroups-and-factor-groups.html"><a href="normal-subgroups-and-factor-groups.html#factor-groups"><i class="fa fa-check"></i><b>11.2.3</b> Factor Groups</a></li>
+<li class="chapter" data-level="11.2.4" data-path="normal-subgroups-and-factor-groups.html"><a href="normal-subgroups-and-factor-groups.html#exercises-48"><i class="fa fa-check"></i><b>11.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="11.3" data-path="group-homomorphisms-revisited.html"><a href="group-homomorphisms-revisited.html"><i class="fa fa-check"></i><b>11.3</b> Group Homomorphisms Revisited</a>
+<ul>
+<li class="chapter" data-level="11.3.1" data-path="group-homomorphisms-revisited.html"><a href="group-homomorphisms-revisited.html#exercises-49"><i class="fa fa-check"></i><b>11.3.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ch-transformations.html"><a href="ch-transformations.html"><i class="fa fa-check"></i><b>12</b> Euclidean Transformational Geometry</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="introduction-to-transformational-geometry.html"><a href="introduction-to-transformational-geometry.html"><i class="fa fa-check"></i><b>12.1</b> Introduction to Transformational Geometry</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="introduction-to-transformational-geometry.html"><a href="introduction-to-transformational-geometry.html#neutral-geometry-from-distances"><i class="fa fa-check"></i><b>12.1.1</b> Neutral Geometry from Distances</a></li>
+<li class="chapter" data-level="12.1.2" data-path="introduction-to-transformational-geometry.html"><a href="introduction-to-transformational-geometry.html#isometries"><i class="fa fa-check"></i><b>12.1.2</b> Isometries</a></li>
+<li class="chapter" data-level="12.1.3" data-path="introduction-to-transformational-geometry.html"><a href="introduction-to-transformational-geometry.html#congruence"><i class="fa fa-check"></i><b>12.1.3</b> Congruence</a></li>
+<li class="chapter" data-level="12.1.4" data-path="introduction-to-transformational-geometry.html"><a href="introduction-to-transformational-geometry.html#exercises-50"><i class="fa fa-check"></i><b>12.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html"><i class="fa fa-check"></i><b>12.2</b> Representations of the Euclidean Plane</a>
+<ul>
+<li class="chapter" data-level="12.2.1" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#synthetic-plane"><i class="fa fa-check"></i><b>12.2.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.2.2" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#cartesian-plane"><i class="fa fa-check"></i><b>12.2.2</b> Cartesian Plane</a></li>
+<li class="chapter" data-level="12.2.3" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#vector-space"><i class="fa fa-check"></i><b>12.2.3</b> Vector Space</a></li>
+<li class="chapter" data-level="12.2.4" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#complex-plane"><i class="fa fa-check"></i><b>12.2.4</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.2.5" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#isometries-1"><i class="fa fa-check"></i><b>12.2.5</b> Isometries</a></li>
+<li class="chapter" data-level="12.2.6" data-path="representations-of-the-euclidean-plane.html"><a href="representations-of-the-euclidean-plane.html#exercises-51"><i class="fa fa-check"></i><b>12.2.6</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="translations.html"><a href="translations.html"><i class="fa fa-check"></i><b>12.3</b> Translations</a>
+<ul>
+<li class="chapter" data-level="12.3.1" data-path="translations.html"><a href="translations.html#synthetic-plane-1"><i class="fa fa-check"></i><b>12.3.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.3.2" data-path="translations.html"><a href="translations.html#cartesian-plane-and-vector-space"><i class="fa fa-check"></i><b>12.3.2</b> Cartesian Plane and Vector Space</a></li>
+<li class="chapter" data-level="12.3.3" data-path="translations.html"><a href="translations.html#complex-plane-1"><i class="fa fa-check"></i><b>12.3.3</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.3.4" data-path="translations.html"><a href="translations.html#compositions"><i class="fa fa-check"></i><b>12.3.4</b> Compositions</a></li>
+<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.4" data-path="rotations.html"><a href="rotations.html"><i class="fa fa-check"></i><b>12.4</b> Rotations</a>
+<ul>
+<li class="chapter" data-level="12.4.1" data-path="rotations.html"><a href="rotations.html#synthetic-plane-2"><i class="fa fa-check"></i><b>12.4.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.4.2" data-path="rotations.html"><a href="rotations.html#complex-plane-2"><i class="fa fa-check"></i><b>12.4.2</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.4.3" data-path="rotations.html"><a href="rotations.html#cartesian-plane-and-vector-space-1"><i class="fa fa-check"></i><b>12.4.3</b> Cartesian Plane and Vector Space</a></li>
+<li class="chapter" data-level="12.4.4" data-path="rotations.html"><a href="rotations.html#compositions-and-groups-of-rotations"><i class="fa fa-check"></i><b>12.4.4</b> Compositions and Groups of Rotations</a></li>
+<li class="chapter" data-level="12.4.5" data-path="rotations.html"><a href="rotations.html#exercises-53"><i class="fa fa-check"></i><b>12.4.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.5" data-path="reflections-1.html"><a href="reflections-1.html"><i class="fa fa-check"></i><b>12.5</b> Reflections</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="reflections-1.html"><a href="reflections-1.html#synthetic-plane-3"><i class="fa fa-check"></i><b>12.5.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.5.2" data-path="reflections-1.html"><a href="reflections-1.html#complex-plane-3"><i class="fa fa-check"></i><b>12.5.2</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.5.3" data-path="reflections-1.html"><a href="reflections-1.html#vector-space-and-cartesian-plane"><i class="fa fa-check"></i><b>12.5.3</b> Vector Space and Cartesian Plane</a></li>
+<li class="chapter" data-level="12.5.4" data-path="reflections-1.html"><a href="reflections-1.html#compositions-1"><i class="fa fa-check"></i><b>12.5.4</b> Compositions</a></li>
+<li class="chapter" data-level="12.5.5" data-path="reflections-1.html"><a href="reflections-1.html#exercises-54"><i class="fa fa-check"></i><b>12.5.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="glide-reflections.html"><a href="glide-reflections.html"><i class="fa fa-check"></i><b>12.6</b> Glide-Reflections</a>
+<ul>
+<li class="chapter" data-level="12.6.1" data-path="glide-reflections.html"><a href="glide-reflections.html#synthetic-plane-4"><i class="fa fa-check"></i><b>12.6.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.6.2" data-path="glide-reflections.html"><a href="glide-reflections.html#complex-plane-4"><i class="fa fa-check"></i><b>12.6.2</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.6.3" data-path="glide-reflections.html"><a href="glide-reflections.html#exercises-55"><i class="fa fa-check"></i><b>12.6.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a>
+<ul>
+<li class="chapter" data-level="12.7.1" data-path="group-of-isometries.html"><a href="group-of-isometries.html#exercises-56"><i class="fa fa-check"></i><b>12.7.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a>
+<ul>
+<li class="chapter" data-level="12.8.1" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#synthetic-plane-5"><i class="fa fa-check"></i><b>12.8.1</b> Synthetic Plane</a></li>
+<li class="chapter" data-level="12.8.2" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#cartesian-plane-1"><i class="fa fa-check"></i><b>12.8.2</b> Cartesian Plane</a></li>
+<li class="chapter" data-level="12.8.3" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#vector-space-1"><i class="fa fa-check"></i><b>12.8.3</b> Vector Space</a></li>
+<li class="chapter" data-level="12.8.4" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#complex-plane-5"><i class="fa fa-check"></i><b>12.8.4</b> Complex Plane</a></li>
+<li class="chapter" data-level="12.8.5" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#compositions-2"><i class="fa fa-check"></i><b>12.8.5</b> Compositions</a></li>
+<li class="chapter" data-level="12.8.6" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html#exercises-57"><i class="fa fa-check"></i><b>12.8.6</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV DATA ANALYSIS</b></span></li>
+<li class="chapter" data-level="13" data-path="ch-data1.html"><a href="ch-data1.html"><i class="fa fa-check"></i><b>13</b> Data Analysis Foundations</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="statistics-data-analysis-and-mathematics.html"><a href="statistics-data-analysis-and-mathematics.html"><i class="fa fa-check"></i><b>13.1</b> Statistics, Data Analysis, and Mathematics</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="statistics-data-analysis-and-mathematics.html"><a href="statistics-data-analysis-and-mathematics.html#the-centrality-of-variability"><i class="fa fa-check"></i><b>13.1.1</b> The Centrality of Variability</a></li>
+<li class="chapter" data-level="13.1.2" data-path="statistics-data-analysis-and-mathematics.html"><a href="statistics-data-analysis-and-mathematics.html#exercises-58"><i class="fa fa-check"></i><b>13.1.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="teaching-and-learning-of-data-analysis-and-statistics.html"><a href="teaching-and-learning-of-data-analysis-and-statistics.html"><i class="fa fa-check"></i><b>13.2</b> Teaching and Learning of Data Analysis and Statistics</a>
+<ul>
+<li class="chapter" data-level="13.2.1" data-path="teaching-and-learning-of-data-analysis-and-statistics.html"><a href="teaching-and-learning-of-data-analysis-and-statistics.html#statistical-habits-of-mind"><i class="fa fa-check"></i><b>13.2.1</b> Statistical Habits of Mind</a></li>
+<li class="chapter" data-level="13.2.2" data-path="teaching-and-learning-of-data-analysis-and-statistics.html"><a href="teaching-and-learning-of-data-analysis-and-statistics.html#exercises-59"><i class="fa fa-check"></i><b>13.2.2</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ch-data-explore.html"><a href="ch-data-explore.html"><i class="fa fa-check"></i><b>14</b> Exploring Data</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="types-of-data.html"><a href="types-of-data.html"><i class="fa fa-check"></i><b>14.1</b> Types of Data</a>
+<ul>
+<li class="chapter" data-level="14.1.1" data-path="types-of-data.html"><a href="types-of-data.html#categorical"><i class="fa fa-check"></i><b>14.1.1</b> Categorical</a></li>
+<li class="chapter" data-level="14.1.2" data-path="types-of-data.html"><a href="types-of-data.html#ordinal"><i class="fa fa-check"></i><b>14.1.2</b> Ordinal</a></li>
+<li class="chapter" data-level="14.1.3" data-path="types-of-data.html"><a href="types-of-data.html#binary"><i class="fa fa-check"></i><b>14.1.3</b> Binary</a></li>
+<li class="chapter" data-level="14.1.4" data-path="types-of-data.html"><a href="types-of-data.html#binomial"><i class="fa fa-check"></i><b>14.1.4</b> Binomial</a></li>
+<li class="chapter" data-level="14.1.5" data-path="types-of-data.html"><a href="types-of-data.html#count"><i class="fa fa-check"></i><b>14.1.5</b> Count</a></li>
+<li class="chapter" data-level="14.1.6" data-path="types-of-data.html"><a href="types-of-data.html#continuous"><i class="fa fa-check"></i><b>14.1.6</b> Continuous</a></li>
+<li class="chapter" data-level="14.1.7" data-path="types-of-data.html"><a href="types-of-data.html#exercise"><i class="fa fa-check"></i><b>14.1.7</b> Exercise</a></li>
+</ul></li>
+<li class="chapter" data-level="14.2" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html"><i class="fa fa-check"></i><b>14.2</b> Exploring Univariate Data Graphically</a>
+<ul>
+<li class="chapter" data-level="14.2.1" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html#histograms"><i class="fa fa-check"></i><b>14.2.1</b> Histograms</a></li>
+<li class="chapter" data-level="14.2.2" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html#dot-plots"><i class="fa fa-check"></i><b>14.2.2</b> Dot Plots</a></li>
+<li class="chapter" data-level="14.2.3" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html#density-plots"><i class="fa fa-check"></i><b>14.2.3</b> Density Plots</a></li>
+<li class="chapter" data-level="14.2.4" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html#box-plots"><i class="fa fa-check"></i><b>14.2.4</b> Box Plots</a></li>
+<li class="chapter" data-level="14.2.5" data-path="exploring-univariate-data-graphically.html"><a href="exploring-univariate-data-graphically.html#exercises-60"><i class="fa fa-check"></i><b>14.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="14.3" data-path="exploring-bivariate-data-graphically.html"><a href="exploring-bivariate-data-graphically.html"><i class="fa fa-check"></i><b>14.3</b> Exploring Bivariate Data Graphically</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="exploring-bivariate-data-graphically.html"><a href="exploring-bivariate-data-graphically.html#scatterplots"><i class="fa fa-check"></i><b>14.3.1</b> Scatterplots</a></li>
+<li class="chapter" data-level="14.3.2" data-path="exploring-bivariate-data-graphically.html"><a href="exploring-bivariate-data-graphically.html#exercises-61"><i class="fa fa-check"></i><b>14.3.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="measures-of-center.html"><a href="measures-of-center.html"><i class="fa fa-check"></i><b>14.4</b> Measures of Center</a>
+<ul>
+<li class="chapter" data-level="14.4.1" data-path="measures-of-center.html"><a href="measures-of-center.html#exercises-62"><i class="fa fa-check"></i><b>14.4.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="measures-of-variability.html"><a href="measures-of-variability.html"><i class="fa fa-check"></i><b>14.5</b> Measures of Variability</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="measures-of-variability.html"><a href="measures-of-variability.html#exercises-63"><i class="fa fa-check"></i><b>14.5.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="exploring-bivariate-data-numerically.html"><a href="exploring-bivariate-data-numerically.html"><i class="fa fa-check"></i><b>14.6</b> Exploring Bivariate Data Numerically</a>
+<ul>
+<li class="chapter" data-level="14.6.1" data-path="exploring-bivariate-data-numerically.html"><a href="exploring-bivariate-data-numerically.html#categorical-times-numerical-data"><i class="fa fa-check"></i><b>14.6.1</b> Categorical <span class="math inline">\(\times\)</span> Numerical Data</a></li>
+<li class="chapter" data-level="14.6.2" data-path="exploring-bivariate-data-numerically.html"><a href="exploring-bivariate-data-numerically.html#numerical-times-numerical-data"><i class="fa fa-check"></i><b>14.6.2</b> Numerical <span class="math inline">\(\times\)</span> Numerical Data</a></li>
+<li class="chapter" data-level="14.6.3" data-path="exploring-bivariate-data-numerically.html"><a href="exploring-bivariate-data-numerically.html#categorical-times-categorical-data"><i class="fa fa-check"></i><b>14.6.3</b> Categorical <span class="math inline">\(\times\)</span> Categorical Data</a></li>
+<li class="chapter" data-level="14.6.4" data-path="exploring-bivariate-data-numerically.html"><a href="exploring-bivariate-data-numerically.html#exercises-64"><i class="fa fa-check"></i><b>14.6.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="ch-simulations.html"><a href="ch-simulations.html"><i class="fa fa-check"></i><b>15</b> Samples, Simulations, and Probability</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="probability-overview.html"><a href="probability-overview.html"><i class="fa fa-check"></i><b>15.1</b> Probability Overview</a>
+<ul>
+<li class="chapter" data-level="15.1.1" data-path="probability-overview.html"><a href="probability-overview.html#compound-events"><i class="fa fa-check"></i><b>15.1.1</b> Compound Events</a></li>
+<li class="chapter" data-level="15.1.2" data-path="probability-overview.html"><a href="probability-overview.html#estimating-probabilities"><i class="fa fa-check"></i><b>15.1.2</b> Estimating Probabilities</a></li>
+<li class="chapter" data-level="15.1.3" data-path="probability-overview.html"><a href="probability-overview.html#exercises-65"><i class="fa fa-check"></i><b>15.1.3</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="15.2" data-path="probability-spaces.html"><a href="probability-spaces.html"><i class="fa fa-check"></i><b>15.2</b> Probability Spaces</a>
+<ul>
+<li class="chapter" data-level="15.2.1" data-path="probability-spaces.html"><a href="probability-spaces.html#boolean-algebra-and-probability"><i class="fa fa-check"></i><b>15.2.1</b> Boolean Algebra and Probability</a></li>
+<li class="chapter" data-level="15.2.2" data-path="probability-spaces.html"><a href="probability-spaces.html#exercises-66"><i class="fa fa-check"></i><b>15.2.2</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="15.3" data-path="conditional-probability.html"><a href="conditional-probability.html"><i class="fa fa-check"></i><b>15.3</b> Conditional Probability</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="conditional-probability.html"><a href="conditional-probability.html#exercises-67"><i class="fa fa-check"></i><b>15.3.1</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="random-variables-and-expected-value.html"><a href="random-variables-and-expected-value.html"><i class="fa fa-check"></i><b>15.4</b> Random Variables and Expected Value</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="random-variables-and-expected-value.html"><a href="random-variables-and-expected-value.html#exercises-68"><i class="fa fa-check"></i><b>15.4.1</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="ch-parameters.html"><a href="ch-parameters.html"><i class="fa fa-check"></i><b>16</b> Estimating Parameters and Testing Hypotheses</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="sampling-techniques-and-study-types.html"><a href="sampling-techniques-and-study-types.html"><i class="fa fa-check"></i><b>16.1</b> Sampling Techniques and Study Types</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="sampling-techniques-and-study-types.html"><a href="sampling-techniques-and-study-types.html#sampling-errors-and-bias"><i class="fa fa-check"></i><b>16.1.1</b> Sampling Errors and Bias</a></li>
+<li class="chapter" data-level="16.1.2" data-path="sampling-techniques-and-study-types.html"><a href="sampling-techniques-and-study-types.html#probability-sampling"><i class="fa fa-check"></i><b>16.1.2</b> Probability Sampling</a></li>
+<li class="chapter" data-level="16.1.3" data-path="sampling-techniques-and-study-types.html"><a href="sampling-techniques-and-study-types.html#study-types"><i class="fa fa-check"></i><b>16.1.3</b> Study Types</a></li>
+<li class="chapter" data-level="16.1.4" data-path="sampling-techniques-and-study-types.html"><a href="sampling-techniques-and-study-types.html#exercises-69"><i class="fa fa-check"></i><b>16.1.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html"><i class="fa fa-check"></i><b>16.2</b> Point and Interval Estimators</a>
+<ul>
+<li class="chapter" data-level="16.2.1" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html#estimating-population-means-and-medians"><i class="fa fa-check"></i><b>16.2.1</b> Estimating Population Means and Medians</a></li>
+<li class="chapter" data-level="16.2.2" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html#estimating-differences-of-means"><i class="fa fa-check"></i><b>16.2.2</b> Estimating Differences of Means</a></li>
+<li class="chapter" data-level="16.2.3" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html#estimating-proportions"><i class="fa fa-check"></i><b>16.2.3</b> Estimating Proportions</a></li>
+<li class="chapter" data-level="16.2.4" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html#interpretations"><i class="fa fa-check"></i><b>16.2.4</b> Interpretations</a></li>
+<li class="chapter" data-level="16.2.5" data-path="point-and-interval-estimators.html"><a href="point-and-interval-estimators.html#exercises-70"><i class="fa fa-check"></i><b>16.2.5</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="16.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>16.3</b> Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>16.3.1</b> Fisher’s Approach</a></li>
+<li class="chapter" data-level="16.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>16.3.2</b> Neyman and Pearson’s Approach</a></li>
+<li class="chapter" data-level="16.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-71"><i class="fa fa-check"></i><b>16.3.3</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Mathematical Knowledge for Secondary Teachers</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="conditional-probability" class="section level2" number="15.3">
+<h2><span class="header-section-number">15.3</span> Conditional Probability</h2>
+<p>There are times that we want to know the probability of a set of events conditioned on the occurrence of another set of events. For instance, if we are rolling two dice, we may want to know the probability that the sum of the dice is greater than 4 conditioned on the first die being a 2. With this scenario we have reduced the overall sample space to just those events for which the first die is a two. So what we are wanting to know is
+<span class="math display">\[\frac{P(\mbox{sum of dice is greater than 4})}{P(\mbox{first die is a two})} = \frac{4}{6}\]</span> since the total possible events are <span class="math inline">\(\{(2,1), (2,2), (2,3), (2,4), (2,5), (2,6)\}\)</span> with only 4 of the 6 being the desired events.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-310" class="definition"><strong>Definition 15.4  </strong></span>If <span class="math inline">\(A,B\in \mathcal{F}\)</span> then the <strong>conditional probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span></strong> is defined as
+<span class="math display">\[P(A\vert B) = \frac{P(A\cap B)}{P(B)} \mbox{, when } P(B)&gt;0.\]</span>
+Similarly,
+<span class="math display">\[P(B\vert A) = \frac{P(A\cap B)}{P(A)} \mbox{, when } P(A)&gt;0.\]</span></p>
+</div>
+<p>The assumption that <span class="math inline">\(P(B)&gt;0\)</span> for <span class="math inline">\(P(A\vert B)\)</span> is reasonable in that if <span class="math inline">\(P(B)=0\)</span>, we would be assuming that an impossible event occurs.</p>
+<div class="theorem">
+<p><span id="thm:probability-intersection" class="theorem"><strong>Theorem 15.2  </strong></span>If <span class="math inline">\(A,B\in \mathcal{F}\)</span>, with <span class="math inline">\(P(A)&gt;0\)</span> and <span class="math inline">\(P(B)&gt;0\)</span>, then
+<span class="math display">\[P(A\cap B) = P(A)\cdot P(B\vert A) = P(B) \cdot P(A\vert B)\]</span></p>
+</div>
+<p>This theorem is demonstrated in the following tree.</p>
+<p><img src="tikz/conditional-tree.png" width="80%" style="display: block; margin: auto;" /></p>
+<div class="definition">
+<p><span id="def:unlabeled-div-311" class="definition"><strong>Definition 15.5  </strong></span>Two events are <strong>independent</strong> if the occurrence of one does not affect the probability of occurrence of the other.</p>
+<p>If two events are not independent, they are called <strong>dependent</strong>.</p>
+</div>
+<p>In terms of the probability measures, events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if
+<span class="math display">\[P(A|B) = P(A) \quad \mbox{ and } \quad P(B|A) = P(B)\]</span> since the probability of event <span class="math inline">\(A\)</span> should be the same whether or not event <span class="math inline">\(B\)</span> has occurred, similarly with <span class="math inline">\(B|A\)</span>. Combining this with the previous theorem we have the following theorem.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-312" class="theorem"><strong>Theorem 15.3  </strong></span>Two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if their joint probability equals the product of their probabilities.
+<span class="math display">\[P(A \cap B) = P(A)P(B)\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-313" class="proof"><em>Proof</em>. </span>Assume that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent events. So <span class="math inline">\(P(A|B)=P(A)\)</span>. Combining this with Theorem <a href="conditional-probability.html#thm:probability-intersection">15.2</a> we have that <span class="math display">\[P(A\cap B) = P(B)\cdot P(A|B) = P(B)\cdot P(A).\]</span></p>
+<p>If we instead assume that <span class="math inline">\(P(A\cap B)=P(A)\cdot P(B)\)</span>, Theorem  implies that
+<span class="math display">\[P(A) P(B) = P(A\cap B) = P(A) P(B|A) = P(B)P(A|B)\]</span> and so we have
+<span class="math display">\[P(B|A) = P(B) \mbox{ and } P(A|B)=P(A).\]</span> So the events are independent.</p>
+</div>
+<div class="standards">
+<div id="related-content-standards-105" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSS.CP.2) Understand that two events A and B are independent if the probability of A and B occurring together is the product of their probabilities, and use this characterization to determine if they are independent.</li>
+<li>(HSS.CP.3) Understand the conditional probability of A given B as P(A and B)/P(B), and interpret independence of A and B as saying that the conditional probability of A given B is the same as the probability of A, and the conditional probability of B given A is the same as the probability of B.</li>
+</ul>
+</div>
+<p>Let’s return to our example of drawing three cards and determining the probabilities of draw a face card or a number card.</p>
+<p><img src="tikz/tree_cards_face.png" width="65%" style="display: block; margin: auto;" /></p>
+<p>Let <span class="math inline">\(A\)</span> be the events where the first card drawn was a face card and <span class="math inline">\(B\)</span> be the events where the third card drawn was a face card. So
+<span class="math display">\[A = \{FFF, FFN, FNF, FNN\} \mbox{ and } B=\{FFF, FNF, NFF, NNF\}.\]</span>
+Since each of the events in <span class="math inline">\(A\)</span> are mutually exclusive we have that
+<span class="math display">\[\begin{align}
+P(A) &amp;= P(\{FFF\}) + P(\{FFN\}) + P(\{FNF\}) + P(\{FNN\}) \\ &amp;= \frac{1320 + 5280 + 5280 + 18720}{132600} \\ &amp;= \frac{17}{221} = \frac{3}{13},
+\end{align}\]</span>
+<span class="math display">\[\begin{align}
+P(B) &amp;= P(\{FFF\}) + P(\{FNF\}) + P(\{NFF\}) + P(\{NNF\}) \\ &amp;= \frac{1320+5280+5280+18720}{132600} \\ &amp;= \frac{17}{221} = \frac{3}{13},
+\end{align}\]</span>
+and <span class="math display">\[P(A\cap B) = P(\{FFF,FNF\}) = \frac{1320+5280}{132600}= \frac{11}{221}.\]</span></p>
+<p>From these we have that
+<span class="math display">\[ P(A\vert B) = \frac{P(A\cap B)}{P(B)} = \frac{11}{17} \neq P(A)\]</span>
+and
+<span class="math display">\[P(B\vert A) = \frac{P(A\cap B)}{P(A)} = \frac{11}{17} \neq P(B)\]</span> and so these are not independent events.</p>
+<p>The non-independence of these events makes sense in this situation since the probability that the third card is a face card is dependent upon the first card being a face card as that would reduce the number of face cards that could be drawn later.</p>
+<p>Because of the vagueness of the English language, individuals often are confused about the differences between independent and mutually exclusive events. Recall that two events, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, are mutually exclusive if they cannot both occur at the same time, <span class="math inline">\(A\cap B=\emptyset\)</span>. This means that two events are mutually exclusive if <span class="math inline">\(P(A|B)=0\)</span> and <span class="math inline">\(P(B|A)=0\)</span>.</p>
+<!---
+% compare independent and mutually exclusive events.
+--->
+<div class="standards">
+<div id="related-content-standards-106" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSS.CP.4) Construct and interpret two-way frequency tables of data when two categories are associated with each object being classified. Use the two-way table as a sample space to decide if events are independent and to approximate conditional probabilities.</li>
+<li>(HSS.CP.5) Recognize and explain the concepts of conditional probability and independence in everyday language and everyday situations.</li>
+</ul>
+</div>
+<p>We will now look at the math test scores for eighth graders in a local school district to determine if proficiency in math, as measured by the test, is dependent or independent of Gender and/or Race using some two-way frequency tables.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-233">Table 15.6: </span></caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Not Proficient</th>
+<th align="right">Proficient</th>
+<th align="right">Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Male</td>
+<td align="right">425</td>
+<td align="right">299</td>
+<td align="right">724</td>
+</tr>
+<tr class="even">
+<td align="left">Female</td>
+<td align="right">362</td>
+<td align="right">295</td>
+<td align="right">657</td>
+</tr>
+<tr class="odd">
+<td align="left">Totals</td>
+<td align="right">787</td>
+<td align="right">594</td>
+<td align="right">1381</td>
+</tr>
+</tbody>
+</table>
+<p>From this table we see that <span class="math inline">\(P(\mbox{Male})=\frac{724}{1381} \approx 0.524\)</span>, <span class="math inline">\(P(\mbox{Proficient}) = \frac{594}{1381} \approx 0.430\)</span>, and <span class="math display">\[P(\mbox{Male and Proficient}) = \frac{299}{1381}  \approx 0.217 .\]</span> Since <span class="math display">\[P(\mbox{Male})\cdot P(\mbox{Proficient}) \approx 0.524\cdot 0.430 \approx 0.225\]</span> we see that it is very likely that proficiency on this math test is independent of gender as <span class="math inline">\(0.225\)</span> is fairly close to <span class="math inline">\(0.217\)</span>.</p>
+<p>These results can also be seen in the joint relative frequency table where independence is checked to see if the values inside the table match the product of the marginal probabilities.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-234">Table 15.7: </span></caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Not Proficient</th>
+<th align="right">Proficient</th>
+<th align="right">Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Male</td>
+<td align="right">0.308</td>
+<td align="right">0.217</td>
+<td align="right">0.524</td>
+</tr>
+<tr class="even">
+<td align="left">Female</td>
+<td align="right">0.262</td>
+<td align="right">0.214</td>
+<td align="right">0.476</td>
+</tr>
+<tr class="odd">
+<td align="left">Totals</td>
+<td align="right">0.570</td>
+<td align="right">0.430</td>
+<td align="right">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>We now turn to a comparison of White and Black students in the same eighth grade math assessment with a two-way frequency table.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-235">Table 15.8: </span></caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Not Proficient</th>
+<th align="right">Proficient</th>
+<th align="right">Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Black or African American</td>
+<td align="right">324</td>
+<td align="right">107</td>
+<td align="right">431</td>
+</tr>
+<tr class="even">
+<td align="left">White</td>
+<td align="right">388</td>
+<td align="right">465</td>
+<td align="right">853</td>
+</tr>
+<tr class="odd">
+<td align="left">Totals</td>
+<td align="right">712</td>
+<td align="right">572</td>
+<td align="right">1284</td>
+</tr>
+</tbody>
+</table>
+<p>We now look at the joint relative frequency table to determine independence.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-236">Table 15.9: </span></caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Not Proficient</th>
+<th align="right">Proficient</th>
+<th align="right">Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Black or African American</td>
+<td align="right">0.252</td>
+<td align="right">0.083</td>
+<td align="right">0.336</td>
+</tr>
+<tr class="even">
+<td align="left">White</td>
+<td align="right">0.302</td>
+<td align="right">0.362</td>
+<td align="right">0.664</td>
+</tr>
+<tr class="odd">
+<td align="left">Totals</td>
+<td align="right">0.555</td>
+<td align="right">0.445</td>
+<td align="right">1.000</td>
+</tr>
+</tbody>
+</table>
+<p>Since <span class="math inline">\(P(\mbox{White}) \cdot P(\mbox{Proficient}) = 0.664 \cdot 0.445 = 0.296\)</span> and <span class="math inline">\(P(\mbox{White and Proficient}) = 0.362\)</span> we see that proficiency is not independent of race. Instead, we find
+<span class="math display">\[P(\mbox{Proficient}|\mbox{White}) = \frac{P(\mbox{Proficient and White})}{P(\mbox{White})} \approx \frac{0.362}{0.664} \approx 0.545\]</span> and
+<span class="math display">\[P(\mbox{Proficient}|\mbox{Black}) = \frac{P(\mbox{Proficient and Black})}{P(\mbox{Black})} \approx \frac{0.083}{0.336} \approx 0.247\]</span> which can be seen in the relative frequency table.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-237">Table 15.10: </span></caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Not Proficient</th>
+<th align="right">Proficient</th>
+<th align="right">Totals</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Black or African American</td>
+<td align="right">0.752</td>
+<td align="right">0.248</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">White</td>
+<td align="right">0.455</td>
+<td align="right">0.545</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<div class="standards">
+<div id="related-content-standards-107" class="section level3 unnumbered center">
+<h3><strong>Related Content Standards</strong></h3>
+</div>
+<ul>
+<li>(HSS.CP.6) Find the conditional probability of A given B as the fraction of B’s outcomes that also belong to A, and interpret the answer in terms of the model.</li>
+<li>(HSS.CP.8) Apply the general Multiplication Rule in a uniform probability model, <span class="math inline">\(P(A \mbox{ and } B) = P(A)P(B|A) = P(B)P(A|B)\)</span>, and interpret the answer in terms of the model.</li>
+</ul>
+</div>
+<div id="exercises-67" class="section level3" number="15.3.1">
+<h3><span class="header-section-number">15.3.1</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Use a simulation of 1000 pairs of coin flips. Use this data set to determine if Heads on the second flip is independent of Heads on the first flip.</p></li>
+<li><p>Find a data set of interest (similar to the education example) and determine if two variables are dependent or independent.</p></li>
+</ol>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="probability-spaces.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="random-variables-and-expected-value.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": {}
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true,
+"info": false
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
