@@ -32,7 +32,7 @@
   
 <link rel="prev" href="ch-simulations.html"/>
 <link rel="next" href="probability-spaces.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -771,8 +771,8 @@ div.csl-indent {
 <p>This sampling technique demonstrates the phenomena that if someone could flip a fair coin an extremely large number of times that half of the time it would land on heads and half of the time it would land on tails.</p>
 <p>Just because something is a random phenomena does not mean that all of the outcomes have the same amount of certainty. For instance, in a Presidential election the tickets from the two major parties are much more likely to win the election than someone from a different party. Similarly, not all college football teams start the season with the same likelihood of winning a national championship.</p>
 <div class="standards">
-<div id="related-content-standards-99" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(7.SP.5) Understand that the probability of a chance event is a number between 0 and 1 that expresses the likelihood of the event occurring. Larger numbers indicate greater likelihood. A probability near 0 indicates an unlikely event, a probability around 1/2 indicates an event that is neither unlikely nor likely, and a probability near 1 indicates a likely event.</li>
@@ -827,10 +827,9 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 <div id="compound-events" class="section level3" number="15.1.1">
 <h3><span class="header-section-number">15.1.1</span> Compound Events</h3>
 <p>Most of the time that we calculate probabilities the event space is more complicated and is a combination of multiple events. Such events are called compound events. We can use various techniques such as listing out all of the possible events and then work to determine the probabilities for each event, we can use tree diagrams to simplify the process of making sure that we have listed all of the possible events and computed their probabilities, or we can run simulations to estimate the probabilities of the combinations.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-100" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li><p>(7.SP.8) Find probabilities of compound events using organized lists, tables, tree diagrams, and simulation.</p>
@@ -849,8 +848,8 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 <p><img src="images/birth_sim_prop.jpg" width="90%" style="display: block; margin: auto;" /></p>
 <p>As we increase the size of our simulation and/or the number of simulations, we will find that the probabilities for each of the events will get closer to the theoretical probabilities found using the tree diagram.</p>
 <div class="standards">
-<div id="related-content-standards-101" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(7.SP.7) Develop a probability model and use it to find probabilities of events. Compare probabilities from a model to observed frequencies; if the agreement is not good, explain possible sources of the discrepancy.
@@ -862,13 +861,13 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </div>
 <p>The tree diagram method of organizing the possible events and their probabilities is particularly useful when the probabilities are not all the same. In a deck of cards, there are 52 cards with 12 of them being face cards. Let’s explore the probabilities related to the number of face cards drawn in when drawing three cards. In the following tree diagram we will denote the drawing of a face card by <strong>F</strong> and the drawing of a number card by <strong>N</strong>. Since we will be drawing cards and not replacing them, the probability of drawing face cards and number cards change as we draw the cards. For instance, if we draw a face card when we go to draw the next card there are a total of 51 cards to choose from and only 11 face cards left in the deck.</p>
 <p><img src="tikz/tree_cards_face.png" width="90%" style="display: block; margin: auto;" /></p>
+</div>
 <div id="estimating-probabilities" class="section level3" number="15.1.2">
 <h3><span class="header-section-number">15.1.2</span> Estimating Probabilities</h3>
 <p>There are many times where we cannot determine the theoretical probability of an event, or doing so would be very difficult. In these cases, we frequently use a series of experiments or simulations to determine the long-run relative frequency of the event to approximate the probability of the event. In sports, we estimate a player’s probability of making a free throw, kicking a field goal, or hitting a home run by looking at the long-run relative frequency of those events in their past performances, either during the current game or throughout the season.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-102" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(7.SP.6) Approximate the probability of a chance event by collecting data on the chance process that produces it and observing its long-run relative frequency, and predict the approximate relative frequency given the probability.</li>
@@ -1013,6 +1012,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 <p>There are also times where events are not repeatable, but involve uncertainty and it is still reasonable to estimate the probability of the event. These include the probability of a certain team winning the national championship this year or a certain candidate winning a presidential election. These are often referred to as <strong>subjective probability</strong>.</p>
 <p>A common method to determine a subjective probability is the combination of observed data and statistical models to generate simulations that create a <strong>probability forecast</strong> of an event occurring. The probability of precipitation (or chance of rain) uses data collected from various weather stations to create models for the weather. These models are then analyzed with simulations to generate a probability that some minimum quantity of precipitation will occur within a specified forecast period and location.</p>
 <p>The process of determining the probability of a team winning a national championship involves using predefined data, estimates of winning percentages for each game, and then running thousands of simulations of the entire season and reporting the percentage of those simulations that result in a championship.</p>
+</div>
 <div id="exercises-65" class="section level3" number="15.1.3">
 <h3><span class="header-section-number">15.1.3</span> Exercises</h3>
 <ol style="list-style-type: decimal">

@@ -32,7 +32,7 @@
   
 <link rel="prev" href="sec-Integers.html"/>
 <link rel="next" href="sec-rationals.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -850,7 +850,7 @@ Figure 4.1: Cuisenaire Rods
 <h4>Expanded algorithm</h4>
 <p>The expanded algorithm makes the implicit structure of the lattice algorithm more explicit.</p>
 <p><img src="tikz/addition-model-algorithm-expanded.png" width="10%" style="display: block; margin: auto;" /></p>
-<p>You may have noticed that regardless of which method we used, there were several common elements that all of the algorithms created in one form or another. Perhaps most obviously, <span class="math inline">\(13\)</span> occurred in all three calculations. The intermediate sums an algorithm produces are called <strong>partial sums</strong>. Note that although every algorithm used partial sums, they are not always the same between algorithms, even for the same addition problem. These differences in partial sums are a result of where the algorithm does the <strong>regrouping</strong> of the partial sums. Regrouping, generally, is the process of converting numbers expressed in terms of one place value into a different place value. For example, in the standard algorithm example at the beginning of this section, we got <span class="math inline">\(13\)</span> when we added the ones digits in the right most column. Since <span class="math inline">\(13\)</span> ones is not useful for continued adding, we regrouped <span class="math inline">\(13\)</span> as <span class="math inline">\(1\)</span> ten and <span class="math inline">\(3\)</span> ones. We wrote the <span class="math inline">\(3\)</span> in the ones place value and the <span class="math inline">\(1\)</span> above the <span class="math inline">\(10\)</span>’s place value column. You may have learned this process by the name of “carrying the one.” This language is no longer encouraged in teaching as it masks the fact that the value of the one changes as a person works through every place value.</p>
+<p>You may have noticed that regardless of which method we used, there were several common elements that all of the algorithms created in one form or another. Perhaps most obviously, <span class="math inline">\(13\)</span> occurred in all three calculations. The intermediate sums an algorithm produces are called <strong>partial sums</strong>. Note that although every algorithm used partial sums, they are not always the same between algorithms, even for the same addition problem. These differences in partial sums are a result of where the algorithm does the <strong>regrouping</strong> of the partial sums. Regrouping, generally, is the process of converting numbers expressed in terms of one place value into a different place value. For example, in the standard algorithm example at the beginning of this section, we got <span class="math inline">\(13\)</span> when we added the ones digits in the right most column. Since <span class="math inline">\(13\)</span> ones is not useful for continued adding, we regrouped <span class="math inline">\(13\)</span> as <span class="math inline">\(1\)</span> ten and <span class="math inline">\(3\)</span> ones. We wrote the <span class="math inline">\(3\)</span> in the ones place value and the <span class="math inline">\(1\)</span> above the <span class="math inline">\(10\)</span>’s place value column. You may have learned this process by the name of “carrying the one”. This language is no longer encouraged in teaching as it masks the fact that the value of the one changes as a person works through every place value.</p>
 </div>
 </div>
 <div id="subtraction-models-and-algorithms" class="section level3" number="4.2.4">
@@ -859,18 +859,16 @@ Figure 4.1: Cuisenaire Rods
 <p>Using our different representations, we can model subtraction a couple different ways: the take away model or the missing addend model.</p>
 <div id="take-away-model" class="section level4 unnumbered">
 <h4>Take-Away Model</h4>
-<p>The first interpretation of subtraction is as removal or the process of taking away. In the mathematics education literature, this is called the “take-away model.” This conceptualization of subtraction is a direct interpretation of the calculation <span class="math inline">\(a-b\)</span>, where the translation of this expression is “<span class="math inline">\(a\)</span> take away <span class="math inline">\(b\)</span>.”</p>
+<p>The first interpretation of subtraction is as removal or the process of taking away. In the mathematics education literature, this is called the “take-away model”. This conceptualization of subtraction is a direct interpretation of the calculation <span class="math inline">\(a-b\)</span>, where the translation of this expression is “<span class="math inline">\(a\)</span> take away <span class="math inline">\(b\)</span>.”</p>
 <p>To model <span class="math inline">\(a-b\)</span> using sets and the take-away model, we start with a set containing <span class="math inline">\(a\)</span> elements and remove <span class="math inline">\(b\)</span> elements from it. The composition of the set after the removal process is the resulting difference.</p>
 <p><img src="tikz/subtraction-model-sets.png" width="30%" style="display: block; margin: auto;" /></p>
 <p>To model <span class="math inline">\(a-b\)</span> using the number line and the take-away model, we find <span class="math inline">\(a\)</span> on the number line and then move back <span class="math inline">\(b\)</span> units. The place where you land is the resulting difference.</p>
 <p><img src="tikz/subtraction-model-numberline.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Once we have introduced the integer number system, we extend the number line and think of <span class="math inline">\(a-b\)</span> as <span class="math inline">\(a+(-b)\)</span> where <span class="math inline">\(-b\)</span> is viewed as a vector of length <span class="math inline">\(|b|\)</span> pointed in the negative direction.</p>
 <p><img src="tikz/subtraction-model-numberline2.png" width="80%" style="display: block; margin: auto;" /></p>
-</div>
-</div>
 <div class="standards">
-<div id="related-content-standards-7" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(6.NS.6) Understand a rational number as a point on the number line. Extend number line diagrams and coordinate axes familiar from previous grades to represent points on the line and in the plane with negative number coordinates.
@@ -878,6 +876,7 @@ Figure 4.1: Cuisenaire Rods
 <li>Recognize opposite signs of numbers as indicating locations on opposite sides of <span class="math inline">\(0\)</span> on the number line; recognize that the opposite of the opposite of a number is the number itself, e.g., <span class="math inline">\(-(-3) = 3\)</span>, and that <span class="math inline">\(0\)</span> is its own opposite.</li>
 </ol></li>
 </ul>
+</div>
 </div>
 <div id="missing-addend-approach" class="section level4 unnumbered">
 <h4>Missing Addend Approach</h4>
@@ -908,6 +907,7 @@ Figure 4.1: Cuisenaire Rods
 <p>In the section on subtraction, we commented that when students first learn subtraction in the natural numbers, they are usually only given examples of the form <span class="math inline">\(a-b\)</span> where <span class="math inline">\(b\leq a\)</span>. Part of the reason for only having students work on these types of problems is that children are not born knowing about negative numbers. The only place we ``see’’ negative numbers in the real world is when humans have imposed a scale on something, such as temperature. However, this is not a true physical representation, since we have simply imposed a scale on a naturally occurring thing, where for one reason or another, we want to have a zero reference point.</p>
 <p>To allow us to find answers to subtraction problems where <span class="math inline">\(a&lt;b\)</span>, we expand our number system to the integers.
 You may have noticed that we use “<span class="math inline">\(-\)</span>” in the above paragraph to mean additive inverse of a positive number. In the paragraph before that we used the same symbol to mean subtraction. In reality, these are fairly different concepts. Subtraction is an operation. Additive inverse is a relation. Long-time students of mathematics know that these interpretations are related and will move between them fairly seamlessly, but they are not the same thing.</p>
+</div>
 </div>
 <div id="multiplication-models-and-algorithms" class="section level3" number="4.2.5">
 <h3><span class="header-section-number">4.2.5</span> Multiplication Models and Algorithms</h3>

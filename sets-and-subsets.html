@@ -32,7 +32,7 @@
   
 <link rel="prev" href="ch-sets.html"/>
 <link rel="next" href="algebra-of-sets.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -721,14 +721,14 @@ div.csl-indent {
 </blockquote>
 <p>Set theory also makes an appearance in the high school standards related to counting and probability, as knowledge of sets is critical to understanding basic formulas in probability.</p>
 <div class="standards">
-<div id="related-content-standards-1" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSS.CP.1) Describe events as subsets of a sample space (the set of outcomes) using characteristics (or categories) of the outcomes, or as unions, intersections, or complements of other events (“or,” “and,” “not”).</li>
 </ul>
 </div>
-<p>We start our exploration of set theory by developing some basic notation and definitions. <span class="citation"><a href="#ref-Cantor" role="doc-biblioref">Cantor</a> (<a href="#ref-Cantor" role="doc-biblioref">1891</a>)</span> defined sets in the following way.</p>
+<p>We start our exploration of set theory by developing some basic notation and definitions. <span class="citation">Cantor (<a href="#ref-Cantor" role="doc-biblioref">1891</a>)</span> defined sets in the following way.</p>
 <blockquote>
 <p>Unter einer ‘Menge’ verstehen wir jede Zusammenfassung <span class="math inline">\(M\)</span> von bestimmten wohlunterschiedenen Objecten <span class="math inline">\(m\)</span> unsrer Anschauung oder unseres Denkens (welche die `Elemente’ von <span class="math inline">\(M\)</span> genannt werden) zu einem Ganzen. (p. 481)</p>
 <p>By a ‘Set’ we mean each collection <span class="math inline">\(M\)</span> of certain well-differentiated objects <span class="math inline">\(m\)</span> of our perception or our thinking (which are called the `elements’ of <span class="math inline">\(M\)</span>) as a whole. (English translation)</p>
@@ -839,18 +839,20 @@ Figure 2.3: Sample Venn diagrams
 <li><p>Recall that for set <span class="math inline">\(A\)</span>, <span class="math inline">\(\mathcal{P}(A)\)</span> is the power set of <span class="math inline">\(A\)</span>.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Let <span class="math inline">\(A=\{a,b\}\)</span>. Write the set of <span class="math inline">\(\mathcal{P}(A)\)</span> by listing its elements.</p></li>
-<li><p>Let <span class="math inline">\(A\)</span> be a set with <span class="math inline">\(n\)</span> elements in it.</p></li>
+<li><p>Let <span class="math inline">\(A\)</span> be a set with <span class="math inline">\(n\)</span> elements in it.</p>
+<ol style="list-style-type: lower-roman">
 <li><p>How many elements are in <span class="math inline">\(\mathcal{P}(A)\)</span> if <span class="math inline">\(n=3\)</span>?</p></li>
 <li><p>How many elements are in <span class="math inline">\(\mathcal{P}(A)\)</span> if <span class="math inline">\(n=4\)</span>?</p></li>
 <li><p>How many elements are in <span class="math inline">\(\mathcal{P}(A)\)</span> if <span class="math inline">\(n\)</span> is an unknown natural number?</p></li>
 </ol></li>
-<li><p>Some textbooks describe a set as ``a well-defined collection of objects’’ which means that the inclusion criteria that helps you decide what should be in the set is clearly specified. Classify each of the following sets as well-defined or not. If you identify a set as not well-defined, give two possible well-defined sets that would satisfy the original description.</p>
+</ol></li>
+<li><p>Some textbooks describe a set as “a well-defined collection of objects” which means that the inclusion criteria that helps you decide what should be in the set is clearly specified. Classify each of the following sets as well-defined or not. If you identify a set as not well-defined, give two possible well-defined sets that would satisfy the original description.</p>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(\{x \vert x&gt;0\}\)</span></p></li>
+<li><p><span class="math inline">\(\{x \vert \: x&gt;0\}\)</span></p></li>
 <li><p>The set of students at The University of Awesome who are currently enrolled in a class that has a 100-level designation.</p></li>
-<li><p><span class="math inline">\(\{x\vert x \textrm{ is a letter in my first name}\}\)</span></p></li>
+<li><p><span class="math inline">\(\{x\vert \: x \textrm{ is a letter in my first name}\}\)</span></p></li>
 <li><p>The set of my friends.</p></li>
-<li><p><span class="math inline">\(A_n=\{x\in \mathbb{Z} \vert n\leq x\leq n+3\}\)</span></p></li>
+<li><p><span class="math inline">\(A_n=\{x\in \mathbb{Z} \vert \: n\leq x\leq n+3\}\)</span></p></li>
 </ol></li>
 <li><p>Let <span class="math inline">\(A=\{1, 2, 3, 4\}\)</span>, <span class="math inline">\(B=\{7,8,9\}\)</span>, and <span class="math inline">\(C=\{3,4,5,6,7,8,9\}\)</span>. Using the most appropriate template of the Venn diagrams shown in Figure , fill in the regions with the elements from:</p>
 <ol style="list-style-type: lower-alpha">
@@ -863,7 +865,7 @@ Figure 2.3: Sample Venn diagrams
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-Cantor" class="csl-entry">
 Cantor, G. (1891). Ueber eine elementare frage der mannigfaltigkeitslehre. <em>Jahresbericht Der Deutschen Mathematiker-Verreinigung</em>, <em>1890/91</em>, 75–78. <a href="https://www.digizeitschriften.de/dms/img/?PID=GDZPPN002113910">https://www.digizeitschriften.de/dms/img/?PID=GDZPPN002113910</a>
 </div>

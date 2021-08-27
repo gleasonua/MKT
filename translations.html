@@ -32,7 +32,7 @@
   
 <link rel="prev" href="representations-of-the-euclidean-plane.html"/>
 <link rel="next" href="rotations.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -726,14 +726,14 @@ div.csl-indent {
 <p><img src="images/Translation_synthetic.jpg" width="35%" style="display: block; margin: auto;" /></p>
 <p>If <span class="math inline">\(C\)</span> was on the line <span class="math inline">\(\overline{AB}\)</span>, we see that <span class="math inline">\(C&#39;\)</span> is also on the same line and the length of <span class="math inline">\(\overline{CC&#39;}\)</span> is the same as <span class="math inline">\(\overline{AB}\)</span>. So we see that the translations on the synthetic plane are constructible.</p>
 <p>To prove that these translations are isometries we let <span class="math inline">\(C\)</span> and <span class="math inline">\(D\)</span> be any two points of the plane and we let <span class="math inline">\(C&#39;=T_{\overline{AB}}(C)\)</span> and <span class="math inline">\(D&#39;=T_{\overline{AB}}(D)\)</span>. Since <span class="math inline">\(\overline{CC&#39;}\)</span> and <span class="math inline">\(\overline{DD&#39;}\)</span> are two segments of the same length and are parallel to one another, properties of parallelograms determine that <span class="math inline">\(CDD&#39;C&#39;\)</span> is a parallelogram and <span class="math inline">\(\overline{CD}\)</span> is the same length as <span class="math inline">\(\overline{C&#39;D&#39;}\)</span>. So the translation maintains the distance between points on the plane.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-85" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSG.CO.4) Develop definitions of rotations, reflections, and translations in terms of angles, circles, perpendicular lines, parallel lines, and line segments.</li>
 </ul>
+</div>
 </div>
 <div id="cartesian-plane-and-vector-space" class="section level3" number="12.3.2">
 <h3><span class="header-section-number">12.3.2</span> Cartesian Plane and Vector Space</h3>
@@ -750,7 +750,7 @@ div.csl-indent {
 and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <p>Using a basic understanding of vectors, the properties of translations in the Cartesian perspective translate very easily to the Vector space perspective.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-259" class="definition"><strong>Definition 12.12  </strong></span>Given a vector $h,k$, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
+<p><span id="def:unlabeled-div-259" class="definition"><strong>Definition 12.12  </strong></span>Given a vector <span class="math inline">\(\langle h,k\rangle\)</span>, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
 </div>
 </div>
 <div id="complex-plane-1" class="section level3" number="12.3.3">
@@ -782,7 +782,7 @@ and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <p>Since for any <span class="math inline">\(b\in \mathbb{C}\)</span>, <span class="math inline">\(T_b \circ T_{-b} (z) = z-b+b=z\)</span>, we see that <span class="math inline">\(T_b\)</span> is invertible and <span class="math inline">\(T_b^{-1} = T_{-b}\)</span>. So the inverse of any translation is also a translation.</p>
 <p>Therefore, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
 </div>
-<p>Recall from Section  that two groups, <span class="math inline">\((G,*)\)</span> and <span class="math inline">\(G&#39;,\times)\)</span>, are isomorphic (`equivalent’) if there is a bijection <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> such that
+<p>Recall from Section <a href="sec-groups.html#sec:groups">6.1</a> that two groups, <span class="math inline">\((G,*)\)</span> and <span class="math inline">\(G&#39;,\times)\)</span>, are isomorphic (‘equivalent’) if there is a bijection <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> such that
 <span class="math display">\[\phi(a*b) = \phi(a)\times \phi(b)\]</span>
 for all <span class="math inline">\(a,b\in G\)</span>.</p>
 <p>If we let <span class="math inline">\(\phi:\mathbb{C} \rightarrow T\)</span> be defined by <span class="math inline">\(\phi(b)=T_b\)</span>, we see that <span class="math display">\[\phi(b+c) = T_{b+c} = T_b \circ T_c = \phi(b) \circ \phi(c),\]</span> making <span class="math inline">\(\phi\)</span> a group homomorphism. From the definition of translations on <span class="math inline">\(\mathbb{C}\)</span> we can see that <span class="math inline">\(\phi\)</span> is also a bijection. So we get the following theorem.</p>

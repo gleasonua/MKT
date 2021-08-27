@@ -32,7 +32,7 @@
   
 <link rel="prev" href="sampling-techniques-and-study-types.html"/>
 <link rel="next" href="hypothesis-testing.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -716,8 +716,8 @@ div.csl-indent {
 <div id="point-and-interval-estimators" class="section level2" number="16.2">
 <h2><span class="header-section-number">16.2</span> Point and Interval Estimators</h2>
 <div class="standards">
-<div id="related-content-standards-114" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSS.IC.4) Use data from a sample survey to estimate a population mean or proportion; develop a margin of error through the use of simulation models for random sampling.</li>
@@ -735,7 +735,7 @@ div.csl-indent {
     \includegraphics[width=.7\textwidth]{images/Mean_of_heights}
 \end{center}
 --->
-<p>We find that the mean of the simulations is also 155.49 cm and has a standard deviation of 0.372 0.365 cm. We also have the 95% of the simulations fell between 154.767 and 156.221. So we call the interval (154.767,156.221) a 95% confidence interval (95% CI) for the mean of the heights of the population. while this does not assure that the actual population mean is inside of this interval, we can be fairly certain that our interval contains the population mean.</p>
+<p>We find that the mean of the simulations is also 155.49 cm and has a standard deviation of 0.369 0.365 cm. We also have the 95% of the simulations fell between 154.752 and 156.259. So we call the interval (154.752,156.259) a 95% confidence interval (95% CI) for the mean of the heights of the population. while this does not assure that the actual population mean is inside of this interval, we can be fairly certain that our interval contains the population mean.</p>
 <p>We can notice that the density curve of the average heights of 1000 samples appears to be a normal distribution. If we look at similar density curves for average heights of 20, 100, and 500 samples we see that the shape of the curve is seeming to approach a normal distribution.</p>
 <p><img src="images/heights_averages.jpg" width="100%" style="display: block; margin: auto;" /></p>
 <p>This property that the distribution of the averages of <span class="math inline">\(n\)</span> samples approaches a normal distribution is the Central Limit Theorem.</p>
@@ -768,14 +768,14 @@ We can also create a 95% confidence interval using the knowledge the 95% of the 
 <span class="math display">\[\sigma_{(\overline{X_1}-\overline{X_2})} =  \sqrt{\frac{12.489^2}{1000} + \frac{11.520^2}{1000} } = 0.537\]</span> and so the 95% confidence interval for the difference in means is <span class="math inline">\((14.57, 16.67)\)</span>. Since zero is not inside of this confidence interval we can infer that the difference in heights is significant.</p>
 <p>If we look at a sample of 1000 thirteen-year-old students we see that the average height of the 510 Females is 160.1176 and the average height of the 488 Males is 162.707. Using the standard deviations of the two samples we see that the standard error for the difference in means is
 <span class="math display">\[\sigma_{(\overline{X_1}-\overline{X_2})} = \sqrt{\frac{12.88^2}{488} + \frac{9.71^2}{510} } = 0.72\]</span> producing a 95% confidence interval for the difference between the means of (1.17, 4.01). A similar process for the 1000 twelve-year-old students estimates the average height of twelve-year-old females as 155.4825 (<span class="math inline">\(n_1=485\)</span>) and males as 155.4874 (<span class="math inline">\(n_2=515\)</span>) with a confidence interval for the difference in means of (-1.42, 1.43). So we can infer that there is no significant difference in the average heights of twelve-year-old students, but there is a significant difference in the average heights of thirteen-year-old students, based on gender.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-115" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSS.IC.4) Use data from a sample survey to estimate a population mean or proportion; develop a margin of error through the use of simulation models for random sampling.</li>
 </ul>
+</div>
 </div>
 <div id="estimating-proportions" class="section level3" number="16.2.3">
 <h3><span class="header-section-number">16.2.3</span> Estimating Proportions</h3>
@@ -808,13 +808,13 @@ So <span class="math display">\[\mbox{Var}(X) = E(X^2)-E(X)^2 = E(X(X-1))+E(X)-E
 %Target Parameter & Sample Size & Point Estimator  &        & Standard Error \\
 %$\theta$ &     & $\hat{\theta}$ & $E(\hat{\theta})$ & $\sigma_{\hat{\theta}}$ \\ \hline
 %& & & & \\
-%$\mu$ & $ n$ & $\bar{Y}$ & $\mu$ & $\displaystyle{\frac{\sigma}{\sqrt{n}}}$ \\
+%$\mu$ & $n$ & $\bar{Y}$ & $\mu$ & $\displaystyle{\frac{\sigma}{\sqrt{n}}}$ \\
 %& & & & \\
-%$p$ & $ n$ & $\hat{p}=\frac{Y}{n}$ & $p$ & $\displaystyle{\sqrt{\frac{pq}{n}}}$ \\
+%$p$ & $n$ & $\hat{p}=\frac{Y}{n}$ & $p$ & $\displaystyle{\sqrt{\frac{pq}{n}}}$ \\
 %& & & & \\
-%$\mu_1-\mu_2$ & $ n_1$ and $n_2$ & $\bar{Y}_1-\bar{Y}_2$ & $\mu_1-\mu_2$ & $\displaystyle{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}$ \\
+%$\mu_1-\mu_2$ & $n_1$ and $n_2$ & $\bar{Y}_1-\bar{Y}_2$ & $\mu_1-\mu_2$ & $\displaystyle{\sqrt{ \frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}}$ \\
 %& & & & \\
-%$p_1-p_2$ & $ n_1$ and $n_2$ &  $\hat{p}_1-\hat{p}_2$ & $ p_1-p_2$ & $\displaystyle{\sqrt{ \frac{p_1 q_1}{n_1} + \frac{p_2 q_2}{n_2}}}$ \\
+%$p_1-p_2$ & $n_1$ and $n_2$ &  $\hat{p}_1-\hat{p}_2$ & $p_1-p_2$ & $\displaystyle{\sqrt{ \frac{p_1 q_1}{n_1} + \frac{p_2 q_2}{n_2}}}$ \\
 %\end{tabular}
 %\end{center}
 --->
@@ -831,7 +831,7 @@ So <span class="math display">\[\mbox{Var}(X) = E(X^2)-E(X)^2 = E(X(X-1))+E(X)-E
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-He2014" class="csl-entry">
 He, J., Chaparro, A., Nguyen, B., Burge, R. J., Crandall, J., Chaparro, B., Ni, R., &amp; Cao, S. (2014). Texting while driving: Is speech-based text entry less risky than handheld text entry? <em>Accident Analysis &amp; Prevention</em>, <em>72</em>, 287–295. https://doi.org/<a href="https://doi.org/10.1016/j.aap.2014.07.014">https://doi.org/10.1016/j.aap.2014.07.014</a>
 </div>

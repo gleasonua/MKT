@@ -32,7 +32,7 @@
   
 <link rel="prev" href="measures-of-variability.html"/>
 <link rel="next" href="ch-simulations.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -779,10 +779,9 @@ $6.92
 </tbody>
 </table>
 <p>In order to help us to determine which of these centers to use, we need to consider the properties of the variable that we are studying. Since a wage is a rate (dollars per hour), so the harmonic mean would be the most appropriate of the means to use. However, one could also easily justify the use of the median to say that the average female has a lower wage than the average male.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-96" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(7.SPB.4) Use measures of center and measures of variability for numerical data from random samples to draw informal comparative inferences about two populations.</li>
@@ -852,6 +851,7 @@ Figure 14.14: Density Plot of Wages
 \end{center}
 --->
 <p>We notice that there is less variability in the female wages and 75% of the females in the sample make less than $10.00 per hour, where just under half of the males make more than $10.00 per hour.</p>
+</div>
 <div id="numerical-times-numerical-data" class="section level3" number="14.6.2">
 <h3><span class="header-section-number">14.6.2</span> Numerical <span class="math inline">\(\times\)</span> Numerical Data</h3>
 <p>When we are exploring the relationship between two variables that are numerical, we would like to find some type of numerical description of the strength of association between the variables. If the numerical variables are both either ordinal or continuous so that the data set for each variable can be ranked in order, then the Kendall rank correlation coefficient (Kendall’s <span class="math inline">\(\tau\)</span>) can be used to measure how well the relationship between the two variables can be described using a monotonic function.</p>
@@ -910,14 +910,13 @@ Figure 14.20: Example with Pearson correlation of -0.6747 and Kendall correlatio
     \begin{tabular}{cc}
         \includegraphics[width=.45\textwidth]{images/correl_example1.jpg} &
         \includegraphics[width=.45\textwidth]{images/correl_example2.jpg} \\
-        $\rho = 0.8171$ and $\tau = 1$ &  $\rho = -0.6747$ and $ \tau = -1$
+        $\rho = 0.8171$ and $\tau = 1$ &  $\rho = -0.6747$ and $\tau = -1$
     \end{tabular}
 \end{center}
 --->
-</div>
 <div class="standards">
-<div id="related-content-standards-97" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(8.SPA.2) Know that straight lines are widely used to model relationships between two quantitative variables. For scatter plots that suggest a linear association, informally fit a straight line, and informally assess the model fit by judging the closeness of the data points to the line.</li>
@@ -941,7 +940,7 @@ Figure 14.21: Height and Armspan
 <p>We would now like to estimate the linear relationship. In doing so, we are looking for the equation of a line that `best’ fits the data. If we let <span class="math inline">\(y\)</span> represent a person’s height (in cm) and <span class="math inline">\(x\)</span> represent a person’s armspan (in cm), we model the relationship with a function of the form <span class="math inline">\(y=mx+b\)</span>.</p>
 <p>One method of measuring how well the linear model fits the data is to measure the difference between the actual <span class="math inline">\(y\)</span>-value and the predicted <span class="math inline">\(y\)</span>-value for each data point. We call this value the <strong>residual</strong>.
 <span class="math display">\[\mbox{Residual} = \mbox{actual }y\mbox{-value} - \mbox{predicted }y\mbox{-value}\]</span></p>
-<p>If we write our data points as ordered pairs, $ { (x_i,y_i)}$, we let
+<p>If we write our data points as ordered pairs, <span class="math inline">\(\left\{ (x_i,y_i)\right\}\)</span>, we let
 <span class="math display">\[r_i = y_i - \left( m\cdot x_i + b\right).\]</span>
 One idea is to find the values for <span class="math inline">\(m\)</span> and <span class="math inline">\(b\)</span> that minimize the sum of these residuals. However, a large positive residual in one value could compensate for a large negative residual in another. So one way that we could compensate for this would be to minimize the sum of the absolute values of the residuals. While this option does work, to find the Least Absolute Deviations (LAD) regression, it is not the most common. Instead, the common method is to minimize the sum of the squares of the residuals,
 <span class="math display">\[S = \sum_{i=1}^n r_i^2,\]</span> to determine the <strong>least squares approximation</strong>.</p>
@@ -954,7 +953,7 @@ We then find the minimal value of <span class="math inline">\(S\)</span> where t
   \left(\sum_{i=1}^n 2x_i^2 \right) m + \left(\sum_{i=1}^n 2 x_i \right) b   &amp; =  \sum_{i=1}^n 2 x_i y_i 
 \end{align}\]</span></p>
 <p>We can see from the first equation in the system that this is equivalent to
-<span class="math display">\[2n \cdot \left(\frac{1}{n}\sum_{i=1}^n x_i \right) m + 2n b = 2n \left(\frac{1}{n} \sum_{i=1}^n y_i \right)\]</span> which can be written as <span class="math display">\[\overline{y} = m \overline{x} +b\]</span> where <span class="math inline">\(\overline{x}\)</span> and <span class="math inline">\(\overline{y}\)</span> are the arithmetic means of the <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span>, respectively. This implies that the point $ (,)$ always lies on the least squares linear approximation.</p>
+<span class="math display">\[2n \cdot \left(\frac{1}{n}\sum_{i=1}^n x_i \right) m + 2n b = 2n \left(\frac{1}{n} \sum_{i=1}^n y_i \right)\]</span> which can be written as <span class="math display">\[\overline{y} = m \overline{x} +b\]</span> where <span class="math inline">\(\overline{x}\)</span> and <span class="math inline">\(\overline{y}\)</span> are the arithmetic means of the <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span>, respectively. This implies that the point <span class="math inline">\((\overline{x},\overline{y})\)</span> always lies on the least squares linear approximation.</p>
 <p>For the example of the height and the armspan, the least squares linear approximation is that
 <span class="math display">\[\mbox{Height (cm)} = 0.64 \cdot \mbox{Armspan (cm)} + 58.01\]</span></p>
 <p><img src="_main_files/figure-html/unnamed-chunk-204-1.png" width="672" /></p>
@@ -994,12 +993,12 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <span class="math display">\[\mbox{Height (cm)} = 1.01 \cdot \mbox{Armspan (cm)} \]</span></p>
 <p><img src="_main_files/figure-html/unnamed-chunk-205-1.png" width="672" /></p>
 <p>So we see that even though this does not minimize the sum of squares, it may be the best approximation for our data in terms of the portion of the population for which we are focused and within the context of the situation.</p>
+</div>
 <div id="categorical-times-categorical-data" class="section level3" number="14.6.3">
 <h3><span class="header-section-number">14.6.3</span> Categorical <span class="math inline">\(\times\)</span> Categorical Data</h3>
-</div>
 <div class="standards">
-<div id="related-content-standards-98" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(8.SPA.4) Understand that patterns of association can also be seen in bivariate categorical data by displaying frequencies and relative frequencies in a two-way table. Construct and interpret a two-way table summarizing data on two categorical variables collected from the same subjects. Use relative frequencies calculated for rows or columns to describe possible association between the two variables.</li>
@@ -1300,6 +1299,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 \end{tabular}
 \end{center}
 --->
+</div>
 <div id="exercises-64" class="section level3" number="14.6.4">
 <h3><span class="header-section-number">14.6.4</span> Exercises</h3>
 <ol style="list-style-type: decimal">

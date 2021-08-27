@@ -32,7 +32,7 @@
   
 <link rel="prev" href="types-of-data.html"/>
 <link rel="next" href="exploring-bivariate-data-graphically.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -716,7 +716,7 @@ div.csl-indent {
 <div id="exploring-univariate-data-graphically" class="section level2" number="14.2">
 <h2><span class="header-section-number">14.2</span> Exploring Univariate Data Graphically</h2>
 <p>The data analysis investigative process often begins by a person exploring an existing data set looking for possible phenomena or relationships that lead to further questions to be tested using a more systematic statistical analysis. Both the exploration of relationships and the confirmation of hypothesized relationships are valuable, but they serve different purposes.</p>
-<p>The primary goals of <strong>exploratory data analysis</strong> (EDA) revolve around getting to know a set of data and allowing the data to guide further discoveries. <span class="citation"><a href="#ref-EDA2003" role="doc-biblioref">Behrens &amp; Yu</a> (<a href="#ref-EDA2003" role="doc-biblioref">2003</a>)</span> describe it as similar to a “detective looking for clues to develop hunches and perhaps seek a grand jury” (p. 42). EDA uses many tools, particularly graphical representations, to reveal possible relationships, understand error and noise, transform variables, and better understand the role of outliers. Throughout this section we will describe these different tools and how they are used in spreadsheets and R.</p>
+<p>The primary goals of <strong>exploratory data analysis</strong> (EDA) revolve around getting to know a set of data and allowing the data to guide further discoveries. <span class="citation">Behrens &amp; Yu (<a href="#ref-EDA2003" role="doc-biblioref">2003</a>)</span> describe it as similar to a “detective looking for clues to develop hunches and perhaps seek a grand jury” (p. 42). EDA uses many tools, particularly graphical representations, to reveal possible relationships, understand error and noise, transform variables, and better understand the role of outliers. Throughout this section we will describe these different tools and how they are used in spreadsheets and R.</p>
 <blockquote>
 <p>In the early stages of research, EDA is valuable to help find the unexpected, refine hypotheses, and appropriately plan future work. In the later confirmatory stages, EDA is valuable to ensure that the researcher is not fooled by misleading aspects of the confirmatory models or unexpected and anomalous data patterns. <span class="citation">(<a href="#ref-EDA2003" role="doc-biblioref">Behrens &amp; Yu, 2003, p. 60</a>)</span></p>
 </blockquote>
@@ -758,18 +758,18 @@ Figure 14.3: Histogram with 5 minute binwidth using R and ggplot2
     % ggplot(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, aes(x=inter_erruption_time)) + geom_histogram(binwidth = 5) + labs(x= "Time between erruptions (minutes)")+theme_bw()
 \end{center}
 --->
-</div>
 <div class="standards">
-<div id="related-content-standards-91" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(6.SPB.4) Display numerical data in plots on a number line, including dot plots, histograms, and box plots.</li>
 </ul>
 </div>
+</div>
 <div id="dot-plots" class="section level3" number="14.2.2">
 <h3><span class="header-section-number">14.2.2</span> Dot Plots</h3>
-<p>From this histogram we see that the data seems to have two ‘centers.’ One at around 95 minutes and the other around 65 minutes. To explore this phenomenon further, we create a dot plot that marks each occurance as a single dot and see that there appear to be two clusters of times.</p>
+<p>From this histogram we see that the data seems to have two ‘centers’. One at around 95 minutes and the other around 65 minutes. To explore this phenomenon further, we create a dot plot that marks each occurance as a single dot and see that there appear to be two clusters of times.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exploring-univariate-data-graphically.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_dotplot</span>(<span class="at">binwidth =</span> .<span class="dv">5</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)<span class="sc">+</span><span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="cn">NULL</span>, <span class="at">breaks =</span> <span class="cn">NULL</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-174"></span>
 <img src="_main_files/figure-html/unnamed-chunk-174-1.png" alt="Dot Plot of Eruption Times using R and ggplot2" width="90%" />
@@ -812,7 +812,7 @@ Figure 14.6: Box Plot of Time Between Eruptions Using Excel
 Figure 14.7: Box Plot of Eruption Times Using R and ggplots2
 </p>
 </div>
-<p>The large number of outliers below 78 minutes corresponds to the second cluster of times centered around 65. From the evidence gathered to this point, we can justify making the assumption that there are really two different lengths of time between eruptions, “Short” and “Long.” By labeling the wait time as short or long, we can look at the two different distributions using a pair of box plots.</p>
+<p>The large number of outliers below 78 minutes corresponds to the second cluster of times centered around 65. From the evidence gathered to this point, we can justify making the assumption that there are really two different lengths of time between eruptions, “Short” and “Long”. By labeling the wait time as short or long, we can look at the two different distributions using a pair of box plots.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exploring-univariate-data-graphically.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(inter_erruption_time, wait_cat)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>, <span class="at">y=</span> <span class="st">&quot;Prior eruption length&quot;</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-178"></span>
 <img src="_main_files/figure-html/unnamed-chunk-178-1.png" alt="Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2" width="672" />
@@ -847,7 +847,7 @@ Figure 14.8: Box Plot of Eruption Times Based on Prior Eruption Using R and ggpl
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-EDA2003" class="csl-entry">
 Behrens, J. T., &amp; Yu, C. (2003). Exploratory data analysis. In J. A. Schinka &amp; W. F. Velicer (Eds.), <em>Research methods in psychology</em> (Vol. 2). John Wiley &amp; Sons, Inc.
 </div>

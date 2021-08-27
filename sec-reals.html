@@ -32,7 +32,7 @@
   
 <link rel="prev" href="representations-of-rational-numbers.html"/>
 <link rel="next" href="sec-complex.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -736,15 +736,15 @@ div.csl-indent {
 </div>
 <p>We will now look at the set
 <span class="math display">\[S = \left\{ \frac{a}{b}\in \mathbb{Q} \middle \vert \frac{a}{b} &gt;0 \: \mbox{ and } \: \left(\frac{a}{b}\right)^2 \geq 2\right\}\]</span> which is bounded below in its definition and does not have a least element. Therefore, the rational numbers do not satisfy the least-upper-bound property.</p>
-<p>Since the rational numbers do not satisfy the least-upper-bound property, the rational numbers have “holes” that need to be filled, and so are not complete. Building upon the work of <span class="citation"><a href="#ref-bertrand1840" role="doc-biblioref">Bertrand</a> (<a href="#ref-bertrand1840" role="doc-biblioref">1840</a>)</span> and in a parallel vein to <span class="citation"><a href="#ref-Heine1872" role="doc-biblioref">Heine</a> (<a href="#ref-Heine1872" role="doc-biblioref">1872</a>)</span>, <span class="citation"><a href="#ref-Dedekind1872" role="doc-biblioref">Dedekind</a> (<a href="#ref-Dedekind1872" role="doc-biblioref">1872</a>)</span> developed a construction of the real numbers from the rational numbers using what are now referred to as Dedekind cuts using equivalence classes of such cuts. Another method of construction of the real numbers from the rational numbers follows the path of <span class="citation"><a href="#ref-Cauchy1821" role="doc-biblioref">Cauchy</a> (<a href="#ref-Cauchy1821" role="doc-biblioref">1821</a>)</span> and defines the real numbers as equivalence classes of Cauchy sequences of rational numbers. As each of these methods requires the development of a great deal of mathematical machinery, we will refer to other textbooks in analysis for the details. With <span class="citation"><a href="#ref-Rudin1976" role="doc-biblioref">Rudin</a> (<a href="#ref-Rudin1976" role="doc-biblioref">1976</a>)</span> providing an excellent treatment of Dedekind cuts in the Appendix of Chapter 1. Chapter I of <span class="citation"><a href="#ref-Thurston1956" role="doc-biblioref">Thurston</a> (<a href="#ref-Thurston1956" role="doc-biblioref">1956</a>)</span> provides an detailed treatment of the construction of the Cauchy numbers to generate the real numbers through equivalence classes.</p>
+<p>Since the rational numbers do not satisfy the least-upper-bound property, the rational numbers have “holes” that need to be filled, and so are not complete. Building upon the work of <span class="citation">Bertrand (<a href="#ref-bertrand1840" role="doc-biblioref">1840</a>)</span> and in a parallel vein to <span class="citation">Heine (<a href="#ref-Heine1872" role="doc-biblioref">1872</a>)</span>, <span class="citation">Dedekind (<a href="#ref-Dedekind1872" role="doc-biblioref">1872</a>)</span> developed a construction of the real numbers from the rational numbers using what are now referred to as Dedekind cuts using equivalence classes of such cuts. Another method of construction of the real numbers from the rational numbers follows the path of <span class="citation">Cauchy (<a href="#ref-Cauchy1821" role="doc-biblioref">1821</a>)</span> and defines the real numbers as equivalence classes of Cauchy sequences of rational numbers. As each of these methods requires the development of a great deal of mathematical machinery, we will refer to other textbooks in analysis for the details. With <span class="citation">Rudin (<a href="#ref-Rudin1976" role="doc-biblioref">1976</a>)</span> providing an excellent treatment of Dedekind cuts in the Appendix of Chapter 1. Chapter I of <span class="citation">Thurston (<a href="#ref-Thurston1956" role="doc-biblioref">1956</a>)</span> provides an detailed treatment of the construction of the Cauchy numbers to generate the real numbers through equivalence classes.</p>
 <p>Because the real numbers form a complete number system in that it satisfies the least-upper-bound property, for any bounded set of real numbers, <span class="math inline">\(S\)</span>, we can define <span class="math inline">\(\sup S\)</span> to the be the least element of the set <span class="math inline">\(\{ x \in \mathbb{R} \vert x\geq a, \forall a\in S\}\)</span> and <span class="math inline">\(\inf S\)</span> is the greatest element of the set <span class="math inline">\(\{x\in \mathbb{R} \vert x\leq a, \forall a\in S\}\)</span>. These two attributes of a set play an important role in the development of calculus.</p>
 <p>Since <span class="math inline">\(\sqrt{2}\)</span> is not rational, but we know it is a real number because of the completeness of the reals, and so there are real numbers that are not rational. We define these numbers to be <strong>irrational</strong>.</p>
 <div class="definition">
 <p><span id="def:unlabeled-div-52" class="definition"><strong>Definition 4.2  </strong></span>A real number, <span class="math inline">\(a\)</span>, is called <strong>rational</strong> if there exist integers <span class="math inline">\(p\)</span> and <span class="math inline">\(q\)</span> such that <span class="math inline">\(a=\frac{p}{q}\)</span>. A real number that is not rational is called <strong>irrational</strong>.</p>
 </div>
 <div class="standards">
-<div id="related-content-standards-15" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSN.RN.3) Explain why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a non-zero rational number and an irrational number is irrational.</li>
@@ -790,16 +790,15 @@ div.csl-indent {
 </div>
 <p>For all rational numbers in the form <span class="math inline">\(\frac{p}{q}\)</span>, we know that <span class="math display">\[q \cdot \left(\frac{p}{q}\right)^1 + (-p) = 0\]</span> and so all rational numbers are algebraic numbers. We can also see that <span class="math inline">\(\sqrt{2}\)</span> is an algebraic number since <span class="math inline">\((\sqrt{2})^2-2=0\)</span>. We say that the algebraic numbers are a number system because they include the additive identity, <span class="math inline">\(0\)</span>; the multiplicative identity, <span class="math inline">\(1\)</span>; and are closed under addition and multiplication.</p>
 <p>We will prove in Section <a href="sec-cardinality.html#sec:cardinality">5.4</a> that there are an infinite number of real numbers that are not algebraic. We will call any real number that is not algebraic a <strong>transcendental</strong> number. Two such examples of transcendental numbers are <span class="math inline">\(e\)</span> and <span class="math inline">\(\pi\)</span>.</p>
-<p>In the early 1930’s, <span class="citation"><a href="#ref-Gelfond" role="doc-biblioref">Gel’fond</a> (<a href="#ref-Gelfond" role="doc-biblioref">1934</a>)</span> and <span class="citation"><a href="#ref-Schneider" role="doc-biblioref">Schneider</a> (<a href="#ref-Schneider" role="doc-biblioref">1935</a>)</span> independently solved Hilbert’s seventh problem from his 1900 address to the International Congress of Mathematics showing that if <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are algebraic numbers with <span class="math inline">\(a\neq 0,1\)</span> and <span class="math inline">\(b\)</span> irrational that <span class="math inline">\(a^b\)</span> is a transcendental number. Since we have such a limited knowledge of these transcendental numbers, it is evident that the continuum of the real numbers is a very deep and complicated concept that we are only beginning to understand.</p>
+<p>In the early 1930’s, <span class="citation">Gel’fond (<a href="#ref-Gelfond" role="doc-biblioref">1934</a>)</span> and <span class="citation">Schneider (<a href="#ref-Schneider" role="doc-biblioref">1935</a>)</span> independently solved Hilbert’s seventh problem from his 1900 address to the International Congress of Mathematics showing that if <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are algebraic numbers with <span class="math inline">\(a\neq 0,1\)</span> and <span class="math inline">\(b\)</span> irrational that <span class="math inline">\(a^b\)</span> is a transcendental number. Since we have such a limited knowledge of these transcendental numbers, it is evident that the continuum of the real numbers is a very deep and complicated concept that we are only beginning to understand.</p>
 <p>We include a graphical representation of how these different sets of numbers fit together. All of these sets of numbers are subsets of the complex numbers, and a set above another set represents an inclusion relationship.</p>
 <p><img src="tikz/NumberTree.png" width="60%" style="display: block; margin: auto;" /></p>
 <div id="subsec:real-exponents" class="section level3" number="4.5.1">
 <h3><span class="header-section-number">4.5.1</span> Properties of Exponents</h3>
 <p>Let <span class="math inline">\(a&gt;0\)</span> be a real number. For each integer <span class="math inline">\(n&gt;0\)</span>, we define <span class="math display">\[S_n= \left\{ x\in \mathbb{Q}\middle \vert x&gt;0 \mbox{ and } x^n&gt;a\right\}\]</span> and so we can define <span class="math display">\[\sqrt[n]{a}=a^{\frac{1}{n}} := \inf S_n.\]</span></p>
-</div>
 <div class="standards">
-<div id="related-content-standards-16" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(8.EE.2) Use square root and cube root symbols to represent solutions to equations of the form <span class="math inline">\(x^2=p\)</span> and <span class="math inline">\(x^3=p\)</span>, where <span class="math inline">\(p\)</span> is a positive rational number. Evaluate square roots of small perfect squares and cube roots of small perfect cubes. Know that <span class="math inline">\(\sqrt{2}\)</span> is irrational.<br />
@@ -808,8 +807,8 @@ div.csl-indent {
 </div>
 <p>If <span class="math inline">\(a&gt;0\)</span> is a real number, <span class="math inline">\(m,n,p,q\)</span> are integers, <span class="math inline">\(n&gt;0\)</span>, and <span class="math inline">\(q&gt;0\)</span> such that <span class="math inline">\(\frac{m}{n}=\frac{p}{q}=r\)</span>, we have that <span class="math inline">\(mq=pn\)</span>. So <span class="math display">\[\left(\left(a^{\frac{1}{n}}\right)^m\right)^{nq} = a^{mq} = a^{pn} = \left( \left( a^{\frac{1}{q}} \right)^p \right)^{nq}.\]</span> This means that we can define <span class="math inline">\(a^r:=\left(a^m\right)^{\frac{1}{n}}\)</span>.</p>
 <div class="standards">
-<div id="related-content-standards-17" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSN.RN.1) Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents to those values, allowing for a notation for radicals in terms of rational exponents.</li>
@@ -839,6 +838,7 @@ div.csl-indent {
 <li><p>If <span class="math inline">\(a&gt;1\)</span> and <span class="math inline">\(x&lt;y\)</span>, then <span class="math inline">\(a^x&lt;a^y\)</span>.</p></li>
 </ul>
 </div>
+</div>
 <div id="exercises-14" class="section level3" number="4.5.2">
 <h3><span class="header-section-number">4.5.2</span> Exercises</h3>
 <ol style="list-style-type: decimal">
@@ -851,7 +851,7 @@ div.csl-indent {
 </div>
 </div>
 <h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
 <div id="ref-bertrand1840" class="csl-entry">
 Bertrand, J. (1840). <em>Traité d’arithmétique</em>. L. Hachette &amp; Co. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k77735p">https://gallica.bnf.fr/ark:/12148/bpt6k77735p</a>
 </div>
@@ -865,13 +865,13 @@ Dedekind, R. (1872). <em>Stetigkeit und irrationale <span>Z</span>ahlen</em>. Fr
 Gel’fond, A. O. (1934). Sur le septiéme probléme de <span>H</span>ilbert. <em>Belletin de l’Académie Des Sciences de l’URSS. Classe Des Sciences Mathématiques Et Na</em>, <em>4</em>, 623–634.
 </div>
 <div id="ref-Heine1872" class="csl-entry">
-Heine, E. (1872). Die elemente der funtionenlehre. <em>Journal für Die Reine Und Angewandte Mathematik (Crelle’s Journal)</em>, <em>74</em>, 172–188.
+Heine, E. (1872). Die elemente der funtionenlehre. <em>Journal Für Die Reine Und Angewandte Mathematik (Crelle’s Journal)</em>, <em>74</em>, 172–188.
 </div>
 <div id="ref-Rudin1976" class="csl-entry">
 Rudin, W. (1976). <em>Principles of mathematical analysis</em> (3rd ed.). McGraw-Hill, Inc.
 </div>
 <div id="ref-Schneider" class="csl-entry">
-Schneider, T. (1935). Transzendenzuntersuchungen periodischer funktionen <span>I</span>. Transzendenz von potenzen. <em>Journal für Die Reine Und Angewandte Mathematik (Crelle’s Journal)</em>, <em>172</em>, 65–69.
+Schneider, T. (1935). Transzendenzuntersuchungen periodischer funktionen <span>I</span>. Transzendenz von potenzen. <em>Journal Für Die Reine Und Angewandte Mathematik (Crelle’s Journal)</em>, <em>172</em>, 65–69.
 </div>
 <div id="ref-Thurston1956" class="csl-entry">
 Thurston, H. A. (1956). <em>The number-system</em>. Blackie &amp; Son, Limited. <a href="https://archive.org/details/TheNumberSystem">https://archive.org/details/TheNumberSystem</a>

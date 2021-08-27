@@ -32,7 +32,7 @@
   
 <link rel="prev" href="probability-overview.html"/>
 <link rel="next" href="conditional-probability.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -716,7 +716,7 @@ div.csl-indent {
 <div id="probability-spaces" class="section level2" number="15.2">
 <h2><span class="header-section-number">15.2</span> Probability Spaces</h2>
 <p>Throughout this section we will define many different terms and develop a great deal of notation regarding the theory of probability. In order to assist us in this process we will use the game of Pig as a concrete example to study.</p>
-<p>There are many different variations of the game of Pig, but the one that we will begin with involves the rolling of a single die. For each turn, a player repeatedly rolls a die until either a <span class="math inline">\(1\)</span> is rolled or the player decides to ‘hold.’ If the <span class="math inline">\(1\)</span> is rolled, the player scores nothing on that turn and it becomes the next player’s turn. If a <span class="math inline">\(1\)</span> is not rolled, the player chooses to either roll again or ‘hold.’ If the player chooses to ‘hold,’ that player receives a score for that turn of the sum of the rolls up to that point. This score on the turn is then added to the player’s previous score to create the total score. The players then take turns until one player has a total score of 100 points.</p>
+<p>There are many different variations of the game of Pig, but the one that we will begin with involves the rolling of a single die. For each turn, a player repeatedly rolls a die until either a <span class="math inline">\(1\)</span> is rolled or the player decides to ‘hold’. If the <span class="math inline">\(1\)</span> is rolled, the player scores nothing on that turn and it becomes the next player’s turn. If a <span class="math inline">\(1\)</span> is not rolled, the player chooses to either roll again or ‘hold’. If the player chooses to ‘hold’, that player receives a score for that turn of the sum of the rolls up to that point. This score on the turn is then added to the player’s previous score to create the total score. The players then take turns until one player has a total score of 100 points.</p>
 <p>In order to better understand this process we will create an example game.</p>
 <ul>
 <li><em>Player 1:</em> Rolls a 3 and decides to roll again and rolls a 1. This player gets no points for the turn.</li>
@@ -739,7 +739,7 @@ div.csl-indent {
 <ul>
 <li>(S1) <span class="math inline">\(\Omega \in \mathcal{F}\)</span></li>
 <li>(S2) If <span class="math inline">\(A\in \mathcal{F}\)</span>, then <span class="math inline">\(A^c = \Omega\setminus A \in \mathcal{F}\)</span>.</li>
-<li>(S3) If <span class="math inline">\(I\)</span> is a finite or countably infinite indexing set and $ {A_i }_{iI} $, then <span class="math inline">\(\bigcup_{i\in I} A_i \in \mathcal{F}\)</span>.</li>
+<li>(S3) If <span class="math inline">\(I\)</span> is a finite or countably infinite indexing set and <span class="math inline">\(\left\{A_i \right\}_{i\in I} \subset \mathcal{F}\)</span>, then <span class="math inline">\(\bigcup_{i\in I} A_i \in \mathcal{F}\)</span>.</li>
 </ul>
 <p>A function <span class="math inline">\(P:\mathcal{F} \rightarrow [0,1]\)</span> is called a <strong>probability measure</strong> if it satisfies the following properties:</p>
 <ul>
@@ -760,17 +760,16 @@ div.csl-indent {
 <span class="math display">\[A\cap B =\emptyset\]</span></p>
 </div>
 <p>In our example of playing Pig with only rolling two times on each turn we can rewrite some of our information using this new terminology. We can consider <span class="math inline">\(\Omega\)</span> to be the possible pairs of rolls, <span class="math display">\[\Omega = \left\{ (a,b) \vert a,b\in \{1,2,3,4,5,6\} \right\}\]</span> and <span class="math inline">\(\mathcal{F} = \mathcal{P}\left(\Omega \right)\)</span>. Then the probability of rolling a <span class="math inline">\(1\)</span> for at least one of the rolls would be
-<span class="math display">\[P\left( \left\{ (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,1), (3,1), (4,1), (5,1), (6,1) \right\} \right) = \frac{11}{36} \]</span> and so the probability of getting zero points for a turn using the two rolls strategy is <span class="math inline">\(\frac{11}{36}\)</span>.</p>
+<span class="math display">\[P\left( \left\{ (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,1), (3,1), (4,1), (5,1), (6,1) \right\} \right) = \frac{11}{36}\]</span> and so the probability of getting zero points for a turn using the two rolls strategy is <span class="math inline">\(\frac{11}{36}\)</span>.</p>
 <div id="boolean-algebra-and-probability" class="section level3" number="15.2.1">
 <h3><span class="header-section-number">15.2.1</span> Boolean Algebra and Probability</h3>
 <p>Since <span class="math inline">\(P\)</span> maps subsets of <span class="math inline">\(\Omega\)</span> into the interval <span class="math inline">\([0,1]\)</span> we need to understand how <span class="math inline">\(P\)</span> operates with the Boolean algebra of set theory and how that relates to the language of probability.</p>
-<p>We first note that for two sets <span class="math inline">\(A,B\subseteq \Omega\)</span>, <span class="math inline">\(A\cap B\)</span> is the set of outcomes in $$ that are in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. In our example from the game of Pig with rolling twice for a turn, we can let <span class="math inline">\(A\)</span> be the set of events where a 3 is rolled on the first roll. So <span class="math display">\[A = \left\{ (3,1), (3,2), (3,3), (3,4), (3,5), (3,6)\right\} \mbox{ and } P(A) = \frac{6}{36}.\]</span> Let <span class="math inline">\(B\)</span> be the set of events where a 4 or 5 is rolled on the second roll,
+<p>We first note that for two sets <span class="math inline">\(A,B\subseteq \Omega\)</span>, <span class="math inline">\(A\cap B\)</span> is the set of outcomes in <span class="math inline">\(\Omega\)</span> that are in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. In our example from the game of Pig with rolling twice for a turn, we can let <span class="math inline">\(A\)</span> be the set of events where a 3 is rolled on the first roll. So <span class="math display">\[A = \left\{ (3,1), (3,2), (3,3), (3,4), (3,5), (3,6)\right\} \mbox{ and } P(A) = \frac{6}{36}.\]</span> Let <span class="math inline">\(B\)</span> be the set of events where a 4 or 5 is rolled on the second roll,
 <span class="math display">\[B=\left\{ (1,4), (2,4), (3,4), (4,4), (5,4), (6,4), (1,5), (2,5), (3,5), (4,5), (5,5), (6,5)\right\} \mbox{ and } P(B) = \frac{12}{36}.\]</span> Then <span class="math inline">\(A\cap B\)</span> is the set of events where a 3 is rolled on the first roll and a 4 or 5 is rolled on the second roll,
 <span class="math display">\[A\cap B = \left\{ (3,4), (3,5)\right\} \mbox{ and } P(A\cap B) = \frac{2}{36}.\]</span></p>
-</div>
 <div class="standards">
-<div id="related-content-standards-103" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSS.CP.1) Describe events as subsets of a sample space (the set of outcomes) using characteristics (or categories) of the outcomes, or as unions, intersections, or complements of other events (“or,” “and,” “not”).</li>
@@ -792,7 +791,7 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 <div class="proof">
 <p><span id="unlabeled-div-309" class="proof"><em>Proof</em>. </span><strong>Proof of (a):</strong> Since <span class="math inline">\(A\in \mathcal{F}\)</span>, property (S2) says that <span class="math inline">\(A^c\)</span> is also in <span class="math inline">\(\mathcal{F}\)</span> and so <span class="math inline">\(P(A^c)\)</span> is well-defined. We also know that <span class="math inline">\(\Omega = A \cup A^c\)</span> and that <span class="math inline">\(A\cap A^c = \emptyset\)</span>. So property (P3) states that
 <span class="math display">\[ P(\Omega) = P(A) + P(A^c).\]</span> Since <span class="math inline">\(P(\Omega)=1\)</span>, we have that <span class="math inline">\(P(A^c)=1-P(A)\)</span>.</p>
-<p><strong>Proof of (b):</strong> Let <span class="math inline">\(A,B\in \mathcal{F}\)</span>. Since <span class="math inline">\(\Omega = B \cup B^c\)</span>, we know that <span class="math display">\[ A = A \cap \Omega = A \cap (B \cup B^c) = (A\cap B) \cup (A \cap B^c) = (A\cap B) \cup (A \setminus B).\]</span> Since <span class="math inline">\((A\cap B)\)</span> and <span class="math inline">\(A\setminus B\)</span> are disjoint, property (P3) gives us that <span class="math inline">\(P(A) = P(A\cap B) + P(A \setminus B)\)</span>. We can rearrange this equation so that <span class="math display">\[P(A\cap B) = P(A) - P(A\setminus B).\]</span></p>
+<p><strong>Proof of (b):</strong> Let <span class="math inline">\(A,B\in \mathcal{F}\)</span>. Since <span class="math inline">\(\Omega = B \cup B^c\)</span>, we know that <span class="math display">\[A = A \cap \Omega = A \cap (B \cup B^c) = (A\cap B) \cup (A \cap B^c) = (A\cap B) \cup (A \setminus B).\]</span> Since <span class="math inline">\((A\cap B)\)</span> and <span class="math inline">\(A\setminus B\)</span> are disjoint, property (P3) gives us that <span class="math inline">\(P(A) = P(A\cap B) + P(A \setminus B)\)</span>. We can rearrange this equation so that <span class="math display">\[P(A\cap B) = P(A) - P(A\setminus B).\]</span></p>
 <p><strong>Proof of (c):</strong> Let <span class="math inline">\(A,B\in \mathcal{F}\)</span>. Then we know that
 <span class="math display">\[(A\setminus B) \cup (A\cap B) \cup (B\setminus A)\]</span> is a partition of <span class="math inline">\(A\cup B\)</span> in that the three sets are mutually disjoint and their union is <span class="math inline">\(A\cup B\)</span>. So
 <span class="math display">\[P(A\cup B) = P(A\setminus B) + P(A\cap B) + P(B\setminus A)\]</span> by property (P3). Combining this with part (b) of the theorem we have
@@ -801,8 +800,8 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 <span class="math display">\[B= B \cap (A \cup A^c) = (B\cap A) \cup (B\cap A^c) = A \cup (B\setminus A)\]</span> and <span class="math inline">\(A\)</span> and <span class="math inline">\(B\setminus A\)</span> are disjoint. So property (P3) gives us that <span class="math inline">\(P(B) = P(A) + P(B\setminus A)\)</span>. Since <span class="math inline">\(P(B\setminus A) \geq 0\)</span>, <span class="math inline">\(P(A) \leq P(B)\)</span>.</p>
 </div>
 <div class="standards">
-<div id="related-content-standards-104" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSS.CP.7) Apply the Addition Rule, <span class="math inline">\(P(A \mbox{ or } B) = P(A) + P(B) - P(A \mbox{ and } B)\)</span>, and interpret the answer in terms of the model.<br />
@@ -879,6 +878,7 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 
 % Blackjack probabilities
 --->
+</div>
 <div id="exercises-66" class="section level3" number="15.2.2">
 <h3><span class="header-section-number">15.2.2</span> Exercises</h3>
 <ol style="list-style-type: decimal">

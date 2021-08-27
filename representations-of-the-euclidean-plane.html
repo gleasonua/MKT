@@ -32,7 +32,7 @@
   
 <link rel="prev" href="introduction-to-transformational-geometry.html"/>
 <link rel="next" href="translations.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -723,27 +723,26 @@ div.csl-indent {
 <div id="cartesian-plane" class="section level3" number="12.2.2">
 <h3><span class="header-section-number">12.2.2</span> Cartesian Plane</h3>
 <p>In the 1600s René Descartes and Pierre de Fermat independently developed the use of a coordinate plane to provide an analytic foundation for the study of geometry. While some may consider the synthetic methods to be more axiomatic, we have shown in Chapter <a href="ch-number.html#ch:number">4</a> that the construction of the real number system, and thus also <span class="math inline">\(\mathbb{R}^2\)</span> is just as axiomatic using the axioms of set theory. When we follow the real analytic perspective of transformational geometry we will generally use the distance defined by the Euclidean distance, <span class="math display">\[d\left( (x,y),(w,z)\right) = \sqrt{(w-x)^2+(z-y)^2},\]</span> and we will consider the transformations as
-<span class="math inline">\(f:\mathbb{R}^2 \rightarrow \mathbb{R}^2\)</span> with <span class="math display">\[f(x,y)= \left( f_1(x,y), f_2(x,y)\right) \]</span> where <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span> are functions from <span class="math inline">\(\mathbb{R}^2\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<span class="math inline">\(f:\mathbb{R}^2 \rightarrow \mathbb{R}^2\)</span> with <span class="math display">\[f(x,y)= \left( f_1(x,y), f_2(x,y)\right)\]</span> where <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span> are functions from <span class="math inline">\(\mathbb{R}^2\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
 <p>Furthermore, in <span class="math inline">\(\mathbb{R}^2\)</span> we see that lines can be expressed in the form <span class="math display">\[\left\{ (x,y) \in \mathbb{R}^2 \: \vert \: y=mx+b \mbox{ for some } m,b\in \mathbb{R}\right\}\]</span> and circles centered at the point <span class="math inline">\((x_0,y_0)\)</span> with a radius of <span class="math inline">\(r\)</span> can be expressed as <span class="math display">\[\left\{ (x,y)\in \mathbb{R}^2 \vert (x-x_0)^2 + (y-y_0)^2 = r^2\right\}.\]</span></p>
 </div>
 <div id="vector-space" class="section level3" number="12.2.3">
 <h3><span class="header-section-number">12.2.3</span> Vector Space</h3>
 <p>An alternative perspective of the plane involves viewing <span class="math inline">\(\mathbb{R}^2\)</span> as a two-dimensional real vector space. From this perspective, we define
-<span class="math display">\[\mathbb{R}^2 = \left\{ \langle x,y\rangle  \: \vert \: x,y\in \mathbb{R}\right\}\]</span> with the inner product defined as <span class="math display">\[\langle x,y\rangle\cdot \langle w,z\rangle = xw+yz,\]</span> and the norm of a vector defined as <span class="math display">\[||\langle x,y\rangle ||=\sqrt{\langle x,y\rangle \cdot\langle x,y\rangle }=\sqrt{x^2+y^2}.\]</span> We define vector addition defined by $x,y+w,z= x+w, y+z$, scalar multiplication by $cx,y=cx,cy$, and so $x,y-w,zx-w,y-z$ and we can define the distance between vectors as
+<span class="math display">\[\mathbb{R}^2 = \left\{ \langle x,y\rangle  \: \vert \: x,y\in \mathbb{R}\right\}\]</span> with the inner product defined as <span class="math display">\[\langle x,y\rangle\cdot \langle w,z\rangle = xw+yz,\]</span> and the norm of a vector defined as <span class="math display">\[||\langle x,y\rangle ||=\sqrt{\langle x,y\rangle \cdot\langle x,y\rangle }=\sqrt{x^2+y^2}.\]</span> We define vector addition defined by <span class="math inline">\(\langle x,y\rangle +\langle w,z\rangle = \langle x+w, y+z\rangle\)</span>, scalar multiplication by <span class="math inline">\(c \langle x,y\rangle =\langle cx,cy\rangle\)</span>, and so <span class="math inline">\(\langle x,y\rangle -\langle w,z\rangle \langle x-w,y-z\rangle\)</span> and we can define the distance between vectors as
 <span class="math display">\[d\left( \langle x,y\rangle ,\langle w,z\rangle \right) = || \langle x,y\rangle -\langle w,z\rangle ||.\]</span> We will focus much of our attention on linear transformations of this vector space represented by matrices,
 <span class="math display">\[T_A\left(\langle x,y\rangle \right) = A\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} ax+by \\ cx+dy \end{pmatrix} = \langle ax+by, cx+dy\rangle .\]</span></p>
 </div>
 <div id="complex-plane" class="section level3" number="12.2.4">
 <h3><span class="header-section-number">12.2.4</span> Complex Plane</h3>
-<p>In the 1700s Leonard Euler proposed the concept of considering the complex numbers as isomorphic to the real plane, <span class="math display">\[\mathbb{C} = \left\{ x+iy \: \vert \: (x,y)\in \mathbb{R}^2\right\}\]</span> with distance <span class="math display">\[d(w,z) = |w-z|.\]</span> Then transformations of the plane are simply functions of the form <span class="math inline">\(f:\mathbb{C} \rightarrow \mathbb{C}\)</span>. The circle centered at the complex number <span class="math inline">\(c\)</span> with radius <span class="math inline">\(r\)</span> in <span class="math inline">\(\mathbb{C}\)</span> can be expressed as <span class="math display">\[C_{(c,r)} = \left\{ z\in \mathbb{C} \: \vert \: |z-c|=r\right\}.\]</span> The details of the complex plane perspective are in Section .</p>
+<p>In the 1700s Leonard Euler proposed the concept of considering the complex numbers as isomorphic to the real plane, <span class="math display">\[\mathbb{C} = \left\{ x+iy \: \vert \: (x,y)\in \mathbb{R}^2\right\}\]</span> with distance <span class="math display">\[d(w,z) = |w-z|.\]</span> Then transformations of the plane are simply functions of the form <span class="math inline">\(f:\mathbb{C} \rightarrow \mathbb{C}\)</span>. The circle centered at the complex number <span class="math inline">\(c\)</span> with radius <span class="math inline">\(r\)</span> in <span class="math inline">\(\mathbb{C}\)</span> can be expressed as <span class="math display">\[C_{(c,r)} = \left\{ z\in \mathbb{C} \: \vert \: |z-c|=r\right\}.\]</span> The details of the complex plane perspective are in Section <a href="sec-complex.html#sec:complex">4.6</a>.</p>
 </div>
 <div id="isometries-1" class="section level3" number="12.2.5">
 <h3><span class="header-section-number">12.2.5</span> Isometries</h3>
 <p>Recall that the definition of an isometry as a surjection that maintains distances between any two points. We will see that the uses of the different representations of the plane will help us to better understand and categorize these isometries.</p>
-</div>
 <div class="standards">
-<div id="related-content-standards-84" class="section level3 unnumbered center">
-<h3><strong>Related Content Standards</strong></h3>
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
 <li>(HSG.CO.2) Represent transformations in the plane using, e.g., transparencies and geometry software; describe transformations as functions that take points in the plane as inputs and give other points as outputs. Compare transformations that preserve distance and angle to those that do not (e.g., translation versus horizontal stretch).</li>
@@ -770,6 +769,7 @@ Using properties of complex conjugation and distribution the second equation can
 <div class="definition">
 <p><span id="def:unlabeled-div-256" class="definition"><strong>Definition 12.9  </strong></span>Let <span class="math inline">\(I\)</span> be the set of isometries of the plane.
 <span class="math display">\[I = \left\{ f: \mathbb{C} \rightarrow \mathbb{C} \:\vert \: f(z)=a z+b \mbox{ or } f(z)=a \bar{z}+b \mbox{ for some } a, b \in \mathbb{C} \mbox{ with } |a|=1 \right\}\]</span></p>
+</div>
 </div>
 <div id="exercises-51" class="section level3" number="12.2.6">
 <h3><span class="header-section-number">12.2.6</span> Exercises</h3>

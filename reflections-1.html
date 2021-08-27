@@ -32,7 +32,7 @@
   
 <link rel="prev" href="rotations.html"/>
 <link rel="next" href="glide-reflections.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -748,7 +748,7 @@ div.csl-indent {
 <div id="vector-space-and-cartesian-plane" class="section level3" number="12.5.3">
 <h3><span class="header-section-number">12.5.3</span> Vector Space and Cartesian Plane</h3>
 <p>As we did with rotations, we will use the information from the Complex Plane representation to determine the representation of reflections in the Vector Space and Cartesian Plane representations.</p>
-<p>Reflections over the horizontal axis are described by $x,y x,-y$. So using matrices, this reflection can be represented by the matrix <span class="math display">\[ r_{y=0} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}. \]</span> If we combine this matrix with the transformations of rotation and translation we see that the reflection about a line, <span class="math inline">\(l\)</span>, through the point <span class="math inline">\((h,k)\)</span> making an angle <span class="math inline">\(\theta\)</span> with the horizontal is described as
+<p>Reflections over the horizontal axis are described by <span class="math inline">\(\langle x,y \rangle \mapsto \langle x,-y\rangle\)</span>. So using matrices, this reflection can be represented by the matrix <span class="math display">\[r_{y=0} = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}.\]</span> If we combine this matrix with the transformations of rotation and translation we see that the reflection about a line, <span class="math inline">\(l\)</span>, through the point <span class="math inline">\((h,k)\)</span> making an angle <span class="math inline">\(\theta\)</span> with the horizontal is described as
 <span class="math display">\[\begin{align*}
 r_l (\langle x,y\rangle ) &amp;= \begin{pmatrix} \cos(2\theta) &amp; \sin(2\theta) \\ -\sin(2\theta) &amp; \cos(2\theta) \end{pmatrix} \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix} \begin{pmatrix} x-h \\ y-k \end{pmatrix}  + \begin{pmatrix} h \\ k \end{pmatrix} \\
 &amp;= \begin{pmatrix} (x-h) \cos(2\theta) - (y-k)\sin(2\theta) +h \\ -(x-h) \sin(2\theta) - (y-k)\cos(2\theta) +k \end{pmatrix} .\end{align*}\]</span></p>
@@ -799,7 +799,7 @@ So we see that the center of rotation is the intersection point of the two lines
 <li><p>Let <span class="math inline">\(r\)</span> be the reflection across the line <span class="math inline">\(y=\sqrt{3}x\)</span>.</p>
 <ol style="list-style-type: lower-alpha">
 <li>Write an algebraic representation for the reflection from each of the four Cartesian, Vector, and Complex perspectives.</li>
-<li>Find the image of the circle $C={ (x,y)^2 : : (x-2)<sup>2+(y+3)</sup>2 =9} $ under this reflection.</li>
+<li>Find the image of the circle <span class="math inline">\(C=\left\{ (x,y)\in \mathbb{R}^2 \: \vert \: (x-2)^2+(y+3)^2 =9\right\}\)</span> under this reflection.</li>
 <li>Let <span class="math inline">\(A=(1,2)\)</span>, <span class="math inline">\(B=(-2,3)\)</span> and <span class="math inline">\(C=(0,0)\)</span>. Find the image of the triangle <span class="math inline">\(\triangle ABC\)</span> under this reflection.</li>
 </ol></li>
 </ol>
