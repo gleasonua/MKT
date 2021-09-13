@@ -582,7 +582,8 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="12.7" data-path="group-of-isometries.html"><a href="group-of-isometries.html"><i class="fa fa-check"></i><b>12.7</b> Group of Isometries</a>
 <ul>
-<li class="chapter" data-level="12.7.1" data-path="group-of-isometries.html"><a href="group-of-isometries.html#exercises-56"><i class="fa fa-check"></i><b>12.7.1</b> Exercises</a></li>
+<li class="chapter" data-level="12.7.1" data-path="group-of-isometries.html"><a href="group-of-isometries.html#fixed-points"><i class="fa fa-check"></i><b>12.7.1</b> Fixed Points</a></li>
+<li class="chapter" data-level="12.7.2" data-path="group-of-isometries.html"><a href="group-of-isometries.html#exercises-56"><i class="fa fa-check"></i><b>12.7.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="12.8" data-path="dilations-and-similarity.html"><a href="dilations-and-similarity.html"><i class="fa fa-check"></i><b>12.8</b> Dilations and Similarity</a>
 <ul>
@@ -764,8 +765,12 @@ Then from the third point we see that <span class="math display">\[f(z) = \frac{
 <span class="math display">\[f(z)= \frac{w_2-w_1}{\overline{(z_2-z_1)}} \overline{(z-z_3)} + w_3.\]</span></p>
 </div>
 <!--- % Fixed points --->
-<div id="exercises-56" class="section level3" number="12.7.1">
-<h3><span class="header-section-number">12.7.1</span> Exercises</h3>
+<div id="fixed-points" class="section level3" number="12.7.1">
+<h3><span class="header-section-number">12.7.1</span> Fixed Points</h3>
+<p>For a function <span class="math inline">\(f:A\rightarrow A\)</span>, we say that <span class="math inline">\(c\in A\)</span> is a fixed point of <span class="math inline">\(f\)</span> if <span class="math inline">\(f(c)=c\)</span>. This property of fixed points is a way of describing different functions and can help us classify functions. In particular, the isometries of the plane have different numbers of fixed points.</p>
+</div>
+<div id="exercises-56" class="section level3" number="12.7.2">
+<h3><span class="header-section-number">12.7.2</span> Exercises</h3>
 <ol style="list-style-type: decimal">
 <li><p>Classify the transformation <span class="math inline">\(f\)</span> as one of the four types of isometries from its formula in the complex plane.</p>
 <ol style="list-style-type: lower-alpha">
@@ -775,7 +780,7 @@ Then from the third point we see that <span class="math display">\[f(z) = \frac{
 <li><span class="math inline">\(\displaystyle{f(z)=z-2+i}\)</span></li>
 </ol></li>
 <li><p>Identify the following compositions where <span class="math inline">\(ABCD\)</span> is the square below. (You may need to draw additional points.)
-<img src="images/transformationgraph.jpg" width="35%" style="display: block; margin: auto;" /></p>
+<img src="images/transformationgraph.jpg" width="50%" style="display: block; margin: auto;" /></p>
 <ol style="list-style-type: lower-alpha">
 <li><span class="math inline">\({\displaystyle R_{A,\frac{\pi}{2}} \circ R_{B,\frac{\pi}{2}}}\)</span></li>
 <li><span class="math inline">\({\displaystyle R_{A,\frac{\pi}{2}} \circ T_{\stackrel{\longrightarrow}{CA}}}\)</span></li>
@@ -793,10 +798,8 @@ Then from the third point we see that <span class="math display">\[f(z) = \frac{
 <li>Reflect the segment <span class="math inline">\(I\)</span> you drew in the first part across the <span class="math inline">\(x\)</span> -axis. Label the resulting segment <span class="math inline">\(II\)</span>. Find an algebraic representation of this reflection using a function of the complex plane and label this function <span class="math inline">\(g\)</span>.</li>
 <li>Find an algebraic representation of the composition of the two transformations using a function of the complex plane and label this function <span class="math inline">\(h\)</span>.</li>
 </ol></li>
-<li><p>What are the coordinates of the image of <span class="math inline">\(\triangle ABC\)</span> after a reflection across the <span class="math inline">\(y\)</span>-axis followed by a rotation of <span class="math inline">\(90^\circ\)</span> clockwise about the origin? Show your work, including a graph of the image of the triangle after each transformation, and explain how you found your answer.</p></li>
-</ol>
-<p><img src="images/Transformation_Triangle2.jpg" width="35%" style="display: block; margin: auto;" /></p>
-<ol style="list-style-type: decimal">
+<li><p>What are the coordinates of the image of <span class="math inline">\(\triangle ABC\)</span> after a reflection across the <span class="math inline">\(y\)</span>-axis followed by a rotation of <span class="math inline">\(90^\circ\)</span> clockwise about the origin? Show your work, including a graph of the image of the triangle after each transformation, and explain how you found your answer.
+<img src="images/Transformation_Triangle2.jpg" width="35%" style="display: block; margin: auto;" /></p></li>
 <li><p>Find an algebraic representation of the rigid motion that takes <span class="math inline">\(\triangle ABC\)</span> onto <span class="math inline">\(\triangle A&#39;B&#39;C&#39;\)</span>. Explain your method for finding the transformation and why that method would work.
 <img src="images/Transformation_Triangles.jpg" width="35%" style="display: block; margin: auto;" /></p></li>
 <li><p>Let <span class="math inline">\(I\)</span> be the set of isometries of the plane, i.e. <span class="math display">\[I= \left\{ f:\mathbb{C} \rightarrow \mathbb{C} | f(z)=az+b \: \mbox{or} \: f(z)=a\overline{z}+b \quad \mbox{with }  |a|=1 \right\}.\]</span></p>
@@ -809,6 +812,18 @@ Then from the third point we see that <span class="math display">\[f(z) = \frac{
 <li>maps translations to translations</li>
 <li>maps rotations to rotations</li>
 <li>maps reflections to reflections</li>
+</ol></li>
+<li><p>Find all fixed points, if any, of the following plane transformations:</p>
+<ol style="list-style-type: lower-alpha">
+<li>The rotation <span class="math inline">\(R_{C,\theta}\)</span></li>
+<li>The translation <span class="math inline">\(T_b\)</span> by the vector <span class="math inline">\(b\)</span></li>
+<li>The reflection <span class="math inline">\(r_m\)</span></li>
+</ol></li>
+<li><p>For the given orientation preserving isometries, find two lines of reflection that will produce the described transformation. Express lines in the form <span class="math inline">\(y=mx+b\)</span> or <span class="math inline">\(x=a\)</span>. Indicate the order they should be completed in.</p>
+<ol style="list-style-type: lower-alpha">
+<li>A rotation of <span class="math inline">\(\frac{\pi}{3}\)</span> radians in the counterclockwise direction around the point <span class="math inline">\((0,0)\)</span>.</li>
+<li>A rotation of <span class="math inline">\(\pi\)</span> radians in the clockwise direction around the point <span class="math inline">\((1,2)\)</span>.</li>
+<li>A translation equivalent to the vector <span class="math inline">\(\langle 3,4\rangle\)</span>.</li>
 </ol></li>
 </ol>
 </div>

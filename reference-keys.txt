@@ -694,6 +694,7 @@ synthetic-plane-4
 complex-plane-4
 exercises-55
 group-of-isometries
+fixed-points
 exercises-56
 dilations-and-similarity
 synthetic-plane-5
