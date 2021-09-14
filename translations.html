@@ -720,7 +720,7 @@ div.csl-indent {
 <div id="synthetic-plane-1" class="section level3" number="12.3.1">
 <h3><span class="header-section-number">12.3.1</span> Synthetic Plane</h3>
 <div class="definition">
-<p><span id="def:unlabeled-div-257" class="definition"><strong>Definition 12.10  </strong></span>Given a segment <span class="math inline">\(\overline{AB}\)</span>, we define the translation <span class="math inline">\(T_{\overline{AB}}\)</span> for every point <span class="math inline">\(C\)</span> by <span class="math inline">\(C&#39;=T_{\overline{AB}}(C)\)</span> is the unique point in the plane so that <span class="math inline">\(\overline{CC&#39;}\)</span> has the same length as <span class="math inline">\(\overline{AB}\)</span> and is parallel to <span class="math inline">\(\overline{AB}\)</span>.</p>
+<p><span id="def:unlabeled-div-258" class="definition"><strong>Definition 12.10  </strong></span>Given a segment <span class="math inline">\(\overline{AB}\)</span>, we define the translation <span class="math inline">\(T_{\overline{AB}}\)</span> for every point <span class="math inline">\(C\)</span> by <span class="math inline">\(C&#39;=T_{\overline{AB}}(C)\)</span> is the unique point in the plane so that <span class="math inline">\(\overline{CC&#39;}\)</span> has the same length as <span class="math inline">\(\overline{AB}\)</span> and is parallel to <span class="math inline">\(\overline{AB}\)</span>.</p>
 </div>
 <p>So if we start with a segment <span class="math inline">\(\overline{AB}\)</span> and a point <span class="math inline">\(C\)</span>, we can find the midpoint of the segment <span class="math inline">\(\overline{BC}\)</span> and label it as <span class="math inline">\(D\)</span>. Then we find the point on the line <span class="math inline">\(\overleftrightarrow{AD}\)</span> that is the same distance from <span class="math inline">\(D\)</span> as <span class="math inline">\(A\)</span>, and label the point <span class="math inline">\(C&#39;\)</span>.</p>
 <p>If <span class="math inline">\(C\)</span> was not on the line <span class="math inline">\(\overleftrightarrow{AB}\)</span>, <span class="math inline">\(\overline{BC}\)</span> and <span class="math inline">\(\overline{AC&#39;}\)</span> bisect each other, and so <span class="math inline">\(ABC&#39;C\)</span> is a parallelogram and so <span class="math inline">\(\overline{CC&#39;}\)</span> is the same length as, and parallel to, <span class="math inline">\(\overline{AB}\)</span>.</p>
@@ -740,7 +740,7 @@ div.csl-indent {
 <h3><span class="header-section-number">12.3.2</span> Cartesian Plane and Vector Space</h3>
 <p>When we add the coordinates to the plane, the definition and properties of the translation become easier to describe due to the increased amount of information provided by the Cartesian coordinate system. In particular, since any translation can be viewed as a combination of horizontal and vertical translations we see that a translation of a set length in a certain direction is defined by these two simpler translations.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-258" class="definition"><strong>Definition 12.11  </strong></span>Given a point <span class="math inline">\((h,k)\in \mathbb{R}^2\)</span>, we define <span class="math inline">\(T_{(h,k)}\)</span> by <span class="math display">\[T_{(h,k)} \left( (x,y)\right) = (x+h,y+k).\]</span></p>
+<p><span id="def:unlabeled-div-259" class="definition"><strong>Definition 12.11  </strong></span>Given a point <span class="math inline">\((h,k)\in \mathbb{R}^2\)</span>, we define <span class="math inline">\(T_{(h,k)}\)</span> by <span class="math display">\[T_{(h,k)} \left( (x,y)\right) = (x+h,y+k).\]</span></p>
 </div>
 <p>A translation corresponding to a line segment between the points <span class="math inline">\(A=(a_1,a_2)\)</span> and <span class="math inline">\(B=(b_1,b_2)\)</span> in this perspective corresponds to the point <span class="math inline">\((h,k)\)</span>, where <span class="math inline">\(h=b_1-a_1\)</span> and <span class="math inline">\(k=b_2-a_2\)</span>. We can also show that translations are isometries using this perspective by letting <span class="math inline">\(C=(c_1,c_2)\)</span> and <span class="math inline">\(D=(d_1,d_2)\)</span> be two points in <span class="math inline">\(\mathbb{R}^2\)</span> and let <span class="math inline">\((h,k)\)</span> be a point in <span class="math inline">\(\mathbb{R}^2\)</span>. Then</p>
 <p><span class="math display">\[\begin{align*}
@@ -751,14 +751,14 @@ div.csl-indent {
 and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <p>Using a basic understanding of vectors, the properties of translations in the Cartesian perspective translate very easily to the Vector space perspective.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-259" class="definition"><strong>Definition 12.12  </strong></span>Given a vector <span class="math inline">\(\langle h,k\rangle\)</span>, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
+<p><span id="def:unlabeled-div-260" class="definition"><strong>Definition 12.12  </strong></span>Given a vector <span class="math inline">\(\langle h,k\rangle\)</span>, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
 </div>
 </div>
 <div id="complex-plane-1" class="section level3" number="12.3.3">
 <h3><span class="header-section-number">12.3.3</span> Complex Plane</h3>
 <p>Complex numbers provide even more structure than <span class="math inline">\(\mathbb{R}^2\)</span> and so the notation for translations is simplified.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-260" class="definition"><strong>Definition 12.13  </strong></span>Given a complex number <span class="math inline">\(b\in \mathbb{C}\)</span>, we define <span class="math inline">\(T_b\)</span> by <span class="math display">\[T_b(z) = z+b.\]</span></p>
+<p><span id="def:unlabeled-div-261" class="definition"><strong>Definition 12.13  </strong></span>Given a complex number <span class="math inline">\(b\in \mathbb{C}\)</span>, we define <span class="math inline">\(T_b\)</span> by <span class="math display">\[T_b(z) = z+b.\]</span></p>
 </div>
 <p>This additional structure provided by <span class="math inline">\(\mathbb{C}\)</span> also simplifies the proof that translations are isometries,
 <span class="math display">\[ \left| T_b(w)-T_b(z)\right| = \left|(w+b)-(z+b)\right| = |z-w|.\]</span></p>
@@ -766,19 +766,19 @@ and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <div id="compositions" class="section level3" number="12.3.4">
 <h3><span class="header-section-number">12.3.4</span> Compositions</h3>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-261" class="theorem"><strong>Theorem 12.8  </strong></span>The composition of two translations is a translation.</p>
+<p><span id="thm:unlabeled-div-262" class="theorem"><strong>Theorem 12.8  </strong></span>The composition of two translations is a translation.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-262" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(T_b\)</span> and <span class="math inline">\(T_c\)</span> be two translations of <span class="math inline">\(\mathbb{C}\)</span>. Then
+<p><span id="unlabeled-div-263" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(T_b\)</span> and <span class="math inline">\(T_c\)</span> be two translations of <span class="math inline">\(\mathbb{C}\)</span>. Then
 <span class="math display">\[T_b\circ T_c(z) = T_b(z+c) = (z+c)+b = z + (c+b) = T_{c+b}(z).\]</span></p>
 </div>
 <p>We can also see that the order of the translations does not matter.</p>
 <p>::: Group of Translations</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-263" class="theorem"><strong>Theorem 12.9  </strong></span>Let <span class="math inline">\(T\)</span> be the set of translations of the plane. Then with the operation of function composition, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
+<p><span id="thm:unlabeled-div-264" class="theorem"><strong>Theorem 12.9  </strong></span>Let <span class="math inline">\(T\)</span> be the set of translations of the plane. Then with the operation of function composition, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-264" class="proof"><em>Proof</em>. </span>Since the composition of two translations is also a translation, <span class="math inline">\((T,\circ)\)</span> is closed.</p>
+<p><span id="unlabeled-div-265" class="proof"><em>Proof</em>. </span>Since the composition of two translations is also a translation, <span class="math inline">\((T,\circ)\)</span> is closed.</p>
 <p>Since the identity function can be considered a translation, <span class="math inline">\(T_0(z)=z+0\)</span>, we see that <span class="math inline">\((T,\circ)\)</span> has an identity.</p>
 <p>Since for any <span class="math inline">\(b\in \mathbb{C}\)</span>, <span class="math inline">\(T_b \circ T_{-b} (z) = z-b+b=z\)</span>, we see that <span class="math inline">\(T_b\)</span> is invertible and <span class="math inline">\(T_b^{-1} = T_{-b}\)</span>. So the inverse of any translation is also a translation.</p>
 <p>Therefore, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
@@ -788,7 +788,7 @@ and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 for all <span class="math inline">\(a,b\in G\)</span>.</p>
 <p>If we let <span class="math inline">\(\phi:\mathbb{C} \rightarrow T\)</span> be defined by <span class="math inline">\(\phi(b)=T_b\)</span>, we see that <span class="math display">\[\phi(b+c) = T_{b+c} = T_b \circ T_c = \phi(b) \circ \phi(c),\]</span> making <span class="math inline">\(\phi\)</span> a group homomorphism. From the definition of translations on <span class="math inline">\(\mathbb{C}\)</span> we can see that <span class="math inline">\(\phi\)</span> is also a bijection. So we get the following theorem.</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-265" class="theorem"><strong>Theorem 12.10  </strong></span>The group <span class="math inline">\((T,\circ)\)</span> is isomorphic to the group <span class="math inline">\((\mathbb{C},+)\)</span>.</p>
+<p><span id="thm:unlabeled-div-266" class="theorem"><strong>Theorem 12.10  </strong></span>The group <span class="math inline">\((T,\circ)\)</span> is isomorphic to the group <span class="math inline">\((\mathbb{C},+)\)</span>.</p>
 </div>
 </div>
 <div id="exercises-52" class="section level3" number="12.3.5">

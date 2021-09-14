@@ -719,7 +719,7 @@ div.csl-indent {
 <p>There are times that we want to know the probability of a set of events conditioned on the occurrence of another set of events. For instance, if we are rolling two dice, we may want to know the probability that the sum of the dice is greater than 4 conditioned on the first die being a 2. With this scenario we have reduced the overall sample space to just those events for which the first die is a two. So what we are wanting to know is
 <span class="math display">\[\frac{P(\mbox{sum of dice is greater than 4})}{P(\mbox{first die is a two})} = \frac{4}{6}\]</span> since the total possible events are <span class="math inline">\(\{(2,1), (2,2), (2,3), (2,4), (2,5), (2,6)\}\)</span> with only 4 of the 6 being the desired events.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-310" class="definition"><strong>Definition 15.4  </strong></span>If <span class="math inline">\(A,B\in \mathcal{F}\)</span> then the <strong>conditional probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span></strong> is defined as
+<p><span id="def:unlabeled-div-311" class="definition"><strong>Definition 15.4  </strong></span>If <span class="math inline">\(A,B\in \mathcal{F}\)</span> then the <strong>conditional probability of <span class="math inline">\(A\)</span> given <span class="math inline">\(B\)</span></strong> is defined as
 <span class="math display">\[P(A\vert B) = \frac{P(A\cap B)}{P(B)} \mbox{, when } P(B)&gt;0.\]</span>
 Similarly,
 <span class="math display">\[P(B\vert A) = \frac{P(A\cap B)}{P(A)} \mbox{, when } P(A)&gt;0.\]</span></p>
@@ -732,17 +732,17 @@ Similarly,
 <p>This theorem is demonstrated in the following tree.</p>
 <p><img src="tikz/conditional-tree.png" width="80%" style="display: block; margin: auto;" /></p>
 <div class="definition">
-<p><span id="def:unlabeled-div-311" class="definition"><strong>Definition 15.5  </strong></span>Two events are <strong>independent</strong> if the occurrence of one does not affect the probability of occurrence of the other.</p>
+<p><span id="def:unlabeled-div-312" class="definition"><strong>Definition 15.5  </strong></span>Two events are <strong>independent</strong> if the occurrence of one does not affect the probability of occurrence of the other.</p>
 <p>If two events are not independent, they are called <strong>dependent</strong>.</p>
 </div>
 <p>In terms of the probability measures, events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if
 <span class="math display">\[P(A|B) = P(A) \quad \mbox{ and } \quad P(B|A) = P(B)\]</span> since the probability of event <span class="math inline">\(A\)</span> should be the same whether or not event <span class="math inline">\(B\)</span> has occurred, similarly with <span class="math inline">\(B|A\)</span>. Combining this with the previous theorem we have the following theorem.</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-312" class="theorem"><strong>Theorem 15.3  </strong></span>Two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if their joint probability equals the product of their probabilities.
+<p><span id="thm:unlabeled-div-313" class="theorem"><strong>Theorem 15.3  </strong></span>Two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent if and only if their joint probability equals the product of their probabilities.
 <span class="math display">\[P(A \cap B) = P(A)P(B)\]</span></p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-313" class="proof"><em>Proof</em>. </span>Assume that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent events. So <span class="math inline">\(P(A|B)=P(A)\)</span>. Combining this with Theorem <a href="conditional-probability.html#thm:probability-intersection">15.2</a> we have that <span class="math display">\[P(A\cap B) = P(B)\cdot P(A|B) = P(B)\cdot P(A).\]</span></p>
+<p><span id="unlabeled-div-314" class="proof"><em>Proof</em>. </span>Assume that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent events. So <span class="math inline">\(P(A|B)=P(A)\)</span>. Combining this with Theorem <a href="conditional-probability.html#thm:probability-intersection">15.2</a> we have that <span class="math display">\[P(A\cap B) = P(B)\cdot P(A|B) = P(B)\cdot P(A).\]</span></p>
 <p>If we instead assume that <span class="math inline">\(P(A\cap B)=P(A)\cdot P(B)\)</span>, Theorem <a href="conditional-probability.html#thm:probability-intersection">15.2</a> implies that
 <span class="math display">\[P(A) P(B) = P(A\cap B) = P(A) P(B|A) = P(B)P(A|B)\]</span> and so we have
 <span class="math display">\[P(B|A) = P(B) \mbox{ and } P(A|B)=P(A).\]</span> So the events are independent.</p>

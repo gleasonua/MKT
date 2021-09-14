@@ -739,7 +739,7 @@ For example,
 <span class="math display">\[f(x) = (x-a_0)^{j_0} g(x)\]</span> where <span class="math inline">\(g\)</span> is a rational function without <span class="math inline">\((x-a_0)\)</span> as a factor of either the numerator or denominator (See Theorem <a href="general-polynomial-functions.html#thm:poly-Taylor-zero">8.1</a>). Using properties from analysis (similarly to Theorem <a href="general-polynomial-functions.html#lem:Leibniz-rule">8.1</a>) we can determine that near <span class="math inline">\(x=a_0\)</span> that
 <span class="math display">\[f(x) \approx g(a_0) (x-a_0)^{j_0}.\]</span></p>
 <div class="example">
-<p><span id="exm:unlabeled-div-134" class="example"><strong>Example 8.1  </strong></span>To better understand this concept let us consider <span class="math display">\[f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}.\]</span>
+<p><span id="exm:unlabeled-div-135" class="example"><strong>Example 8.1  </strong></span>To better understand this concept let us consider <span class="math display">\[f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}.\]</span>
 We see that the function has horizontal intercepts at <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. We can also see that near <span class="math inline">\(x=-1\)</span>, the function is very similar to <span class="math display">\[g(x)= (x+1) \cdot \frac{ ((-1)-1)^2}{((-1)-2)^2}= \frac{4}{9} (x+1).\]</span> Similarly, near <span class="math inline">\(x=1\)</span> the function behaves very similarly to <span class="math inline">\(h(x)= 2(x-1)^2\)</span>.</p>
 <p><img src="tikz/rational1.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
@@ -748,7 +748,7 @@ We see that the function has horizontal intercepts at <span class="math inline">
 <h4><span class="header-section-number">8.7.1.3</span> Behavior near Singularities</h4>
 <p>In order to determine the domain of the rational functions we consider the factors of the denominator of the function. If <span class="math inline">\((x-b_0)\)</span> is a factor in the denominator of the rational function, and <span class="math inline">\(b_0\in \mathbb{R}\)</span>, then <span class="math inline">\(b_0\)</span> is not in the domain of the function. If the degree of the factor is <span class="math inline">\(k_0\)</span>, then we see that the function can be rewritten as <span class="math display">\[f(x)= \frac{1}{(x-b_0)^{k_0}} g(x)\]</span> for a rational function <span class="math inline">\(g\)</span> with <span class="math inline">\(b_0\)</span> in the domain of <span class="math inline">\(g\)</span> and <span class="math inline">\(g(b_0)\neq 0\)</span>. So near <span class="math inline">\(x=b_0\)</span>, <span class="math display">\[f(x) \approx g(b_0) \frac{1}{(x-b_0)^{k_0}}.\]</span></p>
 <div class="example">
-<p><span id="exm:unlabeled-div-135" class="example"><strong>Example 8.2  </strong></span>Returning to our example of <span class="math inline">\(f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}\)</span>, we can see that near <span class="math inline">\(x=2\)</span> that
+<p><span id="exm:unlabeled-div-136" class="example"><strong>Example 8.2  </strong></span>Returning to our example of <span class="math inline">\(f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}\)</span>, we can see that near <span class="math inline">\(x=2\)</span> that
 <span class="math display">\[f(x) \approx \frac{3}{(x-2)^2},\]</span> as evidenced in the following graph.</p>
 <p><img src="tikz/rational2.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
@@ -773,7 +773,7 @@ So if <span class="math inline">\(f(x)\)</span> is a rational function with nume
 <span class="math display">\[f(x)=\frac{a(x)}{b(x)} = q(x) + \frac{r(x)}{b(x)}.\]</span></p>
 <p>From the conversation above we can see that <span class="math display">\[\lim_{x\rightarrow \pm \infty} \frac{r(x)}{b(x)} =0\]</span> and that <span class="math inline">\(f(x)\)</span> asymptotically approaches <span class="math inline">\(q(x)\)</span> as <span class="math inline">\(|x| \rightarrow \infty\)</span>. So if the degree of the numerator is one plus the degree of the denominator then the quotient would be a linear function. Such asymptotes are often called ``skew asymptotes.’’</p>
 <div class="example">
-<p><span id="exm:unlabeled-div-136" class="example"><strong>Example 8.3  </strong></span>Returning to our example of <span class="math inline">\(f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}\)</span>, we can rewrite the function using the division algorithm as
+<p><span id="exm:unlabeled-div-137" class="example"><strong>Example 8.3  </strong></span>Returning to our example of <span class="math inline">\(f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}\)</span>, we can rewrite the function using the division algorithm as
 <span class="math display">\[f(x)= x+3 + \frac{7x-11}{(x-2)^2}.\]</span></p>
 <p><img src="tikz/rational5.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>

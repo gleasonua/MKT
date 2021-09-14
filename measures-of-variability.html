@@ -738,7 +738,7 @@ Figure 14.12: Temperatures for Phoenix and Honolulu
 --->
 <p>The first measure of variability focuses on the range of the middle half of the data.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-298" class="definition"><strong>Definition 14.5  </strong></span>The <strong>innerquartile range (IQR)</strong> is based on the division of the data set into quartiles, Q1 is the median of the lower half of the ranked data set, Q2 is the median of the data set, and Q3 is the median of the upper half of the ranked data set. The IQR of the data set is then Q3-Q1.</p>
+<p><span id="def:unlabeled-div-299" class="definition"><strong>Definition 14.5  </strong></span>The <strong>innerquartile range (IQR)</strong> is based on the division of the data set into quartiles, Q1 is the median of the lower half of the ranked data set, Q2 is the median of the data set, and Q3 is the median of the upper half of the ranked data set. The IQR of the data set is then Q3-Q1.</p>
 </div>
 <p>In our example comparing the temperatures of Phoenix and Honolulu we see these quartile values are very different.
 <!---
@@ -789,7 +789,7 @@ Figure 14.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
 </div>
 <p>While the quartiles are commonly used to describe the variation of a data set in terms of its middle values, we will see in later chapters that with hypothesis testing it is standard to look for the location of 95% of the values in a data set.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-299" class="definition"><strong>Definition 14.6  </strong></span>A <strong>95-percent coverage interval</strong> describes the interval within which 95% of the data exists in a data set.</p>
+<p><span id="def:unlabeled-div-300" class="definition"><strong>Definition 14.6  </strong></span>A <strong>95-percent coverage interval</strong> describes the interval within which 95% of the data exists in a data set.</p>
 </div>
 <p>For the temperature example, we find that 95% of the high temperatures in Phoenix lie in the interval <span class="math inline">\((59.0, 110.8)\)</span>, while in Honolulu 95% of the high temperatures lie in the interval of <span class="math inline">\((79.0,92.0)\)</span>. This further differentiates the climate of Honolulu from Phoenix in that almost every day in Honolulu is within most people’s comfort level, while there are many days in Phoenix for which people are uncomfortable being outside.</p>
 <!---
@@ -805,7 +805,7 @@ Figure 14.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
 <p>Each of the prior methods of measuring variability involves ranking the data and then describing the data that fits within certain intervals. Because these measures of variability depend only on the rank of the data, they can be used with either ordinal or continuous data.</p>
 <p>When a variable is a continuous numeric variable, another way to describe the variability is to measure how much the data set differs from one of the centers of the data set. With such measurements, we want the value to become more reliable as we increase the number of points in our data set and so we want to measure some type of average of distances from the center. The most basic of these measure is the mean absolute deviation.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-300" class="definition"><strong>Definition 14.7  </strong></span>The <strong>mean absolute deviation</strong> of a data set is the mean of the absolute values of the differences from the center of the data set. If our data set is <span class="math inline">\(\{x_1, x_2, x_3, \ldots, x_n\}\)</span>, with center of <span class="math inline">\(\overline{x}\)</span>, then the mean absolute deviation of the set is
+<p><span id="def:unlabeled-div-301" class="definition"><strong>Definition 14.7  </strong></span>The <strong>mean absolute deviation</strong> of a data set is the mean of the absolute values of the differences from the center of the data set. If our data set is <span class="math inline">\(\{x_1, x_2, x_3, \ldots, x_n\}\)</span>, with center of <span class="math inline">\(\overline{x}\)</span>, then the mean absolute deviation of the set is
 <span class="math display">\[\frac{1}{n} \sum_{i=1}^n |x_i-\overline{x}|.\]</span></p>
 <p>While any center of the data set could be used, the most common center for the mean absolute deviation is the arithmetic mean.</p>
 </div>
@@ -830,7 +830,7 @@ Figure 14.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
 </div>
 <p>While the mean absolute deviation is easy to compute and interpret, it does not work well with mathematical statistics based on the theory of probability. So the most common measures of variability are based on the average of the squares of the differences from the mean, similar to the distance formula between points in <span class="math inline">\(\mathbb{R}^n\)</span>.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-301" class="definition"><strong>Definition 14.8  </strong></span>The <strong>standard deviation</strong> of a data set <span class="math inline">\(\{x_1, x_2, \ldots, x_n\}\)</span> with mean of <span class="math inline">\(\overline{x}\)</span> is given by <span class="math display">\[\sigma =  \sqrt{ \frac{1}{n} \sum_{i=1}^n \left(x_i - \overline{x}\right)^2}.\]</span>
+<p><span id="def:unlabeled-div-302" class="definition"><strong>Definition 14.8  </strong></span>The <strong>standard deviation</strong> of a data set <span class="math inline">\(\{x_1, x_2, \ldots, x_n\}\)</span> with mean of <span class="math inline">\(\overline{x}\)</span> is given by <span class="math display">\[\sigma =  \sqrt{ \frac{1}{n} \sum_{i=1}^n \left(x_i - \overline{x}\right)^2}.\]</span>
 The <strong>variance</strong> of the data set is the square of the standard deviation,
 <span class="math display">\[\mathrm{Var} = \sigma^2 = \frac{1}{n} \sum_{i=1}^n \left(x_i - \overline{x}\right)^2.\]</span></p>
 </div>
