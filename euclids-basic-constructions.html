@@ -456,7 +456,12 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="9.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html"><i class="fa fa-check"></i><b>9.3</b> Euclid’s Basic Constructions</a>
 <ul>
-<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.1</b> Exercises</a></li>
+<li class="chapter" data-level="9.3.1" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#initial-propositions"><i class="fa fa-check"></i><b>9.3.1</b> Initial Propositions</a></li>
+<li class="chapter" data-level="9.3.2" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#isosceles-triangles"><i class="fa fa-check"></i><b>9.3.2</b> Isosceles Triangles</a></li>
+<li class="chapter" data-level="9.3.3" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#side-side-side-congruence"><i class="fa fa-check"></i><b>9.3.3</b> Side-Side-Side Congruence</a></li>
+<li class="chapter" data-level="9.3.4" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#angles"><i class="fa fa-check"></i><b>9.3.4</b> Angles</a></li>
+<li class="chapter" data-level="9.3.5" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#perpendicular-lines"><i class="fa fa-check"></i><b>9.3.5</b> Perpendicular Lines</a></li>
+<li class="chapter" data-level="9.3.6" data-path="euclids-basic-constructions.html"><a href="euclids-basic-constructions.html#exercises-38"><i class="fa fa-check"></i><b>9.3.6</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.4" data-path="angles-parallel-lines-and-parallelograms.html"><a href="angles-parallel-lines-and-parallelograms.html"><i class="fa fa-check"></i><b>9.4</b> Angles, Parallel Lines, and Parallelograms</a>
 <ul>
@@ -724,6 +729,14 @@ Figure 9.3: Straightedge and Compass
 </p>
 </div>
 <p>To assist in the representations we often use a straight edge (usually a ruler ignoring the markings) to represent straight lines and we use a compass (either collapsible or fixed) to describe a circle with a fixed center and radius.</p>
+<div class="standards">
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
+</div>
+<ul>
+<li>(HSG.CO.12) Make formal geometric constructions with a variety of tools and methods (compass and straightedge, string, reflective devices, paper folding, dynamic geometric software, etc.). <em>Copying a segment; copying an angle; bisecting a segment; bisecting an angle; constructing perpendicular lines, including the perpendicular bisector of a line segment; and constructing a line parallel to a given line through a point not on the line.</em></li>
+</ul>
+</div>
 <p>We can also use dynamic geometry software like Desmos or GeoGebra to create representations of lines and circles.</p>
 <div class="figure" style="text-align: center"><span id="fig:Straightedge-Compass2"></span>
 <img src="images/circle-line.jpg" alt="Line and Circle Constructed using GeoGebra" width="60%" />
@@ -731,11 +744,14 @@ Figure 9.3: Straightedge and Compass
 Figure 9.4: Line and Circle Constructed using GeoGebra
 </p>
 </div>
-<p>As we work through some of the Propositions from Euclid’s Elements we will use some of these representations within the proofs in order to communicate the ideas of the proof.</p>
+<p>As we work through some of the Propositions from Euclid’s Elements we will use some of these representations within the proofs in order to communicate the ideas of the proof. For each of the propositions we will give the proposition using the translation of Heath <span class="citation">(<a href="#ref-Heath1908_1" role="doc-biblioref">Heath, 1908a</a>)</span> in order to better understand the historical context. We will then give a more modern version of the proposition.</p>
+<div id="initial-propositions" class="section level3" number="9.3.1">
+<h3><span class="header-section-number">9.3.1</span> Initial Propositions</h3>
 <p>We will include the proofs of some of Euclid’s initial propositions below in order to understand the idea of the axiomatic method and to demonstrate some of Euclid’s basic constructions. Proofs of the remainder of the propositions can easily be found online.</p>
 <div class="proposition">
 <p><span id="prp:prop1" class="proposition"><strong>Proposition 9.1  (Euclid's Proposition 1: Construction of Equilateral Triangle) </strong></span>On a given finite straight line to construct an equilateral triangle.</p>
 </div>
+<p>This proposition states that if you are given a line segment, you can use a compass and straightedge to construct and equilateral triangle where the line segment is one of the sides.</p>
 <div class="proof">
 <p><span id="unlabeled-div-144" class="proof"><em>Proof</em>. </span>We start with a given finite straight line <span class="math inline">\(AB\)</span>, labeled by its endpoints. Such a finite straight line exists by Postulate 1.</p>
 <p>Postulate 3 implies that we can describe a circle centered at <span class="math inline">\(A\)</span> through the point <span class="math inline">\(B\)</span> and a second circle centered at <span class="math inline">\(B\)</span> through the point <span class="math inline">\(A\)</span>.</p>
@@ -755,6 +771,9 @@ Figure 9.4: Line and Circle Constructed using GeoGebra
 <div class="proposition">
 <p><span id="prp:prop4" class="proposition"><strong>Proposition 9.4  (Euclid's Proposition 4: SAS Triangle Congruence) </strong></span>If two triangles have the two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, they will also have the base equal to the base, the triangle will be equal to the triangle, and the remaining angles will be equal to the remaining angles respectively, namely those which the equal sides subtend.</p>
 </div>
+</div>
+<div id="isosceles-triangles" class="section level3" number="9.3.2">
+<h3><span class="header-section-number">9.3.2</span> Isosceles Triangles</h3>
 <p>We can begin using SAS triangle congruence to prove results regarding isosceles triangle. While isosceles triangles are defined by Euclid as triangles with exactly two equal sides, the next two propositions show that these could be defined equivalently by having exactly two equal angles. We first show that two equal sides implies two equal angles.</p>
 <div class="proposition">
 <p><span id="prp:prop5" class="proposition"><strong>Proposition 9.5  (Euclid's Proposition 5) </strong></span>In isosceles triangles the angles at the base are equal to one another, and, if the equal straight lines be produced further, the angles under the base will be equal to one another.</p>
@@ -783,22 +802,21 @@ Figure 9.4: Line and Circle Constructed using GeoGebra
 <p>Since <span class="math inline">\(DB\)</span> equals <span class="math inline">\(AC\)</span>, and <span class="math inline">\(BC\)</span> is common, therefore the two sides <span class="math inline">\(DB\)</span> and <span class="math inline">\(BC\)</span> equal the two sides <span class="math inline">\(AC\)</span> and <span class="math inline">\(CB\)</span> respectively, and the angle <span class="math inline">\(\angle DBC\)</span> equals the angle <span class="math inline">\(\angle ACB\)</span>. Therefore the base <span class="math inline">\(DC\)</span> equals the base <span class="math inline">\(AB\)</span>, and the triangle <span class="math inline">\(\triangle DBC\)</span> equals the triangle <span class="math inline">\(\triangle ACB\)</span>, the less equals the greater, which is absurd. Therefore <span class="math inline">\(AB\)</span> is not unequal to <span class="math inline">\(AC\)</span>, it therefore equals it.</p>
 <p>Therefore if in a triangle two angles equal one another, then the sides opposite the equal angles also equal one another.</p>
 </div>
-<p>We will skip the proofs of the next two propositions, but include them as they will be very useful later.</p>
+</div>
+<div id="side-side-side-congruence" class="section level3" number="9.3.3">
+<h3><span class="header-section-number">9.3.3</span> Side-Side-Side Congruence</h3>
+<p>We will skip the proofs of the next two propositions, as the proofs do not add much to our understanding. However, we will include the statements of the propositions as they will be very useful later.</p>
 <div class="proposition">
 <p><span id="prp:prop7" class="proposition"><strong>Proposition 9.7  (Euclid's Proposition 7) </strong></span>Given two straight lines constructed on a straight line (from its extremities) and meeting in a point, there cannot be constructed on the same straight line (from its extremities), and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each to that which has the same extremity with it.</p>
 </div>
+<p>This first Proposition is a little confusing, but it is stating that if one of the sides of a triangle is given, and the lengths of the other two sides is also given, then one can construct two possible triangles with that information. One on each side of the given side. The next proposition uses this to prove that any two triangles that have the same side measures are congruent to each other, since the equal side lengths force equality of the measures of the angles.</p>
 <div class="proposition">
 <p><span id="prp:prop8" class="proposition"><strong>Proposition 9.8  (Euclid's Proposition 8: SSS Triangle Congruence) </strong></span>If two triangles have the two sides equal to two sides respectively, and have also the base equal to the base, they will also have the angles equal which are contained by the equal straight lines.</p>
 </div>
+</div>
+<div id="angles" class="section level3" number="9.3.4">
+<h3><span class="header-section-number">9.3.4</span> Angles</h3>
 <p>With these propositions we will look at some of the important constructions regarding angles, points, and sides.</p>
-<div class="standards">
-<div class="center">
-<p><strong>Related Content Standards</strong></p>
-</div>
-<ul>
-<li>(HSG.CO.12) Make formal geometric constructions with a variety of tools and methods (compass and straightedge, string, reflective devices, paper folding, dynamic geometric software, etc.). <em>Copying a segment; copying an angle; bisecting a segment; bisecting an angle; constructing perpendicular lines, including the perpendicular bisector of a line segment; and constructing a line parallel to a given line through a point not on the line.</em></li>
-</ul>
-</div>
 <p>Our first construction bisects angles.</p>
 <div class="proposition">
 <p><span id="prp:prop9" class="proposition"><strong>Proposition 9.9  (Euclid's Proposition 9: Construction of Angle Bisector) </strong></span>To bisect a given rectilinear angle.</p>
@@ -816,8 +834,10 @@ Figure 9.4: Line and Circle Constructed using GeoGebra
 </div>
 <p>Another option for the construction process is that the circles centered at <span class="math inline">\(D\)</span> and <span class="math inline">\(E\)</span> pass through the point <span class="math inline">\(A\)</span>. The other point of intersection for these circles can be labeled <span class="math inline">\(F\)</span>.</p>
 <p>The segment <span class="math inline">\(AF\)</span> bisects the angle <span class="math inline">\(\angle BAC\)</span>. We will show later that <span class="math inline">\(AEFD\)</span> forms a rhombus, generating parallel lines among other things.</p>
-<p><img src="images/Prop9e.jpg" width="40%" style="display: block; margin: auto;" />
-:::</p>
+<p><img src="images/Prop9e.jpg" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="perpendicular-lines" class="section level3" number="9.3.5">
+<h3><span class="header-section-number">9.3.5</span> Perpendicular Lines</h3>
 <p>The next few propositions involve the construction of perpendicular lines. If we start with a finite straight line <span class="math inline">\(AB\)</span>, we can use the following construction to create the perpendicular bisector. We will leave the details of the proof to the reader to work through.</p>
 <p><img src="images/Prop10.jpg" width="60%" style="display: block; margin: auto;" /></p>
 <div class="proposition">
@@ -833,8 +853,9 @@ Figure 9.4: Line and Circle Constructed using GeoGebra
 </div>
 <p>The proof of this proposition uses the information from the following diagram.</p>
 <p><img src="images/Prop12.jpg" width="45%" style="display: block; margin: auto;" /></p>
-<div id="exercises-38" class="section level3" number="9.3.1">
-<h3><span class="header-section-number">9.3.1</span> Exercises</h3>
+</div>
+<div id="exercises-38" class="section level3" number="9.3.6">
+<h3><span class="header-section-number">9.3.6</span> Exercises</h3>
 <ol style="list-style-type: decimal">
 <li><p>Discuss Euclid’s use of the word ‘equal’ in the context of the discussion in Chapter <a href="ch-equivalence.html#ch:equivalence">3</a>.</p></li>
 <li><p>Write out the details of the proof of Proposition <a href="euclids-basic-constructions.html#prp:prop10">9.10</a>.</p></li>

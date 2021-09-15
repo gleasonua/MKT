@@ -612,6 +612,11 @@ school-mathematics-study-group-axioms
 discussion
 exercises-37
 euclids-basic-constructions
+initial-propositions
+isosceles-triangles
+side-side-side-congruence
+angles
+perpendicular-lines
 exercises-38
 angles-parallel-lines-and-parallelograms
 angles-and-parallel-lines
