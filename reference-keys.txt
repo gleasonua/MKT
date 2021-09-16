@@ -682,6 +682,7 @@ synthetic-plane-1
 cartesian-plane-and-vector-space
 complex-plane-1
 compositions
+group-of-translations
 exercises-52
 rotations
 synthetic-plane-2

@@ -561,7 +561,8 @@ div.csl-indent {
 <li class="chapter" data-level="12.3.2" data-path="translations.html"><a href="translations.html#cartesian-plane-and-vector-space"><i class="fa fa-check"></i><b>12.3.2</b> Cartesian Plane and Vector Space</a></li>
 <li class="chapter" data-level="12.3.3" data-path="translations.html"><a href="translations.html#complex-plane-1"><i class="fa fa-check"></i><b>12.3.3</b> Complex Plane</a></li>
 <li class="chapter" data-level="12.3.4" data-path="translations.html"><a href="translations.html#compositions"><i class="fa fa-check"></i><b>12.3.4</b> Compositions</a></li>
-<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.5</b> Exercises</a></li>
+<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#group-of-translations"><i class="fa fa-check"></i><b>12.3.5</b> Group of Translations</a></li>
+<li class="chapter" data-level="12.3.6" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.6</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="12.4" data-path="rotations.html"><a href="rotations.html"><i class="fa fa-check"></i><b>12.4</b> Rotations</a>
 <ul>
@@ -754,7 +755,7 @@ div.csl-indent {
      &amp; = \sqrt{ (d_1-c_1)^2 + (d_2-c_2)^2 } = d\left(C,D\right) 
 \end{align*}\]</span>
 and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
-<p>Using a basic understanding of vectors, the properties of translations in the Cartesian perspective translate very easily to the Vector space perspective.</p>
+<p>Using a basic understanding of vectors, the properties of translations in the Cartesian perspective translate very easily to the vector space perspective.</p>
 <div class="definition">
 <p><span id="def:unlabeled-div-260" class="definition"><strong>Definition 12.12  </strong></span>Given a vector <span class="math inline">\(\langle h,k\rangle\)</span>, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
 </div>
@@ -778,7 +779,9 @@ and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <span class="math display">\[T_b\circ T_c(z) = T_b(z+c) = (z+c)+b = z + (c+b) = T_{c+b}(z).\]</span></p>
 </div>
 <p>We can also see that the order of the translations does not matter.</p>
-<p>::: Group of Translations</p>
+</div>
+<div id="group-of-translations" class="section level3" number="12.3.5">
+<h3><span class="header-section-number">12.3.5</span> Group of Translations</h3>
 <div class="theorem">
 <p><span id="thm:unlabeled-div-264" class="theorem"><strong>Theorem 12.9  </strong></span>Let <span class="math inline">\(T\)</span> be the set of translations of the plane. Then with the operation of function composition, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
 </div>
@@ -788,7 +791,7 @@ and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
 <p>Since for any <span class="math inline">\(b\in \mathbb{C}\)</span>, <span class="math inline">\(T_b \circ T_{-b} (z) = z-b+b=z\)</span>, we see that <span class="math inline">\(T_b\)</span> is invertible and <span class="math inline">\(T_b^{-1} = T_{-b}\)</span>. So the inverse of any translation is also a translation.</p>
 <p>Therefore, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
 </div>
-<p>Recall from Section <a href="sec-groups.html#sec:groups">6.1</a> that two groups, <span class="math inline">\((G,*)\)</span> and <span class="math inline">\(G&#39;,\times)\)</span>, are isomorphic (‘equivalent’) if there is a bijection <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> such that
+<p>Recall from Section <a href="sec-groups.html#sec:groups">6.1</a> that two groups, <span class="math inline">\((G,*)\)</span> and <span class="math inline">\((G&#39;,\times)\)</span>, are isomorphic (‘equivalent’) if there is a bijection <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> such that
 <span class="math display">\[\phi(a*b) = \phi(a)\times \phi(b)\]</span>
 for all <span class="math inline">\(a,b\in G\)</span>.</p>
 <p>If we let <span class="math inline">\(\phi:\mathbb{C} \rightarrow T\)</span> be defined by <span class="math inline">\(\phi(b)=T_b\)</span>, we see that <span class="math display">\[\phi(b+c) = T_{b+c} = T_b \circ T_c = \phi(b) \circ \phi(c),\]</span> making <span class="math inline">\(\phi\)</span> a group homomorphism. From the definition of translations on <span class="math inline">\(\mathbb{C}\)</span> we can see that <span class="math inline">\(\phi\)</span> is also a bijection. So we get the following theorem.</p>
@@ -796,8 +799,8 @@ for all <span class="math inline">\(a,b\in G\)</span>.</p>
 <p><span id="thm:unlabeled-div-266" class="theorem"><strong>Theorem 12.10  </strong></span>The group <span class="math inline">\((T,\circ)\)</span> is isomorphic to the group <span class="math inline">\((\mathbb{C},+)\)</span>.</p>
 </div>
 </div>
-<div id="exercises-52" class="section level3" number="12.3.5">
-<h3><span class="header-section-number">12.3.5</span> Exercises</h3>
+<div id="exercises-52" class="section level3" number="12.3.6">
+<h3><span class="header-section-number">12.3.6</span> Exercises</h3>
 <ol style="list-style-type: decimal">
 <li><p>Let <span class="math inline">\(T\)</span> be the translation by the vector <span class="math inline">\(\langle 1,3\rangle\)</span>.</p>
 <ol style="list-style-type: lower-alpha">

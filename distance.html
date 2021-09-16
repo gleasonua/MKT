@@ -561,7 +561,8 @@ div.csl-indent {
 <li class="chapter" data-level="12.3.2" data-path="translations.html"><a href="translations.html#cartesian-plane-and-vector-space"><i class="fa fa-check"></i><b>12.3.2</b> Cartesian Plane and Vector Space</a></li>
 <li class="chapter" data-level="12.3.3" data-path="translations.html"><a href="translations.html#complex-plane-1"><i class="fa fa-check"></i><b>12.3.3</b> Complex Plane</a></li>
 <li class="chapter" data-level="12.3.4" data-path="translations.html"><a href="translations.html#compositions"><i class="fa fa-check"></i><b>12.3.4</b> Compositions</a></li>
-<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.5</b> Exercises</a></li>
+<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#group-of-translations"><i class="fa fa-check"></i><b>12.3.5</b> Group of Translations</a></li>
+<li class="chapter" data-level="12.3.6" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.6</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="12.4" data-path="rotations.html"><a href="rotations.html"><i class="fa fa-check"></i><b>12.4</b> Rotations</a>
 <ul>
@@ -735,7 +736,7 @@ div.csl-indent {
 <p>If <span class="math inline">\(X\)</span> is our standard plane, <span class="math inline">\(\mathbb{R}^2\)</span>, the function <span class="math inline">\(d_2:\mathbb{R}^2\times \mathbb{R}^2 \rightarrow [0,\infty)\)</span> defined by
 <span class="math display">\[d_2\left( (x_1,y_1), (x_2,y_2)\right) = \sqrt{ (x_2-x_1)^2 + (y_2-y_1)^2}\]</span> satisfies these axioms and is called the Euclidean distance on the plane because it corresponds with the geometry of Euclid’s Elements.</p>
 <p>An alternate distance on the plane can be given by <span class="math inline">\(d_1:\mathbb{R}^2 \times \mathbb{R}^2 \rightarrow [0,\infty)\)</span> defined by <span class="math display">\[d_1\left( (x_1,y_1), (x_2,y_2)\right) = |x_2-x_1| + |y_2-y_1|\]</span> and is often called the taxicab distance as it measures the distance traveled along a grid. Hermann Minkowski used this distance in his exploration of non-Euclidean geometries in his study of relativity in the late 1800s.</p>
-<p>Unlike the Euclidean distance, the taxicab distance allows multiple paths between two points that have minimal length. In we can see below that the distance between the points <span class="math inline">\((0,0)\)</span> and <span class="math inline">\((2,2)\)</span> is <span class="math inline">\(4\)</span>, and that both paths given have this minimal length.</p>
+<p>Unlike the Euclidean distance, the taxicab distance allows multiple paths between two points that have minimal length. We can see below that the distance between the points <span class="math inline">\((0,0)\)</span> and <span class="math inline">\((2,2)\)</span> is <span class="math inline">\(4\)</span>, and that both paths given have this minimal length.</p>
 <p><img src="images/distance_multiple_paths.jpg" width="30%" style="display: block; margin: auto;" /></p>
 <p>However, any point, <span class="math inline">\(C\)</span>, on the line segment connecting two points, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, can be considered between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> since <span class="math inline">\(d(A,C)+d(C,B) = d(A,B)\)</span> for every point on the line segment. This means that the lines in Euclidean geometry and the lines in the taxicab geometry are the same but do not have all of the same properties.</p>
 <p>A third distance that has a very natural derivation is <span class="math inline">\(d_\infty: \mathbb{R}^2\times \mathbb{R}^2 \rightarrow [0,\infty)\)</span> defined by <span class="math display">\[d_\infty \left( (x_1,y_1), (x_2,y_2)\right) = \mbox{max } (|x_2-x_1|,|y_2-y_1|) \]</span> and is often called the Chebyshev distance after Pafnuty Chebyshev who was the first to systematically study the distance in the mid 1800s.</p>
@@ -746,7 +747,7 @@ div.csl-indent {
 <p><span id="def:unlabeled-div-213" class="definition"><strong>Definition 10.2  </strong></span>Let <span class="math inline">\(X\)</span> be a set with a distance <span class="math inline">\(d\)</span>. A circle centered at a point <span class="math inline">\(c\in X\)</span> with radius <span class="math inline">\(r\)</span> is
 <span class="math display">\[C_{(c,r)} = \left\{ x\in X \: \vert \: d(x,c)=r\right\}.\]</span></p>
 </div>
-<p>Since a circle is defined as the set of points equidistant from a fixed point, we see that circles are defined by the distance. Hence when we look at the circles the correspond to the three distances described above we have different sets of points.</p>
+<p>Since a circle is defined as the set of points equidistant from a fixed point, we see that circles are defined by the distance. Hence when we look at the circles that correspond to the three distances described above we have different sets of points.</p>
 <div class="figure" style="text-align: center"><span id="fig:Euclidean-circle"></span>
 <img src="images/circle-Euclidean.jpg" alt="Unit Circle for the Euclidean Distance" width="30%" />
 <p class="caption">
@@ -786,7 +787,7 @@ Figure 10.3: Unit Circle for the Euclidean Distance
 <ol style="list-style-type: decimal">
 <li><p>Is length (discussed in Section <a href="sec-units.html#sec:units">10.1</a>) different than distance? Explain your answer.</p></li>
 <li><p>Prove that <span class="math display">\[d_3(x,y) = \frac{|x-y|}{1+|x-y|}\]</span> satisfies the properties for a metric on <span class="math inline">\(\mathbb{R}\)</span>.</p></li>
-<li><p>Verify using circles that the lines determined by the two points are the same for Euclidean, Taxi Cab, and Chebyshev distances.</p></li>
+<li><p>Verify using circles that the lines determined by the two points are the same for Euclidean, Taxicab, and Chebyshev distances.</p></li>
 <li><p>Often distances are given with a direction (e.g., travel three miles due east). For Euclidean distance, find three different ways to give direction.</p></li>
 <li><p>Prove that <span class="math display">\[d(x,y)= \left\{ \begin{array}{l}
 0 \quad \mbox{if} \quad x=y \\

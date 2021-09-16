@@ -561,7 +561,8 @@ div.csl-indent {
 <li class="chapter" data-level="12.3.2" data-path="translations.html"><a href="translations.html#cartesian-plane-and-vector-space"><i class="fa fa-check"></i><b>12.3.2</b> Cartesian Plane and Vector Space</a></li>
 <li class="chapter" data-level="12.3.3" data-path="translations.html"><a href="translations.html#complex-plane-1"><i class="fa fa-check"></i><b>12.3.3</b> Complex Plane</a></li>
 <li class="chapter" data-level="12.3.4" data-path="translations.html"><a href="translations.html#compositions"><i class="fa fa-check"></i><b>12.3.4</b> Compositions</a></li>
-<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.5</b> Exercises</a></li>
+<li class="chapter" data-level="12.3.5" data-path="translations.html"><a href="translations.html#group-of-translations"><i class="fa fa-check"></i><b>12.3.5</b> Group of Translations</a></li>
+<li class="chapter" data-level="12.3.6" data-path="translations.html"><a href="translations.html#exercises-52"><i class="fa fa-check"></i><b>12.3.6</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="12.4" data-path="rotations.html"><a href="rotations.html"><i class="fa fa-check"></i><b>12.4</b> Rotations</a>
 <ul>
@@ -728,14 +729,14 @@ div.csl-indent {
 </div>
 <div id="cartesian-plane" class="section level3" number="12.2.2">
 <h3><span class="header-section-number">12.2.2</span> Cartesian Plane</h3>
-<p>In the 1600s René Descartes and Pierre de Fermat independently developed the use of a coordinate plane to provide an analytic foundation for the study of geometry. While some may consider the synthetic methods to be more axiomatic, we have shown in Chapter <a href="ch-number.html#ch:number">4</a> that the construction of the real number system, and thus also <span class="math inline">\(\mathbb{R}^2\)</span> is just as axiomatic using the axioms of set theory. When we follow the real analytic perspective of transformational geometry we will generally use the distance defined by the Euclidean distance, <span class="math display">\[d\left( (x,y),(w,z)\right) = \sqrt{(w-x)^2+(z-y)^2},\]</span> and we will consider the transformations as
+<p>In the 1600s René Descartes and Pierre de Fermat independently developed the use of a coordinate plane to provide an analytic foundation for the study of geometry. While some may consider the synthetic methods to be more axiomatic, we have shown in Chapter <a href="ch-number.html#ch:number">4</a> that the construction of the real number system, and thus also <span class="math inline">\(\mathbb{R}^2\)</span>, is just as axiomatic using the axioms of set theory. When we follow the real analytic perspective of transformational geometry we will generally use the distance defined by the Euclidean distance, <span class="math display">\[d\left( (x,y),(w,z)\right) = \sqrt{(w-x)^2+(z-y)^2},\]</span> and we will consider the transformations as
 <span class="math inline">\(f:\mathbb{R}^2 \rightarrow \mathbb{R}^2\)</span> with <span class="math display">\[f(x,y)= \left( f_1(x,y), f_2(x,y)\right)\]</span> where <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span> are functions from <span class="math inline">\(\mathbb{R}^2\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
 <p>Furthermore, in <span class="math inline">\(\mathbb{R}^2\)</span> we see that lines can be expressed in the form <span class="math display">\[\left\{ (x,y) \in \mathbb{R}^2 \: \vert \: y=mx+b \mbox{ for some } m,b\in \mathbb{R}\right\}\]</span> and circles centered at the point <span class="math inline">\((x_0,y_0)\)</span> with a radius of <span class="math inline">\(r\)</span> can be expressed as <span class="math display">\[\left\{ (x,y)\in \mathbb{R}^2 \vert (x-x_0)^2 + (y-y_0)^2 = r^2\right\}.\]</span></p>
 </div>
 <div id="vector-space" class="section level3" number="12.2.3">
 <h3><span class="header-section-number">12.2.3</span> Vector Space</h3>
 <p>An alternative perspective of the plane involves viewing <span class="math inline">\(\mathbb{R}^2\)</span> as a two-dimensional real vector space. From this perspective, we define
-<span class="math display">\[\mathbb{R}^2 = \left\{ \langle x,y\rangle  \: \vert \: x,y\in \mathbb{R}\right\}\]</span> with the inner product defined as <span class="math display">\[\langle x,y\rangle\cdot \langle w,z\rangle = xw+yz,\]</span> and the norm of a vector defined as <span class="math display">\[||\langle x,y\rangle ||=\sqrt{\langle x,y\rangle \cdot\langle x,y\rangle }=\sqrt{x^2+y^2}.\]</span> We define vector addition defined by <span class="math inline">\(\langle x,y\rangle +\langle w,z\rangle = \langle x+w, y+z\rangle\)</span>, scalar multiplication by <span class="math inline">\(c \langle x,y\rangle =\langle cx,cy\rangle\)</span>, and so <span class="math inline">\(\langle x,y\rangle -\langle w,z\rangle \langle x-w,y-z\rangle\)</span> and we can define the distance between vectors as
+<span class="math display">\[\mathbb{R}^2 = \left\{ \langle x,y\rangle  \: \vert \: x,y\in \mathbb{R}\right\}\]</span> with the inner product defined as <span class="math display">\[\langle x,y\rangle\cdot \langle w,z\rangle = xw+yz,\]</span> and the norm of a vector defined as <span class="math display">\[||\langle x,y\rangle ||=\sqrt{\langle x,y\rangle \cdot\langle x,y\rangle }=\sqrt{x^2+y^2}.\]</span> We define vector addition defined by <span class="math inline">\(\langle x,y\rangle +\langle w,z\rangle = \langle x+w, y+z\rangle\)</span>, scalar multiplication by <span class="math inline">\(c \langle x,y\rangle =\langle cx,cy\rangle\)</span>, and so <span class="math inline">\(\langle x,y\rangle -\langle w,z\rangle = \langle x-w,y-z\rangle\)</span> and we can define the distance between vectors as
 <span class="math display">\[d\left( \langle x,y\rangle ,\langle w,z\rangle \right) = || \langle x,y\rangle -\langle w,z\rangle ||.\]</span> We will focus much of our attention on linear transformations of this vector space represented by matrices,
 <span class="math display">\[T_A\left(\langle x,y\rangle \right) = A\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} ax+by \\ cx+dy \end{pmatrix} = \langle ax+by, cx+dy\rangle .\]</span></p>
 </div>
@@ -745,7 +746,7 @@ div.csl-indent {
 </div>
 <div id="isometries-1" class="section level3" number="12.2.5">
 <h3><span class="header-section-number">12.2.5</span> Isometries</h3>
-<p>Recall that the definition of an isometry as a surjection that maintains distances between any two points. We will see that the uses of the different representations of the plane will help us to better understand and categorize these isometries.</p>
+<p>Recall that the definition of an isometry is a surjection that maintains distances between any two points. We will see that the uses of the different representations of the plane will help us to better understand and categorize these isometries.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -761,7 +762,7 @@ div.csl-indent {
 <div class="proof">
 <p><span id="unlabeled-div-256" class="proof"><em>Proof</em>. </span>If <span class="math inline">\(f\)</span> is an isometry, then
 <span class="math display">\[|f(z)-f(w)|=|z-w|\]</span> for all <span class="math inline">\(z,w\in \mathbb{C}\)</span>.
-In order to better understand the these isometries we will first consider some simpler isometries.</p>
+In order to better understand these isometries we will first consider some simpler isometries.</p>
 <p>Assume that <span class="math inline">\(g:\mathbb{C}\rightarrow \mathbb{C}\)</span> is an isometry such that <span class="math inline">\(g(0)=0\)</span> and <span class="math inline">\(g(1)=1\)</span>. Then the properties of isometries implies that for all complex numbers <span class="math inline">\(z\)</span>,
 <span class="math display">\[|g(z)|=|z| \quad \mbox{and} \quad |g(z)-1|=|z-1|.\]</span> Squaring each of these equations gives us the equivalent equations
 <span class="math display">\[g(z) \overline{g(z)} = z \overline{z} \quad \mbox{and} \quad (g(z)-1)\overline{(g(z)-1)} = (z-1)\overline{(z-1)}.\]</span>
