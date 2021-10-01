@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9.1 Definitions | Mathematical Knowledge for Secondary Teachers</title>
+  <title>4.3 Number Theory | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9.1 Definitions | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="4.3 Number Theory | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9.1 Definitions | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="4.3 Number Theory | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-constructions.html"/>
-<link rel="next" href="axiomatic-systems.html"/>
+<link rel="prev" href="sec-integer-representation.html"/>
+<link rel="next" href="sec-rationals.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -727,157 +727,174 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="definitions-1" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Definitions</h2>
-<!--- Discuss the role of definition in mathematics.
---->
-<p>Cultures define words through the agreement about meanings of the words. In most languages words correspond to multiple definitions or ideas that often depend upon the context and situation to derive the meaning implied. The creation of new definitions and new words often arises from the usage of the words in new ways. For example, the definition of the word ‘Google’ includes the search for something on the internet, perhaps without even using the search engine created by the company with that name <span class="citation">(<a href="#ref-Edwards2008" role="doc-biblioref">Edwards &amp; Ward, 2008</a>)</span>.</p>
-<p>In the language of mathematics, such language is too vague for logical reasoning and determining the truth value of a statement. Mathematical definitions are much more precise and have only one meaning that is usually stipulated at the beginning of the mathematical argument in order to make sure that the one communicating and the one receiving the communication have a well-agreed upon definition. This precision of language is one of the core components of the sixth Standard for Mathematical Practice.</p>
-<div class="standards">
-<div class="center">
-<p><strong>Related Content Standards</strong></p>
+<div id="sec:numbertheory" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Number Theory</h2>
+<p>Now that we have defined the natural numbers and the integers, we will study some of the properties of these number systems. Some of the properties of the integers, including the Fundamental Theorem of Arithmetic, we will study more in Section <a href="sec-Integer-Ring.html#sec:Integer-Ring">7.1</a>.</p>
+<p>One of the core properties of the integers is the division algorithm that states that for a pair of integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, with <span class="math inline">\(b\neq 0\)</span>, there is a unique quotient and remainder associated to them.</p>
+<div class="theorem">
+<p><span id="thm:division-algorithm1" class="theorem"><strong>Theorem 4.5  (The Division Algorithm for Integers) </strong></span>If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are integers with <span class="math inline">\(b&gt;0\)</span>, then there are unique integers <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> such that <span class="math display">\[a=bq+r, \quad \mbox{with } 0\leq r &lt;b.\]</span></p>
 </div>
+<div class="proof">
+<p><span id="unlabeled-div-42" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be integers with <span class="math inline">\(b&gt;0\)</span>. We will first prove the existence of integers <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> such that <span class="math display">\[a=bq+r, \quad \mbox{with } 0\leq r &lt;b\]</span> and then prove that these integers are unique.</p>
 <ul>
-<li>(SMP.6) Attend to precision.</li>
-</ul>
-<p>Mathematically proficient students try to communicate precisely to others. They try to use clear definitions in discussion with others and in their own reasoning. They state the meaning of the symbols they choose, including using the equal sign consistently and appropriately. They are careful about specifying units of measure, and labeling axes to clarify the correspondence with quantities in a problem. They calculate accurately and efficiently, express numerical answers with a degree of precision appropriate for the problem context. In the elementary grades, students give carefully formulated explanations to each other. By the time they reach high school they have learned to examine claims and make explicit use of definitions.</p>
-</div>
-<p>Though mathematical definitions are precise, they are not always agreed upon among the general mathematical community. Consider the following two definitions of a circle.</p>
-<ol style="list-style-type: decimal">
-<li>A <strong>circle</strong> is a plane figure contained by one [<em>curved</em>] line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another.</li>
-<li>A <strong>circle</strong> is the set of points in the plane that are equidistant from a single fixed point.</li>
-</ol>
-<p>Both definitions of a circle are equally valid, but they refer to two very different objects. The second definition defines the circle as the curve, in which case the circle has no area. The first definition defines the circle as the part of the plane contained within the curve. This illustrates the importance of defining the terms well at the beginning of the argument to make sure that all parties agree upon the definition referenced in the argument.</p>
-<div class="standards">
-<div class="center">
-<p><strong>Related Content Standards</strong></p>
-</div>
-<ul>
-<li>(HSG.CO.1) Know precise definitions of angle, circle, perpendicular line, parallel line, and line segment, based on the undefined notions of point, line, distance along a line, and distance around a circular arc.</li>
+<li><p><strong>Existence.</strong> If <span class="math inline">\(a\geq 0\)</span>, then we can let
+<span class="math display">\[S= \left\{ a-kb \: \vert  \: a-kb\geq 0 \mbox{ and $k$ is a non-negative integer}\right\}.\]</span>
+Since <span class="math inline">\(a\geq 0\)</span>, we see that <span class="math inline">\(a=a-0\cdot b\)</span> is an element of <span class="math inline">\(S\)</span> and so <span class="math inline">\(S\)</span> is non-empty. We also see that <span class="math inline">\(S \subseteq [0,a]\)</span>.</p>
+<p>So by the Well-Ordering Property of the Integers, there is a smallest element of <span class="math inline">\(S\)</span> which we will call <span class="math inline">\(r\)</span>. Since <span class="math inline">\(r\in S\)</span>, there exists a non-negative integer <span class="math inline">\(q\)</span> such that <span class="math inline">\(r=a-qb\)</span>.</p>
+<p>Since <span class="math inline">\(r\)</span> is the smallest element of <span class="math inline">\(S\)</span> and since <span class="math inline">\(a-(q+1)b&lt;a-qb=r\)</span>, we see that <span class="math inline">\(a-(q+1)b&lt;0\)</span>, otherwise it would be a smaller element of <span class="math inline">\(S\)</span>.</p>
+<p>This implies that <span class="math inline">\(r=a-qb&lt;b\)</span>. Therefore we have the existence of the <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span>.</p>
+<p>If <span class="math inline">\(a&lt;0\)</span>, using the above process we can find non-negative integers <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span>, with <span class="math inline">\(0\leq r&lt;b\)</span>, such that <span class="math inline">\(-a=bq+r\)</span>. So <span class="math inline">\(a=b(-q)+r\)</span> satisfies the existence statement.</p></li>
+<li><p><strong>Uniqueness.</strong> In order to prove the uniqueness of the quotient and remainder, we assume that there are two pairs of integers <span class="math inline">\((q_1,r_1)\)</span> and <span class="math inline">\((q_2,r_2)\)</span> such that
+<span class="math display">\[a= b q_1 + r_1 \mbox{ and } a= b q_2 + r_2, \mbox{ with } 0\leq r_1&lt;b \mbox{ and } 0\leq r_2 &lt;b.\]</span>
+This implies that <span class="math inline">\(b q_1 + r_1 = b q_2 + r_2\)</span> and by rearranging the terms we have that <span class="math display">\[b (q_1 - q_2) = r_2-r_1.\]</span> If <span class="math inline">\(0 \leq r_1 \leq r_2&lt;b\)</span>, then <span class="math inline">\(0 \leq b(q_1-q_2)=r_2-r_1&lt;b\)</span>. So <span class="math inline">\(q_1-q_2\)</span> is an integer in <span class="math inline">\([0,1)\)</span> and so must be <span class="math inline">\(0\)</span>. Therefore, <span class="math inline">\(q_1=q_2\)</span> and so <span class="math inline">\(r_1=r_2\)</span>. Therefore, the quotient and remainder are unique.</p></li>
 </ul>
 </div>
-<div id="criteria-for-definitions" class="section level3" number="9.1.1">
-<h3><span class="header-section-number">9.1.1</span> Criteria for Definitions</h3>
-<p>In the creation of mathematical definitions, <span class="citation">Van Dormolen &amp; Zaslavsky (<a href="#ref-Dormolen2003" role="doc-biblioref">2003</a>)</span> list four criteria as essential and three criteria as preferential.</p>
-<ul>
-<li><p>Hierarchy - When defining new mathematical objects one should take care to not use mathematical objects that have not been previously defined. For example, one cannot define a right angle without first defining an angle.</p></li>
-<li><p>Existence - While one can define a mathematical object using previously defined objects, unless we can also show the existence of such an object, the mathematical logic and proofs regarding that object are irrelevant. For example, we proved the existence of our various number systems by construction in Chapter <a href="ch-number.html#ch:number">4</a> and we will begin our study of geometry by proving that many geometric objects exist by constructing such objects using a straightedge and compass.</p></li>
-<li><p>Equivalence - Some mathematical objects can have multiple definitions equivalent to one another. For instance, one could define an equilateral triangle as a triangle with three equal sides or as a triangle with three equal angles. However, in order to build a consistent system, one of these must be chosen as the definition and the other as a theorem. Then the theorem must be proven to be equivalent to the definition. Then either could be used to prove further properties of equilateral triangles.</p></li>
-<li><p>Axiomatization - The final necessary property of a mathematical definition is that it must be part of a larger axiomatic system. Definitions involving number systems are usually a part of an axiomatic system built upon set theory. Definitions in geometry are usually within an axiomatic geometric system similar to that of Euclid. In order to have a hierarchy of definitions, there must be a set of foundational definitions. Such foundational definitions are the axioms of the system.</p></li>
-</ul>
-<p>While lacking any of the above criteria could result in logical contradictions or fallacies, the next three criteria are a part of the beauty and elegance of mathematics.</p>
-<ul>
-<li><p>Minimality - One could define a square as being a quadrilateral with four equal sides, four right angles, two pairs of parallel sides, and whose diagonals bisect one another at right angles. However, many components of the definition are a direct result of other components. Thus a desirable property in mathematics is to reduce the definition to the minimal amount of requirements in order to better understand the mathematical structures related to the mathematical objects.</p></li>
-<li><p>Elegance - When two equivalent definitions exist for a mathematical object, one must make the decision as to which to make the definition and which to make a theorem. Generally, the one chosen as the definition for the object is the one that looks nicer, has fewer words or symbols, and uses more basic mathematical concepts. Such a decision is often subjective as elegance is often in the eye of the beholder.</p></li>
-<li><p>Degenerations - <span class="citation">Van Dormolen &amp; Zaslavsky (<a href="#ref-Dormolen2003" role="doc-biblioref">2003</a>)</span> describe this very well with the following example.</p>
+<div id="divisibility" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Divisibility</h3>
+<p>With the division algorithm, for each natural number <span class="math inline">\(n&gt;1\)</span> we can partition the integers into equivalence classes based on the remainder when divided by <span class="math inline">\(n\)</span>. For example, for <span class="math inline">\(n=2\)</span> we see that any integer belongs to one of the following sets
+<span class="math display">\[\left\{m\in \mathbb{Z} \: \vert \: m=2k \mbox{ for some } k\in \mathbb{Z} \right\} \quad \mbox{or} \quad \left\{m\in \mathbb{Z} \: \vert \: m=2k+1 \mbox{ for some } k\in \mathbb{Z} \right\},\]</span> the even and odd integers.</p>
+<p>In the following, we will focus on the set <span class="math display">\[\left\{ m\in \mathbb{Z} \: \vert \: m=nk \mbox{ for some } k\in \mathbb{Z} \right\}.\]</span></p>
 <div class="definition">
-<p><span id="def:quadrilateral" class="definition"><strong>Definition 9.1  </strong></span>A <strong>quadrilateral</strong> is a set of four points <span class="math inline">\(A, B, C, D\)</span> of which no three are collinear and four segments <span class="math inline">\(AB, BC, CD, DA\)</span>.</p>
+<p><span id="def:divisible" class="definition"><strong>Definition 4.1  </strong></span>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be integers with <span class="math inline">\(b\neq 0\)</span>. We say that that <strong><span class="math inline">\(a\)</span> is divisible by <span class="math inline">\(b\)</span></strong>, or <strong><span class="math inline">\(a\)</span> is a multiple of <span class="math inline">\(b\)</span></strong>, if there exists a unique <span class="math inline">\(q\in \mathbb{Z}\)</span> such that <span class="math inline">\(a=bq\)</span>.</p>
 </div>
-<p>Each of the examples in Figure <a href="definitions-1.html#fig:quadrilaterals">9.1</a> satisfies the condition of the definition.</p>
-<div class="figure" style="text-align: center"><span id="fig:quadrilaterals"></span>
-<img src="images/Quad1.jpg" alt="Examples of Quadrilaterals" width="32%" /><img src="images/Quad2.jpg" alt="Examples of Quadrilaterals" width="32%" /><img src="images/Quad3.jpg" alt="Examples of Quadrilaterals" width="32%" />
-<p class="caption">
-Figure 9.1: Examples of Quadrilaterals
-</p>
+<p>This divisibility has a nice property based on the distributive property of the integers.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-43" class="theorem"><strong>Theorem 4.6  </strong></span>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be integers that are each divisible by an integer <span class="math inline">\(m\neq 0\)</span>. Then <span class="math inline">\(a+b\)</span> is divisible by <span class="math inline">\(m\)</span>.</p>
 </div>
-<p>However, one has the intuition that the third case should not be included and is a degeneration of what is intuitively considered a quadrilateral. As such, such a definition of quadrilaterals would be rejected and replaced with a definition that does not include such degenerations. The most common method of removing these types of quadrilaterals is to require the sides of the quadrilateral to not be self-intersecting.</p></li>
+<div class="proof">
+<p><span id="unlabeled-div-44" class="proof"><em>Proof</em>. </span>If <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are divisible by an integer <span class="math inline">\(m\)</span>, we have there there are integer <span class="math inline">\(j\)</span> and <span class="math inline">\(k\)</span> such that <span class="math inline">\(a=mj\)</span> and <span class="math inline">\(b=mk\)</span>. So <span class="math inline">\(a+b=mj+mk=m(j+k)\)</span> and so <span class="math inline">\(a+b\)</span> is divisible by <span class="math inline">\(m\)</span>.</p>
+</div>
+<p>We also see that if <span class="math inline">\(a\)</span> is divisible by <span class="math inline">\(b\)</span>, then <span class="math inline">\(-a\)</span> is also divisible by <span class="math inline">\(b\)</span>.</p>
+<p>As students develop fluency with multiplication of integers they often use certain tests to determine divisibility by certain numbers. The most common are given below.</p>
+<ul>
+<li><p><strong>Divisibility by 2.</strong> An integer is divisible by <span class="math inline">\(2\)</span> if and only if the last digit is <span class="math inline">\(0\)</span>, <span class="math inline">\(2\)</span>, <span class="math inline">\(4\)</span>, <span class="math inline">\(6\)</span>, or <span class="math inline">\(8\)</span>.</p></li>
+<li><p><strong>Divisibility by 3.</strong> An integer is divisible by <span class="math inline">\(3\)</span> if and only if the sum of the digits of the integer is divisible by <span class="math inline">\(3\)</span>.</p></li>
+<li><p><strong>Divisibility by 5.</strong> An integer is divisible by <span class="math inline">\(5\)</span> if and only if the last digit is <span class="math inline">\(0\)</span> or <span class="math inline">\(5\)</span>.</p></li>
+<li><p><strong>Divisibility by 9.</strong> An integer is divisible by <span class="math inline">\(9\)</span> if and only if the sum of the digits of the integer is divisible by <span class="math inline">\(9\)</span>.</p></li>
+<li><p><strong>Divisibility by 10.</strong> An integer is divisible by <span class="math inline">\(10\)</span> if and only if the last digit is <span class="math inline">\(0\)</span>.</p></li>
+<li><p><strong>Divisibility by 11.</strong> An integer is divisible by <span class="math inline">\(11\)</span> if and only if the alternating sum of the digits is divisible by <span class="math inline">\(11\)</span>.</p></li>
 </ul>
+<p>We notice that all of these divisibility rules are based on the digits of the integer. So in order to understand why these rules work we need a way to denote an integer by its digits. Since we are using a base 10 notation of the integers, we can see that each integer has a unique representation of for form <span class="math display">\[d_0 \cdot 10^0 + d_1 \cdot 10^1 + d_2 \cdot 10^2+ \ldots + d_n \cdot 10^n,\]</span> with each of the <span class="math inline">\(d_i\in \{0,1,2,3,4,5,6,7,8,9\}\)</span> and the integer usually written with the digits in the reverse order. For example, <span class="math display">\[235,609 = 9\cdot 10^0 + 0\cdot 10^1 + 6 \cdot 10^2 + 5 \cdot 10^3 + 3 \cdot 10^4 + 2 \cdot 10^5.\]</span></p>
+<p>So in order to understand the divisibility by 5, we can see that a number <span class="math inline">\(n\)</span> can be written as
+<span class="math display">\[\begin{align*}
+n &amp;= d_0 \cdot 10^0 + d_1 \cdot 10^1 + d_2 \cdot 10^2+ \cdots + d_n \cdot 10^n \\
+&amp;= d_0 + 10 \cdot \left(d_1 \cdot 10^0 + d_2 \cdot 10^1+ \cdots + d_n \cdot 10^{n-1}\right) \\
+&amp;= d_0 + 5\cdot \left(2\cdot \left(d_1 \cdot 10^0 + d_2 \cdot 10^1+ \cdots + d_n \cdot 10^{n-1}\right) \right)
+\end{align*}\]</span>
+and so <span class="math inline">\(n\)</span> is divisible by <span class="math inline">\(5\)</span> if and only if <span class="math inline">\(d_0\)</span> is divisible by <span class="math inline">\(5\)</span>. And we have our result because the only digits divisible by <span class="math inline">\(5\)</span> are <span class="math inline">\(0\)</span> and <span class="math inline">\(5\)</span>.</p>
+<p>Understanding the reasoning behind the rules of divisibility by 3 and 9 are a little different. Each of these rules are based on <span class="math display">\[10^n -1 = 9+9\cdot 10^1 + \cdots + 9\cdot 10^{n-1}= 9\cdot \left(1+1\cdot 10^1 + \cdots + 1\cdot 10^{n-1}\right),\]</span> and so <span class="math inline">\(10^n-1\)</span> is divisible by 9$. The first few of these are <span class="math inline">\(10-1=9\)</span>, <span class="math inline">\(10^2-1=99=9\cdot 11\)</span>, <span class="math inline">\(10^3-1=999=9\cdot 111\)</span>. So the number <span class="math inline">\(n\)</span> can be written as
+<span class="math display">\[\begin{align*}
+n &amp;= d_0 \cdot 10^0 + d_1 \cdot 10^1 + d_2 \cdot 10^2+ \cdots + d_n \cdot 10^n \\
+&amp;= d_0 + d_1 \cdot (10^1 -1 +1) + d_2 \cdot (10^2-1+1) + \cdots + d_n \cdot (10^n-1+1) \\
+&amp;= d_0 + d_1 \cdot (10^1-1) + d_1 + d_2 \cdot (10^2-1) + d_2 + \cdots + d_n \cdot (10^n-1) + d_n \\
+&amp;= \left(d_0 + d_1+ \cdots + d_n \right) + \left(  d_1 \cdot (10^1-1) + d_2 \cdot (10^2-1) + \cdots + d_n \cdot (10^n-1) \right).
+\end{align*}\]</span>
+Since each of the <span class="math inline">\(d_i \cdot(10^i-1)\)</span> are divisible by <span class="math inline">\(9\)</span>, and hence divisible by <span class="math inline">\(3\)</span>, we see that <span class="math inline">\(n\)</span> is divisible by <span class="math inline">\(9\)</span> or <span class="math inline">\(3\)</span> if and only if <span class="math inline">\(\left(d_0 + d_1+ \cdots + d_n \right)\)</span> is divisible by <span class="math inline">\(9\)</span> or <span class="math inline">\(3\)</span>.</p>
+<p>For each of these divisibility rules, we see that the relationship of the integer to the base of 10 is the key component. This relationship is explored further in the exercises by studying similar rules for a base 12 system.</p>
 </div>
-<div id="concept-image" class="section level3" number="9.1.2">
-<h3><span class="header-section-number">9.1.2</span> Concept Image</h3>
-<p>While the mathematical definition of an object or concept is essential to precise communication and the axiomatization of mathematical structures and systems, less formal understandings of the mathematical concept are essential. Visual representations, mental pictures, and experiences associated with a mathematical concept combine to create a <strong>concept image</strong>. When one thinks about a square, one often does not first think about the precise mathematical definition of a square, but instead has many examples of squares (usually visual) in their mind, along with various properties of squares learned through prior experiences <span class="citation">(<a href="#ref-Vinner1991" role="doc-biblioref">Vinner, 1991</a>)</span>. Such concept images “may be incomplete or mathematically incorrect, and can include na:{i}ve, non-mathematical associations with the concept name” <span class="citation">(<a href="#ref-Edwards2008" role="doc-biblioref">Edwards &amp; Ward, 2008, p. 224</a>)</span>.</p>
-<div class="figure" style="text-align: center"><span id="fig:concept-image"></span>
-<img src="images/concept-image.jpg" alt="Interplay between definition and image [@Vinner1991,p. 71]" width="294" />
+<div id="pascals-triangle" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Pascal’s Triangle</h3>
+<!--- Add in the historical aspects of the topic --->
+<p>Pacal’s Triangle is a triangular array where each entry is the sum of the two entries above that location, see Figure <a href="sec-numbertheory.html#fig:pascalgif">4.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:pascalgif"></span>
+<img src="images/PascalTriangleAnimated2.gif" alt="Animated Figure of Pascal's Triangle" width="30%" />
 <p class="caption">
-Figure 9.2: Interplay between definition and image <span class="citation">(<a href="#ref-Vinner1991" role="doc-biblioref">Vinner, 1991, p. 71</a>)</span>
+Figure 4.2: Animated Figure of Pascal’s Triangle
 </p>
 </div>
-<p>When presenting mathematical tasks to students our ideal is that the students draw upon a mixture of concept definitions and concept images in order to interact with the task as seen in Figure <a href="definitions-1.html#fig:concept-image">9.2</a>. However, most often students default is to only address the task through their concept images.</p>
+<p><span class="math display">\[\begin{array}{lccccccccccccccc}
+n=0: &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=1: &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=2: &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 2 &amp;  &amp; 1 &amp; &amp; &amp; &amp; &amp; \\
+n=3: &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 3 &amp;  &amp; 3  &amp;  &amp; 1 &amp; &amp; &amp; &amp; \\
+n=4: &amp; &amp; &amp; &amp; 1 &amp;  &amp; 4 &amp;  &amp; 6  &amp; &amp; 4 &amp;  &amp; 1 &amp; &amp; &amp; \\
+n=5: &amp; &amp; &amp; 1 &amp;  &amp; 5 &amp;  &amp; 10  &amp;   &amp; 10 &amp;  &amp; 5  &amp;  &amp; 1 &amp; &amp; \\
+n=6: &amp; &amp; 1 &amp;  &amp; 6 &amp;  &amp; 15  &amp;  &amp; 20  &amp;  &amp; 15  &amp; &amp; 6 &amp;  &amp; 1 &amp; \\
+n=7: &amp; 1&amp;  &amp; 7 &amp;  &amp; 21  &amp; &amp; 35 &amp;  &amp; 35 &amp;  &amp; 21 &amp;  &amp; 7 &amp;  &amp; 1 \\
+\end{array}\]</span></p>
+<p>For each <span class="math inline">\(n\in \mathbb{N}\)</span>, we define <span class="math display">\[\binom{n}{0} = 1 \quad \mbox{and} \quad \binom{n}{n}=1\]</span> and for <span class="math inline">\(n&gt;1\)</span> and <span class="math inline">\(1\leq k \leq n-1\)</span> we define <span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.\]</span> So <span class="math inline">\(\binom{n}{k}\)</span> is the entry in the <span class="math inline">\(n\)</span>th row and <span class="math inline">\(k\)</span>th column in Pascal’s Triangle that we can see below.</p>
+<p><span class="math display">\[\begin{array}{lccccccccccccccc}
+n=0: &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \binom{0}{0} &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=1: &amp; &amp; &amp; &amp; &amp; &amp; &amp; \binom{1}{0} &amp;  &amp; \binom{1}{1} &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=2: &amp; &amp; &amp; &amp; &amp; &amp; \binom{2}{0} &amp;  &amp; \binom{2}{1} &amp;  &amp; \binom{2}{2} &amp; &amp; &amp; &amp; &amp; \\
+n=3: &amp; &amp; &amp; &amp; &amp; \binom{3}{0} &amp;  &amp; \binom{3}{1} &amp;  &amp; \binom{3}{2}  &amp;  &amp; \binom{3}{3} &amp; &amp; &amp; &amp; \\
+n=4: &amp; &amp; &amp; &amp; \binom{4}{0} &amp;  &amp; \binom{4}{1} &amp;  &amp; \binom{4}{2}  &amp; &amp; \binom{4}{3} &amp;  &amp; \binom{4}{4} &amp; &amp; &amp; \\
+n=5: &amp; &amp; &amp; \binom{5}{0} &amp;  &amp; \binom{5}{1} &amp;  &amp; \binom{5}{2}  &amp;   &amp; \binom{5}{3} &amp;  &amp; \binom{5}{4}  &amp;  &amp; \binom{5}{5} &amp; &amp; \\
+n=6: &amp; &amp; \binom{6}{0} &amp;  &amp; \binom{6}{1} &amp;  &amp; \binom{6}{2}  &amp;  &amp; \binom{6}{3}  &amp;  &amp; \binom{6}{4}  &amp; &amp; \binom{6}{5} &amp;  &amp; \binom{6}{6} &amp; \\
+n=7: &amp; \binom{7}{0} &amp;  &amp; \binom{7}{1} &amp;  &amp; \binom{7}{2}  &amp; &amp; \binom{7}{3} &amp;  &amp; \binom{7}{4} &amp;  &amp; \binom{7}{5} &amp;  &amp; \binom{7}{6} &amp;  &amp; \binom{7}{7} \\
+\end{array}\]</span></p>
+<div class="definition">
+<p><span id="def:unlabeled-div-45" class="definition"><strong>Definition 4.2  </strong></span>For <span class="math inline">\(n\in \mathbb{N}\)</span> we define <span class="math inline">\(0!=1\)</span> and for <span class="math inline">\(n&gt;0\)</span>, <span class="math display">\[n!=n\cdot (n-1) \cdot (n-2) \cdots (2)\cdot (1)\]</span></p>
 </div>
-<div id="classification-of-two-dimensional-figures" class="section level3" number="9.1.3">
-<h3><span class="header-section-number">9.1.3</span> Classification of Two-Dimensional Figures</h3>
-<p>A good example in the K-12 curriculum where the precision of definitions arise is in the classification of two-dimensional planar figures.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-46" class="theorem"><strong>Theorem 4.7  </strong></span>For <span class="math inline">\(n,k\in \mathbb{N}\)</span> with <span class="math inline">\(0\leq k \leq n\)</span> we have that
+<span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-47" class="proof"><em>Proof</em>. </span>As with many proofs of statements that involve the natural numbers, we will prove this using the principle of mathematical induction. For each pair of natural numbers <span class="math inline">\(n,k\)</span> with <span class="math inline">\(0\leq k \leq n\)</span> we let <span class="math inline">\(P(n,k)\)</span> be the statement that <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}.\]</span></p>
+<p>For <span class="math inline">\(n=0\)</span>, we know that <span class="math inline">\(k\)</span> must equal <span class="math inline">\(0\)</span>, since that is the only number for which <span class="math inline">\(0\leq k \leq 0\)</span>. So to prove the <span class="math inline">\(P(0,0)\)</span> is true we see that <span class="math display">\[\frac{0!}{0!\cdot 0!} = \frac{1}{1} = 1\]</span> and <span class="math inline">\(\binom{0}{0}=1\)</span>.</p>
+<p>We can now look at the induction step by assuming that for a natural number <span class="math inline">\(m&gt;0\)</span> the statement <span class="math inline">\(P(m,k)\)</span> is true for all <span class="math inline">\(0\leq k \leq m\)</span>.</p>
+<p>Then for <span class="math inline">\(n=m+1\)</span> and <span class="math inline">\(k=0\)</span>, we see that <span class="math inline">\(\binom{n}{k} = \binom{m+1}{0} =1\)</span> by definition. Similarly, for <span class="math inline">\(k=m+1\)</span> <span class="math inline">\(\binom{n}{k}=\binom{m+1}{m+1}=1\)</span>, by definition. For <span class="math inline">\(0&lt;k&lt;m+1\)</span> we see that <span class="math inline">\(\binom{n}{k}\)</span> is defined by
+<span class="math display">\[\binom{n}{k} = \binom{m+1}{k} = \binom{m}{k-1} + \binom{m}{k}.\]</span> And by the induction hypothesis we see that
+<span class="math display">\[\binom{n}{k} = \binom{m}{k-1} + \binom{m}{k} = \frac{m!}{(k-1)!(m-(k-1))!} +\frac{m!}{k!(m-k)!}\]</span> and we can add the fractions using the common denominator of <span class="math inline">\(k!(m-k+1)!\)</span>. So
+<span class="math display">\[\begin{align*}
+\binom{n}{k} &amp;= \frac{k}{k}\frac{m!}{(k-1)!((m+1)-k)!} + \frac{m-k+1}{m-k+1} \frac{m!}{k!(m-k)!}\\
+&amp;= \frac{k(m!) + (m+1)(m!) -k (m!)}{k!((m+1)-k)!} \\
+&amp;= \frac{(m+1)!}{k!((m+1)-k)!} = \frac{n!}{k!(n-k)!}
+\end{align*}\]</span>
+and so <span class="math inline">\(P(n,k)\)</span> is true.</p>
+<p>So by induction we see that <span class="math inline">\(P(n,k)\)</span> is true for all natural numbers <span class="math inline">\(n,k\)</span> with <span class="math inline">\(0\leq k \leq n\)</span>.</p>
+</div>
+</div>
+<div id="binomial-theorem" class="section level3" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Binomial Theorem</h3>
+<!--- Give historical background and text --->
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
-<li>(3.G.1) Understand that shapes in different categories (e.g., rhombuses, rectangles, and others) may share attributes (e.g., having four sides), and that the shared attributes can define a larger category (e.g., quadrilaterals). Recognize rhombuses, rectangles, and squares as examples of quadrilaterals, and draw examples of quadrilaterals that do not belong to any of these subcategories.</li>
-<li>(4.G.2) Classify two-dimensional figures based on the presence or absence of parallel or perpendicular lines, or the presence or absence of angles of a specified size. Recognize right triangles as a category, and identify right triangles.</li>
-<li>(5.G.3) Understand that attributes belonging to a category of two-dimensional figures also belong to all subcategories of that category. For example, all rectangles have four right angles and squares are rectangles, so all squares have four right angles.</li>
-<li>(5.G.4) Classify two-dimensional figures in a hierarchy based on properties.</li>
+<li>(HSA.APR.4) Know and apply the Binomial Theorem for the expansion of <span class="math inline">\((x+y)^n\)</span> in powers of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> for a positive integer <span class="math inline">\(n\)</span>, where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are any numbers, with coefficients determined for example by Pascal’s Triangle.</li>
 </ul>
 </div>
-<p>As we see below, the definitions of the two-dimensional figures referenced in these standards are not standardized.</p>
-<div id="rhombus-definitions" class="section level4" number="9.1.3.1">
-<h4><span class="header-section-number">9.1.3.1</span> Rhombus Definitions</h4>
-<ul>
-<li><strong>Euclid:</strong> Of quadrilateral figures, <span class="math inline">\(\ldots\)</span> a rhombus that which is equilateral but not right-angled.</li>
-<li><strong>Illustrative Mathematics:</strong> Rhombus: A parallelogram with 4 sides with equal length. (A parallelogram is defined to be a quadrilateral with 2 pairs of parallel sides.)</li>
-<li><strong>Eureka Math/EngageNY:</strong> A rhombus is a quadrilateral with all sides of equal length.</li>
-</ul>
-<p>We can see from these definitions that the Euclidean definition excludes squares from being rhombi, while the other two definitions include squares. We can also see that the Illustrative Mathematics definition is not as minimal as the Eureka Math/EngageNY definition. There may be strong pedagogical reasons for avoiding minimality, but it is important for the teacher to know which properties can be derived from other properties.</p>
-<p>For further study in this area, <span class="citation">Usiskin &amp; Griffin (<a href="#ref-usiskin2008" role="doc-biblioref">2008</a>)</span> give a detailed description of the role of definition in the classification of quadrilaterals.</p>
+<div class="theorem">
+<p><span id="thm:binomial" class="theorem"><strong>Theorem 4.8  (Binomial Theorem) </strong></span>Let <span class="math inline">\(a,b\)</span> be in a number system with the distribution property and <span class="math inline">\(ab=ba\)</span>, and let <span class="math inline">\(n\in \mathbb{N}\)</span>, then
+<span class="math display">\[(a+b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1}b^1 + \cdots + \binom{n}{n-1} a^{1}b^{n-1} + \binom{n}{n} a^0 b^n.\]</span></p>
 </div>
+<p>We need commutativity of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> so that <span class="math inline">\(b (a^k b^l) = a^k b^{l+1}\)</span> in the proof below.</p>
+<div class="proof">
+<p><span id="unlabeled-div-48" class="proof"><em>Proof</em>. </span>We will prove this using induction on the exponent. So for <span class="math inline">\(a,b\)</span> and for <span class="math inline">\(n\in \mathbb{N}\)</span> we let <span class="math inline">\(P(n)\)</span> be the statement that <span class="math display">\[(a+b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1}b^1 + \cdots + \binom{n}{n-1} a^{1}b^{n-1} + \binom{n}{n} a^0 b^n.\]</span></p>
+<p>So <span class="math inline">\(P(0)\)</span> is the statement that <span class="math inline">\((a+b)^0 = 1\)</span>, which is defined to be true.</p>
+<p>If we assume that for some integer <span class="math inline">\(m\)</span> that <span class="math inline">\(P(m)\)</span> is true, we see that
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; (a+b) \cdot (a+b)^m\\
+= &amp; (a+b) \left( \binom{m}{0} a^m b^0 + \binom{m}{1} a^{m-1}b^1 + \cdots + \binom{m}{m-1} a^{1}b^{m-1} + \binom{m}{m} a^0 b^m\right) \\
+= &amp; \left( \binom{m}{0} a^{m+1} b^0 + \binom{m}{1} a^{m}b^1 + \cdots + \binom{m}{m-1} a^{2}b^{m-1} + \binom{m}{m} a^1 b^m\right) \\
+&amp;  + \left( \binom{m}{0} a^m b^1 + \binom{m}{1} a^{m-1}b^2 + \cdots + \binom{m}{m-1} a^{1}b^{m} + \binom{m}{m} a^0 b^{m+1}\right) \\
+= &amp; \binom{m}{0} a^{m+1}b^0 + \left( \sum_{k=1}^m \left(\binom{m}{k} + \binom{m}{k-1} \right) a^{(m+1)-k}b^k \right) + \binom{m}{m} a^0 b^{m+1} \\
+= &amp; \binom{m}{0} a^{m+1}b^0 + \left( \sum_{k=1}^m \binom{m+1}{k} a^{(m+1)-k}b^k \right) + \binom{m}{m} a^0 b^{m+1} \\
+= &amp; \binom{m+1}{0} a^{m+1} b^0 + \binom{m+1}{1} a^{m}b^1 + \cdots + \binom{m+1}{m} a^{1}b^{m} + \binom{m+1}{m+1} a^0 b^{m+1}
+\end{align*}\]</span>
+since <span class="math inline">\(\binom{m}{0}=\binom{m+1}{0}=1\)</span> and <span class="math inline">\(\binom{m}{m}=\binom{m+1}{m+1}=1\)</span>. So <span class="math inline">\(P(m+1)\)</span> is true.</p>
+<p>Therefore, by induction, <span class="math inline">\(P(n)\)</span> is true for all <span class="math inline">\(n\in \mathbb{N}\)</span>.</p>
 </div>
-<div id="definitions-from-euclids-elements" class="section level3" number="9.1.4">
-<h3><span class="header-section-number">9.1.4</span> Definitions from Euclid’s Elements</h3>
-<p>Consider the following definitions from Euclid’s Elements <span class="citation">(<a href="#ref-Heath1908_1" role="doc-biblioref">Heath, 1908a, pp. 153–154</a>)</span>, paying particular attention to the various criteria of definitions listed in this section. As new concepts are defined, compare those definitions to your current concept images.</p>
+<p>For the first few values of <span class="math inline">\(n\)</span> we see that we have the following:
+<span class="math display">\[\begin{array}{lccccccccccccccc}
+(a+b)^0 = &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^1 = &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1a &amp; +  &amp; 1b &amp; &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^2 = &amp; &amp; &amp; &amp; &amp; &amp; 1a^2 &amp; +  &amp; 2ab &amp; + &amp; 1b^2 &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^3 = &amp; &amp; &amp; &amp; &amp; 1a^3 &amp; +  &amp; 3a^2b &amp; + &amp; 3ab^2  &amp; +  &amp; 1b^3 &amp; &amp; &amp; &amp; \\
+(a+b)^4 = &amp; &amp; &amp; &amp; 1a^4 &amp; +  &amp; 4a^3b &amp; + &amp; 6a^2b^2 &amp; + &amp; 4ab^3 &amp; + &amp; 1b^4 &amp; &amp; &amp; \\
+(a+b)^5 = &amp; &amp; &amp; 1a^5 &amp; +  &amp; 5a^4b &amp; + &amp; 10a^3b^2  &amp; +  &amp; 10a^2b^3 &amp; + &amp; 5ab^4  &amp; +  &amp; 1b^5 &amp; &amp; \\
+\end{array}\]</span></p>
+<!--- Do we want to discuss here how these relate to probability and choosing? --->
+<!--- discuss generalizations? --->
+</div>
+<div id="exercises-12" class="section level3" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> Exercises</h3>
 <ol style="list-style-type: decimal">
-<li>A <strong>point</strong> is that which has no part.</li>
-<li>A <strong>line</strong> is a breadthless length.</li>
-<li>The extremities of a line are points.</li>
-<li>A <strong>straight line</strong> is a line which lies evenly with the points on itself.</li>
-<li>A <strong>surface</strong> is that which has length and breadth only.</li>
-<li>The extremities of a surface are lines.</li>
-<li>A <strong>plane surface</strong> is a surface which lies evenly with the straight lines on itself.</li>
-<li>A <strong>plane angle</strong> is the inclination to one another of two lines in a plane which meet one another and do not lie in a straight line.</li>
-<li>And when the lines containing the angle are straight, the angle is called <strong>rectilineal</strong>.</li>
-<li>When a straight line set up on a straight line makes the adjacent angles equal to one another, each of the equal angles is <strong>right</strong>, and the straight line standing on the other is called a <strong>perpendicular</strong> to that on which it stands.</li>
-<li>An <strong>obtuse angle</strong> is an angle greater than a right angle.</li>
-<li>An <strong>acute angle</strong> is an angle less than a right angle.</li>
-<li>A <strong>boundary</strong> is that which is an extremity of anything.</li>
-<li>A <strong>figure</strong> is that which is contained by any boundary or boundaries.</li>
-<li>A <strong>circle</strong> is a plane figure contained by one line such that all the straight lines falling upon it from one point among those lying within the figure are equal to one another;</li>
-<li>And the point is called the <strong>centre</strong> of the circle.</li>
-<li>A <strong>diameter</strong> of the circle is any straight line drawn through the centre and terminated in both directions by the circumference of the circle, and such a straight line also bisects the circle.</li>
-<li>A <strong>semicircle</strong> is the figure contained by the diameter and the circumference cut off by it. And the centre of the semicircle is the same as that of the circle.</li>
-<li><strong>Rectilineal figures</strong> are those which are contained by straight lines, <strong>trilateral figures</strong> being those contained by three, <strong>quadrilateral</strong> those contained by four, and <strong>multilateral</strong> those contained by more than four straight lines.</li>
-<li>Of trilateral figures, an <strong>equilateral triangle</strong> is that which has its three sides equal, an <strong>isosceles triangle</strong> that which has two of it sides alone equal, and a <strong>scalene triangle</strong> that which has its three sides unequal.</li>
-<li>Further, of trilateral figures, a <strong>right-angled triangle</strong> is that which has a right angle, and <strong>obtuse-angled triangle</strong> that which has an obtuse angle, and an <strong>acute-angled triangle</strong> that which has its three angles acute.</li>
-<li>Of quadrilateral figures, a <strong>square</strong> is that which is both equilateral and right-angled; an <strong>oblong</strong> that which is right-angled but not equilateral; a <strong>rhombus</strong> that which is equilateral but not right-angled; and a <strong>rhomboid</strong> that which has its opposite sides and angles equal to one another but is neither equilateral nor right-angled. And let quadrilaterals other than these be called <strong>trapezia</strong>.</li>
-<li><strong>Parallel</strong> straight lines are straight lines which, being in the same plane and being produced indefinitely in both directions, do not meet one another in either direction.</li>
+<li>Create divisibility tests in Base 12 that correspond to those given in this section for Base 10.</li>
 </ol>
-</div>
-<div id="exercises-37" class="section level3" number="9.1.5">
-<h3><span class="header-section-number">9.1.5</span> Exercises</h3>
-<ol style="list-style-type: decimal">
-<li><p>Classify the quadrilateral figures defined in the definitions from Euclid’s Elements in a hierarchy and draw several examples of each type of quadrilateral.</p></li>
-<li><p>Consider the following definitions.</p>
-<ul>
-<li><p>Given two fixed points <span class="math inline">\(F_1, F_2\)</span> called the foci and a distance <span class="math inline">\(2a\)</span> which is greater than the distance between the foci, the <strong>ellipse</strong> is the set of points <span class="math inline">\(P\)</span> such that the sum of the distances <span class="math inline">\(|PF_{1}|, |PF_{2}|\)</span> is equal to <span class="math inline">\(2a\)</span>.</p></li>
-<li><p>Given a fixed point <span class="math inline">\(F_3\)</span> called the center and a distance <span class="math inline">\(r&gt;0\)</span>, the <strong>circle</strong> is the set of points <span class="math inline">\(P\)</span> such that the distance <span class="math inline">\(|PF_3|\)</span> is equal to <span class="math inline">\(r\)</span>.</p>
-<p>According to these definitions, is a circle an ellipse? (Explain your reasoning)</p></li>
-</ul></li>
-</ol>
-</div>
-</div>
-<h3>References</h3>
-<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
-<div id="ref-Edwards2008" class="csl-entry">
-Edwards, B., &amp; Ward, M. B. (2008). The role of mathematical definitions in mathematics and in undergraduate mathematics courses. In M. Carlson &amp; C. Rasmussen (Eds.), <em>Making the connection: Research and teaching in undergraduate mathematics education</em> (pp. 223–232). Mathematical Association of America.
-</div>
-<div id="ref-Heath1908_1" class="csl-entry">
-Heath, T. L. (1908a). <em>The thirteen books of <span>E</span>uclid’s elements: Translated from the text of <span>H</span>eiberg with introduction and commentary: Vols. 1, Introduction and Books I and II</em>. University Press.
-</div>
-<div id="ref-usiskin2008" class="csl-entry">
-Usiskin, Z., &amp; Griffin, J. (2008). <em>The classification of quadrilaterals: A study in definition</em>. Information Age Publishing Inc.
-</div>
-<div id="ref-Dormolen2003" class="csl-entry">
-Van Dormolen, J., &amp; Zaslavsky, O. (2003). The many facets of a definition: The case of periodicity. <em>Journal of Mathematical Behavior</em>, <em>22</em>, 91–196.
-</div>
-<div id="ref-Vinner1991" class="csl-entry">
-Vinner, S. (1991). The role of definitions in the teaching and learning of mathematics. In D. Tall (Ed.), <em>Advanced mathematical thinking</em> (pp. 65–80). Kluwer Academic Press.
 </div>
 </div>
             </section>
@@ -885,8 +902,8 @@ Vinner, S. (1991). The role of definitions in the teaching and learning of mathe
           </div>
         </div>
       </div>
-<a href="ch-constructions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="axiomatic-systems.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sec-integer-representation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec-rationals.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
