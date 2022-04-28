@@ -761,9 +761,9 @@ div.csl-indent {
 <h3><span class="header-section-number">12.4.3</span> Cartesian Plane and Vector Space</h3>
 <p>Now that we know the representations of rotations from the perspective of the complex plane we can use that information to find the representations for rotations from the other perspectives.</p>
 <p>If we let <span class="math inline">\(z=x+iy\)</span>, we can see that <span class="math display">\[R_{(0,\theta)}(z) = (\cos(\theta) + i \sin(\theta)) (x+iy) = \left(x\cos(\theta) - y \sin(\theta)\right) + i \left(x\sin(\theta) + y \cos(\theta) \right).\]</span></p>
-<p>So in the Cartesian plane perspective, the rotation about the origin by angle <span class="math inline">\(\theta\)</span> can be written as <span class="math display">\[R_{\left((0,0),\theta\right)}\left((x,y)\right)= \left( x \cos(\theta)+y\sin(\theta), -x\sin(\theta)+y\cos(\theta)\right).\]</span></p>
+<p>So in the Cartesian plane perspective, the rotation about the origin by angle <span class="math inline">\(\theta\)</span> can be written as <span class="math display">\[R_{\left((0,0),\theta\right)}\left((x,y)\right)= \left( x \cos(\theta)-y\sin(\theta), x\sin(\theta)+y\cos(\theta)\right).\]</span></p>
 <p>In the perspective of the vector space we have
-<span class="math display">\[R_{\langle 0,0\rangle, \theta} \left( \langle x,y\rangle \right) = \begin{pmatrix} \cos(\theta) &amp; \sin(\theta) \\ -\sin(\theta) &amp; \cos(\theta) \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} .\]</span></p>
+<span class="math display">\[R_{\langle 0,0\rangle, \theta} \left( \langle x,y\rangle \right) = \begin{pmatrix} \cos(\theta) &amp; -\sin(\theta) \\ \sin(\theta) &amp; \cos(\theta) \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} .\]</span></p>
 <p>The algebraic representations for the general rotations can be found using similar methods as used in the complex plane perspective.</p>
 <div class="standards">
 <div class="center">
@@ -774,9 +774,9 @@ div.csl-indent {
 </ul>
 </div>
 <p>For the rotation by <span class="math inline">\(\frac{\pi}{2}\)</span> about a point <span class="math inline">\((h,k)\)</span> can then be written as
-<span class="math display">\[R_{((h,k),\frac{\pi}{2})}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \begin{pmatrix} x-h \\ y-k \end{pmatrix} + \begin{pmatrix} h \\ k \end{pmatrix} = \begin{pmatrix} y-k+h \\ -x+h+k  \end{pmatrix}\]</span></p>
+<span class="math display">\[R_{((h,k),\frac{\pi}{2})}\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 0 &amp; -1 \\ 1 &amp; 0 \end{pmatrix} \begin{pmatrix} x-h \\ y-k \end{pmatrix} + \begin{pmatrix} h \\ k \end{pmatrix} = \begin{pmatrix} -y+k+h \\ x-h+k  \end{pmatrix}\]</span></p>
 <p>If we apply this rotation to the line <span class="math inline">\(y=m(x-h)+k\)</span>, we have
-<span class="math display">\[[R_{((h,k),\frac{\pi}{2})} \begin{pmatrix} x \\ m(x-h)+k \end{pmatrix} = \begin{pmatrix} m(x-h)+h \\ -x+h+k   \end{pmatrix}\]</span> and since <span class="math display">\[\frac{-1}{m} \left( (m(x-h)+h) -h\right)+k = -x+h+k\]</span> we see that the image of the line under the rotation is <span class="math inline">\(y=\frac{-1}{m} (x-h)+k\)</span>. So the slope of perpendicular lines are negative multiplicative reciprocals of each other.</p>
+<span class="math display">\[R_{((h,k),\frac{\pi}{2})} \begin{pmatrix} x \\ m(x-h)+k \end{pmatrix} = \begin{pmatrix} -(m(x-h)+k)+k+h \\ x-h+k   \end{pmatrix}= \begin{pmatrix} -m(x-h)+h \\ x-h+k \end{pmatrix}\]</span> and since <span class="math display">\[\frac{-1}{m} \left( (-m(x-h)+h)-h\right)+k = x-h+k\]</span> we see that the image of the line under the rotation is <span class="math inline">\(y=\frac{-1}{m} (x-h)+k\)</span>. So the slope of perpendicular lines are negative multiplicative reciprocals of each other.</p>
 </div>
 <div id="compositions-and-groups-of-rotations" class="section level3" number="12.4.4">
 <h3><span class="header-section-number">12.4.4</span> Compositions and Groups of Rotations</h3>
