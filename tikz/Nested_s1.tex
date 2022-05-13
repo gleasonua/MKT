@@ -1,0 +1,26 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+\begin{tikzpicture}
+\draw[<->] (-4.2,0)--(4.2,0);
+\draw (-4,-.1)--(-4,.1);
+\draw (4,-.1)--(4,.1);
+\draw (0,-.1)--(0,.1);
+\fill (-4,.02) rectangle (4,-.02);
+\draw (-4,0) circle (.07);
+\draw (4,0) circle (.07);
+\node at (-4,-.5) {\(-1\)};
+\node at (4,-.5) {\(1\)};
+\end{tikzpicture}
+
+\end{document}

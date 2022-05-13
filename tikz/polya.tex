@@ -1,0 +1,29 @@
+\documentclass{standalone}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+	    \begin{tikzpicture}
+	\draw (-3.6,3) rectangle (-1,2);
+	\node at (-2.3,2.75) {\textbf{Understand}};
+	\node at (-2.3,2.3) {\textbf{the problem}};
+	\draw (0,3) rectangle (2.4,2);
+	\node at (1.2,2.75) {\textbf{Devise}};
+	\node at (1.2,2.3) {\textbf{a plan}};
+	\draw (-3.6,1) rectangle (-1,0);
+	\node at (-2.3,.5) {\textbf{Look back}};
+	\draw (0,1) rectangle (2.4,0);
+	\node at (1.2,.75) {\textbf{Carry out}};
+	\node at (1.2,.3) {\textbf{the plan}};
+	\draw [->, thick] (-1,2.5) -- (0,2.5);
+	\draw [->, thick] (1.2,2) -- (1.2,1);
+	\draw [<->, thick] (-1,.5) -- (0,.5);
+	\draw [<->, thick] (-1,1) -- (0,2);
+	\draw [->, thick] (-2.2,1) -- (-2.2,2);
+	\end{tikzpicture}
+	
+\end{document}

@@ -1,0 +1,20 @@
+\documentclass{standalone}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+\begin{tikzpicture}
+\begin{scope} [fill opacity = 1]
+\draw (-2.5,1.75) rectangle (2.5,-1.75);
+\draw[draw = black] (-.75,0) circle (1.25);
+\draw[draw = black] (.75,-.0) circle (1.25);
+\node at (-1.25,.1) {\small {rectangle}};
+\node at (1.25,0.1) {\small {rhombus}}; 
+\node at (0,-.15) {\small {square}};
+\end{scope}
+\end{tikzpicture}
+\end{document}

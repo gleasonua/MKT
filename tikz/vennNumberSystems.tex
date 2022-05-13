@@ -1,0 +1,27 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+\begin{tikzpicture}
+\draw (-4.5,3) rectangle (4.5,-3);
+\draw (0,0) circle (.5);
+\node at (0,.2) {\(\mathbb{N}\)};
+\draw (0,0) circle (1);
+\node at (0,.7) {\(\mathbb{Z}\)};
+\draw (0,0) circle (1.5);
+\node at (0,1.2) {\(\mathbb{Q}\)};
+\draw (0,0) circle (2);
+\node at (0,1.75) {\(\mathbb{R}\)};
+\draw (0,0) circle (2.5);
+\node at (0,2.2) {\(\mathbb{C}\)};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \usetikzlibrary{calc,intersections}
+\begin{tikzpicture}[scale=.5]
+\node at (-1,2) {\large Flat};
+\clip (-3,-3) rectangle (1,1);
+\coordinate (tf) at (0,0);
+\coordinate (bf) at (0,-3);
+\coordinate (tr) at (15:.25cm);
+\coordinate (tl) at (165:2.5cm);
+
+% You can change the perspective by playing with the 5, 5, 15:
+\coordinate (fr) at ($ (tf)!20!(tr) $);
+\coordinate (fl) at ($ (tf)!5!(tl) $);
+\coordinate (fb) at ($ (tf)!15!(bf) $);
+
+\path[name path=brpath] (bf) -- (fr);
+\path[name path=rbpath] (tr) -- (fb);
+\path[name path=blpath] (bf) -- (fl);
+\path[name path=lbpath] (tl) -- (fb);
+\path[name path=trpath] (tl) -- (fr);
+\path[name path=tlpath] (tr) -- (fl);
+
+\draw[name intersections={of=brpath and rbpath}] (intersection-1)coordinate (br){}; 
+\draw[name intersections={of=blpath and lbpath}] (intersection-1)coordinate (bl){}; 
+\draw[name intersections={of=trpath and tlpath}] (intersection-1)coordinate (tb){}; 
+
+\shade[right color=gray!10, left color=black!50, shading angle=105] (tf) -- (bf) -- (bl) -- (tl) -- cycle;
+\shade[left color=gray!10, right color=black!50, shading angle=75] (tf) -- (bf) -- (br) -- (tr) -- cycle;
+
+\begin{scope}
+\clip (tf) -- (tr) -- (tb) -- (tl) -- cycle;
+\shade[inner color = gray!5, outer color=black!50, shading=radial] (tf) ellipse (3cm and 1.5cm);
+\end{scope}
+
+\draw (tf) -- (bf);
+\draw (tf) -- (tr);
+\draw (tf) -- (tl);
+\draw (tr) -- (br);
+\draw (bf) -- (br);
+\draw (tl) -- (bl);
+\draw (bf) -- (bl);
+\draw (tb) -- (tr);
+\draw (tb) -- (tl);
+
+%set the sizes of the little cubes:
+\def\tone{.1}\def\ttwo{.2}\def\tthree{.3}\def\tfour{.4}\def\tfive{.5}\def\tsix{.6}\def\tseven{.7}\def\teight{.8}\def\tnine{.9}
+\def\fone{.1}\def\ftwo{.2}\def\fthree{.3}\def\ffour{.4}\def\ffive{.5}\def\fsix{.6}\def\fseven{.7}\def\feight{.8}\def\fnine{.9}
+
+\draw ($ (bf)!\tone!(bl) $) -- ($ (tf)!\tone!(tl) $) -- ($ (tr)!\tone!(tb) $);
+\draw ($ (bf)!\ttwo!(bl) $) -- ($ (tf)!\ttwo!(tl) $) -- ($ (tr)!\ttwo!(tb) $);
+\draw ($ (bf)!\tthree!(bl) $) -- ($ (tf)!\tthree!(tl) $) -- ($ (tr)!\tthree!(tb) $);
+\draw ($ (bf)!\tfour!(bl) $) -- ($ (tf)!\tfour!(tl) $) -- ($ (tr)!\tfour!(tb) $);
+\draw ($ (bf)!\tfive!(bl) $) -- ($ (tf)!\tfive!(tl) $) -- ($ (tr)!\tfive!(tb) $);
+\draw ($ (bf)!\tsix!(bl) $) -- ($ (tf)!\tsix!(tl) $) -- ($ (tr)!\tsix!(tb) $);
+\draw ($ (bf)!\tseven!(bl) $) -- ($ (tf)!\tseven!(tl) $) -- ($ (tr)!\tseven!(tb) $);
+\draw ($ (bf)!\teight!(bl) $) -- ($ (tf)!\teight!(tl) $) -- ($ (tr)!\teight!(tb) $);
+\draw ($ (bf)!\tnine!(bl) $) -- ($ (tf)!\tnine!(tl) $) -- ($ (tr)!\tnine!(tb) $);
+\draw ($ (tl)!\fone!(bl) $) -- ($ (tf)!\fone!(bf) $) -- ($ (tr)!\fone!(br) $);
+\draw ($ (tl)!\ftwo!(bl) $) -- ($ (tf)!\ftwo!(bf) $) -- ($ (tr)!\ftwo!(br) $);
+\draw ($ (tl)!\fthree!(bl) $) -- ($ (tf)!\fthree!(bf) $) -- ($ (tr)!\fthree!(br) $);
+\draw ($ (tl)!\ffour!(bl) $) -- ($ (tf)!\ffour!(bf) $) -- ($ (tr)!\ffour!(br) $);
+\draw ($ (tl)!\ffive!(bl) $) -- ($ (tf)!\ffive!(bf) $) -- ($ (tr)!\ffive!(br) $);
+\draw ($ (tl)!\fsix!(bl) $) -- ($ (tf)!\fsix!(bf) $) -- ($ (tr)!\fsix!(br) $);
+\draw ($ (tl)!\fseven!(bl) $) -- ($ (tf)!\fseven!(bf) $) -- ($ (tr)!\fseven!(br) $);
+\draw ($ (tl)!\feight!(bl) $) -- ($ (tf)!\feight!(bf) $) -- ($ (tr)!\feight!(br) $);
+\draw ($ (tl)!\fnine!(bl) $) -- ($ (tf)!\fnine!(bf) $) -- ($ (tr)!\fnine!(br) $);   
+\end{tikzpicture}
+
+\end{document}

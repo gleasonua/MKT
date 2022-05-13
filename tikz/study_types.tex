@@ -1,0 +1,36 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \usetikzlibrary{arrows}
+\begin{tikzpicture}
+\draw[latex-] (-5.5,0) -- (5.5,0) ;
+\draw[-latex] (-5.5,0) -- (5.5,0) ;
+\foreach \x in  {-4,0,4}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+
+\node at (-4,-.5) {Exploratory};
+\node at (-4,-1) {Studies};
+\node at (0,-.5) {Observational};
+\node at (0,-1) {Studies};
+\node at (4,-.5) {Experimental};
+\node at (4,-1) {Studies};
+
+\node at (-5.5,.5) {Exploratory};
+\node at (5.5,.5) {Confirmatory};
+
+
+
+
+
+\end{tikzpicture}
+\end{document}

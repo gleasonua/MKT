@@ -1,0 +1,28 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \begin{tikzpicture}
+\draw (-1,1) circle (.75);
+\node at (-1,1.2) {a \hspace{1em} b};
+\node at (-1,.8) {c \hspace{1em} d};
+\draw (1,1) circle (.75);
+\node at (1,1.2) {@};
+\node at (1,.8) {\# \hspace{1em} \$};
+\draw (0,-1.4) circle (1.2);
+\node at (0,-.8) {a \hspace{1em} b \hspace{1em} @};
+\node at (0,-1.4) {c \hspace{1em} d \hspace{1em} \#};
+\node at (0,-1.8) {\$};
+\draw[->] (-.75,.25) -- (-.4,-.2);
+\draw[->] (.75,.25) -- (.4,-.2);
+\end{tikzpicture}
+\end{document}

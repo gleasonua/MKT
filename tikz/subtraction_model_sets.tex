@@ -1,0 +1,32 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \begin{tikzpicture}
+\draw (-1,0) circle (1);
+\draw[->] (.2,0) -- (.8,0);
+\draw (2,0) circle (1);
+\node at (-1.4,.3) {x};
+\node at (-1,.3) {x};
+\node at (-.6,.3) {x};
+\node at (-1.4,-.3) {x};
+\node at (-1,-.3) {x};
+\node at (-.6,-.3) {x};
+\draw (-.6,0) ellipse (.2 and .5);
+\draw[->] (-.5,.3) -- (0,1);
+\node at (.4,1.2) {take away};
+\node at (1.6,.3) {x};
+\node at (2,.3) {x};
+\node at (1.6,-.3) {x};
+\node at (2,-.3) {x};
+\end{tikzpicture}
+\end{document}

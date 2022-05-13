@@ -1,0 +1,29 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \begin{tikzpicture}
+\draw[->] (-1.5,0) -- (4.5,0) node[right] {\(x\)};
+\draw[->] (0,-.5) -- (0,3.5) node[above] {\(y\)};
+\foreach \x in  {-1,1,2,3,4}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-1,1,2,3,4}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\({\x}\)};
+\foreach \x in {1,2,3}
+\draw[shift={(0,\x)},color=black] (-3pt,0pt) -- (3pt,0pt);
+\foreach \x in {1,2,3}
+\draw[shift={(0,\x)},color=black] (0pt,0pt) -- (-3pt,0pt) node[left] {\(\x0\)};   
+\draw[smooth,domain=-1.25:1.785,samples=500] plot ({\x},{.1*((\x-1)^2*(\x+1))/(\x-2)^2});
+\draw[smooth,domain=2.45:4.25,samples=500] plot ({\x},{.1*((\x-1)^2*(\x+1))/(\x-2)^2}); 
+\node at (-2,1.5) {\(y=\frac{(x-1)^2(x+1)}{(x-2)^2}\)};
+\end{tikzpicture}
+\end{document}

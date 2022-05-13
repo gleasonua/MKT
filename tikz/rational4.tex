@@ -1,0 +1,29 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \begin{tikzpicture}
+\draw[->] (-6.5,0) -- (6.5,0) node[right] {\(x\)};
+\draw[->] (0,-2.5) -- (0,2.5) node[above] {\(y\)};
+\foreach \x in  {-6,-5,-4,-3,-2,-1,1,2,3,4,5,6}
+\draw[shift={(\x,0)},color=black] (0pt,3pt) -- (0pt,-3pt);
+\foreach \x in {-6,-5,-4,-3,-2,-1,1,2,3,4,5,6}
+\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] {\({\x}\)};
+\foreach \x in {-2,-1,1,2}
+\draw[shift={(0,\x)},color=black] (-3pt,0pt) -- (3pt,0pt);
+\foreach \x in {-2,-1,1,2}
+\draw[shift={(0,\x)},color=black] (0pt,0pt) -- (-3pt,0pt) node[left] {\(\x\)};   
+\draw[smooth,domain=-6.25:-.4,samples=500] plot ({\x},{cos(180* \x/3.14)/(\x)}); 
+\draw[smooth,domain=.4:6.25,samples=500] plot ({\x},{cos(180* \x/3.14)/(\x)}); 
+\node at (3,1) {\(y=\frac{\cos(x)}{x}\)};
+\end{tikzpicture}
+\end{document}

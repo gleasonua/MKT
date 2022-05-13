@@ -1,0 +1,21 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds,calc,patterns}
+\usepackage{venndiagram}
+
+
+\begin{document}
+    \begin{tikzpicture}
+\draw[->] (-2.5,0) -- (2.5,0) node[right] {\(x\)};
+\draw[->] (0,-2.5) -- (0,.5) node[above] {\(y\)};
+\draw[shift={(0,-1)},color=black] (-3pt,0pt) -- (3pt,0pt);
+\draw[shift={(0,-1)},color=black] (0pt,0pt) -- (-3pt,0pt) node[left] {\(a\)}; 
+\draw[smooth, domain=-2.25:2.25, thick] plot (\x,{-1.5^\x});
+\end{tikzpicture}
+\end{document}
