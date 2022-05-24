@@ -119,6 +119,9 @@
 \usepackage{textgreek}
 
 \newenvironment{standards}{}{}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -15532,7 +15535,7 @@ One way to measure how close the sample mean approximates the population mean is
 
 The result of this loop is a vector with 1000 means of the simulated sample heights.
 
-We find that the mean of the simulations is also 155.47 cm and has a standard deviation of 0.364 0.365 cm. We also have the 95\% of the simulations fell between 154.759 and 156.192. So we call the interval (154.759,156.192) a 95\% confidence interval (95\% CI) for the mean of the heights of the population. while this does not assure that the actual population mean is inside of this interval, we can be fairly certain that our interval contains the population mean.
+We find that the mean of the simulations is also 155.5 cm and has a standard deviation of 0.372 0.365 cm. We also have the 95\% of the simulations fell between 154.755 and 156.21. So we call the interval (154.755,156.21) a 95\% confidence interval (95\% CI) for the mean of the heights of the population. while this does not assure that the actual population mean is inside of this interval, we can be fairly certain that our interval contains the population mean.
 
 We can notice that the density curve of the average heights of 1000 samples appears to be a normal distribution. If we look at similar density curves for average heights of 20, 100, and 500 samples we see that the shape of the curve is seeming to approach a normal distribution.
 
