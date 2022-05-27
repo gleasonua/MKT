@@ -296,7 +296,10 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="5.3" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html"><i class="fa fa-check"></i><b>5.3</b> Permutations and Combinations</a>
 <ul>
-<li class="chapter" data-level="5.3.1" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html#exercises-17"><i class="fa fa-check"></i><b>5.3.1</b> Exercises</a></li>
+<li class="chapter" data-level="5.3.1" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html#permutations"><i class="fa fa-check"></i><b>5.3.1</b> Permutations</a></li>
+<li class="chapter" data-level="5.3.2" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html#combinations"><i class="fa fa-check"></i><b>5.3.2</b> Combinations</a></li>
+<li class="chapter" data-level="5.3.3" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html#summary"><i class="fa fa-check"></i><b>5.3.3</b> Summary</a></li>
+<li class="chapter" data-level="5.3.4" data-path="permutations-and-combinations.html"><a href="permutations-and-combinations.html#exercises-17"><i class="fa fa-check"></i><b>5.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="function.html"><a href="function.html"><i class="fa fa-check"></i><b>6</b> Functions</a>
@@ -736,9 +739,69 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="permutations-and-combinations" class="section level2 hasAnchor" number="5.3">
 <h2><span class="header-section-number">5.3</span> Permutations and Combinations<a href="permutations-and-combinations.html#permutations-and-combinations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<!--- Add a lot more here --->
-<div id="exercises-17" class="section level3 hasAnchor" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Exercises<a href="permutations-and-combinations.html#exercises-17" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now that we see the usefulness of <span class="math inline">\(\binom{n}{k}\)</span> we would like a quicker method for finding these values. But first we need to introduce factorial notation.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-65" class="definition"><strong>Definition 5.2  </strong></span>For <span class="math inline">\(n\in \mathbb{N}\)</span> we define <span class="math inline">\(0!=1\)</span> and for <span class="math inline">\(n&gt;0\)</span>, <span class="math display">\[n!=n\cdot (n-1) \cdot (n-2) \cdots (2)\cdot (1)\]</span></p>
+</div>
+<p>So we see that <span class="math inline">\(1!=1\)</span>, <span class="math inline">\(2!=2\cdot 1 = 2\)</span>, <span class="math inline">\(3!= 3 \cdot 2 \cdot 1 = 6\)</span>, <span class="math inline">\(4!= 4 \cdot 3 \cdot 2 \cdot 1 = 24\)</span>, and so on. We also see that <span class="math inline">\(n! = n \cdot (n-1)!\)</span>. This type of relationship lends itself well to induction arguments.</p>
+<p>We can then use this factorial notation to write a compact formula for <span class="math inline">\(\binom{n}{k}\)</span>.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-66" class="theorem"><strong>Theorem 5.4  </strong></span>For <span class="math inline">\(n,k\in \mathbb{N}\)</span> with <span class="math inline">\(0\leq k \leq n\)</span> we have that
+<span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}.\]</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-67" class="proof"><em>Proof</em>. </span>As with many proofs of statements that involve the natural numbers, we will prove this using the principle of mathematical induction. For each pair of natural numbers <span class="math inline">\(n,k\)</span> with <span class="math inline">\(0\leq k \leq n\)</span> we let <span class="math inline">\(P(n,k)\)</span> be the statement that <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}.\]</span></p>
+<p>For <span class="math inline">\(n=0\)</span>, we know that <span class="math inline">\(k\)</span> must equal <span class="math inline">\(0\)</span>, since that is the only number for which <span class="math inline">\(0\leq k \leq 0\)</span>. So to prove the <span class="math inline">\(P(0,0)\)</span> is true we see that <span class="math display">\[\frac{0!}{0!\cdot 0!} = \frac{1}{1} = 1\]</span> and <span class="math inline">\(\binom{0}{0}=1\)</span>.</p>
+<p>Then for <span class="math inline">\(n=m+1\)</span> and <span class="math inline">\(k=0\)</span>, we see that <span class="math inline">\(\binom{n}{k} = \binom{m+1}{0} =1\)</span> by the definition of Pascal’s triangle. And we see that <span class="math display">\[\frac{(m+1)!}{0!(m+1-0)!}=1\]</span> and so <span class="math inline">\(P(m+1,0)\)</span> is true for all <span class="math inline">\(m\)</span>.</p>
+<p>Similarly, for <span class="math inline">\(n=m+1\)</span> and <span class="math inline">\(k=m+1\)</span> <span class="math inline">\(\binom{n}{k}=\binom{m+1}{m+1}=1\)</span>, by definition of Pascal’s triangle. And we see that <span class="math display">\[\frac{(m+1)!}{(m+1)!((m+1)-(m+1))!}=1\]</span> and so <span class="math inline">\(P(m+1,m+1)\)</span> is true for all <span class="math inline">\(m\)</span>.</p>
+<p>We can now look at the induction step by assuming that for a natural number <span class="math inline">\(m&gt;0\)</span> the statement <span class="math inline">\(P(m,k)\)</span> is true for all <span class="math inline">\(0\leq k \leq m\)</span>.</p>
+<p>For <span class="math inline">\(n=m+1\)</span> and <span class="math inline">\(0&lt;k&lt;m+1\)</span> we see that <span class="math inline">\(\binom{n}{k}\)</span> is defined using Pascal’s triangle by
+<span class="math display">\[\binom{n}{k} = \binom{m+1}{k} = \binom{m}{k-1} + \binom{m}{k}.\]</span> And by the induction hypothesis we see that
+<span class="math display">\[\binom{n}{k} = \binom{m}{k-1} + \binom{m}{k} = \frac{m!}{(k-1)!(m-(k-1))!} +\frac{m!}{k!(m-k)!}\]</span> and we can add the fractions using the common denominator of <span class="math inline">\(k!(m-k+1)!\)</span>. So
+<span class="math display">\[\begin{align*}
+\binom{n}{k} &amp;= \frac{k}{k}\frac{m!}{(k-1)!((m+1)-k)!} + \frac{m-k+1}{m-k+1} \frac{m!}{k!(m-k)!}\\
+&amp;= \frac{k(m!) + (m+1)(m!) -k (m!)}{k!((m+1)-k)!} \\
+&amp;= \frac{(m+1)!}{k!((m+1)-k)!} = \frac{n!}{k!(n-k)!}
+\end{align*}\]</span>
+and so <span class="math inline">\(P(n,k)\)</span> is true.</p>
+<p>So by induction we see that <span class="math inline">\(P(n,k)\)</span> is true for all natural numbers <span class="math inline">\(n,k\)</span> with <span class="math inline">\(0\leq k \leq n\)</span>.</p>
+</div>
+<p>As we discussed in the previous section, Pascal’s triangle received its name because Pascal made connnections between this triangle of values and probability. We will now take some time to explore some of these connections by looking at permuations and combinations.</p>
+<div class="standards">
+<div class="center">
+<p><strong>Related Content Standards</strong></p>
+</div>
+<ul>
+<li>(HSS.CP.8) Use permutations and combinations to compute probabilities of compound events and solve problems.</li>
+</ul>
+</div>
+<div id="permutations" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Permutations<a href="permutations-and-combinations.html#permutations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>A permutation of a set is a rearrangement of its elements into a linear order. So the permutations of the set <span class="math inline">\(\{1,2,3\}\)</span> are often written as <span class="math display">\[(1\: 2 \: 3), (1 \: 3 \: 2), (2 \: 1 \: 3), (2 \: 3 \: 1), (3 \: 1 \: 2), \mbox{ and } (3 \: 2 \: 1).\]</span>
+One way that we can know how many of these permutations exist is to use some counting and organizing techniques. We can see that since we have three elements of the set, we have three options for the element put into the first position. Once the first element is chosen, we have two options for the second position. Once the first two positions are chosen, there is only one option for the third position. Because of this we can see that there are <span class="math inline">\(3\cdot 2 \cdot 1 = 3!\)</span> different permutations of a set with three elements. We can continue this argument using inductive reasoning to see that there are <span class="math inline">\(n!\)</span> different permutations of a set with <span class="math inline">\(n\)</span> elements.</p>
+<p>These types of permuations show up in the secondary curriculum with problems such as</p>
+<blockquote>
+<p>In how many ways can 5 people arrange themselves in a row for a picture?</p>
+</blockquote>
+<div id="partial-permutations" class="section level4 hasAnchor" number="5.3.1.1">
+<h4><span class="header-section-number">5.3.1.1</span> Partial Permutations<a href="permutations-and-combinations.html#partial-permutations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="permutations-with-repetition" class="section level4 hasAnchor" number="5.3.1.2">
+<h4><span class="header-section-number">5.3.1.2</span> Permutations with Repetition<a href="permutations-and-combinations.html#permutations-with-repetition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+<div id="combinations" class="section level3 hasAnchor" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Combinations<a href="permutations-and-combinations.html#combinations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="combinations-with-repetition" class="section level4 hasAnchor" number="5.3.2.1">
+<h4><span class="header-section-number">5.3.2.1</span> Combinations with Repetition<a href="permutations-and-combinations.html#combinations-with-repetition" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+</div>
+<div id="summary" class="section level3 hasAnchor" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Summary<a href="permutations-and-combinations.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<!--- Include a summary table with the different formulas. --->
+</div>
+<div id="exercises-17" class="section level3 hasAnchor" number="5.3.4">
+<h3><span class="header-section-number">5.3.4</span> Exercises<a href="permutations-and-combinations.html#exercises-17" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
 <li><p>A coin is tossed 5 times.</p>
 <ol style="list-style-type: lower-alpha">
