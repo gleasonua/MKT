@@ -770,7 +770,7 @@ div.csl-indent {
 <span class="math display">\[(fg)^{(n)} (x) = \sum_{k=0}^n \binom{n}{k} f^{(n-k)}(x) g^{(k)}(x) \]</span> where <span class="math display">\[\binom{n}{k} = \frac{n!}{k!(n-k)!}.\]</span></p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-149" class="proof"><em>Proof</em>. </span>Using a proof by induction argument we have the base case that <span class="math display">\[(fg)&#39;(x)=f&#39;(x)g(x)+f(x)g&#39;(x),\]</span> which is the standard product rule for derivatives.</p>
+<p><span id="unlabeled-div-150" class="proof"><em>Proof</em>. </span>Using a proof by induction argument we have the base case that <span class="math display">\[(fg)&#39;(x)=f&#39;(x)g(x)+f(x)g&#39;(x),\]</span> which is the standard product rule for derivatives.</p>
 <p>Now assume that the statement is true for some natural number <span class="math inline">\(j\)</span>. Then</p>
 <p><span class="math display">\[\begin{align*}
 (fg)^{(j+1)}(x) &amp;= \frac{d}{dx} \left( (fg)^{(j)}(x) \right) \\
@@ -779,7 +779,7 @@ div.csl-indent {
 &amp;= \left( \sum_{k=0}^j \binom{j}{k} \left( f^{(j-k+1)}(x) g^{(k)}(x) + f^{(j-k)}(x) g^{(k+1)}(x) \right) \right) \\
 &amp;= \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k+1)}(x) g^{(k)}(x) \right) + \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k)}(x) g^{(k+1)}(x) \right) .\\
 \end{align*}\]</span>
-We can then re-index the second summation in order to have the order of the derivatives of <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> to align* between the two summations and we have that
+We can then re-index the second summation in order to have the order of the derivatives of <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> to align between the two summations, and we have that
 <span class="math display">\[\begin{align*}
 (fg)^{(j+1)}(x)     &amp;= \left( \sum_{k=0}^j \binom{j}{k}  f^{(j-k+1)}(x) g^{(k)}(x) \right) + \left( \sum_{k=1}^{j+1} \binom{j}{k-1}  f^{(j+1-k)}(x) g^{(k)}(x) \right) \\
 &amp;= \binom{j}{0} f^{(j+1)}(x)g^{(0)}(x) + \left( \sum_{k=0}^j \left( \binom{j}{k} + \binom{j}{k-1} \right) f^{(j+1-k)}(x) g^{(k)}(x) \right) \\
@@ -798,7 +798,7 @@ we have that
 <span class="math display">\[(fg)^{(n)} (x) = \sum_{k=0}^n \binom{n}{k} f^{(n-k)}(x) g^{(k)}(x)\]</span> is true for all <span class="math inline">\(n\)</span>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-150" class="proof"><em>Proof</em> (Proof of Theorem <a href="general-polynomial-functions.html#thm:poly-Taylor-zero">9.1</a>). </span>The factorization of <span class="math inline">\(p\)</span> into <span class="math inline">\(p(x)=(x-c)^m \cdot q(x)\)</span> is a direct consequence of Theorem <a href="properties-of-polynomial-rings.html#thm:polynomial-factorization">8.17</a>.</p>
+<p><span id="unlabeled-div-151" class="proof"><em>Proof</em> (Proof of Theorem <a href="general-polynomial-functions.html#thm:poly-Taylor-zero">9.1</a>). </span>The factorization of <span class="math inline">\(p\)</span> into <span class="math inline">\(p(x)=(x-c)^m \cdot q(x)\)</span> is a direct consequence of Theorem <a href="properties-of-polynomial-rings.html#thm:polynomial-factorization">8.17</a>.</p>
 <p>Let <span class="math inline">\(f(x)=(x-c)^m\)</span>. Then multiple applications of the chain rule gives us that
 <span class="math display">\[f^{(j)}(x) = \begin{cases}
 \frac{m!}{(m-j)!} (x-c)^{m-j} &amp; \mbox{ if } 0 \leq j \leq m \\
@@ -813,18 +813,23 @@ q(c) &amp; \mbox{if } n=m
 \end{cases}\]</span>
 giving us the result.</p>
 </div>
-<p>The key component of this theorem is that we can further understand how the graphs of polynomials behave near their zeros. If we let <span class="math display">\[p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24,\]</span> we can write this in factored form and see that <span class="math display">\[p(x)=(x-1)^2(x+2)^3(x-3)\]</span> has a zero of order <span class="math inline">\(1\)</span> at <span class="math inline">\(x=3\)</span>, a zero of order <span class="math inline">\(2\)</span> at <span class="math inline">\(x=1\)</span>, and a zero of order <span class="math inline">\(3\)</span> at <span class="math inline">\(x=-2\)</span>. From the theorem we have that near <span class="math inline">\(x=3\)</span>, <span class="math display">\[p(x) \approx (3-1)^2(3+2)^3(x-3) = 500 (x-3).\]</span> Similarly, near <span class="math inline">\(x=1\)</span>, <span class="math display">\[p(x) \approx -54 (x-1)^2\]</span> and near <span class="math inline">\(x=-2\)</span>, <span class="math display">\[p(x)\approx -45 (x+2)^3.\]</span></p>
+<p>The key component of this theorem is that we can further understand how the graphs of polynomials behave near their zeros. If we let <span class="math display">\[p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24,\]</span> we can write this in factored form and see that <span class="math display">\[p(x)=(x-1)^2(x+2)^3(x-3)\]</span> has a zero of order <span class="math inline">\(1\)</span> at <span class="math inline">\(x=3\)</span>, a zero of order <span class="math inline">\(2\)</span> at <span class="math inline">\(x=1\)</span>, and a zero of order <span class="math inline">\(3\)</span> at <span class="math inline">\(x=-2\)</span>.</p>
+<p>The theorem gives us a strong approximation of this polynomial near each of these zeros.</p>
+<p>We have that near the zero at <span class="math inline">\(x=3\)</span>, <span class="math display">\[p(x) \approx (3-1)^2(3+2)^3(x-3) = 500 (x-3).\]</span></p>
+<p>Similarly, near <span class="math inline">\(x=1\)</span>, <span class="math display">\[p(x) \approx -54 (x-1)^2.\]</span></p>
+<p>Finally, near <span class="math inline">\(x=-2\)</span>, <span class="math display">\[p(x)\approx -45 (x+2)^3.\]</span></p>
 <p>By graphing these polynomials using computer software we can see that these approximations for the polynomial behavior near the zeros is much more accurate than the standard linear, quadratic, or cubic descriptions.</p>
 <div id="complex-zeros" class="section level4 hasAnchor" number="9.6.1.1">
 <h4><span class="header-section-number">9.6.1.1</span> Complex Zeros<a href="general-polynomial-functions.html#complex-zeros" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>If <span class="math inline">\(p(x)\)</span> is a polynomial in <span class="math inline">\(\mathbb{R}[x]\)</span>, the factors of this polynomial that correspond to complex zeros come in conjugate pairs. This means that if <span class="math inline">\((x-(a+bi))^j\)</span> is a factor, then so is <span class="math inline">\(\overline{(x-(a+bi))^j}= (x-(a-bi))^j\)</span>. While there is no direct correspondence between complex zeros and properties of the graph of a polynomial, If there are local minimum and maximum values for a polynomial for which the graph of the polynomial does not cross the horizontal axis, it implies that there are complex zeros of the polynomial.</p>
+<p>If <span class="math inline">\(p(x)\)</span> is a polynomial in <span class="math inline">\(\mathbb{R}[x]\)</span>, the factors of this polynomial that correspond to complex zeros come in conjugate pairs. This means that if <span class="math inline">\((x-(a+bi))^j\)</span> is a factor, then so is <span class="math inline">\(\overline{(x-(a+bi))^j}= (x-(a-bi))^j\)</span>.</p>
+<p>While there is no direct correspondence between complex zeros and properties of the graph of a polynomial, if there are local minimum and maximum values for a polynomial for which the graph of the polynomial does not cross the horizontal axis, it implies that there are complex zeros of the polynomial.</p>
 </div>
 </div>
 <div id="long-term-behavior" class="section level3 hasAnchor" number="9.6.2">
 <h3><span class="header-section-number">9.6.2</span> Long-Term Behavior<a href="general-polynomial-functions.html#long-term-behavior" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When we study the long-term behavior of polynomials we focus on the standard form of the polynomial
 <span class="math display">\[p(x)=a_0 + a_1 x + \cdots + a_n x^n \quad \mbox{ with } a_n\neq 0.\]</span> When we look at the ratio of <span class="math inline">\(p(x)\)</span> and its leading term <span class="math inline">\(a_n x^n\)</span> we have <span class="math display">\[\frac{p(x)}{a_n x^n} = \frac{a_0}{a_n} \frac{1}{x^n} + \frac{a_1}{a_n} \frac{1}{x^{n-1}} + \cdots \frac{a_{n-1}}{a_n} \frac{1}{x} + 1.\]</span> So we see that <span class="math display">\[\lim_{x \rightarrow \pm \infty} \frac{p(x)}{a_n x^n} =1\]</span> meaning that these two functions act very similarly as <span class="math inline">\(|x|\)</span> gets large.</p>
-<p>This means that the graph of our polynomial <span class="math display">\[p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24\]</span> will look very similar to the graph of <span class="math inline">\(y=x^6\)</span> when zoomed out to study its long-term behavior.</p>
+<p>This means that the graph of our polynomial <span class="math display">\[p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24\]</span> will look very similar to the graph of its highest degree monomial, <span class="math inline">\(y=x^6\)</span>, when zoomed out to study its long-term behavior.</p>
 </div>
 <div id="polynomial-identities-1" class="section level3 hasAnchor" number="9.6.3">
 <h3><span class="header-section-number">9.6.3</span> Polynomial Identities<a href="general-polynomial-functions.html#polynomial-identities-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>

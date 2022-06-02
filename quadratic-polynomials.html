@@ -762,7 +762,7 @@ div.csl-indent {
 <span class="math display">\[f(x)=ax^2 + bx +c.\]</span></p>
 <div id="completing-the-square" class="section level3 hasAnchor" number="9.5.1">
 <h3><span class="header-section-number">9.5.1</span> Completing the Square<a href="quadratic-polynomials.html#completing-the-square" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>To better understand the graph of these quadratics we will modify this form of the quadratic function using a process called completing the square. In this process we rewrite the polynomial in order to find a monic polynomial without a constant coefficient,
+<p>To better understand the graph of these quadratics, we will modify this form of the quadratic function using a process called completing the square. In this process we rewrite the polynomial in order to find a monic polynomial without a constant coefficient,
 <span class="math display">\[f(x) = a \left( x^2 +\frac{b}{a}x \right) + c.\]</span></p>
 <p>We now look at the area model for the polynomial <span class="math inline">\(x^2+\frac{b}{a}x\)</span> by splitting the <span class="math inline">\(\frac{b}{a}x\)</span> into two pieces.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-73"></span>
@@ -778,7 +778,7 @@ Figure 9.15: Completing the Square: Area Model
 <span class="math display">\[f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2}{4a} + c.\]</span></p>
 <p>Therefore, we can write all quadratic polynomials in the form
 <span class="math display">\[f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}.\]</span></p>
-<p>We can also look at quadratic polynomials from the perspective of transformations of the graph. Beginning with <span class="math inline">\(f(x)=x^2\)</span>, we can see that the family of functions generated from this function are of the form <span class="math display">\[h(x)= a (x-h)^2 + k\]</span> which we will call the vertex form of the quadratic function. Equating this with the prior expression we see that all quadratic polynomials can be written in this way and that the vertex of a polynomial of the form <span class="math display">\[f(x)=ax^2+bx+c\]</span> is at the point <span class="math display">\[\left(-\frac{b}{2a}, - \frac{b^2-4ac}{4a}\right).\]</span></p>
+<p>We can also look at quadratic polynomials from the perspective of transformations of the graph. Beginning with <span class="math inline">\(f(x)=x^2\)</span>, we can see that the family of functions generated from this function are of the form <span class="math display">\[h(x)= a (x-h)^2 + k\]</span> which we will call the vertex form of the quadratic function, with the vertex being <span class="math inline">\((h,k)\)</span>. Equating this with the prior expression we see that all quadratic polynomials can be written in this way and that the vertex of a polynomial of the form <span class="math display">\[f(x)=ax^2+bx+c\]</span> is at the point <span class="math display">\[\left(-\frac{b}{2a}, - \frac{b^2-4ac}{4a}\right).\]</span></p>
 <p>We also see from properties of the transformations of the graph that if <span class="math inline">\(a&gt;0\)</span> the parabola opens up and if <span class="math inline">\(a&lt;0\)</span> the parabola opens down. Thus the range of the function <span class="math inline">\(f(x)=ax^2+bx+c\)</span> is</p>
 <p><span class="math display">\[\left[-\frac{b^2-4ac}{4a}, \infty \right) \mbox{ if } a&gt;0 \quad \mbox{and} \quad \left(-\infty, -\frac{b^2-4ac}{4a}\right] \mbox{ if } a&lt;0.\]</span></p>
 <div class="standards">
@@ -795,13 +795,14 @@ Figure 9.15: Completing the Square: Area Model
 </div>
 <div id="factoring" class="section level3 hasAnchor" number="9.5.2">
 <h3><span class="header-section-number">9.5.2</span> Factoring<a href="quadratic-polynomials.html#factoring" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In addition to the standard form of <span class="math inline">\(f(x)=ax^2+bx+c\)</span> and the vertex form of <span class="math inline">\(f(x)=a(x-h)^2+k\)</span>, it is useful to write quadratic functions in their factored form of <span class="math inline">\(f(x)=(x-d_1)(x-d_2)\)</span> as this form helps to determine the horizontal intercepts of the graph of the function.</p>
+<p>In addition to the standard form of <span class="math inline">\(f(x)=ax^2+bx+c\)</span> and the vertex form of <span class="math inline">\(f(x)=a(x-h)^2+k\)</span>, it is useful to write quadratic functions in their factored form of <span class="math inline">\(f(x)=(x-d_1)(x-d_2)\)</span> as this form helps to determine the horizontal intercepts of the graph of the function, and the zeros of the polynomial.</p>
 <p>To move from the standard form to the factored form, one uses the vertex form of <span class="math display">\[f(x) = a \left(x+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}\]</span> and then find the values of <span class="math inline">\(x\)</span> for which the function is equal to zero. These points are the values <span class="math inline">\(d\)</span> such that
 <span class="math display">\[a\left(d+\frac{b}{2a}  \right)^2- \frac{b^2-4ac}{4a}=0.\]</span> Using some algebraic properties we can rewrite this equation as <span class="math display">\[\left(d+\frac{b}{2a}  \right)^2= \frac{b^2-4ac}{4a^2}.\]</span>
 We then see that there are two values for <span class="math inline">\(d\)</span> that make this equation true.
 <span class="math display">\[d_1 = \frac{-b+\sqrt{b^2-4ac}}{2a} \quad \mbox{and} \quad d_2 = \frac{-b-\sqrt{b^2-4ac}}{2a}.\]</span></p>
 <p>Therefore, the factored form of the quadratic can be written as
 <span class="math display">\[f(x) = \left( x- \frac{-b+\sqrt{b^2-4ac}}{2a}\right) \left(x- \frac{-b-\sqrt{b^2-4ac}}{2a}\right).\]</span></p>
+<p>This will look very familiar as the quadratic equation.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>

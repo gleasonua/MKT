@@ -756,7 +756,7 @@ div.csl-indent {
 <li><p>For each <span class="math inline">\(a\in G\)</span>, there exists an element <span class="math inline">\(b\in G\)</span> such that <span class="math inline">\(a*b=b*a=e\)</span> (Inverse)</p></li>
 </ul>
 </div>
-<p>This concept of a group is a generalization of most of the properties that we noticed in Chapter <a href="number.html#number">4</a> as we constructed the various number systems.</p>
+<p>This concept of a group is a generalization of most of the properties that we noticed in Chapter <a href="number.html#number">4</a> as we constructed the various number systems. We demonstrated the associative property for each of the number systems as we defined them. So we will be able to assume associative property when we are proving that a set and operation form a group.</p>
 <div class="example">
 <p><span id="exm:group-list" class="example"><strong>Example 7.1  </strong></span>Some basic examples of groups that appear in the K-12 curriculum include:</p>
 <ol style="list-style-type: decimal">
@@ -774,10 +774,26 @@ div.csl-indent {
 </p></li>
 </ol>
 </div>
-<p>If we extend our examples to the calculus curriculum we can include the differentiable (or integrable) functions with the binary operation of addition. For the group of differentiable functions under addition, the identity is the function <span class="math inline">\(f_0:\mathbb{R}\rightarrow \mathbb{R}\)</span> defined by <span class="math inline">\(f_0(x)=0\)</span> for all <span class="math inline">\(x\)</span>. If <span class="math inline">\(g:\mathbb{R}\rightarrow \mathbb{R}\)</span> is differentiable, then its inverse in this group would be defined by <span class="math inline">\(h(x)=-g(x)\)</span>.</p>
+<p>If we extend our examples to the calculus curriculum, we can include the differentiable (or integrable) functions with the binary operation of addition. For the group of differentiable functions under addition, the identity is the function <span class="math inline">\(f_0:\mathbb{R}\rightarrow \mathbb{R}\)</span> defined by <span class="math inline">\(f_0(x)=0\)</span> for all <span class="math inline">\(x\)</span>. If <span class="math inline">\(g:\mathbb{R}\rightarrow \mathbb{R}\)</span> is differentiable, then its inverse in this group would be defined by <span class="math inline">\(h(x)=-g(x)\)</span>.</p>
+<!--- Add example of group from SG --->
+<div class="example">
+<p><span id="exm:unlabeled-div-90" class="example"><strong>Example 7.2  </strong></span>Let <span class="math display">\[C= \left\{ f:\mathbb{R}\rightarrow \mathbb{R} \vert f(x)=a\cdot \cos(x)+b; \: a,b\in \mathbb{R}\right\}.\]</span>
+We will now show that <span class="math inline">\((C,+)\)</span> is a group.</p>
+<ul>
+<li><p><strong>Closure:</strong> Let <span class="math inline">\(f_1(x)=a \cos(x)+b\)</span> and <span class="math inline">\(f_2(x)= c \cos(x)+d\)</span>, with <span class="math inline">\(a,b,c,d\in \mathbb{R}\)</span>, be elements of <span class="math inline">\(C\)</span>. Then <span class="math display">\[(f_1+f_2)(x)=f_1(x) + f_2(x) = (a+c) \cos(x) + (b+d).\]</span>
+Since <span class="math inline">\((\mathbb{R},+)\)</span> is closed, we see that <span class="math inline">\(a+c, b+d \in \mathbb{R}\)</span> and so <span class="math inline">\(f_1+f_2\in C\)</span> and so <span class="math inline">\(C\)</span> is closed under addition.</p></li>
+<li><p><strong>Identity:</strong> The function <span class="math inline">\(f_0(x)=0 \cdot \cos(x) + 0\)</span> acts as the identity since <span class="math inline">\(f_0+f=f\)</span> for all <span class="math inline">\(f\in C\)</span>.</p></li>
+<li><p><strong>Inverse:</strong> Let <span class="math inline">\(f(x)=a \cos(x)+b\)</span> be a generic function in <span class="math inline">\(C\)</span>. Then we can define <span class="math inline">\((-f)(x)=(-a)\cdot \cos(x) + (-b)\)</span>. <span class="math inline">\(-f\in C\)</span> and so
+<span class="math display">\[\begin{align*}
+(f+ (-f))(x) &amp;= \left(a\cdot \cos(x)+b\right) + \left((-a) \cdot \cos(x) + (-b)\right) \\
+&amp;= (a+(-a)) \cdot \cos(x) + (b+(-b)) \\
+&amp;= f_0(x)
+\end{align*}\]</span> So each element of <span class="math inline">\(C\)</span> has an inverse in <span class="math inline">\(C\)</span>.</p></li>
+</ul>
+</div>
 <p>The cardinality of each of the sets for the groups in Example <a href="groups.html#exm:group-list">7.1</a> is at least countable. We can also have groups with a finite number of elements as shown in the following example.</p>
 <div class="example">
-<p><span id="exm:z2" class="example"><strong>Example 7.2  </strong></span>Let <span class="math inline">\(\mathbb{Z}_2=\{0,1\}\)</span> with addition defined by the following table (often referred to as a Cayley table)
+<p><span id="exm:z2" class="example"><strong>Example 7.3  </strong></span>Let <span class="math inline">\(\mathbb{Z}_2=\{0,1\}\)</span> with addition defined by the following table (often referred to as a Cayley table)
 <span class="math display">\[\begin{array}{c|cc}
 + &amp; 0 &amp; 1 \\ \hline
 0 &amp; 0 &amp; 1 \\
@@ -791,11 +807,11 @@ div.csl-indent {
 <h3><span class="header-section-number">7.1.1</span> Abelian Groups<a href="groups.html#abelian-groups" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In most of the above mentioned groups, the order of the operation does not matter. However, for groups such at <span class="math inline">\(GL_n(\mathbb{R})\)</span>, the order of the elements with the operation does matter.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-90" class="definition"><strong>Definition 7.2  (Abelian Groups) </strong></span>If a group <span class="math inline">\((G,*)\)</span> also satisfies the property <span class="math inline">\(a*b=b*a, \: \forall a,b\in G\)</span>
+<p><span id="def:unlabeled-div-91" class="definition"><strong>Definition 7.2  (Abelian Groups) </strong></span>If a group <span class="math inline">\((G,*)\)</span> also satisfies the property <span class="math inline">\(a*b=b*a, \: \forall a,b\in G\)</span> (Commutative Property),
 then <span class="math inline">\((G,*)\)</span> is called <strong>abelian</strong>.</p>
 </div>
 <div class="example">
-<p><span id="exm:dihedral6" class="example"><strong>Example 7.3  </strong></span>The non-abelian group whose set has the smallest cardinality is the dihedral group of order 6 defined by the Cayley table:
+<p><span id="exm:dihedral6" class="example"><strong>Example 7.4  </strong></span>The non-abelian group whose set has the smallest cardinality is the dihedral group of order 6 with operation defined by the table:
 <span class="math display">\[\begin{array}{c|cccccc}
 * &amp; e &amp; a &amp; b &amp; c &amp; d &amp; f \\ \hline
 e &amp; e &amp; a &amp; b &amp; c &amp; d &amp; f \\
@@ -805,63 +821,64 @@ c &amp; c &amp; d &amp; f &amp; e &amp; a &amp; b \\
 d &amp; d &amp; c &amp; a &amp; b &amp; f &amp; e \\
 f &amp; f &amp; b &amp; c &amp; a &amp; e &amp; d \\
 \end{array}\]</span></p>
+<p>These tables that define operations are called Cayley tables, first presented in a work by the British mathematician, Arthur Cayley <span class="citation">(<a href="#ref-Cayley" role="doc-biblioref">1854</a>)</span>.</p>
 <p>We can verify that this group is not abelian since <span class="math inline">\(a*b = d\)</span> and <span class="math inline">\(b*a=f\)</span>.</p>
 </div>
 <p>It will be important to notice whether or not a group is abelian, as abelian groups have a simpler structure than those for which the operation does not commute.</p>
 </div>
 <div id="uniqueness-of-identities-and-inverses" class="section level3 hasAnchor" number="7.1.2">
 <h3><span class="header-section-number">7.1.2</span> Uniqueness of Identities and Inverses<a href="groups.html#uniqueness-of-identities-and-inverses" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>The existence of identity and inverse elements does not guarantee uniqueness, a priori. However, the following two theorems to verify the uniqueness of the identity and inverse elements within a group.</p>
+<p>The existence of identity and inverse elements does not guarantee uniqueness, a priori. However, the following two theorems verify the uniqueness of the identity and inverse elements within a group. This means that we can talk about <strong>the</strong> identity in a group instead of <strong>an</strong> identity.</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-91" class="theorem"><strong>Theorem 7.1  (Uniqueness of the Identity) </strong></span>For a group, <span class="math inline">\((G,*)\)</span>, the identity is unique.</p>
+<p><span id="thm:unlabeled-div-92" class="theorem"><strong>Theorem 7.1  (Uniqueness of the Identity) </strong></span>For a group, <span class="math inline">\((G,*)\)</span>, the identity is unique.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-92" class="proof"><em>Proof</em>. </span>Assume that there are two distinct identity elements that we will call <span class="math inline">\(e\)</span> and <span class="math inline">\(\tilde{e}\)</span>. Then the following is true:<span class="math display">\[\tilde{e}= e*\tilde{e} = e\]</span> since both <span class="math inline">\(e\)</span> and <span class="math inline">\(\tilde{e}\)</span> are identities. Thus the identities are not distinct and so the identity is unique.</p>
+<p><span id="unlabeled-div-93" class="proof"><em>Proof</em>. </span>Assume that there are two distinct identity elements that we will call <span class="math inline">\(e\)</span> and <span class="math inline">\(\tilde{e}\)</span>. Then the following is true:<span class="math display">\[\tilde{e}= e*\tilde{e} = e\]</span> since both <span class="math inline">\(e\)</span> and <span class="math inline">\(\tilde{e}\)</span> are identities. Thus the identities are not distinct and so the identity is unique.</p>
 </div>
 <div class="theorem">
 <p><span id="thm:unique-inverse" class="theorem"><strong>Theorem 7.2  (Uniqueness of the Inverse) </strong></span>For a group, <span class="math inline">\((G,*)\)</span>, for each <span class="math inline">\(a\in G\)</span>, the inverse of <span class="math inline">\(a\)</span> is unique and so we call the inverse <span class="math inline">\(a^{-1}\)</span>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-93" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(a\in G\)</span> and assume that there are distinct elements <span class="math inline">\(b,c \in G\)</span> that are inverses of <span class="math inline">\(a\)</span>. Then <span class="math display">\[b= b * (e)= b* (a*c)= (b*a)*c = (e)*c = c.\]</span> Therefore, the inverse of <span class="math inline">\(a\)</span> is unique.</p>
+<p><span id="unlabeled-div-94" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(a\in G\)</span> and assume that there are distinct elements <span class="math inline">\(b,c \in G\)</span> that are inverses of <span class="math inline">\(a\)</span>. Then <span class="math display">\[b= b * (e)= b* (a*c)= (b*a)*c = (e)*c = c.\]</span> Therefore, the inverse of <span class="math inline">\(a\)</span> is unique.</p>
 </div>
 </div>
 <div id="homomorphisms" class="section level3 hasAnchor" number="7.1.3">
 <h3><span class="header-section-number">7.1.3</span> Homomorphisms<a href="groups.html#homomorphisms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now that we have a better understanding of the definitions and structures of groups we turn our attention to looking at when two groups are really the `same’ group but viewed from different perspectives. To do that we must create a way to determine equivalence classes of groups that are based on a relationship between the two sets and how they interact with their binary operations.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-94" class="definition"><strong>Definition 7.3  </strong></span>A function, <span class="math inline">\(\phi\)</span>, from a group <span class="math inline">\((G,*)\)</span> to a group <span class="math inline">\((G&#39;,\cdot)\)</span> is called a <strong>homomorphism</strong> if <span class="math display">\[\phi(a*b)=\phi(a) \cdot \phi(b)\]</span> for every <span class="math inline">\(a,b\in G\)</span>.</p>
+<p><span id="def:unlabeled-div-95" class="definition"><strong>Definition 7.3  </strong></span>A function, <span class="math inline">\(\phi\)</span>, from a group <span class="math inline">\((G,*)\)</span> to a group <span class="math inline">\((G&#39;,\diamond)\)</span> is called a <strong>homomorphism</strong> if <span class="math display">\[\phi(a*b)=\phi(a) \diamond \phi(b)\]</span> for every <span class="math inline">\(a,b\in G\)</span>.</p>
 </div>
 <p>In other words, a homomorphism is a function between groups that maintains the structure of the binary operation. Notice that this restricts the types of functions quite a bit since a simple function like <span class="math inline">\(f:\mathbb{R} \rightarrow \mathbb{R}\)</span> defined by <span class="math inline">\(f(x)=x+1\)</span> is not a homomorphism.</p>
 <p>It will be helpful to understand this idea of maintaining the structure of the binary operation with a few examples of functions, some of which are homomorphisms and some are not.</p>
 <div class="example">
-<p><span id="exm:unlabeled-div-95" class="example"><strong>Example 7.4  </strong></span>Let <span class="math inline">\(\phi: (\mathbb{Z},+) \rightarrow (\mathbb{Z},+)\)</span> be defined by <span class="math inline">\(\phi(n)=2n\)</span>. In order to verify that <span class="math inline">\(\phi\)</span> is a homomorphism, we see that for any integers <span class="math inline">\(m,n\)</span> that <span class="math display">\[\phi(m+n)= 2(m+n) = 2m + 2n = \phi(m)+\phi(n).\]</span> So <span class="math inline">\(\phi\)</span> is a homomorphism.</p>
+<p><span id="exm:unlabeled-div-96" class="example"><strong>Example 7.5  </strong></span>Let <span class="math inline">\(\phi: (\mathbb{Z},+) \rightarrow (\mathbb{Z},+)\)</span> be defined by <span class="math inline">\(\phi(n)=2n\)</span>. In order to verify that <span class="math inline">\(\phi\)</span> is a homomorphism, we see that for any integers <span class="math inline">\(m,n\)</span> that <span class="math display">\[\phi(m+n)= 2(m+n) = 2m + 2n = \phi(m)+\phi(n).\]</span> So <span class="math inline">\(\phi\)</span> is a homomorphism since <span class="math inline">\(\phi(m+n)=\phi(m)+\phi(n)\)</span>, maintaining the operation structure.</p>
 </div>
 <div class="example">
-<p><span id="exm:unlabeled-div-96" class="example"><strong>Example 7.5  </strong></span>Let <span class="math inline">\(f: (\mathbb{R}, +) \rightarrow (\mathbb{R}^+, \cdot)\)</span> be defined by <span class="math inline">\(f(x)=2^x\)</span>. Then for real numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> we have that <span class="math display">\[f(x+y)=2^{(x+y)} = 2^x \cdot 2^y = f(x) \cdot f(y)\]</span> making <span class="math inline">\(f\)</span> a homomorphism.</p>
+<p><span id="exm:unlabeled-div-97" class="example"><strong>Example 7.6  </strong></span>Let <span class="math inline">\(f: (\mathbb{R}, +) \rightarrow (\mathbb{R}^+, \cdot)\)</span> be defined by <span class="math inline">\(f(x)=2^x\)</span>. Then for real numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> we have that <span class="math display">\[f(x+y)=2^{(x+y)} = 2^x \cdot 2^y = f(x) \cdot f(y)\]</span> making <span class="math inline">\(f\)</span> a homomorphism.</p>
 </div>
 <div class="example">
-<p><span id="exm:unlabeled-div-97" class="example"><strong>Example 7.6  </strong></span>Let <span class="math inline">\(g: (\mathbb{R}, +) \rightarrow (\mathbb{R},+)\)</span> be defined by <span class="math inline">\(g(x)=2x+3\)</span>. Then for real numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, <span class="math display">\[g(x+y) = 2\cdot (x+y)+3=2x+2y+3.\]</span> However, <span class="math display">\[g(x)+g(y)=(2x+3)+(2y+3)= 2x+2y+6\]</span> and so <span class="math inline">\(g\)</span> is not a homomorphism.</p>
+<p><span id="exm:unlabeled-div-98" class="example"><strong>Example 7.7  </strong></span>Let <span class="math inline">\(g: (\mathbb{R}, +) \rightarrow (\mathbb{R},+)\)</span> be defined by <span class="math inline">\(g(x)=2x+3\)</span>. Then for real numbers <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, <span class="math display">\[g(x+y) = 2\cdot (x+y)+3=2x+2y+3.\]</span> However, <span class="math display">\[g(x)+g(y)=(2x+3)+(2y+3)= 2x+2y+6.\]</span> So <span class="math inline">\(g\)</span> is not a homomorphism, since <span class="math inline">\(g(x+y)\neq g(x)+g(y)\)</span>.</p>
 </div>
 <p>For each of the examples above that generated a group homomorphism, notice that each of these homomorphisms mapped the identity element to the identity element and the mapped inverses to inverses. We see in the following two theorems that this is true for all homomorphisms.</p>
 <div class="theorem">
 <p><span id="thm:homomorphism-identity" class="theorem"><strong>Theorem 7.3  </strong></span>Let <span class="math inline">\(f:(G,*)\rightarrow (G&#39;,\cdot)\)</span> be a group homomorphism. If <span class="math inline">\(e\)</span> and <span class="math inline">\(e&#39;\)</span> are the identity elements of <span class="math inline">\((G,*)\)</span> and <span class="math inline">\((G&#39;,\cdot)\)</span>, respectively, then <span class="math inline">\(f(e)=e&#39;\)</span>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-98" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(a\)</span> be any element of <span class="math inline">\(G\)</span> and let <span class="math inline">\(e\)</span> be the identity in <span class="math inline">\(G\)</span>. Then
+<p><span id="unlabeled-div-99" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(a\)</span> be any element of <span class="math inline">\(G\)</span> and let <span class="math inline">\(e\)</span> be the identity in <span class="math inline">\(G\)</span>. Then
 <span class="math display">\[f(a) = f(a*e) = f(a) \cdot f(e)\]</span> and so <span class="math display">\[e&#39; = f(a)^{-1}\cdot f(a) = f(a)^{-1}\cdot ( f(a) \cdot f(e) ) = (f(a)^{-1} \cdot f(a))\cdot f(e) = e&#39; \cdot f(e) = f(e).\]</span></p>
 </div>
 <div class="theorem">
 <p><span id="thm:homomorphism-inverse" class="theorem"><strong>Theorem 7.4  </strong></span>Let <span class="math inline">\(f:(G,*)\rightarrow (G&#39;,\cdot)\)</span> be a group homomorphism. Then for each <span class="math inline">\(a\in G\)</span>, <span class="math inline">\(f(a)^{-1} = f\left(a^{-1}\right)\)</span>.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-99" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(f(a) \cdot f\left(a^{-1}\right) = f\left(a*a^{-1}\right) = f(e) = e&#39;\)</span> and since the inverse of an element is unique, we have that <span class="math inline">\(f(a)^{-1} = f\left(a^{-1}\right)\)</span>.</p>
+<p><span id="unlabeled-div-100" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(f(a) \cdot f\left(a^{-1}\right) = f\left(a*a^{-1}\right) = f(e) = e&#39;\)</span> and since the inverse of an element is unique, we have that <span class="math inline">\(f(a)^{-1} = f\left(a^{-1}\right)\)</span>.</p>
 </div>
 <p>Just like with the functions in Chapter <a href="function.html#function">5</a>, we often find it useful to compose two homomorphisms. We see in the following theorem that such a composition is also a homomorphism.</p>
 <div class="theorem">
 <p><span id="thm:homomorphism-composition" class="theorem"><strong>Theorem 7.5  </strong></span>Let <span class="math inline">\(f: (A,*) \rightarrow (B,\times)\)</span> and <span class="math inline">\(g:(B,\times) \rightarrow (C,\cdot)\)</span> be two group homomorphisms. Then <span class="math display">\[(g\circ f): (A,*) \rightarrow (C,\cdot)\]</span> is a group homomorphism.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-100" class="proof"><em>Proof</em>. </span>The proof of the theorem follows directly from the definition of <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> being group homomorphisms, with the difficulty lying in remembering the appropriate operation at each step in the process.</p>
+<p><span id="unlabeled-div-101" class="proof"><em>Proof</em>. </span>The proof of the theorem follows directly from the definition of <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> being group homomorphisms, with the difficulty lying in remembering the appropriate operation at each step in the process.</p>
 <p>Let <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> be generic elements of <span class="math inline">\(A\)</span>. Then
 <span class="math display">\[\begin{align*}
 (g\circ f)(a_1 * a_2) &amp;= g \left( f(a_1*a_2)\right) = g\left( f(a_1)\times f(a_2)\right) \\
@@ -874,15 +891,15 @@ and so <span class="math inline">\(g\circ f\)</span> is a homomorphism.</p>
 <h3><span class="header-section-number">7.1.4</span> Isomorphisms<a href="groups.html#isomorphisms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When we combine the concept of a homomorphism with the idea of a bijection, we obtain a new type of function on groups.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-101" class="definition"><strong>Definition 7.4  </strong></span>A homomorphism between groups is called an <strong>isomorphism</strong> if it is one-to-one and onto.</p>
+<p><span id="def:unlabeled-div-102" class="definition"><strong>Definition 7.4  </strong></span>A function <span class="math inline">\(\phi:(G,*)\rightarrow (G&#39;,\diamond)\)</span> is called an <strong>isomorphism</strong> if it is a homomorphism and is also one-to-one and onto.</p>
 </div>
-<p>Since isomorphisms are bijections, they satisfy all of the same properties of bijections, including having an inverse. We also can deduce that an isomorphism can only exist between groups whose sets have the same cardinality. So there cannot exist an isomorphism from <span class="math inline">\((\mathbb{Z}_2,+)\)</span> in Example <a href="groups.html#exm:z2">7.2</a> to the dihedral group of order 6 in Example <a href="groups.html#exm:dihedral6">7.3</a>.</p>
-<p>Just as a bijections create an equivalence relation in terms of cardinality, we will see that isomorphisms create an equivalence relation in terms of the group structure. In order to develop this equivalency it is helpful to understand the properties of the inverse function related to the group structures. As such, in the next theorem we prove that the inverse of an isomorphism is also an isomorphism.</p>
+<p>Since isomorphisms are bijections, they satisfy all of the same properties of bijections, including having an inverse. We also can deduce that an isomorphism can only exist between groups whose sets have the same cardinality. So there cannot exist an isomorphism from <span class="math inline">\((\mathbb{Z}_2,+)\)</span> in Example <a href="groups.html#exm:z2">7.3</a> to the dihedral group of order 6 in Example <a href="groups.html#exm:dihedral6">7.4</a>.</p>
+<p>Just as bijections create an equivalence relation in terms of cardinality, we will see that isomorphisms create an equivalence relation in terms of the group structure. In order to develop this equivalency it is helpful to understand the properties of the inverse function related to the group structures. As such, in the next theorem we prove that the inverse of an isomorphism is also an isomorphism.</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-102" class="theorem"><strong>Theorem 7.6  </strong></span>Let <span class="math inline">\(f:(G,*)\rightarrow (G&#39;,\cdot)\)</span> be an isomorphism. Then <span class="math inline">\(f^{-1}:(G&#39;,\cdot)\rightarrow (G,*)\)</span> is also an isomorphism.</p>
+<p><span id="thm:unlabeled-div-103" class="theorem"><strong>Theorem 7.6  </strong></span>Let <span class="math inline">\(f:(G,*)\rightarrow (G&#39;,\cdot)\)</span> be an isomorphism. Then <span class="math inline">\(f^{-1}:(G&#39;,\cdot)\rightarrow (G,*)\)</span> is also an isomorphism.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-103" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(f\)</span> is a bijection, we know from Chapter <a href="function.html#function">5</a> that <span class="math inline">\(f^{-1}\)</span> is also a bijection. So in order to prove that <span class="math inline">\(f^{-1}\)</span> is an isomorphism it suffices to prove that <span class="math inline">\(f^{-1}\)</span> is a homomorphism.</p>
+<p><span id="unlabeled-div-104" class="proof"><em>Proof</em>. </span>Since <span class="math inline">\(f\)</span> is a bijection, we know from Chapter <a href="function.html#function">5</a> that <span class="math inline">\(f^{-1}\)</span> is also a bijection. So in order to prove that <span class="math inline">\(f^{-1}\)</span> is an isomorphism it suffices to prove that <span class="math inline">\(f^{-1}\)</span> is a homomorphism.</p>
 <p>If we let <span class="math inline">\(b_1\)</span> and <span class="math inline">\(b_2\)</span> be two generic elements of <span class="math inline">\(G&#39;\)</span>. Then since <span class="math inline">\(f\)</span> is a bijection, there exist unique <span class="math inline">\(a_1\)</span> and <span class="math inline">\(a_2\)</span> in <span class="math inline">\(G\)</span> such that <span class="math inline">\(b_1=f(a_1)\)</span> and <span class="math inline">\(b_2=f(a_2)\)</span>. Then
 <span class="math display">\[\begin{align*}
   f^{-1}(b_1 \cdot b_2) &amp;= f^{-1}\left( f(a_1)\cdot f(a_2)\right) \\
@@ -896,7 +913,7 @@ and so <span class="math inline">\(f^{-1}\)</span> is a homomorphism, and since 
 <p><span id="thm:group-isomorphism-equivalence" class="theorem"><strong>Theorem 7.7  </strong></span>We say that a group <span class="math inline">\((G,*)\)</span> is isomorphic to a group <span class="math inline">\((G&#39;,\cdot)\)</span> if there is an isomorphism from <span class="math inline">\((G,*)\)</span> to <span class="math inline">\((G&#39;,\cdot)\)</span>. This relation of <span class="math inline">\((G,*)\)</span> isomorphic to <span class="math inline">\((G&#39;,\cdot)\)</span> is an equivalence relation.</p>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-104" class="proof"><em>Proof</em>. </span>Recall that in order to prove that a relation is an equivalence relation we have to prove that the relation is reflexive, symmetric, and transitive.</p>
+<p><span id="unlabeled-div-105" class="proof"><em>Proof</em>. </span>Recall that in order to prove that a relation is an equivalence relation we have to prove that the relation is reflexive, symmetric, and transitive.</p>
 <ul>
 <li><p><strong>Reflexive.</strong> Let <span class="math inline">\((A,*)\)</span> be a group and define <span class="math inline">\(\phi:(A,*)\rightarrow (A,*)\)</span> by <span class="math inline">\(\phi(a)=a\)</span> for all <span class="math inline">\(a\in A\)</span>. Since <span class="math inline">\(\phi\)</span> is the identity function on <span class="math inline">\((A,*)\)</span> we see that <span class="math inline">\(\phi\)</span> is an isomorphism and so <span class="math inline">\((A,*)\)</span> is isomorphic to itself.</p></li>
 <li><p><strong>Symmetric.</strong> Let <span class="math inline">\((A,*)\)</span> and <span class="math inline">\((B,+)\)</span> be groups such that <span class="math inline">\((A,*)\)</span> is isomorphic to <span class="math inline">\((B,+)\)</span>. Let <span class="math inline">\(f:(A,*)\rightarrow (B,+)\)</span> be such an isomorphism. From the previous theorem we know that <span class="math inline">\(f^{-1}: (B,+) \rightarrow (A,*)\)</span> is also an isomorphism. Therefore, <span class="math inline">\((B,+)\)</span> is isomorphic to <span class="math inline">\((A,*)\)</span>.</p></li>
@@ -914,7 +931,7 @@ e &amp; e &amp; a \\
 a &amp; a &amp; e
 \end{array}\]</span></p>
 <p>We can then see that the function <span class="math inline">\(\phi:(\mathbb{Z}_2,+)\rightarrow (G,*)\)</span> defined by <span class="math inline">\(\phi(0)=e\)</span> and <span class="math inline">\(\phi(1)=a\)</span>, that <span class="math inline">\(\phi\)</span> is an isomorphism and so every group with two elements is isomorphic to <span class="math inline">\((\mathbb{Z}_2,+)\)</span>.</p>
-<p>In order to study groups with three elements, similarly to how we defined <span class="math inline">\((\mathbb{Z}_2,+)\)</span> in Example <a href="groups.html#exm:z2">7.2</a>, we can define
+<p>In order to study groups with three elements, similarly to how we defined <span class="math inline">\((\mathbb{Z}_2,+)\)</span> in Example <a href="groups.html#exm:z2">7.3</a>, we can define
 <span class="math inline">\((\mathbb{Z}_3,+)\)</span> as the set <span class="math inline">\(\{0,1,2\}\)</span> with the operation defined by the Cayley table,
 <span class="math display">\[\begin{array}{c|ccc}
     + &amp; 0 &amp; 1 &amp; 2 \\ \hline
@@ -963,8 +980,7 @@ and one can verify that such a function is an isomorphism. So we can now conclud
   (1,1) &amp; (1,1) &amp; (1,0) &amp; (0,1) &amp; (0,0)
 \end{array}
 \end{array}\]</span></p>
-<p>The classification of the groups with a finite number of elements was a significant endeavor in throughout the twentieth century, with a complete classification verified in the early twenty-first century using computers to check the validity of the proof.</p>
-<!--- Perhaps include a section on Permutation groups? --->
+<p>The classification of the groups with a finite number of elements was a significant endeavor throughout the twentieth century, with a complete classification verified in the early twenty-first century using computers to check the validity of the proof.</p>
 </div>
 <div id="exercises-22" class="section level3 hasAnchor" number="7.1.6">
 <h3><span class="header-section-number">7.1.6</span> Exercises<a href="groups.html#exercises-22" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -977,18 +993,24 @@ and one can verify that such a function is an isomorphism. So we can now conclud
 <li><p>In what ways are the groups related to one another? (Think about subsets or homomorphisms)</p></li>
 </ol></li>
 <li><p>Find a homomorphism from <span class="math inline">\(\left(\mathbb{Z}, +\right)\)</span> to <span class="math inline">\(\left(5\mathbb{Z}, +\right)\)</span>.</p></li>
-<li><p>Are <span class="math inline">\((\mathbb{Z},+)\)</span> and <span class="math inline">\((\mathbb{R},+)\)</span> isomorphic groups? Why, or why not?</p></li>
+<li><p>Are <span class="math inline">\((\mathbb{Z},+)\)</span> and <span class="math inline">\((\mathbb{R},+)\)</span> isomorphic groups? Why or why not?</p></li>
 <li><p>Let <span class="math inline">\((G,*)\)</span> and <span class="math inline">\((H,*)\)</span> be two groups such that <span class="math inline">\(H\subseteq G\)</span> and the operation is the same for both groups.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>What are some possible homomorphisms <span class="math inline">\(\phi:(H,*)\rightarrow (G,*)\)</span>?</p></li>
 <li><p>What are some possible homomorphisms <span class="math inline">\(\psi:(G,*) \rightarrow (H,*)\)</span>?</p></li>
 </ol></li>
-<li><p>Let <span class="math inline">\(\phi:(G,*)\rightarrow (H,\circ)\)</span> be a group homomorphism.</p>
+<li><p>Let <span class="math inline">\(\phi:(G,*)\rightarrow (H,\diamond)\)</span> be a group homomorphism.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Define <span class="math display">\[\mbox{ker}(\phi)= \left\{g\in G \: \vert \: \phi(g)=e_H\right\}\]</span> and prove that <span class="math inline">\(\mbox{ker}(\phi)\)</span> is a group.</li>
-<li>Define <span class="math display">\[\mbox{ran}(\phi) = \left\{h\in H\: \vert \: h=\phi(g) \mbox{ for some } g\in G\right\}\]</span> and prove that <span class="math inline">\(\mbox{ran}(\phi)\)</span> is a group.</li>
+<li>Define <span class="math display">\[\mbox{Ker}(\phi)= \left\{g\in G \: \vert \: \phi(g)=e_H\right\}\]</span> and prove that <span class="math inline">\(\mbox{Ker}(\phi)\)</span> is a group.</li>
+<li>Define <span class="math display">\[\mbox{Ran}(\phi) = \left\{h\in H\: \vert \: h=\phi(g) \mbox{ for some } g\in G\right\}\]</span> and prove that <span class="math inline">\(\mbox{Ran}(\phi)\)</span> is a group.</li>
 </ol></li>
 </ol>
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-Cayley" class="csl-entry">
+Cayley, A. (1854). On the theory of groups, as depending on the symbolic equation <span class="math inline">\(\theta^n=1\)</span>. <em>The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science</em>, <em>7</em>(42), 40–47.
 </div>
 </div>
             </section>
