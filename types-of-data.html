@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -747,10 +748,10 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="types-of-data" class="section level2 hasAnchor" number="15.1">
 <h2><span class="header-section-number">15.1</span> Types of Data<a href="types-of-data.html#types-of-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>A core component in the data analysis process is data that can be in many different forms. When we collect or analyze data it is usually made up of <strong>cases</strong> that are the objects in the collection that are the intended <strong>unit of analysis</strong>. Sometimes these objects are the students in a classroom, houses in a neighborhood, or individuals who filled out a survey. The cases are often labeled with some type of name or number to distinguish between different cases. Sometimes the data has been changed to instead give the number of cases with a certain property, rather than listing each case individually. For example, we know that in our classroom that the favorite color of 8 students is red, 7 students like green, 2 students like blue, and 4 students prefer purple.</p>
+<p>A core component in the data analysis process is that data can be in many different forms. When we collect or analyze data it is usually made up of <strong>cases</strong> that are the objects in the collection that are the intended <strong>unit of analysis</strong>. Sometimes these objects are the students in a classroom, houses in a neighborhood, or individuals who filled out a survey. The cases are often labeled with some type of name or number to distinguish between different cases. Sometimes the data has been changed to instead give the number of cases with a certain property, rather than listing each case individually. For example, we know that in our classroom that the favorite color of 8 students is red, 7 students like green, 2 students like blue, and 4 students prefer purple.</p>
 <p>For each of the cases in our data set, there corresponds one or more attributes, called <strong>variables</strong>. These variables can be verbal or numerical descriptions of some property that varies among the cases studied. Using a <strong>code book</strong> is extremely useful to keep track of the cases in a study and the variables included.</p>
 <div class="example">
-<p><span id="exm:unlabeled-div-308" class="example"><strong>Example 15.1  </strong></span>At various points throughout this course we will be using the <code>mosaic</code> package in R, along with the mosaic data sets in the <code>mosaicData</code> package. Here is the code book for one of the data sets that includes SAT scores. While the type of variable is not listed, it can easily be inferred from the variable description.</p>
+<p><span id="exm:unlabeled-div-308" class="example"><strong>Example 15.1  </strong></span>At various points in this text we will use the <code>mosaic</code> package in R, along with the mosaic data sets in the <code>mosaicData</code> package. Here is the code book for one of the data sets that includes SAT scores. While the type of variable is not listed, it can easily be inferred from the variable description.</p>
 <p><strong>State by State SAT data</strong></p>
 <ul>
 <li><p><em>Description:</em> SAT data assembled for a statistics education journal article on the link between SAT scores and measures of educational expenditures</p></li>
@@ -768,7 +769,8 @@ div.csl-indent {
 </ul>
 </div>
 <p>The code book is usually written in some type of text document (often a <code>.txt</code> file) that can be read by anyone that may later want to use the data set. The data for an investigation is usually cleaned and stored in a spreadsheet (often in a <code>.csv</code> format to make it easier to transfer between software for analysis). By having the code book stored with the spreadsheet, the spreadsheet can have all of the extra information removed to make it easier to use for analysis.</p>
-<p>In the code book we often describe the cases, including the number of cases, and the techniques used to collect the data. The variables for the cases are then each listed with their variable name (usually a single word or a string of words connected by underscores, i.e. <code>arm_span</code>), a description of the property described by the variable, possible values for the variable and their meanings (for example when describing educational level of parents we sometimes use 0= did not graduate high school, 1= high school diploma, 2=some college, 3= college degree), and the units of measurement (if applicable). You would also want to include any additional information about the variable that you may need to remember as you work through the data analysis process. Remember that the context and information about the cases and variables need to be in the forefront of your mind throughout the entire investigative process.</p>
+<p>In the code book, we often describe the cases, including the number of cases, and the techniques used to collect the data. The variables for the cases are then each listed with their variable name. This is usually a single word or a string of words connected by underscores, i.e. <code>arm_span</code>. This helps clarify what each variable represents during the analysis process (rather than a single letter) and most statistical software does not allow spaces in a single variable. The code book then has a description of the property described by the variable, possible values for the variable and their meanings (for example when describing educational level of parents we sometimes use 0= did not graduate high school, 1= high school diploma, 2=some college, 3= college degree), and the units of measurement (if applicable). You would also want to include any additional information about the variable that you may need to remember as you work through the data analysis process. Remember that the context and information about the cases and variables need to be in the forefront of your mind throughout the entire investigative process.</p>
+<p>A primary purpose of the code book is to help others to understand your data in future studies. This means that you need to define any abbreviations that may not be obvious to others and to explain things in much more detail that you would naturally do. What you will find is that this process will also help you when you return to your data and have forgotten many more details than you expected.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -784,8 +786,8 @@ div.csl-indent {
 <p>A key aspect of the variables that should be included in the code book is the type of data involved, as the type of data impacts the types of statistical techniques that can be applied.</p>
 <div id="categorical" class="section level3 hasAnchor" number="15.1.1">
 <h3><span class="header-section-number">15.1.1</span> Categorical<a href="types-of-data.html#categorical" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A variable that can be put into a finite number of categories such as color, blood type, political party affiliation, zip code, or gender. These categories descriptions are often each replaced with a single word or number in the corresponding data spreadsheet to allow for the statistical software to run analyses. The correspondence between these abbreviations and the original description is included in the code book for the data set.</p>
-<p>Since categorical data does not have an intrinsic ordering to it, it is called <strong>nominal</strong>.</p>
+<p>A variable that can be put into a finite number of categories such as color, blood type, political party affiliation, zip code, or gender. These categorical descriptions are often each replaced with a single word or number in the corresponding data spreadsheet to allow for the statistical software to run analyses. For example, in a study involving a sample from across the United States we may mark different regions with numbers (Southeast is a 1, Mid-Atlantic is a 2, etc.). The correspondence between these abbreviations and the original description is included in the code book for the data set.</p>
+<p>Since categorical data does not have an intrinsic ordering to it, it is called <strong>nominal</strong>. So we need to remember that if we have replaced a category with a number that it is not in an order.</p>
 </div>
 <div id="ordinal" class="section level3 hasAnchor" number="15.1.2">
 <h3><span class="header-section-number">15.1.2</span> Ordinal<a href="types-of-data.html#ordinal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -799,20 +801,20 @@ div.csl-indent {
 </div>
 <div id="binomial" class="section level3 hasAnchor" number="15.1.4">
 <h3><span class="header-section-number">15.1.4</span> Binomial<a href="types-of-data.html#binomial" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A variable based on the number of successes out of <span class="math inline">\(N\)</span> possible. A common example of a binomial variable is the number of heads achieved when flipping a coin 10 times. A more complex example is the number of patients with a disease from a sample of 15 patients randomly chosen from different hospitals. In this situation, the hospital is the case and the number of patients (out of 15) is the binomial variable.</p>
+<p>A variable based on the number of successes out of <span class="math inline">\(N\)</span> possible is binomial. A common example of a binomial variable is the number of heads achieved when flipping a coin 10 times. A more complex example is the number of patients with a disease from a sample of 15 patients randomly chosen from different hospitals. In this situation, the hospital is the case and the number of patients (out of 15) is the binomial variable.</p>
 </div>
 <div id="count" class="section level3 hasAnchor" number="15.1.5">
 <h3><span class="header-section-number">15.1.5</span> Count<a href="types-of-data.html#count" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A count is very similar to a binomial variable, but it is not limited to a certain number possible. It could be something like the number of people standing in line at different check-out stations in a supermarket or the number of kids in each classroom of a school.</p>
+<p>A count is very similar to a binomial variable, but it is not limited to a certain number of possible cases. It could be something like the number of people standing in line at different check-out stations in a supermarket or the number of kids in each classroom of a school.</p>
 </div>
 <div id="continuous" class="section level3 hasAnchor" number="15.1.6">
 <h3><span class="header-section-number">15.1.6</span> Continuous<a href="types-of-data.html#continuous" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>When the value of a variable can range over a large number of possible values where the differences in values have meaning, then the variable is assumed to be continuous, or real-valued. These could include temperatures, test scores, heights, or speeds.</p>
+<p>When the value of a variable can range over a large number of possible values where the differences in values have meaning, then the variable is assumed to be continuous, or real-valued. These could include temperatures, test scores, heights, or speeds. There are rarely variables that are continuous in the mathematical sense due to measurement restrictions. For instance a thermometer may only differentiate up to a degree. So mathematically this would be discrete data. However, statistically we consider it continuous data if there could theoretically be any values between two values.</p>
 </div>
 <div id="exercise" class="section level3 hasAnchor" number="15.1.7">
 <h3><span class="header-section-number">15.1.7</span> Exercise<a href="types-of-data.html#exercise" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li><p>Determine a variable name, type(s) of variable, units of measurement, and possible values for each of the following descriptions. (not all of these are well defined and so you will need to make a case for some of your choices)</p>
+<li><p>For each of the following variables, determine a variable name, type(s) of variable, units of measurement, and possible values for each of the following descriptions. These do not all have a single correct answer as not all of these are well defined. So you will likely need to make a case for some of your choices.</p>
 <ol style="list-style-type: lower-alpha">
 <li>age</li>
 <li>amount of time spent interacting with a screen each day</li>
@@ -833,7 +835,7 @@ div.csl-indent {
 </ul>
 <p>Determine the types of variables for each of these.</p></li>
 </ol>
-<!--- %    \Question What type of analysis would be most appropriate to answer the following statistical questions? --->
+<!---     \Question What type of analysis would be most appropriate to answer the following statistical questions? --->
 </div>
 </div>
 <div class="footnotes">

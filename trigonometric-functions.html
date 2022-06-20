@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -784,7 +785,7 @@ Similarly for angle <span class="math inline">\(B\)</span>,
 \end{align*}\]</span></p>
 <div id="radians-and-degrees" class="section level4 hasAnchor" number="9.8.1.1">
 <h4><span class="header-section-number">9.8.1.1</span> Radians and Degrees<a href="trigonometric-functions.html#radians-and-degrees" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>The use of <span class="math inline">\(360^\circ\)</span> to measure angles is likely related to the number of days (365) it takes for the Earth to rotate around the sun. With the advent of calculus it became apparent that a different technique of measuring an angle based on the arc length subtended by the angle was needed. Shortly after his death in 1716 at the age of 33, Roger Cotes published the first definition of the radian angle measurement <span class="citation">(<a href="#ref-Cotes" role="doc-biblioref">1722</a>)</span>. (It was in this same work that he wrote <span class="math inline">\(ix=ln(\cos(x) + i\sin(x))\)</span>, the precursor to Euler’s formula.)</p>
+<p>The use of <span class="math inline">\(360^\circ\)</span> to measure angles is likely related to the number of days (365) it takes for the Earth to rotate around the sun. With the advent of calculus, it became apparent that a different technique of measuring an angle based on the arc length subtended by the angle was needed. Shortly after his death in 1716 at the age of 33, Roger Cotes published the first definition of the radian angle measurement <span class="citation">(<a href="#ref-Cotes" role="doc-biblioref">1722</a>)</span>. (It was in this same work that he wrote <span class="math inline">\(ix=ln(\cos(x) + i\sin(x))\)</span>, the precursor to Euler’s formula.)</p>
 <p><img src="tikz/radian.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>A radian is defined to be the angle subtended from by a circular arc whose length is the same as the radius. This means that there are <span class="math inline">\(2\pi\)</span> radians in a circle, a right angle is <span class="math inline">\(\frac{\pi}{2}\)</span> radians, and a straight line is <span class="math inline">\(\pi\)</span> radians.</p>
 <p>In order to convert an angle from degrees to radians, one would multiply by <span class="math inline">\(\frac{\pi}{180^\circ}\)</span>. And to convert from radians to degrees would be necessitate multiplying by the reciprocal.</p>
@@ -801,7 +802,7 @@ Similarly for angle <span class="math inline">\(B\)</span>,
 </div>
 <div id="unit-circle" class="section level4 hasAnchor" number="9.8.1.2">
 <h4><span class="header-section-number">9.8.1.2</span> Unit Circle<a href="trigonometric-functions.html#unit-circle" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>Combining the definitions of the trigonometric functions for right triangles with the angles defined by radians we can extend the domain of trigonometric functions to all possible angles using the unit circle. For angles <span class="math inline">\(\alpha \in \left(0,\frac{\pi}{2} \right)\)</span>, we plot a point on the unit circle that is swept out by that angle from the positive horizontal axis. We then form a right triangle from that point by drawing a line segment from the point that is perpendicular to the horizontal axis and draw a line segment from the point to the origin. We can then see that the coordinates of the point are <span class="math inline">\((\cos(\alpha),\sin(\alpha))\)</span>. This also means that the distance along the unit circle from <span class="math inline">\((1,0)\)</span> to this point is <span class="math inline">\(\alpha\)</span>.</p>
+<p>Combining the definitions of the trigonometric functions for right triangles with the angles defined by radians, we can extend the domain of trigonometric functions to all possible angles using the unit circle. For angles <span class="math inline">\(\alpha \in \left(0,\frac{\pi}{2} \right)\)</span>, we plot a point on the unit circle that is swept out by that angle from the positive horizontal axis. We then form a right triangle from that point by drawing a line segment from the point that is perpendicular to the horizontal axis and draw a line segment from the point to the origin. We can then see that the coordinates of the point are <span class="math inline">\((\cos(\alpha),\sin(\alpha))\)</span>. This also means that the distance along the unit circle from <span class="math inline">\((1,0)\)</span> to this point is <span class="math inline">\(\alpha\)</span>.</p>
 <p>Then, for any angle <span class="math inline">\(\alpha\)</span> we define <span class="math inline">\(\sin(\alpha)\)</span> and <span class="math inline">\(\cos(\alpha)\)</span> to be given by the coordinates on the unit circle whose distance from the point <span class="math inline">\((1,0)\)</span> along the circle in a counter-clockwise direction is <span class="math inline">\(\alpha\)</span>.</p>
 <div class="standards">
 <div class="center">
@@ -824,7 +825,7 @@ This equation can then be rearranged to create the equivalent equations of
 <li>(HSF.TF.8) Prove the Pythagorean identity <span class="math inline">\(\sin^2(\theta) + \cos^2(\theta) = 1\)</span> and use it to find <span class="math inline">\(\sin(\theta)\)</span>, <span class="math inline">\(\cos(\theta)\)</span>, or <span class="math inline">\(\tan(\theta)\)</span> given <span class="math inline">\(\sin(\theta)\)</span>, <span class="math inline">\(\cos(\theta)\)</span>, or <span class="math inline">\(\tan(\theta)\)</span> and the quadrant of the angle.</li>
 </ul>
 </div>
-<p>Using the properties of the unit circle we find that the values of the cosine and sine functions repeat with every cycle around the unit circle and so we find that these are periodic functions with a period of <span class="math inline">\(2\pi\)</span>,
+<p>Using the properties of the unit circle, we find that the values of the cosine and sine functions repeat with every cycle around the unit circle and so we find that these are periodic functions with a period of <span class="math inline">\(2\pi\)</span>,
 <span class="math display">\[\cos(\alpha) = \cos (\alpha+2\pi) \quad \mbox{ and } \quad \sin(\alpha) = \sin(\alpha+2\pi).\]</span></p>
 <p>Since the negative angles are the rotation in the clockwise direction instead of the counter-clockwise direction we have some additional symmetry,
 <span class="math display">\[\sin(-\alpha)=-\sin(\alpha) \quad \mbox{ and } \quad \cos(-\alpha) = \cos(\alpha),\]</span>
@@ -843,14 +844,14 @@ and so we see that the sine function is an odd function and the cosine function 
 <h3><span class="header-section-number">9.8.2</span> Additional Properties<a href="trigonometric-functions.html#additional-properties" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div id="angle-addition-formulas" class="section level4 hasAnchor" number="9.8.2.1">
 <h4><span class="header-section-number">9.8.2.1</span> Angle Addition Formulas<a href="trigonometric-functions.html#angle-addition-formulas" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In order to prove the angle addition formula for the sine function we begin by choosing two acute (less than right) angles, <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, and draw a pair of right triangles so that the hypotenuse of the triangle <span class="math inline">\(ABC\)</span> is a leg of the triangle <span class="math inline">\(ACD\)</span>, as in the figure below.</p>
+<p>In order to prove the angle addition formula for the sine function, we begin by choosing two acute (less than right) angles, <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>, and draw a pair of right triangles so that the hypotenuse of the triangle <span class="math inline">\(ABC\)</span> is a leg of the triangle <span class="math inline">\(ACD\)</span>, as in the figure below.</p>
 <p><img src="tikz/angle-addition-sine1.png" width="30%" style="display: block; margin: auto;" /></p>
 <p>We can then draw a line segment through <span class="math inline">\(D\)</span> perpendicular to <span class="math inline">\(AB\)</span>, and a another line segment perpendicular to this new line and through the point <span class="math inline">\(C\)</span>.</p>
 <p><img src="tikz/angle-addition-sine2.png" width="30%" style="display: block; margin: auto;" /></p>
 <p>We now have that <span class="math display">\[\sin\left(\alpha+\beta\right) = \frac{DE}{AD}\]</span> and that <span class="math inline">\(DE=DF+EF\)</span>, and since <span class="math inline">\(EF=BC\)</span> we have that <span class="math display">\[\sin\left(\alpha+\beta\right) = \frac{DF+BC}{AD}= \frac{DF}{AD} + \frac{BC}{AD}\]</span></p>
 <p>We can also view <span class="math inline">\(AC\)</span> as a transversal to the parallel lines <span class="math inline">\(AB\)</span> and <span class="math inline">\(CF\)</span> so that the angle <span class="math inline">\(\angle ACF=\alpha\)</span> and also <span class="math inline">\(\angle FDC = \alpha\)</span>. This means that <span class="math inline">\(\cos(\alpha) = \frac{DF}{CD}\)</span>. We can then rewrite the angle addition equation as</p>
 <p><span class="math display">\[\sin\left(\alpha+\beta\right)  = \frac{DF}{CD}\frac{CD}{AD} + \frac{BC}{AC}\frac{AC}{AD} =\cos(\alpha) \sin(\beta) + \sin(\alpha) \cos(\beta).\]</span></p>
-<p>In order to prove the angle addition formula for the cosine function we can see that</p>
+<p>In order to prove the angle addition formula for the cosine function, we can see that</p>
 <p><span class="math display">\[\begin{align*}
 \cos(\alpha+\beta) &amp;= \sin\left(\frac{\pi}{2} - \alpha - \beta\right) \\
 &amp;= \sin \left( \left(\frac{\pi}{2}-\alpha\right) + (-\beta) \right) \\
@@ -909,7 +910,7 @@ We then combine these to complete our proof.</p>
 </div>
 <p>There are many different proofs of the Law of Cosines. We include one from the perspective of analytic geometry.</p>
 <div class="proof">
-<p><span id="unlabeled-div-158" class="proof"><em>Proof</em>. </span>We are able to create a system of coordinates on the plane in order to align the point <span class="math inline">\(C\)</span> with the origin and point <span class="math inline">\(B\)</span> on the positive real axis at the point <span class="math inline">\((a,0\)</span>.</p>
+<p><span id="unlabeled-div-158" class="proof"><em>Proof</em>. </span>We are able to create a system of coordinates on the plane in order to align the point <span class="math inline">\(C\)</span> with the origin and point <span class="math inline">\(B\)</span> on the positive real axis at the point <span class="math inline">\((a,0)\)</span>.</p>
 <p><img src="tikz/law-of-cosines.png" width="40%" style="display: block; margin: auto;" /></p>
 <p>We can then use the distance formula to find the distance from <span class="math inline">\(A\)</span> to <span class="math inline">\(C\)</span> as
 <span class="math display">\[c^2=\left(b\cos(\theta)-a\right)^2 + (b\sin(\theta))^2= b^2 \cos^2(\theta)-2ab\cos(\theta) + a^2 + b^2 \sin^2(\theta)\]</span>
@@ -936,12 +937,12 @@ for real numbers <span class="math inline">\(a\)</span>, <span class="math inlin
 </ul>
 </div>
 <p>We can also sketch the base graphs of the other trigonometric functions noticing that the domain of these functions will not include certain values as we cannot divide by zero and have a real number. We will give the graphs of the tangent and secant functions, with the graphs of the cotangent and cosecant functions being similar.</p>
-<p><img src="tikz/tangent-graph.png" width="80%" style="display: block; margin: auto;" /></p>
-<p><img src="tikz/secant-graph.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="tikz/tangent-graph.png" width="60%" style="display: block; margin: auto;" /></p>
+<p><img src="tikz/secant-graph.png" width="60%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="inverse-trigonometric-functions" class="section level3 hasAnchor" number="9.8.4">
 <h3><span class="header-section-number">9.8.4</span> Inverse Trigonometric Functions<a href="trigonometric-functions.html#inverse-trigonometric-functions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>From Section <a href="Compositions.html#Compositions">5.3</a>, we see that a function is invertible if, and only if, it is a bijection. We can look at the graphs of the sine and cosine functions and see that they are definitely not bijections when thought of as functions from <span class="math inline">\(\mathbb{R}\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
+<p>From Section <a href="Compositions.html#Compositions">5.3</a>, we see that a function is invertible if and only if it is a bijection. We can look at the graphs of the sine and cosine functions and see that they are definitely not bijections when thought of as functions from <span class="math inline">\(\mathbb{R}\)</span> to <span class="math inline">\(\mathbb{R}\)</span>.</p>
 <p><img src="tikz/cosine-graph.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>However, if we restrict the domain and co-domain of the functions, these new functions are invertible.</p>
 <p>For the cosine function, we restrict the domain to <span class="math inline">\([0,\pi]\)</span> in order to find the maximum region on which the function is an injection and is onto the range of the original function, <span class="math inline">\([-1,1]\)</span>. While there are many options for this choice, we choose the option that includes the first quadrant to correspond with the definitions of the functions for right triangles.</p>
@@ -959,7 +960,7 @@ for real numbers <span class="math inline">\(a\)</span>, <span class="math inlin
 <p><span class="math display">\[\begin{align*}
   &amp; \tan:\left( -\frac{\pi}{2},\frac{\pi}{2} \right) \rightarrow (-\infty,\infty) &amp; &amp; \tan^{-1}: (-\infty,\infty) \rightarrow \left( -\frac{\pi}{2},\frac{\pi}{2} \right)  \\
   &amp; \cot:\left( 0,\pi\right) \rightarrow (-\infty,\infty)  &amp; &amp; \cot^{-1}: (-\infty,\infty)  \rightarrow \left( 0,\pi\right)  \\
-  &amp;  \sec: \left[0,\frac{pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right] \rightarrow (-\infty,1]\cup [1,\infty) &amp; &amp; \sec^{-1}: (-\infty,1]\cup [1,\infty)  \rightarrow \left[0,\frac{pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]  \\
+  &amp;  \sec: \left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right] \rightarrow (-\infty,1]\cup [1,\infty) &amp; &amp; \sec^{-1}: (-\infty,1]\cup [1,\infty)  \rightarrow \left[0,\frac{\pi}{2}\right) \cup \left(\frac{\pi}{2},\pi\right]  \\
   &amp;  \csc: \left[-\frac{\pi}{2},0\right) \cup \left( 0,\frac{\pi}{2}\right] \rightarrow (-\infty,1]\cup [1,\infty)  &amp; &amp; \csc^{-1}: (-\infty,1]\cup [1,\infty)\rightarrow  \left[-\frac{\pi}{2},0\right) \cup \left( 0,\frac{\pi}{2}\right]   \\
 \end{align*}\]</span></p>
 <div class="standards">
@@ -978,10 +979,11 @@ for real numbers <span class="math inline">\(a\)</span>, <span class="math inlin
 <li>A billboard with a height of <span class="math inline">\(6\)</span> feet is mounted on the side of a building with its bottom edge at a <span class="math inline">\(4\)</span> feet above the street. At what distance <span class="math inline">\(g\)</span> along the ground should an observer stand from the building to get the best view?</li>
 </ol>
 <p><img src="images/billboard.jpg" width="30%" style="display: block; margin: auto;" /></p>
-<ol start="2" style="list-style-type: decimal">
+<ol style="list-style-type: decimal">
 <li>Find the shortest length of a ladder that can be placed against the wall of the house above the 4 foot fence that is placed 3 feet from the house.</li>
 </ol>
 <p><img src="images/ladder.jpg" width="30%" style="display: block; margin: auto;" /></p>
+<!-- Law of Sines, Law of Cosines, Create equation max at (pi,6) min at (-3pi/4,2), Create algebraic from graphical --->
 </div>
 </div>
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>

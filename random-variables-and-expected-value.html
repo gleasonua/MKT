@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -748,89 +749,40 @@ div.csl-indent {
 <div id="random-variables-and-expected-value" class="section level2 hasAnchor" number="16.4">
 <h2><span class="header-section-number">16.4</span> Random Variables and Expected Value<a href="random-variables-and-expected-value.html#random-variables-and-expected-value" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div class="definition">
-<p><span id="def:unlabeled-div-332" class="definition"><strong>Definition 16.6  </strong></span>Let <span class="math inline">\((\Omega, \mathcal{F}, P)\)</span> be a probability space.A <strong>random variable (RV)</strong> on the probability space is a real-valued function <span class="math inline">\(X: \Omega \rightarrow \mathbb{R}\)</span>.</p>
+<p><span id="def:unlabeled-div-330" class="definition"><strong>Definition 16.6  </strong></span>Let <span class="math inline">\((\Omega, \mathcal{F}, P)\)</span> be a probability space. A <strong>random variable (RV)</strong> on the probability space is a real-valued function <span class="math inline">\(X: \Omega \rightarrow \mathbb{R}\)</span>.</p>
 </div>
 <p>We can now compute the probability of certain values occurring for the random variable by defining,
 <span class="math display">\[P(X=\alpha) := P(\{\omega \in \Omega \vert X(\omega)=\alpha \})\]</span> and <span class="math display">\[P(X\leq \beta) := P(\{\omega \in \Omega \vert X(\omega) \leq \beta\})\]</span> and so on.</p>
 <p>If we consider the sample space, <span class="math inline">\(\Omega_1\)</span>, of rolling a die during a turn in the game of Pig have have that
 <span class="math display">\[\Omega_1 = \{1,2,3,4,5,6\}\]</span> and we can define a function, <span class="math inline">\(X_1:\Omega_1 \rightarrow \mathbb{R}\)</span> using the following table, where <span class="math inline">\(P_0\)</span> is the amount of points in that turn prior to that roll.</p>
-<pre><code>## Warning in !is.null(rmarkdown::metadata$output) &amp;&amp; rmarkdown::metadata$output
-## %in% : &#39;length(x) = 2 &gt; 1&#39; in coercion to &#39;logical(1)&#39;</code></pre>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-238">Table 16.11: </span>
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-</tr>
-</thead>
+<caption><span id="tab:unnamed-chunk-241">Table 16.11: </span></caption>
 <tbody>
-<tr>
-<td style="text-align:left;">
-<span class="math inline">\(\omega\)</span>
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-6
-</td>
+<tr class="odd">
+<td align="left"><span class="math inline">\(\omega\)</span></td>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">6</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-<code>roll_points</code>
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P_0+2\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P_0+3\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P_0+4\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P_0+5\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(P_0+6\)</span>
-</td>
+<tr class="even">
+<td align="left"><code>roll_points</code></td>
+<td align="left">0</td>
+<td align="left"><span class="math inline">\(P_0+2\)</span></td>
+<td align="left"><span class="math inline">\(P_0+3\)</span></td>
+<td align="left"><span class="math inline">\(P_0+4\)</span></td>
+<td align="left"><span class="math inline">\(P_0+5\)</span></td>
+<td align="left"><span class="math inline">\(P_0+6\)</span></td>
 </tr>
 </tbody>
 </table>
 <p>In particular, for the first roll, the possible outcomes of 0,2,3,4,5, or 6 points are equally likely. So the expected score after the first roll is the average of these numbers, <span class="math inline">\(\frac{20}{6}\)</span>, even though there is actually no way to get that score. If we run a simulation with 100 rolls for this situation, we see that each of the outcomes have approximately the same probability of occurring.</p>
 <p><img src="images/OneRoll.jpg" width="80%" style="display: block; margin: auto;" /></p>
 <p>If we are in the situation where we have already rolled the die and have points, if we choose to roll during a turn we could expect to earn the average of the possible points on the roll, since all of the possibilities have equal probability. So the expectation is that by rolling again we would have the score of
-<span class="math display">\[\frac{0+(P_0 + 2) + (P_0 + 3) + (P_0+4) + (P_0+5) + (P_0+6) }{6} = \frac{5P_0 + 20}{6}\]</span></p>
+<span class="math display">\[\frac{0+(P_0 + 2) + (P_0 + 3) + (P_0+4) + (P_0+5) + (P_0+6) }{6}\]</span>
+<span class="math display">\[= \frac{5P_0 + 20}{6}\]</span></p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -851,114 +803,58 @@ div.csl-indent {
 </ul>
 </div>
 <p>From this sample of 100 simulations, we see that the average value of the random variable is <span class="math inline">\(5.95\)</span>. Using a sample of 1000 simulations, we find that the average value of the random variable of the score after two rolls is <span class="math inline">\(5.421\)</span>. If we look at all of the possible pairs of rolls for two dice we can determine the probability of getting each possible score value. Since there are 36 different possible rolls for the two dice, we have the following probability distribution.</p>
-<table>
-<caption>
-<span id="tab:unnamed-chunk-241">Table 16.12: </span>
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-</tr>
-</thead>
+<table style="width:100%;">
+<caption><span id="tab:unnamed-chunk-244">Table 16.12: </span></caption>
+<colgroup>
+<col width="18%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+<col width="8%" />
+</colgroup>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Probability value of <code>turn_points</code>
-</td>
-<td style="text-align:left;">
-0
-</td>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-5
-</td>
-<td style="text-align:left;">
-6
-</td>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-8
-</td>
-<td style="text-align:left;">
-9
-</td>
-<td style="text-align:left;">
-10
-</td>
-<td style="text-align:left;">
-11
-</td>
-<td style="text-align:left;">
-12
-</td>
+<tr class="odd">
+<td align="left">Probability value of <code>turn_points</code></td>
+<td align="left">0</td>
+<td align="left">4</td>
+<td align="left">5</td>
+<td align="left">6</td>
+<td align="left">7</td>
+<td align="left">8</td>
+<td align="left">9</td>
+<td align="left">10</td>
+<td align="left">11</td>
+<td align="left">12</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Probability of that score in <span class="math inline">\(A\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{12}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{1}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{2}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{3}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{4}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{5}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{4}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{3}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{2}{36}\)</span>
-</td>
-<td style="text-align:left;">
-<span class="math inline">\(\frac{1}{36}\)</span>
-</td>
+<tr class="even">
+<td align="left">Probability of that score in <span class="math inline">\(A\)</span></td>
+<td align="left"><span class="math inline">\(\frac{12}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{2}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{3}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{4}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{5}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{4}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{3}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{2}{36}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{36}\)</span></td>
 </tr>
 </tbody>
 </table>
 <p>We can then determine the expected value for <code>turn_points</code> with the assumption that there are two rolls by taking a weighted mean.</p>
-<p><span class="math display">\[\mbox{Expected Value of a Random Variable} = \sum (\mbox{possible value}) \cdot (\mbox{probability of that value})\]</span>
+<p><span class="math display">\[\mbox{Expected Value of a Random Variable}\]</span>
+<span class="math display">\[= \sum (\mbox{possible value}) \cdot (\mbox{probability of that value})\]</span>
 <span class="math display">\[\begin{align}
-E(X) &amp;= 0 \cdot \frac{12}{36} + 4 \cdot \frac{1}{36} + 5 \cdot \frac{2}{36} + 6 \cdot \frac{3}{36} + 7 \cdot \frac{4}{36} + 8 \cdot \frac{5}{36} + 9 \cdot \frac{4}{36} + 10 \cdot \frac{3}{36} + 11 \cdot \frac{2}{36} + 12 \cdot \frac{1}{36} \\
-&amp;= \frac{4+10+18+28+40+36+30+22+12}{36} = \frac{200}{36} \\
+E(X) &amp;= 0 \cdot \frac{12}{36} + 4 \cdot \frac{1}{36} + 5 \cdot \frac{2}{36} + 6 \cdot \frac{3}{36} + 7 \cdot \frac{4}{36} + 8 \cdot \frac{5}{36} \\
+&amp;  + 9 \cdot \frac{4}{36} + 10 \cdot \frac{3}{36} + 11 \cdot \frac{2}{36} + 12 \cdot \frac{1}{36} \\
+&amp;= \frac{4+10+18+28+40+36+30+22+12}{36} \\
+&amp;= \frac{200}{36} \\
 &amp;= 5 + \frac{5}{9}
 \end{align}\]</span></p>
 <div class="standards">
@@ -986,237 +882,113 @@ If <span class="math inline">\(X\)</span> is a continuous random variable with a
 </ul>
 </div>
 <p>Returning to our game of Pig, recall that the expected value of the score on a turn when rolling the die one time is <span class="math inline">\(3.667\)</span> and is <span class="math inline">\(5.556\)</span> when rolling two times. So it seems that the expected value of the score increases as we increase the number of times that we roll the dice on each turn. However, if we think about rolling the dice 20 times on a turn we are almost certain that at least one of those 20 rolls will include a 1 making the expected turn score to be close to 0. This implies that there must be some number of rolls on each turn that would maximize the expected score for a turn. Because the theoretical probabilities become more complicated as we increase the number of rolls on a turn, we can obtain a good estimate for the expected score using 1000 simulations for each number of turns.</p>
-<p>From these simulations we can see that the best strategy, in terms of the number of rolls each turn, is to roll around 5 or 6 times each turn. We could improve our estimates for the expected value by increasing the number of simulations.</p>
+<p>From these simulations, we can see that the best strategy, in terms of the number of rolls each turn, is to roll around 5 or 6 times each turn. We could improve our estimates for the expected value by increasing the number of simulations.</p>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-242">Table 16.13: </span>
-</caption>
+<caption><span id="tab:unnamed-chunk-245">Table 16.13: </span>Expected Value of Points per Turn Using 1000 Simulations</caption>
 <thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:right;">
-Rolls per Turn
-</th>
-<th style="text-align:right;">
-Expected Value of Points per Turn (using 1000 simulations)
-</th>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Rolls per Turn</th>
+<th align="right">Expected Value</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-0
-</td>
-<td style="text-align:right;">
-0.000
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">0</td>
+<td align="right">0.000</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-3.667
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">1</td>
+<td align="right">3.667</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-2
-</td>
-<td style="text-align:right;">
-5.421
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">2</td>
+<td align="right">5.421</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-7.119
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">3</td>
+<td align="right">7.119</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-7.183
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">4</td>
+<td align="right">7.183</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-8.060
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">5</td>
+<td align="right">8.060</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-7.849
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">6</td>
+<td align="right">7.849</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-7.134
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">7</td>
+<td align="right">7.134</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-7.283
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">8</td>
+<td align="right">7.283</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-9
-</td>
-<td style="text-align:right;">
-6.801
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">9</td>
+<td align="right">6.801</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-5.991
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">10</td>
+<td align="right">5.991</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:right;">
-6.157
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">11</td>
+<td align="right">6.157</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-12
-</td>
-<td style="text-align:right;">
-5.258
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">12</td>
+<td align="right">5.258</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-13
-</td>
-<td style="text-align:right;">
-4.414
-</td>
+<tr class="even">
+<td align="left"></td>
+<td align="right">13</td>
+<td align="right">4.414</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:right;">
-14
-</td>
-<td style="text-align:right;">
-4.327
-</td>
+<tr class="odd">
+<td align="left"></td>
+<td align="right">14</td>
+<td align="right">4.327</td>
 </tr>
 </tbody>
 </table>
 <p>Another option is to run the simulations many times to get a better understanding of the expected values for a turn when rolling 4, 5, 6, 7, or 8 times for a turn. We report the results of 100 experiments of 1000 simulations for each of the options. The mean of the scores for the experiments is equivalent to a mean of a simulation of 100,000 trials.</p>
 <table>
-<caption>
-<span id="tab:unnamed-chunk-243">Table 16.14: </span>
-</caption>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-</th>
-</tr>
-</thead>
+<caption><span id="tab:unnamed-chunk-246">Table 16.14: </span></caption>
 <tbody>
-<tr>
-<td style="text-align:left;">
-Rolls per Turn
-</td>
-<td style="text-align:left;">
-Four
-</td>
-<td style="text-align:left;">
-Five
-</td>
-<td style="text-align:left;">
-Six
-</td>
-<td style="text-align:left;">
-Seven
-</td>
-<td style="text-align:left;">
-Eight
-</td>
+<tr class="odd">
+<td align="left">Rolls per Turn</td>
+<td align="left">Four</td>
+<td align="left">Five</td>
+<td align="left">Six</td>
+<td align="left">Seven</td>
+<td align="left">Eight</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-Mean Score
-</td>
-<td style="text-align:left;">
-7.6978
-</td>
-<td style="text-align:left;">
-8.0453
-</td>
-<td style="text-align:left;">
-8.0562
-</td>
-<td style="text-align:left;">
-7.8233
-</td>
-<td style="text-align:left;">
-7.4375
-</td>
+<tr class="even">
+<td align="left">Mean Score</td>
+<td align="left">7.6978</td>
+<td align="left">8.0453</td>
+<td align="left">8.0562</td>
+<td align="left">7.8233</td>
+<td align="left">7.4375</td>
 </tr>
 </tbody>
 </table>

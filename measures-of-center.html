@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -775,13 +776,14 @@ div.csl-indent {
 <p><span id="def:unlabeled-div-309" class="definition"><strong>Definition 15.1  </strong></span>The <strong>arithmetic mean</strong> of values <span class="math inline">\(a_1, a_2, \ldots a_n\)</span> is defined by the formula:
 <span class="math display">\[\mu = \frac{a_1 + a_2 + \cdots a_n}{n}.\]</span></p>
 </div>
+<p>The arithmetic mean is the most common center computed and is often called the average of the data. We see this particularly with spreadsheets where the function to compute the arithmetic mean is called <code>Average</code>.</p>
 <p>In the cookie example we take the total number of cookies (120) and divide them evenly among the 25 students to have an average of 4.8 cookies per person.</p>
 <div class="example">
 <p><span id="exm:unlabeled-div-310" class="example"><strong>Example 15.2  </strong></span>A group of 73 high school students participate in a walk-a-thon at their school<a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a>. The number of miles walked is represented in the following dot plot and has an arithmetic mean of 6.38 miles.
 <img src="images/walkathon_dotplot.jpg" width="80%" style="display: block; margin: auto;" /></p>
 <p>While we thought of the mean as an even distribution in the cookie example, in this example it is easier to think of the arithmetic mean as a balance point. If we think of the dot plot as a scale with each of the dots having the same weight, the scale is balanced at the point of 6.38.</p>
 </div>
-<p>When finding an average rate of change, one does not take the arithmetic mean of the values, but instead determines the total values of both quantities in the rate of change and then looks at the ratio. In the case of the motorboat, the total distance is 48 miles over a period of 5 hours, giving an average speed of 9.6 miles per hour.</p>
+<p>When finding an <em>average rate of change</em>, one does not take the arithmetic mean of the values, but instead determines the total values of both quantities in the rate of change and then looks at the ratio. In the case of the motorboat, the total distance is 48 miles over a period of 5 hours, giving an average speed of 9.6 miles per hour.</p>
 <p>This average of rates of change over equal intervals can be generalized using the harmonic mean.</p>
 <div class="definition">
 <p><span id="def:unlabeled-div-311" class="definition"><strong>Definition 15.2  </strong></span>The <strong>harmonic mean</strong> of values <span class="math inline">\(a_1, a_2, \ldots a_n\)</span> is defined by the formula:
@@ -804,13 +806,14 @@ div.csl-indent {
 <div class="definition">
 <p><span id="def:unlabeled-div-314" class="definition"><strong>Definition 15.4  </strong></span>The <strong>median</strong> is the value separating the higher half of a data sample, a population, or a probability distribution from the lower half.</p>
 </div>
-<p>The median of a sample is appropriate when the question about the data regards an ‘average case’, rather than an ‘average of cases’. We also generally use the median when the data set has extreme values on one end of the distribution, as these extreme values have a large effect on the arithmetic mean. For these reasons, variables such as salaries and home prices are usually described with medians.</p>
+<p>The median of a sample is appropriate when the question about the data regards an ‘average case’, rather than an ‘average of cases’. We also generally use the median when the data set has extreme values on one end of the distribution, as these extreme values have a large effect on the arithmetic mean. For these reasons, variables such as salaries and home prices are usually best described with medians with the phrasing of ‘average salary’ or ‘average home price’.</p>
 <p>Another time when a mean cannot be used, but a median can, is with ordinal variables. When there is not a set difference between consecutive values of a variable, the means of the variable do not have a good meaning. However, the median still makes sense. For instance, if we want to know how much education the average person in a sample has, we can sort the sample by the amount of education in number of years or type and then identify the educational level of the person in the middle of the distribution.</p>
 <div class="example">
 <p><span id="exm:unlabeled-div-315" class="example"><strong>Example 15.4  </strong></span>There are some distributions for which the center is not a valuable piece of information. Consider the following graph of the starting salaries for lawyers in 2018<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a>. The adjusted mean takes into account the expected under reporting of salaries by smaller companies.</p>
 <p><img src="images/Lawyer_starting_salaries.jpg" width="70%" style="display: block; margin: auto;" /></p>
 <p>For this data set the adjusted mean of $91,833 is likely not much different from the median. However, there are not many lawyers fresh out of law school making that as their starting salaries. What are some other ways that the starting salaries of lawyers should be reported so that people can make a more informed decision about whether going to law school is a good choice for them?</p>
 </div>
+<p><em>Note: To help remember the difference between a mean and median, the mean is referred to as the ‘average of the data’, while the median is the ‘middle (average) entry in the data’.</em></p>
 <div id="exercises-64" class="section level3 hasAnchor" number="15.4.1">
 <h3><span class="header-section-number">15.4.1</span> Exercises<a href="measures-of-center.html#exercises-64" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
@@ -828,6 +831,7 @@ div.csl-indent {
 <li>Why are these numbers similar or different? When would someone report one instead of the other?</li>
 <li>How do these numbers compare to other professional sports?</li>
 </ol></li>
+<li><p>Write a short paragraph explaining to your students how you would choose to use either the mean or the median.</p></li>
 <li><p>Is there a relationship in terms of inequalities for any of the “averages” described in this section? (Test for relationships with 2 numbers in the data set.)</p></li>
 </ol>
 </div>

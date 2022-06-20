@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -747,11 +748,11 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="probability-overview" class="section level2 hasAnchor" number="16.1">
 <h2><span class="header-section-number">16.1</span> Probability Overview<a href="probability-overview.html#probability-overview" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Recall the three main foundations of data analysis of trying to understand situations in their context, justification of claims using statistical techniques, and looking at the world through the lens of variability being everywhere. <strong>Probability</strong> is the study of uncertainty and is the foundation for understanding random variability. A phenomenon is considered to be <strong>random</strong> if there are multiple potential outcomes and there is uncertainty about which outcome will occur.</p>
+<p>Three main foundations of data analysis are trying to understand situations in their context, justification of claims using statistical techniques, and looking at the world through the lens of variability being everywhere. <strong>Probability</strong> is the study of uncertainty and is the foundation for understanding random variability. A phenomenon is considered to be <strong>random</strong> if there are multiple potential outcomes and there is uncertainty about which outcome will occur.</p>
 <p>Phenomena like flipping a coin, drawing a ball from a bingo machine, or dealing a shuffled deck of cards are examples of physical randomness. We also have <strong>random selection</strong> in studies, which involves selecting a sample of individual cases at random from a population. Some examples are political polls to determine who people prefer in an election or biological samples from a stream to determine the overall health of the water source. Another use of randomness involves the <strong>random assignment</strong> of research participants into different control or experimental groups.</p>
-<p>With random phenomena there is uncertainty about individual outcomes, but there is a regular distribution of outcomes with a large enough number of repetitions. For instance, in the table below we give a few examples of simulated outcomes of coin flips for different numbers of repetitions.</p>
+<p>With random phenomena, there is uncertainty about individual outcomes, but there is a regular distribution of outcomes with a large enough number of repetitions. For instance, in the table below we give a few examples of simulated outcomes of coin flips for different numbers of repetitions.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-217">Table 16.1: </span>Distribution of Proportion of Coins</caption>
+<caption><span id="tab:unnamed-chunk-219">Table 16.1: </span>Distribution of Proportion of Coins</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -800,7 +801,7 @@ div.csl-indent {
 </tbody>
 </table>
 <p>We can create such simulations using the <code>RandBetween(0,1)</code> function in a spreadsheet the appropriate number of times. Alternatively, we can use the <code>mosaic</code> package in R along with the commands <code>coin &lt;- c(0,1)</code> and finding the mean of resamples by using <code>mean(resample(coin,n))</code> where <code>n</code> is replaced by the number of trials.</p>
-<p>This sampling technique demonstrates the phenomena that if someone could flip a fair coin an extremely large number of times that half of the time it would land on heads and half of the time it would land on tails.</p>
+<p>This sampling technique demonstrates the phenomena that if someone could flip a fair coin an extremely large number of times that half of the time it would land on heads and half of the time it would land on tails. We can see here the use of simulations in studying various probability phenomena. One can do a simulation of a coin toss a thousand times in less than a minute using simulations, while conducting the experiment using a physical coin would take hours, or even days.</p>
 <p>Just because something is a random phenomena does not mean that all of the outcomes have the same amount of certainty. For instance, in a Presidential election the tickets from the two major parties are much more likely to win the election than someone from a different party. Similarly, not all college football teams start the season with the same likelihood of winning a national championship.</p>
 <div class="standards">
 <div class="center">
@@ -814,11 +815,11 @@ div.csl-indent {
 <p>When there are only a finite number of possible outcomes we define the probability of a certain outcome as
 <span class="math display">\[P(\mbox{certain event}) = \frac{\mbox{number of possible outcomes that correspond to the event}}{\mbox{number of all possible outcomes}}.\]</span></p>
 <p>For instance, if we have a fair six-sided die the probability that we roll a number divisible by 3 is <span class="math inline">\(\frac{1}{3}\)</span> because there are two number that are divisible by 3 out of the six possible numbers.</p>
-<p>Since we know that there is a probability of <span class="math inline">\(\frac{1}{3}\)</span> of rolling a number divisible by 3 on a fair six-sided die, we would expect that if we collected samples that about a third of the rolls would be a <span class="math inline">\(3\)</span> or <span class="math inline">\(6\)</span>.</p>
+<p>Since we know that there is a probability of <span class="math inline">\(\frac{1}{3}\)</span> of rolling a number divisible by 3 on a fair six-sided die, we would expect that if we collected a large enough number of samples that about a third of the rolls would be a <span class="math inline">\(3\)</span> or <span class="math inline">\(6\)</span>. As we increase the number of samples, we would expect the number of rolls to approach the theoretical probability.</p>
 <p>Since the <strong>relative frequency</strong> of an event is the number of times that the event occurs during experimental trials divided by the total number of trials conducted, the predicted relative frequency of rolling a <span class="math inline">\(3\)</span> or a <span class="math inline">\(6\)</span> would be one third.</p>
 <p>If we conducted an experiment where we roll a die a certain number of times, the long-run relative frequency of rolling a 3 or 6 should be around one third. The more times one rolls the die in the experiment, the more likely the long-run relative frequency will be closer to one third.</p>
 <p>Consider the experiment of rolling a die 10, 50, and 100 times. The density plot below results from a simulation of 1000 cases of this experiment and we can see that the data is centered around <span class="math inline">\(\frac{1}{3}\)</span>.</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-218-1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-220-1.png" width="80%" style="display: block; margin: auto;" /></p>
 <!---
 
 ```r
@@ -838,7 +839,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 ## 3     Ten Rolls 1000 0.33150 0.14573603 0.004608578
 ```
 --->
-<p>In the case of 10 rolls, there is an point where none of the 10 rolls included a 3 or 6. We also can see that the standard deviation is <span class="math inline">\(1.146\)</span>. If we increase the number of rolls for each experiment up to 50 rolls, we see that more of the samples are within <span class="math inline">\(0.1\)</span> of the expected probability of <span class="math inline">\(\frac{1}{3}\)</span> and the standard deviation is reduced to <span class="math inline">\(0.067\)</span>. However, out of the 50 experiments there are some that substantially differ from the expected outcome.</p>
+<p>In the case of 10 rolls, there is an point where none of the 10 rolls included a 3 or 6. We also can see that the standard deviation is <span class="math inline">\(1.146\)</span>. If we increase the number of rolls for each experiment up to 50 rolls, we see that more of the samples are within <span class="math inline">\(0.1\)</span> of the expected probability of <span class="math inline">\(\frac{1}{3}\)</span> and the standard deviation is reduced to <span class="math inline">\(0.067\)</span>. However, out of the 50 experiments there are some that substantially differ from the expected outcome. This demonstrates the randomness of the situation that all outcomes are still possible, even with a large number of trials.</p>
 <p>As we continue to increase the number of rolls for each experiment up to 100 rolls, the variability in the distribution continues to decrease to the point that the standard deviation drops to <span class="math inline">\(0.046\)</span>. However, even with this decrease in standard deviation it is still possible to have experiments that differ greatly from the expected probability.</p>
 <!---
 ##           Rolls    N    mean         sd          se
@@ -858,7 +859,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 <p>With the rolling of the dice, we can use the theoretical probability to predict the relative frequency and notice that increasing the number of trials greatly increased our accuracy. This phenomena of the average of the long-term relative frequency approaching the theoretical average as the number of cases increases is called the <strong>law of large numbers</strong>.</p>
 <div id="compound-events" class="section level3 hasAnchor" number="16.1.1">
 <h3><span class="header-section-number">16.1.1</span> Compound Events<a href="probability-overview.html#compound-events" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Most of the time that we calculate probabilities the event space is more complicated and is a combination of multiple events. Such events are called compound events. We can use various techniques such as listing out all of the possible events and then work to determine the probabilities for each event, we can use tree diagrams to simplify the process of making sure that we have listed all of the possible events and computed their probabilities, or we can run simulations to estimate the probabilities of the combinations.</p>
+<p>Most of the time that we calculate probabilities, the event space is more complicated and is a combination of multiple events. Such events are called compound events. We can use various techniques such as listing out all of the possible events and then work to determine the probabilities for each event, we can use tree diagrams to simplify the process of making sure that we have listed all of the possible events and computed their probabilities, or we can run simulations to estimate the probabilities of the combinations.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -872,13 +873,13 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </ol></li>
 </ul>
 </div>
-<p>Let’s assume that when a family has children that each child is equally likely to be a boy or girl. If a family has only one child, then we will denote the possible outcomes as <span class="math inline">\(B\)</span> and <span class="math inline">\(G\)</span> with both outcomes equally likely. If a family has two children, then we have four possible outcomes for the gender of the children in their birth orders, <span class="math inline">\(\{ BB, BG, GB, GG\}\)</span>. Each of these events are also equally likely. Another way to represent this information is through a tree diagram that lists all of the possible events and the probabilities of those events.</p>
+<p>Let’s assume that when a family has children, each child is equally likely to be a boy or girl. If a family has only one child, then we will denote the possible outcomes as <span class="math inline">\(B\)</span> and <span class="math inline">\(G\)</span> with both outcomes equally likely. If a family has two children, then we have four possible outcomes for the gender of the children in their birth orders, <span class="math inline">\(\{ BB, BG, GB, GG\}\)</span>. Each of these events are also equally likely. Another way to represent this information is through a tree diagram that lists all of the possible events and the probabilities of those events.</p>
 <p><img src="tikz/birth_tree_two.png" width="45%" style="display: block; margin: auto;" /></p>
-<p>In a simulation of 200 families, we have the following probabilities:
+<p>As we can see in the tree diagram, each of the four possible combinations has the same theoretical probability of occurring. However, in one example simulation of 200 families, we have the following probabilities:
 <span class="math display">\[\mbox{BB: } 0.26 \quad \mbox{BG: } 0.20 \quad \mbox{GB: } 0.26 \quad \mbox{GG: } 0.28\]</span></p>
-<p>When we look at a sample of 50 simulations of 200 families, we have the following distribution for the proportion of the families with two boys. The sample had a mean of <span class="math inline">\(0.2511\)</span> and standard deviation of <span class="math inline">\(0.0332\)</span>.</p>
+<p>In order to better understand the variability involved in family unit types, it is helpful to run simulations with large sample sizes. When we look at a sample of 50 simulations of 200 families, we have the following distribution for the proportion of the families with two boys. The sample had a mean of <span class="math inline">\(0.2511\)</span> and standard deviation of <span class="math inline">\(0.0332\)</span>.</p>
 <p><img src="images/birth_sim_prop.jpg" width="90%" style="display: block; margin: auto;" /></p>
-<p>As we increase the size of our simulation and/or the number of simulations, we will find that the probabilities for each of the events will get closer to the theoretical probabilities found using the tree diagram.</p>
+<p>As we increase the size of our simulation and/or the number of simulations, we will find that the probabilities for each of the events in the simulation, <span class="math inline">\(0.2511\)</span>, will get closer to the theoretical probabilities found using the tree diagram, <span class="math inline">\(0.25\)</span>.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -891,7 +892,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </ol></li>
 </ul>
 </div>
-<p>The tree diagram method of organizing the possible events and their probabilities is particularly useful when the probabilities are not all the same. In a deck of cards, there are 52 cards with 12 of them being face cards. Let’s explore the probabilities related to the number of face cards drawn in when drawing three cards. In the following tree diagram we will denote the drawing of a face card by <strong>F</strong> and the drawing of a number card by <strong>N</strong>. Since we will be drawing cards and not replacing them, the probability of drawing face cards and number cards change as we draw the cards. For instance, if we draw a face card when we go to draw the next card there are a total of 51 cards to choose from and only 11 face cards left in the deck.</p>
+<p>The tree diagram method of organizing the possible events and their probabilities is particularly useful when the probabilities are not all the same. In a deck of cards, there are 52 cards with 12 of them being face cards. Let’s explore the probabilities related to the number of face cards drawn in when drawing three cards. In the following tree diagram, we will denote the drawing of a face card by <strong>F</strong> and the drawing of a number card by <strong>N</strong>. Since we will be drawing cards and not replacing them, the probability of drawing face cards and number cards change as we draw the cards. For instance, if we draw a face card when we go to draw the next card there are a total of 51 cards to choose from and only 11 face cards left in the deck.</p>
 <p><img src="tikz/tree_cards_face.png" width="90%" style="display: block; margin: auto;" /></p>
 </div>
 <div id="estimating-probabilities" class="section level3 hasAnchor" number="16.1.2">
@@ -906,11 +907,11 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </ul>
 </div>
 <div class="example">
-<p><span id="exm:unlabeled-div-322" class="example"><strong>Example 16.1  </strong></span>Assume that a baseball player typically has four at-bats in a baseball game. If his hitting percentage is <span class="math inline">\(.253\)</span>, what is the probability of having at least three hits during the game?</p>
+<p><span id="exm:unlabeled-div-320" class="example"><strong>Example 16.1  </strong></span>Assume that a baseball player typically has four at-bats in a baseball game. If his hitting percentage is <span class="math inline">\(.253\)</span>, what is the probability of having at least three hits during the game?</p>
 <p>We will see in a later section how to estimate this probability using theoretical probability techniques, but this can also be estimated using simulations.</p>
 <p>Using the random number generator on a spreadsheet (<code>=randbetween(1,1000)</code>) one can designate a number less than or equal to 253 as a hit. We can do this four times to simulate a game of four at-bats. We can then create 500 of these possible games to estimate how many hits this player is likely to get.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-226">Table 16.2: </span></caption>
+<caption><span id="tab:unnamed-chunk-228">Table 16.2: </span></caption>
 <tbody>
 <tr class="odd">
 <td align="left">Number of hits in a game</td>
@@ -938,6 +939,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </tr>
 </tbody>
 </table>
+<p>So we see that the probability of having at least three hits during the game is estimated as <span class="math inline">\(0.06+0.002=0.062\)</span>, or <span class="math inline">\(6.2\%\)</span>.</p>
 </div>
 <!---
     \begin{center}
@@ -954,7 +956,7 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 </blockquote>
 <p>We can assume that all days of the year are equally likely to be a birthday and estimate this using a series of simulations by using a random number generator to generate a number between 1 and 365 to randomly generate a birthday. We can then choose different numbers of people in a room to estimate the probability of two people in the room sharing a birthday. Using simulations<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> of 500 rooms we can estimate the probabilities of at least two people sharing a birthday for different numbers of people in the room.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-227">Table 16.3: </span></caption>
+<caption><span id="tab:unnamed-chunk-229">Table 16.3: </span>Probability of Shared Birthday with Uniform Distribution</caption>
 <colgroup>
 <col width="39%" />
 <col width="7%" />
@@ -1005,15 +1007,15 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
 
 % https://www.r-bloggers.com/the-birthday-paradox-puzzle-tidy-simulation-in-r/
 --->
-<p>We can see that we would need to have around 22 or 23 people in the room to have it more likely than not that two people share a birthday.</p>
-<p>However, if we look at the number of people born in the United States in 2015<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> we see that there is a significant variability in the number of people born each day.</p>
+<p>We can see that if births were uniformly distributed throughout the year, we would need to have around 22 or 23 people in the room to have it more likely than not that two people share a birthday.</p>
+<p>However, if we look at the number of people born in the United States in 2015<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a> we see that there is a significant variability in the number of people born each day. So our assumption of a uniform distribution is not really met.</p>
 <p><img src="images/Births_per_Day_2015.jpg" width="80%" style="display: block; margin: auto;" /></p>
 <!---
 % summarized <- crossing(people = seq(20,30, 1), trial = 1:10000) %>% mutate(birthday = map(people, ~ sample(Births2015$day_of_year, ., prob = Births2015$births, replace = TRUE)), multiple = map_lgl(birthday, ~ any(duplicated(.)))) %>% group_by(people) %>% summarize(chance = mean(multiple))
 --->
-<p>If we use the birth data from 2015 to create 10,000 simulations at each room population from 20 to 30 we see that it still is around 22 people in a room to likely have two people share a birthday.</p>
+<p>In order to work around the births not being uniformly distributed, we can use the birth data from 2015 to create 10,000 simulations using sampling into room populations from 20 to 30. We see that it still is around 22 people in a room to likely have two people share a birthday.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-229">Table 16.4: </span></caption>
+<caption><span id="tab:unnamed-chunk-231">Table 16.4: </span>Probability of Shared Birthday using 2015 Birthdate Distribution</caption>
 <tbody>
 <tr class="odd">
 <td align="left">People in the room</td>
@@ -1041,20 +1043,21 @@ ddply(dicerolls_example2, c("Rolls"), summarise,
         \end{tabular}
     \end{center}
 --->
-<p>There are also times where events are not repeatable, but involve uncertainty and it is still reasonable to estimate the probability of the event. These include the probability of a certain team winning the national championship this year or a certain candidate winning a presidential election. These are often referred to as <strong>subjective probability</strong>.</p>
+<p>There are also times where events are not repeatable, but involve uncertainty; it is still reasonable to estimate the probability of the event. These include the probability of a certain team winning the national championship this year, or a certain candidate winning a presidential election. These are often referred to as <strong>subjective probability</strong>.</p>
 <p>A common method to determine a subjective probability is the combination of observed data and statistical models to generate simulations that create a <strong>probability forecast</strong> of an event occurring. The probability of precipitation (or chance of rain) uses data collected from various weather stations to create models for the weather. These models are then analyzed with simulations to generate a probability that some minimum quantity of precipitation will occur within a specified forecast period and location.</p>
 <p>The process of determining the probability of a team winning a national championship involves using predefined data, estimates of winning percentages for each game, and then running thousands of simulations of the entire season and reporting the percentage of those simulations that result in a championship.</p>
 </div>
 <div id="exercises-67" class="section level3 hasAnchor" number="16.1.3">
 <h3><span class="header-section-number">16.1.3</span> Exercises<a href="probability-overview.html#exercises-67" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li><p>Gumballs<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a> - Imagine a gumball machine with 10 gumballs that always has 4 blue, 3 yellow, 2 green, and 1 red gumball. So as you remove a gumball from the machine it magically replaces it with the color you removed so that it always has the same proportion of colors.</p>
+<li><p>Gumballs<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a> - Imagine a gumball machine with 10 gumballs that always has 4 blue, 3 yellow, 2 green, and 1 red gumball. So, as you remove a gumball from the machine, it magically replaces it with the color you removed so that it always has the same proportion of colors.</p>
 <ol style="list-style-type: lower-alpha">
 <li>Create a physical (with marbles or cards) or computer simulation to answer the question, “If you took 10 gumballs out of the machine, how many of each color gumballs would you get?”</li>
 <li>How would the answer change if you had 50 people take out 10 gumballs?</li>
 <li>How would your answer change if 50 people took out 20 gumballs instead?</li>
 </ol></li>
 <li><p>In the game of “Pass the Pigs” plastic pigs are rolled instead of dice. Since these are non-standard dice we do not know the probability of how each pig will land and so we need to run experiments to estimate the probability. Write up a plan for how you could have a class run experiments to estimate the probability for each of the possible ways for a pig to land.</p></li>
+<li><p>In the example in this section about drawing face cards and number cards, we see that drawing three number cards is 400 times as likely to occur than drawing three face cards. How much more likely is it to draw a single face card of the three, than a single number card?</p></li>
 </ol>
 </div>
 </div>

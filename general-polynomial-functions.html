@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -831,8 +832,8 @@ giving us the result.</p>
 <span class="math display">\[p(x)=a_0 + a_1 x + \cdots + a_n x^n \quad \mbox{ with } a_n\neq 0.\]</span> When we look at the ratio of <span class="math inline">\(p(x)\)</span> and its leading term <span class="math inline">\(a_n x^n\)</span> we have <span class="math display">\[\frac{p(x)}{a_n x^n} = \frac{a_0}{a_n} \frac{1}{x^n} + \frac{a_1}{a_n} \frac{1}{x^{n-1}} + \cdots \frac{a_{n-1}}{a_n} \frac{1}{x} + 1.\]</span> So we see that <span class="math display">\[\lim_{x \rightarrow \pm \infty} \frac{p(x)}{a_n x^n} =1\]</span> meaning that these two functions act very similarly as <span class="math inline">\(|x|\)</span> gets large.</p>
 <p>This means that the graph of our polynomial <span class="math display">\[p(x)=x^6+x^5-11x^4-13x^3+26x^2+20x-24\]</span> will look very similar to the graph of its highest degree monomial, <span class="math inline">\(y=x^6\)</span>, when zoomed out to study its long-term behavior.</p>
 </div>
-<div id="polynomial-identities-1" class="section level3 hasAnchor" number="9.6.3">
-<h3><span class="header-section-number">9.6.3</span> Polynomial Identities<a href="general-polynomial-functions.html#polynomial-identities-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="polynomial-identities" class="section level3 hasAnchor" number="9.6.3">
+<h3><span class="header-section-number">9.6.3</span> Polynomial Identities<a href="general-polynomial-functions.html#polynomial-identities" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Just like the difference of squares and perfect square for quadratic polynomials, there are some identities of polynomials that are very useful.</p>
 <p>If <span class="math inline">\(p(x)=1+x+x^2+\cdots + x^{n-1}\)</span> is multiplied by <span class="math inline">\((x-1)\)</span> then one sees that
 <span class="math display">\[\frac{x^n-1}{x-1} = 1+x+x^2+\cdots + x^{n-1}.\]</span> This is the basis for the series
@@ -840,7 +841,7 @@ giving us the result.</p>
 <p>The identity
 <span class="math display">\[(x^2+y^2)^2= x^4+2x^2y^2+y^4 = x^4-2x^2y^2+y^4+4x^2y^2 = (x^2-y^2)^2 + (2xy)^2\]</span> can be used to generate Pythagorean triples. For instance, if <span class="math inline">\(x=2\)</span> and <span class="math inline">\(y=1\)</span> the identity becomes <span class="math inline">\(5^2=3^2+4^2\)</span>. If <span class="math inline">\(x=5\)</span> and <span class="math inline">\(y=4\)</span> we have the triple <span class="math inline">\(41^2=9^2+40^2\)</span>.</p>
 <p>Finally, we have the identity</p>
-<p><span class="math display">\[(x+y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k}, \quad \mbox{ with } \binom{n}{k} = \frac{n!}{k!(n-k)!},\]</span> which can be found using Pascal’s triangle.</p>
+<p><span class="math display">\[(x+y)^n = \sum_{k=0}^{n} \binom{n}{k} x^k y^{n-k}, \quad \mbox{ with } \binom{n}{k} = \frac{n!}{k!(n-k)!},\]</span> which can be found using Pascal’s triangle (See <a href="PascalBinomial.html#PascalBinomial">6.2</a>).</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -872,8 +873,7 @@ giving us the result.</p>
 <li><p>For which values of <span class="math inline">\(k\)</span> does the equation <span class="math display">\[x^4-4x^2+x+k=0\]</span> have four distinct real solutions?</p></li>
 <li><p>If <span class="math inline">\(f(x)=3x^2\)</span>, what are all real values of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> for which the graph of <span class="math inline">\(g(x)=ax^2+b\)</span> is below the graph of <span class="math inline">\(f(x)\)</span> for all values of <span class="math inline">\(x\)</span>?</p></li>
 <li><p>Consider the function <span class="math inline">\(f(x)=x^4-25x^2-36x\)</span>, which has one <span class="math inline">\(x\)</span>-intercept at <span class="math inline">\((-4,0)\)</span>. Find all the other zeros of the function algebraically.</p></li>
-<li><p>Determine the long-term behavior of the following polynomials.
-<span class="math display">\[\left(\mbox{Find } \lim_{x\rightarrow \infty} f(x) \quad \mbox{and} \quad \lim_{x\rightarrow -\infty} f(x). \right)\]</span></p>
+<li><p>Determine the long-term behavior (Find <span class="math inline">\(\displaystyle{\lim_{x\rightarrow \infty} f(x)}\)</span> and <span class="math inline">\(\displaystyle{\lim_{x\rightarrow -\infty} f(x)}\)</span>) of the following polynomials.</p>
 <ol style="list-style-type: lower-alpha">
 <li><span class="math inline">\({\displaystyle f(x)=2x^3-3x^2+4x-1}\)</span></li>
 <li><span class="math inline">\({\displaystyle f(x)=-3x^4+2x^2-3x+2}\)</span></li>

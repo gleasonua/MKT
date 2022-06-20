@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -815,16 +816,19 @@ Figure 14.2: Students’ Approaches to Statistical Investigations (SASI) Framewo
 </div>
 <div id="statistical-habits-of-mind" class="section level3 hasAnchor" number="14.2.1">
 <h3><span class="header-section-number">14.2.1</span> Statistical Habits of Mind<a href="teaching-and-learning-of-data-analysis-and-statistics.html#statistical-habits-of-mind" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>As students engage in the data analysis investigative process, one of the primary goals for students is to develop a new way of thinking about the world and the use of data in our world. <span class="citation">Chance (<a href="#ref-Chance2002" role="doc-biblioref">2002</a>)</span> listed six mental habits for students to develop as they learn to think statistically. “These mental habits include:</p>
+<p>As students engage in the data analysis investigative process, one of the primary goals for students is to develop a new way of thinking about the world and the use of data in our world. <span class="citation">Chance (<a href="#ref-Chance2002" role="doc-biblioref">2002</a>)</span> listed six mental habits for students to develop as they learn to think statistically.</p>
+<blockquote>
+<p>These mental habits include:</p>
 <ol style="list-style-type: decimal">
 <li>consideration of how to best obtain meaningful and relevant data to answer the question at hand</li>
 <li>constant reflection on the variables involved and curiosity for other ways of examining and thinking about the data and problem at hand</li>
 <li>seeing the complete process with constant revision of each component</li>
 <li>omnipresent skepticism about the data obtained</li>
 <li>constant relation of the data to the context of the problem and interpretation of the conclusions in non-statistical terms</li>
-<li>thinking beyond the textbook”</li>
+<li>thinking beyond the textbook</li>
 </ol>
-<p>The chapters on data analysis in this text are designed to help develop these habits of mind through examples and engagement in various projects involving the investigative process. Remember that in the teaching and learning of probability, data analysis, and statistics the main goal is not to learn how to perform statistical calculations, but to develop these habits of mind and improve one’s ability to produce and understand arguments based upon the analysis of data.</p>
+</blockquote>
+<p>The chapters on data analysis in this text are designed to help develop these habits of mind through examples and engagement in various projects involving the investigative process. Remember that in the teaching and learning of probability, data analysis, and statistics the main goal is not to learn how to perform statistical calculations, but to develop these habits of mind and improve one’s ability to produce and understand arguments based upon the analysis of data. Overall, this will help us be active participating members of society that can think for ourselves.</p>
 </div>
 <div id="exercises-61" class="section level3 hasAnchor" number="14.2.2">
 <h3><span class="header-section-number">14.2.2</span> Exercises<a href="teaching-and-learning-of-data-analysis-and-statistics.html#exercises-61" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -838,7 +842,7 @@ Figure 14.2: Students’ Approaches to Statistical Investigations (SASI) Framewo
 </ol></li>
 <li><p>Determine where each of the following scenarios for the collection of data would fall in the framework. Then modify the scenario to be at a Level C.</p>
 <ol style="list-style-type: lower-alpha">
-<li>In an effort to determine if plants grow better in red light or blue light a student has one plant that grows under a red light bulb for 4 weeks and one plant that grows under a blue light bulb for 4 weeks. The student then measures the difference in the heights of the plants.</li>
+<li>In an effort to determine if plants grow better in red light or blue light, a student has one plant that grows under a red light bulb for 4 weeks and one plant that grows under a blue light bulb for 4 weeks. The student then measures the difference in the heights of the plants.</li>
 <li>The students in a class measure their height and arm span in order to determine if there is a relationship between the two measurements for people.</li>
 <li>Using the nutrition information for McDonald’s, students look for how many calories are in a gram of fat.</li>
 </ol></li>

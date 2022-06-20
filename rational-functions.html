@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -770,16 +771,16 @@ For example,
 <span class="math display">\[f(x) \approx g(a_0) (x-a_0)^{j_0}.\]</span></p>
 <div class="example">
 <p><span id="exm:unlabeled-div-152" class="example"><strong>Example 9.1  </strong></span>To better understand this concept let us consider <span class="math display">\[f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}.\]</span>
-We see that the function has horizontal intercepts at <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. We can also see that near <span class="math inline">\(x=-1\)</span>, the function is very similar to <span class="math display">\[g(x)= (x+1) \cdot \frac{ ((-1)-1)^2}{((-1)-2)^2}= \frac{4}{9} (x+1).\]</span> Similarly, near <span class="math inline">\(x=1\)</span> the function behaves very similarly to <span class="math inline">\(h(x)= 2(x-1)^2\)</span>.</p>
+We see that the function has horizontal intercepts (zeros) at <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. We can also see that near <span class="math inline">\(x=-1\)</span>, the function is very similar to <span class="math display">\[g(x)= (x+1) \cdot \frac{ ((-1)-1)^2}{((-1)-2)^2}= \frac{4}{9} (x+1).\]</span> Similarly, near <span class="math inline">\(x=1\)</span> the function behaves very similarly to <span class="math inline">\(h(x)= 2(x-1)^2\)</span>.</p>
 <p><img src="tikz/rational1.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 </div>
-<div id="behavior-near-singularities" class="section level4 hasAnchor" number="9.7.1.3">
-<h4><span class="header-section-number">9.7.1.3</span> Behavior near Singularities<a href="rational-functions.html#behavior-near-singularities" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div id="behavior-near-singularities-vertical-asymptotes" class="section level4 hasAnchor" number="9.7.1.3">
+<h4><span class="header-section-number">9.7.1.3</span> Behavior near Singularities (Vertical Asymptotes)<a href="rational-functions.html#behavior-near-singularities-vertical-asymptotes" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In order to determine the domain of the rational functions we consider the factors of the denominator of the function. If <span class="math inline">\((x-b_0)\)</span> is a factor in the denominator of the rational function, and <span class="math inline">\(b_0\in \mathbb{R}\)</span>, then <span class="math inline">\(b_0\)</span> is not in the domain of the function. If the degree of the factor is <span class="math inline">\(k_0\)</span>, then we see that the function can be rewritten as <span class="math display">\[f(x)= \frac{1}{(x-b_0)^{k_0}} g(x)\]</span> for a rational function <span class="math inline">\(g\)</span> with <span class="math inline">\(b_0\)</span> in the domain of <span class="math inline">\(g\)</span> and <span class="math inline">\(g(b_0)\neq 0\)</span>. So near <span class="math inline">\(x=b_0\)</span>, <span class="math display">\[f(x) \approx g(b_0) \frac{1}{(x-b_0)^{k_0}}.\]</span></p>
 <div class="example">
 <p><span id="exm:unlabeled-div-153" class="example"><strong>Example 9.2  </strong></span>Returning to our example of <span class="math inline">\(f(x)=\frac{(x-1)^2(x+1)}{(x-2)^2}\)</span>, we can see that near <span class="math inline">\(x=2\)</span> that
-<span class="math display">\[f(x) \approx \frac{3}{(x-2)^2},\]</span> as evidenced in the following graph.</p>
+<span class="math display">\[f(x) \approx \frac{3}{(x-2)^2},\]</span> and has a vertical asymptote at <span class="math inline">\(x=2\)</span>, as evidenced in the following graph.</p>
 <p><img src="tikz/rational2.png" width="50%" style="display: block; margin: auto;" /></p>
 </div>
 <p>This understanding of short-term behavior can help us to simplify certain models near given points, choose appropriate window sizes to have technology graph a function, and be able to more easily determine if the graph of a function generated by a program is accurate.</p>
@@ -787,12 +788,14 @@ We see that the function has horizontal intercepts at <span class="math inline">
 </div>
 <div id="long-term-behavior-1" class="section level3 hasAnchor" number="9.7.2">
 <h3><span class="header-section-number">9.7.2</span> Long-Term Behavior<a href="rational-functions.html#long-term-behavior-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>In order to understand the long-term behavior of rational functions we start by looking at rational functions where the degree of the numerator is less than the degree of the denominator. Such functions can be generalized as
+<p>In order to understand the long-term behavior of rational functions, we start by looking at rational functions where the degree of the numerator is less than the degree of the denominator. Such functions can be generalized as
 <span class="math display">\[f(x) = \frac{ a_0 + a_1 x + a_2 x^2 + \cdots + a_n x^n}{b_0 + b_1 x + \cdots + b_n x^n +\cdots +b_{n+r}x^{n+r}}.\]</span>
 Then by multiplying the numerator and denominator by <span class="math inline">\(x^{-(n+r)}\)</span> we have
 <span class="math display">\[f(x) = \frac{ a_0\frac{1}{x^{n+r}} + a_1 \frac{1}{x^{n+r-1}} + \cdots + a_n \frac{1}{x^{r}}}{b_0 \frac{1}{x^{n+r}} + b_1 \frac{1}{x^{n+r-1}} + \cdots + b_n \frac{1}{x} +\cdots +b_{n+r}}\]</span> and we can see that as <span class="math inline">\(|x|\)</span> gets large that most of the terms converge to <span class="math inline">\(0\)</span>. Thus,
 <span class="math display">\[\lim_{x\rightarrow \pm \infty} f(x) = \frac{0}{b_{n+r}} = 0.\]</span></p>
-<p>So we see that if the degree of the numerator is less than the degree of the denominator that the graph of the function approaches the horizontal axis as <span class="math inline">\(|x|\)</span> gets large. This is often called a horizontal asymptote of the function since the function asymptotically approaches the horizontal axis. A challenge that many students have with this terminology is that they have been told that a function cannot cross an asymptote. While that is true for vertical asymptotes, it is not true for horizontal asymptotes as seen in the graph of the function below.</p>
+<p>So we see that if the degree of the numerator is less than the degree of the denominator that the graph of the function approaches the horizontal axis as <span class="math inline">\(|x|\)</span> gets large.</p>
+<p>Another way to understand this concept is that as <span class="math inline">\(|x|\)</span> gets large, the higher degree polynomial will grow much faster than the lower degree polynomial.</p>
+<p>This is often called a horizontal asymptote of the function since the function asymptotically approaches the horizontal axis. A challenge that many students have with this terminology is that they have been told that a function cannot cross an asymptote. While that is true for vertical asymptotes, it is not true for horizontal asymptotes as seen in the graph of the function below.</p>
 <p><img src="tikz/rational3.png" width="50%" style="display: block; margin: auto;" /></p>
 <p>In fact, a function can cross its “horizontal asymptote” an infinite number of times. For example,
 <span class="math display">\[f(x)=\frac{\cos(x)}{x}.\]</span></p>
@@ -833,7 +836,7 @@ So if <span class="math inline">\(f(x)\)</span> is a rational function with nume
 <li>Describe what happens to <span class="math inline">\(f(x)\)</span> as <span class="math inline">\(x\rightarrow \infty\)</span> and as <span class="math inline">\(x \rightarrow -\infty\)</span>.</li>
 <li>What is a power series of <span class="math inline">\(f\)</span>?</li>
 </ol></li>
-<li><p>List and describe the behavior near each of the zeros and singularities for the following rational functions.</p>
+<li><p>List and describe the behavior near each of the zeros and singularities (holes and vertical asymptotes) for the following rational functions.</p>
 <ol style="list-style-type: lower-alpha">
 <li><span class="math inline">\({\displaystyle f(x)=\frac{x+3}{x^2+2x-3} }\)</span></li>
 <li><span class="math inline">\({\displaystyle f(x)=\frac{x^2-2x-24}{x^2+10x+24} }\)</span></li>

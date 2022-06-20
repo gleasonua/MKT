@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -756,10 +757,10 @@ div.csl-indent {
 </ul>
 </div>
 <p>In addition to using each of the graphical displays shown above to understand a single variable, we can use these displays to compare the distributions for different subsets of the population. For example, we will compare the time between eruptions for Old Faithful with two other geysers in Yellowstone National Park, Daisy and Riverside.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-180"></span>
-<img src="_main_files/figure-html/unnamed-chunk-180-1.png" alt="Box Plot Comparing Erruption Times of Geysers" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-181"></span>
+<img src="_main_files/figure-html/unnamed-chunk-181-1.png" alt="Box Plot Comparing Erruption Times of Geysers" width="672" />
 <p class="caption">
-Figure 15.9: Box Plot Comparing Erruption Times of Geysers
+Figure 15.10: Box Plot Comparing Erruption Times of Geysers
 </p>
 </div>
 <!---
@@ -768,21 +769,21 @@ Figure 15.9: Box Plot Comparing Erruption Times of Geysers
     %  ggplot(geyser_comparison, aes(Time, Geyser)) + geom_boxplot() + labs(x= "Time between erruptions (minutes)")+theme_bw()
 \end{center}
 --->
-<p>We can see from a comparison of their box plots that Old Faithful is definitely the most regular of the three geysers. But Daisy is also very regular, with a little longer of time between eruptions. Some of the longer lengths in eruptions for Daisy may be due to a missed eruption in the recordings. Particularly since it is not as popular of a geyser, not all of its eruptions may have been recorded. This hypothesis is further supported by clusters of outliers around two and three times the length of the eruptions for Daisy and Riverside is highly skewed right. This exploratory data analysis would then lead to a further study of the geysers with more reliable methodology to determine the time between geyser eruptions.</p>
+<p>We can see from a comparison of their box plots that Old Faithful is definitely the most regular of the three geysers. But Daisy is also very regular, with a little longer of time between eruptions since the box is similar in size to Old Faithful and shifted to the right. Some of the longer lengths in eruptions for Daisy may be due to a missed eruption in the recordings. Particularly since it is not as popular of a geyser, not all of its eruptions may have been recorded. This hypothesis is further supported by clusters of outliers around two and three times the length of the eruptions for Daisy and Riverside is highly skewed right. This exploratory data analysis would then lead to a further study of the geysers with more reliable methodology to determine the time between geyser eruptions.</p>
 <p>These graphical representations are helpful to discover relationships between an ordinal or continuous variable and a categorical variable. In the displays above, we can think of the name of the geyser as a categorical variable and the time between eruptions as a continuous variable.</p>
 <div id="scatterplots" class="section level3 hasAnchor" number="15.3.1">
 <h3><span class="header-section-number">15.3.1</span> Scatterplots<a href="exploring-bivariate-data-graphically.html#scatterplots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>It is sometimes useful to see how two continuous or ordinal variables interact with each other. To explore this interaction, a scatterplot of the data is often very helpful. For some of the eruptions of Old Faithful in July 2020 we have the length of the eruption recorded. With this additional information we create a scatterplot of the length of the previous eruption and the time between eruptions.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-182"></span>
-<img src="_main_files/figure-html/unnamed-chunk-182-1.png" alt="Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (R)" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-183"></span>
+<img src="_main_files/figure-html/unnamed-chunk-183-1.png" alt="Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (R)" width="672" />
 <p class="caption">
-Figure 15.10: Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (R)
+Figure 15.11: Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (R)
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-183"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-184"></span>
 <img src="data-examples/Old-Faithful/Eruption-Scatter-Excel.png" alt="Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (Excel)" width="90%" />
 <p class="caption">
-Figure 15.11: Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (Excel)
+Figure 15.12: Scatterplot Comparing Erruption the Duration of Prior Eruptions and the Times Between Erruptions (Excel)
 </p>
 </div>
 <!---
@@ -791,7 +792,8 @@ Figure 15.11: Scatterplot Comparing Erruption the Duration of Prior Eruptions an
     %  ggplot(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, aes(Duration_prior, inter_erruption_time)) + geom_point() + labs(x="Duration of prior eruption (minutes)", y = "Time between eruptions (minutes)") + theme_bw()
 \end{center}
 --->
-<p>From this scatterplot we can see two main clusters of eruptions, those with around 2 minute long eruptions that then have around 70 minutes until the next eruption and those with four minute eruptions with the next eruption around 90 minutes later. This could lead to a hypothesis that the length of an eruption influences the time until the next eruption. Remember that we cannot say anything definite here. Instead, we can create hypotheses and more detailed research plans to build upon these exploratory analyses to develop a more rigorous argument.</p>
+<p>While these two scatterplots may look different, it is primarily from different scales on the axes. This reminds us that we need to look at all of the information in a graph, rather than an initial scan.</p>
+<p>From this scatterplot, we can see two main clusters of eruptions, those with around 2 minute long eruptions that then have around 70 minutes until the next eruption and those with four minute eruptions with the next eruption around 90 minutes later. This could lead to a hypothesis that the length of an eruption influences the time until the next eruption. Remember that we cannot say anything definite here. Instead, we can create hypotheses and more detailed research plans to build upon these exploratory analyses to develop a more rigorous argument.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -806,6 +808,14 @@ Figure 15.11: Scatterplot Comparing Erruption the Duration of Prior Eruptions an
 <ol style="list-style-type: decimal">
 <li><p>Use the Census at School Random Sampler <a href="https://ww2.amstat.org/censusatschool/">https://ww2.amstat.org/censusatschool/</a> to create a spreadsheet with 1000 random students. Use this data set to explore possible relationships between pairs of the variables of <code>Gender</code>, <code>Age_years</code>, <code>Height_cm</code>, and <code>Armspan_cm</code> using the techniques discussed in this section. Create a report to discuss your findings.</p></li>
 <li><p>Use the tools from this section to explore possible relationships between pairs of variables of nutrition information of regular soft drinks, juices, milk, and sports drinks.</p></li>
+<li><p>Discuss the different graphical representations for different combinations of types of variables.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Categorical and Count</li>
+<li>Categorical and Continuous</li>
+<li>Continuous and Binomial</li>
+<li>Continous and Continous</li>
+<li>Ordinal and Categorial</li>
+</ol></li>
 </ol>
 </div>
 </div>

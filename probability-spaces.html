@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -760,14 +761,15 @@ div.csl-indent {
 </ul>
 <p>So for each roll, a player has six possible outcomes on the die, <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>. This set of possible outcomes is called the sample space of the random phenomenon of rolling a die.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-323" class="definition"><strong>Definition 16.1  </strong></span>The <strong>sample space</strong>, <span class="math inline">\(\Omega\)</span>, is the set of all possible outcomes of a random phenomenon. An <strong>outcome</strong>, <span class="math inline">\(\omega\)</span>, is an element of the sample space (<span class="math inline">\(\omega \in \Omega\)</span>).</p>
+<p><span id="def:unlabeled-div-321" class="definition"><strong>Definition 16.1  </strong></span>The <strong>sample space</strong>, <span class="math inline">\(\Omega\)</span>, is the set of all possible outcomes of a random phenomenon. An <strong>outcome</strong>, <span class="math inline">\(\omega\)</span>, is an element of the sample space (<span class="math inline">\(\omega \in \Omega\)</span>).</p>
 <p>An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of the sample space, <span class="math inline">\(A \subseteq \Omega\)</span>. If the random phenomenon give the outcome <span class="math inline">\(\omega\)</span>, we say that event <span class="math inline">\(A\)</span> occurred if <span class="math inline">\(\omega \in A\)</span>.</p>
 </div>
-<p>In the game of Pig we can consider the rolls in a turn to be the sample space under consideration. In this situation, each element of the sample space would be a sequence of rolls of the die, with all but a finite number being blank. So one element of this sample space would be
-<span class="math display">\[\omega = (2,3,6,5,1,.,.,\ldots)\]</span> if a person rolled a 2, then a 3, then a 6, then a 5, then a 1. After the roll of the 1, there would not be any more rolls.</p>
+<p>In the game of Pig we can consider the set of possible rolls in a turn to be the sample space under consideration. In this situation, each outcome, or element of the sample space, would be a sequence of rolls of the die, with all but a finite number being blank. So one possible outcome would be
+<span class="math display">\[\omega = (2,3,6,5,1,.,.,\ldots)\]</span> if a person rolled a 2, then a 3, then a 6, then a 5, then a 1. After the roll of the 1, there would not be any more rolls.
+An event would be a set of outcomes, or turns.</p>
 <p>Now that we have the idea of a sample space we are ready to define the probability for events in that sample space.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-324" class="definition"><strong>Definition 16.2  </strong></span>Let <span class="math inline">\(\Omega\)</span> be a sample space of outcomes and let <span class="math inline">\(\mathcal{F}\)</span> be a collection of subsets of <span class="math inline">\(\Omega\)</span> that satisfy the following (<span class="math inline">\(\sigma\)</span>-field) properties:</p>
+<p><span id="def:unlabeled-div-322" class="definition"><strong>Definition 16.2  </strong></span>Let <span class="math inline">\(\Omega\)</span> be a sample space of outcomes and let <span class="math inline">\(\mathcal{F}\)</span> be a collection of subsets of <span class="math inline">\(\Omega\)</span> that satisfy the following (<span class="math inline">\(\sigma\)</span>-field) properties:</p>
 <ul>
 <li>(S1) <span class="math inline">\(\Omega \in \mathcal{F}\)</span></li>
 <li>(S2) If <span class="math inline">\(A\in \mathcal{F}\)</span>, then <span class="math inline">\(A^c = \Omega\setminus A \in \mathcal{F}\)</span>.</li>
@@ -783,19 +785,21 @@ div.csl-indent {
 </div>
 <p>The <span class="math inline">\(\sigma\)</span>-field properties of <span class="math inline">\(\mathcal{F}\)</span> ensure that the corresponding properties of <span class="math inline">\(P\)</span> make sense. Most of the sample spaces encountered in the K-12 curriculum are finite spaces and the collection of subsets, <span class="math inline">\(\mathcal{F}\)</span>, of <span class="math inline">\(\Omega\)</span> is usually just the power set of <span class="math inline">\(\Omega\)</span>.</p>
 <p>If <span class="math inline">\(\Omega\)</span> is a non-empty set, we know that <span class="math inline">\(\Omega \in \mathcal{F}\)</span> and property (S2) says that <span class="math inline">\(\emptyset\in \mathcal{F}\)</span>. So the smallest collection of subsets of <span class="math inline">\(\Omega\)</span> that satisfy these conditions is <span class="math inline">\(\left\{ \emptyset, \Omega \right\}\)</span>.</p>
-<p>Using the generalized De Morgan’s Laws (Theorem <a href="collections-of-sets.html#thm:Generalized-De-Morgans-Laws">2.7</a>)
+<p>Using the generalized De Morgan’s Laws (Theorem <a href="collections-of-sets.html#thm:Generalized-De-Morgans-Laws">2.7</a>),
 <span class="math display">\[\bigcap_{i\in I} A_i = \left( \bigcup A_i^c \right)^c\]</span> we can combine properties (S2) and (S3) to see that the intersections of sets in <span class="math inline">\(\mathcal{F}\)</span> is also in <span class="math inline">\(\mathcal{F}\)</span>.</p>
 <p>The requirement that <span class="math inline">\(P(\Omega)=1\)</span> ensures that the probability of all possible outcomes is 1. Similarly, <span class="math inline">\(P(\emptyset)=0\)</span> is that the option of no outcome occurring is not possible.</p>
 <p>The requirement that <span class="math display">\[P\left(\bigcup_{i=1}^\infty A_i \right) = \sum_{i=1}^\infty P(A_i)\]</span> when the <span class="math inline">\(A_i\)</span> are mutually disjoint is often referred to as the countable additivity of the probability measure. Another way of describing mutually disjoint events is mutually exclusive.</p>
 <div class="definition">
-<p><span id="def:unlabeled-div-325" class="definition"><strong>Definition 16.3  </strong></span>Two events are <strong>mutually exclusive events</strong> if they cannot happen at the same time.
+<p><span id="def:unlabeled-div-323" class="definition"><strong>Definition 16.3  </strong></span>Two events are <strong>mutually exclusive events</strong> if they cannot happen at the same time.
 <span class="math display">\[A\cap B =\emptyset\]</span></p>
 </div>
 <p>In our example of playing Pig with only rolling two times on each turn we can rewrite some of our information using this new terminology. We can consider <span class="math inline">\(\Omega\)</span> to be the possible pairs of rolls, <span class="math display">\[\Omega = \left\{ (a,b) \vert a,b\in \{1,2,3,4,5,6\} \right\}\]</span> and <span class="math inline">\(\mathcal{F} = \mathcal{P}\left(\Omega \right)\)</span>. Then the probability of rolling a <span class="math inline">\(1\)</span> for at least one of the rolls would be
-<span class="math display">\[P\left( \left\{ (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,1), (3,1), (4,1), (5,1), (6,1) \right\} \right) = \frac{11}{36}\]</span> and so the probability of getting zero points for a turn using the two rolls strategy is <span class="math inline">\(\frac{11}{36}\)</span>.</p>
+<span class="math display">\[P\left( \left\{ (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,1), (3,1), (4,1), (5,1), (6,1) \right\} \right) = \frac{11}{36}\]</span> and so the probability of getting zero points for a turn using the two rolls strategy is <span class="math inline">\(\frac{11}{36}=30.5\%\)</span>.</p>
+<p>If we change the strategy to rolling three times on each turn, we see that the probability of rolling a 1 for at least one of the rolls would be <span class="math inline">\(1-P(\mbox{not rolling a 1})\)</span>. And we see that the probability of not rolling a 1 for any of the three rolls would be <span class="math display">\[\frac{5}{6}\cdot \frac{5}{6} \cdot \frac{5}{6}= \frac{125}{216}.\]</span> So the probability of rolling at least one 1, would be <span class="math inline">\(42.1\%\)</span>.</p>
+<p>So we see that as the number of rolls per turn increases, it is more likely to not score any points on a turn.</p>
 <div id="boolean-algebra-and-probability" class="section level3 hasAnchor" number="16.2.1">
 <h3><span class="header-section-number">16.2.1</span> Boolean Algebra and Probability<a href="probability-spaces.html#boolean-algebra-and-probability" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Since <span class="math inline">\(P\)</span> maps subsets of <span class="math inline">\(\Omega\)</span> into the interval <span class="math inline">\([0,1]\)</span> we need to understand how <span class="math inline">\(P\)</span> operates with the Boolean algebra of set theory and how that relates to the language of probability.</p>
+<p>Since <span class="math inline">\(P\)</span> maps subsets of <span class="math inline">\(\Omega\)</span> into the interval <span class="math inline">\([0,1]\)</span> we need to understand how <span class="math inline">\(P\)</span> operates with Boolean algebra, the algebra of sets, and how that relates to the language of probability.</p>
 <p>We first note that for two sets <span class="math inline">\(A,B\subseteq \Omega\)</span>, <span class="math inline">\(A\cap B\)</span> is the set of outcomes in <span class="math inline">\(\Omega\)</span> that are in both <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. In our example from the game of Pig with rolling twice for a turn, we can let <span class="math inline">\(A\)</span> be the set of events where a 3 is rolled on the first roll. So <span class="math display">\[A = \left\{ (3,1), (3,2), (3,3), (3,4), (3,5), (3,6)\right\} \mbox{ and } P(A) = \frac{6}{36}.\]</span> Let <span class="math inline">\(B\)</span> be the set of events where a 4 or 5 is rolled on the second roll,
 <span class="math display">\[B=\left\{ (1,4), (2,4), (3,4), (4,4), (5,4), (6,4), (1,5), (2,5), (3,5), (4,5), (5,5), (6,5)\right\} \mbox{ and } P(B) = \frac{12}{36}.\]</span> Then <span class="math inline">\(A\cap B\)</span> is the set of events where a 3 is rolled on the first roll and a 4 or 5 is rolled on the second roll,
 <span class="math display">\[A\cap B = \left\{ (3,4), (3,5)\right\} \mbox{ and } P(A\cap B) = \frac{2}{36}.\]</span></p>
@@ -812,7 +816,7 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 <p>We can notice that <span class="math display">\[P(A\cup B) = P(A) + P(B) - P(A\cap B).\]</span></p>
 <p>The following theorem generalizes this result and describes how probability measures interact with Boolean algebra of sets.</p>
 <div class="theorem">
-<p><span id="thm:unlabeled-div-326" class="theorem"><strong>Theorem 16.1  </strong></span>If <span class="math inline">\(A, B\in \mathcal{F}\)</span> and <span class="math inline">\(P:\mathcal{F}\rightarrow [0,1]\)</span> is a probability measure, then</p>
+<p><span id="thm:unlabeled-div-324" class="theorem"><strong>Theorem 16.1  </strong></span>If <span class="math inline">\(A, B\in \mathcal{F}\)</span> and <span class="math inline">\(P:\mathcal{F}\rightarrow [0,1]\)</span> is a probability measure, then</p>
 <ol style="list-style-type: lower-alpha">
 <li><span class="math inline">\(P(A^c) = 1- P(A)\)</span></li>
 <li><span class="math inline">\(P(A \setminus B) = P(A) - P(A\cap B)\)</span></li>
@@ -821,7 +825,7 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 </ol>
 </div>
 <div class="proof">
-<p><span id="unlabeled-div-327" class="proof"><em>Proof</em>. </span><strong>Proof of (a):</strong> Since <span class="math inline">\(A\in \mathcal{F}\)</span>, property (S2) says that <span class="math inline">\(A^c\)</span> is also in <span class="math inline">\(\mathcal{F}\)</span> and so <span class="math inline">\(P(A^c)\)</span> is well-defined. We also know that <span class="math inline">\(\Omega = A \cup A^c\)</span> and that <span class="math inline">\(A\cap A^c = \emptyset\)</span>. So property (P3) states that
+<p><span id="unlabeled-div-325" class="proof"><em>Proof</em>. </span><strong>Proof of (a):</strong> Since <span class="math inline">\(A\in \mathcal{F}\)</span>, property (S2) says that <span class="math inline">\(A^c\)</span> is also in <span class="math inline">\(\mathcal{F}\)</span> and so <span class="math inline">\(P(A^c)\)</span> is well-defined. We also know that <span class="math inline">\(\Omega = A \cup A^c\)</span> and that <span class="math inline">\(A\cap A^c = \emptyset\)</span>. So property (P3) states that
 <span class="math display">\[ P(\Omega) = P(A) + P(A^c).\]</span> Since <span class="math inline">\(P(\Omega)=1\)</span>, we have that <span class="math inline">\(P(A^c)=1-P(A)\)</span>.</p>
 <p><strong>Proof of (b):</strong> Let <span class="math inline">\(A,B\in \mathcal{F}\)</span>. Since <span class="math inline">\(\Omega = B \cup B^c\)</span>, we know that <span class="math display">\[A = A \cap \Omega = A \cap (B \cup B^c) = (A\cap B) \cup (A \cap B^c) = (A\cap B) \cup (A \setminus B).\]</span> Since <span class="math inline">\((A\cap B)\)</span> and <span class="math inline">\(A\setminus B\)</span> are disjoint, property (P3) gives us that <span class="math inline">\(P(A) = P(A\cap B) + P(A \setminus B)\)</span>. We can rearrange this equation so that <span class="math display">\[P(A\cap B) = P(A) - P(A\setminus B).\]</span></p>
 <p><strong>Proof of (c):</strong> Let <span class="math inline">\(A,B\in \mathcal{F}\)</span>. Then we know that
@@ -841,11 +845,17 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 </ul>
 </div>
 <p>A common example used to better understand the usefulness of the language of probability is called the ‘Monty Hall’ problem as it is based on a scenario from the game show ‘Let’s Make a Deal’ hosted by Monty Hall. In this scenario there are three doors in the game show studio. Behind one of the doors is a new car. Behind the other two doors is a goat. The contestant is asked to choose which door they think the car is behind. Monty then reveals the goat behind one of the doors that was not chosen and asks the contestant if they would like to stick with their current door or change to the new door. Because of the condition and event that one of the doors has been revealed, we see that the probability of a car behind each door has changed.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-232"></span>
+<img src="images/Monty_Little_green_alien.png" alt="Monte Hall Problem" width="60%" />
+<p class="caption">
+Figure 16.1: Monte Hall Problem
+</p>
+</div>
 <p>We will denote the sample space in this problem as
 <span class="math display">\[\Omega = \left\{ CGG, GCG, GGC\right\}\]</span> where <span class="math inline">\(CGG\)</span> denotes that the car is behind Door 1. Assume that a contestant originally chooses Door 2. Since <span class="math inline">\(P(\{GCG\})=\frac{1}{3}\)</span> their probability of winning the car is <span class="math inline">\(\frac{1}{3}\)</span>. Monty then reveals that the car is not behind Door 3 so that <span class="math inline">\(P(\{GGC\})=0\)</span>. This means that <span class="math inline">\(P(\{CCG\})=\frac{2}{3}\)</span>, meaning that the player should definitely change their choice of doors because it doubles their chance of winning a car.</p>
 <p>We can verify this conclusion by assuming that the contestant chooses Door 1 and look at the possible outcomes.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-230">Table 16.5: </span></caption>
+<caption><span id="tab:unnamed-chunk-233">Table 16.5: </span></caption>
 <colgroup>
 <col width="3%" />
 <col width="16%" />
@@ -917,6 +927,7 @@ and <span class="math inline">\(P(A\cup B) = \frac{16}{36}\)</span>.</p>
 <li><p>How likely is it that a family with five children has all boys or all girls?</p>
 <ol style="list-style-type: lower-alpha">
 <li>Answer the question by listing out all of the possible combinations of boys and girls.</li>
+<li>Show a tree diagram of this scenario.</li>
 <li>Answer the question using a simulation and estimating the probability.</li>
 <li>Answer the question using properties of compound events.</li>
 <li>Compare and contrast the different methods.</li>

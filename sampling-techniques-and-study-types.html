@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -753,16 +754,22 @@ div.csl-indent {
 <ul>
 <li><p><em>Selection bias.</em> One of the biggest causes of error when applying statistics is a bias caused by the method of selecting the sample for the analysis. There are many types of sampling techniques that researchers use to simplify the data collection process, with some of the most common listed below.</p>
 <ul>
-<li>Judgement (purposive) sampling or purposive samples</li>
-<li>Snowball sampling</li>
-<li>Quota sampling</li>
-<li>Convenience (accidental, opportunity) sampling</li>
-<li>Voluntary sampling</li>
-<li>Consecutive Samples: Keep accepting responses until the desired number of samples is achieved.</li>
+<li><p>Judgement (purposive) sampling or purposive samples</p>
+<p>The researcher uses their own judgement when choosing members of the population for the sample.</p></li>
+<li><p>Snowball sampling</p>
+<p>The researcher uses participants to recruit more participants.</p></li>
+<li><p>Quota sampling</p>
+<p>The researcher chooses a sample to represent the proportions that exist in the population.</p></li>
+<li><p>Convenience (accidental, opportunity) sampling</p>
+<p>The researcher samples from a subset of the population that is easier to obtain. For example, students in a college class to represent the population of adults.</p></li>
+<li><p>Voluntary sampling</p>
+<p>The sample from the population is based on volunteers participating, rather than those randomly selected.</p></li>
+<li><p>Consecutive Samples</p>
+<p>The researcher continues accepting responses until the desired number of samples is achieved.</p></li>
 </ul></li>
 <li><p><em>Random sampling error.</em> Another large cause of error in statistics arises as part of the random sampling process. Even if everything is done perfectly, any time one chooses a sample to represent a larger population, there is error introduced. This type of error can never be removed, but can be controlled and understood by paying attention to the sample size and the sample’s representation of the overall population represented.</p></li>
-<li><p><em>Coverage error.</em> If a researcher wishes to study the opinions and preferences of registered voters they may choose to use a data base of phone numbers. Since not all voters have a listed phone number and particular demographics are more likely to block unknown numbers on their phones, and under-coverage error may occur. If the researcher instead uses a list of email addresses it is very likely that a person may be contacted multiple times for the same survey if they have multiple email addresses. This would result in a possible over-coverage error.</p></li>
-<li><p><em>Measurement error.</em> Any time that we try to measure something (the width of an object, a person’s opinion, a student’s knowledge) we cannot be entirely precise do to problems with our measurement techniques and instruments. Since we cannot eliminate the errors causes by the issues, we try to understand and control for these errors. For instance, if someone is trying to determine a person’s opinion about something, the way that the question is phrased can have a very significant effect on how the person answers. In order to minimize this effect pilot groups are used to check how different people interpret the questions and questions are then rephrased.</p></li>
+<li><p><em>Coverage error.</em> If a researcher wishes to study the opinions and preferences of registered voters, they may choose to use a data base of phone numbers. Since not all voters have a listed phone number, and particular demographics are more likely to block unknown numbers on their phones, an under-coverage error may occur. If the researcher instead uses a list of email addresses it is very likely that a person may be contacted multiple times for the same survey if they have multiple email addresses. This would result in a possible over-coverage error.</p></li>
+<li><p><em>Measurement error.</em> Any time that we try to measure something (the width of an object, a person’s opinion, a student’s knowledge) we cannot be entirely precise do to problems with our measurement techniques and instruments. Since we cannot eliminate the errors caused by the issues, we try to understand and control for these errors. For instance, if someone is trying to determine a person’s opinion about something, the way that the question is phrased can have a very significant effect on how the person answers. In order to minimize this effect, pilot groups (a smaller test sample) are used to check how different people interpret the questions and questions are then rephrased.</p></li>
 <li><p><em>Processing error.</em> Sometimes errors arise in the transfer and handling of data (i.e. copying information between a form and a spreadsheet) in the data collection and analysis process. These errors can be reduced by creating detailed protocols and having multiple people checking the work. However, even with the best protocols and backup contingencies, some processing errors make it through.</p></li>
 <li><p><em>Non-response or participation bias.</em> Since most people do not like taking polls or surveys, there is likely to be a non-response bias. It is important in the data analysis process to try to understand this bias and take it into account in the design and interpretation of the analysis.</p></li>
 </ul>
@@ -770,14 +777,14 @@ div.csl-indent {
 </div>
 <div id="probability-sampling" class="section level3 hasAnchor" number="17.1.2">
 <h3><span class="header-section-number">17.1.2</span> Probability Sampling<a href="sampling-techniques-and-study-types.html#probability-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>As our previous discussion shows, there are a lot of ways that we can bias a sample unintentionally by not doing a good job of picking our sample to reflect our population of interest. Statisticians have a solution to this that you have probably heard of called random sampling. Randomness (or probability sampling) introduces a way to gain a sample that is likely to be reflective of your population, but this is not as simple as it sounds–there are different ways to sample randomly, each which help address different bias’ you may want to avoid in your sample.</p>
+<p>As our previous discussion shows, there are a lot of ways that we can bias a sample unintentionally by not doing a good job of picking our sample to reflect our population of interest. Statisticians have a solution to this that you have probably heard of called <em>random sampling</em>. Randomness (or probability sampling) introduces a way to gain a sample that is likely to be reflective of your population, but this is not as simple as it sounds–there are different ways to sample randomly, each which help address different biases you may want to avoid in your sample.</p>
 <p>To understand these, imagine you want to understand the citizens opinions about environmental regulation in a large city. The city has <span class="math inline">\(N\)</span> people (your population) and you plan to sample <span class="math inline">\(n\)</span> of them (where <span class="math inline">\(n\leq N\)</span>).</p>
 <p><strong>Simple random sampling</strong> occurs when each person in the population (here, the city’s citizens) has the same probability of being in your sample and this probability is <span class="math inline">\(\frac{n}{N}\)</span>. With this method, we will have a sample that reflects our population.</p>
 <p><strong>Systematic sampling</strong> is similar, but instead of selecting your <span class="math inline">\(n\)</span> people at random from the population, you apply some order to the population and then pick every <span class="math inline">\(k\)</span>th person, where <span class="math inline">\(k\)</span> is chosen to ensure the correct sample size at the end of the list. So, for our question, an order may be placed by listing all residential addresses, with a survey team member knocking on every <span class="math inline">\(100\)</span>th address in order to get a sample of 10 percent of the city’s population.</p>
-<p>Both simple random sampling and system sampling provide a random sample, but assume the population is uniform across all the ways that might be important to your question. If there are reasons to expect that is not the case, then, depending on how big <span class="math inline">\(n\)</span> is relative to <span class="math inline">\(N\)</span>, these techniques may not include people who are members of small groups that are important to you, but not likely to carry a lot of weight in a small sample.</p>
+<p>Both simple random sampling and systematic sampling provide a random sample and so are both good sampling techniques. How a researcher would choose between the two options would be dependent upon the context. However, both of the sampling techniques assume the population is uniform across all the ways that might be important to your question. If there are reasons to expect that is not the case, then, depending on how big <span class="math inline">\(n\)</span> is relative to <span class="math inline">\(N\)</span>, these techniques may not include people who are members of small groups that are important to you, but not likely to carry a lot of weight in a small sample.</p>
 <p>For example, say your city has 100,000 people, and you sample 200 of them. If you are particularly interested in how families with children under 5 years old feel about your question, but only about 5 percent of your city’s population are in this situation, you can expect that about 10 of your 200 people sample meet this criteria. This may not be enough representation of this particular group to have sufficient variance to understand their feelings about the environment.</p>
 <p>You could resolve this issue by increasing your sample size, but collecting data tends to be costly, especially if you want a representative sample, so other ways have been developed to preserve randomness while increasing the representation of important categories within the sample.</p>
-<p><strong>Stratified random</strong> and <strong>cluster sampling</strong> are sampling techniques that follow this.</p>
+<p><strong>Stratified random</strong> and <strong>cluster sampling</strong> are sampling techniques that follow this. These techniques divide the overall population into sub-groups and then used random sampling techiques for each of these sub-populations.</p>
 <p>So, while “random” is good for sampling, it is not enough–you need to attend to the characteristics of how people are being chosen.</p>
 </div>
 <div id="study-types" class="section level3 hasAnchor" number="17.1.3">
@@ -792,14 +799,20 @@ div.csl-indent {
 <li>(HSS.IC.3) Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each.</li>
 </ul>
 </div>
-<p>Studies without random assignment still can teach us a lot, but the causal pathway may be less clear. Many studies involve randomness, but randomness serves a different function within the study. For example, say we are interested in the relationship between the health of a population and the level of air pollution in their neighborhood. To investigate this question, we pick a random sample of people from a variety of neighborhoods and measure their health and the level of pollution in their neighborhood. This situation includes the selection of a random sample, but it is not an experiment because we do not have control over their conditions–we cannot, once a person is selected for our study, assign to them the condition of whether they have high or low pollution in their neighborhood–instead, we observe the variables of interest. Studies characterized by observing variables of interested on a sample are called observational studies. Note that observational studies are not defined by the presence of randomization, but , we often use sampling techniques such as stratified random sampling, to ensure we have enough variation in our sample to</p>
+<p>Studies without random assignment can still teach us a lot, but the causal pathway may be less clear. Many studies involve randomness, but randomness serves a different function within the study. For example, say we are interested in the relationship between the health of a population and the level of air pollution in their neighborhood. To investigate this question, we pick a random sample of people from a variety of neighborhoods and measure their health and the level of pollution in their neighborhood. This situation includes the selection of a random sample, but it is not an experiment because we do not have control over their conditions–we cannot, once a person is selected for our study, assign to them the condition of whether they have high or low pollution in their neighborhood–instead, we observe the variables of interest. Studies characterized by observing variables of interested on a sample are called observational studies.</p>
 <p>A last common type of study is one in which a person uses a sample of convenience. For example, say an engineer is investigating the quality of widgets coming off the line of one of their machines. They use the 20 that came off the line first. This is a sample survey, but there is not randomization going on. These survey samples are common and characterized by the lack of randomization, either in terms of how the sample is collected or in how conditions are assigned. Such studies types are still valuable, but more in providing evidence that a pattern may exist. A more careful study that includes intentional sampling to better account for possible sources of variance and/or random sampling or assignment can improve and strengthen claims.</p>
 <p>Note that the above discussion is about the role of randomness in terms of a study type. The sampling type also contributes to the characterization of a study and together, these elements build the study design.</p>
+<!--- ### Association and Causation --->
 </div>
 <div id="exercises-71" class="section level3 hasAnchor" number="17.1.4">
 <h3><span class="header-section-number">17.1.4</span> Exercises<a href="sampling-techniques-and-study-types.html#exercises-71" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li>Write a summary of the various non-probabilistic sampling techniques listed at the beginning of this section.</li>
+<li><p>Write a summary of the various non-probabilistic sampling techniques listed at the beginning of this section.</p></li>
+<li><p>Suppose that a theme park wants to get information to discover ways to improve the park experience and to increase the number of attendees.</p>
+<ol style="list-style-type: lower-alpha">
+<li>What are different statistical questions that would be appropriate for such a study?</li>
+<li>What types of sampling methods would be appropriate for answering these questions?</li>
+</ol></li>
 </ol>
 </div>
 </div>

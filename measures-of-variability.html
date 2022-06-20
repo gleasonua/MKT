@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -754,10 +755,10 @@ div.csl-indent {
 % mean(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="HONOLULU INTERNATIONAL AIRPORT, HI US"])
 --->
 Since the average temperatures are a balance between the highs and lows, these two cities can have the same average temperatures, even though they have drastically different climates. So it is helpful to have numerical measures of how much variation exists.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-188"></span>
-<img src="_main_files/figure-html/unnamed-chunk-188-1.png" alt="Temperatures for Phoenix and Honolulu" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-189"></span>
+<img src="_main_files/figure-html/unnamed-chunk-189-1.png" alt="Temperatures for Phoenix and Honolulu" width="672" />
 <p class="caption">
-Figure 15.12: Temperatures for Phoenix and Honolulu
+Figure 15.13: Temperatures for Phoenix and Honolulu
 </p>
 </div>
 <!---
@@ -771,13 +772,13 @@ Figure 15.12: Temperatures for Phoenix and Honolulu
 <div class="definition">
 <p><span id="def:unlabeled-div-316" class="definition"><strong>Definition 15.5  </strong></span>The <strong>innerquartile range (IQR)</strong> is based on the division of the data set into quartiles, Q1 is the median of the lower half of the ranked data set, Q2 is the median of the data set, and Q3 is the median of the upper half of the ranked data set. The IQR of the data set is then Q3-Q1.</p>
 </div>
-<p>In our example comparing the temperatures of Phoenix and Honolulu we see these quartile values are very different.
+<p>In our example comparing the temperatures of Phoenix and Honolulu, we see these quartile values are very different.
 <!---
 % quantile(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="PHOENIX"])
 % quantile(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="HONOLULU"])
 ---></p>
 <table>
-<caption><span id="tab:unnamed-chunk-190">Table 15.1: </span>Five Point Summary of Temperatures for Phoenix and Honolulu</caption>
+<caption><span id="tab:unnamed-chunk-191">Table 15.1: </span>Five Point Summary of Temperatures for Phoenix and Honolulu</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -812,10 +813,10 @@ Figure 15.12: Temperatures for Phoenix and Honolulu
 </table>
 <p>These values are represented graphically in the box plots with Q1 being the left side of the box, Q3 being the right side of the box, and IQR being the width of the box.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="measures-of-variability.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HonoluluPhoenixClimate, <span class="fu">aes</span>(TMAX)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> <span class="fu">factor</span>(NAME))) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;High Temperatures&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>())</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-191"></span>
-<img src="_main_files/figure-html/unnamed-chunk-191-1.png" alt="Box Plot Comparing Temperatures of Phoenix and Honolulu" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-192"></span>
+<img src="_main_files/figure-html/unnamed-chunk-192-1.png" alt="Box Plot Comparing Temperatures of Phoenix and Honolulu" width="672" />
 <p class="caption">
-Figure 15.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
+Figure 15.14: Box Plot Comparing Temperatures of Phoenix and Honolulu
 </p>
 </div>
 <p>While the quartiles are commonly used to describe the variation of a data set in terms of its middle values, we will see in later chapters that with hypothesis testing it is standard to look for the location of 95% of the values in a data set.</p>
@@ -832,7 +833,7 @@ Figure 15.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
 \end{center}
 --->
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="measures-of-variability.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HonoluluPhoenixClimate, <span class="fu">aes</span>(DATE, TMAX)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> <span class="fu">factor</span>(NAME))) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Date&quot;</span>, <span class="at">y=</span><span class="st">&quot;Maximum temperature (F)&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;Location&quot;</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="dv">79</span>), <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="fl">92.0</span>), <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="dv">59</span>), <span class="at">color=</span><span class="st">&quot;cyan&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="fl">110.8</span>), <span class="at">color=</span><span class="st">&quot;cyan&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-192-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-193-1.png" width="672" /></p>
 <p>Each of the prior methods of measuring variability involves ranking the data and then describing the data that fits within certain intervals. Because these measures of variability depend only on the rank of the data, they can be used with either ordinal or continuous data.</p>
 <p>When a variable is a continuous numeric variable, another way to describe the variability is to measure how much the data set differs from one of the centers of the data set. With such measurements, we want the value to become more reliable as we increase the number of points in our data set and so we want to measure some type of average of distances from the center. The most basic of these measure is the mean absolute deviation.</p>
 <div class="definition">
@@ -841,7 +842,7 @@ Figure 15.13: Box Plot Comparing Temperatures of Phoenix and Honolulu
 <p>While any center of the data set could be used, the most common center for the mean absolute deviation is the arithmetic mean.</p>
 </div>
 <p>The mean absolute deviation can be found using spreadsheets with the function <code>AVEDEV</code> and in R using <code>MeanAD</code>.</p>
-<p>For Phoenix, the mean absolute deviation in the temperatures is 14.5 degrees, while Honolulu is only 3.4 degrees.</p>
+<p>For Phoenix, the mean absolute deviation in the temperatures is 14.5 degrees, while Honolulu is only 3.4 degrees. This gives another single quantity that demonstrates that Honolulu has much less variability in temperatures.</p>
 <!---
 % library(DescTools)
 % MeanAD(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="PHOENIX"])
@@ -868,7 +869,7 @@ The <strong>variance</strong> of the data set is the square of the standard devi
 <p>We will look at some of the key properties of the variance in the next chapter on probability, but one key aspect of the variance is that it is equal to the difference between the mean of the squares and the square of the means of the values in the data set,
 <span class="math display">\[\sigma^2 = \left(\frac{1}{n} \sum_{i=1}^n x_i^2\right) - \left( \frac{1}{n} \sum_{i=1}^n x_i \right)^2.\]</span></p>
 <p>The spreadsheet functions to find the standard deviation and variance for a population are <code>STDEV</code> and <code>VAR</code> with the corresponding functions in R being <code>sd</code> and <code>var</code>. If the data set represents a sample of a larger population, the formulas and commands are slightly different and will be discussed in Chapter <a href="simulations.html#simulations">16</a>.</p>
-<p>When we compute the standard deviation and the variance of the high temperatures for Phoenix and Honolulu we find that the standard deviations (16.98 and 4.10 degrees, respectively) are similar to the mean absolute deviations, with the standard deviations being slightly larger.</p>
+<p>When we compute the standard deviation and the variance of the high temperatures for Phoenix and Honolulu, we find that the standard deviations (16.98 and 4.10 degrees, respectively) are similar to the mean absolute deviations, with the standard deviations being slightly larger.</p>
 <!---
 
 % var(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="PHOENIX"])    288.2142
@@ -879,7 +880,9 @@ The <strong>variance</strong> of the data set is the square of the standard devi
 <div id="exercises-65" class="section level3 hasAnchor" number="15.5.1">
 <h3><span class="header-section-number">15.5.1</span> Exercises<a href="measures-of-variability.html#exercises-65" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li>Use the Census at School Random Sampler <a href="https://ww2.amstat.org/censusatschool/">https://ww2.amstat.org/censusatschool/</a> to create a spreadsheet with 1000 random students. Use this data set to explore the variability of the variables of <code>Age_years</code>, <code>Height_cm</code>, <code>Travel_time_to_school</code>, and <code>Armspan_cm</code> using the techniques discussed in this section. Create a report to discuss your findings.</li>
+<li><p>Use the Census at School Random Sampler <a href="https://ww2.amstat.org/censusatschool/">https://ww2.amstat.org/censusatschool/</a> to create a spreadsheet with 1000 random students. Use this data set to explore the variability of the variables of <code>Age_years</code>, <code>Height_cm</code>, <code>Travel_time_to_school</code>, and <code>Armspan_cm</code> using the techniques discussed in this section. Create a report to discuss your findings.</p></li>
+<li><p>How would ‘outliers’ affect the different measures of variability?</p></li>
+<li><p>List out the measures of variability in this section and describe possible uses for each of them.</p></li>
 </ol>
 </div>
 </div>

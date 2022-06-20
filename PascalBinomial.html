@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>13.3 Translations | Mathematical Knowledge for Secondary Teachers</title>
+  <title>6.2 Pascal’s Triangle and the Binomial Theorem | Mathematical Knowledge for Secondary Teachers</title>
   <meta name="description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="13.3 Translations | Mathematical Knowledge for Secondary Teachers" />
+  <meta property="og:title" content="6.2 Pascal’s Triangle and the Binomial Theorem | Mathematical Knowledge for Secondary Teachers" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="13.3 Translations | Mathematical Knowledge for Secondary Teachers" />
+  <meta name="twitter:title" content="6.2 Pascal’s Triangle and the Binomial Theorem | Mathematical Knowledge for Secondary Teachers" />
   
   <meta name="twitter:description" content="A textbook for mathematics courses for pre-service and in-service secondary mathematics teachers" />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="representations-of-the-euclidean-plane.html"/>
-<link rel="next" href="rotations.html"/>
+<link rel="prev" href="divisibility.html"/>
+<link rel="next" href="counting.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -746,111 +746,124 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="translations" class="section level2 hasAnchor" number="13.3">
-<h2><span class="header-section-number">13.3</span> Translations<a href="translations.html#translations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Our first type of isometry that we discuss are translations that involve a shifting of the plane, without any turning. If we use a sheet of paper to represent the plane, these transformations are a sliding of the paper without changing the orientation of the paper. Intuitively we see that this really does not change the plane at all, it just changes our perspective of the plane.</p>
-<div id="synthetic-plane-1" class="section level3 hasAnchor" number="13.3.1">
-<h3><span class="header-section-number">13.3.1</span> Synthetic Plane<a href="translations.html#synthetic-plane-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="definition">
-<p><span id="def:unlabeled-div-275" class="definition"><strong>Definition 13.10  </strong></span>Given a segment <span class="math inline">\(\overline{AB}\)</span>, we define the translation <span class="math inline">\(T_{\overline{AB}}\)</span> for every point <span class="math inline">\(C\)</span> by <span class="math inline">\(C&#39;=T_{\overline{AB}}(C)\)</span> is the unique point in the plane so that <span class="math inline">\(\overline{CC&#39;}\)</span> has the same length as <span class="math inline">\(\overline{AB}\)</span> and is parallel to <span class="math inline">\(\overline{AB}\)</span>.</p>
+<div id="PascalBinomial" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Pascal’s Triangle and the Binomial Theorem<a href="PascalBinomial.html#PascalBinomial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Pacal’s Triangle is a triangular array where each entry is the sum of the two entries above that location, see Figure <a href="PascalBinomial.html#fig:pascalgif">6.1</a>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pascalgif"></span>
+<img src="images/PascalTriangleAnimated2.gif" alt="Animated Figure of Pascal's Triangle" width="30%" />
+<p class="caption">
+Figure 6.1: Animated Figure of Pascal’s Triangle
+</p>
 </div>
-<p>So if we start with a segment <span class="math inline">\(\overline{AB}\)</span> and a point <span class="math inline">\(C\)</span>, we can find the midpoint of the segment <span class="math inline">\(\overline{BC}\)</span> and label it as <span class="math inline">\(D\)</span>. Then we find the point on the line <span class="math inline">\(\overleftrightarrow{AD}\)</span> that is the same distance from <span class="math inline">\(D\)</span> as <span class="math inline">\(A\)</span>, and label the point <span class="math inline">\(C&#39;\)</span>.</p>
-<p>If <span class="math inline">\(C\)</span> was not on the line <span class="math inline">\(\overleftrightarrow{AB}\)</span>, <span class="math inline">\(\overline{BC}\)</span> and <span class="math inline">\(\overline{AC&#39;}\)</span> bisect each other, and so <span class="math inline">\(ABC&#39;C\)</span> is a parallelogram and so <span class="math inline">\(\overline{CC&#39;}\)</span> is the same length as, and parallel to, <span class="math inline">\(\overline{AB}\)</span>.</p>
-<p><img src="images/Translation_synthetic.jpg" width="35%" style="display: block; margin: auto;" /></p>
-<p>If <span class="math inline">\(C\)</span> was on the line <span class="math inline">\(\overline{AB}\)</span>, we see that <span class="math inline">\(C&#39;\)</span> is also on the same line and the length of <span class="math inline">\(\overline{CC&#39;}\)</span> is the same as <span class="math inline">\(\overline{AB}\)</span>. So we see that the translations on the synthetic plane are constructible.</p>
-<p>To prove that these translations are isometries we let <span class="math inline">\(C\)</span> and <span class="math inline">\(D\)</span> be any two points of the plane and we let <span class="math inline">\(C&#39;=T_{\overline{AB}}(C)\)</span> and <span class="math inline">\(D&#39;=T_{\overline{AB}}(D)\)</span>. Since <span class="math inline">\(\overline{CC&#39;}\)</span> and <span class="math inline">\(\overline{DD&#39;}\)</span> are two segments of the same length and are parallel to one another, properties of parallelograms determine that <span class="math inline">\(CDD&#39;C&#39;\)</span> is a parallelogram and <span class="math inline">\(\overline{CD}\)</span> is the same length as <span class="math inline">\(\overline{C&#39;D&#39;}\)</span>. So the translation maintains the distance between points on the plane.</p>
+<p>While Pascal published this information in 1665 in his <em>Traité du triangle arithmétique</em>, the concept was know in many cultures centuries earlier.</p>
+<p>Acharya Pingala demonstrated a knowledge of the key components of <span class="math inline">\({n \choose k} = {n-1 \choose k} + {n-1 \choose k-1}\)</span> in the 2nd century BC in India. Pascal’s triangle was known in China in the early 11th century through the work of the Chinese mathematician Jia Xian (1010–1070). In the 13th century, Yang Hui (1238–1298) presented the triangle and hence it is still called Yang Hui’s triangle in China.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pascalJian"></span>
+<img src="images/Yanghui_triangle.png" alt="Yang Hui's Triangle" width="30%" />
+<p class="caption">
+Figure 6.2: Yang Hui’s Triangle
+</p>
+</div>
+<p>In Iran, this is known as the Khayyam triangle as Omar Khayyám wrote about this triangle in the 11th century in Persia. Even in Europe, the concepts of Pascal’s triangle were known for centuries by Jordanus de Nemore (13th century); Gersonides (14th century); along with Petrus Apianus, Niccolò Fontana Tartaglia, and Gerolamo Cardano (16th century). Pascal took much of this prior work and put it together into a single treatise that connected the concepts to probability theory, causing Abraham de Moivre to name it Pascal’s Triangle in 1730.</p>
+<p>We can see the first several rows of Pascal’s triangle below.</p>
+<p><span class="math display">\[\begin{array}{lccccccccccccccc}
+n=0: &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=1: &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=2: &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 2 &amp;  &amp; 1 &amp; &amp; &amp; &amp; &amp; \\
+n=3: &amp; &amp; &amp; &amp; &amp; 1 &amp;  &amp; 3 &amp;  &amp; 3  &amp;  &amp; 1 &amp; &amp; &amp; &amp; \\
+n=4: &amp; &amp; &amp; &amp; 1 &amp;  &amp; 4 &amp;  &amp; 6  &amp; &amp; 4 &amp;  &amp; 1 &amp; &amp; &amp; \\
+n=5: &amp; &amp; &amp; 1 &amp;  &amp; 5 &amp;  &amp; 10  &amp;   &amp; 10 &amp;  &amp; 5  &amp;  &amp; 1 &amp; &amp; \\
+n=6: &amp; &amp; 1 &amp;  &amp; 6 &amp;  &amp; 15  &amp;  &amp; 20  &amp;  &amp; 15  &amp; &amp; 6 &amp;  &amp; 1 &amp; \\
+n=7: &amp; 1&amp;  &amp; 7 &amp;  &amp; 21  &amp; &amp; 35 &amp;  &amp; 35 &amp;  &amp; 21 &amp;  &amp; 7 &amp;  &amp; 1 \\
+\end{array}\]</span></p>
+<p>For each <span class="math inline">\(n\in \mathbb{N}\)</span>, we define label the <span class="math inline">\(n^{\mathrm{th}}\)</span> row and <span class="math inline">\(k^{\mathrm{th}}\)</span> column as <span class="math inline">\(\binom{n}{k}\)</span>. So we see that for all <span class="math inline">\(n\)</span> that <span class="math display">\[\binom{n}{0} = 1 \quad \mbox{and} \quad \binom{n}{n}=1.\]</span> For <span class="math inline">\(n&gt;1\)</span> and <span class="math inline">\(1\leq k \leq n-1\)</span> we define <span class="math display">\[\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}.\]</span> So Pascal’s Triangle is often written with this notation that we can see below.</p>
+<p><span class="math display">\[\begin{array}{lccccccccccccccc}
+n=0: &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \binom{0}{0} &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=1: &amp; &amp; &amp; &amp; &amp; &amp; &amp; \binom{1}{0} &amp;  &amp; \binom{1}{1} &amp; &amp; &amp; &amp; &amp; &amp; \\
+n=2: &amp; &amp; &amp; &amp; &amp; &amp; \binom{2}{0} &amp;  &amp; \binom{2}{1} &amp;  &amp; \binom{2}{2} &amp; &amp; &amp; &amp; &amp; \\
+n=3: &amp; &amp; &amp; &amp; &amp; \binom{3}{0} &amp;  &amp; \binom{3}{1} &amp;  &amp; \binom{3}{2}  &amp;  &amp; \binom{3}{3} &amp; &amp; &amp; &amp; \\
+n=4: &amp; &amp; &amp; &amp; \binom{4}{0} &amp;  &amp; \binom{4}{1} &amp;  &amp; \binom{4}{2}  &amp; &amp; \binom{4}{3} &amp;  &amp; \binom{4}{4} &amp; &amp; &amp; \\
+n=5: &amp; &amp; &amp; \binom{5}{0} &amp;  &amp; \binom{5}{1} &amp;  &amp; \binom{5}{2}  &amp;   &amp; \binom{5}{3} &amp;  &amp; \binom{5}{4}  &amp;  &amp; \binom{5}{5} &amp; &amp; \\
+n=6: &amp; &amp; \binom{6}{0} &amp;  &amp; \binom{6}{1} &amp;  &amp; \binom{6}{2}  &amp;  &amp; \binom{6}{3}  &amp;  &amp; \binom{6}{4}  &amp; &amp; \binom{6}{5} &amp;  &amp; \binom{6}{6} &amp; \\
+n=7: &amp; \binom{7}{0} &amp;  &amp; \binom{7}{1} &amp;  &amp; \binom{7}{2}  &amp; &amp; \binom{7}{3} &amp;  &amp; \binom{7}{4} &amp;  &amp; \binom{7}{5} &amp;  &amp; \binom{7}{6} &amp;  &amp; \binom{7}{7} \\
+\end{array}\]</span></p>
+<p>This notation is very common when we look at combinations and permutations. We often think of <span class="math inline">\(\binom{n}{k}\)</span> as the number of ways that we can choose <span class="math inline">\(k\)</span> things out of <span class="math inline">\(n\)</span> total options. For instance, if we have <span class="math inline">\(20\)</span> people and we need a committee of <span class="math inline">\(5\)</span>, there are <span class="math inline">\(\binom{20}{5}\)</span> ways of creating such a committee. We will go into this perspective in more detail in the next section.</p>
+<div id="binomial-theorem" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Binomial Theorem<a href="PascalBinomial.html#binomial-theorem" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<!--- Give historical background and text --->
+<p>An important application of Pascal’s triangle is its relationship to the coefficients of the Binomial Theorem.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
 </div>
 <ul>
-<li>(HSG.CO.4) Develop definitions of rotations, reflections, and translations in terms of angles, circles, perpendicular lines, parallel lines, and line segments.</li>
+<li>(HSA.APR.4) Know and apply the Binomial Theorem for the expansion of <span class="math inline">\((x+y)^n\)</span> in powers of <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> for a positive integer <span class="math inline">\(n\)</span>, where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> are any numbers, with coefficients determined for example by Pascal’s Triangle.</li>
 </ul>
 </div>
+<div class="theorem">
+<p><span id="thm:binomial" class="theorem"><strong>Theorem 6.3  (Binomial Theorem) </strong></span>Let <span class="math inline">\(a,b\)</span> be in a number system with the distribution property and <span class="math inline">\(ab=ba\)</span>, and let <span class="math inline">\(n\in \mathbb{N}\)</span>, then
+<span class="math display">\[(a+b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1}b^1 + \cdots + \binom{n}{n-1} a^{1}b^{n-1} + \binom{n}{n} a^0 b^n.\]</span></p>
 </div>
-<div id="cartesian-plane-and-vector-space" class="section level3 hasAnchor" number="13.3.2">
-<h3><span class="header-section-number">13.3.2</span> Cartesian Plane and Vector Space<a href="translations.html#cartesian-plane-and-vector-space" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>When we add the coordinates to the plane, the definition and properties of the translation become easier to describe due to the increased amount of information provided by the Cartesian coordinate system. In particular, since any translation can be viewed as a combination of horizontal and vertical translations we see that a translation of a set length in a certain direction is defined by these two simpler translations.</p>
-<div class="definition">
-<p><span id="def:unlabeled-div-276" class="definition"><strong>Definition 13.11  </strong></span>Given a point <span class="math inline">\((h,k)\in \mathbb{R}^2\)</span>, we define <span class="math inline">\(T_{(h,k)}\)</span> by <span class="math display">\[T_{(h,k)} \left( (x,y)\right) = (x+h,y+k).\]</span></p>
-</div>
-<p>A translation corresponding to a line segment between the points <span class="math inline">\(A=(a_1,a_2)\)</span> and <span class="math inline">\(B=(b_1,b_2)\)</span> in this perspective corresponds to the point <span class="math inline">\((h,k)\)</span>, where <span class="math inline">\(h=b_1-a_1\)</span> and <span class="math inline">\(k=b_2-a_2\)</span>. We can also show that translations are isometries using this perspective by letting <span class="math inline">\(C=(c_1,c_2)\)</span> and <span class="math inline">\(D=(d_1,d_2)\)</span> be two points in <span class="math inline">\(\mathbb{R}^2\)</span> and let <span class="math inline">\((h,k)\)</span> be a point in <span class="math inline">\(\mathbb{R}^2\)</span>. Then</p>
-<p><span class="math display">\[\begin{align*}
-    d\left( T_{(h,k)}(C), T_{(h,k)}(D)\right) &amp; = d\left( (c_1+h,c_2+k), (d_1+h,d_2+k)\right) \\
-     &amp; = \sqrt{ \left( (d_1+h)-(c_1+h)\right)^2 + \left( (d_2+k)-(c_2+k)\right)^2 } \\
-     &amp; = \sqrt{ (d_1-c_1)^2 + (d_2-c_2)^2 } = d\left(C,D\right)
+<p>We need commutativity of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> so that <span class="math inline">\(b (a^k b^l) = a^k b^{l+1}\)</span> in the proof below.</p>
+<div class="proof">
+<p><span id="unlabeled-div-82" class="proof"><em>Proof</em>. </span>We will prove this using induction on the exponent. So for <span class="math inline">\(a,b\)</span> and for <span class="math inline">\(n\in \mathbb{N}\)</span> we let <span class="math inline">\(P(n)\)</span> be the statement that <span class="math display">\[(a+b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1}b^1 + \cdots + \binom{n}{n-1} a^{1}b^{n-1} + \binom{n}{n} a^0 b^n.\]</span></p>
+<p>We will often compress this statement using summation notation into <span class="math display">\[(a+b)^n = \sum_{j=0}^n \binom{n}{j} a^{n-j}b^j\]</span> in order to reduce the amount of writing. <em>Remember that mathematicians are inherently lazy and want to compress as much information into as few symbols as possible.</em></p>
+<p>So <span class="math inline">\(P(0)\)</span> is the statement that <span class="math inline">\((a+b)^0 = 1\)</span>, which is defined to be true.</p>
+<p>If we assume that for some integer <span class="math inline">\(m\)</span> that <span class="math inline">\(P(m)\)</span> is true, we see that
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; (a+b) \cdot (a+b)^m\\
+= &amp; (a+b) \left( \binom{m}{0} a^m b^0 + \binom{m}{1} a^{m-1}b^1 + \cdots + \binom{m}{m-1} a^{1}b^{m-1} + \binom{m}{m} a^0 b^m\right) \\
+= &amp; (a+b) \left( \sum_{j=0}^m \binom{m}{j} a^{m-j} b^j \right) \\
 \end{align*}\]</span>
-and so <span class="math inline">\(T_{(h,k)}\)</span> maintains distances.</p>
-<p>Using a basic understanding of vectors, the properties of translations in the Cartesian perspective translate very easily to the vector space perspective.</p>
-<div class="definition">
-<p><span id="def:unlabeled-div-277" class="definition"><strong>Definition 13.12  </strong></span>Given a vector <span class="math inline">\(\langle h,k\rangle\)</span>, we define <span class="math inline">\(T_{\langle h,k \rangle}\)</span> by <span class="math display">\[T_{\langle h,k \rangle} \left( \langle x,y\rangle \right) = \langle x,y \rangle + \langle h,k \rangle = \langle x+h,y+k\rangle.\]</span></p>
+We then distribute the summation over <span class="math inline">\((a+b)\)</span> and get
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; \left( \sum_{j=0}^m \binom{m}{j} a^{m-j+1} b^j \right) + \left(\sum_{j=0}^m \binom{m}{j} a^{m-j}b^{j+1} \right) \\
+\end{align*}\]</span>
+In order to put these two sums together, we need to reindex the second summation so that the powers of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are the same.
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; \left( \sum_{j=0}^m \binom{m}{j} a^{m-j+1} b^j \right) + \left(\sum_{j=1}^{m+1} \binom{m}{j-1} a^{m-j+1}b^{j} \right) \\
+\end{align*}\]</span>
+We then see that the two summations start and end at different points. So we pull the two points that don’t line up off of the summations so that we can add the summations together.
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; \binom{m}{0} a^{m+1} b^0 + \left( \sum_{j=1}^m \binom{m}{j} a^{m-j+1} b^j \right) \\
+&amp; + \left(\sum_{j=1}^{m} \binom{m}{j-1} a^{m-j+1}b^{j} \right) + \binom{m}{m} a^{0}b^{m+1} \\
+= &amp; \binom{m}{0} a^{m+1}b^0 + \left( \sum_{j=1}^m \left(\binom{m}{j} + \binom{m}{j-1} \right) a^{(m+1)-j}b^j \right) + \binom{m}{m} a^0 b^{m+1} \\
+\end{align*}\]</span>
+We then use the definition of Pascal’s triangle to combine <span class="math inline">\(\left(\binom{m}{j} + \binom{m}{j-1} \right)\)</span> into <span class="math inline">\(\binom{m+1}{j}\)</span> to get
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; \binom{m}{0} a^{m+1}b^0 + \left( \sum_{j=1}^m \binom{m+1}{j} a^{(m+1)-j}b^j \right) + \binom{m}{m} a^0 b^{m+1} \\
+\end{align*}\]</span>
+Since <span class="math inline">\(\binom{m}{0}=\binom{m+1}{0}=1\)</span> and <span class="math inline">\(\binom{m}{m}=\binom{m+1}{m+1}=1\)</span> we can rewrite this as
+<span class="math display">\[\begin{align*}
+(a+b)^{m+1} = &amp; \binom{m+1}{0} a^{m+1} b^0 + \left( \sum_{j=1}^m \binom{m+1}{j} a^{(m+1)-j}b^j \right) + \binom{m+1}{m+1} a^0 b^{m+1} \\
+= &amp; \sum_{j=0}^{m+1} \binom{m+1}{j} a^{(m+1)-j}b^j
+\end{align*}\]</span>
+So <span class="math inline">\(P(m+1)\)</span> is true.</p>
+<p>Therefore, by induction, <span class="math inline">\(P(n)\)</span> is true for all <span class="math inline">\(n\in \mathbb{N}\)</span>.</p>
 </div>
+<p>For the first few values of <span class="math inline">\(n\)</span> we see that we have the following:
+<span class="math display">\[\begin{array}{lccccccccccccccc}
+(a+b)^0 = &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^1 = &amp; &amp; &amp; &amp; &amp; &amp; &amp; 1a &amp; +  &amp; 1b &amp; &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^2 = &amp; &amp; &amp; &amp; &amp; &amp; 1a^2 &amp; +  &amp; 2ab &amp; + &amp; 1b^2 &amp; &amp; &amp; &amp; &amp; \\
+(a+b)^3 = &amp; &amp; &amp; &amp; &amp; 1a^3 &amp; +  &amp; 3a^2b &amp; + &amp; 3ab^2  &amp; +  &amp; 1b^3 &amp; &amp; &amp; &amp; \\
+(a+b)^4 = &amp; &amp; &amp; &amp; 1a^4 &amp; +  &amp; 4a^3b &amp; + &amp; 6a^2b^2 &amp; + &amp; 4ab^3 &amp; + &amp; 1b^4 &amp; &amp; &amp; \\
+(a+b)^5 = &amp; &amp; &amp; 1a^5 &amp; +  &amp; 5a^4b &amp; + &amp; 10a^3b^2  &amp; +  &amp; 10a^2b^3 &amp; + &amp; 5ab^4  &amp; +  &amp; 1b^5 &amp; &amp; \\
+\end{array}\]</span></p>
+<p>While the connection between the binomial theorem and Pascal’s triangle is very useful, it would be very helpful to have a compressed formula for <span class="math inline">\(\binom{n}{k}\)</span> so that we don’t have to write out all of the previous rows to find its value. We will find this formula in the next section.</p>
 </div>
-<div id="complex-plane-1" class="section level3 hasAnchor" number="13.3.3">
-<h3><span class="header-section-number">13.3.3</span> Complex Plane<a href="translations.html#complex-plane-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Complex numbers provide even more structure than <span class="math inline">\(\mathbb{R}^2\)</span> and so the notation for translations is simplified.</p>
-<div class="definition">
-<p><span id="def:unlabeled-div-278" class="definition"><strong>Definition 13.13  </strong></span>Given a complex number <span class="math inline">\(b\in \mathbb{C}\)</span>, we define <span class="math inline">\(T_b\)</span> by <span class="math display">\[T_b(z) = z+b.\]</span></p>
-</div>
-<p>This additional structure provided by <span class="math inline">\(\mathbb{C}\)</span> also simplifies the proof that translations are isometries,
-<span class="math display">\[ \left| T_b(w)-T_b(z)\right| = \left|(w+b)-(z+b)\right| = |z-w|.\]</span></p>
-</div>
-<div id="compositions" class="section level3 hasAnchor" number="13.3.4">
-<h3><span class="header-section-number">13.3.4</span> Compositions<a href="translations.html#compositions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-279" class="theorem"><strong>Theorem 13.8  </strong></span>The composition of two translations is a translation.</p>
-</div>
-<div class="proof">
-<p><span id="unlabeled-div-280" class="proof"><em>Proof</em>. </span>Let <span class="math inline">\(T_b\)</span> and <span class="math inline">\(T_c\)</span> be two translations of <span class="math inline">\(\mathbb{C}\)</span>. Then
-<span class="math display">\[T_b\circ T_c(z) = T_b(z+c) = (z+c)+b = z + (c+b) = T_{c+b}(z).\]</span></p>
-</div>
-<p>We can also see that the order of the translations does not matter.</p>
-</div>
-<div id="group-of-translations" class="section level3 hasAnchor" number="13.3.5">
-<h3><span class="header-section-number">13.3.5</span> Group of Translations<a href="translations.html#group-of-translations" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-281" class="theorem"><strong>Theorem 13.9  </strong></span>Let <span class="math inline">\(T\)</span> be the set of translations of the plane. Then with the operation of function composition, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
-</div>
-<div class="proof">
-<p><span id="unlabeled-div-282" class="proof"><em>Proof</em>. </span>Since the composition of two translations is also a translation, <span class="math inline">\((T,\circ)\)</span> is closed.</p>
-<p>Since the identity function can be considered a translation, <span class="math inline">\(T_0(z)=z+0\)</span>, we see that <span class="math inline">\((T,\circ)\)</span> has an identity.</p>
-<p>Since for any <span class="math inline">\(b\in \mathbb{C}\)</span>, <span class="math inline">\(T_b \circ T_{-b} (z) = z-b+b=z\)</span>, we see that <span class="math inline">\(T_b\)</span> is invertible and <span class="math inline">\(T_b^{-1} = T_{-b}\)</span>. So the inverse of any translation is also a translation.</p>
-<p>Therefore, <span class="math inline">\((T,\circ)\)</span> is a subgroup of <span class="math inline">\((I,\circ )\)</span>.</p>
-</div>
-<p>Recall from Section <a href="groups.html#groups">7.1</a> that two groups, <span class="math inline">\((G,*)\)</span> and <span class="math inline">\((G&#39;,\times)\)</span>, are isomorphic (‘equivalent’) if there is a bijection <span class="math inline">\(\phi: G \rightarrow G&#39;\)</span> such that
-<span class="math display">\[\phi(a*b) = \phi(a)\times \phi(b)\]</span>
-for all <span class="math inline">\(a,b\in G\)</span>.</p>
-<p>If we let <span class="math inline">\(\phi:\mathbb{C} \rightarrow T\)</span> be defined by <span class="math inline">\(\phi(b)=T_b\)</span>, we see that <span class="math display">\[\phi(b+c) = T_{b+c} = T_b \circ T_c = \phi(b) \circ \phi(c),\]</span> making <span class="math inline">\(\phi\)</span> a group homomorphism. From the definition of translations on <span class="math inline">\(\mathbb{C}\)</span> we can see that <span class="math inline">\(\phi\)</span> is also a bijection. So we get the following theorem.</p>
-<div class="theorem">
-<p><span id="thm:unlabeled-div-283" class="theorem"><strong>Theorem 13.10  </strong></span>The group <span class="math inline">\((T,\circ)\)</span> is isomorphic to the group <span class="math inline">\((\mathbb{C},+)\)</span>.</p>
-</div>
-</div>
-<div id="exercises-54" class="section level3 hasAnchor" number="13.3.6">
-<h3><span class="header-section-number">13.3.6</span> Exercises<a href="translations.html#exercises-54" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="exercises-20" class="section level3 hasAnchor" number="6.2.2">
+<h3><span class="header-section-number">6.2.2</span> Exercises<a href="PascalBinomial.html#exercises-20" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ol style="list-style-type: decimal">
-<li><p>Let <span class="math inline">\(T\)</span> be the translation by the vector <span class="math inline">\(\langle 1,3\rangle\)</span>.</p>
+<li><p>Use the Binomial theorem to expand the following.</p>
 <ol style="list-style-type: lower-alpha">
-<li>Write an algebraic representation for the translation from each of the four perspectives.</li>
-<li>Find the image of the circle <span class="math inline">\(C=\left\{ (x,y)\in \mathbb{R}^2 \: \vert \: (x-2)^2+(y+3)^2 =9\right\}\)</span> under this translation.</li>
-<li>Let <span class="math inline">\(A=(1,2)\)</span>, <span class="math inline">\(B=(-2,3)\)</span> and <span class="math inline">\(C=(0,0)\)</span>. Find the image of the triangle <span class="math inline">\(\triangle ABC\)</span> under this translation.</li>
+<li><span class="math inline">\((x-2y)^5\)</span></li>
+<li><span class="math inline">\((1+2i)^6\)</span></li>
+<li><span class="math inline">\((-3x+5y)^8\)</span></li>
+<li><span class="math inline">\(\left(x-\frac{1}{x}\right)^4\)</span></li>
 </ol></li>
-<li><p>Let <span class="math inline">\(z\in \mathbb{C}\)</span>. Why is <span class="math inline">\(T_{z+\overline{z}}\)</span> a horizontal translation?</p></li>
-<li><p>Let <span class="math inline">\(z\in \mathbb{C}\)</span>. Show that <span class="math inline">\(T_{z-\overline{z}}\)</span> is a vertical translation.</p></li>
-<li><p>Show that the set of horizontal translations with function composition forms a group and that the group is isomorphic to <span class="math inline">\((\mathbb{R},+)\)</span>.</p></li>
-<li><p>We say that two translations, <span class="math inline">\(T_1\)</span> and <span class="math inline">\(T_2\)</span>, are parallel if for any point <span class="math inline">\(A\)</span>, <span class="math inline">\(A\)</span>, <span class="math inline">\(T_1(A)\)</span>, and <span class="math inline">\(T_2(A)\)</span> are co-linear. Assuming that <span class="math inline">\(T_1\)</span> and <span class="math inline">\(T_2\)</span> are parallel, answer the following questions.</p>
-<ol style="list-style-type: lower-alpha">
-<li>Let <span class="math inline">\(T_1(x,y)=(x+h_1,y+k_1)\)</span> and <span class="math inline">\(T_2(x,y)=(x+h_2,y+k_2)\)</span>. Write a single algebraic equation that expresses the relationship between <span class="math inline">\(h_1\)</span>, <span class="math inline">\(h_2\)</span>, <span class="math inline">\(k_1\)</span>, and <span class="math inline">\(k_2\)</span>.</li>
-<li>Let <span class="math inline">\(T_1(z)=z+b_1\)</span> and <span class="math inline">\(T_2(z)=z+b_2\)</span>. Write a single algebraic equation that expresses the relationship between <span class="math inline">\(b_1\)</span> and <span class="math inline">\(b_2\)</span>. (Do not break the complex numbers up into their real and imaginary parts.)</li>
-</ol></li>
-<li><p>Is <span class="math inline">\((T,\circ )\)</span> a normal subgroup of <span class="math inline">\((I,\circ )\)</span>? (Consider <span class="math inline">\(f^{-1} \circ T_d \circ f\)</span> for all <span class="math inline">\(f\in I\)</span>.) If so, describe the elements of the factor group and determine if the factor group is isomorphic to another known group.</p></li>
+<li><p>Use the Binomial theorem to expand <span class="math inline">\((x+y+z)^3\)</span> by first expanding <span class="math inline">\(\left( (x+y) + z\right)^3\)</span> and then expanding the <span class="math inline">\((x+y)^j\)</span> terms. Can you find a generalization for <span class="math inline">\((x+y+z)^n\)</span>?</p></li>
 </ol>
-<!---  %  \Question For each of the following representations of translations, give the expression for the translation in the other representations.
-   %     \begin{enumerate}[a)]
-    %        \item $T(x,y)=(x+1,y+2)$
-     %      \item $T(z)=z-3+i$
-            
-      %  \end{enumerate}
---->
+<!--- Find more exercises for this section --->
 </div>
 </div>
             </section>
@@ -858,8 +871,8 @@ for all <span class="math inline">\(a,b\in G\)</span>.</p>
           </div>
         </div>
       </div>
-<a href="representations-of-the-euclidean-plane.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="rotations.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="divisibility.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="counting.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

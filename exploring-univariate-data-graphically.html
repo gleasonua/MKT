@@ -315,10 +315,10 @@ div.csl-indent {
 <li class="chapter" data-level="6.1.1" data-path="divisibility.html"><a href="divisibility.html#divisibility-tests"><i class="fa fa-check"></i><b>6.1.1</b> Divisibility Tests</a></li>
 <li class="chapter" data-level="6.1.2" data-path="divisibility.html"><a href="divisibility.html#exercises-19"><i class="fa fa-check"></i><b>6.1.2</b> Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
+<li class="chapter" data-level="6.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html"><i class="fa fa-check"></i><b>6.2</b> Pascal’s Triangle and the Binomial Theorem</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
-<li class="chapter" data-level="6.2.2" data-path="pascals-triangle-and-the-binomial-theorem.html"><a href="pascals-triangle-and-the-binomial-theorem.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
+<li class="chapter" data-level="6.2.1" data-path="PascalBinomial.html"><a href="PascalBinomial.html#binomial-theorem"><i class="fa fa-check"></i><b>6.2.1</b> Binomial Theorem</a></li>
+<li class="chapter" data-level="6.2.2" data-path="PascalBinomial.html"><a href="PascalBinomial.html#exercises-20"><i class="fa fa-check"></i><b>6.2.2</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="counting.html"><a href="counting.html"><i class="fa fa-check"></i><b>6.3</b> Counting</a>
 <ul>
@@ -434,7 +434,7 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="9.6.1" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#short-term-behavior"><i class="fa fa-check"></i><b>9.6.1</b> Short-Term Behavior</a></li>
 <li class="chapter" data-level="9.6.2" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#long-term-behavior"><i class="fa fa-check"></i><b>9.6.2</b> Long-Term Behavior</a></li>
-<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities-1"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
+<li class="chapter" data-level="9.6.3" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#polynomial-identities"><i class="fa fa-check"></i><b>9.6.3</b> Polynomial Identities</a></li>
 <li class="chapter" data-level="9.6.4" data-path="general-polynomial-functions.html"><a href="general-polynomial-functions.html#exercises-34"><i class="fa fa-check"></i><b>9.6.4</b> Exercises</a></li>
 </ul></li>
 <li class="chapter" data-level="9.7" data-path="rational-functions.html"><a href="rational-functions.html"><i class="fa fa-check"></i><b>9.7</b> Rational Functions</a>
@@ -724,7 +724,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="17.3.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#fishers-approach"><i class="fa fa-check"></i><b>17.3.1</b> Fisher’s Approach</a></li>
 <li class="chapter" data-level="17.3.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#neyman-and-pearsons-approach"><i class="fa fa-check"></i><b>17.3.2</b> Neyman and Pearson’s Approach</a></li>
-<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.3</b> Exercises</a></li>
+<li class="chapter" data-level="17.3.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#summary-1"><i class="fa fa-check"></i><b>17.3.3</b> Summary</a></li>
+<li class="chapter" data-level="17.3.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#exercises-73"><i class="fa fa-check"></i><b>17.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -748,7 +749,7 @@ div.csl-indent {
 <div id="exploring-univariate-data-graphically" class="section level2 hasAnchor" number="15.2">
 <h2><span class="header-section-number">15.2</span> Exploring Univariate Data Graphically<a href="exploring-univariate-data-graphically.html#exploring-univariate-data-graphically" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The data analysis investigative process often begins by a person exploring an existing data set looking for possible phenomena or relationships that lead to further questions to be tested using a more systematic statistical analysis. Both the exploration of relationships and the confirmation of hypothesized relationships are valuable, but they serve different purposes.</p>
-<p>The primary goals of <strong>exploratory data analysis</strong> (EDA) revolve around getting to know a set of data and allowing the data to guide further discoveries. <span class="citation">Behrens &amp; Yu (<a href="#ref-EDA2003" role="doc-biblioref">2003</a>)</span> describe it as similar to a “detective looking for clues to develop hunches and perhaps seek a grand jury” (p. 42). EDA uses many tools, particularly graphical representations, to reveal possible relationships, understand error and noise, transform variables, and better understand the role of outliers. Throughout this section we will describe these different tools and how they are used in spreadsheets and R.</p>
+<p>The primary goals of <strong>exploratory data analysis</strong> (EDA) revolve around getting to know a set of data and allowing the data to guide further discoveries. <span class="citation">Behrens &amp; Yu (<a href="#ref-EDA2003" role="doc-biblioref">2003</a>)</span> describe it as similar to a “detective looking for clues to develop hunches and perhaps seek a grand jury” (p. 42). EDA uses many tools, particularly graphical representations, to reveal possible relationships, understand measurement error and variability, transform variables, and better understand the role of outliers. Throughout this section we will describe these different tools and how they are used in spreadsheets and R.</p>
 <blockquote>
 <p>In the early stages of research, EDA is valuable to help find the unexpected, refine hypotheses, and appropriately plan future work. In the later confirmatory stages, EDA is valuable to ensure that the researcher is not fooled by misleading aspects of the confirmatory models or unexpected and anomalous data patterns. <span class="citation">(<a href="#ref-EDA2003" role="doc-biblioref">Behrens &amp; Yu, 2003, p. 60</a>)</span></p>
 </blockquote>
@@ -756,7 +757,7 @@ div.csl-indent {
 <div id="histograms" class="section level3 hasAnchor" number="15.2.1">
 <h3><span class="header-section-number">15.2.1</span> Histograms<a href="exploring-univariate-data-graphically.html#histograms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We will begin our exploration of the Old Faithful data with a histogram with a binwidth of 15 minutes to show the number of minutes between eruptions.</p>
-<p>Using Excel or Google Sheets we can highlight the column and insert a histogram.</p>
+<p>Using Excel or Google Sheets, we can highlight the column and insert a histogram.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-167"></span>
 <img src="data-examples/Old-Faithful/Eruption_Hist1_Excel.png" alt="Histogram with 15 minute binwidth using Excel" width="90%" />
 <p class="caption">
@@ -767,7 +768,7 @@ Figure 15.1: Histogram with 15 minute binwidth using Excel
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="exploring-univariate-data-graphically.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load required packages</span></span>
 <span id="cb1-2"><a href="exploring-univariate-data-graphically.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
 <span id="cb1-3"><a href="exploring-univariate-data-graphically.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
-<p>After loading the appropriate packages we can read the Excel file into the data frame of <code>Old_Faithful_2020_07_01_to_2020_07_31</code>. This can then be used to create the histogram with the binwidth of 15 minutes.</p>
+<p>After loading the appropriate packages, we can read the Excel file into the data frame of <code>Old_Faithful_2020_07_01_to_2020_07_31</code>. This can then be used to create the histogram with the binwidth of 15 minutes.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exploring-univariate-data-graphically.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">15</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)</span></code></pre></div>
 <p><img src="_main_files/figure-html/unnamed-chunk-170-1.png" width="672" /></p>
 <p>We notice that the vast majority of the time, the number of minutes between eruptions is less than 200 minutes, with a few over 400 minutes. Going back to the context of the data and looking at these eruptions that had more than 120 minutes, they all occurred during nighttime hours. So we will make the assumption that the data source is missing eruptions and so we will remove these data points from our frame. We then create a new histogram with a binwidth of 5 minutes on this cleaned data set in both Excel and R.</p>
@@ -801,7 +802,7 @@ Figure 15.3: Histogram with 5 minute binwidth using R and ggplot2
 </div>
 <div id="dot-plots" class="section level3 hasAnchor" number="15.2.2">
 <h3><span class="header-section-number">15.2.2</span> Dot Plots<a href="exploring-univariate-data-graphically.html#dot-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>From this histogram we see that the data seems to have two ‘centers’. One at around 95 minutes and the other around 65 minutes. To explore this phenomenon further, we create a dot plot that marks each occurance as a single dot and see that there appear to be two clusters of times.</p>
+<p>From this histogram we see that the data seems to have two ‘centers’ (one at around 95 minutes and the other around 65 minutes). To explore this phenomenon further, we create a dot plot that marks each occurance as a single dot and see that there appear to be two clusters of times.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exploring-univariate-data-graphically.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_dotplot</span>(<span class="at">binwidth =</span> .<span class="dv">5</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)<span class="sc">+</span><span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="cn">NULL</span>, <span class="at">breaks =</span> <span class="cn">NULL</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-174"></span>
 <img src="_main_files/figure-html/unnamed-chunk-174-1.png" alt="Dot Plot of Eruption Times using R and ggplot2" width="90%" />
@@ -830,26 +831,34 @@ Figure 15.5: Density Plot of Eruption Times
 </div>
 <div id="box-plots" class="section level3 hasAnchor" number="15.2.4">
 <h3><span class="header-section-number">15.2.4</span> Box Plots<a href="exploring-univariate-data-graphically.html#box-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>When we display this same data on a box plot (also called a box-and-whisker plot), we see that many of the data points lie more than 1.5 times the inner-quartile range (IQR) below the first quartile (Q1) or above the third quartile (Q3), as denoted by the dots past the whiskers. These data points are often called outliers.</p>
+<p>When we display this same data on a box plot (also called a box-and-whisker plot).</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-176"></span>
+<img src="images/Labeled_Box_and_Whisker_Plot.png" alt="Box Plot with Labels" width="60%" />
+<p class="caption">
+Figure 15.6: Box Plot with Labels
+</p>
+</div>
+<p>We see that the box plot divides the data up into quarters. This means that 50% of the data is inside the box between the lower quartile (Q1) and the upper quartile (Q3).</p>
+<p>We see in the figure below of our eruption data that many of the data points lie more than 1.5 times the inner-quartile range (IQR) below the first quartile (Q1) or above the third quartile (Q3), as denoted by the dots past the whiskers. These data points are often called outliers.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-177"></span>
 <img src="data-examples/Old-Faithful/Eruption-Box-Excel.png" alt="Box Plot of Time Between Eruptions Using Excel" width="30%" />
 <p class="caption">
-Figure 15.6: Box Plot of Time Between Eruptions Using Excel
+Figure 15.7: Box Plot of Time Between Eruptions Using Excel
 </p>
 </div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="exploring-univariate-data-graphically.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="cn">NULL</span>, <span class="at">breaks=</span><span class="cn">NULL</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-177"></span>
-<img src="_main_files/figure-html/unnamed-chunk-177-1.png" alt="Box Plot of Eruption Times Using R and ggplots2" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-178"></span>
+<img src="_main_files/figure-html/unnamed-chunk-178-1.png" alt="Box Plot of Eruption Times Using R and ggplots2" width="672" />
 <p class="caption">
-Figure 15.7: Box Plot of Eruption Times Using R and ggplots2
+Figure 15.8: Box Plot of Eruption Times Using R and ggplots2
 </p>
 </div>
 <p>The large number of outliers below 78 minutes corresponds to the second cluster of times centered around 65. From the evidence gathered to this point, we can justify making the assumption that there are really two different lengths of time between eruptions, “Short” and “Long”. By labeling the wait time as short or long, we can look at the two different distributions using a pair of box plots.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exploring-univariate-data-graphically.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(inter_erruption_time, wait_cat)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>, <span class="at">y=</span> <span class="st">&quot;Prior eruption length&quot;</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-178"></span>
-<img src="_main_files/figure-html/unnamed-chunk-178-1.png" alt="Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-179"></span>
+<img src="_main_files/figure-html/unnamed-chunk-179-1.png" alt="Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2" width="672" />
 <p class="caption">
-Figure 15.8: Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2
+Figure 15.9: Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2
 </p>
 </div>
 <!---
