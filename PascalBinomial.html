@@ -807,7 +807,8 @@ n=7: &amp; \binom{7}{0} &amp;  &amp; \binom{7}{1} &amp;  &amp; \binom{7}{2}  &am
 <div class="proof">
 <p><span id="unlabeled-div-82" class="proof"><em>Proof</em>. </span>We will prove this using induction on the exponent. So for <span class="math inline">\(a,b\)</span> and for <span class="math inline">\(n\in \mathbb{N}\)</span> we let <span class="math inline">\(P(n)\)</span> be the statement that <span class="math display">\[(a+b)^n = \binom{n}{0} a^n b^0 + \binom{n}{1} a^{n-1}b^1 + \cdots + \binom{n}{n-1} a^{1}b^{n-1} + \binom{n}{n} a^0 b^n.\]</span></p>
 <p>We will often compress this statement using summation notation into <span class="math display">\[(a+b)^n = \sum_{j=0}^n \binom{n}{j} a^{n-j}b^j\]</span> in order to reduce the amount of writing. <em>Remember that mathematicians are inherently lazy and want to compress as much information into as few symbols as possible.</em></p>
-<p>So <span class="math inline">\(P(0)\)</span> is the statement that <span class="math inline">\((a+b)^0 = 1\)</span>, which is defined to be true.</p>
+<p>So, <span class="math inline">\(P(0)\)</span> is the statement that <span class="math inline">\((a+b)^0 = 1\)</span>, which is defined to be true.</p>
+<p>We now move to our induction step.</p>
 <p>If we assume that for some integer <span class="math inline">\(m\)</span> that <span class="math inline">\(P(m)\)</span> is true, we see that
 <span class="math display">\[\begin{align*}
 (a+b)^{m+1} = &amp; (a+b) \cdot (a+b)^m\\

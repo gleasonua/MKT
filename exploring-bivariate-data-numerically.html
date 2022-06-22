@@ -754,7 +754,7 @@ div.csl-indent {
 <p>We will first look at the possible centers that we can use to compare the populations.</p>
 <table>
 <caption>
-<span id="tab:unnamed-chunk-194">Table 15.2: </span>Centers for Wages by Gender
+<span id="tab:unnamed-chunk-195">Table 15.2: </span>Centers for Wages by Gender
 </caption>
 <thead>
 <tr>
@@ -825,8 +825,8 @@ $6.92
 <p>This choice of center is further justified when looking at the density plot of the wages for the 534 individuals sampled and noticing that it is skewed right, with some significant outliers, and has a distribution that resembles a lognormal distribution (for which the harmonic mean is considered the appropriate center).</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="exploring-bivariate-data-numerically.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mosaicData)</span>
 <span id="cb10-2"><a href="exploring-bivariate-data-numerically.html#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(CPS85, <span class="fu">aes</span>(<span class="at">x=</span>wage)) <span class="sc">+</span> <span class="fu">geom_density</span>(<span class="at">kernel =</span> <span class="st">&quot;gaussian&quot;</span>, <span class="fu">aes</span>(<span class="at">colour =</span> <span class="fu">factor</span>(sex))) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Wages&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>())</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-195"></span>
-<img src="_main_files/figure-html/unnamed-chunk-195-1.png" alt="Density Plot of Wages" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-196"></span>
+<img src="_main_files/figure-html/unnamed-chunk-196-1.png" alt="Density Plot of Wages" width="90%" />
 <p class="caption">
 Figure 15.15: Density Plot of Wages
 </p>
@@ -839,7 +839,7 @@ Figure 15.15: Density Plot of Wages
 --->
 <p>We can also use the quartiles of the two distributions and the inner quartile range, along with the corresponding box plots, to further clarify the differences between male and female wages.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-196">Table 15.3: </span>Five Point Summary of Wages</caption>
+<caption><span id="tab:unnamed-chunk-197">Table 15.3: </span>Five Point Summary of Wages</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -909,38 +909,38 @@ where <span class="math inline">\(\binom{n}{2}=\frac{n(n-1)}{2}\)</span> is the 
 <p>For both Kendall’s <span class="math inline">\(\tau\)</span> and Pearson’s <span class="math inline">\(\rho\)</span>, the values are always between <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. Negative values correspond to and decrease in one of the variables with an increase in the other. Positive values correspond to both variables increasing and decreasing together. Values closer to <span class="math inline">\(0\)</span> represent weaker relationships with the relationship being stronger as the value gets closer to <span class="math inline">\(1\)</span> or <span class="math inline">\(-1\)</span>.</p>
 <p>The interpretation of the values of the correlation coefficients are highly dependent upon the context. One needs to keep this in mind with various “rules of thumb” that have “moderate correlation” for ranges such as 0.40-0.69 or 0.20-0.50. One issue that students often struggle with is that they want the correlation to be higher than 0.90 to be considered strong. While this high of a correlation may occur in the natural science labs, in the social sciences research, this rarely occurs.</p>
 <p>We can explore these two measures of association using the nutritional information from McDonald’s<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-198"></span>
-<img src="_main_files/figure-html/unnamed-chunk-198-1.png" alt="Fat and Calories from Fat (Pearson: 0.9996, Kendall: 0.9942)" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-199"></span>
+<img src="_main_files/figure-html/unnamed-chunk-199-1.png" alt="Fat and Calories from Fat (Pearson: 0.9996, Kendall: 0.9942)" width="90%" />
 <p class="caption">
 Figure 15.16: Fat and Calories from Fat (Pearson: 0.9996, Kendall: 0.9942)
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-199"></span>
-<img src="_main_files/figure-html/unnamed-chunk-199-1.png" alt="Fiber and Grams of Fat (Pearson: 0.5739, Kendall: 0.4679)" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-200"></span>
+<img src="_main_files/figure-html/unnamed-chunk-200-1.png" alt="Fiber and Grams of Fat (Pearson: 0.5739, Kendall: 0.4679)" width="90%" />
 <p class="caption">
 Figure 15.17: Fiber and Grams of Fat (Pearson: 0.5739, Kendall: 0.4679)
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-200"></span>
-<img src="_main_files/figure-html/unnamed-chunk-200-1.png" alt="Carbohydrates and Grams of Fat (Pearson: 0.4422, Kendall: 0.2985)" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-201"></span>
+<img src="_main_files/figure-html/unnamed-chunk-201-1.png" alt="Carbohydrates and Grams of Fat (Pearson: 0.4422, Kendall: 0.2985)" width="90%" />
 <p class="caption">
 Figure 15.18: Carbohydrates and Grams of Fat (Pearson: 0.4422, Kendall: 0.2985)
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-201"></span>
-<img src="_main_files/figure-html/unnamed-chunk-201-1.png" alt="Sugar and Sodium (Pearson: -0.2935, Kendall: -0.0895)" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-202"></span>
+<img src="_main_files/figure-html/unnamed-chunk-202-1.png" alt="Sugar and Sodium (Pearson: -0.2935, Kendall: -0.0895)" width="90%" />
 <p class="caption">
 Figure 15.19: Sugar and Sodium (Pearson: -0.2935, Kendall: -0.0895)
 </p>
 </div>
 <p>We see that if the relationship is close to a linear relationship that both <span class="math inline">\(\rho\)</span> and <span class="math inline">\(\tau\)</span> are close to <span class="math inline">\(1\)</span>. We can also see that for these variables, both <span class="math inline">\(\rho\)</span> and <span class="math inline">\(\tau\)</span> generate similar results. If instead, the relationship is strong, but not linear, then the two correlation coefficients differ with <span class="math inline">\(\tau\)</span> being much closer to <span class="math inline">\(1\)</span> or <span class="math inline">\(-1\)</span>.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-202"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-203"></span>
 <img src="images/correl_example1.jpg" alt="Example with Pearson correlation of 0.8171 and Kendall correlation of 1" width="80%" />
 <p class="caption">
 Figure 15.20: Example with Pearson correlation of 0.8171 and Kendall correlation of 1
 </p>
 </div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-203"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-204"></span>
 <img src="images/correl_example2.jpg" alt="Example with Pearson correlation of -0.6747 and Kendall correlation of -1" width="80%" />
 <p class="caption">
 Figure 15.21: Example with Pearson correlation of -0.6747 and Kendall correlation of -1
@@ -965,7 +965,7 @@ Figure 15.21: Example with Pearson correlation of -0.6747 and Kendall correlatio
 </ul>
 </div>
 <p>Looking at a population of 1000 students from around the world using the Census at School random sampler, we can look at how the height and armspan of the individuals in this population may be related.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-204"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-205"></span>
 <img src="images/Armspan_Height.jpg" alt="Height and Armspan" width="80%" />
 <p class="caption">
 Figure 15.22: Height and Armspan
@@ -981,7 +981,7 @@ Figure 15.22: Height and Armspan
 <p>We would now like to estimate the linear relationship. In doing so, we are looking for the equation of a line that `best’ fits the data. If we let <span class="math inline">\(y\)</span> represent a person’s height (in cm) and <span class="math inline">\(x\)</span> represent a person’s armspan (in cm), we model the relationship with a function of the form <span class="math inline">\(y=mx+b\)</span>.</p>
 <p>One method of measuring how well the linear model fits the data is to measure the difference between the actual <span class="math inline">\(y\)</span>-value and the predicted <span class="math inline">\(y\)</span>-value for each data point. We call this value the <strong>residual</strong>.
 <span class="math display">\[\mbox{Residual} = \mbox{actual }y\mbox{-value} - \mbox{predicted }y\mbox{-value}\]</span></p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-205"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-206"></span>
 <img src="images/Residuals_for_Linear_Regression_Fit.png" alt="Residuals of a Linear Regression" width="80%" />
 <p class="caption">
 Figure 15.23: Residuals of a Linear Regression
@@ -1003,7 +1003,7 @@ We then find the minimal value of <span class="math inline">\(S\)</span> where t
 <span class="math display">\[2n \cdot \left(\frac{1}{n}\sum_{i=1}^n x_i \right) m + 2n b = 2n \left(\frac{1}{n} \sum_{i=1}^n y_i \right)\]</span> which can be written as <span class="math display">\[\overline{y} = m \overline{x} +b\]</span> where <span class="math inline">\(\overline{x}\)</span> and <span class="math inline">\(\overline{y}\)</span> are the arithmetic means of the <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span>, respectively. This implies that the point <span class="math inline">\((\overline{x},\overline{y})\)</span> always lies on the least squares linear approximation.</p>
 <p>For the example of the height and the armspan, the least squares linear approximation is that
 <span class="math display">\[\mbox{Height (cm)} = 0.64 \cdot \mbox{Armspan (cm)} + 58.01\]</span></p>
-<p><img src="_main_files/figure-html/unnamed-chunk-206-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-207-1.png" width="672" /></p>
 <!---
 \begin{center}
     \includegraphics[width=.8\textwidth]{images/Armspan_Height_linear.jpg}
@@ -1038,7 +1038,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <p>Looking at the scatterplot for armspan and height, we notice that there is a large cluster in the middle of the data that seems to have a different slope than the estimated line. We also notice that the model given by the least squares approximation says that a person without any armspan would still be 58 cm tall. Using this information, we could insist that the intercept for the linear approximation would be at the origin with the interpretation that someone with zero armspan would also have zero height.</p>
 <p>With this additional constraint, we can see from the sum of squares of the residual that <span class="math inline">\(m = \frac{\overline{y}}{\overline{x}}\)</span>. So the data would be modeled by
 <span class="math display">\[\mbox{Height (cm)} = 1.01 \cdot \mbox{Armspan (cm)} \]</span></p>
-<p><img src="_main_files/figure-html/unnamed-chunk-207-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-208-1.png" width="672" /></p>
 <p>So we see that even though this does not minimize the sum of squares, it may be the best approximation for our data in terms of the portion of the population for which we are focused and within the context of the situation.</p>
 </div>
 <div id="categorical-times-categorical-data" class="section level3 hasAnchor" number="15.6.3">
@@ -1054,7 +1054,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 </div>
 <p>When analyzing the interactions between two categorical variables, the first step usually involves the creation of a <strong>two-way frequency table</strong> that organizes the number of cases for each possible combination of values for the two variables. Using a random sample of 1000 students from the Census at School site, we can explore possible relationships between the country and the way that the students get to school. In order to simplify the table we combined all of the categories with just a few cases into a general ‘other’ category.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-208">Table 15.4: </span>Transportation to School (Frequency)</caption>
+<caption><span id="tab:unnamed-chunk-209">Table 15.4: </span>Transportation to School (Frequency)</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1132,7 +1132,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <p>Just looking at the counts by themselves can sometimes be valuable, but can also lead to poor conclusions. For instance, we may notice that 28 students in the UK travel to school by car, while 62 students in Canada also travel to school by car. Someone just looking at these raw counts may think that students are twice as likely to travel to school by car in Canada as they are in the UK. However, to make such a statement we should instead use the <strong>conditional relative frequency tables</strong> that are conditioned on each of the two variables.</p>
 <p>If we condition on the country, we see that a higher percentage of the students in the sample from the U.K., rather than Canada, travel by car to school.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-209">Table 15.5: </span>Transportation to School (Conditional Row Relative Frequency)</caption>
+<caption><span id="tab:unnamed-chunk-210">Table 15.5: </span>Transportation to School (Conditional Row Relative Frequency)</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1201,7 +1201,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <p>Looking at this conditional relative frequency table we can also more easily notice that the students from the United States in the sample are much less likely to walk to school than those from the other countries.</p>
 <p>If we condition on the method of transportation to school, we see that of the people in the sample that take a car to school, 35% of them are from the United States, while only 6.6% of the car riders are from the United Kingdom.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-210">Table 15.6: </span>Transportation to School (Conditional Column Relative Frequency)</caption>
+<caption><span id="tab:unnamed-chunk-211">Table 15.6: </span>Transportation to School (Conditional Column Relative Frequency)</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1271,7 +1271,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 --->
 <p>One might also use a <strong>joint relative frequency table</strong> where each of the entries represents the proportion of the overall sample being analyzed.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-211">Table 15.7: </span>Transportation to School (Joint Relative Frequency)</caption>
+<caption><span id="tab:unnamed-chunk-212">Table 15.7: </span>Transportation to School (Joint Relative Frequency)</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1354,7 +1354,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <li><p>Below are test results for eighth graders from four local middle schools based on the proficiency levels of the exam for 2018-2019.</p></li>
 </ol>
 <table>
-<caption><span id="tab:unnamed-chunk-212">Table 15.8: </span>School Test Results</caption>
+<caption><span id="tab:unnamed-chunk-213">Table 15.8: </span>School Test Results</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1411,7 +1411,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <li>Would any of your thoughts change based on the following demographic information about these schools?</li>
 </ol>
 <table>
-<caption><span id="tab:unnamed-chunk-213">Table 15.9: </span>School Characteristics</caption>
+<caption><span id="tab:unnamed-chunk-214">Table 15.9: </span>School Characteristics</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -1451,7 +1451,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <li>The following table describes the age distributions of people in the United States and Japan. Compare and contrast the different populations. (from CIA Factbook, downloaded 8/28/2020)</li>
 </ol>
 <table>
-<caption><span id="tab:unnamed-chunk-214">Table 15.10: </span>Population Demographics</caption>
+<caption><span id="tab:unnamed-chunk-215">Table 15.10: </span>Population Demographics</caption>
 <colgroup>
 <col width="26%" />
 <col width="16%" />
@@ -1510,7 +1510,7 @@ This parameter is the proportion of the variance in the dependent variable (<spa
 <li>Below is the population of the United States from the Census of since 1940. Create a linear approximation for the population with the independent variable being years since 1940. Determine how well the linear approximation fits the data.</li>
 </ol>
 <table>
-<caption><span id="tab:unnamed-chunk-215">Table 15.11: </span>U.S. Population by Census</caption>
+<caption><span id="tab:unnamed-chunk-216">Table 15.11: </span>U.S. Population by Census</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>

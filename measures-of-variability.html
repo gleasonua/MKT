@@ -755,8 +755,8 @@ div.csl-indent {
 % mean(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="HONOLULU INTERNATIONAL AIRPORT, HI US"])
 --->
 Since the average temperatures are a balance between the highs and lows, these two cities can have the same average temperatures, even though they have drastically different climates. So it is helpful to have numerical measures of how much variation exists.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-189"></span>
-<img src="_main_files/figure-html/unnamed-chunk-189-1.png" alt="Temperatures for Phoenix and Honolulu" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-190"></span>
+<img src="_main_files/figure-html/unnamed-chunk-190-1.png" alt="Temperatures for Phoenix and Honolulu" width="672" />
 <p class="caption">
 Figure 15.13: Temperatures for Phoenix and Honolulu
 </p>
@@ -778,7 +778,7 @@ Figure 15.13: Temperatures for Phoenix and Honolulu
 % quantile(HonoluluPhoenixClimate$TMAX[HonoluluPhoenixClimate$NAME=="HONOLULU"])
 ---></p>
 <table>
-<caption><span id="tab:unnamed-chunk-191">Table 15.1: </span>Five Point Summary of Temperatures for Phoenix and Honolulu</caption>
+<caption><span id="tab:unnamed-chunk-192">Table 15.1: </span>Five Point Summary of Temperatures for Phoenix and Honolulu</caption>
 <thead>
 <tr class="header">
 <th align="left"></th>
@@ -813,8 +813,8 @@ Figure 15.13: Temperatures for Phoenix and Honolulu
 </table>
 <p>These values are represented graphically in the box plots with Q1 being the left side of the box, Q3 being the right side of the box, and IQR being the width of the box.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="measures-of-variability.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HonoluluPhoenixClimate, <span class="fu">aes</span>(TMAX)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">colour =</span> <span class="fu">factor</span>(NAME))) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;High Temperatures&quot;</span>) <span class="sc">+</span> <span class="fu">theme</span>(<span class="at">legend.title =</span> <span class="fu">element_blank</span>())</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-192"></span>
-<img src="_main_files/figure-html/unnamed-chunk-192-1.png" alt="Box Plot Comparing Temperatures of Phoenix and Honolulu" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-193"></span>
+<img src="_main_files/figure-html/unnamed-chunk-193-1.png" alt="Box Plot Comparing Temperatures of Phoenix and Honolulu" width="672" />
 <p class="caption">
 Figure 15.14: Box Plot Comparing Temperatures of Phoenix and Honolulu
 </p>
@@ -833,7 +833,7 @@ Figure 15.14: Box Plot Comparing Temperatures of Phoenix and Honolulu
 \end{center}
 --->
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="measures-of-variability.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(HonoluluPhoenixClimate, <span class="fu">aes</span>(DATE, TMAX)) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> <span class="fu">factor</span>(NAME))) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span><span class="st">&quot;Date&quot;</span>, <span class="at">y=</span><span class="st">&quot;Maximum temperature (F)&quot;</span>, <span class="at">colour =</span> <span class="st">&quot;Location&quot;</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="dv">79</span>), <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="fl">92.0</span>), <span class="at">color=</span><span class="st">&quot;red&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="dv">59</span>), <span class="at">color=</span><span class="st">&quot;cyan&quot;</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">+</span> <span class="fu">geom_hline</span>(<span class="fu">aes</span>(<span class="at">yintercept=</span><span class="fl">110.8</span>), <span class="at">color=</span><span class="st">&quot;cyan&quot;</span>, <span class="at">size=</span><span class="dv">2</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-193-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-194-1.png" width="672" /></p>
 <p>Each of the prior methods of measuring variability involves ranking the data and then describing the data that fits within certain intervals. Because these measures of variability depend only on the rank of the data, they can be used with either ordinal or continuous data.</p>
 <p>When a variable is a continuous numeric variable, another way to describe the variability is to measure how much the data set differs from one of the centers of the data set. With such measurements, we want the value to become more reliable as we increase the number of points in our data set and so we want to measure some type of average of distances from the center. The most basic of these measure is the mean absolute deviation.</p>
 <div class="definition">

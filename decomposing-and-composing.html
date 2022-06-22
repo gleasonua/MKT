@@ -775,7 +775,7 @@ div.csl-indent {
 <p>If the altitude is inside of the triangle we see that the original triangle is composed of two right triangles and we can derive that the area of the triangle equals half the product of the length of the altitude and the length the opposite side.</p>
 <p>If the altitude is outside of the triangle we can see that the area of the original triangle equals the area of the right triangle <span class="math inline">\(\triangle ADC\)</span> minus the area of the right triangle <span class="math inline">\(\triangle BDC\)</span> giving the area as half the length of the altitude times the length of the opposite side of the triangle.</p>
 <p>So for any triangle we have that the area is half the product of the side of the triangle and the height of the triangle from that side, <span class="math inline">\(A = \frac{1}{2} b \cdot h\)</span>.</p>
-<p>We can now use these areas of rectangles and triangles to find the areas of other two-dimensional objects. If <span class="math inline">\(ABCD\)</span> is a parallelogram, we can divide the quadrilateral into two congruent triangles <span class="math inline">\(\triangle ABD\)</span> and <span class="math inline">\(\triangle CDB\)</span>. Each of the triangles has an area of half the product of the length of one set of parallel sides and the length of the distance between those sides. So the area of the parallelogram is given by the product of the length of each set of parallel sides and the distance between the sides.</p>
+<p>We can now use these areas of rectangles and triangles to find the areas of other two-dimensional objects. If <span class="math inline">\(ABCD\)</span> is a parallelogram, we can divide the quadrilateral into two congruent triangles <span class="math inline">\(\triangle ABD\)</span> and <span class="math inline">\(\triangle CDB\)</span>. Each of the triangles has an area of half the product of the length of one set of parallel sides and the length of the distance between those sides. So the area of the parallelogram is given by the product of the length of either set of parallel sides and the distance between those sides.</p>
 <p><img src="images/area_parallelogram.jpg" width="30%" style="display: block; margin: auto;" /></p>
 <p>If <span class="math inline">\(ABCD\)</span> is a trapezoid with sides <span class="math inline">\(AB\)</span> and <span class="math inline">\(CD\)</span> being parallel we can sketch the diagonal <span class="math inline">\(BD\)</span> and see that the area of the quadrilateral is given by
 <span class="math display">\[ \frac{1}{2} b_1 \cdot h + \frac{1}{2} b_2 \cdot h = \frac{1}{2} (b_1+b_2)\cdot h\]</span> where <span class="math inline">\(b_1\)</span> and <span class="math inline">\(b_2\)</span> are the lengths of the two parallel sides and <span class="math inline">\(h\)</span> is the distance between those sides.</p>
@@ -808,6 +808,8 @@ div.csl-indent {
 <p><span id="thm:unlabeled-div-222" class="theorem"><strong>Theorem 11.1  (Cavalieri's Principle) </strong></span>Suppose two regions in three-space (solids) are included between two parallel planes. If every plane parallel to these two planes intersects both regions in cross-sections of equal area, then the two regions have equal volumes.</p>
 </div>
 <p>These ideas are based on slicing the solid into infinitesimal slices and then adding up the volume of these slices. In the special case where the solid is a prism or cylinder each cross-section has an equal area. So Cavlieri’s prinicple implies that the volume of prisms or cylinders equals the area of each cross-section times the distance between the two parallel plane, <span class="math inline">\(V= A \cdot h\)</span>.</p>
+<div id="volume-of-cones-and-pyramids-using-limits" class="section level4 unnumbered hasAnchor">
+<h4>Volume of Cones and Pyramids (using limits)<a href="decomposing-and-composing.html#volume-of-cones-and-pyramids-using-limits" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>In order to find the volume of a cone or pyramid whose height is <span class="math inline">\(d\)</span>, we let <span class="math inline">\(A(h)\)</span> be the area of the cross-section <span class="math inline">\(h\)</span> units from the base of the solid. Since the solid is a cone or pyramid, the area at each cross-section is proportional to the distance from the base relative to the height, <span class="math display">\[A(h) = \left( 1 - \frac{h}{d}\right)^2 \cdot A(0),\]</span> for <span class="math inline">\(0\leq h \leq d\)</span>.</p>
 <p>We can now use the method of exhaustion of the ancient Greeks, as a precursor to calculus, to give an informal argument for the volume of the solid. We know that the solid has a volume less than the volume of the corresponding prism or cylinder, <span class="math inline">\(d \cdot A(0)\)</span>. We can get a better estimate for the solid by approximating it by multiple cylinders. If we use 4 cylinders to approximate the volume, we see that the sum of these four volumes is given by
 <span class="math display">\[\frac{d}{4} \cdot A(0) + \frac{d}{4} \cdot A\left(\frac{d}{4}\right) + \frac{d}{4} \cdot A\left(\frac{2d}{4}\right) + \frac{d}{4} \cdot A\left(\frac{3d}{4}\right).\]</span>
@@ -815,9 +817,15 @@ This can be simplified to
 <span class="math display">\[\frac{d}{4} \left( 1+\left(1-\frac{1}{4}\right)^2 + \left(1-\frac{2}{4}\right)^2 + \left(1-\frac{3}{4}\right)^2 \right) \cdot A(0)\]</span>
 <span class="math display">\[= \frac{d}{4} \cdot \left( \left(\frac{1}{4}\right)^2 + \left(\frac{2}{4}\right)^2 + \left(\frac{3}{4}\right)^2+1\right) \cdot A(0).\]</span>
 So the area of the solid is approximated by <span class="math inline">\(\frac{30}{64} \cdot d \cdot A(0)\)</span> when using 4 prisms. If we extend this to a larger number of divisions we will use information about the sum of the first <span class="math inline">\(n\)</span> squares, <span class="math display">\[P_n = \frac{n(n+1)(2n+1)}{6}.\]</span> So if we approximate the solid by <span class="math inline">\(n\)</span> prisms we have the volume as
-<span class="math display">\[ V \approx \frac{1}{n} \left(\sum_{i=1}^n \left( \frac{i}{n}\right)^2 \right) \cdot d \cdot A(0) = \frac{n(n+1)(2n+1)}{6n^3} \cdot d \cdot A(0).\]</span> So as the number of prisms increases the volume approximation of the cone or pyramid approaches the true volume, <span class="math display">\[V=\frac{1}{3} \cdot d \cdot A(0).\]</span></p>
+<span class="math display">\[V \approx \frac{1}{n} \left(\sum_{i=1}^n \left( \frac{i}{n}\right)^2 \right) \cdot d \cdot A(0) = \frac{n(n+1)(2n+1)}{6n^3} \cdot d \cdot A(0).\]</span> So, as the number of prisms increases, the volume approximation of the cone or pyramid approaches the true volume, <span class="math display">\[V=\frac{1}{3} \cdot d \cdot A(0).\]</span></p>
 <p>One can then use similar slicing arguments to show that the volume of a sphere is given by
 <span class="math display">\[V = \frac{4}{3} \pi r^3.\]</span></p>
+</div>
+<div id="volume-of-cones-and-pyramids-decomposing-a-prism" class="section level4 unnumbered hasAnchor">
+<h4>Volume of Cones and Pyramids (Decomposing a prism)<a href="decomposing-and-composing.html#volume-of-cones-and-pyramids-decomposing-a-prism" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Another way to understand the relationship between a prism and its corresponding pyramid is by dividing a cube into 6 equivalent pyramids.</p>
+<p><img src="images/Cubic_pyramid.png" width="60%" style="display: block; margin: auto;" /></p>
+<p>Then one can use Cavalieri’s principle to generalize to any cone or pyramid.</p>
 <div class="standards">
 <div class="center">
 <p><strong>Related Content Standards</strong></p>
@@ -828,6 +836,7 @@ So the area of the solid is approximated by <span class="math inline">\(\frac{30
 <li>(HSG.GMD.2) Give an informal argument using Cavalieri’s principle for the formulas for the volume of a sphere and other solid figures.</li>
 <li>(HSG.GMD.3) Use volume formulas for cylinders, pyramids, cones, and spheres to solve problems.</li>
 </ul>
+</div>
 </div>
 </div>
 <div id="related-horizon-content-knowledge" class="section level3 hasAnchor" number="11.2.3">
@@ -846,6 +855,7 @@ So the area of the solid is approximated by <span class="math inline">\(\frac{30
 <li>Reflect on your area formulas. Do you ever multiple 3 dimensions together? Why or why not?</li>
 <li>Notice that when you multiply dimensions for an area formula the two dimensions are perpendicular to each other. Why does this make sense?</li>
 </ol></li>
+<li><p>Use the principles of this section to derive the usual formulas for area of two-dimensional objects and volume of three-dimensional objects.</p></li>
 </ol>
 </div>
 </div>

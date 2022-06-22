@@ -758,7 +758,7 @@ div.csl-indent {
 <h3><span class="header-section-number">15.2.1</span> Histograms<a href="exploring-univariate-data-graphically.html#histograms" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We will begin our exploration of the Old Faithful data with a histogram with a binwidth of 15 minutes to show the number of minutes between eruptions.</p>
 <p>Using Excel or Google Sheets, we can highlight the column and insert a histogram.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-167"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-168"></span>
 <img src="data-examples/Old-Faithful/Eruption_Hist1_Excel.png" alt="Histogram with 15 minute binwidth using Excel" width="90%" />
 <p class="caption">
 Figure 15.1: Histogram with 15 minute binwidth using Excel
@@ -770,17 +770,17 @@ Figure 15.1: Histogram with 15 minute binwidth using Excel
 <span id="cb1-3"><a href="exploring-univariate-data-graphically.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div>
 <p>After loading the appropriate packages, we can read the Excel file into the data frame of <code>Old_Faithful_2020_07_01_to_2020_07_31</code>. This can then be used to create the histogram with the binwidth of 15 minutes.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="exploring-univariate-data-graphically.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">15</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-170-1.png" width="672" /></p>
+<p><img src="_main_files/figure-html/unnamed-chunk-171-1.png" width="672" /></p>
 <p>We notice that the vast majority of the time, the number of minutes between eruptions is less than 200 minutes, with a few over 400 minutes. Going back to the context of the data and looking at these eruptions that had more than 120 minutes, they all occurred during nighttime hours. So we will make the assumption that the data source is missing eruptions and so we will remove these data points from our frame. We then create a new histogram with a binwidth of 5 minutes on this cleaned data set in both Excel and R.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-171"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-172"></span>
 <img src="data-examples/Old-Faithful/Eruption_Hist2_Excel.png" alt="Histogram with 5 minute binwidth using Excel" width="90%" />
 <p class="caption">
 Figure 15.2: Histogram with 5 minute binwidth using Excel
 </p>
 </div>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="exploring-univariate-data-graphically.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="dv">5</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)<span class="sc">+</span><span class="fu">theme_classic</span>()</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-173"></span>
-<img src="_main_files/figure-html/unnamed-chunk-173-1.png" alt="Histogram with 5 minute binwidth using R and ggplot2" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-174"></span>
+<img src="_main_files/figure-html/unnamed-chunk-174-1.png" alt="Histogram with 5 minute binwidth using R and ggplot2" width="90%" />
 <p class="caption">
 Figure 15.3: Histogram with 5 minute binwidth using R and ggplot2
 </p>
@@ -804,8 +804,8 @@ Figure 15.3: Histogram with 5 minute binwidth using R and ggplot2
 <h3><span class="header-section-number">15.2.2</span> Dot Plots<a href="exploring-univariate-data-graphically.html#dot-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>From this histogram we see that the data seems to have two ‘centers’ (one at around 95 minutes and the other around 65 minutes). To explore this phenomenon further, we create a dot plot that marks each occurance as a single dot and see that there appear to be two clusters of times.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="exploring-univariate-data-graphically.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_dotplot</span>(<span class="at">binwidth =</span> .<span class="dv">5</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)<span class="sc">+</span><span class="fu">theme_classic</span>() <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="cn">NULL</span>, <span class="at">breaks =</span> <span class="cn">NULL</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-174"></span>
-<img src="_main_files/figure-html/unnamed-chunk-174-1.png" alt="Dot Plot of Eruption Times using R and ggplot2" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-175"></span>
+<img src="_main_files/figure-html/unnamed-chunk-175-1.png" alt="Dot Plot of Eruption Times using R and ggplot2" width="90%" />
 <p class="caption">
 Figure 15.4: Dot Plot of Eruption Times using R and ggplot2
 </p>
@@ -816,8 +816,8 @@ Figure 15.4: Dot Plot of Eruption Times using R and ggplot2
 <h3><span class="header-section-number">15.2.3</span> Density Plots<a href="exploring-univariate-data-graphically.html#density-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Since the dot plot represents the information from a single month and the times between eruptions is a continuous variable, we can generalize the dot plot to a continuous density plot.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="exploring-univariate-data-graphically.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_density</span>(<span class="at">kernel =</span> <span class="st">&quot;gaussian&quot;</span>) <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-175"></span>
-<img src="_main_files/figure-html/unnamed-chunk-175-1.png" alt="Density Plot of Eruption Times" width="90%" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-176"></span>
+<img src="_main_files/figure-html/unnamed-chunk-176-1.png" alt="Density Plot of Eruption Times" width="90%" />
 <p class="caption">
 Figure 15.5: Density Plot of Eruption Times
 </p>
@@ -832,7 +832,7 @@ Figure 15.5: Density Plot of Eruption Times
 <div id="box-plots" class="section level3 hasAnchor" number="15.2.4">
 <h3><span class="header-section-number">15.2.4</span> Box Plots<a href="exploring-univariate-data-graphically.html#box-plots" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>When we display this same data on a box plot (also called a box-and-whisker plot).</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-176"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-177"></span>
 <img src="images/Labeled_Box_and_Whisker_Plot.png" alt="Box Plot with Labels" width="60%" />
 <p class="caption">
 Figure 15.6: Box Plot with Labels
@@ -840,23 +840,23 @@ Figure 15.6: Box Plot with Labels
 </div>
 <p>We see that the box plot divides the data up into quarters. This means that 50% of the data is inside the box between the lower quartile (Q1) and the upper quartile (Q3).</p>
 <p>We see in the figure below of our eruption data that many of the data points lie more than 1.5 times the inner-quartile range (IQR) below the first quartile (Q1) or above the third quartile (Q3), as denoted by the dots past the whiskers. These data points are often called outliers.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-177"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-178"></span>
 <img src="data-examples/Old-Faithful/Eruption-Box-Excel.png" alt="Box Plot of Time Between Eruptions Using Excel" width="30%" />
 <p class="caption">
 Figure 15.7: Box Plot of Time Between Eruptions Using Excel
 </p>
 </div>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="exploring-univariate-data-graphically.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(<span class="at">x=</span>inter_erruption_time)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>) <span class="sc">+</span> <span class="fu">scale_y_continuous</span>(<span class="cn">NULL</span>, <span class="at">breaks=</span><span class="cn">NULL</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-178"></span>
-<img src="_main_files/figure-html/unnamed-chunk-178-1.png" alt="Box Plot of Eruption Times Using R and ggplots2" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-179"></span>
+<img src="_main_files/figure-html/unnamed-chunk-179-1.png" alt="Box Plot of Eruption Times Using R and ggplots2" width="672" />
 <p class="caption">
 Figure 15.8: Box Plot of Eruption Times Using R and ggplots2
 </p>
 </div>
 <p>The large number of outliers below 78 minutes corresponds to the second cluster of times centered around 65. From the evidence gathered to this point, we can justify making the assumption that there are really two different lengths of time between eruptions, “Short” and “Long”. By labeling the wait time as short or long, we can look at the two different distributions using a pair of box plots.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="exploring-univariate-data-graphically.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Old_Faithful_2020_07_01_to_2020_07_31_cleaned, <span class="fu">aes</span>(inter_erruption_time, wait_cat)) <span class="sc">+</span> <span class="fu">geom_boxplot</span>() <span class="sc">+</span> <span class="fu">labs</span>(<span class="at">x=</span> <span class="st">&quot;Time between erruptions (minutes)&quot;</span>, <span class="at">y=</span> <span class="st">&quot;Prior eruption length&quot;</span>)</span></code></pre></div>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-179"></span>
-<img src="_main_files/figure-html/unnamed-chunk-179-1.png" alt="Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2" width="672" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-180"></span>
+<img src="_main_files/figure-html/unnamed-chunk-180-1.png" alt="Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2" width="672" />
 <p class="caption">
 Figure 15.9: Box Plot of Eruption Times Based on Prior Eruption Using R and ggplots2
 </p>
